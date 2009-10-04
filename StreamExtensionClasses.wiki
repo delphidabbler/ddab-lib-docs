@@ -1,0 +1,7 @@
+#summary Stream Extension Classes documentation.
+
+= Stream Extension Classes =
+
+This is a placeholder for the _Stream Extension Classes_ project.
+
+Detailed information is available [http://www.delphidabbler.com/software/streams here]
