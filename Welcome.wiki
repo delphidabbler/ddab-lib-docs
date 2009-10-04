@@ -1,4 +1,5 @@
 #summary Home page for the DelphiDabbler Library Wiki
+#labels Featured
 <wiki:comment>
 $Rev$
 $Date$
