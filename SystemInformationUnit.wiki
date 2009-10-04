@@ -1,0 +1,7 @@
+#summary System Information Unit documentation.
+
+= System Information Unit =
+
+This is a placeholder for the _System Information Unit_ project.
+
+Detailed information is available [http://www.delphidabbler.com/software/sysinfo here]
