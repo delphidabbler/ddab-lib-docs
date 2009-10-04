@@ -1,0 +1,7 @@
+#summary Version Information Component documentation.
+
+= Version Information Component =
+
+This is a placeholder for the _Version Information Component_ project documentation.
+
+Detailed information is available [http://www.delphidabbler.com/software/verinfo here].
