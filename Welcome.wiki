@@ -1,7 +1,7 @@
 #summary Home page for the DelphiDabbler Library Wiki
 <wiki:comment>
-$Rev
-$Date
+$Rev$
+$Date$
 </wiki:comment>
 
 =Welcome=
