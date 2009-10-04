@@ -1,0 +1,7 @@
+#summary HKEY Property Editor documentation.
+
+= HKEY Property Editor =
+
+This is a placeholder for the _HKEY Property Editor_ project documentation.
+
+Detailed information is available [http://www.delphidabbler.com/software/hkeype here].
