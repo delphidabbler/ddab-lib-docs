@@ -1,0 +1,13 @@
+#summary Home page for the DelphiDabbler Library Wiki
+<wiki:comment>
+$Rev
+$Date
+</wiki:comment>
+
+=Welcome=
+
+Welcome to the _!DelphiDabbler Component and Unit Library Wiki_.
+
+Over time documentation for the library will be placed in this Wiki.
+
+For now, this is just a placeholder page.
