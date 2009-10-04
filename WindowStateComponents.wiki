@@ -1,0 +1,7 @@
+#summary Window State Components documentation.
+
+= Window State Components =
+
+This is a placeholder for the _Window State Components_ project.
+
+Detailed information is available [http://www.delphidabbler.com/software/wdwstate here]
