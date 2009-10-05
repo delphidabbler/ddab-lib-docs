@@ -1,0 +1,21 @@
+#summary TPJStreamWrapper class description.
+
+= TPJStreamWrapper =
+
+This class is not normally used on its own. It is designed as a parent for classes that "wrap" a stream. Such classes will add methods to the base class and/or override the base class's handling of the Read, Write and Seek methods. Study the _!StreamWrapDemo_ demo source code details of how this can be acheived. 
+
+== Methods ==
+The only method that is different to those inherited from TStream is:
+
+=== Create ===
+
+Class constructor. Creates a new stream wrapper object for a given stream.
+
+{{{
+constructor Create(const Stream: TStream;
+  const CloseStream: Boolean = False);
+}}}
+
+
+  * _Stream_ – the stream that is "wrapped" by this object
+  * _!CloseStream_ – optional parameter that is false by default. When true the parameter causes the wrapped stream to be freed when this object is destroyed. This saves the used from having to remember to free the wrapped stream. It allows wrapped streams that are created "on the fly" in this constructor call to be freed without keeping a reference to them.
