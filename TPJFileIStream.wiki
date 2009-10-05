@@ -1,0 +1,20 @@
+#summary TPJFileIStream class description.
+
+= TPJFileIStream =
+
+_TPJFileIStream_ provides an _IStream_ interface to a file. It's constructor is like that of _TFileStream_ except that the constructor returns an object of type _TPJFileIStream_ which can be cast to _IStream_.
+
+The _Stat_ method of _TPJFileIStream_, like that of _[TPJHandleIStreamWrapper]_, provides file date / time stamp information. Additionally, the _pwcsName_ element of the _TStatStg_ structure returns the name of the open file rather than a name based on the class name. 
+
+== Methods ==
+
+=== Create ===
+
+Class constructor – creates a new _IStream_ object onto the given file.
+
+{{{
+constructor Create(const FileName: string; Mode: Word);
+}}}
+
+  * _!FileName_ – name of file that the stream is to be opened onto.
+  * _Mode_ – bitmask determining how file is to be opened.
