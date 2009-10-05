@@ -2,6 +2,12 @@
 
 = Stream Extension Classes =
 
-This is a placeholder for the _Stream Extension Classes_ project.
+This library project provides some classes that can be used to extend the functionality of Delphi's TStream classes.
 
-Detailed information is available [http://www.delphidabbler.com/software/streams here]
+The classes are provided in two units: PJStreamWrapper and PJIStreams. The classes are summarised in the following table.
+
+|| *Class* || *Unit* || *Description* ||
+|| [TPJStreamWrapper] || PJStreamWrapper || This is a base class for descendant classes that "wrap" a TStream class to provide some form of filter or additional functionality. The wrapped TStream is used to do physical i/o. TStreamWrapper simply replicates the facilities in the wrapped stream – it is for descendant classes to add functionality. ||
+|| [TPJIStreamWrapper] || PJIStreams || Implements the IStream interface for a wrapped TStream object. ||
+|| [TPJHandleIStreamWrapper] || PJIStreams || Implements an IStream interface for a wrapped THandleStream object or descendant such as TFileStream). Acts in a similar way to TPJIStreamWrapper except that file date stamps are returned by the Stat method. ||
+|| [TPJFileIStream] || PJIStreams || Implements a IStream interface on a file. ||
