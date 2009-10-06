@@ -2,6 +2,14 @@
 
 = HKEY Property Editor =
 
-This is a placeholder for the _HKEY Property Editor_ project documentation.
+This is a property editor - _TPJHKEYPropEditor_ for properties of type _HKEY_ – i.e. registry root keys. The editor causes a drop-down list of all the registry root keys supported by Delphi to be displayed in the object inspector for any property of type _HKEY_.
 
-Detailed information is available [http://www.delphidabbler.com/software/hkeype here].
+_TPJHKEYPropEditor_ is defined in the _PJHKEYPropEdit_ unit.
+
+Such a property is exposed by the [TPJRegWdwState] component.
+
+Links:
+
+  * Back to [Welcome Wiki Home Page]
+
+  * [http://www.delphidabbler.com/software/hkeype HKEY Property Editor Web Page].
