@@ -11,3 +11,8 @@ The classes are provided in two units: PJStreamWrapper and PJIStreams. The class
 || [TPJIStreamWrapper] || PJIStreams || Implements the IStream interface for a wrapped TStream object. ||
 || [TPJHandleIStreamWrapper] || PJIStreams || Implements an IStream interface for a wrapped THandleStream object or descendant such as TFileStream). Acts in a similar way to TPJIStreamWrapper except that file date stamps are returned by the Stat method. ||
 || [TPJFileIStream] || PJIStreams || Implements a IStream interface on a file. ||
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/streams Stream Extension Classes Web Page].
