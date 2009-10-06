@@ -9,6 +9,11 @@ $Date$
 
 Welcome to the _!DelphiDabbler Component and Unit Library Wiki_.
 
-Over time documentation for the library will be placed in this Wiki.
+The Library currently contains the following projects.
 
-For now, this is just a placeholder page.
+|| *Project* || *Description* ||
+|| [HKEYPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited using symbolic constant names. ||
+|| [StreamExtensionClasses Stream Extension Classes] || Classes that provide a means to wrap _TStream_ objects along with implementation of the _IStream_ interface.  ||
+|| [SystemInformationUnit System Information Unit] || Static classes that get information about the user's computer and operating system.  ||
+|| [VersionInformationComponent Version Information Component] || Component that accesses version information embedded in program files, DLLs etc. ||
+|| [WindowStateComponents Window State Components] || Three components that save and restore window size, state and position using either, ini files, the registry or user-defined storage. ||
