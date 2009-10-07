@@ -2,6 +2,10 @@
 
 = TPJStreamWrapper =
 
+*Project:* [StreamExtensionClasses Stream Extension Classes].
+
+*Unit:* _PJStreamWrapper_.
+
 This class is not normally used on its own. It is designed as a parent for classes that "wrap" a stream. Such classes will add methods to the base class and/or override the base class's handling of the Read, Write and Seek methods. Study the _!StreamWrapDemo_ demo source code details of how this can be acheived. 
 
 == Methods ==
