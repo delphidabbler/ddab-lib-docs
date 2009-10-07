@@ -2,6 +2,10 @@
 
 = TPJHandleIStreamWrapper =
 
+*Project:* [StreamExtensionClasses Stream Extension Classes].
+
+*Unit:* _PJIStreams_.
+
 This class provides an _IStream_ interface to any wrapped object of type _THandleStream_ or descendant (such as _TFileStream_) – i.e. any stream based on a Windows file handle. It acts as _[TPJIStreamWrapper]_ except that the _TStatStg_ structure returned by the _Stat_ method also returns information about file creation, modification and access dates where available.
 
 This class has a constructor that only accepts streams that descend from _THandleStream_:
