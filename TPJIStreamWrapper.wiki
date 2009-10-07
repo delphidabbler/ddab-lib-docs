@@ -2,6 +2,10 @@
 
 = TPJIStreamWrapper =
 
+*Project:* [StreamExtensionClasses Stream Extension Classes].
+
+*Unit:* _PJIStreams_.
+
 This class can wrap any _TStream_ derived class and provide access to it by means of an _IStream_ interface. Study the source code of the IStreamWrapDemo demo program to see this class, and those derived from it, in use.
 
 == Methods ==
