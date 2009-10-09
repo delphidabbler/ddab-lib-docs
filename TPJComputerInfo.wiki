@@ -1,0 +1,29 @@
+#summary TPJComputerInfo class description
+
+= TPJComputerInfo =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+This is a static class that provies information about the host computer. The class' functionality is all exposed via its static methods. Because it is static the class does not need to be instantiated before use.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[#BootMode BootMode]_ || Determines the operating system mode into which the the computer was booted. ||
+|| _[#ComputerName ComputerName]_ || Gets the computer's name. ||
+|| _[#Is64Bit Is64Bit]_ || Checks if processor is 64 bit. ||
+|| _[#IsNetworkPresent IsNetworkPresent]_ || Checks if a network is present. ||
+|| _[#MACAddress MACAddress]_ || Gets the address of the first network card in the computer. ||
+|| _[#Processor Processor]_ || Gets the kind of processor used in the computer. ||
+|| _[#ProcessorCount ProcessorCount]_ || Gets the number of processors in the computer. ||
+|| _[#UserName UserName]_ || Gets the current user name. ||
+
+== Properties ==
+
+_TPJComputerInfo_ defines no properties.
+
+== Events ==
+
+_TPJComputerInfo_ defines no events.
