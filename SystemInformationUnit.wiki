@@ -4,7 +4,8 @@
 
 This unit, _PJSysInfo_, contains a set of static classes that provide various pieces of system information. They are:
 
-|| _[PJComputerInfo TPJComputerInfo]_ || Provides information about the computer system. ||
+|| *Class* || *Description* ||
+|| _[TPJComputerInfo TPJComputerInfo]_ || Provides information about the computer system. ||
 || _[TPJSystemFolders TPJSystemFolders]_ || Provides the paths of various standard system folders. ||
 || _[TPJOSInfo TPJOSInfo]_ || Provides information about the operating system. ||
 
