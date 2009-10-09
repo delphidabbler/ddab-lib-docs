@@ -2,6 +2,21 @@
 
 = System Information Unit =
 
-This is a placeholder for the _System Information Unit_ project.
+This unit, _PJSysInfo_, contains a set of static classes that provide various pieces of system information. They are:
 
-Detailed information is available [http://www.delphidabbler.com/software/sysinfo here]
+|| _[PJComputerInfo TPJComputerInfo]_ || Provides information about the computer system. ||
+|| _[TPJSystemFolders TPJSystemFolders]_ || Provides the paths of various standard system folders. ||
+|| _[TPJOSInfo TPJOSInfo]_ || Provides information about the operating system. ||
+
+The _PJSysInfo_ unit also defines a set of [PJSysInfoGlobals global variables] that compliment and extend the operating system information provided by global variables defined in the _!SysUtils_ unit. 
+
+Certain Windows types and constants not defined by Delphi that assist in working with extended operating system information are declared in this unit. Help on these definitions can be found on MSDN or in the Windows platform SDK.
+
+== Deprecated Code ==
+
+Earlier versions of _PJSysInfo_ contained a set of deprecated routines and a deprecated component that also provide system information. From v3.0 the routines and component have been removed by default. However, if the deprecated code is required for backwards compatibility it can be enabled by defining the _PJSYSINFO_COMPILE_DEPRECATED_ symbol before compiling the unit. No documentation is provided for this deprecated code.
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/sysinfo System Information Unit Web Page].
