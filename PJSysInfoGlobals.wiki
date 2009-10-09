@@ -1,0 +1,89 @@
+#summary PJSysInfoUnit global variables.
+
+Project: [SystemInformationUnit System Information Unit]
+
+Unit: _PJSysInfo_.
+
+= PJSysInfo Global Variables =
+
+The _PJSysInfo_ unit defines several global variables containing extended operating system information. These variables build on similar _Win32XXX_ variables defined in the _!SysUtils unit_.
+
+The variables defined in _PJSysInfo_ are:
+
+  * [#Win32HaveExInfo Win32HaveExInfo]
+  * [#Win32ServicePackMajor Win32ServicePackMajor]
+  * [#Win32ServicePackMinor Win32ServicePackMinor]
+  * [#Win32SuiteMask Win32SuiteMask]
+  * [#Win32ProductType Win32ProductType]
+  * [#Win32HaveProductInfo Win32HaveProductInfo]
+  * [#Win32ProductInfo Win32ProductInfo]
+
+== !Win32HaveExInfo ==
+
+{{{
+var Win32HaveExInfo: Boolean;
+}}}
+
+This global variable is true if extended operating system information is available and false if not. When false the values of the _[#Win32ServicePackMajor Win32ServicePackMajor]_, _[#Win32ServicePackMinor Win32ServicePackMinor]_, _[#Win32SuiteMask Win32SuiteMask]_ and _[#Win32ProductType Win32ProductType]_ variables are not valid and should not be used.
+
+Note that extended operating system information is available only on Windows NT platform operating systems from and including Windows NT4 Service Pack 6.
+
+== !Win32ServicePackMajor ==
+
+{{{
+var Win32ServicePackMajor: string;
+}}}
+
+This global variable stores the major version number of the latest Service Pack installed on the system or 0 if there is no service pack.
+
+Note that this variable only stores valid information if the _[#Win32HaveExInfo Win32HaveExInfo]_ variable is true.
+
+== !Win32ServicePackMinor ==
+
+{{{
+var Win32ServicePackMinor: string;
+}}}
+
+This global variable stores the minor version number of the latest Service Pack installed on the system.
+
+Note that this variable only stores valid information if the _[#Win32HaveExInfo Win32HaveExInfo]_ variable is true.
+
+== !Win32SuiteMask ==
+
+{{{
+var Win32SuiteMask: Integer;
+}}}
+
+This global variable stores a comination of bit flags that identify the product suites available on the system. The value is a combination of  _VER_SUITE_xxx_ constants that are defined by Microsoft. The constants are declared in the _PJSysInfo_ unit.
+
+Note that this variable only stores valid information if the _[#Win32HaveExInfo Win32HaveExInfo]_ variable is true.
+
+== !Win32ProductType ==
+
+{{{
+var Win32ProductType: Integer;
+}}}
+
+This global variable stores additional information about an operating system product.a. The value one of the _VER_NT_xxx_ constants defined by Microsoft. The constants are declared in the _PJSysInfo_ unit.
+
+Note that this variable only stores valid information if the _[#Win32HaveExInfo Win32HaveExInfo]_ variable is true.
+
+== !Win32HaveProductInfo ==
+
+{{{
+var Win32HaveProductInfo: Boolean;
+}}}
+
+This global variable informs whether product information is available from the operating system. Such information is obtained from the Windows API function _!GetProductInfo_, which is available on Windows Vista and later operating systems.
+
+When _!Win32HaveProductInfo_ is True the product information code can be read from _[#Win32ProductInfo Win32ProductInfo]_, otherwise _!Win32ProductInfo_ is set to 0.
+
+== !Win32ProductInfo ==
+
+{{{
+var Win32ProductInfo: LongWord;
+}}}
+
+This global variable provides additional product information about the operating system. The value is one of the _PRODUCT_xxx_ constants defined by Microsoft. The constants are declared in the _PJSysInfo_ unit.
+
+Note that this variable only stores valid information if the _[#Win32HaveProductInfo Win32HaveProductInfo]_ variable is true, otherwise _!Win32ProductInfo_ is set to 0.
