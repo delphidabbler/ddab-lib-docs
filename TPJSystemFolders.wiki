@@ -1,0 +1,27 @@
+#summary TPJSystemFolders class description
+
+= TPJSystemFolders =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+This is a static class that provies details of the full paths of various special system folders. All _TPJSystemFolders_'  functionality is exposed via static methods. Because it is static the class does not need to be instantiated before use.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[TPJSystemFoldersCommonFiles CommonFiles]_ || Gets the Common Files folder path. ||
+|| _[TPJSystemFoldersProgramFiles ProgramFiles]_ || Gets the Program Files folder path. ||
+|| _[TPJSystemFoldersSystem System]_ || Gets the System folder path. ||
+|| _[TPJSystemFoldersSystemWow64 SystemWow64]_ || Gets the System folder path used by WOW64. ||
+|| _[TPJSystemFoldersTemp Temp]_ || Gets the temporary files folder path. ||
+|| _[TPJSystemFoldersWindows Windows]_ || Gets the Windows folder path. ||
+
+== Properties ==
+
+_TPJSystemFolders_ defines no properties.
+
+== Events ==
+
+_TPJSystemFolders_ defines no events.
