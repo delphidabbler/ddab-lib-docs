@@ -1,0 +1,41 @@
+#summary TPJOSInfo class description
+
+= TPJOSInfo =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+This is a static class that gives access to information about the operating system on which the program is running. All the class' functionality is exposed through its static methods. Because it is static the class does not need to be instantiated before use.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[TPJOSInfoBuildNumber BuildNumber]_ || Gets the operating system build number. ||
+|| _[TPJOSInfoDescription Description]_ || Gets a full information about of an operating system version. ||
+|| _[TPJOSInfoEdition Edition]_ || Gets the edition of an operating system product. ||
+|| _[TPJOSInfoHasPenExtensions HasPenExtensions]_ || Checks for Windows Pen Extensions. ||
+|| _[TPJOSInfoIsMediaCenter IsMediaCenter]_ || Checks for Windows Media Center. ||
+|| _[TPJOSInfoIsServer IsServer]_ || Checks for a server operating system. ||
+|| _[TPJOSInfoIsTabletPC IsTabletPC]_ || Checks for Windows Tablet PC. ||
+|| _[TPJOSInfoIsWin32s IsWin32s]_ || Checks for the Windows 32s system. ||
+|| _[TPJOSInfoIsWin9x IsWin9x]_ || Checks for the Windows 95 platform. ||
+|| _[TPJOSInfoIsWinNT IsWinNT]_ || Checks for the Windows NT platform. ||
+|| _[TPJOSInfoIsWow64 IsWow64]_ || Checks if the program is running on WOW64. ||
+|| _[TPJOSInfoMajorVersion MajorVersion]_ || Gets the operating system major version. ||
+|| _[TPJOSInfoMinorVersion MinorVersion]_ || Gets the operating system minor version. ||
+|| _[TPJOSInfoPlatform Platform]_ || Gets the operating system platform. ||
+|| _[TPJOSInfoProduct Product]_ || Gets a code representing the operating system product. ||
+|| _[TPJOSInfoProductID ProductID]_ || Gets the Windows product ID. ||
+|| _[TPJOSInfoProductName ProductName]_ || Gets the name of the operating system product. ||
+|| _[TPJOSInfoServicePack ServicePack]_ || Gets the operating system's service pack. ||
+|| _[TPJOSInfoServicePackMajor ServicePackMajor]_ || Gets the operating system's major service pack version number. ||
+|| _[TPJOSInfoServicePackMinor ServicePackMinor]_ || Gets the operating system's minor service pack version number. ||
+
+== Properties ==
+
+_TPJOSInfo_ defines no properties.
+
+== Events ==
+
+_TPJOSInfo_ defines no events.
