@@ -2,6 +2,9 @@
 
 = Version Information Component =
 
-This is a placeholder for the _Version Information Component_ project documentation.
+This project contains one unit - _PJVersionInfo_. This unit implements the _[TPJVersionInfo TPJVersionInfo]_ version information resource reader component. It also defines the _[TPJVersionNumber TPJVersionNumber]_ record that stores version numbers as four discreet values.
 
-Detailed information is available [http://www.delphidabbler.com/software/verinfo here].
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/verinfo Version Information Component Web Page]. 
