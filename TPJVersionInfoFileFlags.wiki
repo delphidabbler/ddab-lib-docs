@@ -1,0 +1,34 @@
+#summary Description of the TPJVersionInfo.FileFlags property.
+
+= !FileFlags property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property FileType: DWORD;
+}}}
+
+== Description ==
+
+Use this read only run time property to get information about the type of file - application, DLL etc.
+
+_!FileType_ provides information about the type of file being examined. The information is as specified in the fixed file information part of the _VERSIONINFO_ resource statement.
+
+The value of this property is also provided by the the _dwFileType_ member of the _VS_FIXEDFILEINFO_ structure that is accessed using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property. 
+
+_!FileType_ can take one of the values given in the following table. For some types of file further information is provided by the _[TPJVersionInfoFileSubType FileSubType]_ property.
+
+|| *Flag* || *Description* ||
+|| _VFT_UNKNOWN_ || Unknown file type, or no version information is present. ||
+|| _VFT_APP_ || Application. ||
+|| _VFT_DLL_ || Dynamic-link library (DLL). ||
+|| _VFT_DRV_ || Device driver. Further information is provided by the _[TPJVersionInfoFileSubType FileSubType]_ property. ||
+|| _VFT_FONT_ ||Font file. Further information is provided by the _[TPJVersionInfoFileSubType FileSubType]_ property. ||
+|| _VFT_VXD_ || Virtual device driver. _[TPJVersionInfoFileSubType FileSubType]_ contains the virtual device identifier included in the virtual device control block. ||
+|| _VFT_STATIC_LIB_ || Static-link library. ||
+
+The _VFT_XXX_ constants are defined in the Windows unit.
