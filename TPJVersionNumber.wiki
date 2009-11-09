@@ -1,0 +1,19 @@
+#summary TPJVersionNumber record description.
+
+= TPJVersionNumber =
+
+*Project:* [VersionInformationComponent Version Information Component].
+
+*Unit:* _PJVersionInfo_.
+
+_TPJVersionNumber_ is a record that stores version numbers from version resources as four discrete values. The record is declared as follows:
+
+{{{
+TPJVersionNumber = record
+  V1, V2, V3, V4: WORD;
+end;
+}}}
+
+_V1_ represents the most significant version number and _V4_ represents the least significant number.
+
+For example a version number written as 2.5.8.3 would be stored in a variable of type _TPJVersionNumber_ with _V1_=2, _V2_=5, _V3_=8 and _V4_=3.
