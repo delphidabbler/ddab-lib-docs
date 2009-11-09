@@ -8,6 +8,10 @@
 
 *Class:* _[TPJVersionInfo TPJVersionInfo]_
 
+{{{
+property StringFileInfo[const Name: string]: string;
+}}}
+
 == Description ==
 
 Returns the value for of the string file information with given name in the current translation.
