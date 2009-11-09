@@ -23,32 +23,32 @@ _TPJVersionInfo_ defines the following properties in addition to those inherited
 || *Property* || *Description* ||
 || _[TPJVersionInfoCharSet CharSet]_ || Returns a description of the character set for the current translation. ||
 || _[TPJVersionInfoCharSetCode CharSetCode]_ || Returns the code of the character set used by the current translation. ||
-|| _[TPJVersionInfoComments Comments]_ || Returns the _Comments_ string file information string. ||
-|| _[TPJVersionInfoCompanyName CompanyName]_ || Returns the _!CompanyName_ string file information string. ||
+|| _Comments_ || Returns the _Comments_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'Comments']_. ||
+|| _!CompanyName_ || Returns the _!CompanyName_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!CompanyName']_. ||
 || _[TPJVersionInfoCurrentTranslation CurrentTranslation]_ || Get or set the translation to be used by string, language and character set properties. ||
-|| _[TPJVersionInfoFileDescription FileDescription]_ || Returns the _!FileDescription_ string file information string. ||
+|| _!FileDescription_ || Returns the _!FileDescription_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!FileDescription']_. ||
 || _[TPJVersionInfoFileFlags FileFlags]_ || Provides information about the release attributes of a file. ||
 || _[TPJVersionInfoFileFlagsMask FileFlagsMask]_ || Determines which bits of the _!FileFlags_ property are valid. ||
 || _[TPJVersionInfoFileName FileName]_ || Specifies the file from which version information is to be read. ||
 || _[TPJVersionInfoFileOS FileOS]_ || Provides information about the operating system for which the application was designed. ||
 || _[TPJVersionInfoFileSubType FileSubType]_ || Provides additional file type information for certain file types. ||
 || _[TPJVersionInfoFileType FileType]_ || Provides information about the type of file - application, DLL etc. ||
-|| _[TPJVersionInfoFileVersion FileVersion]_ || Returns the _!FileVersion_ string file information string. ||
+|| _!FileVersion_ || Returns the _!FileVersion_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!FileVersion']_. ||
 || _[TPJVersionInfoFileVersionNumber FileVersionNumber]_ || Gets the version number of a file as a _[TPJVersionNumber TPJVersionNumber]_ record. ||
 || _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ || Provides access to the fixed file information record from the current file via a Windows _TVSFixedFileInfo_ record. ||
 || _[TPJVersionInfoHaveInfo HaveInfo]_ || Informs if the current file contains version information. ||
-|| _[TPJVersionInfoInternalName InternalName]_ || Returns the _!InternalName_ string file information string. ||
+|| _!InternalName_ || Returns the _!InternalName_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!InternalName']_. ||
 || _[TPJVersionInfoLanguage Language]_ || Returns a description of the language used for the current translation. ||
 || _[TPJVersionInfoLanguageCode LanguageCode]_ || Returns the language code associated with the current translation. ||
-|| _[TPJVersionInfoLegalCopyright LegalCopyright]_ || Returns the _!LegalCopyright_ string file information string. ||
-|| _[TPJVersionInfoLegalTrademarks LegalTrademarks]_ || Returns the _!LegalTrademarks_ string file information string. ||
+|| _!LegalCopyright_ || Returns the _!LegalCopyright_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!LegalCopyright']_. ||
+|| _!LegalTrademarks_ || Returns the _!LegalTrademarks_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!LegalTrademarks']_. ||
 || _[TPJVersionInfoNumTranslations NumTranslations]_ || Gets the number of translations in a file's version information. ||
-|| _[TPJVersionInfoOriginalFileName OriginalFileName]_ || Returns the _!OriginalFileName_ string file information string. ||
-|| _[TPJVersionInfoPrivateBuild PrivateBuild]_ || Returns the _!PrivateBuild_ string file information string. ||
-|| _[TPJVersionInfoProductName ProductName]_ || Returns the _!ProductName_ string file information string. ||
-|| _[TPJVersionInfoProductVersion ProductVersion]_ || Returns the _!ProductVersion_ string file information string. ||
+|| _!OriginalFileName_ || Returns the _!OriginalFileName_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!OriginalFileName']_. ||
+|| _!PrivateBuild_ || Returns the _!PrivateBuild_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!PrivateBuild']_. ||
+|| _!ProductName_ || Returns the _!ProductName_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!ProductName']_. ||
+|| _!ProductVersion_ || Returns the _!ProductVersion_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!ProductVersion']_. ||
 || _[TPJVersionInfoProductVersionNumber ProductVersionNumber]_ || Gets the version number of the product to which a file relates as a _[TPJVersionNumber TPJVersionNumber]_ record. ||
-|| _[TPJVersionInfoSpecialBuild SpecialBuild]_ || Returns the _!SpecialBuild_ string file information string. ||
+|| _!SpecialBuild_ || Returns the _!SpecialBuild_ string file information string. This property is a alias for _[TPJVersionInfoStringFileInfo StringFileInfo][[]'!SpecialBuild']_. ||
 || _[TPJVersionInfoStringFileInfo StringFileInfo]_ || String indexed array property that returns the value of string information with the given name. ||
 
 == Events ==
