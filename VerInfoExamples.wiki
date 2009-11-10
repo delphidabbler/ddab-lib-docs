@@ -2,7 +2,7 @@
 
 = Version Information Component Examples =
 
-The following examples of using the Version Information Component are available:
+The following examples of using the [VersionInformationComponent Version Information Component] are available:
 
 || [VerInfoExample1 Example 1] || Using the various fixed file information properties ||
 || [VerInfoExample2 Example 2] || Using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property (alternative approach to Example 1) ||
