@@ -1,0 +1,10 @@
+#summary List of Version Information Component usage examples
+
+= Version Information Component Examples =
+
+The following examples of using the Version Information Component are available:
+
+|| [VerInfoExample1 Example 1] || Using the various fixed file information properties ||
+|| [VerInfoExample2 Example 2] || Using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property (alternative approach to Example 1) ||
+|| [VerInfoExample3 Example 3] || Using translation, character set and language properties ||
+|| [VerInfoExample4 Example 4] || Using string information properties ||
