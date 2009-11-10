@@ -1,0 +1,29 @@
+#summary Description of the TPJVersionInfo.ProductVersionNumber property.
+
+= !ProductVersionNumber property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property ProductVersionNumber: TPJVersionNumber;
+}}}
+
+== Description ==
+
+This read only property gets the version number of the product to which the file being examined relates.
+
+The version number is specified in the fixed file information part of the _VERSIONINFO_ resource statement.
+
+The value of this property is derived from the _dwProductVersionMS_ and _dwProductVersionLS_ members of the _VS_FIXEDFILEINFO_ structure that can be accessed using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property. The relationship between the fields of the _[TPJVersionNumber TPJVersionNumber]_ record returned by this property and _dwProductVersionMS_ and _dwProductVersionLS_ is as follows:
+
+|| *TPJVersionNumber field* || *VS_FIXEDFILEINFO field* ||
+|| `V1` || `HiWord(dwProductVersionMS)` ||
+|| `V2` || `LoWord(dwProductVersionMS)` ||
+|| `V3` || `HiWord(dwProductVersionLS)` ||
+|| `V4` || `LoWord(dwProductVersionLS)` ||
+
+The value of this property does not necessarily correspond to the string value given by the _[TPJVersionInfoProductVersion ProductVersion]_ property as this is separately defined in the _VERSIONINFO_ resource statement.
