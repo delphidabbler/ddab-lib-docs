@@ -4,6 +4,8 @@
 
 This project contains one unit - _PJVersionInfo_. This unit implements the _[TPJVersionInfo TPJVersionInfo]_ version information resource reader component. It also defines the _[TPJVersionNumber TPJVersionNumber]_ record that stores version numbers as four discreet values.
 
+[VerInfoExamples Example] source code showing how to use the component is available.
+
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
