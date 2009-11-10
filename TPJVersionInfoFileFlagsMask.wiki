@@ -1,0 +1,21 @@
+#summary Description of the TPJVersionInfo.FileFlagsMask property.
+
+= !FileFlagsMask property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property FileFlagsMask: DWORD;
+}}}
+
+== Description ==
+
+_!FileFlagsMask_ is a run time property containing a bitmask that determines which bits of the _[TPJVersionInfoFileFlags FileFlags]_ property are valid.
+
+The property's value is specified in the fixed file information part of the _VERSIONINFO_ resource. See the _[TPJVersionInfoFileFlags FileFlags]_ topic for details of the available flags.
+
+The value of this this property can also be obtained from the _dwFileFlagsMask_ field of the _VS_FIXEDFILEINFO_ structure, accessed using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property.
