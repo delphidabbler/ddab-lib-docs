@@ -1,0 +1,58 @@
+#summary Description of the TPJVersionInfo.FileSubType property.
+
+= !FileType property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property FileSubType: DWORD;
+}}}
+
+== Description ==
+
+For some file types this run time property provides additional information about the type of file. The information is as specified in the fixed file information part of the _VERSIONINFO_ resource statement.
+
+The value of this property is also provided by the the _dwFileSubType_ member of the _VS_FIXEDFILEINFO_ structure that is accessed using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property.
+
+The value of _!FileSubType_ depends on the file type identified by the _[TPJVersionInfoFileType FileType]_ property, as follows:
+
+=== Font files ===
+
+When _!FileType_ has value _VFT_FONT (a font file) then valid values of _!FileSubType_ are:
+
+|| *Flag* || *Description* ||
+|| _VFT2_UNKNOWN_ || Font type is unknown. ||
+|| _VFT2_FONT_RASTER_ || A raster font. ||
+|| _VFT2_FONT_VECTOR_ || A vector font. ||
+|| _VFT2_FONT_TRUETYPE_ || A !TrueType font. ||
+
+=== Device Drivers ===
+
+When _!FileType_ has value _VFT_DRV_ (a device driver) then _!FileSubType_ can take one of the following values:
+
+|| *Flag* || *Description* ||
+|| _VFT2_UNKNOWN_ || Driver type is unknown. ||
+|| _VFT2_DRV_PRINTER_ || Printer driver. ||
+|| _VFT2_DRV_KEYBOARD_ || Keyboard driver. ||
+|| _VFT2_DRV_LANGUAGE_ || Language driver. ||
+|| _VFT2_DRV_DISPLAY_ || Display driver. ||
+|| _VFT2_DRV_MOUSE_ || Mouse driver. ||
+|| _VFT2_DRV_NETWORK_ || Network driver. ||
+|| _VFT2_DRV_SYSTEM_ || System driver. ||
+|| _VFT2_DRV_INSTALLABLE_ || Installable driver. ||
+|| _VFT2_DRV_SOUND_ || Sound driver. ||
+|| _VFT2_DRV_COMM_ || Communications driver ||
+
+=== Virtual Device Drivers ===
+
+When _!FileType_ has value _VFT_VXD_ (a virtual device driver) then _!FileSubType_ contains the virtual device identifier included in the virtual device control block.
+
+=== Other Cases ===
+
+In all other cases, and when there is no version information available, _!FileSubType_ contains no information and should be zero.
+
+Constants for all the values discussed above are defined in the Windows unit.
