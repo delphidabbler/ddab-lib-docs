@@ -1,0 +1,17 @@
+#summary Description of the TPJVersionInfo.HaveInfo property.
+
+= !HaveInfo property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property HaveInfo: Boolean;
+}}}
+
+== Description ==
+
+This read only property has value _True_ if the component has been able to read file version resource information from the file specified by the _[TPJVersionInfoFileName FileName]_ property. It has value _False_ if there is no version resource information in the file or if an error has occurred reading the file.
