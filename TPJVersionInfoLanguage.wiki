@@ -1,0 +1,19 @@
+#summary Description of the TPJVersionInfo.Language property.
+
+= Language property =
+
+*Project:* Version Information Component.
+
+*Unit:* _PJVersionInfo_. 
+
+*Class:* _[TPJVersionInfo TPJVersionInfo]_
+
+{{{
+property Language: string;
+}}}
+
+== Description ==
+
+Read only property that returns a string describing the language whose code is specified by the current translation. If the language code is unknown or there is no version information in the current file then the property returns the empty string.
+
+To examine the actual language code use the _[TPJVersionInfoLanguageCode LanguageCode]_ property instead.
