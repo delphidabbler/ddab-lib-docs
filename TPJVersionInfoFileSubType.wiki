@@ -1,6 +1,6 @@
 #summary Description of the TPJVersionInfo.FileSubType property.
 
-= !FileType property =
+= !FileSubType property =
 
 *Project:* Version Information Component.
 
