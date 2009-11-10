@@ -8,7 +8,7 @@
 
 This non-visual component exposes version resource information contained in a file.
 
-The component reads information from the file's _VERSIONINFO_ resource. If the file has no such resource then the component returns no information. Use the _[TPJVersionInfoHaveInfo_ HaveInfo]_ property to find whether the component has been able to get version information from the file.
+The component reads information from the file's _VERSIONINFO_ resource. If the file has no such resource then the component returns no information. Use the _[TPJVersionInfoHaveInfo HaveInfo]_ property to find whether the component has been able to get version information from the file.
 
 The file from which resource information is gleaned is determined by the _[TPJVersionInfoFileName FileName]_ property. This is the only new design-time property added by this component. Other properties are available at run time only and are used to manipulate and read the version information. The component  supports multi-lingual version resources which have different sets of string information for each language. Use the _[TPJVersionInfoNumTranslations NumTranslations]_ and _[TPJVersionInfoCurrentTranslation CurrentTranslation]_ properties to select the required translation.
 
