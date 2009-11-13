@@ -1,6 +1,6 @@
 #summary Description of the TPJComputerInfo.Is64Bit class function.
 
-= Is64Bit class function =
+= !Is64Bit class function =
 
 *Project:* [SystemInformationUnit System Information Unit].
 
