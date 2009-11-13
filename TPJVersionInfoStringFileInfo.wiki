@@ -2,7 +2,7 @@
 
 = !StringFileInfo property =
 
-*Project:* Version Information Component.
+*Project:* [VersionInformationComponent Version Information Component].
 
 *Unit:* _PJVersionInfo_. 
 
