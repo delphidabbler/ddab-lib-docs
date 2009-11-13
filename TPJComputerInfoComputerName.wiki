@@ -1,0 +1,17 @@
+#summary Description of the TPJComputerInfo.ComputerName class function.
+
+= !ComputerName class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJComputerInfo TPJComputerInfo]_
+
+{{{
+class function ComputerName: string;
+}}}
+
+== Description ==
+
+Returns the name of the computer on which the program is executing.

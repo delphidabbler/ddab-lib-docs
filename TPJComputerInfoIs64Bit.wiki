@@ -1,0 +1,17 @@
+#summary Description of the TPJComputerInfo.Is64Bit class function.
+
+= Is64Bit class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJComputerInfo TPJComputerInfo]_
+
+{{{
+class function Is64Bit: Boolean;
+}}}
+
+== Description ==
+
+Returns True if the computer has one or more 64 bit processors or False otherwise.
