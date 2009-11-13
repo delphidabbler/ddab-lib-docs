@@ -1,0 +1,17 @@
+#summary Description of the TPJSystemFolders.System class function.
+
+= System class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJSystemFolders TPJSystemFolders]_
+
+{{{
+class function System: string;
+}}}
+
+== Description ==
+
+Returns the fully qualified path name of the System folder. This is a sub folder of the Windows folder.

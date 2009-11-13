@@ -1,0 +1,17 @@
+#summary Description of the TPJSystemFolders.SystemWow64 class function.
+
+= !SystemWow64 class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJSystemFolders TPJSystemFolders]_
+
+{{{
+class function SystemWow64: string;
+}}}
+
+== Description ==
+
+Returns the fully qualified path name of the system folder used by WOW64. This is the folder used to store shared 32 bit code on 64 bit Windows. An empty string is always returned on 32 bit systems.

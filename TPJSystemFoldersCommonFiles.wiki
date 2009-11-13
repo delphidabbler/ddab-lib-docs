@@ -1,0 +1,17 @@
+#summary Description of the TPJSystemFolders.CommonFiles class function.
+
+= !CommonFiles class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJSystemFolders TPJSystemFolders]_
+
+{{{
+class function CommonFiles: string;
+}}}
+
+== Description ==
+
+Returns the fully qualified path name of the Common Files folder. This is usually a sub-folder of the Program Files folder.

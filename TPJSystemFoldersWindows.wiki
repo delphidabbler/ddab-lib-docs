@@ -1,0 +1,17 @@
+#summary Description of the TPJSystemFolders.Windows class function.
+
+= Windows class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJSystemFolders TPJSystemFolders]_
+
+{{{
+class function Windows: string;
+}}}
+
+== Description ==
+
+Returns the fully qualified path name of the Windows folder. This is the folder where Windows was installed.
