@@ -22,34 +22,34 @@ The value of _!FileSubType_ depends on the file type identified by the _[TPJVers
 
 === Font files ===
 
-When _!FileType_ has value _VFT_FONT (a font file) then valid values of _!FileSubType_ are:
+When _!FileType_ has value `VFT_FONT` (a font file) then valid values of _!FileSubType_ are:
 
 || *Flag* || *Description* ||
-|| _VFT2_UNKNOWN_ || Font type is unknown. ||
-|| _VFT2_FONT_RASTER_ || A raster font. ||
-|| _VFT2_FONT_VECTOR_ || A vector font. ||
-|| _VFT2_FONT_TRUETYPE_ || A !TrueType font. ||
+|| `VFT2_UNKNOWN` || Font type is unknown. ||
+|| `VFT2_FONT_RASTER` || A raster font. ||
+|| `VFT2_FONT_VECTOR` || A vector font. ||
+|| `VFT2_FONT_TRUETYPE` || A !TrueType font. ||
 
 === Device Drivers ===
 
-When _!FileType_ has value _VFT_DRV_ (a device driver) then _!FileSubType_ can take one of the following values:
+When _!FileType_ has value `VFT_DRV` (a device driver) then _!FileSubType_ can take one of the following values:
 
 || *Flag* || *Description* ||
-|| _VFT2_UNKNOWN_ || Driver type is unknown. ||
-|| _VFT2_DRV_PRINTER_ || Printer driver. ||
-|| _VFT2_DRV_KEYBOARD_ || Keyboard driver. ||
-|| _VFT2_DRV_LANGUAGE_ || Language driver. ||
-|| _VFT2_DRV_DISPLAY_ || Display driver. ||
-|| _VFT2_DRV_MOUSE_ || Mouse driver. ||
-|| _VFT2_DRV_NETWORK_ || Network driver. ||
-|| _VFT2_DRV_SYSTEM_ || System driver. ||
-|| _VFT2_DRV_INSTALLABLE_ || Installable driver. ||
-|| _VFT2_DRV_SOUND_ || Sound driver. ||
-|| _VFT2_DRV_COMM_ || Communications driver ||
+|| `VFT2_UNKNOWN` || Driver type is unknown. ||
+|| `VFT2_DRV_PRINTER` || Printer driver. ||
+|| `VFT2_DRV_KEYBOARD` || Keyboard driver. ||
+|| `VFT2_DRV_LANGUAGE` || Language driver. ||
+|| `VFT2_DRV_DISPLAY` || Display driver. ||
+|| `VFT2_DRV_MOUSE` || Mouse driver. ||
+|| `VFT2_DRV_NETWORK` || Network driver. ||
+|| `VFT2_DRV_SYSTEM` || System driver. ||
+|| `VFT2_DRV_INSTALLABLE` || Installable driver. ||
+|| `VFT2_DRV_SOUND` || Sound driver. ||
+|| `VFT2_DRV_COMM` || Communications driver ||
 
 === Virtual Device Drivers ===
 
-When _!FileType_ has value _VFT_VXD_ (a virtual device driver) then _!FileSubType_ contains the virtual device identifier included in the virtual device control block.
+When _!FileType_ has value `VFT_VXD` (a virtual device driver) then _!FileSubType_ contains the virtual device identifier included in the virtual device control block.
 
 === Other Cases ===
 

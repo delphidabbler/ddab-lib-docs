@@ -23,13 +23,13 @@ File flags information is also provided by the _dwFileFlags_ member of the _VS_F
 The bit set can contain any of the following values:
 
 || *Flag* || *Description* ||
-|| _VS_FF_DEBUG_ || File contains debugging information. ||
-|| _VS_FF_INFOINFERRED_ || Some of the members in this structure may be empty or incorrect. ||
-|| _VS_FF_PATCHED_ || The file is not identical to the original file with the same version number. ||
-|| _VS_FF_PRERELEASE_ || The file is a development version. ||
-|| _VS_FF_PRIVATEBUILD_ || The file is not a standard release. If this flag is set the _!PrivateBuild_ property should contain further information. ||
-|| _VS_FF_SPECIALBUILD_ || The file is a variation of a standard release with the same version number. If this flag is set then the _!SpecialBuild_ property should contain further information. ||
+|| `VS_FF_DEBUG` || File contains debugging information. ||
+|| `VS_FF_INFOINFERRED` || Some of the members in this structure may be empty or incorrect. ||
+|| `VS_FF_PATCHED` || The file is not identical to the original file with the same version number. ||
+|| `VS_FF_PRERELEASE` || The file is a development version. ||
+|| `VS_FF_PRIVATEBUILD` || The file is not a standard release. If this flag is set the _!PrivateBuild_ property should contain further information. ||
+|| `VS_FF_SPECIALBUILD` || The file is a variation of a standard release with the same version number. If this flag is set then the _!SpecialBuild_ property should contain further information. ||
 
-The _VS_FF_XXX_ constants are defined in the Windows unit.
+The `VS_FF_XXX` constants are defined in the Windows unit.
 
 The _[TPJVersionInfoFileFlagsMask FileFlagsMask]_ property determines which of the bits in this flag are valid.
