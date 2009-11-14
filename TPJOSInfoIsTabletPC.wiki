@@ -1,6 +1,6 @@
 #summary Description of the TPJOSInfo.IsTabletPC class function.
 
-= !IsTabletPC class function =
+= IsTabletPC class function =
 
 *Project:* [SystemInformationUnit System Information Unit].
 
