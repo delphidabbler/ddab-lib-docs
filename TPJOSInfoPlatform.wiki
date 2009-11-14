@@ -1,0 +1,25 @@
+#summary Description of the TPJOSInfo.Platform class function.
+
+= Platform class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function Platform: TPJOSPlatform;
+
+type TPJOSPlatform = (ospWinNT, ospWin9x, ospWin32s);
+}}}
+
+== Description ==
+
+Returns a value from the _TPJOSPlatform_ enumeration identifying the OS platform. Possible values are:
+
+|| `ospWinNT` || Windows NT platform. ||
+|| `ospWin9x` || Windows 9x platform. ||
+|| `ospWin32s` || The Win32s platform running on another operating system. ||
+
+If the platform is not recognised an _EPJSysInfo_ exception is raised.

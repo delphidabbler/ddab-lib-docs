@@ -1,0 +1,17 @@
+#summary Description of the TPJOSInfo.IsWinNT class function.
+
+= !IsWinNT class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function IsWinNT: Boolean;
+}}}
+
+== Description ==
+
+Returns True if an NT operating system is installed (including Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 2003 Server and Windows 2008 Server), or False otherwise.

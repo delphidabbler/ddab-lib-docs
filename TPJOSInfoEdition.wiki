@@ -1,0 +1,19 @@
+#summary Description of the TPJOSInfo.Edition class function.
+
+= Edition class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function Edition: string;
+}}}
+
+== Description ==
+
+Returns the name of a specific edition of an NT platform operating system product. An empty string is returned if no specific edition information is available or if the operating system is part of the Windows 9x platform. This method does not include the main product name - this can be found by using the _[TPJOSInfoProductName ProductName]_ method.
+
+For example for Windows 2000 Professional, _Edition_ will return 'Professional' while _!ProductName_ returns 'Windows 2000'.

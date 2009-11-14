@@ -1,0 +1,17 @@
+#summary Description of the TPJOSInfo.XXX class function.
+
+= !XXX class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function ProductID: string;
+}}}
+
+== Description ==
+
+Returns the product ID of the operating system. This ID is unique to each Windows installation.

@@ -1,0 +1,19 @@
+#summary Description of the TPJOSInfo.MinorVersion class function.
+
+= !MinorVersion class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function MinorVersion: Integer;
+}}}
+
+== Description ==
+
+Returns the minor version number of the operating system.
+
+The corresponding major version number is provided by the _[TPJOSInfoMajorVersion MajorVersion]_ method.

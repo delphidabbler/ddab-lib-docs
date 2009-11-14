@@ -1,0 +1,21 @@
+#summary Description of the TPJOSInfo.Product class function.
+
+= Product class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function Product: TPJOSProduct;
+}}}
+
+== Description ==
+
+Returns a value from the _TPJOSProduct_ enumeration that identifies the operating system product. _Product_ can be thought of as the marketing name for the operating system - e.g. Windows NT, Windows Vista, Windows 98.
+
+If a product cannot be identified then then either _osUnknownWinNT_ or _osUnknownWin9x_ is returned depending on the platform. If the platform is Win32s then the product is returned as _osUnknownWin32s_. Finally, if the product cannot be identified at all, _osUnknown_ is returned.
+
+To find the string representation of the product name use the _[TPJOSInfoProductName ProductName]_ method.

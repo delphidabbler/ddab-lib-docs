@@ -1,0 +1,17 @@
+#summary Description of the TPJOSInfo.BuildNumber class function.
+
+= !BuildNumber class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function BuildNumber: Integer;
+}}}
+
+== Description ==
+
+Returns the build number of the operating system.

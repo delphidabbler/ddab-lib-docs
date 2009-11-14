@@ -1,0 +1,17 @@
+#summary Description of the TPJOSInfo.IsServer class function.
+
+= !IsServer class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function IsServer: Boolean;
+}}}
+
+== Description ==
+
+Returns true if the operating system is a server system or False if not.
