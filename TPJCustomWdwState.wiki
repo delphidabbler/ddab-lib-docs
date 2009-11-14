@@ -1,0 +1,38 @@
+#summary TPJCustomWdwState class description
+
+= TPJCustomWdwState =
+
+*Project:* [WindowStateComponents Window State Components].
+
+*Unit:* _PJWdwState_.
+
+This is the abstract case class for the _[TPJWdwState TPJWdwState]_, _[TPJRegWdwState TPJRegWdwState]_ and _[TPJUserWdwState TPJUserWdwState]_ components. It provides the common functionality and properties of the derived components. _TPJWdwState_, _TPJRegWdwState_ and _TPJUserWdwState_ simply add the methods and / or events used to store and read window state information along with any properties and events relevant to the desired storage.
+
+_TPJCustomWdwState_ can be used as a base class for further window state components that use other forms of storage. To derive a new component you must override the protected abstract methods _[TPJCustomWdwStateReadWdwState ReadWdwState]_ and _[TPJCustomWdwStateSaveWdwState SaveWdwState]_ to read and save window size, position and state information via the desired storage medium.
+
+Instances of _TPJCustomWdwState_ must not be constructed directly. 
+
+_TPJCustomWdwState_ exposes the following methods, properties and events in addition to those inherited from _TComponent_.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[TPJCustomWdwStateCreate Create]_ || Class constructor that permits only one instance of the component to be placed on a form. ||
+|| _[TPJCustomWdwStateCreateStandAlone CreateStandAlone]_ || Class constructor for use when creating components at run time. ||
+|| _[TPJCustomWdwStateReadWdwState ReadWdwState]_ || Protected abstract method called to read a window's size, position and state from storage. Derived classes must override. ||
+|| _[TPJCustomWdwStateRestore Restore]_ || Restores the size, position and state of a window. ||
+|| _[TPJCustomWdwStateSave Save]_ || Saves the size, position and state of the window. ||
+|| _[TPJCustomWdwStateSaveWdwState SaveWdwState]_ || Protected abstract method called to write a window's size, position and state to storage. Derived classes must override. ||
+
+== Properties ==
+
+|| *Property* || *Description* ||
+|| _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ || Determines whether the window's size, position and state is automatically restored on creation and stored on destruction. ||
+|| _[TPJCustomWdwStateIgnoreState IgnoreState]_ || Determines whether the window's saved state (maximised, normal or minimised) is applied on restoration. This property is deprecated - use the _[TPJCustomWdwStateOptions Options]_ property instead. ||
+|| _[TPJCustomWdwStateMinimizeDelay MinimizeDelay]_ || Sets the delay between displaying a normalised form on screen and minimising it if required. ||
+|| _[TPJCustomWdwStateOptions Options]_ || Determines how the component interprets the window display data read from storage. ||
+
+== Events ==
+
+|| *Event* || *Description* ||
+|| _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Protected event that allows user to change the window data read from storage before the window is displayed. ||
