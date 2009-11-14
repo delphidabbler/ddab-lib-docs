@@ -26,12 +26,12 @@ Returns a value from the _TPJOSProduct_ enumeration that identifies the operatin
 || `osWin2k` || Windows 2000. ||
 || `osWinXP` || Windows XP. ||
 || `osWinSvr2003` || Windows Server 2003. ||
-|| `osWinSvr2003R2` || Windows Server 2003 R2. ||
+|| `osWinSvr2003R2` || Windows Server 2003 !R2. ||
 || `osWinVista` || Windows Vista. ||
 || `osWinSvr2008` || Windows Server 2008. ||
 || `osWin7` || Windows 7. ||
-|| `osWinSvr2008R2` || Windows Server 2008 R2. ||
-|| `osWinLater` || An unknown version of Windows later than Windows 7 or Windows Server 2008 R2. ||
+|| `osWinSvr2008R2` || Windows Server 2008 !R2. ||
+|| `osWinLater` || An unknown version of Windows later than Windows 7 or Windows Server 2008 !R2. ||
 || `osUnknownWin9x` || An unknown product on the Windows 9x platform. ||
 || `osWin95` || Windows 95 or Windows 95 OSR1. ||
 || `osWin98` || Windows 98 or Windows 98 SE. ||
