@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.HasPenExtensions class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !HasPenExtensions class function =
 

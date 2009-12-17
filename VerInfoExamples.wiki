@@ -1,4 +1,8 @@
 #summary List of Version Information Component usage examples
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Version Information Component Examples =
 

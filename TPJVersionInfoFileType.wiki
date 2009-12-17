@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.FileType property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !FileType property =
 

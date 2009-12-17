@@ -1,4 +1,8 @@
 #summary HKEY Property Editor documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 =HKEY Property Editor=
 

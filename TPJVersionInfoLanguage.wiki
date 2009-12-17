@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.Language property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Language property =
 

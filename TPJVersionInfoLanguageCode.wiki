@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.LanguageCode property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !LanguageCode property =
 

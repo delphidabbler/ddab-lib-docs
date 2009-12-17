@@ -1,4 +1,8 @@
 #summary TPJSystemFolders class description
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = TPJSystemFolders =
 

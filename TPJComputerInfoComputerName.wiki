@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.ComputerName class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !ComputerName class function =
 

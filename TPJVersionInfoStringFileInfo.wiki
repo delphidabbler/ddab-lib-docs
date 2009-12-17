@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.StringFileInfo property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !StringFileInfo property =
 

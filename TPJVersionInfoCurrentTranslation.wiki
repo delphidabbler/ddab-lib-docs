@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.CurrentTranslation property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !CurrentTranslation property =
 

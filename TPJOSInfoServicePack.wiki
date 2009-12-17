@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.ServicePack class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !ServicePack class function =
 

@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.ProcessorCount class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !ProcessorCount class function =
 

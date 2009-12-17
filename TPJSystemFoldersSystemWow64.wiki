@@ -1,4 +1,8 @@
 #summary Description of the TPJSystemFolders.SystemWow64 class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !SystemWow64 class function =
 

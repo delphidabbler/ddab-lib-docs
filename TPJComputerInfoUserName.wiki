@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.UserName class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !UserName class function =
 

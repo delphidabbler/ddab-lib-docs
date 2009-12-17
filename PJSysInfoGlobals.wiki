@@ -1,4 +1,8 @@
 #summary PJSysInfoUnit global variables.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 Project: [SystemInformationUnit System Information Unit]
 

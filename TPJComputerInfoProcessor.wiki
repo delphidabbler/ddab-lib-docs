@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.Processor class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Processor class function =
 

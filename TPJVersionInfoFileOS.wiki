@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.FileOSproperty.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = FileOS property =
 

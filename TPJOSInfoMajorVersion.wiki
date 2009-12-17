@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.MajorVersion class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !MajorVersion class function =
 

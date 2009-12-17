@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.NumTranslations property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !NumTranslations property =
 

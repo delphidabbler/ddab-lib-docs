@@ -1,4 +1,8 @@
 #summary Version Information Component Example 4.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Example 4: Using string information properties =
 

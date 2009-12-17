@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.XXX class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = ProductID class function =
 

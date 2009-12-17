@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.IsWin9x class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !IsWin9x class function =
 

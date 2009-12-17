@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.CharSetCode property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !CharSetCode property =
 

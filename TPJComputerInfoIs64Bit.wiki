@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.Is64Bit class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !Is64Bit class function =
 

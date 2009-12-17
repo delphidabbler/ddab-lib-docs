@@ -1,4 +1,8 @@
 #summary TPJVersionInfo class description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = TPJVersionInfo =
 

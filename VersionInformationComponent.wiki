@@ -1,4 +1,8 @@
 #summary Version Information Component documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Version Information Component =
 

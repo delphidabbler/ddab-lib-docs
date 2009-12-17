@@ -1,4 +1,8 @@
 #summary Description of the TPJComputerInfo.MACAddress class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = MACAddress class function =
 

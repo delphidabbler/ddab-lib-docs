@@ -1,4 +1,8 @@
 #summary Description of the TPJSystemFolders.ProgramFiles class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !ProgramFiles class function =
 

@@ -1,4 +1,8 @@
 #summary Version Information Component Example 3.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Example 3: Using translation, character set and language properties =
 

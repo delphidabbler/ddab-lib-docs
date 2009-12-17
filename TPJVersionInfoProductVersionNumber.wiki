@@ -1,4 +1,8 @@
 #summary Description of the TPJVersionInfo.ProductVersionNumber property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !ProductVersionNumber property =
 

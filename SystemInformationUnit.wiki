@@ -1,4 +1,8 @@
 #summary System Information Unit documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = System Information Unit =
 

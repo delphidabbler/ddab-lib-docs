@@ -1,4 +1,8 @@
 #summary Description of the TPJSystemFolders.System class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = System class function =
 

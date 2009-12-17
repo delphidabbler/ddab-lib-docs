@@ -1,4 +1,8 @@
 #summary Window State Components documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Window State Components =
 

@@ -1,4 +1,8 @@
 #summary Version Information Component Example 2.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Example 2: Using the _!FixedFileInfo_ property =
 

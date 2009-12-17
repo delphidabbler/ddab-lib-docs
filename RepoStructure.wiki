@@ -1,4 +1,8 @@
 #summary Structure of Delphi Library Source Repository
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Source Code Repository Structure =
 

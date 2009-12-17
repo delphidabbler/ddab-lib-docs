@@ -1,4 +1,8 @@
 #summary TPJComputerInfo class description
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = TPJComputerInfo =
 

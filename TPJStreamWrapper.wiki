@@ -1,4 +1,8 @@
 #summary TPJStreamWrapper class description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = TPJStreamWrapper =
 

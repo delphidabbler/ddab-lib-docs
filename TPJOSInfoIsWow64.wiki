@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.IsWow64 class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = !IsWow64 class function =
 

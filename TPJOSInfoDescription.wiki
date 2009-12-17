@@ -1,4 +1,8 @@
 #summary Description of the TPJOSInfo.Description class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = Description class function =
 

@@ -1,4 +1,8 @@
 #summary TPJOSInfo class description
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
 
 = TPJOSInfo =
 
