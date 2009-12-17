@@ -1,0 +1,53 @@
+#summary TPJAboutBoxDlg class description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJAboutBoxDlg =
+
+*Project:* [AboutBoxComponent About Box Component].
+
+*Unit:* _PJAbout_.
+
+This non-visual component encapsulates an About Box in a non-visual component. It is displayed by calling its _[TPJAboutBoxDlgExecute Execute]_ method. It has string properties to display five different pieces of information in the about box. They are: _[TPJAboutBoxDlgCopyright Copyright]_, _[TPJAboutBoxDlgNotes DlgNotes]_, _[TPJAboutBoxDlgProgramName ProgramName]_, _[TPJAboutBoxDlgTitle Title]_ and _[TPJAboutBoxDlgVersion Version]_.
+
+Alternatively, the about box can display information from a _VERSIONINFO_ resource included in a program file. This is achieved by setting the _[TPJAboutBoxDlgVersionInfo VersionInfo]_ property to reference a _[TPJVersionInfo TPJVersionInfo]_ component which extracts the required version information from an executable file.
+
+The application's icon is displayed in the dialog box. This is the icon specified by the _Icon_ property of the _TApplication_ object. If no icon has been specified for the application then default Delphi icon is used.
+
+Other properties are used to position of the about box on the screen and control the position and appearance of the dialog's _Close_ button.
+
+The _[TPJAboutBoxDlgHelpContext HelpContext]_ property allows Windows Help to be displayed for the dialog box when the F1 key is pressed.
+
+== Methods ==
+
+|| * Method* || *Description* ||
+|| _[TPJAboutBoxDlgExecute Execute]_ || Displays the about box. ||
+
+== Properties ==
+
+|| *Property* || *Description* ||
+|| _[TPJAboutBoxDlgAutoDetectGlyphs AutoDetectGlyphs]_ || Determines whether display of glyphs depends on ButtonGlyph property or depends on the default compiler settings. ||
+|| _[TPJAboutBoxDlgButtonGlyph ButtonGlyph]_ || Determines which, if any, glyph is displayed on the dialog's close button. ||
+|| _[TPJAboutBoxDlgButtonHeight ButtonHeight]_ || Specifies the height of the dialog's close button. ||
+|| _[TPJAboutBoxDlgButtonKind ButtonKind]_ || Determines the text displayed on the dialog's close button. ||
+|| _[TPJAboutBoxDlgButtonPlacing ButtonPlacing]_ || Determines the horizontal alignment of the dialog's close button. ||
+|| _[TPJAboutBoxDlgButtonWidth ButtonWidth]_ || Specifies the width of the dialog's close button. ||
+|| _[TPJAboutBoxDlgCentreDlg CentreDlg]_ || Determines whether or not the dialog box is centred on screen. ||
+|| _[TPJAboutBoxDlgCopyright Copyright]_ || The copyright message displayed in the about box. ||
+|| _[TPJAboutBoxDlgDlgLeft DlgLeft]_ || Specifies the location of the left hand side of the about box. ||
+|| _[TPJAboutBoxDlgDlgTop DlgTop]_ || Specifies the location of the top of the about box. ||
+|| _[TPJAboutBoxDlgHelpContext HelpContext]_ || Stores the help topic number accessed when F1 is pressed. A zero value is ignored. ||
+|| _[TPJAboutBoxDlgNotes Notes]_ || Notes displayed in the dialog box. ||
+|| _[TPJAboutBoxDlgPosition Position]_ || Determines whether the about box is positioned relative to screen, desktop or owner form. ||
+|| _[TPJAboutBoxDlgProgramName ProgramName]_ || Name of the program displayed in the about box. ||
+|| _[TPJAboutBoxDlgTitle Title]_ || Text displayed in the caption of the dialog box window. ||
+|| _[TPJAboutBoxDlgUseOSStdFonts UseOSStdFonts]_ || Specifies whether the dialog box should use the system's default font. ||
+|| _[TPJAboutBoxDlgUseOwnerAsParent UseOwnerAsParent]_ || Determines if the dialog box should to be forced to be a child window of any owning control. ||
+|| _[TPJAboutBoxDlgVersion Version]_ || The version number information to be displayed in the dialog box. ||
+|| _[TPJAboutBoxDlgVersionInfo VersionInfo]_ || Reference to any _[TPJVersionInfo TPJVersionInfo]_ component that provides the text displayed in the about box. ||
+
+== Events ==
+
+_TPJAboutBoxDlg_ defines no events.
