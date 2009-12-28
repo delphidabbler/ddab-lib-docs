@@ -31,3 +31,5 @@ The About box contains one button which is used to close the dialog box. The but
 || `abkCancel` || 'Cancel' ||
 
 The default value is `abkOK`.
+
+The button captions are stored as string resources and can be translated.
