@@ -20,7 +20,7 @@ property ProgramName: string;
 
 The _!ProgramName_ property defines the program name to be displayed on the first line of the about box.
 
-If _!ProgramName_ is set to the empty string then the title of the application as specified by the _[TPJAboutBoxDlgTitle Title]_ property of the _Application_ object is displayed. If you have not specified an application title then the name of the project (without the `.dpr` extension) is used. If _!ProgramName_ is set to any non-empty string then that string is displayed.
+If _!ProgramName_ is set to the empty string then the title of the application as specified by the _Title_ property of the _Application_ object is displayed. If you have not specified an application title then the name of the project (without the `.dpr` extension) is used. If _!ProgramName_ is set to any non-empty string then that string is displayed.
 
 _!ProgramName_ defaults to the empty string.
 

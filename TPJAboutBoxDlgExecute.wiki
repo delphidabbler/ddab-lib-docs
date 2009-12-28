@@ -18,4 +18,4 @@ procedure Execute;
 
 == Description ==
 
-This method displays the About Box dialog and returns when the user closes dialog.
+This method displays the About Box dialog and returns when the user closes it.

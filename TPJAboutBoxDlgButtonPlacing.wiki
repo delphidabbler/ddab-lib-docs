@@ -20,7 +20,7 @@ type TPJAboutBtnPlacing = (abpLeft, abpCentre, abpRight);
 
 == Description ==
 
-The About box contains one button which is used to close the dialog box. The button is positioned at the bottom of the dialog box, but can be aligned left, centre or right. The _!ButtonPlacing_ property is used to determine which position the button occupies. Valid values for the property and their meaings are as follows:
+The About box contains one button which is used to close the dialog box. The button is positioned at the bottom of the dialog box, but can be aligned left, centre or right. The _!ButtonPlacing_ property is used to determine which position the button occupies. Valid values for the property and their meanings are as follows:
 
 || *Value* || *Meaning* ||
 || `abpLeft` || Display the button at the bottom left of the dialog box. ||

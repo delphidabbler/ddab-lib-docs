@@ -25,13 +25,13 @@ To enable this to happen a _[TPJVersionInfo TPJVersionInfo]_ component must be p
 The following table shows which version information string values are used, along with the properties whose values they replace:
 
 || *VERSIONINFO string* || Replaces property ||
-|| ProductName || ProgramName ||
-|| ProductVersion || Version ||
-|| LegalCopyright || Copyright ||
-|| Comments || Notes ||
+|| !ProductName || _[TPJAboutBoxDlgProgramName ProgramName]_ ||
+|| !ProductVersion || _[TPJAboutBoxDlgVersion Version]_ ||
+|| !LegalCopyright || _[TPJAboutBoxDlgCopyright Copyright]_ ||
+|| Comments || _[TPJAboutBoxDlgNotes Notes]_ ||
 
 If any of these string values are not present in the version information nothing is displayed in their place. 
 
 If the _!VersionInfo_ property is set to nil then the information displayed in the dialog box is taken from the string properties listed in the table above.
 
-This property has no effect on the the _[TPJAboutBoxDlgTitle Title]_ property.
+This property has no effect on the _[TPJAboutBoxDlgTitle Title]_ property.
