@@ -1,0 +1,27 @@
+#summary Description of the TPJAboutBoxDlg.UseOSStdFonts property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !UseOSStdFonts property =
+
+*Project:* [AboutBoxComponent About Box Component].
+
+*Unit:* _PJAbout_. 
+
+*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+
+{{{
+property UseOSStdFonts: Boolean;
+}}}
+
+== Description ==
+
+When true this property forces the dialog box to use the operating system's deafult font. When false (the default) the font the dialog box was designed with is used.
+
+The property is designed to enable the specific default fonts used on Windows XP and later to be used.
+
+*Warning:* On some operating systems the font is larger than the design font and careful note should be made to ensure text is not truncated in the dialog box.
+
+The default value is False.

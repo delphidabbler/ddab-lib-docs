@@ -1,0 +1,29 @@
+#summary Description of the TPJAboutBoxDlg.AutoDetectGlyphs property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !AutoDetectGlyphs property =
+
+*Project:* [AboutBoxComponent About Box Component].
+
+*Unit:* _PJAbout_. 
+
+*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+
+{{{
+property AutoDetectGlyphs: Boolean;
+}}}
+
+== Description ==
+
+*DEPRECATED*
+
+The About box contains one button which is used to close the dialog box. This button can display a glyph, which is determined by the _[TPJAboutBoxDlgButtonGlyph ButtonGlyph]_ property. _!AutoDetectGlyphs_ determines whether or not the glyph is displayed.
+
+When _!AutoDetectGlyphs_ is False glyphs are displayed according to the _!ButtonGlyph_ property but when the.property is false _!ButtonGlyph_ is ignored and no glyph is displayed on the button.
+
+_!AutoDetectGlyphs_ is *deprecated*. It was only of real use when the component was used with Delphi 1, when a different default behaviour was expected to that with Delphi 2. To inhibit display of glyphs you should set _!AutoDetectGlyphs_ to False and set the _ButtonGlyph_ property to abgNone (the default).
+
+The default value is False.

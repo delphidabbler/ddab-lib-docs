@@ -1,0 +1,27 @@
+#summary Description of the TPJAboutBoxDlg.CentreDlg property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CentreDlg property =
+
+*Project:* [AboutBoxComponent About Box Component].
+
+*Unit:* _PJAbout_. 
+
+*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+
+{{{
+property CentreDlg: Boolean;
+}}}
+
+== Description ==
+
+This property determines whether the About dialog box appears centred or not.
+
+When _!CentreDlg_ is set to True then the dialog box is centred over the screen, the desktop work area or the owner control, accoring to the value of the _[TPJAboutBoxDlgPosition Position]_ property. The _[TPJAboutBoxDlgDlgLeft DlgLeft]_ and _[TPJAboutBoxDlgDlgTop DlgTop]_ properties are ignored in this case. The position of the dialog box may be adjusted to ensure it can all be seen.
+
+When _!CentreDlg_ is set to False the _!DlgLeft_ and _!DlgTop_ properties determine the position of the dialog box.
+
+The default value is True.

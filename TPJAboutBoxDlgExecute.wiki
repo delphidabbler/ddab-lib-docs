@@ -1,0 +1,21 @@
+#summary Description of the TPJAboutBoxDlg.Execute method.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Execute method =
+
+*Project:* [AboutBoxComponent About Box Component].
+
+*Unit:* _PJAbout_. 
+
+*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+
+{{{
+procedure Execute;
+}}}
+
+== Description ==
+
+This method displays the About Box dialog and returns when the user closes dialog.
