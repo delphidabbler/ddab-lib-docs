@@ -1,0 +1,24 @@
+#summary Drop Files Components documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Drop Files Components =
+
+This unit provides three components that support drag and drop from Windows Explorer along with subsidiary components that can filter dropped files. The components are:
+
+|| *Class* || *Description* ||
+|| _[TPJDropFiles TPJDropFiles]_ || Container control that catches files dragged and dropped onto its client area or the client area of child controls. ||
+|| _[TPFormDropFiles TPFormDropFiles]_ || Non-visual component that catches files dragged and dropped from Explorer onto the form that contains the component. ||
+|| _[TPJCtrlDropFiles TPJCtrlDropFiles]_ || Non-visual component that catches files dragged and dropped from Explorer onto an associated control. ||
+|| _[TPJExtFileFilter TPJExtFileFilter]_ || File filter component that filters files according to their extension. ||
+|| _[TPJWildCardFileFilter TPJWildCardFileFilter]_ || File filter component that filters files according to a DOS-style wild card. ||
+|| _[TPJFileFilter TPJFileFilter]_ || An abstract base class for file filter components. ||
+
+The unit also contains support code and helper classes that are not designed for [public use.
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/dropfiles Drop Files Components Web Page].
