@@ -32,7 +32,7 @@ _TPJCtrlDropFiles_ defines no new methods.
 || _[TPJCtrlDropFilesIsFolder IsFolder]_ || Tells whether each of the dropped files is a folder or a file. ||
 || _[TPJCtrlDropFilesManagedControl ManagedControl]_ || References the managed control. ||
 || _Name_ || Inherited from _TComponent_. See Delphi help for details. ||
-|| _[TPJCtrlDropFilesOptions Options]_ || Determines how the dropped files are processed and which files are stored in the Files property. ||
+|| _[TPJCtrlDropFilesOptions Options]_ || Determines how the dropped files are processed and which files are stored in the _[TPJCtrlDropFilesFiles Files]_ property. ||
 || _[TPJCtrlDropFilesPassThrough PassThrough]_ || Causes drop files messages to be passed through to the owning form. ||
 || _Tag_ || Inherited from _TComponent_. See Delphi help for details. ||
 
