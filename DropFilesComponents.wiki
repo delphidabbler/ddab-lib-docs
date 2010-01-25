@@ -36,8 +36,7 @@ The editors are:
 
 || *Editor class* || *Description* ||
 || _TPJExtFileFilterExtPE_ || Property editor for the _[TPJExtFileFilterExtensions Extensions]_ property of the _[TPJExtFileFilter TPJExtFileFilter]_ component. This editor displays a dialog box where extensions can be added, removed and saved in the correct format. ||
-|| _TPJDropFilesCE_ || Component editor that causes an event handler for the _!OnDropFiles_ events of the drop file components to be opened in the designer when the components are double-clicked. The default action without this component editor is to open the rarely used _!OnBeforeDrop_ event handler,
-    which is not very useful. ||
+|| _TPJDropFilesCE_ || Component editor that causes an event handler for the _!OnDropFiles_ events of the drop file components to be opened in the designer when the components are double-clicked. The default action without this component editor is to open the rarely used _!OnBeforeDrop_ event handler, which is not very useful. ||
 
 *Links:*
 
