@@ -20,7 +20,7 @@ The _[TPJCustomWdwStateOptions Options]_ property and the _[TPJCustomWdwStateOnR
 
 Application defined data can be read from and written to the registry by handling the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ and _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_ events that are triggered when the component reads and writes its data.
 
-The root and sub key to be used in the registry are specified using the _[TPJRegWdwStateRootkey Rootkey]_ and _[TPJRegWdwStateSubkey Subkey]_ properties respectively. Alternatively the _[TPJRegWdwStateOnGetRegData OnGetRegData]_ event can be handled and used to set the root key and sub key to use.
+The root and sub key to be used in the registry are specified using the _[TPJRegWdwStateRootKey RootKey]_ and _[TPJRegWdwStateSubKey SubKey]_ properties respectively. Alternatively the _[TPJRegWdwStateOnGetRegData OnGetRegData]_ event can be handled and used to set the root key and sub key to use.
 
 It is only possible to have one instance of a _TPJRegWdwState_ component on any one form. Neither can a _TPJRegWdwState_ component be dropped onto a form that already contains either a _[TPJWdwState TPJWdwState]_ or a _[TPJUserWdwState TPJUserWdwState]_ component.
 
