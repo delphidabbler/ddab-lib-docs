@@ -1,4 +1,4 @@
-#summary Description of the TPJFormDropFiles.Style property
+#summary Description of the TPJExtFileFilter.Style property
 <wiki:comment>
 $Rev$
 $Date$
@@ -10,7 +10,7 @@ $Date$
 
 *Unit:* _PJDropFiles_.
 
-*Class:* _[TPJFormDropFiles TPJFormDropFiles]_
+*Class:* _[TPJExtFileFilter TPJExtFileFilter]_
 
 {{{
 property Style: TPJExtFileFilterStyle;
