@@ -4,7 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= OnReadWdwState event =
+= !OnReadWdwState event =
 
 *Project:* [WindowStateComponents Window State Components].
 

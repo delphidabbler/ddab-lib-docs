@@ -1,10 +1,10 @@
-#summary Description of the TPJCustomWdwState.AutoSave property.
+#summary Description of the TPJCustomWdwState.AutoSaveRestore property.
 <wiki:comment>
 $Rev$
 $Date$
 </wiki:comment>
 
-= !AutoSave property =
+= !AutoSaveRestore property =
 
 *Project:* [WindowStateComponents Window State Components].
 
@@ -13,7 +13,7 @@ $Date$
 *Class:* _[TPJCustomWdwState TPJCustomWdwState]_
 
 {{{
-property AutoSave: Boolean;
+property AutoSaveRestore: Boolean;
 }}}
 
 == Description ==
