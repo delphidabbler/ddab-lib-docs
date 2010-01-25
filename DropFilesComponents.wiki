@@ -16,7 +16,13 @@ This unit provides three components that support drag and drop from Windows Expl
 || _[TPJWildCardFileFilter TPJWildCardFileFilter]_ || File filter component that filters files according to a DOS-style wild card. ||
 || _[TPJFileFilter TPJFileFilter]_ || An abstract base class for file filter components. ||
 
-The unit also contains support code and helper classes that are not designed for [public use.
+Other documented types are:
+|| *Type* || *Description* ||
+|| _[TPJDropFilesOptionsSet TPJDropFilesOption and TPJDropFilesOptions]_ || Enumerated type and set that define the possible values of the _Options_ property of the drop files components. ||
+|| _[TPJDroppedFileFilter TPJDroppedFileFilter]_ || Type of _!OnFileFilter_ events of drop files components. ||
+|| _[TPJExtFileFilterStyleEnum TPJExtFileFilterStyle]_ || Enumeration representing the kind of filtering performed by the _[TPJExtFileFilterStyle TPJExtFileFilter.Style]_ property. ||
+
+The unit also contains undocumented support code and helper classes that are not designed for public use.
 
 *Links:*
 
