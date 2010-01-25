@@ -27,7 +27,7 @@ _TPJWdwState_ exposes the following methods, properties and events, some of whic
 == Methods ==
 
 || *Method* || *Description* ||
-|| _[TPJWdwStateCreate Create]_ || Class constructor that permits only one instance of the component to be placed on a form. ||
+|| _[TPJCustomWdwStateCreate Create]_ || Class constructor that permits only one instance of the component to be placed on a form. ||
 || _[TPJCustomWdwStateCreateStandAlone CreateStandAlone]_ || Class constructor for use when creating components at run time. ||
 || _[TPJWdwStateReadWdwState ReadWdwState]_ || Overridden method that reads a window's size, position and state from an ini file. ||
 || _[TPJWdwStateRestore Restore]_ || Restores the size, position and state of a window from an ini file. ||

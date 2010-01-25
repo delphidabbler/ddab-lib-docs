@@ -29,7 +29,7 @@ _TPJRegWdwState_ exposes the following methods, properties and events, some of w
 == Methods ==
 
 || *Method* || *Description* ||
-|| _[TPJRegWdwStateCreate Create]_ || Class constructor that permits only one instance of the component to be placed on a form. ||
+|| _[TPJCustomWdwStateCreate Create]_ || Class constructor that permits only one instance of the component to be placed on a form. ||
 || _[TPJCustomWdwStateCreateStandAlone CreateStandAlone]_ || Class constructor for use when creating components at run time. ||
 || _[TPJRegWdwStateReadWdwState ReadWdwState]_ || Overridden method that reads a window's size, position and state from the registry. ||
 || _[TPJRegWdwStateRestore Restore]_ || Restores the size, position and state of a window from the registry. ||
