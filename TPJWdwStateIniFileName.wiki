@@ -4,7 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= IniFileName property =
+= !IniFileName property =
 
 *Project:* [WindowStateComponents Window State Components].
 

@@ -12,7 +12,7 @@ $Date$
 
 This non-visual component enables the size, position and state of the form on which it is placed to be saved to and read from an ini file.
 
-The _[PJWdwStateSave Save]_ method saves the window information to a section of an ini file and the _[TPJWdwStateRestore Restore]_ method reads information in and sets the owning form window's size, position and state.
+The _[TPJWdwStateSave Save]_ method saves the window information to a section of an ini file and the _[TPJWdwStateRestore Restore]_ method reads information in and sets the owning form window's size, position and state.
 
 The component's _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _Save_ and _Restore_ methods. 
 
