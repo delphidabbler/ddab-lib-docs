@@ -23,7 +23,7 @@ type
 
 == Description ==
 
-This record type collects together the window size, position and state data that must be saved to and read from persistent storage by the _[TPJUserWdwState OnReadData OnReadData]_ and _[TPJUserWdwState OnSaveData OnSaveData]_ events of the _[TPJUserWdwState TPJUserWdwState]_ component.
+This record type collects together the window size, position and state data that must be saved to and read from persistent storage by the _[TPJUserWdwStateOnReadData OnReadData]_ and _[TPJUserWdwStateOnSaveData OnSaveData]_ events of the _[TPJUserWdwState TPJUserWdwState]_ component.
 
 The fields are as follows:
 
