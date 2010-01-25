@@ -1,0 +1,30 @@
+#summary Description of the TPJWdwState.OnGetIniData method.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnGetIniData event =
+
+*Project:* [WindowStateComponents Window State Components].
+
+*Unit:* _PJWdwState_. 
+
+*Class:* _[TPJWdwState TPJWdwState]_
+
+{{{
+type
+  TPJWdwStateGetIniData = procedure(
+    var IniFilename, Section: string
+  ) of object;
+
+property OnGetIniData: TPJWdwStateGetIniData;
+}}}
+
+== Description ==
+
+_!OnGetIniData_ allows user to change the name of the ini file and the section within it where window information is stored.
+
+The event is triggered just before the ini file is read when restoring a window and just before the ini file is written when saving window information. The name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded.  The values passed to the event handler are the same as those of the _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
+
+The purpose of the event is to enable the _[TPJWdwStateAutoSaveRestore AutoSaveRestore]_ property to be used without setting the _[TPJWdwStateIniFileName IniFileName]_ and _[TPJWdwStateSection Section]_ properties at design time - i.e. handling the event allows either or both of the default _[TPJWdwStateIniFileName IniFileName]_ and _[TPJWdwStateSection Section]_ names to be overridden.

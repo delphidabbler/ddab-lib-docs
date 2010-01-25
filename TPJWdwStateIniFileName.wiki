@@ -1,0 +1,25 @@
+#summary Description of the TPJWdwState.IniFileName property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= IniFileName property =
+
+*Project:* [WindowStateComponents Window State Components].
+
+*Unit:* _PJWdwState_. 
+
+*Class:* _[TPJWdwState TPJWdwState]_
+
+{{{
+property IniFileName: string;
+}}}
+
+== Description ==
+
+This property specifies the name of the ini file that will be used to record the window's size, position and state. The file is accessed by both the _[TPJWdwStateRestore Restore]_ and _[TPJWdwStateSave Save]_ methods.
+
+The section to use in the ini file is set by the _[TPJWdwStateSection Section]_ property.
+
+If the property is set to the empty string then the file name used has the same path and file name as the application except that the `'.exe'` extension is replaced by `'.ini'`. The empty string is the default value.
