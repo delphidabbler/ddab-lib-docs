@@ -13,7 +13,6 @@ $Date$
 *Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
 
 {{{
-{{{
 property Count: Integer;
 }}}
 

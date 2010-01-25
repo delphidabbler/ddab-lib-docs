@@ -33,7 +33,7 @@ The main use for _TPJDropFiles_ is when you need to detect file drops on non-win
 || _[TPJDropFilesFileName FileName]_ || The name of the file dropped on the control. ||
 || _[TPJDropFilesFiles Files]_ || The names of the most recent files dropped on the control. ||
 || _[TPJDropFilesFilter Filter]_ || References a file filter component used to filter the names of dropped files. ||
-|| _[ForegroundOnDrop ForegroundOnDrop]_ || Causes the owning window to be brought to front when files are dropped. ||
+|| _[TPJDropFilesForegroundOnDrop ForegroundOnDrop]_ || Causes the owning window to be brought to front when files are dropped. ||
 || _Height_ || Inherited from _TCustomControl_. See Delphi help for details. ||
 || _!HelpContext_ || Inherited from _TCustomControl_. See Delphi help for details. ||
 || _!HelpKeyword_ || Inherited from _TCustomControl_. See Delphi help for details. ||
