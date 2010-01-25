@@ -18,7 +18,7 @@ property Style: TPJExtFileFilterStyle;
 
 == Description ==
 
-This property determines which kinds of file names have the extension filter applied. Possible values are given by the _[TPJExtFileFilterStyle TPJExtFileFilterStyle]_ enumeration.
+This property determines which kinds of file names have the extension filter applied. Possible values are given by the _[TPJExtFileFilterStyleEnum TPJExtFileFilterStyle]_ enumeration.
 
 The default value is `fsFilterFilesOnly`.
 
