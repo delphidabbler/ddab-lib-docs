@@ -1,0 +1,26 @@
+#summary Extended String Property Editor documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+=Extended String Property Editor=
+
+This property editor works round two limitations of the standard Delphi string property editor:
+
+  # You can't enter multi-line strings with embedded CR/LF characters via the object inspector. Such strings can only be assigned run-time.
+  # The standard property editor only accepts strings up to 255 characters long. Once again, longer strings must be assigned at run-time.
+
+The enhanced property editor works with all *string* or _TCaption_ properties. It adds an ellipsis button to the right hand side of the data entry area in the object inspector. Clicking this button displays a dialog box in which the property's value can be entered. Pressing return in the dialog box starts a new line. There is no practical limit to the length of strings that can be entered.
+
+Clicking OK (or pressing Ctrl+Return) closes the dialog and assigns the entered text to the property. Any newlines (CR/LF) will be displayed in the object inspector as pairs of vertical bars or empty squares, depending on the version of Delphi being used.
+
+The editor is resizable. Word wrapping can be switched on or off. Both the word-wrapping and dialog box size and position are persistent. Load and Save buttons are provided in the dialog box to enable the property's value to be loaded from, or saved to a file. 
+
+The property editor class is named _TPJStringPE_ and is defined in the _PJStringPE_ unit. _TPJStringPE_ defines no new methods or properties over and above those defined by its parent class, _TPropertyEditor_.
+
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/stringpe Extended String Property Editor Web Page].

@@ -1,0 +1,35 @@
+#summary Description of the TPJRegWdwState.RootKey property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !RootKey property =
+
+*Project:* [WindowStateComponents Window State Components].
+
+*Unit:* _PJWdwState_. 
+
+*Class:* _[TPJRegWdwState TPJRegWdwState]_
+
+{{{
+property RootKey: HKEY;
+}}}
+
+== Description ==
+
+This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[TPJRegWdwStateSubKey SubKey]_ property. The user is responsible for setting _!RootKey_ to a valid _HKEY_ value. Valid values are:
+
+{{{
+HKEY_CLASSES_ROOT     = $80000000;
+HKEY_CURRENT_USER     = $80000001;
+HKEY_LOCAL_MACHINE    = $80000002;
+HKEY_USERS            = $80000003;
+HKEY_PERFORMANCE_DATA = $80000004;
+HKEY_CURRENT_CONFIG   = $80000005;
+HKEY_DYN_DATA         = $80000006;
+}}}
+
+These values are defined in the Windows unit.
+
+The property defaults to `HKEY_CURRENT_USER`.
