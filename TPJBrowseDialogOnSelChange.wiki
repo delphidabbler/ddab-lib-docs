@@ -23,7 +23,7 @@ property OnSelChange: TPJBrowseSelChangeEvent;
 
 == Description ==
 
-_!OnSelChange_ is triggered whenever the selection in the dialog box changes. This can occur before the dialog is displayed and before the _[TPJBrowseDialogOnIntialise OnIntialise]_ event fires.  Write a handler to perform any required processing when the selected folder changes and to update the status text and state of the dialog's _OK_ button. The _!OnSelChange_ event is immediately followed by the _[TPJBrowseDialogOnSelChangeEx OnSelChangeEx]_ event. It is recommended that only one of these events is handled.
+_!OnSelChange_ is triggered whenever the selection in the dialog box changes. This can occur before the dialog is displayed and before the _[TPJBrowseDialogOnInitialise OnInitialise]_ event fires.  Write a handler to perform any required processing when the selected folder changes and to update the status text and state of the dialog's _OK_ button. The _!OnSelChange_ event is immediately followed by the _[TPJBrowseDialogOnSelChangeEx OnSelChangeEx]_ event. It is recommended that only one of these events is handled.
 
 The event handler's parameters are as follows:
 

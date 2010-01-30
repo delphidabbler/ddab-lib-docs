@@ -23,7 +23,7 @@ property OnSelChangeEx: TPJBrowseSelChangeEventEx;
 
 == Description ==
 
-This event is triggered whenever the selected folder in the dialog box changes. It provides access to the PIDL of the folder that has been selected. The event immediately follows the _[TPJBrowseDialogOnSelChange OnSelChange]_ event and can occur before the dialog is displayed and before the _[TPJBrowseDialogOnIntialise OnIntialise]_ event is triggered.  Write a handler to perform any required processing of the PIDL when the selected folder changes and to update the status text and state of the dialog's _OK_ button. It is recommended that only one of the _[TPJBrowseDialogOnSelChange OnSelChange]_ and _!OnSelChangeEx_ events is handled.
+This event is triggered whenever the selected folder in the dialog box changes. It provides access to the PIDL of the folder that has been selected. The event immediately follows the _[TPJBrowseDialogOnSelChange OnSelChange]_ event and can occur before the dialog is displayed and before the _[TPJBrowseDialogOnInitialise OnInitialise]_ event is triggered.  Write a handler to perform any required processing of the PIDL when the selected folder changes and to update the status text and state of the dialog's _OK_ button. It is recommended that only one of the _[TPJBrowseDialogOnSelChange OnSelChange]_ and _!OnSelChangeEx_ events is handled.
 
 The event handler's parameters are as follows:
 
