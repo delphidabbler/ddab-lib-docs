@@ -17,7 +17,7 @@ This unit provides components, classes and routines to assist in working with sh
 
 There is also a class - _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_ that enumerates the shell's special folder identifiers. This class implements the _[IPJSpecialFolderEnum IPJSpecialFolderEnum]_ interface. Functions that provide information about the special folder identifiers and symbolic constants are also provided.
 
-_PJShellFolders_ also provides [PJShellFoldersFunctions two functions] to provide information about the folders described by PIDLs.
+_PJShellFolders_ also provides [PJShellFoldersFunctions functions] to provide information about the folders described by PIDLs.
 
 == PJShellFoldersDsgn ==
 
