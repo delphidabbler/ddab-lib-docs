@@ -33,6 +33,4 @@ _TPJSpecialFolderEnum_ defines no properties.
 
 == Events ==
 
-|| *Event* || *Description* ||
-
 _TPJSpecialFolderEnum_ defines no events.
