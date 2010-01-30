@@ -12,7 +12,7 @@ $Date$
 
 Windows defines integer identifiers to represent the shell's special folders. _TPJSpecialFolderEnum_ is a class that enumerates the values of all the special folder identifiers.
 
-The key method is the _[Next Next]_ method which returns a sequence of identifiers each time it called. The _[Init Init]_ methods re-intialises the enumeration and the _[AtEnd AtEnd]_ methods returns true when all the identifiers have been returned. The number of identifiers in the enumeration are given by the Count method.
+The key method is the _[TPJSpecialFolderEnumNext Next]_ method which returns a sequence of identifiers each time it called. The _[TPJSpecialFolderEnumInit Init]_ methods re-intialises the enumeration and the _[TPJSpecialFolderEnumAtEnd AtEnd]_ methods returns true when all the identifiers have been returned. The number of identifiers in the enumeration are given by the _[TPJSpecialFolderEnumCount Count]_ method.
 
 _TPJSpecialFolderEnum_ implements the _[IPJSpecialFolderEnum IPJSpecialFolderEnum]_ interface.
 
@@ -21,11 +21,11 @@ An [PJShellFoldersExample example] of using _TPJSpecialFolderEnum_ is provided.
 == Methods ==
 
 || *Method* || *Description* ||
-|| _[AtEnd AtEnd]_ || Tests whether the end of the enumeration has been reached. ||
-|| _[Count Count]_ || Returns the number of special folder identifiers in the enumeration. ||
-|| _[Create Create]_ || Constructs and intialises a _TPJSpecialFolderEnum_ object. ||
-|| _[Init Init]_ || Reinitialises the enumeration. ||
-|| _[Next Next]_ || Returns the next identifier in the enumeration. ||
+|| _[TPJSpecialFolderEnumAtEnd AtEnd]_ || Tests whether the end of the enumeration has been reached. ||
+|| _[TPJSpecialFolderEnumCount Count]_ || Returns the number of special folder identifiers in the enumeration. ||
+|| _[TPJSpecialFolderEnumCreate Create]_ || Constructs and intialises a _TPJSpecialFolderEnum_ object. ||
+|| _[TPJSpecialFolderEnumInit Init]_ || Reinitialises the enumeration. ||
+|| _[TPJSpecialFolderEnumNext Next]_ || Returns the next identifier in the enumeration. ||
 
 == Properties ==
 
