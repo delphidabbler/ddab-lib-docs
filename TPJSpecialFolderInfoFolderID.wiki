@@ -1,0 +1,25 @@
+#summary Description of the TPJSpecialFolderInfo.FolderID property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !FolderID property =
+
+*Project:* [ShellFoldersUnit Shell Folders Unit].
+
+*Unit:* _PJShellFolders_. 
+
+*Class:* _[TPJSpecialFolderInfo TPJSpecialFolderInfo]_
+
+{{{
+property FolderID: Integer;
+}}}
+
+== Description ==
+
+Setting _!FolderID_ to an appropriate `CSIDL_` value gets information about a special folder. When the property is set the information about the folder is stored in the component's run time read only properties.
+
+The default value of _!FolderID_ is `CSIDL_DESKTOP` - the desktop.
+
+If _!FormatID_ is set to an unknown value an exception will be raised. Use the _[PJShellFoldersFunctions#IsValidSpecialFolderId IsValidSpecialFolderId]_ function to check a folder ID for validity.
