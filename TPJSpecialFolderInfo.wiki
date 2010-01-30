@@ -16,7 +16,7 @@ To get information about a special folder set the _[TPJSpecialFolderInfoFolderID
 
 == Supporting functions ==
 
-Valid values for _[TPJSpecialFolderInfoFormatID FormatID]_ can be obtained using the _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_ class. Supplying invalid values to _[TPJSpecialFolderInfoFormatID FormatID]_ will cause an exception to be raised. Use the _[PJShellFoldersFunctions#IsValidSpecialFolderId IsValidSpecialFolderId]_ function to check validity. _[PJShellFoldersFunctions#SpecialFolderIdToStr SpecialFolderIdToStr]_ returns the identifier of a valid folder ID.
+Valid values for _[TPJSpecialFolderInfoFolderID FolderID]_ can be obtained using the _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_ class. Supplying invalid values to _[TPJSpecialFolderInfoFolderID FolderID]_ will cause an exception to be raised. Use the _[PJShellFoldersFunctions#IsValidSpecialFolderId IsValidSpecialFolderId]_ function to check validity. _[PJShellFoldersFunctions#SpecialFolderIdToStr SpecialFolderIdToStr]_ returns the identifier of a valid folder ID.
 
 == Methods ==
 

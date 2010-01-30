@@ -20,4 +20,4 @@ property IsSupported: Boolean;
 
 Use _!IsSupported_ to determine if the current special folder is supported by the operating system.
 
-This property returns true if the special folder specified by _[TPJSpecialFolderInfoFolderID FolderID]_ is supported on the operating system and false if it is not. When _[TPJSpecialFolderInfoIsSupported IsSupported]_ is false the component's other properties have zero values: _[TPJSpecialFolderInfoIsVirtual IsVirtual]_ is false and _[TPJSpecialFolderInfoDisplayName DisplayName]_ and _[TPJSpecialFolderInfoPath Path]_ are empty strings.
+This property returns true if the special folder specified by _[TPJSpecialFolderInfoFolderID FolderID]_ is supported on the operating system and false if it is not. When _!IsSupported_ is false the component's other properties have zero values: _[TPJSpecialFolderInfoIsVirtual IsVirtual]_ is false and _[TPJSpecialFolderInfoDisplayName DisplayName]_ and _[TPJSpecialFolderInfoPath Path]_ are empty strings.

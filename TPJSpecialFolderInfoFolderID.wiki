@@ -4,7 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= !FolderID property =
+= FolderID property =
 
 *Project:* [ShellFoldersUnit Shell Folders Unit].
 
@@ -18,8 +18,8 @@ property FolderID: Integer;
 
 == Description ==
 
-Setting _!FolderID_ to an appropriate `CSIDL_` value gets information about a special folder. When the property is set the information about the folder is stored in the component's run time read only properties.
+Setting _FolderID_ to an appropriate `CSIDL_` value gets information about a special folder. When the property is set the information about the folder is stored in the component's run time read only properties.
 
-The default value of _!FolderID_ is `CSIDL_DESKTOP` - the desktop.
+The default value of _FolderID_ is `CSIDL_DESKTOP` - the desktop.
 
-If _!FormatID_ is set to an unknown value an exception will be raised. Use the _[PJShellFoldersFunctions#IsValidSpecialFolderId IsValidSpecialFolderId]_ function to check a folder ID for validity.
+If _FolderID_ is set to an unknown value an exception will be raised. Use the _[PJShellFoldersFunctions#IsValidSpecialFolderId IsValidSpecialFolderId]_ function to check a folder ID for validity.
