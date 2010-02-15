@@ -15,6 +15,7 @@ The Library currently contains the following projects.
 || [DropFilesComponents Drop Files Components] || Components that enable applications to support drag and drop from Windows Explorer. ||
 || [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long *string* and _TCaption_ properties to be edited. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited using symbolic constant names. ||
+|| [MD5Unit MD5 Message Digest Unit] || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
 || [ShellFoldersUnit Shell Folders Unit] || Components, classes and routines to assist in working with shell folders. Includes a "Browse for Folder" dialog box. ||
 || [StreamExtensionClasses Stream Extension Classes] || Classes that provide a means to wrap _TStream_ objects along with implementation of the _IStream_ interface.  ||
 || [SystemInformationUnit System Information Unit] || Static classes that get information about the user's computer and operating system.  ||

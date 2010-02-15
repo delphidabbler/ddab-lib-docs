@@ -1,0 +1,48 @@
+#summary MD5 Mesasge Digest Unit documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= MD5 Message Digest Unit =
+
+This unit contains an implementation of the MD5 message digest algorithm. It is implemented as a Delphi Class named _[TPJMD5 TPJMD5]_.
+
+The code is developed from scratch based on the algorithm presented in [http://www.faqs.org/rfcs/rfc1321.html RFC 1321]. Portions of the code are translated from the reference C code supplied in the RFC. Note though that the code is not a literal translation into Pascal from the reference C code.
+
+_The algorithm and reference code are copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All rights reserved._
+
+*The code is currently in beta and the interface is liable to change*
+
+No stable version of the project has not yet been released, so there neither a zip file available on the Downloads page nor a release tag in the repository. You can grab `PJMD5.pas` from the repository trunk, but be warned this is development code and may not be stable. If you grab code that won't compile choose an earlier revision and try again.
+
+_DUnit_ tests for the code are available to help you test the code's accuracy - and the code is in a state where it can pass the tests.
+
+== Rationale ==
+
+So why write this code?
+
+Well, I've been searching for a more up-to-date implementation of the MD5 message digest in Delphi that meets these criteria:
+
+  1. It has no dependency on C .obj files or DLLs - i.e. I wanted pure Pascal code.
+  2. It is open source with a license compatible with the MPL because I want to use it in an MPLd application of mine, so GPL code is ruled out.
+  3. It will compile and work with the Unicode Delphi Compilers.
+  4. It is  object oriented.
+  5. It makes it easy to get an MD5 digest from all sorts of data without messing around converting it and playing with contexts etc.
+
+The version I'd been using passed the first 2 tests but failed the last three. And it is no longer being updated. And it took me quite some time to persuade it to work in the Unicode world of Delphi 2010.
+
+Seems easier to start again somehow. So here's my attempt.
+
+== Mini Tutorial ==
+
+This is a quick overview of how to use the class:
+
+  * Construct an instance of _TPJMD5_.
+  * Call one of the overloaded _Process_ methods to update the digest from the supplied data. Check the source code to see what data types are supported.
+  * Optionally add some further data.
+  * Alternatively read and process a file using the _!ProcessFile_ method.
+  * Call the _Finalize_ method to complete the calculation.
+  * Get the digest from the _Digest_ or _!DigestAsString_ properties. Note that calling one of these properties will finalize the digest for you, so you can skip the Finalize call if you want.
+  * If you want to get the MD5 digest of more data call the _Reset_ method before using one of the _Process_ methods again. You will get an exception if you don't.
+  * When reading from streams or files the input is read into a buffer 64Kb chunks. Set _!ReadBufferSize_ to change the default size of the input buffer.
