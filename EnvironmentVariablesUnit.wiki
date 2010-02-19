@@ -1,0 +1,14 @@
+#summary Environment Variables Unit documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+ 
+= Environment Variables Unit =
+
+This project contains the _PJEnvVars_ unit that implements the _[TPJEnvVars TPJEnvVars]_ component along with [PJEnvVarsRoutines supporting routines].
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/envvars Environment Variables Unit Web Page].

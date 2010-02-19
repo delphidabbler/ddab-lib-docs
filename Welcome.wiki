@@ -13,6 +13,7 @@ The Library currently contains the following projects.
 || *Project* || *Description* ||
 || [AboutBoxComponent About Box Component] || Non-visual component that encapsulates an About Box. Set properties or link to a [VersionInformationComponent Version Information Component] to customise the about box content. ||
 || [DropFilesComponents Drop Files Components] || Components that enable applications to support drag and drop from Windows Explorer. ||
+|| [EnvironmentVariablesUnit Environment Variables Unit] || Unot that provides a component and various routines for manipulating environment variables. ||
 || [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long *string* and _TCaption_ properties to be edited. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited using symbolic constant names. ||
 || [MD5Unit MD5 Message Digest Unit] || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
