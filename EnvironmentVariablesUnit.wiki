@@ -6,7 +6,13 @@ $Date$
  
 = Environment Variables Unit =
 
-This project contains the _PJEnvVars_ unit that implements the _[TPJEnvVars TPJEnvVars]_ component along with [PJEnvVarsRoutines supporting routines].
+This project contains the _PJEnvVars_ unit.
+
+The unit contains a [PJEnvVarsRoutines set of routines] that can manipulate a process' environment block and the variables contained in it.
+
+It also defines a component, _[TPJEnvVars TPJEnvVars]_,  that encapsulates a process' environment variables and provides an easy way to change their values, create then and delete them.
+
+To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit.
 
 *Links:*
 
