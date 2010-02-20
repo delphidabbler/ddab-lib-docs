@@ -1,0 +1,93 @@
+#summary Environment Variables Unit routines.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Environment Variables Routines=
+
+*Project:* EnvironmentVariablesUnit Environment Variables Unit].
+
+*Unit:* _PJEnvVars_.
+
+The following public routines are defined in _PJEnvVars_:
+
+  * [#GetEnvVarValue GetEnvVarValue]
+  * [#SetEnvVarValue SetEnvVarValue]
+  * [#DeleteEnvVar DeleteEnvVar]
+  * [#GetAllEnvVars GetAllEnvVars]
+  * [#ExpandEnvVars ExpandEnvVars]
+  * [#CreateEnvBlock CreateEnvBlock]
+
+== !GetEnvVarValue ==
+
+{{{
+function GetEnvVarValue(const VarName: string): string;
+}}}
+
+Returns the value for the given environment variable. The empty string is returned if the named variable does not exist.
+
+== !SetEnvVarValue ==
+
+{{{
+function SetEnvVarValue(const VarName, VarValue: string): Integer;
+}}}
+
+Sets the environment variable named by _!VarName_ to _!VarVlaue_. If there is no usch environment variable it is created. If _!VarValue_ is empty the environment variable is deleted. 
+
+Returns 0 on success or a Windows error code on error. The most likely cause of error is that the environment block is full and there is no room for the new value or to create a new variable. A description of any error can be found by passing the error code to !SysUtils.!SysErrorMessage.
+
+== !DeleteEnvVar ==
+
+{{{
+function DeleteEnvVar(const VarName: string): Integer;
+}}}
+
+Deletes the environment variable specified by _!VarName_. If the variable does not exist _!DeleteEnvVar_ does nothing.
+
+If _!DeleteEnvVar_ completes successfuly then 0 is returned. If an error occurs then a non-zero Windows error code is returned. A description of any error can be found by passing the error code to !SysUtils.!SysErrorMessage.
+
+
+== !GetAllEnvVars ==
+
+{{{
+function GetAllEnvVars(const Vars: TStrings): Integer;
+}}}
+
+Copies all the environment variables available to the current process in to the given string list. Each item placed in the string list represents one environment variable in the form NAME=VALUE. Any previous contents of the string list are lost. 
+
+The size of the environment block in _characters_ is returned.
+
+It is permitted to pass nil as the parameter to _!GetAllEnvVars_. If this is done then details of the environment variables are not provided, but the size of the environment block is returned. Therefore this function can also be used to determine the size of the environment block.
+
+*WARNING:* The size of the environment block is returned in characters, not bytes. Therefore, you should multiply the required buffer size by !SizeOf(Char) to determine the number of bytes required.
+
+== !ExpandEnvVars ==
+
+{{{
+function ExpandEnvVars(const Str: string): string;
+}}}
+
+_!ExpandEnvVars_ replaces any environment variables embedded in string _Str_ with their values and returns the modified string.
+
+Environment variables should be delimited by % characters thus: %ENVVAR%. If any environment variables are not recognised their names are left unmodified. The case of the environment variable name is not significant: i.e. %ENVVAR% is equivalent to %envvar%.
+
+== !CreateEnvBlock ==
+
+{{{
+function CreateEnvBlock(const NewEnv: TStrings;
+  const IncludeCurrent: Boolean; const Buffer: Pointer;
+  const BufSize: Integer): Integer;
+}}}
+
+_!CreateEnvBlock_ creates a new environment block that can be used to pass to another process. 
+
+The new environment block is stored in the memory pointed to by _Buffer_, which is taken to be at least _!BufSize_ _characters_. The actual size of the environment block is returned by _!CreateEnvBlock_. If the buffer provided is nil or is too small then no block is created and the return value is the required buffer size in characters.
+
+The _!NewEnv_ and _!IncludeCurrent_ parameters determine what is included in the new environment block. If the _!NewEnv_ string list is not nil then it should contain a list of environment variables in the form NAME=VALUE. The new environment block will contain these values. If _!IncludeCurrent_ is true then the new environment block will also include a copy of the current process's environment block.
+
+The usual way to use _!CreateEnvBlock_ is to call it once with a nil buffer to get the required buffer size in characters, allocate the buffer and then call _!CreateEnvBlock_ again, this time passing the actual buffer and its size.
+
+*WARNING:* _!CreateEnvBlock_ deals with buffer sizes in characters, not bytes, which is not the same thing on Unicode Delphis. When allocating buffers in bytes (e.g. with _!GetMem_) you must multiply the required size returned from _!CreateEnvBlock_ by !SizeOf(Char). Alternatively, use a routine such as _!StrAlloc_ that automatically takes account of the character size.
+
+The format of the environment block stored in _Buffer_ is a #0 separated list of environment variables in NAME=VALUE form, terminated by #0#0.

@@ -1,0 +1,35 @@
+#summary TPJEnvVarsclass description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJEnvVars =
+
+*Project:* [EnvironmentVariablesUnit Environment Variables Unit].
+
+*Unit:* _TPJEnvVars_.
+
+This component provides access to the environment variables in the current process' environment block. Environment variables can be read, created, updated or deleted. The names of all available environment variables can also be enumerated.
+
+Only one instance of a _TPJEnvVars_ component can be placed on any form. An attempt to place further instances on a form causes an exception to be raised.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[TPJEnvVarsCreate Create]_ || Class constructor. Permits only one instance to be placed on any form. ||
+|| _[TPJEnvVarsDeleteVar DeleteVar]_ || Deletes an environment variable. ||
+|| _[TPJEnvVarsEnumNames EnumNames]_ || Enumerates all environment variables. ||
+
+
+== Properties ==
+
+_TPJEnvVars_ defines the following properties in addition to those inherited from _TComponent_.
+
+|| *Property* || *Description* ||
+|| _[TPJEnvVarsCount Count]_ || Returns the number of environment variables. ||
+|| _[TPJEnvVarsValues Values]_ || Provides read / write access to environment variables. ||
+
+== Events ==
+
+_TPJEnvVars_ defines no events.
