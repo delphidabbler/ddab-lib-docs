@@ -24,6 +24,6 @@ To get the value of an environment variable treat the _Values_ property as an ar
 
 Values of existing environment variables can be set by assigning string values to the property, indexed by the required environment variable name. For example `Values['Foo'] := 'Bar'` sets the environment variable `FOO` to have value `'Bar'`. If no environment variable with the given name exists, a new variable is created and set to the required value. Setting an environment variable to the empty string deletes it.
 
-If an error occurs when setting an environment variable, for example if the environment space is full, a _[EPJEnvVar EPJEnvVar]_ exception is raised.
+If an error occurs when setting an environment variable, for example if the environment space is full, a _[EPJEnvVars EPJEnvVars]_ exception is raised.
 
 The names of all current environment variables can be found using the _[TPJEnvVarsEnumNames EnumNames]_ method.
