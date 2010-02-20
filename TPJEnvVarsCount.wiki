@@ -1,0 +1,21 @@
+#summary Description of the TPJEnvVars.Count property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Count property =
+
+*Project:* [EnvironmentVariablesUnit Environment Variables Unit].
+
+*Unit:* _PJEnvVars_. 
+
+*Class:* _[TPJEnvVars TPJEnvVars]_
+
+{{{
+property Count: Integer;
+}}}
+
+== Description ==
+
+The _Count_ property returns the number of environment variables in the current process' environment.
