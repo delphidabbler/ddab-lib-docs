@@ -1,3 +1,4 @@
+
 #summary Environment Variables Unit documentation.
 <wiki:comment>
 $Rev$
@@ -12,7 +13,7 @@ The unit contains a [PJEnvVarsRoutines set of routines] that can manipulate a pr
 
 It also defines a component, _[TPJEnvVars TPJEnvVars]_,  that encapsulates a process' environment variables and provides an easy way to change their values, create then and delete them.
 
-To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit.
+To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit. Demo projects that implement the examples are available from the [http://www.delphidabbler.com/url/doodlings-repo Delphi Doodlings Repository] - see the `EnvVarsDemo` directory.
 
 *Links:*
 
