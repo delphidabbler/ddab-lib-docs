@@ -1,4 +1,4 @@
-#summary MD5 Mesasge Digest Unit documentation.
+#summary MD5 Message Digest Unit documentation.
 <wiki:comment>
 $Rev$
 $Date$
