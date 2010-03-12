@@ -25,7 +25,7 @@ So why write this code?
 Well, I've been searching for a more up-to-date implementation of the MD5 message digest in Delphi that meets these criteria:
 
   # No dependency on C .obj files or DLLs - i.e. I want pure Pascal code.
-  # Open source with a license compatible with the MPL because I want to use it in an MPLd application of mine, so GPL code is ruled out.
+  # Open source with a license compatible with the MPL because I want to use it in an MPLd application of mine, so GPL-only code is ruled out.
   # Compiles and works with the Unicode Delphi Compilers.
   # Object oriented.
   # Easy to get an MD5 digest from all sorts of data without messing around converting it and playing with contexts etc.
@@ -52,4 +52,86 @@ This is a quick overview of how to use the class:
 
   * If you want to get the MD5 digest of more data call the _Reset_ method before using one of the _Process_ methods again. You will get an exception if you don't.
 
-  * When reading from streams or files the input is read into a buffer 64Kb chunks. Set _!ReadBufferSize_ to change the default size of the input buffer.
+  * When reading from streams or files the input is read into a buffer in 64Kb chunks by default. Set _!ReadBufferSize_ to change the default size of the input buffer.
+
+Here's an example of getting the MD5 of all the data in a _TStream_. We're assuming that some data has been written to the stream. 
+
+{{{
+var
+  Stm: TStream;
+  MD5: TPJMD5;
+  MD5Str: string;
+begin
+  // put some data in the stream
+  Stm.Position := 0;
+  MD5 := TPJMD5.Create;
+  try
+    MD5.Process(Stm);
+    MD5Str := MD5.DigestAsString;
+    // do something with MD5Str
+  finally
+    MD5.Free;
+  end;
+end;
+}}}
+
+=== New Static Helper Methods ===
+
+Since revision 442 there is also the option to call one of the overload static _Calculate_ methods. This has the advantage that you don't need to construct and free an instance of the class. There are some limitations - for example, you can't change the buffer size for file and stream processing.
+
+Each _Calculate_ method returns a binary message digest, not the string version. However, changes to the _TPJMD5Digest_ type mean that you can implicitly cast a _TPJMD5Digest_ value to a string. _TPJMD5Digest_ is now implemented as a record instead of an array of bytes and has operator overloads that permit it to be cast to and from _TBytes_ and _string_ types. 
+
+The following example shows how to get the MD5 of a stream with _Calculate_:
+
+{{{
+var
+  Stm: TStream;
+  MD5: TPJMD5;
+  Digest: TPJMD5Digest;
+  MD5Str: string;
+begin
+  // put some data in the stream
+  Stm.Position := 0;
+  Digest := TPJMD5.Calculate(Stm);
+  // want digest as string: just assign it to one
+  MD5Str := Digest;
+  // do something with MD5Str
+end;
+}}}
+
+Getting the MD5 hash as a string could have been even shorter:
+
+{{{
+  MD5Str := TPJMD5.Calculate(Stm);
+}}}
+
+=== Comparing Digests ===
+
+The new implementation of _TPJMD5Digest_ supports comparison for equality and inequality. So to check if one digest is the same as another (or is not the same), you simply compare them:
+
+{{{
+var
+  D1, D2: TPJMD5Digest;
+begin
+  D1 := TPJMD5.Calculate(AnsiString('foo'));
+  D2 := TPJMD5.Calculate(UnicodeString('foo'));
+  if D1 = D2 then ShowMessage('No way!');
+  if D1 <> D2 then ShowMessage('Just as I thought');
+end;
+}}}
+
+What is more if you've save one hash as a string and want to compare to another digest, operator overloading lets you do this: you can compare strings and _TBytes_ arrays with _TPJMD5Digest_ records. The following example shows this for strings:
+
+{{{
+var
+  D: TPJMD5Digest;
+  MD5Str: string;
+begin
+  D := TPJMD5.Calculate(AnsiString('a'));
+  MD5Str := '0cc175b9c0f1b6a831c399e269772661';
+  if D = MD5Str then ShowMessage('Passed RFC test #1');
+  if D <> MD5Str then ShowMessage('Failed!');
+end;
+}}}
+
+And, yes I know that an `else` would have done instead of an inequality test above - just trying to show you that the `<>` operator overload works!
