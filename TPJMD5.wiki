@@ -36,7 +36,7 @@ The following properties are also defined:
 
 || *Property* || *Description* ||
 || _Digest_ || Read only property that provides access to the MD5 hash as a _[TPJMD5Digest TPJMD5Digest]_ record. Reading this property finalizes the hash so that no more data can be added to it. _Digest_ calls _Finalize_ internally and sets the _Finalized_ property to True. ||
-|| _ReadBufferSize_ || This property provides the current size of the buffer used when reading data from files or streams. Set the property to change the buffer size. The default buffer size is 64Kb. ||
+|| _!ReadBufferSize_ || This property provides the current size of the buffer used when reading data from files or streams. Set the property to change the buffer size. The default buffer size is 64Kb. ||
 || _Finalized_ || Read only property that indicates if the MD5 hash has been finalized. Once finalized no more data can be added to the hash and attempts to do so cause an _EPJMD5_ exception to be raised. Reading the _Digest_ property or calling _Finalize_ finalizes the hash. Call _Reset_ to clear the _Finalized_ property. ||
 
 
