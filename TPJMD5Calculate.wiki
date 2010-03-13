@@ -67,9 +67,7 @@ Each of these methods creates a digest Unicode string _S_. Before processing the
 class function Calculate(const Stream: TStream): TPJMD5Digest; overload;
 }}}
 
-Calculates a digest from the bytes from the current position to the end _Stream_, writing `Stream.Size - Stream.Position` bytes. To read the whole stream ensure that stream is rewound to the start, i.e. set the stream's _Position_ property to 0. The stream is read in chunks of the default buffer size, as given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_  constant.
-
-The stream is read into an internal buffer before adding the data to the hash. The buffer's size cannot be changed - it's size is that given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_  constant.
+Calculates a digest from the bytes from the current position to the end _Stream_, writing `Stream.Size - Stream.Position` bytes. To read the whole stream ensure that stream is rewound to the start, i.e. set the stream's _Position_ property to 0. The stream is read in chunks of the default buffer size, as given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_  constant. This buffer size cannot be changed.
 
 If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method. 
 
