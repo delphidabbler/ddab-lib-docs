@@ -1,0 +1,25 @@
+#summary Description of the TPJMD5.CalculateFile method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CalculateFile method =
+
+*Project:* [MD5Unit MD5 Message Digest Unit].
+
+*Unit:* _PJMD5_.
+
+*Class:* _[TPJMD5 TPJMD5]_
+
+{{{
+class function CalculateFile(const FileName: TFileName): TPJMD5Digest;
+}}}
+
+== Description == 
+
+This class method is very like the _[TPJMD5Calculate Calculate]_ methods in that it provides a useful shortcut when you want to get the MD5 hash of a single file. Just call this method and pass the path to the required file in the _!FileName_ parameter and read the function result to get the required digest.
+
+Again, like _[TPJMD5Calculate Calculate]_, there is no need to create an instance of _[TPJMD5 TPJMD5]_.
+
+The disadvantage of this method over the similar _[TPJMD5ProcessFile ProcessFile]_ is that there is no way to change the default size of the buffer used to read the file. The buffer size is that given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_  constant.

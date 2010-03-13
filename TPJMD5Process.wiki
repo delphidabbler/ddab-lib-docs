@@ -1,0 +1,152 @@
+#summary Description of the TPJMD5.Process methods.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Process methods =
+
+*Project:* [MD5Unit MD5 Message Digest Unit].
+
+*Unit:* _PJMD5_.
+
+*Class:* _[TPJMD5 TPJMD5]_
+
+== Description == 
+
+There a several different overloaded versions of the _Process_ method. Each method adds the data passed to it via its parameters to the current MD5 hash.
+
+The advantages of these methods over the similar _[TPJMD5Calculate Calculate]_ methods are:
+
+  # _Process_ methods can be called more than once: for example they can be called in a loop adding data to the hash on each occasion.
+  # The methods enable data of different types to be added to the same hash.
+  # In the case of the _TStream_ variant, the size of the buffer to use to read the stream can be changed from the default before calling the method.
+
+The disadvantage of _Process_ is that an instance of _[TPJMD5 TPJMD5]_ must be created before the method can be used.
+
+=== The Methods ===
+
+==== TBytes versions ====
+
+{{{
+procedure Process(const X: TBytes; const Size: Cardinal); overload;
+procedure Process(const X: TBytes); overload;
+}}}
+
+These methods add bytes from a _TBytes_ array to the current hash. The first version adds _Size_ bytes from the beginning of byte array _X_. Here _X_ must have at least _Size_ elements. The second version adds all the content of byte array _X_.
+
+==== Untyped Buffer vesion ====
+
+{{{
+procedure Process(const Buf; const Size: Cardinal); overload;
+}}}
+
+This method adds _Size_ bytes from untyped buffer _Buf_ to the current hash. _Buf_ must contain at least _Size_ bytes.
+
+==== Ansi string version ====
+
+{{{
+procedure Process(const S: AnsiString); overload;
+}}}
+
+Adds the ordinal value of all the characters from ANSI string _S_ to the current hash.
+
+==== Unicode string versions ====
+
+{{{
+procedure Process(const S: UnicodeString; const Encoding: TEncoding); overload;
+procedure Process(const S: UnicodeString); overload;
+}}}
+
+Each of these methods adds data from a Unicode string _S_ to the current hash. Before adding to the hash the string is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion, while the second version uses the _TEncoding.Default_ encoding.
+
+==== TStream version ====
+
+{{{
+procedure Process(const Stream: TStream); overload;
+}}}
+
+Adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position to the end of the stream, writing `Stream.Size - Stream.Position` bytes. To read the whole stream ensure that stream is rewound to the start, i.e. set the stream's _Position_ property to 0.
+
+The stream is read into an internal buffer before adding the data to the hash. The buffer's size can be changed by assigning the required size to the _!ReadBufferSize_ property. Find the current size of the buffer by reading the property.
+
+=== Examples ===
+
+Suppose you are about to transmit some data made up of a title as a UTF-8 encoded Unicode string followed by data taken from a stream.
+
+Assume that the _TStream_ object is referenced by _Stm_ and the string is recorded in the _!UnicodeString_ _Str_. Here's the code that gets the MD5 hash of the title string and the stream content. It stores the digest as a string in _!DigestStr_.
+
+{{{
+var
+  MD5: TPJMD5;
+  Str: string;
+  Stm: TStream;
+  DigestStr: string;
+begin
+  // ...
+  // make sure Stm and Str contain something useful
+  // ...
+  MD5 := TPJMD5.Create;
+  try
+    MD5.Process(Str, TEncoding.UTF8);
+    Stm.Position := 0;        // ensure we read stream from start
+    MD5.Process(Stm);
+    MD5.Finalize;             // optional
+    DigestStr := MD5.Digest;  // uses implicit casting of TPJMD5Digest
+    // ...
+    // do something with DigestStr
+    // ...
+  finally
+    MD5.Free;
+  end;
+end;
+}}}
+
+As the next example. suppose we have a class and we want an MD5 checksum of its public data, exposed via properties. Here's an extract from the class:
+
+{{{
+type
+  TMyClass = class
+  strict private
+    fName: string;
+    fAge: Integer;
+    fData: TBytes;
+  public
+    // ...
+    property Name: string read fName;
+    property Age: Integer read fAge;
+    property Data: TBytes read fData;
+    // ...
+  end;
+}}}
+
+We're using Delphi 2009 or later, so strings and Unicode. We'll use UTF-8 to encode them. Here's the code to get the MD5 hash.
+
+{{{
+var
+  Digest: TPJMD5Digest;
+  MyObj: TMyClass;
+  MD5: TPJMD5;
+begin
+  MyObj := TMyClass.Create;
+  try
+    // ...
+    // do some stuff to initialise MyObj
+    // ...
+    MD5 := TPJMD5.Create;
+    try
+      MD5.Process(MyObj.Name, TEncoding.UTF8);
+      MD5.Process(MyObj.Age, SizeOf(MyObj.Age));
+      MD5.Process(MyObj.Data);
+      Digest := MD5.Digest;
+      // ...
+      // do something with digest
+      // ...
+    finally
+      MD5.Free;
+    end;
+  finally
+    MyObj.Free;
+  end;
+end;
+}}}
