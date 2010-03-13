@@ -48,7 +48,7 @@ This is a quick overview of how to use the class:
 
   * Call the _Finalize_ method to complete the calculation.
 
-  * Get the digest from the _Digest_ or _!DigestAsString_ properties. Note that calling one of these properties will finalize the digest for you, so you can skip the Finalize call if you want.
+  * Get the digest from the _Digest_ property. Note that calling this propertY will finalize the digest for you, so you can skip the _Finalize_ call if you want. Assign _Digest_ to a string or read it in a string context to get the string representation of the digest.
 
   * If you want to get the MD5 digest of more data call the _Reset_ method before using one of the _Process_ methods again. You will get an exception if you don't.
 
@@ -67,7 +67,7 @@ begin
   MD5 := TPJMD5.Create;
   try
     MD5.Process(Stm);
-    MD5Str := MD5.DigestAsString;
+    MD5Str := MD5.Digest;   // Digest casts automatically to string
     // do something with MD5Str
   finally
     MD5.Free;
