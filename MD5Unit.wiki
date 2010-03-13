@@ -6,7 +6,7 @@ $Date$
 
 = MD5 Message Digest Unit =
 
-This unit contains an implementation of the MD5 message digest algorithm. It is implemented as a Delphi Class named _[TPJMD5 TPJMD5]_.
+This unit contains an implementation of the MD5 message digest algorithm. It is implemented as a Delphi Class named _[TPJMD5 TPJMD5]_. The MD5 digest itself is encapsulated in a record named _[TPJMD5Digest TPJMD5Digest]_ that enabled the digest to be cast to and from a string or byte array or compared for equality with another digest.
 
 The code is developed from scratch based on the algorithm presented in [http://www.faqs.org/rfcs/rfc1321.html RFC 1321]. Portions of the code are translated from the reference C code supplied in the RFC. Note though that the code is not a literal translation into Pascal from the reference C code.
 
@@ -135,3 +135,8 @@ end;
 }}}
 
 And, yes I know that an `else` would have done instead of an inequality test above - just trying to show you that the `<>` operator overload works!
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/md5 MD5 Message Digest Unit Web Page].
