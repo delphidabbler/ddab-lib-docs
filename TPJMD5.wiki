@@ -1,0 +1,45 @@
+#summary TPJMD5 class description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJMD5 =
+
+*Project:* [MD5Unit MD5 Message Digest Unit].
+
+*Unit:* _PJMD5_.
+
+This class implements the MD5 message digest algorithm. It produces a message digest, a 16 byte hash, from a sequence of octets (bytes).
+
+_TPJMD5_ has been designed to make it easy to create MD5 hashes of different types of data. It does this by providing overloaded _[TPJMD5Process Process]_ and _[TPJMD5Calculate Calculate]_ methods that can each accept several different data types. See the following table for details.
+
+The resulting hash is exposed as a record of type _[TPJMD5Digest TPJMD5Digest]_ that contains the hash in binary form. The record overloads various operators to make it easy to obtain a string representation of the hash and to access the hash itself either byte by byte or as a sequence of long words.
+
+== Methods ==
+
+_TPJMD5_ provides the following methods:
+
+|| *Method* || *Description* ||
+|| _Create_ || Class constructor. Call this to create and set up the object. _Create_ does not need to be called if you a just going to use one of the static _[TPJMD5Calculate Calculate]_ or _[TPJMD5CalculateFile CalculateFile]_ methods. ||
+|| _[TPJMD5Calculate Calculate]_ || There are numerous overloaded versions of _Calculate_ for several different data types. These are class (static) methods that create an MD5 hash directly from data passed too the methods. Each method returns the resulting hash as a _[TPJMD5Digest TPJMD5Digest]_ record. ||
+|| _[TPJMD5CalculateFile CalculateFile]_ || This class method is similar to the _[TPJMD5Calculate Calculate]_ methods except that it calculates and returns the MD5 hash of a contents of a specified file. ||
+|| _[TPJMD5Process Process]_ || Each of the numerous overloaded _Process_ methods adds the data passed to it to the current MD5 hash. _Process_ enables data to be added to the hash in chunks rather than all at once as is the case with _[TPJMD5Calculate Calculate]_. The methods also enable data of different types to be combined in the same hash. ||
+|| _[TPJMD5ProcessFile ProcessFile]_ || This method is similar to the _[TPJMD5Process Process]_ method except that it adds the content of a file to the current MD5 hash. ||
+|| _Reset_ || Resets and discards the current MD5 hash and discards any digest that has been created. Sets the _Finalized_ property to False. Must be called before creating a new hash after the _Digest_ property has been read or _Finalize_ has been called. ||
+|| _Finalize_ || Finalizes the current MD5 hash. Any attempt to add more data to the hash after calling this methods raises an exception. _Finalize_ is called internally when the _Digest_ property is read. _Finalize_ sets the _Finalized_ property to True. ||
+
+
+== Properties ==
+
+The following properties are also defined:
+
+|| *Property* || *Description* ||
+|| _Digest_ || Read only property that provides access to the MD5 hash as a _[TPJMD5Digest TPJMD5Digest]_ record. Reading this property finalizes the hash so that no more data can be added to it. _Digest_ calls _Finalize_ internally and sets the _Finalized_ property to True. ||
+|| _ReadBufferSize_ || This property provides the current size of the buffer used when reading data from files or streams. Set the property to change the buffer size. The default buffer size is 64Kb. ||
+|| _Finalized_ || Read only property that indicates if the MD5 hash has been finalized. Once finalized no more data can be added to the hash and attempts to do so cause an _EPJMD5_ exception to be raised. Reading the _Digest_ property or calling _Finalize_ finalizes the hash. Call _Reset_ to clear the _Finalized_ property. ||
+
+
+== Events ==
+
+_TPJMD5_ defines no events.
