@@ -1,0 +1,142 @@
+#summary TPJMD5Digest record description.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJMD5Digest =
+
+*Project:* [MD5Unit MD5 Message Digest Unit].
+
+*Unit:* _PJMD5_.
+
+This record encapsulates a MD5 digest produced by hashing an octet stream using the MD5 message digest algorithm. Digests are produced by the _[TPJMD5 TPJMD5]_ class.
+
+The record enables the digest to be cast to and from strings and _TBytes_ byte arrays. It also permits digests to be tested for equality. In addition the digest data can be accessed either as an array of bytes or as longwords.
+
+== Fields ==
+
+_TPJMD5Digest_ is a variant record which provides three different ways of accessing the digest data:
+
+|| *Field* || *Description* ||
+|| `Bytes` || This array provides access to each of the 16 bytes of the digest. The array is indexed from 0 to 15. ||
+|| `LongWords` || This array provides access the each of the 4 longwords that make up the digest. This array is indexed from 0 to 3. ||
+|| `A`, `B`, `C` and `D` || Each of these !LongWord values provides an alternate means of accessing the digest data as longwords. `A` and `LongWords[0]`, `B` and `LongWords[1]`, `C` and `LongWords[2]` and `D` and `LongWords[3]` are equivalent to each other. ||
+
+== Property ==
+
+_TPJMD5Digest_ has a single (default) array property named `Parts`. This provides a third method of accessing the digest data as longwords. It is indexed from 0 to 3 and is functionally equivalent to the `LongWords` field.
+
+The primary purpose of the property is not to be used as-is but, because it is the default array property, to enabled instances of _TPJMD5Digest_ to be accessed using an array subscript. For example we can get the second longword from a _TPJMD5Digest_ instance, `D`, like this
+
+{{{
+var
+  SecondLW: LongWord;
+begin
+  SecondLW := D[1];
+end;
+}}}
+
+The following are all equivalent ways of getting the 2nd longword from a digest:
+
+  * `D[1]`
+  * `D.Parts[1]`
+  * `D.LongWords[1]`
+  * `D.B`
+
+== Operator Overloads ==
+
+=== Implicit Casts ===
+
+_TPJMD5Digest_ defines the following implicit casts:
+
+==== TPJMD5Digest to string ===
+{{{
+class operator Implicit(const D: TPJMD5Digest): string;
+}}}
+
+This cast creates a string representation of the digest. The string is the well known 32 character hexadecimal representation, for example "d41d8cd98f00b204e9800998ecf8427e" which is the MD5 digest of then empty (ansi) string.
+
+This cast is particularly useful because it enabled a _TPJMD5Digest_ to be rendered as text. Just reference a _TPJMD5Digest_ instance in a string context and the digest is automatically converted to a string. For example:
+
+{{{
+var
+  D: TPJMD5Digest;
+begin
+  D := TPJMD5.Calculate('foo');
+  ShowMessage('MD5 of "foo" is: ' + D);
+end;
+}}}
+
+==== String to TPJMD5Digest ====
+
+{{{
+class operator Implicit(const S: string): TPJMD5Digest;
+}}}
+
+The string must hold a hexadecimal representation of a MD5 digest. It must have length 32 and be comprised of only valid hexadecimal characters. Both upper and lower case 'A'..'F' are permitted. If the string is invalid a _EPJMD5_ exception is raised. The digest's data is set to the bytes represented by the hex digits.
+
+==== TPJMD5Digest to TBytes ====
+
+{{{
+class operator Implicit(const D: TPJMD5Digest): TBytes;
+}}}
+
+The digest's data is copied to a new _TBYtes_ array. The new array has 16 elements.
+
+==== TBytes to TPJMD5Digest ====
+
+{{{
+class operator Implicit(const B: TBytes): TPJMD5Digest;
+}}}
+
+The array of bytes must have at at least 16 elements otherwise a _EPJMD5_ exception is raised. Bytes are copied directly from the array elements into the digest's data without change. If the length of the byte array is greater than 16, just to first sixteen elements are copied.
+
+*Note:* Although a byte array with more than 16 elements can be cast to _TPJMD5Digest_, such an array will always test unequal to the digest.
+
+Because this
+
+=== Equality Tests ===
+
+The following overloads of the `=` and `<>` operators are defined for _TPJMD5Digest_:
+
+{{{
+class operator Equal(const D1, D2: TPJMD5Digest): Boolean;
+class operator Equal(const D: TPJMD5Digest; const B: TBytes): Boolean;
+class operator Equal(const B: TBytes; const D: TPJMD5Digest): Boolean;
+class operator Equal(const D: TPJMD5Digest; const S: string): Boolean;
+class operator Equal(const S: string; const D: TPJMD5Digest): Boolean;
+
+class operator NotEqual(const D1, D2: TPJMD5Digest): Boolean;
+class operator NotEqual(const D: TPJMD5Digest; const B: TBytes): Boolean;
+class operator NotEqual(const B: TBytes; const D: TPJMD5Digest): Boolean;
+class operator NotEqual(const D: TPJMD5Digest; const S: string): Boolean;
+class operator NotEqual(const S: string; const D: TPJMD5Digest): Boolean;
+}}}
+
+These methods permit the following comparisons for both equality and inequality:
+
+  * two _TPJMD5Digest_ values
+  * a _TPJMD5Digest_ and a TBytes array in any order
+  * a _TPJMD5Digest_ and a string in any order
+
+This enables code like the following:
+{{{
+var
+  D1, D2: TPJMD5Digest;
+  S: string;
+  B: TBytes;
+begin
+  ...
+  if D1 = D2 then ...
+  if D1 <> D2 then ...
+  if S = D2 then ...
+  if D1 <> S then ...
+  if D1 = B then ...
+  if B <> D2 then ...
+  ...
+end;
+}}}
+
+*Note:* Testing an invalid string or _TBytes_ array for equality will cause `Equal` to return false and `NotEqual` to return true. The "invalid" case are those that would cause an exception when performing implicit casts.
+
