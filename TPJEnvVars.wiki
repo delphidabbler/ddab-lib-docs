@@ -1,4 +1,4 @@
-#summary TPJEnvVarsclass description.
+#summary TPJEnvVars class description.
 <wiki:comment>
 $Rev$
 $Date$
