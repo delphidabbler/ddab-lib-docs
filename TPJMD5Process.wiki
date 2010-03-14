@@ -69,7 +69,7 @@ procedure Process(const Stream: TStream); overload;
 
 Each of these methods adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property. 
 
-The first version reads _Count_ bytes from the stream if possible. If _Count_ is too large then all the remaining bytes in the stream are read. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
+The first version reads _Count_ bytes from the stream if possible. If _Count_ is greater than number of bytes available then an _EPJMD5_ exception is raised. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
 
 The stream is read into an internal buffer before adding the data to the hash. The buffer's size can be changed by assigning the required size to the _!ReadBufferSize_ property.
 

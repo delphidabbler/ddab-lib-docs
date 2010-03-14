@@ -71,7 +71,7 @@ class function Calculate(const Stream: TStream): TPJMD5Digest; overload;
 
 This pair of methods calculate a digest from the bytes read from a stream. Bytes are always read from the current position in _Stream_. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property.
 
-The first version reads _Count_ bytes from the stream if possible. If _Count_ is too large then all the remaining bytes in the stream are read. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
+The first version reads _Count_ bytes from the stream. If _Count_ is greater than number of bytes available then an _EPJMD5_ exception is raised. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
 
 The stream is read in chunks. The size of a chunk is given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_ constant. This buffer size cannot be changed. If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method. 
 
