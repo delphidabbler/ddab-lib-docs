@@ -27,21 +27,20 @@ The disadvantages are:
 
 {{{
 class function Calculate(const X: TBytes;
-  const Size: Cardinal): TPJMD5Digest; overload;
+  const Count: Cardinal): TPJMD5Digest; overload;
 class function Calculate(const X: TBytes): TPJMD5Digest; overload;
 }}}
 
-These methods generate a MD5 digest from a _TBytes_ array. The first version processes _Size_ bytes from the beginning of byte array _X_. Here _X_ must have at least _Size_ elements. The second version processes all the content of byte array _X_.
+These methods generate a MD5 digest from a _TBytes_ array. The first version processes _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. The second version processes all the content of byte array _X_.
 
 ==== Untyped Buffer vesion ====
 
 {{{
-class function Calculate(const Buf; const Size: Cardinal): TPJMD5Digest;
+class function Calculate(const Buf; const Count: Cardinal): TPJMD5Digest;
   overload;
 }}}
 
-Calculates a digest from _Size_ bytes read from untyped buffer _Buf_. _Buf_ must
-contain at least _Size_ bytes.
+Calculates a digest from _Count_ bytes read from untyped buffer _Buf_. _Buf_ must contain at least _Count_ bytes.
 
 ==== Ansi string version ====
 
