@@ -60,15 +60,18 @@ procedure Process(const S: UnicodeString); overload;
 
 Each of these methods adds data from a Unicode string _S_ to the current hash. Before adding to the hash the string is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion, while the second version uses the _TEncoding.Default_ encoding.
 
-==== TStream version ====
+==== TStream versions ====
 
 {{{
+procedure Process(const Stream: TStream; const Count: Int64); overload;
 procedure Process(const Stream: TStream); overload;
 }}}
 
-Adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position to the end of the stream, writing `Stream.Size - Stream.Position` bytes. To read the whole stream ensure that stream is rewound to the start, i.e. set the stream's _Position_ property to 0.
+Each of these methods adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property. 
 
-The stream is read into an internal buffer before adding the data to the hash. The buffer's size can be changed by assigning the required size to the _!ReadBufferSize_ property. Find the current size of the buffer by reading the property.
+The first version reads _Count_ bytes from the stream if possible. If _Count_ is too large then all the remaining bytes in the stream are read. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
+
+The stream is read into an internal buffer before adding the data to the hash. The buffer's size can be changed by assigning the required size to the _!ReadBufferSize_ property.
 
 === Examples ===
 

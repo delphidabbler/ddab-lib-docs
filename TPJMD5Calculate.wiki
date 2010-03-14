@@ -61,15 +61,19 @@ class function Calculate(const S: UnicodeString): TPJMD5Digest; overload;
 
 Each of these methods creates a digest Unicode string _S_. Before processing the string it is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion while the second version uses the _TEncoding.Default_ encoding.
 
-==== TStream version ====
+==== TStream versions ====
 
 {{{
+class function Calculate(const Stream: TStream;
+  const Count: Int64): TPJMD5Digest; overload;
 class function Calculate(const Stream: TStream): TPJMD5Digest; overload;
 }}}
 
-Calculates a digest from the bytes from the current position to the end _Stream_, writing `Stream.Size - Stream.Position` bytes. To read the whole stream ensure that stream is rewound to the start, i.e. set the stream's _Position_ property to 0. The stream is read in chunks of the default buffer size, as given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_  constant. This buffer size cannot be changed.
+This pair of methods calculate a digest from the bytes read from a stream. Bytes are always read from the current position in _Stream_. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property.
 
-If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method. 
+The first version reads _Count_ bytes from the stream if possible. If _Count_ is too large then all the remaining bytes in the stream are read. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
+
+The stream is read in chunks. The size of a chunk is given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_ constant. This buffer size cannot be changed. If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method. 
 
 === Examples ===
 
