@@ -33,3 +33,7 @@ HKEY_DYN_DATA         = $80000006;
 These values are defined in the Windows unit.
 
 The property defaults to `HKEY_CURRENT_USER`.
+
+== Property Editor ==
+
+To make this property easier to edit you can install the [http://www.delphidabbler.com/software/hkeype HKEY Property Editor] that enables you to edit the _!RootKey_ property using the name of the appropriate `HKEY_*` constant.
