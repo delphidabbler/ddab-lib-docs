@@ -1,0 +1,21 @@
+#summary Console Application Runner Classes documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Console Application Runner Classes = 
+
+This library project provides some classes are designed to be used to control the execution of child console application processes and to redirect input and output where required. 
+
+There are two units, _UPJConsoleApp_ and _UPJPipe_. The classes contained in the units are summarised in the following table:
+
+|| *Class* || *Unit* || *Description* ||
+|| _[TPJCustomConsoleApp TPJCustomConsoleApp]_ || _UPJConsoleApp_ || Base class for _[TPJConsoleApp TPJConsoleApp]_ that provides all the functionality of the derived class, except that all properties are protected. _TPJCustomConsoleApp_ should be used if you need to create subclasses. Subclasses must make any required properties public. ||
+|| _[TPJConsoleApp TPJConsoleApp]_ || _UPJConsoleApp_ || Runs console applications. It enables the console application's standard input, standard output and standard error to be redirected to and from files or pipes. ||
+|| _[TPJPipe TPJPipe]_ || _UPJPipe_ || Helper class that assists in working with pipes used for redirecting input / output. This class simplifies reading and writing to pipes. ||
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/consoleapp Console Application Runner Classes Web Page].
