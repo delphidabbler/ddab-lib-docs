@@ -35,7 +35,7 @@ procedure Process(const X: TBytes); overload;
 
 These methods add bytes from a _TBytes_ array to the current hash. The first version adds _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. The second version adds all the content of byte array _X_.
 
-==== Untyped Buffer vesion ====
+==== Untyped buffer vesion ====
 
 {{{
 procedure Process(const Buf; const Count: Cardinal); overload;
@@ -43,13 +43,13 @@ procedure Process(const Buf; const Count: Cardinal); overload;
 
 This method adds _Count_ bytes from untyped buffer _Buf_ to the current hash. _Buf_ must contain at least _Count_ bytes.
 
-==== Ansi string version ====
+==== ANSI string version ====
 
 {{{
-procedure Process(const S: AnsiString); overload;
+procedure Process(const S: RawByteString); overload;
 }}}
 
-Adds the ordinal value of all the characters from ANSI string _S_ to the current hash.
+Adds the ordinal value of all the characters from an ANSI string _S_ to the current hash. _S_ can have any code page.
 
 ==== Unicode string versions ====
 
@@ -123,7 +123,7 @@ type
   end;
 }}}
 
-We're using Delphi 2009 or later, so strings and Unicode. We'll use UTF-8 to encode them. Here's the code to get the MD5 hash.
+We're using Delphi 2009 or later, so strings are Unicode. We'll use UTF-8 to encode them. Here's the code to get the MD5 hash.
 
 {{{
 var

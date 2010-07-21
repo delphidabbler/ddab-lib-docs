@@ -33,7 +33,7 @@ class function Calculate(const X: TBytes): TPJMD5Digest; overload;
 
 These methods generate a MD5 digest from a _TBytes_ array. The first version processes _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. The second version processes all the content of byte array _X_.
 
-==== Untyped Buffer vesion ====
+==== Untyped buffer vesion ====
 
 {{{
 class function Calculate(const Buf; const Count: Cardinal): TPJMD5Digest;
@@ -42,13 +42,13 @@ class function Calculate(const Buf; const Count: Cardinal): TPJMD5Digest;
 
 Calculates a digest from _Count_ bytes read from untyped buffer _Buf_. _Buf_ must contain at least _Count_ bytes.
 
-==== Ansi string version ====
+==== ANSI string version ====
 
 {{{
-class function Calculate(const S: AnsiString): TPJMD5Digest; overload;
+class function Calculate(const S: RawByteString): TPJMD5Digest; overload;
 }}}
 
-Calculates a digest from the ordinal values of characters of ANSI string _S_.
+Calculates a digest from the ordinal values of the characters of an ANSI string _S_. _S_ can have any code page.
 
 ==== Unicode string versions ====
 
@@ -110,7 +110,7 @@ var
   S: AnsiString;
 begin
   S := 'Hello World';
-  Digest := TPJMD5.Calculate(S);
+  Digest := TPJMD5.Calculate(S);  // uses RawByteString overloaded method
   ...
 end;
 }}}
