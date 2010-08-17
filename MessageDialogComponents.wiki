@@ -1,0 +1,19 @@
+#summary Message Dialog Components documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Message Dialog Components =
+
+The Message Dialog Components are supplied in a single unit named _PJMessageDialog_. There are three components:
+
+|| *Class* || *Description* ||
+|| _[TPJWinMsgDlg TPJWinMsgDlg]_ || This component wraps the Windows _!MessageBoxIndirect_ API call and displays a message box based on that provided by Windows. This component will be suitable for most purposes and has the lighter footprint. ||
+|| _[TPJVCLMsgDlg TPJVCLMsgDlg]_  || This component uses the Delphi VCL _!CreateMessageDialog_  function to create a form based message box. The component provides more flexibility than either the Delphi functions or _[TPJWinMsgDlg TPJWinMsgDlg]_. It should be used when it is necessary to display buttons or combinations of buttons that are not supported by the Windows API message box or when a finer degree of control over the appearance and behaviour of the message box is required. _TPJVCLMsgDlg_ supports all the features of _[TPJWinMsgDlg TPJWinMsgDlg]_ and extends them. The dialog box component's form can been customised by handling the _[TPJVCLMsgDlgOnShow OnShow]_ and _[TPJVCLMsgDlgOnHide OnHide]_ events. ||
+|| _TPJMessageDialog_ *(deprecated)* || This is an updated and bug-fixed version of the component supplied in release 1 of this unit. It is only provided for backwards compatibility with existing projects that use the old version. It exposes the same properties as the old component. Some of these properties vary from those common to _[TPJWinMsgDlg TPJWinMsgDlg]_ and _[TPJVCLMsgDlg TPJVCLMsgDlg]_. It is recommended that _[TPJWinMsgDlg TPJWinMsgDlg]_ or _[TPJVCLMsgDlg TPJVCLMsgDlg]_ are used in new projects. *This component may be dropped from future releases.* It is not documented further here. ||
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/msgdlg Message Dialog Components Web Page].
