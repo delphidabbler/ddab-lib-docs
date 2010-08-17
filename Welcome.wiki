@@ -18,6 +18,7 @@ The Library currently contains the following projects.
 || [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long *string* and _TCaption_ properties to be edited. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited using symbolic constant names. ||
 || [MD5Unit MD5 Message Digest Unit] || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
+|| [MessageDialogComponents Message Dialog Components] || Components that wrap message dialog boxes provided by the VCL and the Windows API. ||
 || [ResFileUnit Resource File Unit] || Encapsulates a 32 bit bibary resource file. Can read and update raw resource file data. ||
 || [ShellFoldersUnit Shell Folders Unit] || Components, classes and routines to assist in working with shell folders. Includes a "Browse for Folder" dialog box. ||
 || [StreamExtensionClasses Stream Extension Classes] || Classes that provide a means to wrap _TStream_ objects along with implementation of the _IStream_ interface.  ||
