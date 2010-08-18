@@ -1,0 +1,48 @@
+#summary TPJVCLMsgDlg class description
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJVCLMsgDlg =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+_TPJVCLMsgDlg_ provides a customisable message dialog box that is based on that provided by the Delphi _!CreateMessageDialog_ function. The component provides a similar (but extended) interface to the _[TPJWinMsgDlg TPJWinMsgDlg]_ component but uses a different method to display the dialog box. This component is recommended when a finer degree of control to that provided by _[TPJWinMsgDlg TPJWinMsgDlg]_ is required.
+
+The text displayed in the dialog box is determined by the _[TPJVCLMsgDlgText Text]_ property. Various button groupings can be displayed using the _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ and/or _[TPJVCLMsgDlgButtons  Buttons]_ properties. Setting a non-zero _[TPJVCLMsgDlgHelpContext HelpContext]_ causes a help button to be displayed. The _[TPJVCLMsgDlgKind Kind]_ property allows a choice of various standard dialog boxes and icons to be displayed. A user defined icon extracted from a named resource, specified by _[TPJVCLMsgDlgIconResource IconResource]_ can also be displayed. The window title can be customised using the _[TPJVCLMsgDlgTitle Title]_ property, otherwise a default title is used that is related to the kind of icon being displayed. The _[TPJVCLMsgDlgMakeSound MakeSound]_ property determines whether an appropriate system sound is generated when the dialog is displayed. It is possible to set how the dialog box is to be aligned to screen or form using the _[TPJVCLMsgDlgAlign  Align]_ property in combination with the _[TPJVCLMsgDlgOffsetLeft OffsetLeft]_ and _[TPJVCLMsgDlgOffsetTop OffsetTop]_ properties.
+
+The dialog box can be invoked with the _[TPJVCLMsgDlgExecute Execute]_ method or an instance of the dialog can be created using the _[TPJVCLMsgDlgCreateDialog CreateDialog]_ method. In the latter case the user has responsibility for showing and hiding the dialog and destroying the instance.
+
+== Methods ==
+
+|| *Method* || *Description* ||
+|| _[TPJVCLMsgDlgCreateDialog CreateDialog]_ || Creates instance of  the dialog box and returns a reference to it. ||
+|| _[TPJVCLMsgDlgExecute Execute]_ || Displays the dialog box and returns information about the button pressed to close it. ||
+
+== Properties ==
+
+|| *Property* || *Description* ||
+|| _[TPJVCLMsgDlgAlign Align]_ || Determines the on screen alignment of the dialog box. ||
+|| _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ || Determines which buttons appear in the dialog box. ||
+|| _[TPJVCLMsgDlgButtons Buttons]_ || Determines the buttons displayed in the dialog box . Provides finer control than _[TPJVCLMsgDlgButtonGroup ButtonGroup]_. ||
+|| _[TPJVCLMsgDlgDefButton DefButton]_ || Determines the default button in the dialog box. ||
+|| _[TPJVCLMsgDlgHelpContext HelpContext]_ || Specifies the context number for online help. ||
+|| _[TPJVCLMsgDlgHelpFile HelpFile]_ || Specifies the file to use for online help. ||
+|| _[TPJVCLMsgDlgIconResource IconResource]_ || Specifies the resource containing the dialog box's icon. ||
+|| _[TPJVCLMsgDlgKind Kind]_ || Determines the type of  dialog box that is displayed. ||
+|| _[TPJVCLMsgDlgMakeSound MakeSound]_ || Flag that determines if a sound will be emitted when the dialog box is displayed. ||
+|| _[TPJVCLMsgDlgOffsetLeft OffsetLeft]_ || Determines the offset of the dialog box from the left of the screen or owning form. ||
+|| _[TPJVCLMsgDlgOffsetTop OffsetTop]_ || Determines the offset of the dialog box from the top of the screen or owning form. ||
+|| _[TPJVCLMsgDlgOptions Options]_ || Property that records various customisation options. ||
+|| _[TPJVCLMsgDlgText Text]_ || The text that is displayed in the dialog box. ||
+|| _[TPJVCLMsgDlgTitle Title]_ || The dialog box's window title. ||
+
+== Events ==
+
+|| *Event* || *Description* ||
+|| _[TPJVCLMsgDlgOnHelp OnHelp]_ || Event triggered when a user requests help in a dialog box. ||
+|| _[TPJVCLMsgDlgOnHide OnHide]_ || Event triggered just after the component's dialog box is hidden. ||
+|| _[TPJVCLMsgDlgOnShow OnShow]_ || Event triggered just before the component's dialog box is displayed. ||
