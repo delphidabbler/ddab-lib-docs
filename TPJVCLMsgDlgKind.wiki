@@ -24,7 +24,7 @@ property Kind: TPJMsgDlgKind;
 
 == Description ==
 
-This property determines the appearance and other attributes of the dialog box. The property specifies the icon that will appear in the dialog box, the default window title and any sound played when the dialog box is displayed. The default window title can be overridden using the _[TPJVCLMsgDlgTitle Title]_ property and sounds are only played when TPJVCLMsgDlgMakeSound MakeSound]_ is `True`.
+This property determines the appearance and other attributes of the dialog box. The property specifies the icon that will appear in the dialog box, the default window title and any sound played when the dialog box is displayed. The default window title can be overridden using the _[TPJVCLMsgDlgTitle Title]_ property and sounds are only played when _[TPJVCLMsgDlgMakeSound MakeSound]_ is `True`.
 
 The effect of each of the possible values of the _Kind_ property are described below:
 

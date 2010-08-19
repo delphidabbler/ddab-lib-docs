@@ -35,7 +35,7 @@ The possible values of _!ButtonGroup_ are as follows:
 || `bgOKCancel` || An OK and a Cancel button. ||
 || `bgRetryCancel` || A Retry and a Cancel button. ||
 || `bgYesNo` || A Yes and a No button. ||
-|| `bgYesNoCancel || Yes, No and Cancel buttons. ||
+|| `bgYesNoCancel` || Yes, No and Cancel buttons. ||
 || `bgUnkown` || An unsupported or unknown group of buttons. This item should not be selected explicitly. If it is selected it has the same effect as `bgOK`. ||
 
 To include a help button in the dialog box do one of two things:

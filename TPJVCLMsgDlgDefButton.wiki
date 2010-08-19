@@ -26,6 +26,6 @@ property DefButton: TMsgDlgButton;
 
 The _!DefButton_ property specifies which button is to be the default button in the dialog. If the chosen button is not displayed in the dialog then the first (leftmost) button is the default.
 
-See the documentation of the _[Buttons Buttons]_ property for a description of the available buttons.
+See the documentation of the _[TPJVCLMsgDlgButtons Buttons]_ property for a description of the available buttons.
 
 The default value of the property is `mbOK`.
