@@ -8,12 +8,12 @@ $Date$
 
 This library project provides some classes that are designed to be used to control the execution of child console application processes and to redirect input and output where required.
 
-There are two units, _UPJConsoleApp_ and _UPJPipe_. The classes contained in the units are summarised in the following table:
+There are two units, _PJConsoleApp_ and _PJPipe_. The classes contained in the units are summarised in the following table:
 
 || *Class* || *Unit* || *Description* ||
-|| _[TPJCustomConsoleApp TPJCustomConsoleApp]_ || _UPJConsoleApp_ || Base class for _[TPJConsoleApp TPJConsoleApp]_. Provides all functionality but declares all properties protected. Use this class if creating sub-classes that do not want to make all properties public or need to execute custom code within the class rather than handling events. ||
-|| _[TPJConsoleApp TPJConsoleApp]_ || _UPJConsoleApp_ || Main console application class. Makes all properties inherited from _[TPJCustomConsoleApp TPJCustomConsoleApp]_ public. Use instances of this class when working with console processes. ||
-|| _[TPJPipe TPJPipe]_ || _UPJPipe_ || Helper class to use when redirecting console application standard input, output and error channels using pipes. ||
+|| _[TPJCustomConsoleApp TPJCustomConsoleApp]_ || _PJConsoleApp_ || Base class for _[TPJConsoleApp TPJConsoleApp]_. Provides all functionality but declares all properties protected. Use this class if creating sub-classes that do not want to make all properties public or need to execute custom code within the class rather than handling events. ||
+|| _[TPJConsoleApp TPJConsoleApp]_ || _PJConsoleApp_ || Main console application class. Makes all properties inherited from _[TPJCustomConsoleApp TPJCustomConsoleApp]_ public. Use instances of this class when working with console processes. ||
+|| _[TPJPipe TPJPipe]_ || _PJPipe_ || Helper class to use when redirecting console application standard input, output and error channels using pipes. ||
 
 *Links:*
 
