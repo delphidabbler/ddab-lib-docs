@@ -1,0 +1,25 @@
+#summary Description of the TPJWinMsgDlg.HelpFile property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !HelpFile property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJWinMsgDlg TPJWinMsgDlg]_
+
+{{{
+property HelpFile: string;
+}}}
+
+== Description ==
+
+Set the _!HelpFile_ property to specify the help file to be used when a Help button is clicked or F1 is pressed in the dialog. If _!HelpFile_ is set to the empty string then the help file associated with the parent form or application is used.
+
+The _[TPJWinMsgDlgHelpContext HelpContext]_ property is used to specify the help topic within the help file that is to be displayed.
+
+*Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJWinMsgDlgOnHelp OnHelp]_ event.

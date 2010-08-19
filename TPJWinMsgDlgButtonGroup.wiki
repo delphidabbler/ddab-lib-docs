@@ -1,0 +1,41 @@
+#summary Description of the TPJWinMsgDlg.ButtonGroup property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ButtonGroup property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJWinMsgDlg TPJWinMsgDlg]_
+
+{{{
+type
+  TPJMsgDlgButtonGroup = (
+    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel
+  );
+
+property ButtonGroup: TPJMsgDlgButtonGroup;
+}}}
+
+== Description ==
+
+The buttons which appear in the dialog box depend on the value of this property. The possible values are:
+
+|| *Value* || *Buttons used* ||
+|| `bgAbortRetryIgnore` || Abort, Retry and Ignore buttons. ||
+|| `bgOK` || A single OK button. ||
+|| `bgOKCancel` || An OK and a Cancel button. ||
+|| `bgRetryCancel` || A Retry and a Cancel button. ||
+|| `bgYesNo` || A Yes and a No button. ||
+|| `bgYesNoCancel` || Yes, No and Cancel buttons. ||
+|| `bgUnkown` || An unsupported or unknown group of buttons. This item is for use in _[TPJVCLMsgDlg TPJVCLMsgDlg]_ and should not be selected in _TPJWinMsgDlg_. If it is selected it has the same effect as `bgOK`. ||
+
+To include a help button in the dialog box set the _[TPJWinMsgDlgHelpContext HelpContext]_ property to some non-zero value.
+
+A value associated with the button that was clicked is returned from the _[TPJWinMsgDlgExecute Execute]_ method.
+
+The default value of the property is `bgOK`.

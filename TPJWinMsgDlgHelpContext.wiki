@@ -1,0 +1,26 @@
+#summary Description of the TPJWinMsgDlg.HelpContext property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !HelpContext property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJWinMsgDlg TPJWinMsgDlg]_
+
+{{{
+type
+  THelpContext = -MaxLongInt..MaxLongInt;
+
+property HelpContext: THelpContext;
+}}}
+
+== Description ==
+
+Set the _!HelpContext_ property to the context nunber of the relevant topic in the help file specified by the _[TPJWinMsgDlgHelpFile HelpFile]_ property. When a non-zero help context number is specified a help button is displayed in the dialog box which calls context sensitive help with the given help context when pressed.
+
+*Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJWinMsgDlgOnHelp OnHelp]_ event.
