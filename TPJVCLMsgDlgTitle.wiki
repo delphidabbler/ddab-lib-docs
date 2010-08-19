@@ -1,0 +1,24 @@
+#summary Description of the TPJVCLMsgDlg.Title property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Title property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+type
+  TCaption = type string;
+
+property Title: TCaption;
+}}}
+
+== Description ==
+
+Set this property to customise the string that is displayed as the dialog box window title. Leaving this property empty causes a default title to be displayed that depends on the value of the _[TPJVCLMsgDlgKind Kind]_ property.

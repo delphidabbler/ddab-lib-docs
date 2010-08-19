@@ -1,0 +1,25 @@
+#summary Description of the TPJVCLMsgDlg.OnHelp event
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnHelp event =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+property OnHelp: TNotifyEvent;
+}}}
+
+== Description ==
+
+The _!OnHelp_ event is triggered when the user requests help in a dialog either by clicking a help button or by pressing F1. If _!OnHelp_ is handled then the component's default help processing is inhibited - the event handler must display the required help.
+
+This event is never triggered if the dialog box does not display a help button. F1 keypresses are ignored when there is no help button.
+
+Handle this event if you want to use an alternative help system to !WinHelp.

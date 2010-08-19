@@ -1,0 +1,30 @@
+#summary Description of the TPJVCLMsgDlg.OnShow event
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnShow event =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+type
+  TPJVCLMsgDlgFormEvent = procedure(
+    Sender: TObject; Dlg: TForm
+  ) of object;
+
+property OnShow: TPJVCLMsgDlgFormEvent;
+}}}
+
+== Description ==
+
+The _!OnShow_ event is triggered just before the component's dialog box is displayed. A reference the component itself is passed to the event handler's _Sender_ parameter while the _Dlg_ parameter references the dialog box form.
+
+The _Dlg_ parameter can be used to customise the appearance of the dialog box. Any tidying up of such customisation or any interpretation of the results of the customisation can be carried out by handling the _[TPJVCLMsgDlgOnHide OnHide]_ event.
+
+*Warning:* The form referenced by the _Dlg_ parameter is only valid while the dialog box is displayed - it is destroyed when the dialog is closed. It is safe to use the form reference during the _!OnShow_ event handler and up until the _[TPJVCLMsgDlgOnHide OnHide]_ event handler returns.

@@ -1,0 +1,36 @@
+#summary Description of the TPJVCLMsgDlg.Options property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Options property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+type
+  TPJMsgDlgOption = (
+    mdoInhibitCancel, mdoAutoHelpBtn, mdoShowCustomIcon
+  );
+
+type
+  TPJMsgDlgOptions = set of TPJMsgDlgOption;
+
+property Options: TPJMsgDlgOptions;
+}}}
+
+== Description ==
+
+The _Options_ property stores a set of unrelated options that are used to customise the dialog box. The various options are described below:
+
+|| *Value* || *Description* ||
+|| `mdoInhibitCancel` || When included in _Options_ this value causes a dialog to be displayed that can't be cancelled. This is done by (1) ignoring any request to display a cancel button, (2) removing the system menu from the dialog and (3) rejecting ESC key presses. ||
+|| `mdoAutoHelpBtn` || This option causes the dialog to display a help button when the _[TPJVCLMsgDlgHelpContext HelpContext]_ property is non-zero and to hide the help button when _[TPJVCLMsgDlgHelpContext HelpContext]_ is 0. This setting overrides any help button that may have been requested using the _[TPJVCLMsgDlgButtons Buttons]_ property. ||
+|| `mdoShowCustomIcon` || This option only has an effect when _[TPJVCLMsgDlgKind Kind]_ = `mkUser`. When set the option causes the the dialog box to display the icon specified by the _[TPJVCLMsgDlgIconResource IconResource]_ property. When not set no icon is displayed regardless of the value of _[TPJVCLMsgDlgIconResource IconResource]_. ||
+
+The default value of the property is `[mdoAutoHelpBtn, mdoShowCustomIcon]`.

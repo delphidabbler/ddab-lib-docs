@@ -1,0 +1,50 @@
+#summary Description of the TPJVCLMsgDlg.ButtonGroup property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ButtonGroup property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+type
+  TPJMsgDlgButtonGroup = (
+    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel
+  );
+
+property ButtonGroup: TPJMsgDlgButtonGroup;
+}}}
+
+== Description ==
+
+The buttons which appear in the dialog box depend on the value of this property and on the associated _[TPJVCLMsgDlgButtons Buttons]_ property.
+
+When the value of _!ButtonGroup_ is changed the _[TPJVCLMsgDlgButtons Buttons]_ property is updated the to the set of buttons contained in the button group. Setting _!ButtonGroup_ to `bgUnkown` sets _[TPJVCLMsgDlgButtons Buttons]_ to the empty set. Conversely, when the _[TPJVCLMsgDlgButtons Buttons]_ property is changed _!ButtonGroup_ is set to any matching group, or to `bgUnknown` if the set of buttons in the _[TPJVCLMsgDlgButtons Buttons]_ property is not a valid button group.
+
+The possible values of _!ButtonGroup_ are as follows:
+
+|| *Value* || *Buttons used* ||
+|| `bgAbortRetryIgnore` || Abort, Retry and Ignore buttons. ||
+|| `bgOK` || A single OK button. ||
+|| `bgOKCancel` || An OK and a Cancel button. ||
+|| `bgRetryCancel` || A Retry and a Cancel button. ||
+|| `bgYesNo` || A Yes and a No button. ||
+|| `bgYesNoCancel || Yes, No and Cancel buttons. ||
+|| `bgUnkown` || An unsupported or unknown group of buttons. This item should not be selected explicitly. If it is selected it has the same effect as `bgOK`. ||
+
+To include a help button in the dialog box do one of two things:
+
+  # Set the _[TPJVCLMsgDlgHelpContext HelpContext]_ property to some non-zero value and include `mdoAutoHelpBtn` in the _[TPJVCLMsgDlgOptions Options]_ property, or
+  # Include the `mbHelp` button value in the _[TPJVCLMsgDlgButtons Buttons]_ property.
+
+If a cancel button is included in the group whether it appears or not depends on whether the `mdoInhibitCancel` value is included in the _[TPJVCLMsgDlgOptions Options]_ property.
+
+A value associated with the button that was clicked is returned from the _[TPJVCLMsgDlgExecute Execute]_ method.
+
+The default value of the property is `bgOK`.

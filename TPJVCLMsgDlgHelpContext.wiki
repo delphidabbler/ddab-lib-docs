@@ -1,0 +1,31 @@
+#summary Description of the TPJVCLMsgDlg.HelpContext property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !HelpContext property =
+
+*Project:* [MessageDialogComponents Message Dialog Components].
+
+*Unit:* _PJMessageDialog_.
+
+*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+
+{{{
+type
+  THelpContext = -MaxLongInt..MaxLongInt;
+
+property HelpContext: THelpContext;
+}}}
+
+== Description ==
+
+Set the _!HelpContext_ property to the context nunber of the relevant topic in the help file specified by the _[TPJVCLMsgDlgHelpFile HelpFile]_ property. This topic is displayed when the user presses F1 in the dialog box or clicks any help button that is displayed.
+
+There are two ways the dialog can display a help button that accesses the help topic:
+
+ # By including `mbHelp` in the _[TPJVCLMsgDlgButtons Buttons]_ property.
+ # By setting the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property.
+
+*Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJVCLMsgDlgOnHelp OnHelp]_ event.
