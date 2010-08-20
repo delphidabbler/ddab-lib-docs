@@ -1,0 +1,21 @@
+#summary Description of the TPJCustomConsoleApp.DoComplete method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !DoComplete method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJCustomConsoleApp TPJCustomConsoleApp]_.
+
+{{{
+procedure DoComplete; virtual;
+}}}
+
+This virtual protected method triggers the _[TPJConsoleAppOnComplete OnComplete]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
+
+The method would usually be implemented to perform any required actions to tidy up when a console application completes its run.
