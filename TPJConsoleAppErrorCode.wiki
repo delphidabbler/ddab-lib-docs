@@ -1,0 +1,36 @@
+#summary Description of the TPJConsoleApp.ErrorCode property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ErrorCode property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ErrorCode: LongWord;
+}}}
+
+== Description ==
+
+This read only property provides information about any error that occurred while attempting to run a console application. The property is set to zero if the application was executed successfully. Error codes either correspond to Windows error codes or are set by this class. Error codes set by the class have bit 29 set (see note below). The class specific codes are:
+
+|| *Error code (hex)* || *Constant defined in _PJConsoleApp.pas_* || *Description* ||
+|| $20000001 || `cAppErrorTimeOut` || Application timed out (see the MaxExecTime property). ||
+|| $20000002 || `cAppErrorTerminated` || Application was forcibly terminated (see the Terminate method). ||
+
+To check for application errors, use the constants from the table and *and* them with the `cAppErrorMask` constant, defined in _PJConsoleApp.pas_ as `1 shl 29`. For example:
+
+{{{
+if (ErrorCode and cAppErrorTimeout) <> 0 then
+  {Do something};
+}}}
+
+Note that this property only represents errors that prevent the console application from running. Errors that occur within the application are not caught here – they are usually reported via the program's exit code and will be stored in the _[TPJConsoleAppExitCode ExitCode]_ property.
+
+*Note:* According to the Windows API documentation, error codes with bit 29 set are reserved for application use.

@@ -1,0 +1,23 @@
+#summary Description of the TPJConsoleApp.ConsoleTitle property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ConsoleTitle property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ConsoleTitle: string;
+}}}
+
+== Description ==
+
+This property determines the title to be displayed in any new console window. If the property is set to the empty string then the console's default title is used. This property only has an effect if the console application has its own console window (see also: _[TPJConsoleAppUseNewConsole UseNewConsole]_).
+
+The property defaults to the empty string.

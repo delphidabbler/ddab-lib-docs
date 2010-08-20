@@ -1,0 +1,21 @@
+#summary Description of the TPJConsoleApp.ErrorMessage property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ErrorMessage property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ErrorMessage: string;
+}}}
+
+== Description ==
+
+This read only property stores the error message corresponding the value of _[TPJConsoleAppErrorCode ErrorCode]_, or the empty string if _[TPJConsoleAppErrorCode ErrorCode]_ is 0. If _[TPJConsoleAppErrorCode ErrorCode]_ corresponds to a Windows error then _!ErrorMessage_ stores the error description provided by Windows.

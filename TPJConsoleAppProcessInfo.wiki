@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.ProcessInfo property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ProcessInfo property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ProcessInfo: TProcessInformation;
+}}}
+
+== Description ==
+
+_!ProcessInfo_ is a read only property that provides process information for the executing console application. All fields are zero when no application is executing.
+
+_!ProcessInfo_ is only of use inside _[TPJConsoleAppOnWork OnWork]_ or _[TPJConsoleAppOnComplete OnComplete]_ event handlers since these are the only way of accessing it when a process is running. Outside these events _!ProcessInfo_ is undefined and should not be read.
+
+See the Windows API help for information about the fields of _TProcessInformation_.

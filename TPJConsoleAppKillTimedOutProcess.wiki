@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.KillTimedOutProcess property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !KillTimedOutProcess property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property KillTimedOutProcess: Boolean;
+}}}
+
+== Description ==
+
+When this property is `True` the console application will be forcibly terminated should it time out or be terminated via the _[TPJConsoleAppTerminate Terminate]_ method. Setting the property to `False` causes a timed out or terminated application to be left running after the _[TPJConsoleAppExecute Execute]_ method has returned, severing this object's connection with the application.
+
+The Windows API _!TerminateProcess_ function is used to kill the application. This function does not perform a clean shut-down of the application. See Windows API help for details.
+
+The default value of _!KillTimedOutProcess_ is `True`.

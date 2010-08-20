@@ -1,0 +1,21 @@
+#summary Description of the TPJConsoleApp.StdOut property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !StdOut property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property StdOut: THandle;
+}}}
+
+== Description ==
+
+The _!StdOut_ property specifies a console application's standard output handle. The program will write standard output to the specified handle. Leave as 0 (the default) if standard output is not to be redirected. To redirect output set the property to a valid *inheritable* handle.

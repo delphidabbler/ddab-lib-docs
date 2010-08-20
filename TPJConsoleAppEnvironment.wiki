@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.Environment property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Environment property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property Environment: Pointer;
+}}}
+
+== Description ==
+
+_Environment_ provides a pointer to the environment block used by the console application.
+
+The caller is responsible for allocating and freeing this memory, which must remain allocated while the console application is executing. If _Environment_ is `nil` then the console application inherits the parent process' environment block.
+
+The default value of the property is `nil`.

@@ -1,0 +1,29 @@
+#summary Description of the TPJConsoleApp.OnWork event
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnWork event =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property OnWork: TNotifyEvent;
+}}}
+
+== Description ==
+
+This event is triggered when the executing application yields control to this class. The frequency with which the event is triggered depends on the value of the _[TPJConsoleAppTimeSlice TimeSlice]_ property – the smaller the value the more frequently the event is triggered.
+
+Handle the event to perform any required processing between time slices. Examples of the kind of processing you may wish to perform are:
+
+ * Updating a progress meter in the main application, or reporting time to live or elapsed time since the application began executing.
+ * Processing data written by the console application to redirected standard output or standard error. The most common way to do this is via a pipe.
+ * GUI applications that update the user interface should call _Application.!ProcessMessages_ in the _!OnWork_ event handler to let the application refresh the interface.
+
+This event is never triggered if _[TPJConsoleAppTimeSlice TimeSlice]_ = `INFINITE`.

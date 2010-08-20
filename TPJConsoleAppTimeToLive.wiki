@@ -1,0 +1,23 @@
+#summary Description of the TPJConsoleApp.TimeToLive property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !TimeToLive property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property TimeToLive: LongWord;
+}}}
+
+== Description ==
+
+This read only property indicates the amount of time, in milliseconds, the console application has left to run before timing out. The value will be `INFINITE` if _[TPJConsoleAppMaxExecTime MaxExecTime]_ is `INFINITE`.
+
+_!TimeToLive_ is only of any use if accessed within an _[TPJConsoleAppOnWork OnWork]_ event handler. The property will always be 0 once a process completes.

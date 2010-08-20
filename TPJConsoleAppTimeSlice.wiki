@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.TimeSlice property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !TimeSlice property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property TimeSlice: LongWord;
+}}}
+
+== Description ==
+
+Execution of the console application is normally time-sliced. This property determines the length of each time slice, in milliseconds. At the end of each time slice execution of the console application is paused, the length of time left to run is recalculated and the _[TPJConsoleAppOnWork OnWork]_ event is triggered.
+
+_!TimeSlice_ may be set to `INFINITE`, in which case the console application is left to run until completion without interuption. In this case the _[TPJConsoleAppOnWork OnWork]_ event will never be triggered and the application will never time out. Furthermore, it is not possible to force the application to terminate via the _[TPJConsoleAppTerminate Terminate]_ method. Setting _!TimeSlice_ to `INFINITE` is not recommended.
+
+The property's default value is 50ms (1/20th second).

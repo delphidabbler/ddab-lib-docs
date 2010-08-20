@@ -1,0 +1,35 @@
+#summary Description of the TPJConsoleApp.Priority property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Priority property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+type
+  TPJConsoleAppPriority = (
+    cpDefault, cpHigh, cpNormal, cpIdle, cpRealTime
+  );
+
+property Priority: TPJConsoleAppPriority;
+}}}
+
+== Description ==
+
+_Priority_ specifies the priorty with which the console application is started. Possible values are:
+
+|| *Value* || *Description* ||
+|| `cpDefault` || Default priority. Normally `cpNormal` is used unless the parent process has priority `cpIdle` in which case `cpIdle` is used. ||
+|| `cpHigh` || High priority. Use for time-critical tasks (processor intensive). ||
+|| `cpNormal` || Normal priority for applications with no specific scheduling needs. ||
+|| `cpIdle` || Idle priority. The process is run only when the system is idle. ||
+|| `cpRealTime` || Real time priority. Highest possible priority (pre-empts all threads, including the operating system). ||
+
+The default value of _Priority_ is `cpDefault`.

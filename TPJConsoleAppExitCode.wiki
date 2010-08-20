@@ -1,0 +1,23 @@
+#summary Description of the TPJConsoleApp.ExitCode property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ExitCode property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ExitCode: LongWord;
+}}}
+
+== Description ==
+
+_!ExitCode_ is a read only property that stores theexit code returned by the console application on completion. The value of the property is application dependent.
+
+The value of _!ExitCode_ is meaningless if the _[TPJConsoleAppErrorCode ErrorCode]_ property is non-zero.

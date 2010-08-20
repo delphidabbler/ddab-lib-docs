@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.ProcessAttrs property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ProcessAttrs property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property ProcessAttrs: PSecurityAttributes;
+}}}
+
+== Description ==
+
+This property specifies the security and inheritance attributes for the console application process. It determines whether the process handle can be inherited by child processes. Setting _!ProcessAttrs_ to nil means the process handle can't be inherited.
+
+Note that the caller is responsible for setting up the structure correctly. The caller need not maintain a copy of the provided structure once the property is set since _[TPJConsoleApp TPJConsoleApp]_ makes an internal copy.
+
+The property's default value is `nil`.

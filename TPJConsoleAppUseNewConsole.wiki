@@ -1,0 +1,27 @@
+#summary Description of the TPJConsoleApp.UseNewConsole property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !UseNewConsole property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property UseNewConsole: Boolean;
+}}}
+
+== Description ==
+
+_!UseNewConsole_ causes the console application to open a new console window when the property is `True`. Setting _!UseNewConsole_ to `False` causes the console application to use any existing console.
+
+When _[TPJConsoleApp TPJConsoleApp]_ is hosted in a GUI program that has no console, a new console window is always used regardless of the value of this property.
+
+Whether a new console window is actually displayed depends on the state of the _[TPJConsoleAppVisible Visible]_ property.
+
+_!UseNewConsole_ defaults to `False`.

@@ -1,0 +1,21 @@
+#summary Description of the TPJConsoleApp.StdIn property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !StdIn property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property StdIn: THandle;
+}}}
+
+== Description ==
+
+The _!StdIn_ property specifies a console application's standard input handle. The program will read standard input from the specified handle. Leave as 0 (the default) if standard input is not to be redirected. To redirect input set the property to a valid *inheritable* handle.
