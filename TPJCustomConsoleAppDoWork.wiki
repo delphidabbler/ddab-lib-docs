@@ -16,6 +16,8 @@ $Date$
 procedure DoWork; virtual;
 }}}
 
+== Description ==
+
 This virtual protected method triggers the _[TPJConsoleAppOnWork OnWork]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
 
 The method would usually be implemented to perform any required actions at the end of each of the console application's time slices.
