@@ -32,6 +32,7 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 || _[TPJConsoleAppKillTimedOutProcess KillTimedOutProcess]_ || Indicates whether timed-out processes should be terminated or left running. ||
 || _[TPJConsoleAppMaxExecTime MaxExecTime]_ || Maximum permitted execution time of the console application. ||
 || _[TPJConsoleAppPriority Priority]_ || Priority with which the console application is started. ||
+|| _[TPJConsoleAppProcessAttrs ProcessAttrs]_ || Specifies security and inheritance attributes for the console application process. ||
 || _[TPJConsoleAppProcessInfo ProcessInfo]_ || Provides process information for the executing console application. ||
 || _[TPJConsoleAppStdErr StdErr]_ || The console application's standard error handle. ||
 || _[TPJConsoleAppStdIn StdIn]_ || The console application's standard input handle. ||
