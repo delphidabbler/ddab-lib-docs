@@ -18,7 +18,7 @@ property OnWork: TNotifyEvent;
 
 == Description ==
 
-This event is triggered when the executing application yields control to this class. The frequency with which the event is triggered depends on the value of the _[TPJConsoleAppTimeSlice TimeSlice]_ property – the smaller the value the more frequently the event is triggered.
+This event is triggered when the executing application yields control to this class. The frequency with which the event is triggered depends on the value of the _[TPJConsoleAppTimeSlice TimeSlice]_ property - the smaller the value the more frequently the event is triggered.
 
 Handle the event to perform any required processing between time slices. Examples of the kind of processing you may wish to perform are:
 

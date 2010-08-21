@@ -20,8 +20,8 @@ function Execute(const CmdLine, CurrentDir: string): Boolean;
 
 Executes the command line application. Parameters are:
 
- * _!CmdLine_ – Command line to be executed. This should include the name of the application (with path if necessary) along with any required parameters. Paths and parameters containing spaces should be enclosed in double quotes.
+ * _!CmdLine_: Command line to be executed. This should include the name of the application (with path if necessary) along with any required parameters. Paths and parameters containing spaces should be enclosed in double quotes.
 
- * _!CurrentDir_ – The directory that the application is to treat as its current directory. Pass the empty string to use the same current directory as the parent application.
+ * _!CurrentDir_: The directory that the application is to treat as its current directory. Pass the empty string to use the same current directory as the parent application.
 
 _Execute_ returns `True` if the application was executed successfully and `False` if the application failed to run. When `False` is returned, the _[TPJConsoleAppErrorCode ErrorCode]_ property will contain a non-zero error code.

@@ -31,6 +31,6 @@ if (ErrorCode and cAppErrorTimeout) <> 0 then
   {Do something};
 }}}
 
-Note that this property only represents errors that prevent the console application from running. Errors that occur within the application are not caught here – they are usually reported via the program's exit code and will be stored in the _[TPJConsoleAppExitCode ExitCode]_ property.
+Note that this property only represents errors that prevent the console application from running. Errors that occur within the application are not caught here but are usually reported via the program's exit code and will be stored in the _[TPJConsoleAppExitCode ExitCode]_ property.
 
 *Note:* According to the Windows API documentation, error codes with bit 29 set are reserved for application use.
