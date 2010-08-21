@@ -1,0 +1,25 @@
+#summary Description of the TPJPipe.AvailableDataSize method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !AvailableDataSize method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+function AvailableDataSize: LongWord;
+}}}
+
+== Description ==
+
+This method peeks the pipe to get the size of data available for reading from it.
+
+The number of bytes of available data is returned by the method.
+
+_EInOutError_ is raised if there is an error peeking the pipe.

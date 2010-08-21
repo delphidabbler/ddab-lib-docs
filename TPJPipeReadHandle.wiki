@@ -1,0 +1,23 @@
+#summary Description of the TPJPipe.ReadHandle property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ReadHandle property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+property ReadHandle: THandle;
+}}}
+
+== Description ==
+
+This read only property provides access to Windows handle used to read data from the pipe. If this handle is inheritable it can be used with _[TPJConsoleApp TPJConsoleApp]_'s _[TPJConsoleAppStdIn StdIn]_ property to redirect console application input from a pipe.
+
+Do not pass this handle to any Windows API function that may alter it (e.g. _!CloseHandle_).

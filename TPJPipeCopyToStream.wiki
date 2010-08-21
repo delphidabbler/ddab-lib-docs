@@ -1,0 +1,28 @@
+#summary Description of the TPJPipe.CopyToStream method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CopyToStream method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+procedure CopyToStream(const Stm: TStream; Count: LongWord = 0);
+}}}
+
+== Description ==
+
+This method copies data from the pipe to a stream. Parameters are:
+
+ * _Stm_: Stream that receives the data.
+ * _Count_: Number of bytes to copy. If 0 then all the remaining data in the pipe is copied to the stream.
+
+An _EInOutError_ exception is raised if there is an error peeking or reading the pipe.
+
+if the pipe's write handle has been closed or if the pipe can't be written to. _EWriteError_ is raised if the stream write fails.

@@ -1,0 +1,21 @@
+#summary Description of the TPJPipe.CloseWriteHandle method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CloseWriteHandle method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+procedure CloseWriteHandle;
+}}}
+
+== Description ==
+
+_!CloseWriteHandle_ closes the pipe's write handle if it is open. This effectively signals end-of-file to any reader of the pipe. After calling this method no further data may be written to the pipe and _[TPJPipeWriteHandle WriteHandle]_ will be zero.
