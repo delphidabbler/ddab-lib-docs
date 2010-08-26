@@ -15,7 +15,8 @@ $Date$
 {{{
 type
   TPJMsgDlgButtonGroup = (
-    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel, bgUnknown
+    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel,
+    bgUnknown, bgCancelTryContinue
   );
 
 property ButtonGroup: TPJMsgDlgButtonGroup;
@@ -32,7 +33,8 @@ The buttons which appear in the dialog box depend on the value of this property.
 || `bgRetryCancel` || A Retry and a Cancel button. ||
 || `bgYesNo` || A Yes and a No button. ||
 || `bgYesNoCancel` || Yes, No and Cancel buttons. ||
-|| `bgUnkown` || An unsupported or unknown group of buttons. This item is for use in _[TPJVCLMsgDlg TPJVCLMsgDlg]_ and should not be selected in _TPJWinMsgDlg_. If it is selected it has the same effect as `bgOK`. ||
+|| `bgUnknown` || An unsupported or unknown group of buttons. This item is for use in _[TPJVCLMsgDlg TPJVCLMsgDlg]_ and should not be selected in _TPJWinMsgDlg_. If it is selected it has the same effect as `bgOK`. ||
+|| `bgCancelTryContinue` || Cancel, Try Again and Continue buttons. This button group requires the Windows NT platform and Windows 2000 or later. Behaves as `bgAbortRetryIgnore` when specified on OSs that do not support this button group. ||
 
 To include a help button in the dialog box set the _[TPJWinMsgDlgHelpContext HelpContext]_ property to some non-zero value.
 

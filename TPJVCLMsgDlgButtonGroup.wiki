@@ -15,7 +15,8 @@ $Date$
 {{{
 type
   TPJMsgDlgButtonGroup = (
-    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel, bgUnknown
+    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel,
+    bgUnknown, bgCancelTryContinue
   );
 
 property ButtonGroup: TPJMsgDlgButtonGroup;
@@ -36,7 +37,8 @@ The possible values of _!ButtonGroup_ are as follows:
 || `bgRetryCancel` || A Retry and a Cancel button. ||
 || `bgYesNo` || A Yes and a No button. ||
 || `bgYesNoCancel` || Yes, No and Cancel buttons. ||
-|| `bgUnkown` || An unsupported or unknown group of buttons. This item should not be selected explicitly. If it is selected it has the same effect as `bgOK`. ||
+|| `bgUnknown` || An unsupported or unknown group of buttons. This item should not be selected explicitly. If it is selected it has the same effect as `bgOK`. ||
+|| `bgCancelTryContinue` || Synonym for `bgAbortRetryIgnore` with same effect. (Note that in _[TPJWinMsgDlg TPJWinMsgDlg]_ `bgCancelTryContinue` behaves differently to `bgAbortRetryIgnore`.) ||
 
 To include a help button in the dialog box do one of two things:
 
