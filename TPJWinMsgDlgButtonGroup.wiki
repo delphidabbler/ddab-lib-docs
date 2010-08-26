@@ -15,7 +15,7 @@ $Date$
 {{{
 type
   TPJMsgDlgButtonGroup = (
-    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel
+    bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel, bgUnkown
   );
 
 property ButtonGroup: TPJMsgDlgButtonGroup;
