@@ -21,11 +21,12 @@ function Execute: Integer;
 Call _Execute_ to display the dialog box. _Execute_ returns a value associated with the button that was clicked to close the dialog box as follows:
 
 || *Button clicked* || *Return value* ||
-|| Abort || `IDABORT` ||
-|| Cancel || `IDCANCEL` ||
-|| Ignore || `IDIGNORE` ||
-|| No || `IDNO` ||
-|| OK || `IDOK` ||
-|| Retry || `IDRETRY` ||
-|| Yes || `IDYES` ||
-
+|| Abort || `IDABORT` (3) ||
+|| Cancel || `IDCANCEL` (2) ||
+|| Continue || `IDCONTINUE` (11) ||
+|| Ignore || `IDIGNORE` (5) ||
+|| No || `IDNO` (7) ||
+|| OK || `IDOK` (1) ||
+|| Retry || `IDRETRY` (4) ||
+|| Try Again || `IDTRYAGAIN` (10) ||
+|| Yes || `IDYES` (6) ||
