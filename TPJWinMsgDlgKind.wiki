@@ -16,7 +16,7 @@ $Date$
 type
   TPJMsgDlgKind = (
     mkWarning, mkInformation, mkQuery, mkError, mkUser,
-    mkApplication, mkWinLogo
+    mkApplication, mkWinLogo, mkUnknown
   );
 
 property Kind: TPJMsgDlgKind;
@@ -36,6 +36,7 @@ The effect of each of the possible values of the _Kind_ property are described b
 || `mkUser` || Specified by _[TPJWinMsgDlgIconResource IconResource]_ property || Per _Application.Title_ property || `MB_OK` ||
 || `mkApplication` || System application icon || Per _Application.Title_ property || `MB_OK` ||
 || `mkWinLogo` || System Windows icon || Per _Application.Title_ property || `MB_OK` ||
+|| `mkUnknown` || None || Per _Application.Title_ property || `MB_OK` ||
 
 Setting _Kind_ also updates the _[TPJWinMsgDlgDlgType DlgType]_ property and vice versa. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
 
@@ -44,5 +45,6 @@ Setting _Kind_ also updates the _[TPJWinMsgDlgDlgType DlgType]_ property and vic
   # When _Kind_ = `mkUser`, the icon is loaded from the resource specified by the _[TPJWinMsgDlgIconResource IconResource]_ property.
   # The appearance of system icons is operating system version dependent. On some Windows versions, the icon displayed for `mkApplication` and `mkWinLogo` is the same.
   # Sounds are also operation system version and theme dependent. Some themes play no sound for some `MB_XXX` values.
+  # `mkUnknown` should not be selected explicitly. It is present to signal that an invalid dialog kind has been specified when setting the _[TPJWinMsgDlgDlgType DlgType]_ property.
 
 The default value of the property is `mkInformation`.
