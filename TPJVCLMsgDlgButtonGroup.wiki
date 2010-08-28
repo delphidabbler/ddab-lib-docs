@@ -28,6 +28,8 @@ The buttons which appear in the dialog box depend on the value of this property 
 
 When the value of _!ButtonGroup_ is changed the _[TPJVCLMsgDlgButtons Buttons]_ property is updated the to the set of buttons contained in the button group. Setting _!ButtonGroup_ to `bgUnkown` sets _[TPJVCLMsgDlgButtons Buttons]_ to the empty set. Conversely, when the _[TPJVCLMsgDlgButtons Buttons]_ property is changed _!ButtonGroup_ is set to any matching group, or to `bgUnknown` if the set of buttons in the _[TPJVCLMsgDlgButtons Buttons]_ property is not a valid button group.
 
+*Note:* Normally, setting _!ButtonGroup_ to a value other than `bgUnkown` and then adding `mbHelp` to the resulting _[TPJVCLMsgDlgButtons Buttons]_ set causes _!ButtonGroup_ to change to `bgUnknown`. To prevent this include `mdoGroupIgnoresHelp` in the _[TPJVCLMsgDlgOptions Options]_ property. Setting this option means that `mbHelp` is ignored when trying to match _[TPJVCLMsgDlgButtons Buttons]_ to a valid button group and, in the case above, _!ButtonGroup_ will remain unchanged when `mbHelp` is added to _[TPJVCLMsgDlgButtons Buttons]_.
+
 Setting _!ButtonGroup_ also updates the _[TPJVCLMsgDlgDlgType DlgType]_ property and vice versa. See the _[TPJVCLMsgDlgDlgType DlgType page]_ for full details.
 
 The possible values of _!ButtonGroup_ are as follows:
