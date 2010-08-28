@@ -25,7 +25,7 @@ Set the _!HelpContext_ property to the context nunber of the relevant topic in t
 
 There are two ways the dialog can display a help button that accesses the help topic:
 
- # By including `mbHelp` in the _[TPJVCLMsgDlgButtons Buttons]_ property.
- # By setting the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property.
+ # By including `mbHelp` in the _[TPJVCLMsgDlgButtons Buttons]_ property and clearing the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property.
+ # By setting the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property and giving _!HelpContext_ a non-zero value.
 
 *Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJVCLMsgDlgOnHelp OnHelp]_ event.
