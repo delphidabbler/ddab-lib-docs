@@ -30,6 +30,8 @@ The _Buttons_ property records the set of buttons that are to appear in the dial
 
 Setting the _Buttons_ property causes _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ to be updated. If the combination of buttons required is not supported by the _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ property, that property is set to `bgUnknown`. Conversely setting the _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ property causes the _Buttons_ property to be updated to the set of buttons in the selected group.
 
+Because of the link between _Buttons_ and _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ and its linkage with _[TPJVCLMsgDlgDlg DlgType]_, setting _Buttons_ can affect the value of _[TPJVCLMsgDlgDlg DlgType]_ and vice versa.
+
 The set of available buttons (_TMsgDlgButtons_) is defined in the _Dialogs_ unit and is as follows:
 
 || *Value* || *Button caption* || *!ModalResult* ||

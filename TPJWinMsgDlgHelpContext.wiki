@@ -23,4 +23,6 @@ property HelpContext: THelpContext;
 
 Set the _!HelpContext_ property to the context nunber of the relevant topic in the help file specified by the _[TPJWinMsgDlgHelpFile HelpFile]_ property. When a non-zero help context number is specified a help button is displayed in the dialog box which calls context sensitive help with the given help context when pressed.
 
+Changing the value of _!HelpContext_ from zero to non-zero and back again changes the value of the _[TPJWinMsgDlgDlgType DlgType]_ property. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
+
 *Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJWinMsgDlgOnHelp OnHelp]_ event.

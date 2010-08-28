@@ -29,6 +29,7 @@ The dialog box can be invoked with the _[TPJVCLMsgDlgExecute Execute]_ method or
 || _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ || Determines which buttons appear in the dialog box. ||
 || _[TPJVCLMsgDlgButtons Buttons]_ || Determines the buttons displayed in the dialog box . Provides finer control than _[TPJVCLMsgDlgButtonGroup ButtonGroup]_. ||
 || _[TPJVCLMsgDlgDefButton DefButton]_ || Determines the default button in the dialog box. ||
+|| _[TPJVCLMsgDlgDlgType DlgType]_ || Permits the buttons and type of dialog box displayed to be specified by means of the flags that are passed to the _uType_ parameter of the Windows _!MessageBox_ API function. ||
 || _[TPJVCLMsgDlgHelpContext HelpContext]_ || Specifies the context number for online help. ||
 || _[TPJVCLMsgDlgHelpFile HelpFile]_ || Specifies the file to use for online help. ||
 || _[TPJVCLMsgDlgIconResource IconResource]_ || Specifies the resource containing the dialog box's icon. ||

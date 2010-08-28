@@ -23,10 +23,11 @@ The text displayed in the dialog box is determined by the _[TPJWinMsgDlgText Tex
 
 || *Property* || *Description* ||
 || _[TPJWinMsgDlgButtonGroup ButtonGroup]_ || Determines which buttons appear in the dialog box. ||
+|| _[TPJWinMsgDlgDlgType DlgType]_ || Permits the buttons and type of dialog box displayed to be specified by means of the flags that are passed to the _uType_ parameter of the Windows _!MessageBox_ API function. ||
 || _[TPJWinMsgDlgHelpContext HelpContext]_ || Specifies the context number for online help and displays a help button. ||
 || _[TPJWinMsgDlgHelpFile HelpFile]_ || Specifies the file to use for online help. ||
 || _[TPJWinMsgDlgIconResource IconResource]_ || Specifies the resource containing the dialog box's icon. ||
-|| _[TPJWinMsgDlgKind Kind]_ || Determines the type of  dialog box that is displayed. ||
+|| _[TPJWinMsgDlgKind Kind]_ || Determines the type of dialog box that is displayed. ||
 || _[TPJWinMsgDlgMakeSound MakeSound]_ || Flag that determines if a sound will be emitted when the dialog box is displayed. ||
 || _[TPJWinMsgDlgText Text]_ || The text that is displayed in the dialog box. ||
 || _[TPJWinMsgDlgTitle Title]_ || The dialog box's window title. ||

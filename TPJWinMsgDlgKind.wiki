@@ -37,6 +37,8 @@ The effect of each of the possible values of the _Kind_ property are described b
 || `mkApplication` || System application icon || Per _Application.Title_ property || `MB_OK` ||
 || `mkWinLogo` || System Windows icon || Per _Application.Title_ property || `MB_OK` ||
 
+Setting _Kind_ also updates the _[TPJWinMsgDlgDlgType DlgType]_ property and vice versa. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
+
 *Notes:*
 
   # When _Kind_ = `mkUser`, the icon is loaded from the resource specified by the _[TPJWinMsgDlgIconResource IconResource]_ property.
