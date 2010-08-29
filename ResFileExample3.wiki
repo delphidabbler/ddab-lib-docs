@@ -1,0 +1,78 @@
+#summary Resource File Unit Example 3.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Example #3: Finding a resource =
+
+To find a resource we use either the _[TPJResourceFileFindEntry FindEntry]_ or _[TPJResourceFileFindEntryIndex FindEntryIndex]_ methods of _[TPJResourceFile TPJResourceFile]_. The difference is that _[TPJResourceFileFindEntry FindEntry]_ returns the _[TPJResourceEntry TPJResourceEntry]_ object for the entry (or `nil` if not found) while _[TPJResourceFileFindEntryIndex FindEntryIndex]_ returns the index of the entry in the _[TPJResourceFileEntries Entries]_ property.
+
+Let us assume a resource file is loaded into the _[TPJResourceFile TPJResourceFile]_ variable _!ResFile_. We want to find a `RT_HTML` resource named `INDEX_HTML`. The following code checks if such a resource exists and displays its data size in a message box, or a message saying the resource doesn't exist. This first version of the code uses _[TPJResourceFileFindEntry FindEntry]_:
+
+{{{
+// Version using FindEntry
+var
+  ResFile: TPJResourceFile;
+  Entry: TPJResourceEntry;
+begin
+  ...
+  // Assume ResFile contains a loaded resource file
+  ...
+  Entry := ResFile.FindEntry(RT_HTML, 'INDEX_HTML', $0809);
+  if Assigned(Entry) then
+    ShowMessageFmt(
+      'Data size for INDEX_HTML is %d',
+      [Entry.DataSize]
+    )
+  else
+    ShowMessage('Can''t find resource');
+  ...
+  // Don't forget to free ResFile at some stage.
+end;
+}}}
+
+The second version of the code shows how the same result is obtained with _[TPJResourceFileFindEntryIndex FindEntryIndex]_:
+
+{{{
+// Version using FindEntryIdex
+var
+  ResFile: TPJResourceFile;
+  Entry: TPJResourceEntry;
+  Idx: Integer;
+begin
+  ...
+  Idx := fResFile.FindEntryIndex(RT_HTML, 'INDEX_HTML');
+  if Idx >= 0 then
+  begin
+    Entry := fResFile.Entries[Idx];
+    ShowMessageFmt(
+      'Data size for INDEX_HTML is %d', [Entry.DataSize]
+    );
+  end
+  else
+    ShowMessage('Can''t find resource');
+  ...
+end;
+}}}
+
+Note that we have used the "short form" of the _[TPJResourceFileFindEntry FindEntry]_ and _[TPJResourceFileFindEntryIndex FindEntryIndex]_ methods above: they find the first resource with the given type and name, irrespective of language id. The long versions of the methods find a specific resource type, name and language. For example the following code finds a `RT_HTML` resource named `INDEX_HTML` with a language id of `$0809`:
+
+{{{
+// "Full" version of FindEntry
+var
+  ResFile: TPJResourceFile;
+  Entry: TPJResourceEntry;
+begin
+  ...
+  Entry := ResFile.FindEntryIndex(RT_HTML, 'HTMLRES_HTML', $0809);
+  if Assigned(Entry) then
+    ... etc ...
+end;
+}}}
+
+*Links:*
+
+  * [ResFileExample4 Next Example]
+  * [ResFileExample2 Previous Example]
+  * Back to [ResFileExamples List of Examples]

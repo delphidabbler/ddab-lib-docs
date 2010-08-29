@@ -1,0 +1,65 @@
+#summary Resource File Unit Example 10.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Example #10: A practical example =
+
+All the other examples in this documentation are rather contrived examples that seek to focus on one or more related aspects of the functionality in the _PJResFile_ unit. This example is different in that it's a useful example that uses several of the methods covered by other examples.
+
+We will create a routine that takes a list of HTML and related files and creates a resource file which has a unique `RT_HTML` resource for each file. The resource contains the contents of the related file. Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article [http://www.delphidabbler.com/articles?article=10 "How to create and use HTML resource files"] for more information on this subject.
+
+Here is the code of the routine:
+
+{{{
+procedure BuildHTMLResFile(const Files: TStrings; const ResFileName: string);
+var
+  ResFile: TPJResourceFile; // res file object
+  Entry: TPJResourceEntry;  // a resource entry
+  ResName: string;          // a resource name
+  SrcFileName: string;      // a source file name
+  SrcStm: TFileStream;      // source file stream
+  FileIdx: Integer;         // loops thru Files
+begin
+  // Create new empty resource file object
+  ResFile := TPJResourceFile.Create;
+  try
+    // Loop thru all source files
+    for FileIdx := 0 to Pred(Files.Count) do
+    begin
+      // Record source file name
+      SrcFileName := Files[FileIdx];
+      // Get resource name from source name
+      ResName := ExtractFileName(SrcFileName);
+      // Ensure res name is not a duplicate
+      while ResFile.EntryExists(RT_HTML, PChar(ResName), $0809) do
+        ResName := '_' + ResName;
+      // Create new resource
+      Entry := ResFile.AddEntry(RT_HTML, PChar(ResName), $0809);
+      // Copy source file into resource data
+      SrcStm := TFileStream.Create(SrcFileName, fmOpenRead);
+      try
+        Entry.Data.CopyFrom(SrcStm, 0);
+        Entry.Data.Position := 0;
+      finally
+        SrcStm.Free;
+      end;
+    end;
+    // Save resource file
+    ResFile.SaveToFile(ResFileName);
+  finally
+    // Free resource file object (also frees resource entries)
+    ResFile.Free;
+  end;
+end;
+}}}
+
+The _Files_ parameter of the routine is a string list containing the names of files that are to be included in the resource file. The _!ResFileName_ parameter receives the name of the output file which will be a valid 32 bit resource file.
+
+We first create a new resource file object to store the HTML resources. We then loop through all the files in the list and add a new resource for each file. The resource is named with the base name of the file. To ensure the resource names are not duplicated we repeatedly append underscore characters to duplicate names until they are unique. Having got a unique resource name we create a new resource entry for it and then copy the file's contents into the resource data. Finally we save the resource file and tidy up.
+
+*Links:*
+
+  * [ResFileExample9 Previous Example]
+  * Back to [ResFileExamples List of Examples]
