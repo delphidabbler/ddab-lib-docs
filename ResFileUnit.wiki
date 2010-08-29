@@ -17,7 +17,7 @@ This wiki is divided into several sections as noted in the following table.
 || _[EPJResourceFile EPJResourceFile]_ || Class of exception raised by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. ||
 || [ResFileRoutines Helper Routines] || Routines to assist in working with resource identifiers. ||
 || [ResFileConsts Constants] || Various useful constants. ||
-|| _[ResFileExamples Examples]_ || Several examples of how to use the code of the Resource File Unit. ||
+|| [ResFileExamples Examples] || Several examples of how to use the code of the Resource File Unit. ||
 
 *Links:*
 
