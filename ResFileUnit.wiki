@@ -8,11 +8,16 @@ $Date$
 
 This unit contains classes that encapsulate Windows 32 bit binary resource files and the resources contained in them. The main functionality is provided by two classes. In addition some helper functions, an exception class and some constants are also provided.
 
-|| _[TPJResourceFile TPJResourceFile]_ || Encapsulates the contents of a whole resource files and provides methods and properties to search, enumerate and manipulate them. ||
-|| _[TPJResourceEntry TPJResourceEntry]_ || Encapsulates a single resource within a resource file and provides properties to access its header record and its raw data. ||
+The classes encapsulate the low-level structure of a resource file and its resources. It deals only with raw resource data. The actual format of the raw data depends on the resource type. *This unit does not provide any support for specific resource types or their data formats.*
+
+This wiki is divided into several sections as noted in the following table.
+
+|| _[TPJResourceFile TPJResourceFile]_ || Class that encapsulates the contents of a whole resource file and provides methods and properties to search, enumerate and manipulate it. ||
+|| _[TPJResourceEntry TPJResourceEntry]_ || Class that encapsulates a single resource within a resource file and provides properties and methods to access its header record and its raw data and to compare it to other resources. ||
+|| _[EPJResourceFile EPJResourceFile]_ || Class of exception raised by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. ||
 || [ResFileRoutines Helper Routines] || Routines to assist in working with resource identifiers. ||
-|| [ResFileConsts Constants] || Constants for use with the memory flags field of resource header records along with declarations of resource types not defined by all supported versions of Delphi. ||
-|| _EPJResourceFile_ || Class of exceptions that are raised directly by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. The class defines no new methods or properties. ||
+|| [ResFileConsts Constants] || Various useful constants. ||
+|| _[ResFileExamples Examples]_ || Several examples of how to use the code of the Resource File Unit. ||
 
 *Links:*
 
