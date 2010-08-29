@@ -18,7 +18,7 @@ class function IsValidResourceStream(const Stm: TStream): Boolean;
 
 This class method checks if a stream contains data representing a valid 32 bit resource file starting at the current position in the stream. This method checks that a 32 bit resource file header is present but does not validate the whole of the file. Note that the stream is *not* rewound to the starting position after the check is made.
 
-Use _!IsValidResourceStream_ to test a stream for validity before loading it into a _TPJResourceFile_ object.
+Use _!IsValidResourceStream_ to test a stream for validity before loading it into a _[TPJResourceFile TPJResourceFile]_ object.
 
 *_Parameter:_*
 
