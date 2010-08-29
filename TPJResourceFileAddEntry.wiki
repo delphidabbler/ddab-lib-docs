@@ -1,10 +1,10 @@
-#summary Description of the TPJResourceFile.AddEntry method.
+#summary Description of the TPJResourceFile.AddEntry methods.
 <wiki:comment>
 $Rev$
 $Date$
 </wiki:comment>
 
-= !AddEntry method =
+= !AddEntry methods =
 
 *Project:* [ResFileUnit Resource File Unit]
 

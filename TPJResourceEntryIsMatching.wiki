@@ -1,10 +1,10 @@
-#summary Description of the TPJResourceEntry.IsMatching method.
+#summary Description of the TPJResourceEntry.IsMatching methods.
 <wiki:comment>
 $Rev$
 $Date$
 </wiki:comment>
 
-= !IsMatching method =
+= !IsMatching methods =
 
 *Project:* [ResFileUnit Resource File Unit]
 
