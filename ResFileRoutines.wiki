@@ -22,7 +22,7 @@ These helper routines are to assist in manipulating resource identifiers. They c
 function IsIntResource(const ResID: PChar): Boolean;
 }}}
 
-This is a clone of the `IS_INTRESOURCE` macro defined on MSDN that checks if a resource identifier is ordinal or a string. Complements the _!MakeIntResource_ “macro” defined in _Windows.pas_.
+This is a clone of the `IS_INTRESOURCE` macro defined on MSDN that checks if a resource identifier is ordinal or a string. Complements the _!MakeIntResource_ "macro" defined in _Windows.pas_.
 
 *_Parameter:_*
 
