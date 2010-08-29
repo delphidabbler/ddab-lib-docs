@@ -6,9 +6,9 @@ $Date$
 
 = Resource File Helper Routines =
 
-Project: [ResFileUnit Resource File Unit]
+*Project:* [ResFileUnit Resource File Unit]
 
-Unit: _PJResFile_.
+*Unit:* _PJResFile_.
 
 These helper routines are to assist in manipulating resource identifiers. They can be useful when working with Windows API routines as well as the classes provided in this unit. They are:
 

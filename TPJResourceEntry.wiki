@@ -6,9 +6,9 @@ $Date$
 
 = TPJResourceEntry =
 
-Project: [ResFileUnit Resource File Unit]
+*Project:* [ResFileUnit Resource File Unit]
 
-Unit: _PJResFile_.
+*Unit:* _PJResFile_.
 
 This class encapsulates a resource within a resource file.
 

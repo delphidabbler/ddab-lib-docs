@@ -6,9 +6,9 @@ $Date$
 
 = Resource File Unit Constants =
 
-Project: [ResFileUnit Resource File Unit]
+*Project:* [ResFileUnit Resource File Unit]
 
-Unit: _PJResFile_.
+*Unit:* _PJResFile_.
 
 Some constants are defined to assist in setting some of the class properties.
 
