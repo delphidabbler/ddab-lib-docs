@@ -11,17 +11,18 @@ The [http://subversion.tigris.org/ Subversion] repository for the !DelphiDabbler
 <pre>
 branches                    unused at present
 tags                        all stable releases
+  lib                       unused at present: reserved for releases of whole library
   projects                  stable releases of each sub-project
     proj-id                 stable releases of a sub-project: one dir per project
       release-x.x           contains a release: one dir per release
       ...
     ...                     
-  lib                       unused at present: reserved for releases of whole library
 trunk                       main development tree
+  lib                       development tree for whole library and common code
+    !DevTools                development tools common to whole library
   projects                  development tree for sub-projects
     proj-id                 development tree of a sub-project: one dir per project
     ...
-  lib                       unused at present: reserved for development tree for whole library
 wiki                        contains library wiki</pre>                
 
 == "branches" tree ==
