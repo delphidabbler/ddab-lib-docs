@@ -6,13 +6,13 @@ $Date$
 
 = Resource File Unit =
 
-This unit contains classes that encapsulate Windows 32 bit binary resource files and the resources contained in them. The main functionality is provided by two classes. In addition some helper functions, an exception class and some constants are also provided. 
+This unit contains classes that encapsulate Windows 32 bit binary resource files and the resources contained in them. The main functionality is provided by two classes. In addition some helper functions, an exception class and some constants are also provided.
 
-|| _[TPJResourceFile TPJResourceFile]_ || Encapsulates the contents of a whole resource file and provides methods and properties for reading, finding, editing, adding and deleting resources. Resource files can be read from and written to files or streams. ||
-|| _[TPJResourceEntry TPJResourceEntry]_ || Encapsulates a single resource within the file and provides properties to access its header record and its raw data. The class also has methods to check the identity of the resource. The resource's raw data is made available as a _TStream_ and so is easily read and written using familiar _TStream_ methods. *Note:* Instances of this class must not be created: it is actually an abstract class - concrete instances are created internally by the unit. ||
-|| [ResFileRoutines Helper Routines] || The routines make it easier to work with resource identifiers. ||
-|| [ResFileConsts Constants] || Some constants are defined for use with the memory flags field of resource header records. Resource types not defined by all supported versions of Delphi are also provided. ||
-|| _[EPJResourceFile EPJResourceFile]_ || Type of all exceptions raised in the Resource File Unit. ||
+|| _[TPJResourceFile TPJResourceFile]_ || Encapsulates the contents of a whole resource files and provides methods and properties to search, enumerate and manipulate them. ||
+|| _[TPJResourceEntry TPJResourceEntry]_ || Encapsulates a single resource within a resource file and provides properties to access its header record and its raw data. ||
+|| [ResFileRoutines Helper Routines] || Routines to assist in working with resource identifiers. ||
+|| [ResFileConsts Constants] || Constants for use with the memory flags field of resource header records along with declarations of resource types not defined by all supported versions of Delphi. ||
+|| _EPJResourceFile_ || Class of exceptions that are raised directly by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. The class defines no new methods or properties. ||
 
 *Links:*
 
