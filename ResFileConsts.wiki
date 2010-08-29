@@ -14,7 +14,7 @@ Some constants are defined to assist in setting some of the class properties.
 
 == Memory Flags Constants ==
 
-The following flags are used to form the bitmask in a resource entry's _[TPJResourceEntryMemoryFlags MemoryFlags]_ property. The first four constants in the table can or ORd together to form the bitmask. The final three constants are complements of the first three and are ANDed against the bitmask to remove their complement from it.
+The following flags are used to form the bitmask in a resource entry's _!MemoryFlags_ property. The first four constants in the table can or ORd together to form the bitmask. The final three constants are complements of the first three and are ANDed against the bitmask to remove their complement from it.
 
 || *Constant* || *Value* || *Description* ||
 || `RES_MF_MOVEABLE` || `$0010` || The system can move the resource in memory. If this flag is not present the resource is fixed in memory. ||
