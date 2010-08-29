@@ -21,7 +21,7 @@ Care should be taken not to use a resource entry after the related resource file
 == Methods ==
 
 || *Method* || *Description* ||
-|| _[IsMatching IsMatching]_ || Overloaded methods to check if the resource entry matches the type, name and language ID of another entry. ||
+|| _[TPJResourceEntryIsMatching IsMatching]_ || Overloaded methods to check if the resource entry matches the type, name and language ID of another entry. ||
 
 == Properties ==
 
