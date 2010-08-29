@@ -6,9 +6,9 @@ $Date$
 
 = TPJResourceFile =
 
-Project: [ResFileUnit Resource File Unit]
+*Project:* [ResFileUnit Resource File Unit]
 
-Unit: _PJResFile_.
+*Unit:* _PJResFile_.
 
 This class is used to encapsulate a 32 bit resource file, to find which resources it contains, to add new resources and to delete existing ones.
 
