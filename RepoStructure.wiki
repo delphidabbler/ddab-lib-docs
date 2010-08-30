@@ -1,55 +1,28 @@
 #summary Structure of Delphi Library Source Repository
 <wiki:comment>
-$Rev$
-$Date$
+$Rev: 611 $
+$Date: 2010-08-29 21:38:52 +0100 (Sun, 29 Aug 2010) $
 </wiki:comment>
 
 = Source Code Repository Structure =
 
 The [http://subversion.tigris.org/ Subversion] repository for the !DelphiDabbler Component and Unit Library is structured as follows:
 
-<pre>
-branches                    unused at present
-tags                        all stable releases
-  lib                       unused at present: reserved for releases of whole library
-  projects                  stable releases of each sub-project
-    proj-id                 stable releases of a sub-project: one dir per project
-      release-x.x           contains a release: one dir per release
-      ...
-    ...                     
-trunk                       main development tree
-  lib                       development tree for whole library and common code
-    !DevTools                development tools common to whole library
-  projects                  development tree for sub-projects
-    proj-id                 development tree of a sub-project: one dir per project
-    ...
-wiki                        contains library wiki</pre>                
-
-== "branches" tree ==
-
-The `branches` tree is currently unused.
-
-== "tags" tree ==
-
-The `tags` tree contains stable releases of each of the library's constituent projects and the complete library.
-
-The project releases are contained in the `projects` sub-directory, which in turn has a further sub-directory for each project, named for the project's id. Within that directory is a set of `release-x.x` directories, one for each stable release contained within the repository.
-
-The `lib` directory is reserved for releases of the complete library. Each release will have its own sub-directory. The directory is unused at present.
-
-== "trunk" tree ==
-
-The `trunk` tree contains current development code. It is not guaranteed to be stable, but contains the latest updates. 
-
-Updates to individual projects are stored in the `projects` sub tree, where there is one sub-directory for each project, named for the project id.
-
-The `lib` subtree is reserved for development code that applies to the whole library. This directory is unused at present.
-
-== "wiki" tree ==
-
-This tree contains the documents that make up the library's Wiki on Google Code.
-
------
+|| <pre>branches</pre> || Unused at present. ||
+|| <pre>tags</pre> || Contains copies of all stable releases. ||
+|| <pre>  lib</pre> || Unused at present. Reserved for any releases of whole library. Each release will have its own sub-directory. ||
+|| <pre>  projects</pre> || Contains stable releases of each sub-project. ||
+|| <pre>    proj-id</pre> || Contains stable releases of a sub-project. There is one such directory for each sub-project. The directory name is the ID of the sub-project. ||
+|| <pre>      release-x.x.x</pre> || Contains a stable release of the sub-project. There is one such directory for each release. x.x.x is replaced by the release version number. ||
+|| <pre>      ...</pre> ||  ||
+|| <pre>    ...</pre> ||  ||
+|| <pre>trunk</pre> || Main development tree. Contains the current development code. It is not guaranteed to be stable, but contains the latest updates. ||
+|| <pre>  common</pre> || Contains files common to more than one project. ||
+|| <pre>  lib</pre> || Unused at present. Reserved for any development code and documents relating to the whole library. ||
+|| <pre>  projects</pre> || Development tree for sub-projects. ||
+|| <pre>    proj-id</pre> || Development tree for a sub-project. There is one such directory for each sub-project. The directory name is the ID of the sub-project. ||
+|| <pre>    ...</pre> ||  ||
+|| <pre>wiki</pre> || Contains the documents that make up the library's Wiki on Google Code. ||
 
 *Links:*
 
