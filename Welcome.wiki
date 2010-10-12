@@ -17,6 +17,7 @@ The Library currently contains the following projects.
 || [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
 || [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long *string* and _TCaption_ properties to be edited at design time. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited at design time using symbolic constant names. ||
+|| [HotLabelComponent Hot Label Component] || Clickable label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. ||
 || [MD5Unit MD5 Message Digest Unit] || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
 || [MessageDialogComponents Message Dialog Components] || Components that wrap message dialog boxes provided by the VCL and the Windows API. ||
 || [ResFileUnit Resource File Unit] || Provides a classes that encapsulate 32 bit binary resource files and the resources they contain. Can read and update raw resource file data. ||
