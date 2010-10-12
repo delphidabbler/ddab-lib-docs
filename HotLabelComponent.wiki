@@ -1,0 +1,11 @@
+#summary Hot Label Component documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Hot Label Component =
+
+This is a placeholder page for the documentation of the Hot Label Component.
+
+*No content has yet been created. Please check back.*
