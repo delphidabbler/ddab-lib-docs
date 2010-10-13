@@ -6,6 +6,25 @@ $Date$
 
 = Hot Label Component =
 
-This is a placeholder page for the documentation of the Hot Label Component.
+The _PJHotLabel_ unit contains a single component, _[TPJHotLabel TPJHotLabel]_, that implements a label control that can access a URL when clicked.
 
-*No content has yet been created. Please check back.*
+Several types are defined in the unit in total. They are:
+
+|| _[TPJHotLabel TPJHotLabel]_ || The Hot Label Component itself. ||
+|| _[EPJURLError EPJURLError]_  || A custom exception that is raised by _[TPJHotLabel TPJHotLabel]_ when URL related errors are encountered. ||
+|| _TPJHLHintStyle_ || An emumeration of hint styles used by the _[TPJHotLabelHintStyle HintStyle]_ property. See the property's documentation for details. ||
+|| _TPJHLCustomHintEvent_ || The type of event triggered by the _[TPJHotLabelOnCustomHint OnCustomHint]_ event. See the event's documentation for details. ||
+
+== Examples ==
+
+Two examples provide some ideas as to how to use the component:
+
+|| [HotLabelExample1 Example 1] || Using Highlighting - illustrates the use of text highlighting to indicate that a hot label is clickable. ||
+|| [HotLabelExample1 Example 2] || Using the _[TPJHotLabelOnCustomHint OnCustomHint]_ event. ||
+
+A further example is provided by the demo program that is included in the download.
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/hotlabel Hot Label Component Web Page].
