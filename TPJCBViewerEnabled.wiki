@@ -1,0 +1,25 @@
+#summary Description of the TPJCBViewer.Enabled property.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Enabled property =
+
+*Project:* [ClipboardViewerComponent Clipboard Viewer Component].
+
+*Unit:* _PJCBView_.
+
+*Class:* _[TPJCBViewer TPJCBViewer]_
+
+{{{
+property Enabled: Boolean;
+}}}
+
+== Description ==
+
+The _Enabled_ property enables and disables the component.
+
+When the property is set to `True` the component triggers the _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ event when the content of the clipboard changes. When _Enabled_ is `False` the event is not triggered.
+
+The default value is `True`.
