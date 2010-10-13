@@ -20,4 +20,4 @@ property OnClipboardChanged: TNotifyEvent;
 
 This event is triggered when the clipboard contents change, providing that the _[TPJCBViewerEnabled Enabled]_ property is `True`. You should handle this event to perform any processing you need to do when the clipboard content changes.
 
-If the _[TPJCBViewerTriggerOnCreation TriggerOnCreation]_ property is `True` then the event is also fired immediately after the component is created. This behaviour can be when you need to check the clipboard content at program start up as well as when the content changes. By using this feature you simply need to code the event handler and don't need any special start up code.
+If the _[TPJCBViewerTriggerOnCreation TriggerOnCreation]_ property is `True` then the event is also fired immediately after the component is created. This behaviour can be useful when you need to check the clipboard content at program start up as well as when the content changes. By using this feature you simply need to code the event handler and don't need any special start up code.
