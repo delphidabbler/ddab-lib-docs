@@ -44,3 +44,6 @@ begin
   HintStr := Format(HintStr, [PJHotLabel1.URL]);
 end;
 }}}
+
+*Link:*
+  Back to [HotLabelComponent Hot Label Component Page]
