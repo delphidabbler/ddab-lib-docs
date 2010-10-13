@@ -1,0 +1,11 @@
+#summary Clipboard Viewer Component documentation.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Clipboard Viewer Component =
+
+This is a placeholder page for the documentation of the Clipboard Viewer Component.
+
+*No content has yet been created. Please check back.*
