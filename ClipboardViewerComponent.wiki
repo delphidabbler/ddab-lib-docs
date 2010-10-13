@@ -6,6 +6,15 @@ $Date$
 
 = Clipboard Viewer Component =
 
-This is a placeholder page for the documentation of the Clipboard Viewer Component.
+This project contains one unit - _PJCBView_ - that implements a single non-visual component:
 
-*No content has yet been created. Please check back.*
+|| _[TPJCBViewer TPJCBViewer]_ || Component that notifies the user when the content of the Windows clipboard changes. ||
+
+No other classes or types are defined.
+
+A demo program showing how to use the component is included with the download.
+
+*Links:*
+
+  * Back to [Welcome Wiki Home Page]
+  * [http://www.delphidabbler.com/software/cbview Clipboard Viewer Component Web Page].
