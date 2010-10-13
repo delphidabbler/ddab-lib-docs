@@ -1,0 +1,46 @@
+#summary Hot Label Component Example 2.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Examples: Using the !OnCustomHint event. =
+
+These examples show how to use the _[TPJHotLabelOnCustomHint OnCustomHint]_ event of _[TPJHotLabel TPJHotLabel]_. We handle the event to display a hint containing some descriptive text along with the URL in brackets.
+
+== Example 1 ==
+
+Drop a _[TPJHotLabel TPJHotLabel]_ component on a form and create a _!FormCreate_ and a _[TPJHotLabelOnCustomHint OnCustomHint]_ event handler, completed as follows:
+
+{{{
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  PJHotLabel1.URL := 'http://www.delphidabbler.com/';
+  PJHotLabel1.HintStyle := hsCustom;
+  PJHotLabel1.ShowHint := True;
+end;
+
+procedure TForm1.PJHotLabel1CustomHint(Sender: TObject; var HintStr: string);
+begin
+  HintStr := Format('View the site''s index page (%s)',  [PJHotLabel1.URL]);
+end;
+}}}
+
+== Example 2 ==
+
+This example is similar to the first except we store the custom hint text in the Hint property rather than entering the text in the form unit. This keeps the form's text in the form file. Drop a _[TPJHotLabel TPJHotLabel]_ component on a form and create a _!FormCreate_ and a _[TPJHotLabelOnCustomHint OnCustomHint]_ event handler as before, and comple them as follows:
+
+{{{
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  PJHotLabel1.Hint := 'View the site''s index page (%s)';
+  PJHotLabel1.URL := 'http://www.delphidabbler.com/';
+  PJHotLabel1.HintStyle := hsCustom;
+  PJHotLabel1.ShowHint := True;
+end;
+
+procedure TForm1.PJHotLabel1CustomHint(Sender: TObject; var HintStr: string);
+begin
+  HintStr := Format(HintStr, [PJHotLabel1.URL]);
+end;
+}}}
