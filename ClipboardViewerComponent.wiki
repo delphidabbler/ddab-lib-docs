@@ -12,7 +12,7 @@ This project contains one unit - _PJCBView_ - that implements a single non-visua
 
 No other classes or types are defined.
 
-A demo program showing how to use the component is included with the download.
+For information on how to use the component see either the [ClipboardViewerExample worked example] or the demo program that is included with the download.
 
 *Links:*
 
