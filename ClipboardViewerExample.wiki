@@ -10,8 +10,8 @@ The following is an example of how to use the [ClipboardViewerComponent Clipboar
 
 Drop a _[TPJCBViewer TPJCBViewer]_ component, a _TButton_ and a _TMemo_ on a form. Do not change any of the components' default properties. Add the _Clipbrd_ unit to your uses clause. Using the object inspector, create the following event handlers:
 
-  * an OnClipboardChanged handler for the TPJCBViewer component;
-  * an OnClick handler for the button.
+  * an _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ handler for the _[TPJCBViewer TPJCBViewer]_ component;
+  * an _!OnClick_ handler for the _TButton_.
 
 Implement the event handlers as follows:
 
