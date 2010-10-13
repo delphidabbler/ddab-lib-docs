@@ -1,0 +1,55 @@
+#summary TPJHotLabel class description
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= TPJHotLabel =
+
+*Project:* [HotLabelComponent Hot Label Component].
+
+*Unit:* _PJHotLabel_.
+
+This component provides a label that can access a user-defined URL when clicked. The URL is displayed in the default browser or email client.
+
+In addition to the properties of _TLabel_, from which this component descends, it provides additional properties for working with URLs. The effect of some of _TLabel_'s properties is modified in _TPJHotLabel_.
+
+=== URLs and the Caption ===
+
+The _[TPJHotLabelURL URL]_ property is used for storing the URL to be accessed and the _[TPJHotLabelCaption Caption]_ property can either store descriptive text or can reflect the URL, depending on the value of the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property. When the _[TPJHotLabelValidateURL ValidateURL]_ property is `True`, URLs are automatically validated, raising an exception if invalid.
+
+=== Fonts and highlighting ===
+
+The label's _[TPJHotLabelFont Font]_ property defaults to a font based on the parent font at the time the component is dropped on the form, but coloured navy blue. It should be noted that the _[TPJHotLabelFont Font]_ property will not automatically reflect changes in the parent controls's font since _[TPJHotLabelParentFont ParentFont]_ defaults to `False`. The label can be highlighted when the mouse passes over it. It does this only if the _[TPJHotLabelHighlightURL HighlightURL]_ property is `True`, in which case the _[TPJHotLabelHighlightFont HighlightFont]_ property is used when the mouse is over the label. The value of _[TPJHotLabelHighlightFont HighlightFont]_ is, by default, based on the default font used by the _[TPJHotLabelFont Font]_ property, but with a different colour.
+
+=== The cursor ===
+
+The _[TPJHotLabelCursor Cursor]_ property defaults to `crHandPoint` rather than `crDefault` so that the expected "pointing hand" is displayed over a link.
+
+=== Customising hints ===
+
+Useful, customisable, pop-up hints can be displayed when the mouse cursor hovers over the label. You can either display text from the _[TPJHotLabelHint Hint]_ property as normal, display the _[TPJHotLabelURL URL]_ property value (useful when the URL is not displayed in the label) or customise the hint each time it is displayed. The _[TPJHotLabelHintStyle]_ property is used to determine how hints are determined. Custom hints are set up by handling the _[TPJHotLabelOnCustomHint OnCustomHint]_ event.
+
+== Methods ==
+
+_TPJHotLabel_ defines no new methods over and above those inherited from _TLabel_.
+
+== Properties ==
+
+|| *Property* || *Description* ||
+|| _[TPJHotLabelCaption Caption]_ || Specifies a text string that that may be displayed in the label. How _[TPJHotLabelCaption Caption]_ is used depends on the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property. ||
+|| _[TPJHotLabelCaptionIsURL CaptionIsURL]_ || Determine whether the text of the label's _[TPJHotLabelURL URL]_ property is assigned to the _[TPJHotLabelCaption Caption]_ property or whether _[TPJHotLabelCaption Caption]_ can be used to display descriptive text. ||
+|| _[TPJHotLabelCursor Cursor]_ || Specifies the image used to represent the mouse pointer when it passes into the region covered by the control. ||
+|| _[TPJHotLabelFont Font]_ || Controls the attributes of un-highlighted text displayed in the label. ||
+|| _[TPJHotLabelHighlightFont HighlightFont]_ || Controls the attributes of the label's text when the mouse passes over it. ||
+|| _[TPJHotLabelHighlightURL HighlightURL]_ || Determines whether the label's text is highlighted when the mouse passes over the control. ||
+|| _[TPJHotLabelHint Hint]_ || Contains the text string that can appear when the user moves the mouse over the control. How _[TPJHotLabelHint Hint]_ is used depends on the _[TPJHotLabelHintStyle HintStyle]_ property. ||
+|| _[TPJHotLabelHintStyle HintStyle]_ || Determines the source of the text displayed in the component's hint. ||
+|| _[TPJHotLabelParentFont ParentFont]_ || Determines where the control looks for its font information. ||
+|| _[TPJHotLabelURL URL]_ || Stores the URL that is to be accessed when the label is clicked. ||
+|| _[TPJHotLabelValidateURL ValidateURL]_ || Determines whether the URL stored in the component is validated or not. ||
+
+== Events ==
+
+|| *Event* || *Description* ||
+|| _[TPJHotLabelOnCustomHint OnCustomHint]_ || An event that enables the user to specify a custom hint to be displayed by the component. ||
