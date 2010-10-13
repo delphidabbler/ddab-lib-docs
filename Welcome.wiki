@@ -12,6 +12,7 @@ The Library currently contains the following projects.
 
 || *Project* || *Description* ||
 || [AboutBoxComponent About Box Component] || Non-visual component that encapsulates an About Box. Set properties or link to a [VersionInformationComponent Version Information Component] to customise the about box content. ||
+|| [ClipboardViewerComponent Clipboard Viewer Component] || Component that triggers an event whenever the contents of the clipboard change. ||
 || [ConsoleAppClasses Console Application Runner Classes] || Classes to control the execution of child console application processes and to redirect input and output where required. Includes support for working with pipes. ||
 || [DropFilesComponents Drop Files Components] || Components that enable applications, windows and other components to support drag and drop from Windows Explorer. ||
 || [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
