@@ -48,4 +48,5 @@ TPJHotLabel1.HighlightURL := True;
 Again, run the application and move the mouse cursor over the control to see the highlighting effect.
 
 *Link:*
-  Back to [HotLabelComponent Hot Label Component Page]
+
+  * Back to [HotLabelComponent Hot Label Component Page]

@@ -46,4 +46,5 @@ end;
 }}}
 
 *Link:*
-  Back to [HotLabelComponent Hot Label Component Page]
+
+  * Back to [HotLabelComponent Hot Label Component Page]
