@@ -16,7 +16,7 @@ The Library currently contains the following projects.
 || [ConsoleAppClasses Console Application Runner Classes] || Classes to control the execution of child console application processes and to redirect input and output where required. Includes support for working with pipes. ||
 || [DropFilesComponents Drop Files Components] || Components that enable applications, windows and other components to support drag and drop from Windows Explorer. ||
 || [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
-|| [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long *string* and _TCaption_ properties to be edited at design time. ||
+|| [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long _string_ and _TCaption_ properties to be edited at design time. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited at design time using symbolic constant names. ||
 || [HotLabelComponent Hot Label Component] || Clickable label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. ||
 || [MD5Unit MD5 Message Digest Unit] || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
@@ -26,6 +26,6 @@ The Library currently contains the following projects.
 || [StreamExtensionClasses Stream Extension Classes] || Classes that provide a means to wrap _TStream_ objects. Also provides implementations of the _IStream_ interface. ||
 || [SystemInformationUnit System Information Unit] || Static classes that get information about the user's computer and operating system.  ||
 || [VersionInformationComponent Version Information Component] || Component that accesses version information embedded in program files, DLLs etc. ||
-|| [WindowStateComponents Window State Components] || Three components that save and restore window size, state and position using either, ini files, the registry or user-defined storage. ||
+|| [WindowStateComponents Window State Components] || Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. ||
 
 The library source code is stored in a [http://subversion.tigris.org/ Subversion] repository. The repository structure is described [RepoStructure here].
