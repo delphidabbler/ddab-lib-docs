@@ -21,7 +21,7 @@ property HintStyle: TPJHLHintStyle;
 
 == Description ==
 
-The _!HintStyle_ property determines how the text displayed in the component's pop-up hint is derived. There are three possible sources of the of the hint text:
+The _!HintStyle_ property determines how the text displayed in the component's pop-up hint is derived. There are three possible sources of the hint text:
 
 || *Style* || *Notes* ||
 || `hsNormal` || The pop-up hint displays as normal - i.e. the hint's text is taken from the _[TPJHotLabelHint Hint]_ property. ||

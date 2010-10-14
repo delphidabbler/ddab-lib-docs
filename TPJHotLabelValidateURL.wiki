@@ -32,6 +32,6 @@ URLs are validated only by examining the protocol and checking it is supported. 
 
 If validation fails a _[EPJURLError EPJURLError]_ exception is raised. If this exception is raised while setting _ValidateURL_ to `True` the default URL is stored in the _[TPJHotLabelURL URL]_ property.
 
-When the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ and _[TPJHotLabelValidateURL ValidateURL]_ properties are both `True`, assigning text to the _[TPJHotLabelCaption Caption]_ property also causes the text to be validated. The is because setting the _[TPJHotLabelCaption Caption]_ property in this case automatically updates the _[TPJHotLabelURL URL]_ property.
+When the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ and _ValidateURL_ properties are both `True`, assigning text to the _[TPJHotLabelCaption Caption]_ property also causes the text to be validated. This is because setting the _[TPJHotLabelCaption Caption]_ property in this case automatically updates the _[TPJHotLabelURL URL]_ property.
 
 The default property value is `True`.

@@ -28,7 +28,7 @@ end;
 
 == Example 2 ==
 
-This example is similar to the first except we store the custom hint text in the Hint property rather than entering the text in the form unit. This keeps the form's text in the form file. Drop a _[TPJHotLabel TPJHotLabel]_ component on a form and create a _!FormCreate_ and a _[TPJHotLabelOnCustomHint OnCustomHint]_ event handler as before, and comple them as follows:
+This example is similar to the first except we store the custom hint text in the Hint property rather than entering the text in the form unit. This keeps the form's text in the form file. Drop a _[TPJHotLabel TPJHotLabel]_ component on a form and create a _!FormCreate_ and a _[TPJHotLabelOnCustomHint OnCustomHint]_ event handler as before, and complete them as follows:
 
 {{{
 procedure TForm1.FormCreate(Sender: TObject);

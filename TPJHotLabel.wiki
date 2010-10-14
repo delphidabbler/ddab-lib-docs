@@ -12,11 +12,11 @@ $Date$
 
 This component provides a label that can access a user-defined URL when clicked. The URL is displayed in the default browser or email client.
 
-In addition to the properties of _TLabel_, from which this component descends, it provides additional properties for working with URLs. The effect of some of _TLabel_'s properties is modified in _TPJHotLabel_.
+In addition to the properties of _TLabel_, from which this component descends, additional properties for working with URLs are provided. The effect of some of _TLabel_'s properties is modified in _TPJHotLabel_.
 
 === URLs and the Caption ===
 
-The _[TPJHotLabelURL URL]_ property is used for storing the URL to be accessed and the _[TPJHotLabelCaption Caption]_ property can either store descriptive text or can reflect the URL, depending on the value of the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property. When the _[TPJHotLabelValidateURL ValidateURL]_ property is `True`, URLs are automatically validated, raising an exception if invalid.
+The _[TPJHotLabelURL URL]_ property is used for storing the URL to be accessed and the _[TPJHotLabelCaption Caption]_ property can either store descriptive text or can reflect the URL, depending on the value of the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property. When the _[TPJHotLabelValidateURL ValidateURL]_ property is `True` URLs are automatically validated, raising an exception if invalid.
 
 === Fonts and highlighting ===
 
@@ -28,7 +28,7 @@ The _[TPJHotLabelCursor Cursor]_ property defaults to `crHandPoint` rather than 
 
 === Customising hints ===
 
-Useful, customisable, pop-up hints can be displayed when the mouse cursor hovers over the label. You can either display text from the _[TPJHotLabelHint Hint]_ property as normal, display the _[TPJHotLabelURL URL]_ property value (useful when the URL is not displayed in the label) or customise the hint each time it is displayed. The _[TPJHotLabelHintStyle]_ property is used to determine how hints are determined. Custom hints are set up by handling the _[TPJHotLabelOnCustomHint OnCustomHint]_ event.
+Useful, customisable, pop-up hints can be displayed when the mouse cursor hovers over the label. You can either display text from the _[TPJHotLabelHint Hint]_ property as normal, display the _[TPJHotLabelURL URL]_ property value (useful when the URL is not displayed in the label) or customise the hint each time it is displayed. The _[TPJHotLabelHintStyle HintStyle]_ property is used to specify the source of the hint text. Custom hints are set up by handling the _[TPJHotLabelOnCustomHint OnCustomHint]_ event.
 
 == Methods ==
 
