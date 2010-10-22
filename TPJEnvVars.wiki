@@ -23,7 +23,7 @@ _TComponent_.
 || _[TPJEnvVarsCreate Create]_ || Object constructor. Permits only one instance to be placed on any form. ||
 || _[TPJEnvVarsDeleteVar DeleteVar]_ || Deletes an environment variable. ||
 || _[TPJEnvVarsEnumNames EnumNames]_ || _This is a redundant method provided for backward compatibility reasons only._ It enumerates all environment variable names, passing each name to a callback method. _[TPJEnvVarsGetEnumerator GetEnumerator]_ or <strong>for..in</strong> loops, where supported, should be used in preference. ||
-|| _[TPJEnvVarsGetEnumerator GetEnumerator]_ || Creates an enumerator that can be used to enumerate all environment variable names. On Delphi 2005 and later this enumerator enables the <strong>for..in</strong> construct to be used with the component. ||
+|| _[TPJEnvVarsGetEnumerator GetEnumerator]_ || Creates an [TPJEnvVarsEnumerator enumerator] that can be used to enumerate all environment variable names. On Delphi 2005 and later this enumerator enables the <strong>for..in</strong> construct to be used with the component. ||
 
 
 == Properties ==
