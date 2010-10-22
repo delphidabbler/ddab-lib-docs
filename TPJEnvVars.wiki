@@ -20,9 +20,10 @@ _TPJEnvVars_ defines the following methods in addition to those inherited from
 _TComponent_.
 
 || *Method* || *Description* ||
-|| _[TPJEnvVarsCreate Create]_ || Class constructor. Permits only one instance to be placed on any form. ||
+|| _[TPJEnvVarsCreate Create]_ || Object constructor. Permits only one instance to be placed on any form. ||
 || _[TPJEnvVarsDeleteVar DeleteVar]_ || Deletes an environment variable. ||
-|| _[TPJEnvVarsEnumNames EnumNames]_ || Enumerates all environment variables. ||
+|| _[TPJEnvVarsEnumNames EnumNames]_ || _This is a redundant method provided for backward compatibility reasons only._ It enumerates all environment variable names, passing each name to a callback method. _[TPJEnvVarsGetEnumerator GetEnumerator]_ or <strong>for..in</strong> loops, where supported, should be used in preference. ||
+|| _[TPJEnvVarsGetEnumerator GetEnumerator]_ || Creates an enumerator that can be used to enumerate all environment variable names. On Delphi 2005 and later this enumerator enables the <strong>for..in</strong> construct to be used with the component. ||
 
 
 == Properties ==
