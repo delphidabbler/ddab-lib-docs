@@ -18,6 +18,8 @@ The following public routines are defined in _PJEnvVars_:
   * [#GetAllEnvVars GetAllEnvVars]
   * [#ExpandEnvVars ExpandEnvVars]
   * [#CreateEnvBlock CreateEnvBlock]
+  * [#GetAllEnvVarNames GetAllEnvVarNames]
+  * [#EnvBlockSize EnvBlockSize]
 
 == !GetEnvVarValue ==
 
@@ -113,3 +115,24 @@ end;
 *WARNING:* _!CreateEnvBlock_ deals with buffer sizes in characters, not bytes, which is not the same thing on Unicode Delphis. When allocating buffers in bytes (e.g. with _!GetMem_) you must multiply the required size returned from _!CreateEnvBlock_ by !SizeOf(Char). Alternatively, use a routine such as _!StrAlloc_ that automatically takes account of the character size.
 
 The format of the environment block stored in _Buffer_ is a #0 character separated list of environment variables in `NAME=VALUE` form, terminated by two #0 characters.
+
+== !GetAllEnvVarNames ==
+
+{{{
+procedure GetAllEnvVarNames(const Names: TStrings); overload;
+function GetAllEnvVarNames: TStringDynArray; overload;
+}}}
+
+Both overloaded versions of this routine fetch a list of the current environment variable names. Any blank names are excluded from the list.
+
+The first version of the routine stores the environment variable names in the _Names_ string list. Any existing contents of the string list are discarded.
+
+The second version creates and returns a dynamic string array containing the environment variable names. _TStringDynArray_ is defined in the _Types_ unit. If the version of Delphi being used does not have the _Types_ unit then _TStringDynArray_ is defined in _PJEnvVars_.
+
+== !EnvBlockSize ==
+
+{{{
+function EnvBlockSize: Integer;
+}}}
+
+This function returns the size of the current environment block in _characters_. To get the size in bytes multiply the returned value by `SizeOf(Char)`.
