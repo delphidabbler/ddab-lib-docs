@@ -12,7 +12,7 @@ $Date$
 
 *Class:* _[TPJMD5 TPJMD5]_
 
-== Description == 
+== Description ==
 
 There a several different overloaded versions of the _Process_ method. Each method adds the data passed to it via its parameters to the current MD5 hash.
 
@@ -29,13 +29,19 @@ The disadvantage of _Process_ is that an instance of _[TPJMD5 TPJMD5]_ must be c
 ==== TBytes versions ====
 
 {{{
+procedure Process(const X: TBytes; const StartIdx, Count: Cardinal);
+  overload;
 procedure Process(const X: TBytes; const Count: Cardinal); overload;
 procedure Process(const X: TBytes); overload;
 }}}
 
-These methods add bytes from a _TBytes_ array to the current hash. The first version adds _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. The second version adds all the content of byte array _X_.
+These methods add bytes from a _TBytes_ array to the current hash.
 
-==== Untyped buffer vesion ====
+  # The first version adds _Count_ bytes to the hash, starting from index _!StartIdx_ in byte array _X_. If there are less than _Count_ bytes in the array counting from _!StartIdx_ then an _EPJMD5_ exception is raised. If _!StartIdx_ is beyond the end of the array or if _Count_ is zero no data is processed.
+  # The second version adds _Count_ bytes from the beginning of byte array _X_ to the hash. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. If _Count_ is zero then no data is processed.
+  # The last version adds all the content of byte array _X_ to the hash. If the array is empty then no data is processed.
+
+==== Untyped buffer version ====
 
 {{{
 procedure Process(const Buf; const Count: Cardinal); overload;
@@ -67,7 +73,7 @@ procedure Process(const Stream: TStream; const Count: Int64); overload;
 procedure Process(const Stream: TStream); overload;
 }}}
 
-Each of these methods adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property. 
+Each of these methods adds bytes from the stream _Stream_ to the current hash. The stream is read from the current position. To read the from the start of the stream set its _Position_ property to 0. Both methods modify the stream's _Position_ property.
 
 The first version reads _Count_ bytes from the stream if possible. If _Count_ is greater than number of bytes available then an _EPJMD5_ exception is raised. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
 
@@ -75,7 +81,7 @@ The stream is read into an internal buffer before adding the data to the hash. T
 
 === Examples ===
 
-Suppose you are about to transmit some data made up of a title as a UTF-8 encoded Unicode string followed by data taken from a stream.
+Suppose you are about to transmit some data and need an MD5 hash of the transmitted data. The data comprises a title string that will be encoded in UTF-8 for transmission, followed by some raw data taken from a stream.
 
 Assume that the _TStream_ object is referenced by _Stm_ and the string is recorded in the _!UnicodeString_ _Str_. Here's the code that gets the MD5 hash of the title string and the stream content. It stores the digest as a string in _!DigestStr_.
 

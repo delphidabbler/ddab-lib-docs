@@ -12,26 +12,32 @@ $Date$
 
 *Class:* _[TPJMD5 TPJMD5]_
 
-== Description == 
+== Description ==
 
-There a several different overloaded versions of the _Calculate_ method. Each method provides a useful shortcut when all you need to do is create an MD5 hash of a single data item, for example, of a stream, a string or a byte array. You can do this with just one method call with _Calculate_ - there is no need to create a _[TPJMD5 TPJMD5]_ instance.
+There a several different overloaded versions of the _Calculate_ method. Each method provides a useful shortcut when all you need to do is create an MD5 hash of a single data item such as a stream, a string or a byte array. You can do this with just one call to _Calculate_ - there is no need to create a _[TPJMD5 TPJMD5]_ instance.
 
-The disadvantages are: 
+The disadvantages are:
 
   # Only one "resource" can be processed.
-  # The size of the read buffer used when processing streams cannot be changed.
+  # The size of the read buffer used when processing streams and files cannot be changed from the default.
 
 === The Methods ===
 
 ==== TBytes versions ====
 
 {{{
-class function Calculate(const X: TBytes;
-  const Count: Cardinal): TPJMD5Digest; overload;
+class function Calculate(const X: TBytes; const StartIdx, Count: Cardinal):
+  TPJMD5Digest; overload;
+class function Calculate(const X: TBytes; const Count: Cardinal):
+  TPJMD5Digest; overload;
 class function Calculate(const X: TBytes): TPJMD5Digest; overload;
 }}}
 
-These methods generate a MD5 digest from a _TBytes_ array. The first version processes _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. The second version processes all the content of byte array _X_.
+These methods generate a MD5 digest from a _TBytes_ array.
+
+  # The first version processes _Count_ bytes starting from index _!StartIdx_ in byte array _X_. If there are less than _Count_ bytes in the array counting from _!StartIdx_ then an _EPJMD5_ exception is raised. If _!StartIdx_ is beyond the end of the array or if _Count_ is zero no data is processed.
+  # The second version processes _Count_ bytes from the beginning of byte array _X_. _X_ must have at least _Count_ elements otherwise an _EPJMD5_ exception is raised. If _Count_ is zero no data is processed.
+  # The last version processes the whole of byte array _X_. If the array is empty then no data is processed.
 
 ==== Untyped buffer vesion ====
 
@@ -58,7 +64,7 @@ class function Calculate(const S: UnicodeString;
 class function Calculate(const S: UnicodeString): TPJMD5Digest; overload;
 }}}
 
-Each of these methods creates a digest Unicode string _S_. Before processing the string it is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion while the second version uses the _TEncoding.Default_ encoding.
+Each of these methods creates a digest of a Unicode string _S_. Before processing the string it is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion while the second version uses the _TEncoding.Default_ encoding.
 
 ==== TStream versions ====
 
@@ -72,7 +78,7 @@ This pair of methods calculate a digest from the bytes read from a stream. Bytes
 
 The first version reads _Count_ bytes from the stream. If _Count_ is greater than number of bytes available then an _EPJMD5_ exception is raised. The second version reads to the end of the stream, processing `Stream.Size - Stream.Position` bytes.
 
-The stream is read in chunks. The size of a chunk is given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_ constant. This buffer size cannot be changed. If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method. 
+The stream is read in chunks. The size of a chunk is given by _[TPJMD5 TPJMD5]_'s _!DefReadBufferSize_ constant. This buffer size cannot be changed. If you need to change the buffer size you must create a _[TPJMD5 TPJMD5]_ instance, set the buffer size using the _!ReadBufferSize_ property, then use the appropriate _[TPJMD5Process Process]_ method.
 
 === Examples ===
 
@@ -98,6 +104,19 @@ begin
   ...
   Stm.Position := 0;
   Digest := TPJMD5.Calculate(A);
+  ...
+end;
+}}}
+
+Create an MD5 digest of the middle four bytes of an eight element array of bytes:
+
+{{{
+var
+  Digest: TPJMD5Digest;
+  A: TBytes;
+begin
+  A := TBytes.Create(1,2,3,4,5,6,7,8);
+  Digest := TPJMD5.Calculate(A, 2, 4);  // MD5 of 3,4,5,6
   ...
 end;
 }}}
