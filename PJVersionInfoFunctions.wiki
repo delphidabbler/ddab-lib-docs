@@ -14,7 +14,7 @@ The following public routines are defined in _PJVersionInfo_:
 
   * [#VerNumToStr VerNumToStr]
   * [#CompareVerNums CompareVerNums]
-  
+
 These functions are provided mainly for users of Delphi 2005 and earlier who don't have the extended functionality of _[TPJVersionNumber TPJVersionNumber]_. The functions seek to replicate that functionality.
 
 == !VerNumToStr ==
@@ -23,7 +23,7 @@ These functions are provided mainly for users of Delphi 2005 and earlier who don
 function VerNumToStr(const Ver: TPJVersionNumber): string;
 }}}
 
-Converts a _[TPJVersionNumber TPJVersionNumber]_ record into a dotted quad string. If the following code is executed the string variable _S_ will contain the string '2.5.8.3'.
+Converts a _[TPJVersionNumber TPJVersionNumber]_ record into a dotted quad string. If the following code is executed the string variable _S_ will have the value '2.5.8.3'.
 
 {{{
 var

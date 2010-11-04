@@ -31,7 +31,7 @@ When compiled with Delphi 2006 and later _TPJVersionNumber_ has some additional 
 
 === String Assignment ===
 
-A _TPJVersionNumber_ record can be assigned to a string variable. The version number is stored in the string as a dotted quad. If the following code is executed the string _S_ will contain the string '2.5.8.3'.
+A _TPJVersionNumber_ record can be assigned to a string variable. The version number is stored in the string as a dotted quad. If the following code is executed the string variable _S_ will have the value '2.5.8.3'.
 
 {{{
 var
@@ -53,7 +53,7 @@ Users of Delphi 2005 and earlier can use the _[PJVersionInfoFunctions#VerNumToSt
 
 === Operator Overloads ===
 
-_TPJVersionNumber_ records can be compared with each other using all the usual equality operators, i.e. `=`, `<>`, `<`, `<=`, `>` and `>=`. This is particularly useful when checking the version numbers of two copies of an executable file to find which one is the latest version, maybe in an installer.
+_TPJVersionNumber_ records can be compared with each other using all the usual equality operators, i.e. `=`, `<>`, `<`, `<=`, `>` and `>=`. This is particularly useful when checking the version numbers of two copies of an executable file to find which one is the latest version.
 
 For example:
 
@@ -73,7 +73,6 @@ begin
     if VI1.FileVersionNumber > VI2.FileVersionNumber then
     begin
       // Program1.exe has later version than Program2.exe
-      // Maybe install Program1 over Program2
     end;
   finally
     VI1.Free;
