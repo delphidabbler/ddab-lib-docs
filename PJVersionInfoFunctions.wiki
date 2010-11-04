@@ -1,0 +1,56 @@
+#summary Version Information public routines.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= Version Information Public Routines=
+
+*Project:* [VersionInformationComponent Version Information Component].
+
+*Unit:* _PJVersionInfo_.
+
+The following public routines are defined in _PJVersionInfo_:
+
+  * [#VerNumToStr VerNumToStr]
+  * [#CompareVerNums CompareVerNums]
+  
+These functions are provided mainly for users of Delphi 2005 and earlier who don't have the extended functionality of _[TPJVersionNumber TPJVersionNumber]_. The functions seek to replicate that functionality.
+
+== !VerNumToStr ==
+
+{{{
+function VerNumToStr(const Ver: TPJVersionNumber): string;
+}}}
+
+Converts a _[TPJVersionNumber TPJVersionNumber]_ record into a dotted quad string. If the following code is executed the string variable _S_ will contain the string '2.5.8.3'.
+
+{{{
+var
+  S: string;
+  VN: TPJVersionNumber;
+begin
+  VN.V1 := 2;
+  VN.V2 := 5;
+  VN.V3 := 8;
+  VN.V4 := 3;
+  S := VerNumToStr(VN);
+  // ...
+end;
+}}}
+
+*Note:* Users of Delphi 2006 and later can simply assign a _[TPJVersionNumber TPJVersionNumber]_ record to a string to get exactly the same effect. There is never any need to call _!VerNumToStr_.
+
+== !CompareVerNums ==
+
+{{{
+function CompareVerNums(const Ver1, Ver2: TPJVersionNumber): Integer;
+}}}
+
+Compares two _[TPJVersionNumber TPJVersionNumber]_ records. Return values are:
+
+  * 0 if _Ver1_ and _Ver2_ are the same
+  * <0 if _Ver1_ is less than _Ver2_
+  * >0 if _Ver1_ is greater than _Ver2_
+
+*Note:* Users of Delphi 2006 should rarely, if ever, need to use this function. Two version number records can be directly compared using the normal `=`, `<>`, `<`, `<=`, `>` and `>=` operators.
