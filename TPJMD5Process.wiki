@@ -81,6 +81,8 @@ The stream is read into an internal buffer before adding the data to the hash. T
 
 === Examples ===
 
+==== Example 1 ====
+
 Suppose you are about to transmit some data and need an MD5 hash of the transmitted data. The data comprises a title string that will be encoded in UTF-8 for transmission, followed by some raw data taken from a stream.
 
 Assume that the _TStream_ object is referenced by _Stm_ and the string is recorded in the _!UnicodeString_ _Str_. Here's the code that gets the MD5 hash of the title string and the stream content. It stores the digest as a string in _!DigestStr_.
@@ -111,7 +113,9 @@ begin
 end;
 }}}
 
-As the next example. suppose we have a class and we want an MD5 checksum of its public data, exposed via properties. Here's an extract from the class:
+==== Example 2 ====
+
+Assume we have a class and we want an MD5 checksum of its public data, exposed via properties. Here's an extract from the class:
 
 {{{
 type
