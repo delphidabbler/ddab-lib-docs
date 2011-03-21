@@ -39,6 +39,8 @@ Sets the environment variable named by _!VarName_ to _!VarValue_. If there is no
 
 Returns 0 on success or a Windows error code on error. The most likely cause of error is that the environment block is full and there is no room for the new value or to create a new variable. A description of any error can be found by passing the error code to _!SysUtils.!SysErrorMessage_.
 
+*NOTE:* This routine does not update the system's environment variables, only the copy of the environment maintained by this program.
+
 == !DeleteEnvVar ==
 
 {{{
@@ -49,6 +51,7 @@ Deletes the environment variable specified by _!VarName_. If the variable does n
 
 If _!DeleteEnvVar_ completes successfuly then 0 is returned. If an error occurs then a non-zero Windows error code is returned. A description of any error can be found by passing the error code to _!SysUtils.!SysErrorMessage_.
 
+*NOTE:* This routine has no effect on the system's environment variables, only the copy of the environment maintained by this program.
 
 == !GetAllEnvVars ==
 
