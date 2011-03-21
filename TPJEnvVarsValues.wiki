@@ -26,4 +26,6 @@ Values of existing environment variables can be set by assigning string values t
 
 If an error occurs when setting an environment variable, for example if the environment space is full, a _[EPJEnvVars EPJEnvVars]_ exception is raised.
 
+*NOTE:* Changing an environment variable by setting this property effects only this program's copy of the environment. It has no effect on the system's environment variables.
+
 The names of all current environment variables can be found using the _[TPJEnvVarsEnumNames EnumNames]_ method.
