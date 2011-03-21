@@ -21,3 +21,5 @@ procedure DeleteVar(const Name: string);
 Deletes the named environment variable. Does nothing if the environment variable does not exist. This is functionally the same as setting `Values[Name] := '';`
 
 A _[EPJEnvVars EPJEnvVars]_ exception is raised if it is not possible to delete the variable.
+
+*NOTE:* This method has no effect on the system environment variables, only on the copy of the environment maintained by this program.
