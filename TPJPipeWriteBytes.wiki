@@ -1,0 +1,31 @@
+#summary Description of the TPJPipe.WriteBytes method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !WriteBytes method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+procedure WriteBytes(const Bytes: TBytes);
+}}}
+
+== Description ==
+
+This method writes the whole content of a byte array to the pipe. Parameters are:
+
+ * _Bytes_: Array of bytes to write to the pipe.
+
+An _EInOutError_ exception is raised if the pipe's write handle has been closed or the pipe can't be written to.
+
+*Note*: On versions of Delphi where _TBytes_ is not defined in _!SysUtils_, _PJPipe_ defines it as:
+
+{{{
+type TBytes = array of Byte;
+}}}

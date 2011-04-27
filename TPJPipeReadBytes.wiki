@@ -1,0 +1,33 @@
+#summary Description of the TPJPipe.ReadBytes method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !ReadBytes method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJPipe_.
+
+*Class:* _[TPJPipe TPJPipe]_.
+
+{{{
+function ReadBytes(const Count: LongWord = 0): TBytes;
+}}}
+
+== Description ==
+
+This method reads data from the pipe into a byte array. Parameters are:
+
+ * _Count_: Number of bytes to read from the pipe. If _Count_ = 0 or greater than the number of available bytes then all the data from the pipe is read.
+
+The required byte array is returned.
+
+An _EInOutError_ exception is raised if there is an error peeking or reading the pipe.
+
+*Note*: On versions of Delphi where _TBytes_ is not defined in _!SysUtils_, _PJPipe_ defines it as:
+
+{{{
+type TBytes = array of Byte;
+}}}
