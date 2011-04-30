@@ -23,7 +23,7 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 == Public Properties ==
 
 || *Property* || *Description* ||
-|| _[TPJConsoleAppConsoleColors ConsoleColors]_ || Foreground and background colours used in console window. ||
+|| _[TPJConsoleAppConsoleColors ConsoleColors]_ || Foreground and background colours used in console window.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppConsoleTitle ConsoleTitle]_ || Title to be displayed in any new console window. ||
 || _[TPJConsoleAppElapsedTime ElapsedTime]_ || Approximate time in milliseconds since the console application began executing. ||
 || _[TPJConsoleAppEnvironment Environment]_ || Pointer to the environment block used by the console application. ||
@@ -35,7 +35,7 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 || _[TPJConsoleAppPriority Priority]_ || Priority with which the console application is started. ||
 || _[TPJConsoleAppProcessAttrs ProcessAttrs]_ || Specifies security and inheritance attributes for the console application process. ||
 || _[TPJConsoleAppProcessInfo ProcessInfo]_ || Provides process information for the executing console application. ||
-|| _[TPJConsoleAppScreenBufferSize ScreenBufferSize]_ || Size of console's screen buffer. ||
+|| _[TPJConsoleAppScreenBufferSize ScreenBufferSize]_ || Size of console's screen buffer.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppStdErr StdErr]_ || The console application's standard error handle. ||
 || _[TPJConsoleAppStdIn StdIn]_ || The console application's standard input handle. ||
 || _[TPJConsoleAppStdOut StdOut]_ || The console application's standard output handle. ||
@@ -44,8 +44,8 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 || _[TPJConsoleAppTimeToLive TimeToLive]_ || Amount of time a console application has left to run before timing out. ||
 || _[TPJConsoleAppUseNewConsole UseNewConsole]_ || Determines if a console application opens a new console window when run. ||
 || _[TPJConsoleAppVisible Visible]_ || Determines whether the console application is to be displayed. ||
-|| _[TPJConsoleAppWindowPosition WindowPosition]_ || Position of console window on screen. ||
-|| _[TPJConsoleAppWindowSize WindowSize]_ || Size of console window. ||
+|| _[TPJConsoleAppWindowPosition WindowPosition]_ || Position of console window on screen.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
+|| _[TPJConsoleAppWindowSize WindowSize]_ || Size of console window.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 
 
 == Public Events ==
