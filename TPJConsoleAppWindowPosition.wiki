@@ -1,0 +1,27 @@
+#summary Description of the TPJConsoleApp.WindowPosition property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !WindowPosition property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property WindowPosition: TPoint;
+}}}
+
+== Description ==
+
+This property specifies the co-ordinates of the top left corner of a console application's window, in pixels. If either co-ordinate is less than zero then the default window position is used.
+
+If a console application shares a console this property has no effect.
+
+The property defaults to (-1, -1).
+
+*Note:* Use the VCL's _Point_ function to create a _TPoint_ record with specified co-orindates on the fly. This should be used when setting the property value since the _X_ and _Y_ fields of _!WindowPosition_ cannot be written to directly.
