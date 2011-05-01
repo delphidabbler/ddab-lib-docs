@@ -19,4 +19,5 @@ There are two units, _PJConsoleApp_ and _PJPipe_. The classes contained in the u
 
   * Back to [Welcome Wiki Home Page]
   * [http://www.delphidabbler.com/software/consoleapp Console Application Runner Classes Web Page]
+  * [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppExamples Examples of Use]
   * [http://wiki.delphidabbler.com/index.php/FAQs/ConsoleAppClasses FAQs]
