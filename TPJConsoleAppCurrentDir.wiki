@@ -1,0 +1,27 @@
+#summary Description of the TPJConsoleApp.CurrentDir property
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CurrentDir property =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property CurrentDir: string;
+}}}
+
+== Description ==
+
+_!CurrentDir_ specifies the current directory of a console application executed by the parameterless version _[TPJConsoleAppExecute Execute]_.
+
+If the property is set to the empty string (the default) then the console application is executed with the same current directory as its parent program.
+
+*Remarks*
+
+If _[TPJConsoleAppExecute Execute]_ is called with _!CmdLine_ and _!CurrentDir_ parameters then this property is set to the value of the _!CurrentDir_ parameter.
