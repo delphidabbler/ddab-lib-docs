@@ -23,8 +23,10 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 == Public Properties ==
 
 || *Property* || *Description* ||
+|| _[TPJConsoleAppCommandLine CommandLine]_ || Command line used to execute a console application.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppConsoleColors ConsoleColors]_ || Foreground and background colours used in console window.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppConsoleTitle ConsoleTitle]_ || Title to be displayed in any new console window. ||
+|| _[TPJConsoleAppCurrentDir CurrentDir]_ || Application's current directory.<br>*Property not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppElapsedTime ElapsedTime]_ || Approximate time in milliseconds since the console application began executing. ||
 || _[TPJConsoleAppEnvironment Environment]_ || Pointer to the environment block used by the console application. ||
 || _[TPJConsoleAppErrorCode ErrorCode]_ || Provides information about any error that occurred while attempting to run a console application. ||
@@ -52,4 +54,5 @@ _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The o
 
 || *Event* || *Description* ||
 || _[TPJConsoleAppOnComplete OnComplete]_ || Triggered when an application completes or times out. ||
+|| _[TPJConsoleAppOnStart OnStart]_ || Triggered after a console application process is created and just before it starts executing.<br>*Event not yet available in any current release - present in development version on SVN only.* ||
 || _[TPJConsoleAppOnWork OnWork]_ || Triggered when the executing application yields control to this class. Permits necessary work to be completed. ||
