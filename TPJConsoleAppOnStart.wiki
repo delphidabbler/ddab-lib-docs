@@ -1,0 +1,25 @@
+#summary Description of the TPJConsoleApp.OnStart event
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnStart event =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJConsoleApp TPJConsoleApp]_.
+
+{{{
+property OnStart: TNotifyEvent;
+}}}
+
+== Description ==
+
+This event is triggered after console application process is created, just before it starts executing.
+
+It is *always* called before the first _[TPJConsoleAppOnWork OnWork]_ event.
+
+Handle this event to take any necessary action before the application starts executing. _[TPJConsoleAppProcessInfo ProcessInfo]_ is available when this event is triggered, so you will typically handle the event if you need access to process information at this stage.
