@@ -19,4 +19,5 @@ _TPJCustomConsoleApp_ has two protected virtual methods that can be overidden in
 
 || *Method* || *Description* ||
 || _[TPJCustomConsoleAppDoComplete DoComplete]_ || Triggers the _[TPJConsoleAppOnComplete OnComplete]_ event. ||
+|| _[TPJCustomConsoleAppDoStart DoStart]_ || Triggers the _[TPJConsoleAppOnStart OnStart]_ event.<br>_This method is only available in v2.0 or later._ ||
 || _[TPJCustomConsoleAppDoWork DoWork]_ || Triggers the _[TPJConsoleAppOnWork OnWork]_ event. ||
