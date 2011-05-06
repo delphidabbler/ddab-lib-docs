@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJCustomConsoleApp TPJCustomConsoleApp]_.
 
+*Introduced:* v1.0
+
 {{{
 procedure DoComplete; virtual;
 }}}
