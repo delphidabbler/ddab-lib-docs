@@ -22,9 +22,9 @@ _TPJPipe_ also provides methods that make working with with pipes easier. It can
 || _[TPJPipeCopyFromStream CopyFromStream]_ || Copies data from a stream into the pipe. ||
 || _[TPJPipeCopyToStream CopyToStream]_ || Copies data from the pipe to a stream. ||
 || _[TPJPipeCreate Create]_ || Various overloaded constructors. ||
-|| _[TPJPipeReadBytes ReadBytes]_ || Reads data from the pipe into a byte array.<br>_This method requires v2.0 or later._ *||
+|| _[TPJPipeReadBytes ReadBytes]_ || Reads data from the pipe into a byte array.<br>_This method is only available in v2.0 or later._ *||
 || _[TPJPipeReadData ReadData]_ || Reads data from the pipe into a buffer. ||
-|| _[TPJPipeWriteBytes WriteBytes]_ || Writes the content of a byte array to the pipe.<br>_This method requires v2.0 or later._ ||
+|| _[TPJPipeWriteBytes WriteBytes]_ || Writes the content of a byte array to the pipe.<br>_This method is only available in v2.0 or later._ ||
 || _[TPJPipeWriteData WriteData]_ || Writes data from a buffer to the pipe. ||
 
 == Properties ==
