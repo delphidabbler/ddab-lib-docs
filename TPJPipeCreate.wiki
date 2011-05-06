@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJPipe TPJPipe]_.
 
+*Introduced:* v1.0
+
 {{{
 constructor Create(const Size: LongWord; const Inheritable: Boolean = True);
   overload;

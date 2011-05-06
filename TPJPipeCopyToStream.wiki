@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJPipe TPJPipe]_.
 
+*Introduced:* v1.0
+
 {{{
 procedure CopyToStream(const Stm: TStream; Count: LongWord = 0);
 }}}

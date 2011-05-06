@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJPipe TPJPipe]_.
 
+*Introduced:* v2.0
+
 {{{
 procedure WriteBytes(const Bytes: TBytes);
 }}}

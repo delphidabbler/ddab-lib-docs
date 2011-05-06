@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJPipe TPJPipe]_.
 
+*Introduced:* v1.0
+
 {{{
 function ReadData(out Buf; const BufSize: LongWord; out BytesRead: LongWord):
   Boolean;

@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJPipe TPJPipe]_.
 
+*Introduced:* v2.0
+
 {{{
 function ReadBytes(const Count: LongWord = 0): TBytes;
 }}}
