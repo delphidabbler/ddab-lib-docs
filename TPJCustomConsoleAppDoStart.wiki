@@ -1,0 +1,25 @@
+#summary Description of the TPJCustomConsoleApp.DoStart method
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !DoStart method =
+
+*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+
+*Unit:* _PJConsoleApp_.
+
+*Class:* _[TPJCustomConsoleApp TPJCustomConsoleApp]_.
+
+*Introduced:* v2.0
+
+{{{
+procedure DoStart; virtual;
+}}}
+
+== Description ==
+
+This virtual protected method triggers the _[TPJConsoleAppOnWork OnStart]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
+
+The method would usually be implemented to perform any actions that need to be performed after the console application process has been created but before it starts running.
