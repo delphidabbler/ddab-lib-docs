@@ -10,6 +10,8 @@ $Date$
 
 *Unit:* _PJConsoleApp_.
 
+*Introduced:* v1.0
+
 This is the base class for _[TPJConsoleApp TPJConsoleApp]_. It implements all the functionality of that class, but declares all properties as protected. For details of the main properties, methods and events see the documentation for _[TPJConsoleApp TPJConsoleApp]_.
 
 If you intend to sub-class _[TPJConsoleApp TPJConsoleApp]_ you should subclass _TPJCustomConsoleApp_ instead and publish just those properties you wish to expose.

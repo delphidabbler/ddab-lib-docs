@@ -10,6 +10,8 @@ $Date$
 
 *Unit:* _PJConsoleApp_.
 
+*Introduced:* v1.0
+
 This class is designed to be used to control the execution of child console application processes. The class provides facilities to redirect the console process' standard input, output and error handles. The application's execution can be given a time-out and can be time sliced to allow progress to be reported and redirected output to be handled while the console application continues to execute. Security levels and environment blocks can be customised. Errant processes can be terminated. Finally, the program's exit code is made available.
 
 _TPJConsoleApp_ descends from _[TPJCustomConsoleApp TPJCustomConsoleApp]_. The only differences are that _[TPJCustomConsoleApp TPJCustomConsoleApp]_ declares all properties and events as protected whereas _TPJConsoleApp_ makes them all public.

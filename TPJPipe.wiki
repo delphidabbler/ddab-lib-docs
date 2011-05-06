@@ -10,6 +10,8 @@ $Date$
 
 *Unit:* _PJPipe_.
 
+*Introduced:* v1.0
+
 This is a helper class designed for use when redirecting output to and input from pipes. The class can create pipes with the inheritable handles that are required for redirecting the standard i/o of console applications.
 
 _TPJPipe_ also provides methods that make working with with pipes easier. It can check the number of bytes in a readable pipe, can read bytes from a pipe into either a buffer or a stream and write bytes to a pipe from buffers and streams. Lastly it can safely close a pipe's write handle, effectively signalling end-of-file to the process reading it.
