@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJConsoleApp TPJConsoleApp]_.
 
+*Introduced:* v2.0
+
 {{{
 property CurrentDir: string;
 }}}
