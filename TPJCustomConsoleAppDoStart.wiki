@@ -20,6 +20,6 @@ procedure DoStart; virtual;
 
 == Description ==
 
-This virtual protected method triggers the _[TPJConsoleAppOnWork OnStart]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
+This virtual protected method triggers the _[TPJConsoleAppOnStart OnStart]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
 
 The method would usually be implemented to perform any actions that need to be performed after the console application process has been created but before it starts running.
