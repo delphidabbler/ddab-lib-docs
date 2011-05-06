@@ -12,15 +12,15 @@ $Date$
 
 *Class:* _[TPJConsoleApp TPJConsoleApp]_.
 
-{{{
-function Execute: Boolean; overload;
+*Introduced:* 1st method: v1.0, 2nd method: v2.0
 
+{{{
 function Execute(const CmdLine, CurrentDir: string = ''): Boolean; overload;
+
+function Execute: Boolean; overload;
 }}}
 
 == Description ==
-
-*NOTE: The parameterless overload of _Execute_ is not yet available in any current release. It is present in development version on SVN only.
 
 Executes the command line application. 
 
