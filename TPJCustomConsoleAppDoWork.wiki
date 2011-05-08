@@ -6,20 +6,5 @@ $Date$
 
 = !DoWork method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppDoWork Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
 
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJCustomConsoleApp TPJCustomConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-procedure DoWork; virtual;
-}}}
-
-== Description ==
-
-This virtual protected method triggers the _[TPJConsoleAppOnWork OnWork]_ event. Descendants can override to perform specific actions without triggering the event. If the event is still required `inherited` can be called.
-
-The method would usually be implemented to perform any required actions at the end of each of the console application's time slices.

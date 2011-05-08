@@ -6,20 +6,4 @@ $Date$
 
 = TPJCustomConsoleApp =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Introduced:* v1.0
-
-This is the base class for _[TPJConsoleApp TPJConsoleApp]_. It implements all the functionality of that class, but declares all properties as protected. For details of the main properties, methods and events see the documentation for _[TPJConsoleApp TPJConsoleApp]_.
-
-If you intend to sub-class _[TPJConsoleApp TPJConsoleApp]_ you should subclass _TPJCustomConsoleApp_ instead and publish just those properties you wish to expose.
-_TPJCustomConsoleApp_ has two protected virtual methods that can be overidden in decendants if required.
-
-== Protected Methods ==
-
-|| *Method* || *Description* ||
-|| _[TPJCustomConsoleAppDoComplete DoComplete]_ || Triggers the _[TPJConsoleAppOnComplete OnComplete]_ event. ||
-|| _[TPJCustomConsoleAppDoStart DoStart]_ || Triggers the _[TPJConsoleAppOnStart OnStart]_ event.<br>_This method is only available in v2.0 or later._ ||
-|| _[TPJCustomConsoleAppDoWork DoWork]_ || Triggers the _[TPJConsoleAppOnWork OnWork]_ event. ||
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleApp Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
