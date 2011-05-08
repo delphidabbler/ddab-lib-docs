@@ -24,6 +24,6 @@ There are four units, _PJConsoleApp_, _PJPipe_, _PJFileHandle_ and _PJPipeFilter
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/consoleapp Console Application Runner Classes Web Page]
-  * [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppExamples Examples of Use]
-  * [http://wiki.delphidabbler.com/index.php/FAQs/ConsoleAppClasses FAQs]
+  * [http://www.delphidabbler.com/software/consoleapp Console Application Runner Classes Web Page]http://www.delphidabbler.com/img/markup/off-site.gif
+  * [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppExamples Examples of Use]http://www.delphidabbler.com/img/markup/off-site.gif
+  * [http://wiki.delphidabbler.com/index.php/FAQs/ConsoleAppClasses FAQs]http://www.delphidabbler.com/img/markup/off-site.gif
