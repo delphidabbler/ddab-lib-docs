@@ -6,14 +6,14 @@ $Date$
 
 =Welcome=
 
-Welcome to the _!DelphiDabbler Component and Unit Library Wiki_.
+Welcome to the _!DelphiDabbler Component and Unit Library Documentation Wiki_.
 
 The Library currently contains the following projects.
 
 || *Project* || *Description* ||
 || [AboutBoxComponent About Box Component] || Non-visual component that encapsulates an About Box. Set properties or link to a [VersionInformationComponent Version Information Component] to customise the about box content. ||
 || [ClipboardViewerComponent Clipboard Viewer Component] || Component that triggers an event whenever the contents of the clipboard change. ||
-|| [ConsoleAppClasses Console Application Runner Classes] || Classes to control the execution of child console application processes and to redirect input and output where required. Includes support for working with pipes. ||
+|| [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI Console Application Runner Classes]http://www.delphidabbler.com/img/markup/off-site.gif || Classes to control the execution of child console application processes and to redirect input and output where required. Includes support for working with pipes.<br>_*The documentation for this project in on the !DelphiDabbler wiki*_. ||
 || [DropFilesComponents Drop Files Components] || Components that enable applications, windows and other components to support drag and drop from Windows Explorer. ||
 || [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
 || [ExStringPropertyEditor Extended String Property Editor] || Property editor that allows multi-line and long _string_ and _TCaption_ properties to be edited at design time. ||
