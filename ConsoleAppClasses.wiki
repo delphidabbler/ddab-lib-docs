@@ -6,6 +6,8 @@ $Date$
 
 = Console Application Runner Classes =
 
+|| *NOTE:* This documentation is gradually being moved the the [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI Programmers' Guide]http://www.delphidabbler.com/img/markup/off-site.gif on the [http://wiki.delphidabbler.com/ DelphiDabbler Wiki]http://www.delphidabbler.com/img/markup/off-site.gif. ||
+
 This library project provides some classes that are designed to be used to control the execution of child console application processes and to redirect input and output where required.
 
 There are four units, _PJConsoleApp_, _PJPipe_, _PJFileHandle_ and _PJPipeFilters_. The classes contained in the units are summarised in the following table:
