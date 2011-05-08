@@ -6,24 +6,7 @@ $Date$
 
 = Console Application Runner Classes =
 
-|| *NOTE:* This documentation is being moved to the [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI Programmers' Guide]http://www.delphidabbler.com/img/markup/off-site.gif on the [http://wiki.delphidabbler.com/ DelphiDabbler Wiki]http://www.delphidabbler.com/img/markup/off-site.gif. Once that's done this documentation will be removed. ||
-
-This library project provides some classes that are designed to be used to control the execution of child console application processes and to redirect input and output where required.
-
-There are four units, _PJConsoleApp_, _PJPipe_, _PJFileHandle_ and _PJPipeFilters_. The classes contained in the units are summarised in the following table:
-
-|| *Class* || *Unit* || *Description* ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleApp TPJCustomConsoleApp]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJConsoleAppUnit PJConsoleApp]_^new^ || Base class for _[http://wiki.delphidabbler.com/index.php/Docs/TPJConsoleApp TPJConsoleApp]_^moved^. Provides all functionality but declares all properties protected. Use this class if creating sub-classes that do not want to make all properties public or need to execute custom code within the class rather than handling events. ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJConsoleApp TPJConsoleApp]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJConsoleAppUnit PJConsoleApp]_^new^ || Main console application class. Makes all properties inherited from _[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleApp TPJCustomConsoleApp]_^moved^ public. Use instances of this class when working with console processes. ||
-|| _[TPJPipe TPJPipe]_ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeUnit PJPipe]_^new^ || Helper class to use when redirecting console application standard input, output and error channels using pipes. ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJFileHandle TPJFileHandle]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJFileHandleUnit PJFileHandle]_^new^ || This class can create or open files in various access and sharing modes with specified security and provide access to the file handle. It makes it easy to create or open files with inheritable handles easy. Use this class when redirecting console application standard input, output and error channels from and to pipes.<br>_This class was introduced in v2.0._ ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeFilter TPJPipeFilter]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeFiltersUnit PJPipeFilters]_^new^ ||Abstract base class for all classes that filter data read from pipes.<br>_This class was introduced in v2.0._ ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJAnsiSBCSPipeFilter TPJAnsiSBCSPipeFilter]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeFiltersUnit PJPipeFilters]_^new^ || Pipe filter that constructs valid ANSI strings from data read from pipe. Strings are also parsed into lines. Only single byte character sets are supported.<br>_This class was introduced in v2.0._ ||
-|| _[http://wiki.delphidabbler.com/index.php/Docs/TPJUnicodeBMPPipeFilter TPJUnicodeBMPPipeFilter]_^moved^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeFiltersUnit PJPipeFilters]_^new^ || Pipe filter that constructs valid Unicode strings from data read from pipe. Strings are also parsed into lines. Only characters from Unicode's basic multilingual plane are supported.<br>_This class was introduced in v2.0._ ||
-
-^moved^ These topics have moved [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPIClasses here]http://www.delphidabbler.com/img/markup/off-site.gif.
-
-^new^ These units are now documented [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPIUnits here]http://www.delphidabbler.com/img/markup/off-site.gif.
+|| This documentation has now moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
 
 *Links:*
 
