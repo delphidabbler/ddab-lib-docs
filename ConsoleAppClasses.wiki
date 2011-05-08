@@ -19,7 +19,7 @@ There are four units, _PJConsoleApp_, _PJPipe_, _PJFileHandle_ and _PJPipeFilter
 || _[http://wiki.delphidabbler.com/index.php/Docs/TPJAnsiSBCSPipeFilter TPJAnsiSBCSPipeFilter]_^note^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeFiltersUnit PJPipeFilters]_^note^ || Pipe filter that constructs valid ANSI strings from data read from pipe. Strings are also parsed into lines. Only single byte character sets are supported.<br>_This class was introduced in v2.0._ ||
 || _[http://wiki.delphidabbler.com/index.php/Docs/TPJUnicodeBMPPipeFilter TPJUnicodeBMPPipeFilter]_^note^ || _[http://wiki.delphidabbler.com/index.php/Docs/PJPipeFiltersUnit PJPipeFilters]_^note^ || Pipe filter that constructs valid Unicode strings from data read from pipe. Strings are also parsed into lines. Only characters from Unicode's basic multilingual plane are supported.<br>_This class was introduced in v2.0._ ||
 
-^note^ These topics are on the !DelphiDabbler wiki (http://wiki.delpdabbler.com).
+^note^ These topics are on the !DelphiDabbler wiki (http://wiki.delphidabbler.com/).
 
 *Links:*
 
