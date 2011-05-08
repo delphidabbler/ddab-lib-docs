@@ -6,38 +6,4 @@ $Date$
 
 = Execute method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* 1st method: v1.0, 2nd method: v2.0
-
-{{{
-function Execute(const CmdLine, CurrentDir: string = ''): Boolean; overload;
-
-function Execute: Boolean; overload;
-}}}
-
-== Description ==
-
-Executes the command line application. 
-
-The first, parameterless, version of the method executes the command line specified by the _[TPJConsoleAppCommandLine CommandLine]_ property with the current directory specified by the _[TPJConsoleAppCurrentDir CurrentDir]_ property.
-
-The second version of the method has the command line and (optionally) the current directory passed as parameters:
-
- * _!CmdLine_: Command line to be executed. This should include the name of the application (with path if necessary) along with any required parameters. Paths and parameters containing spaces should be enclosed in double quotes.
-
- * _!CurrentDir_: The directory that the application is to treat as its current directory.
-
-_Execute_ returns `True` if the application was executed successfully and `False` if the application failed to run. When `False` is returned, the _[TPJConsoleAppErrorCode ErrorCode]_ property will contain a non-zero error code.
-
-*Remarks*
-
-If the current directory (however specified) is the empty string then the executed application's current directory will be that of its parent process.
-
-If the _!CmdLine_ parameter is specified then the _[TPJConsoleAppCommandLine CommandLine]_ property will be updated to the same value.
-
-Simularly the _[TPJConsoleAppCurrentDir CurrentDir]_ property receives the value of any _!CurrentDir_ parameter.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppExecute Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

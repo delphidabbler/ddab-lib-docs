@@ -6,26 +6,4 @@ $Date$
 
 = !CommandLine property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v2.0
-
-{{{
-property CommandLine: string;
-}}}
-
-== Description ==
-
-_!CommandLine_ specifies the command line to be executed when the _[TPJConsoleAppExecute Execute]_ method is called with no parameters.
-
-The property includes the program name and any parameters to be passed to the program. Paths containing spaces must be quoted.
-
-*Remarks*
-
-If _!CommandLine_ it is to be used with a the parameterless version of the _[TPJConsoleAppExecute Execute]_ method then it *must* be set to some suitable value - it can't be left in its default blank state.
-
-If _[TPJConsoleAppExecute Execute]_ is called with a _!CmdLine_ parameter then this property is set to the value of the parameter.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppCommandLine Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

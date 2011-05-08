@@ -6,39 +6,4 @@ $Date$
 
 = !ConsoleColors property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v2.0
-
-{{{
-type
-  TPJConsoleColor = (
-    ccBlack   =  0, ccNavy    =  1, ccGreen   =  2, ccTeal    =  3,
-    ccMaroon  =  4, ccPurple  =  5, ccOlive   =  6, ccSilver  =  7,
-    ccGray    =  8, ccBlue    =  9, ccLime    = 10, ccAqua    = 11,
-    ccRed     = 12, ccFuchsia = 13, ccYellow  = 14, ccWhite   = 15
-  );
-
-  TPJConsoleColors = record
-    Foreground: TPJConsoleColor;
-    Background: TPJConsoleColor;
-  end;
-
-property ConsoleColors: TPJConsoleColors;
-}}}
-
-== Description ==
-
-This property determines the foreground and background colours of a console.
-
-If a console application shares the console of a parent console application then this property has no effect.
-
-The colour enumeration values have the same colour as the similarly named _TColor_ constants.
-
-The default values are `ccWhite` for the foreground and `ccBlack` for the background.
-
-*Note:* A _TPJConsoleColors_ record can be created using the _!MakeConsoleColors_ function. There are two overloaded versions of this function, one which takes _TPJConsoleColor_ parameters and another that takes _TColor_ parameters. The latter version raises an exception if the _TColor_ values do not have an equivalent _TPJConsoleColor_ value.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppConsoleColors Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

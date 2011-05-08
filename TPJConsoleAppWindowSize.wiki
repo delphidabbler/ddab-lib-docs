@@ -6,24 +6,4 @@ $Date$
 
 = !WindowSize property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v2.0
-
-{{{
-property WindowSize: TSize;
-}}}
-
-== Description ==
-
-This property specifies the size of the window, in pixels, that is used to display a console application. If either dimension is <= zero then the default window size is used.
-
-If a console application shares a console this property has no effect.
-
-The property defaults to (0, 0).
-
-*Note:* A function named _!MakeSize_ is provided to create a _TSize_ record with specified values on the fly. This should be used when setting the property value since the _cx_ and _cy_ fields of _!WindowSize_ cannot be written to directly.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppWindowSize Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

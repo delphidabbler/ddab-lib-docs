@@ -6,26 +6,4 @@ $Date$
 
 = !ScreenBufferSize property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v2.0
-
-{{{
-property ScreenBufferSize: TSize;
-}}}
-
-== Description ==
-
-Specifies the size of a console's screen buffer in character columns and rows. If either dimension is zero or negative the default buffer size is used.
-
-If a console application shares a console this property has no effect.
-
-The property defaults to (0, 0).
-
-*Note 1:* A function named _!MakeSize_ is provided to create a _TSize_ record with specified values on the fly. This should be used when setting the property value since the _cx_ and _cy_ fields of _!ScreenBufferSize_ cannot be written to directly.
-
-*Note 2:* This property does not set the size of the console window on screen. To do that use _[TPJConsoleAppWindowSize WindowSize]_.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppScreenBufferSize Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

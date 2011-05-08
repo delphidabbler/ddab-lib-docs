@@ -6,28 +6,4 @@ $Date$
 
 = Visible property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property Visible: Boolean;
-}}}
-
-== Description ==
-
-This property determines whether the console application is to be displayed. The behaviour of this property depends on whether _[TPJConsoleApp TPJConsoleApp]_ is hosted in a GUI or console application, and on the value of the _[TPJConsoleAppUseNewConsole UseNewConsole]_ property.
-
-When _[TPJConsoleAppTPJConsoleApp TPJConsoleApp]_ is hosted by a console application, behaviour depends on the value of the _[TPJConsoleAppUseNewConsole UseNewConsole]_ property as follows:
-
- * If _[TPJConsoleAppUseNewConsole UseNewConsole]_ is `True` a console window is only displayed when _Visible_ is `True`. When _Visible_ is `False` no new console window is displayed and output from the process is not displayed.
-
- * When _[TPJConsoleAppUseNewConsole UseNewConsole]_ is `False` the program being executed displays its output in the host's console, regardless of the state of the _Visible_ property.
-
- * When the host program is a GUI application the process uses a new console window regardless of the state of _[TPJConsoleAppUseNewConsole UseNewConsole]_. The console window is displayed only if the _Visible_ property is `True`.
-
-This property defaults to `False`.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppVisible Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

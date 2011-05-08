@@ -6,22 +6,4 @@ $Date$
 
 = !ThreadAttrs property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property ThreadAttrs: PSecurityAttributes;
-}}}
-
-== Description ==
-
-_!ThreadAttrs_ specifies the security and inheritance attributes for the console application's primary thread. It determines whether the thread handle can be inherited by child processes. Leaving as `nil` means the thread handle can't be inherited.
-
-Note that the caller is responsible for setting up the structure correctly. The caller need not maintain a copy of the provided structure once the property is set since _[TPJConsoleApp TPJConsoleApp]_ makes an internal copy.
-
-The default value is `nil`.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppThreadAttrs Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

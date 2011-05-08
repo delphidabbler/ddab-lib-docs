@@ -6,20 +6,4 @@ $Date$
 
 = !OnComplete event =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property OnComplete: TNotifyEvent;
-}}}
-
-== Description ==
-
-This event is triggered when an application completes or times out. It is *always* called and is also guaranteed to be called *after* the last _[TPJConsoleAppOnWork OnWork]_ event.
-
-Handle this event to tidy up after the console process is completed. _[TPJConsoleAppProcessInfo ProcessInfo]_ is available when this event is triggered. The _[TPJConsoleAppErrorCode ErrorCode]_ property can be used to check how the application terminated: it will be zero if the application executed successfully, did not timeout and was not terminated.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppOnComplete Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

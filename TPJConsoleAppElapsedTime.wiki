@@ -6,24 +6,4 @@ $Date$
 
 = !ElapsedTime property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property ElapsedTime: LongWord;
-}}}
-
-== Description ==
-
-This read only property specifies the approximate time in milliseconds since the console application began executing. The clock stops when the application completes or times out.
-
-This property is updated only when the application yields control to this class. The frequency with which this happens depends on the _[TPJConsoleAppTimeSlice TimeSlice]_ property. If _[TPJConsoleAppTimeSlice TimeSlice]_ is `INFINITE` then _!ElapsedTime_ is only updated once the application terminates.
-
-Examine _!ElapsedTime_ in a _[TPJConsoleAppOnWork OnWork]_ event handler to get the updated execution time while a process is executing. Examine the property after a process has completed to get the total execution time.
-
-Times are approximate.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppElapsedTime Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

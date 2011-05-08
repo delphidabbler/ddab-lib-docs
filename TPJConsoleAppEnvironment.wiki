@@ -6,22 +6,4 @@ $Date$
 
 = Environment property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property Environment: Pointer;
-}}}
-
-== Description ==
-
-_Environment_ provides a pointer to the environment block used by the console application.
-
-The caller is responsible for allocating and freeing this memory, which must remain allocated while the console application is executing. If _Environment_ is `nil` then the console application inherits the parent process' environment block.
-
-The default value of the property is `nil`.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppEnvironment Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

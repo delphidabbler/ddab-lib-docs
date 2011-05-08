@@ -6,22 +6,4 @@ $Date$
 
 = !MaxExecTime property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property MaxExecTime: LongWord;
-}}}
-
-== Description ==
-
-This property specifies the maximum permitted execution time of the console application, in milliseconds. If the application runs for longer than _!MaxExecTime_ then the _[TPJConsoleAppExecute Execute]_ method returns once the time has elapsed. If the _[TPJConsoleAppKillTimedOutProcess KillTimedOutProcess]_ property is `True` then the console application is terminated, otherwise the process continues but no longer has any connection with this class.
-
-_!MaxExecTime_ may be set to `INFINITE`, in which case the console application it will never time out until it has finished execution. In cases where the application is deemed to be running too long it may still be possible to force the application to terminate using the _[TPJConsoleAppTerminate Terminate]_ method.
-
-The default value is 60,000ms (one minute).
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppMaxExecTime Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

@@ -6,20 +6,4 @@ $Date$
 
 = !ExitCode property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJConsoleApp_.
-
-*Class:* _[TPJConsoleApp TPJConsoleApp]_.
-
-*Introduced:* v1.0
-
-{{{
-property ExitCode: LongWord;
-}}}
-
-== Description ==
-
-_!ExitCode_ is a read only property that stores theexit code returned by the console application on completion. The value of the property is application dependent.
-
-The value of _!ExitCode_ is meaningless if the _[TPJConsoleAppErrorCode ErrorCode]_ property is non-zero.
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppExitCode Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
