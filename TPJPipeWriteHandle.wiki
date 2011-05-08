@@ -6,4 +6,4 @@ $Date$
 
 = !WriteHandle property =
 
-*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

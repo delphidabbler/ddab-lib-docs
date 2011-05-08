@@ -6,4 +6,4 @@ $Date$
 
 = !ReadHandle property =
 
-*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeReadHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeReadHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
