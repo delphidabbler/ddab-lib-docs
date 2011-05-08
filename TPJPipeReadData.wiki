@@ -6,27 +6,4 @@ $Date$
 
 = !ReadData method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJPipe_.
-
-*Class:* _[TPJPipe TPJPipe]_.
-
-*Introduced:* v1.0
-
-{{{
-function ReadData(out Buf; const BufSize: LongWord; out BytesRead: LongWord):
-  Boolean;
-}}}
-
-== Description ==
-
-This method reads data from the pipe into a buffer. Parameters are:
-
- * _Buf_: Buffer that receives the data from the pipe. _Buf_ must have capacity of at least _!BufSize_ bytes.
- * _!BufSize_: Size of the buffer or the number of bytes requested, which must be less than or equal to the size of the buffer.
- * _!BytesRead_: Set by the method to the number of bytes actually read.
-
-`True` is returned if some data was read, `False` if not.
-
-An _EInOutError_ exception is raised if there is an error peeking or reading the pipe.
+*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeReadData Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

@@ -6,22 +6,4 @@ $Date$
 
 = !AvailableDataSize method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJPipe_.
-
-*Class:* _[TPJPipe TPJPipe]_.
-
-*Introduced:* v1.0
-
-{{{
-function AvailableDataSize: LongWord;
-}}}
-
-== Description ==
-
-This method peeks the pipe to get the size of data available for reading from it.
-
-The number of bytes of available data is returned by the method.
-
-_EInOutError_ is raised if there is an error peeking the pipe.
+*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeAvailableDataSize Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

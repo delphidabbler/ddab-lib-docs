@@ -6,24 +6,4 @@ $Date$
 
 = !WriteData method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJPipe_.
-
-*Class:* _[TPJPipe TPJPipe]_.
-
-*Introduced:* v1.0
-
-{{{
-function WriteData(const Buf; const BufSize: LongWord): LongWord;
-}}}
-
-== Description ==
-
-This method writes data from a buffer to the pipe. Parameters are:
- * _Buf_: Buffer containing the data to be written. _Buf_ must have capacity of at least _!BufSize_ bytes.
- * _!BufSize_: Number of bytes to write from the buffer to the pipe.
-
-The number of bytes actually written is returned by the method.
-
-An _EInOutError_ exception is raised if the pipe's write handle has been closed or if the pipe can't be written to.
+*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteData Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

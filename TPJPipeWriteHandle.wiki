@@ -6,22 +6,4 @@ $Date$
 
 = !WriteHandle property =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJPipe_.
-
-*Class:* _[TPJPipe TPJPipe]_.
-
-*Introduced:* v1.0
-
-{{{
-property WriteHandle: THandle;
-}}}
-
-== Description ==
-
-This read only property provides access to Windows handle used to write data to the pipe. If this handle is inheritable can be passed to _[TPJConsoleApp TPJConsoleApp]_'s _[TPJConsoleAppStdOut StdOut]_ and _[TPJConsoleAppStdErr StdErr]_ properties to redirect a console application's standard output and standard error to pipes.
-
-Do not pass this handle to any Windows API function that may alter it (e.g. _!CloseHandle_). If you need to close _!WriteHandle_ to signal end-of-file then use the _[TPJPipeCloseWriteHandle CloseWriteHandle]_ method. _[TPJPipeCloseWriteHandle CloseWriteHandle]_ closes the handle and sets it to 0.
-
-_!WriteHandle_ should not be used when 0.
+*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

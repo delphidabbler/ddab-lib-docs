@@ -6,18 +6,4 @@ $Date$
 
 = !CloseWriteHandle method =
 
-*Project:* [ConsoleAppClasses  Console Application Runner Classes].
-
-*Unit:* _PJPipe_.
-
-*Class:* _[TPJPipe TPJPipe]_.
-
-*Introduced:* v1.0
-
-{{{
-procedure CloseWriteHandle;
-}}}
-
-== Description ==
-
-_!CloseWriteHandle_ closes the pipe's write handle if it is open. This effectively signals end-of-file to any reader of the pipe. After calling this method no further data may be written to the pipe and _[TPJPipeWriteHandle WriteHandle]_ will be zero.
+*[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeCloseWriteHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
