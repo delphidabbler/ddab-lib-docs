@@ -1,4 +1,4 @@
-#summary Description of the TPJCustomWdwState.OnReadWdwState method.
+#summary Description of the TPJCustomWdwState.OnReadWdwState event.
 <wiki:comment>
 $Rev$
 $Date$
