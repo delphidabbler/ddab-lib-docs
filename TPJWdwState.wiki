@@ -14,7 +14,7 @@ This non-visual component enables the size, position and state of the form on wh
 
 The _[TPJWdwStateSave Save]_ method saves the window information to a section of an ini file and the _[TPJWdwStateRestore Restore]_ method reads information in and sets the owning form window's size, position and state.
 
-The component's _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _Save_ and _Restore_ methods. 
+The component's _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _Save_ and _Restore_ methods.
 
 The _[TPJCustomWdwStateOptions Options]_ property and the _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ event can be used to customise how the stored data is interpreted and whether the window's saved state or size should be used or ignored.
 
@@ -48,5 +48,7 @@ _TPJWdwState_ exposes the following methods, properties and events, some of whic
 == Events ==
 
 || *Event* || *Description* ||
+|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
+|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
 || _[TPJWdwStateOnGetIniData OnGetIniData]_ || Event that allows user to change the name of the ini file and the section within it where window information is stored. ||
 || _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Event that allows user to change the window data read from storage before the window is displayed. _TPJWdwState_ publishes this inherited protected event. ||

@@ -14,7 +14,7 @@ This is the abstract case class for the _[TPJWdwState TPJWdwState]_, _[TPJRegWdw
 
 _TPJCustomWdwState_ can be used as a base class for further window state components that use other forms of storage. To derive a new component you must override the protected abstract methods _[TPJCustomWdwStateReadWdwState ReadWdwState]_ and _[TPJCustomWdwStateSaveWdwState SaveWdwState]_ to read and save window size, position and state information via the desired storage medium.
 
-Instances of _TPJCustomWdwState_ must not be constructed directly. 
+Instances of _TPJCustomWdwState_ must not be constructed directly.
 
 _TPJCustomWdwState_ exposes the following methods, properties and events in addition to those inherited from _TComponent_.
 
@@ -38,5 +38,13 @@ _TPJCustomWdwState_ exposes the following methods, properties and events in addi
 
 == Events ==
 
+=== Protected ===
+
 || *Event* || *Description* ||
-|| _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Protected event that allows user to change the window data read from storage before the window is displayed. ||
+|| _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Event that allows user to change the window data read from storage before the window is displayed. ||
+
+=== Published ===
+
+|| *Event* || *Description ||
+|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
+|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
