@@ -1,0 +1,25 @@
+#summary Description of the TPJCustomWdwState.OnAfterWindowRestored event.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !OnAfterWindowRestored event =
+
+*Project:* [WindowStateComponents Window State Components].
+
+*Unit:* _PJWdwState_.
+
+*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+
+{{{
+property OnAfterWindowRestored: TNotifyEvent;
+}}}
+
+== Description ==
+
+This published event is triggered just after the window has been restored. This occurs either after program start-up if the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is True or after the _[TPJCustomWdwStateRestore Restore]_ method has been called.
+
+Use the method if you need to determine the state of the restored window or its restored size. Use methods of the host form to find the required information.
+
+See also: _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_.
