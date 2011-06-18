@@ -20,6 +20,6 @@ property OnAfterWindowRestored: TNotifyEvent;
 
 This published event is triggered just after the window has been restored. This occurs either after program start-up if the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is True or after the _[TPJCustomWdwStateRestore Restore]_ method has been called.
 
-Use the method if you need to determine the state of the restored window or its restored size. Use methods of the host form to find the required information.
+Handle this event if you need to determine the state of the restored window or its restored size. Use methods of the host form to find the required information.
 
 See also: _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_.
