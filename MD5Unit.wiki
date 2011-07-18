@@ -4,9 +4,9 @@ $Rev$
 $Date$
 </wiki:comment>
 
-|| This documentation has now moved to the MD5 Message Digest Unit  *[http://wiki.delphidabbler.com/index.php/Docs/MD5API Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
-
 = MD5 Message Digest Unit =
+
+|| This documentation has now moved to the MD5 Message Digest Unit  *[http://wiki.delphidabbler.com/index.php/Docs/MD5API Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
 
 *Links:*
 
