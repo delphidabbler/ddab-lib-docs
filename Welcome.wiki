@@ -23,7 +23,7 @@ The Library currently contains the following projects.
 || [MessageDialogComponents Message Dialog Components] || Components that wrap message dialog boxes provided by the VCL and the Windows API. ||
 || [ResFileUnit Resource File Unit] || Provides a classes that encapsulate 32 bit binary resource files and the resources they contain. Can read and update raw resource file data. ||
 || [ShellFoldersUnit Shell Folders Unit] || Components, classes and routines to assist in working with shell folders. Includes a "Browse for Folder" dialog box. ||
-|| [StreamExtensionClasses Stream Extension Classes] || Classes that provide a means to wrap _TStream_ objects. Also provides implementations of the _IStream_ interface. ||
+|| [http://wiki.delphidabbler.com/index.php/Docs/StreamsAPI Stream Extension Classes]http://www.delphidabbler.com/img/markup/off-site.gif || Classes that provide a means to wrap _TStream_ objects. Also provides implementations of the _IStream_ interface.<br>_*The documentation for this project is on the !DelphiDabbler wiki*_. ||
 || [SystemInformationUnit System Information Unit] || Static classes that get information about the user's computer and operating system.  ||
 || [VersionInformationComponent Version Information Component] || Component that accesses version information embedded in program files, DLLs etc. ||
 || [WindowStateComponents Window State Components] || Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. ||
