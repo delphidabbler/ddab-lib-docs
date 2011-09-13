@@ -6,24 +6,4 @@ $Date$
 
 = TPJHandleIStreamWrapper =
 
-*Project:* [StreamExtensionClasses Stream Extension Classes].
-
-*Unit:* _PJIStreams_.
-
-This class provides an _IStream_ interface to any wrapped object of type _THandleStream_ or descendant (such as _TFileStream_) – i.e. any stream based on a Windows file handle. It acts as _[TPJIStreamWrapper]_ except that the _TStatStg_ structure returned by the _Stat_ method also returns information about file creation, modification and access dates where available.
-
-This class has a constructor that only accepts streams that descend from _THandleStream_:
-
-== Methods ==
-
-=== Create ===
-
-Class constructor – creates new _IStream_ wrapper object on the given _THandleStream_.
-
-{{{
-constructor Create(const Stream: THandleStream;
-  const CloseStream: Boolean = False);
-}}}
-
-  * _Stream_ – the wrapped _THandleStream_.
-  * _!CloseStream_ – optional parameter that, when true, causes the wrapped stream to be freed when this object is destroyed.
+|| Sorry, this documentation has moved to the new Stream Extension Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJHandleIStreamWrapper Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
