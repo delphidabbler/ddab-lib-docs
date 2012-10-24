@@ -18,4 +18,4 @@ class function IsWinNT: Boolean;
 
 == Description ==
 
-Returns True if an NT operating system is installed (including Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 2003 Server and Windows 2008 Server), or False otherwise.
+Returns True if an NT operating system is installed (including Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 8, Windows 2003 Server, Windows 2008 Server, Windows 2008 Server R 2 and Windows 2012 Server), or False otherwise.
