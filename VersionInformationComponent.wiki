@@ -13,7 +13,7 @@ This wiki is divided into several sections:
 || _[TPJVersionInfo TPJVersionInfo]_ || The non-visual component that reads version information from any executable file's resources and exposes the information via properties. ||
 || _[TPJVersionNumber TPJVersionNumber]_ || A record that stores version numbers as four discreet values. On Delphi 2006 and later the record also overloads the equality operators to permit comparison and also supports assignment to a string. ||
 || [PJVersionInfoFunctions Public Functions] || Public functions that help manipulate and format _[TPJVersionNumber TPJVersionNumber]_ records. Aimed mainly at users of Delphi 2005 and earlier who don't have the extended functionality of the _[TPJVersionNumber TPJVersionNumber]_ record. ||
-|| [VerInfoExamples Examples] || Examples showing how to use the component. ||
+|| [http://wiki.delphidabbler.com/index.php/Docs/VerInfoExamples Examples]http://www.delphidabbler.com/img/markup/off-site.gif || Examples showing how to use the component (on !DelphiDabbler.com). ||
 
 *Links:*
 
