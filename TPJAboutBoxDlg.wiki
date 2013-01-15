@@ -28,7 +28,7 @@ The _[TPJAboutBoxDlgHelpContext HelpContext]_ property allows Windows Help to be
 == Properties ==
 
 || *Property* || *Description* ||
-|| _!AutoDetectGlyphs_ || *Removed in v3.6*<br>Determines whether the display of glyphs depends on the _!ButtonGlyph_ property or depends on the default compiler settings.<br>_This property was deprecated in v3.5._ ||
+|| _~~!AutoDetectGlyphs~~_ || *Removed in v3.6*<br>Determines whether the display of glyphs depends on the _!ButtonGlyph_ property or depends on the default compiler settings.<br>_This property was deprecated in v3.5._ ||
 || _[TPJAboutBoxDlgButtonGlyph ButtonGlyph]_ || Determines which, if any, glyph is displayed on the dialog's close button. ||
 || _[TPJAboutBoxDlgButtonHeight ButtonHeight]_ || Specifies the height of the dialog's close button. ||
 || _[TPJAboutBoxDlgButtonKind ButtonKind]_ || Determines the text displayed on the dialog's close button. ||
