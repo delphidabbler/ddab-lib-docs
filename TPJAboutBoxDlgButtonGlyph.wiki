@@ -33,5 +33,3 @@ The About box contains one button which is used to close the dialog box. The but
 || `abgNone` || No glyph is displayed on the button. ||
 
 _!ButtonGlyph_ defaults to `abgNone`. (Was `abgOK` in versions prior to v3.5).
-
-NB: If the deprecated _[TPJAboutBoxDlgAutoDetectGlyphs AutoDetectGlyphs]_ property is True then the value of the _!ButtonGlyph_ property will be ignored. You are advised to ensure that _!AutoDetectGlyphs_ is set to False.
