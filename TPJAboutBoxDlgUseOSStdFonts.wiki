@@ -22,6 +22,6 @@ When true this property forces the dialog box to use the operating system's defa
 
 The property is designed to enable the default UI fonts of Windows XP and later to be used.
 
-*Warning:* On some operating systems the UI font is larger than the dialog's own font and careful note should be made to ensure text is not truncated in the dialog box.
-
 The default value is False.
+
+Note that the [TPJAboutBoxDlgFont Font] property is ignored when UseOSStdFonts is True.
