@@ -38,6 +38,7 @@ The _[TPJAboutBoxDlgHelpContext HelpContext]_ property allows Windows Help to be
 || _[TPJAboutBoxDlgCopyright Copyright]_ || The copyright message displayed in the about box. ||
 || _[TPJAboutBoxDlgDlgLeft DlgLeft]_ || Specifies the location of the left hand side of the about box. ||
 || _[TPJAboutBoxDlgDlgTop DlgTop]_ || Specifies the location of the top of the about box. ||
+|| _[TPJAboutBoxDlgFont Font]_ || Specifies the font used in the dialog box. ||
 || _[TPJAboutBoxDlgHelpContext HelpContext]_ || Stores the help topic number accessed when F1 is pressed. A zero value is ignored. ||
 || _[TPJAboutBoxDlgNotes Notes]_ || Notes displayed in the dialog box. ||
 || _[TPJAboutBoxDlgPosition Position]_ || Determines whether the about box is positioned relative to screen, desktop or owner form. ||
