@@ -23,3 +23,7 @@ class function RegisteredOrganisation: string;
 Returns the organisation to which Windows is registered.
 
 The empty string is returned if no organisation has been reqistered.
+
+*See also*
+
+  * _[TPJOSInfoRegisteredOwner RegisteredOwner]_
