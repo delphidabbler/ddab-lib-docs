@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJSystemFolders TPJSystemFolders]_
 
+*Introduced:* v3.1
+
 {{{
 class function SystemWow64: string;
 }}}
