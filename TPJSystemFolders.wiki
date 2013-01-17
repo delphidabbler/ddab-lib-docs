@@ -16,7 +16,11 @@ This is a static class that provies details of the full paths of various special
 
 || *Method* || *Description* ||
 || _[TPJSystemFoldersCommonFiles CommonFiles]_ || Gets the Common Files folder path. ||
+|| _[TPJSystemFoldersCommonFilesX86 CommonFilesX86]_ [v4.0] || Gets the fully qualified name of the Common Files x86 folder. ||
+|| _[TPJSystemFoldersPlatformCommonFiles PlatformCommonFiles]_ [v4.0] || Gets the fully qualified name of the Common Files folder according to whether the host program and operating system are 32 or 64 bit. ||
+|| _[TPJSystemFoldersPlatformProgramFiles PlatformProgramFiles]_ [v4.0] || Gets the fully qualified name of the Program Files folder according to whether the host program and operating system are 32 or 64 bit. ||
 || _[TPJSystemFoldersProgramFiles ProgramFiles]_ || Gets the Program Files folder path. ||
+|| _[TPJSystemFoldersProgramFilesX86 ProgramFilesX86]_ [v4.0] || Gets the fully qualified name of the Program Files x86 folder. ||
 || _[TPJSystemFoldersSystem System]_ || Gets the System folder path. ||
 || _[TPJSystemFoldersSystemWow64 SystemWow64]_ || Gets the System folder path used by WOW64. ||
 || _[TPJSystemFoldersTemp Temp]_ || Gets the temporary files folder path. ||
