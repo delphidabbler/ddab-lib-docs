@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJComputerInfo TPJComputerInfo]_
 
+*Introduced:* v3.1
+
 {{{
 class function BootMode: TPJBootMode;
 
@@ -20,7 +22,9 @@ type TPJBootMode = (bmUnknown, bmNormal, bmSafeMode, bmSafeModeNetwork);
 
 == Description ==
 
-Determines the operating system mode into which the the computer was booted. Returns a value from the _TPJBootMode_ enumeration that describes the boot mode. Values of _TPJBootMode_ are:
+Determines the operating system mode into which the the computer was booted.
+
+Returns a value from the _TPJBootMode_ enumeration that describes the boot mode. Values of _TPJBootMode_ are:
 
 || `bmUnknown` || Unknown boot mode. ||
 || `bmNormal` || Normal boot. ||
