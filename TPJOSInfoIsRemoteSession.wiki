@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJOSInfo TPJOSInfo]_
 
+*Introduced:* v3.3
+
 {{{
 class function IsRemoteSession: Boolean;
 }}}
