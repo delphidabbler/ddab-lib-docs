@@ -18,4 +18,6 @@ class function SystemWow64: string;
 
 == Description ==
 
-Returns the fully qualified path name of the system folder used by WOW64. This is the folder used to store shared 32 bit code on 64 bit Windows. An empty string is always returned on 32 bit systems.
+Returns the fully qualified path name of the system folder used by WOW64. This is the folder used to store shared 32 bit code on 64 bit Windows.
+
+An empty string is always returned on 32 bit Windows.
