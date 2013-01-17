@@ -1,0 +1,25 @@
+#summary Description of the TPJOSInfo.RegisteredOrganisation class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !RegisteredOrganisation class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+*Introduced:* v4.0
+
+{{{
+class function RegisteredOrganisation: string;
+}}}
+
+== Description ==
+
+Returns the organisation to which Windows is registered.
+
+The empty string is returned if no organisation has been reqistered.
