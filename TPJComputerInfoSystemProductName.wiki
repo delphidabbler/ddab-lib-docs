@@ -1,0 +1,25 @@
+#summary Description of the TPJComputerInfo.SystemProductName class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !SystemProductName class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJComputerInfo TPJComputerInfo]_
+
+*Introduced:* v4.0
+
+{{{
+class function SystemProductName: string;
+}}}
+
+== Description ==
+
+Returns the product name of the host computer.
+
+The returned name does not include the name of the computer's manufacturer. To get that, use the _[TPJComputerInfoSystemManufacturer SystemManufacturer]_ property.
