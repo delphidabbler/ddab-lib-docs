@@ -20,7 +20,7 @@ This is a static class that gives access to information about the operating syst
 || _[TPJOSInfoEdition Edition]_ || Gets the edition of an operating system product. ||
 || _[TPJOSInfoHasPenExtensions HasPenExtensions]_ || Checks for Windows Pen Extensions. ||
 || _[TPJOSInfoIsMediaCenter IsMediaCenter]_ || Checks for Windows Media Center. ||
-|| _[TPJOSInfoIsRemoteSession IsRemoteSession]_ || Checks for a Windows Terminal Server remote session. ||
+|| _[TPJOSInfoIsRemoteSession IsRemoteSession]_ [v3.3] || Checks for a Windows Terminal Server remote session. ||
 || _[TPJOSInfoIsServer IsServer]_ || Checks for a server operating system. ||
 || _[TPJOSInfoIsTabletPC IsTabletPC]_ || Checks for Windows Tablet PC. ||
 || _[TPJOSInfoIsWin32s IsWin32s]_ || Checks for the Windows 32s system. ||
