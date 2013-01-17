@@ -17,9 +17,15 @@ The _PJSysInfo_ unit also defines a set of [PJSysInfoGlobals global variables] t
 
 Certain Windows types and constants not defined by Delphi that assist in working with extended operating system information are declared in this unit. Help on these definitions can be found on MSDN or in the Windows platform SDK.
 
-== Deprecated Code ==
+== Deprecated & Removed Code ==
 
-Earlier versions of _PJSysInfo_ contained a set of deprecated routines and a deprecated component that also provide system information. From v3.0 the routines and component have been removed by default. However, if the deprecated code is required for backwards compatibility it can be enabled by defining the _PJSYSINFO_COMPILE_DEPRECATED_ symbol before compiling the unit. No documentation is provided for this deprecated code.
+Versions of _PJSysInfo_ prior to v3.0 contained a set of deprecated routines and a deprecated component that duplicated a subset of the system information exposed by the classes and global variables above.
+
+From v3.0 this deprecated code was not compiled unless the _PJSYSINFO_COMPILE_DEPRECATED_ symbol was defined before compiling the unit.
+
+The deprecated code was removed entirely at v4.0.
+
+----
 
 *Links:*
 
