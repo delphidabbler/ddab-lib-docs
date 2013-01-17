@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJComputerInfo TPJComputerInfo]_
 
+*Introduced:* v3.1
+
 {{{
 class function IsNetworkPresent: Boolean;
 }}}
