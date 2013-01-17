@@ -22,7 +22,7 @@ This is a static class that provies details of the full paths of various special
 || _[TPJSystemFoldersProgramFiles ProgramFiles]_ || Gets the Program Files folder path. ||
 || _[TPJSystemFoldersProgramFilesX86 ProgramFilesX86]_ [v4.0] || Gets the fully qualified name of the Program Files x86 folder. ||
 || _[TPJSystemFoldersSystem System]_ || Gets the System folder path. ||
-|| _[TPJSystemFoldersSystemWow64 SystemWow64]_ || Gets the System folder path used by WOW64. ||
+|| _[TPJSystemFoldersSystemWow64 SystemWow64]_ [v3.1] || Gets the System folder path used by WOW64. ||
 || _[TPJSystemFoldersTemp Temp]_ || Gets the temporary files folder path. ||
 || _[TPJSystemFoldersWindows Windows]_ || Gets the Windows folder path. ||
 
