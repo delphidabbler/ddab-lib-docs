@@ -20,6 +20,6 @@ class function SystemProductName: string;
 
 == Description ==
 
-Returns the product name of the host computer.
+Returns the model (product) name of the host computer.
 
-The returned name does not include the name of the computer's manufacturer. To get that, use the _[TPJComputerInfoSystemManufacturer SystemManufacturer]_ property.
+The returned name does not include the computer's manufacturer. To get that, use the _[TPJComputerInfoSystemManufacturer SystemManufacturer]_ property.
