@@ -33,6 +33,8 @@ This is a static class that gives access to information about the operating syst
 || _[TPJOSInfoProduct Product]_ || Gets a code representing the operating system product. ||
 || _[TPJOSInfoProductID ProductID]_ || Gets the Windows product ID. ||
 || _[TPJOSInfoProductName ProductName]_ || Gets the name of the operating system product. ||
+|| _[TPJOSInfoRegisteredOrganisation RegisteredOrganisation]_ [v4.0] || Gets the name of the organisation to which Windows is registered. ||
+|| _[TPJOSInfoRegisteredOwner RegisteredOwner]_ [v4.0] || Gets the name of the person owning this copy of Windows. ||
 || _[TPJOSInfoServicePack ServicePack]_ || Gets the operating system's service pack. ||
 || _[TPJOSInfoServicePackMajor ServicePackMajor]_ || Gets the operating system's major service pack version number. ||
 || _[TPJOSInfoServicePackMinor ServicePackMinor]_ || Gets the operating system's minor service pack version number. ||
