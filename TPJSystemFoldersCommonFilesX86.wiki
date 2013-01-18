@@ -24,5 +24,5 @@ No such folder exists on 32 bit Windows and so _!CommonFilesX86_ returns the emp
 
 *See also*
 
-  * _[TPJSystemFoldersCommonFilesX86 CommonFilesX86]_
+  * _[TPJSystemFoldersCommonFiles CommonFiles]_
   * _[TPJSystemFoldersCommonFilesRedirect CommonFilesRedirect]_
