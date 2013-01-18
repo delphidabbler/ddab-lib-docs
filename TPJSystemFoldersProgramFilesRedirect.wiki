@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJSystemFolders TPJSystemFolders]_
 
+*Introduced:* v4.0
+
 {{{
 class function ProgramFilesRedirect: string;
 }}}
