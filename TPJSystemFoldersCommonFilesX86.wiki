@@ -1,0 +1,28 @@
+#summary Description of the TPJSystemFolders.CommonFilesX86 class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CommonFilesX86 class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Class:* _[TPJSystemFolders TPJSystemFolders]_
+
+{{{
+class function CommonFilesX86: string;
+}}}
+
+== Description ==
+
+Returns the fully qualified path name of the system's Common Files x86 folder that is used for 32 bit programs running on 64 bit versions of Windows. This is usually a sub-folder of the Program Files x86 folder.
+
+No such folder exists on 32 bit Windows and so _!CommonFilesX86_ returns the empty string on that platform.
+
+*See also*
+
+  * _[TPJSystemFoldersCommonFilesX86 CommonFiles]_
+  * _[TPJSystemFoldersCommonFilesRedirect CommonFilesRedirect]_
