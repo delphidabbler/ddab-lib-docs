@@ -24,6 +24,8 @@ Returns the organisation to which Windows is registered.
 
 The empty string is returned if no organisation has been reqistered.
 
+*Note the UK English spelling of "Organisation" in this method name.*
+
 *See also*
 
   * _[TPJOSInfoRegisteredOwner RegisteredOwner]_
