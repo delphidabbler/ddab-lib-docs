@@ -1,7 +1,7 @@
 #summary Home page for the DelphiDabbler Library Wiki
 <wiki:comment>
-$Rev$
-$Date$
+$Rev: 1361 $
+$Date: 2013-03-25 11:37:01 +0000 (Mon, 25 Mar 2013) $
 </wiki:comment>
 
 =Welcome=
@@ -20,14 +20,14 @@ The Library currently contains the following projects.
 || [http://wiki.delphidabbler.com/index.php/Docs/FractionsAPI Fractions Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Unit containing code that encapsulates fractions and provided common operations on them. ||
 || [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited at design time using symbolic constant names. ||
 || [HotLabelComponent Hot Label Component] || Clickable label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. ||
-|| [http://wiki.delphidabbler.com/index.php/Docs/IOUtils I/O Utilities Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Several classes that assist with various I/O related tasks, including working with pipes and inheritable file handles. ||
+|| [http://wiki.delphidabbler.com/index.php/Docs/IOUtilsAPI I/O Utilities Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Several classes that assist with various I/O related tasks, including working with pipes and inheritable file handles. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/MD5API MD5 Message Digest Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
 || [MessageDialogComponents Message Dialog Components] || Components that wrap message dialog boxes provided by the VCL and the Windows API. ||
 || [ResFileUnit Resource File Unit] || Provides a classes that encapsulate 32 bit binary resource files and the resources they contain. Can read and update raw resource file data. ||
 || [ShellFoldersUnit Shell Folders Unit] || Components, classes and routines to assist in working with shell folders. Includes a "Browse for Folder" dialog box. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/StreamsAPI Stream Extension Classes]http://www.delphidabbler.com/img/markup/off-site.gif || Classes that provide a means to wrap _TStream_ objects. Also provides implementations of the _IStream_ interface. ||
 || [SystemInformationUnit System Information Unit] || Static classes that get information about the user's computer and operating system.  ||
-|| [VersionInformationComponent Version Information Component] || Component that accesses version information embedded in program files, DLLs etc. ||
+|| [http://wiki.delphidabbler.com/index.php/Docs/VerInfoAPI Version Information Component]http://www.delphidabbler.com/img/markup/off-site.gif || Component that accesses version information embedded in program files, DLLs etc. ||
 || [WindowStateComponents Window State Components] || Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. ||
 
 Links in the above table that are marked with http://www.delphidabbler.com/img/markup/off-site.gif lead to documentation over at [http://wiki.delphidabbler.com wiki.delphidabbler.com]. All other links lead to documentation here on !GoogleCode.
