@@ -6,4 +6,4 @@ $Date$
 
 = TPJPipe =
 
-|| Sorry, this documentation has moved to the new Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipe Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+|| Sorry, this documentation has moved to the new I/O Utility Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipe Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
