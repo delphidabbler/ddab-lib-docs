@@ -6,20 +6,4 @@ $Date$
 
 = !LanguageCode property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property LanguageCode: WORD;
-}}}
-
-== Description ==
-
-_!LanguageCode_ is a read only property that returns the language code associated with the current translation.
-
-If the current file has no version information then 0 is returned. To get a description of the language use the _[TPJVersionInfoLanguage Language]_ property instead.
-
-See the _langID_ section of the [http://msdn.microsoft.com/en-us/library/aa381058 MSDN VERSIONINFO] topic for information about these codes.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoLanguageCode Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

@@ -6,34 +6,4 @@ $Date$
 
 = !FileFlags property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property FileFlags: DWORD;
-}}}
-
-== Description ==
-
-Use this read-only property to get information about the release attributes of a file.
-
-_!FileFlags_ holds information (as a bit-set) about the attributes of the file as specified in the fixed file information part of the _VERSIONINFO_ resource.
-
-File flags information is also provided by the _dwFileFlags_ member of the _VS_FIXEDFILEINFO_ structure which can be accessed using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property. 
-
-The bit set can contain any of the following values:
-
-|| *Flag* || *Description* ||
-|| `VS_FF_DEBUG` || File contains debugging information. ||
-|| `VS_FF_INFOINFERRED` || Some of the members in this structure may be empty or incorrect. ||
-|| `VS_FF_PATCHED` || The file is not identical to the original file with the same version number. ||
-|| `VS_FF_PRERELEASE` || The file is a development version. ||
-|| `VS_FF_PRIVATEBUILD` || The file is not a standard release. If this flag is set the _!PrivateBuild_ property should contain further information. ||
-|| `VS_FF_SPECIALBUILD` || The file is a variation of a standard release with the same version number. If this flag is set then the _!SpecialBuild_ property should contain further information. ||
-
-The `VS_FF_XXX` constants are defined in the Windows unit.
-
-The _[TPJVersionInfoFileFlagsMask FileFlagsMask]_ property determines which of the bits in this flag are valid.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoFileFlags Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

@@ -6,28 +6,4 @@ $Date$
 
 = !FixedFileInfo property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property FixedFileInfo: TVSFixedFileInfo;
-}}}
-
-== Description ==
-
-This read only property exposes the _TVSFixedFileInfo_ record for the current file. All members of the record are set to zeros if the current file contains no version information.
-
-The _TVSFixedFileInfo_ record is identical to the Windows _[http://msdn.microsoft.com/en-us/library/ms646997 VS_FIXEDFILEINFO]_ structure.
-
-_TPJVersionInfo_ provides properties that can be used to directly access information contained in most of the fields of _TVSFixedFileInfo_. These are
-
-  * _[TPJVersionInfoFileVersionNumber FileVersionNumber]_
-  * _[TPJVersionInfoProductVersionNumber ProductVersionNumber]_
-  * _[TPJVersionInfoFileFlagsMask FileFlagsMask]_
-  * _[TPJVersionInfoFileFlags FileFlags]_
-  * _[TPJVersionInfoFileOS FileOS]_
-  * _[TPJVersionInfoFileType FileType]_
-  * _[TPJVersionInfoFileSubType FileSubType]_
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoFixedFileInfo Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

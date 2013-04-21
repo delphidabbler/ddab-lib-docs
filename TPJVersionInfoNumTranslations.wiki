@@ -6,20 +6,4 @@ $Date$
 
 = !NumTranslations property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property NumTranslations: Integer;
-}}}
-
-== Description ==
-
-Gets the number of translations in a file's version information. 
-
-Version information resources can contain variable information in more that one langauge / character set combination. _TPJVersionInfo_ defines each of these combinations as a "Translation". This property shows how many translations are available in a file's version information.
-
-The property has value 0 if the file contains no translations or if the file has no version information.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoNumTranslations Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

@@ -6,20 +6,4 @@ $Date$
 
 = !CurrentTranslation property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property CurrentTranslation: Integer;
-}}}
-
-== Description ==
-
-This run time property gets or sets the translation to be used by the string file information, language and character set related properties.
-
-Version information resources can contain variable information in more that one langauge / character set combination. _TPJVersionInfo_ defines each of these combinations as a "Translation".
-
-Translations are specified by assigning a zero based index to the _!CurrentTranslation_ property. Valid values for _!CurrentTranslation_ are in the range `0..NumTranslations-1`. If an attempt is made to set _!CurrentTranslation_ outside this range then the property is given the value -1. _!CurrentTranslation_ is set to zero when a file is first accessed (i.e. when the _[TPJVersionInfoFileName FileName]_ property is assigned or when the component is first created) or -1 if there is no version information in a file.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoCurrentTranslation Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

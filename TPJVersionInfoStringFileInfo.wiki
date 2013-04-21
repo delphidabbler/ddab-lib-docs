@@ -6,35 +6,4 @@ $Date$
 
 = !StringFileInfo property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property StringFileInfo[const Name: string]: string;
-}}}
-
-== Description ==
-
-Returns the value for of the string file information with given name in the current translation.
-
-This property can return both standard and custom string information. If the current file has no version information, or there is no string information for the current name, then the empty string is returned. Standard string information values are:
-
-  * Comments
-  * !CompanyName
-  * !FileDescription
-  * !FileVersion
-  * !InternalName
-  * !LegalCopyright
-  * !LegalTrademarks
-  * !OriginalFileName
-  * !PrivateBuild
-  * !ProductName
-  * !ProductVersion
-  * !SpecialBuild
-
-_TPJVersionInfo_ provides a dedicated string property with the same name as each of the above standard strings. For example `PJVersionInfo1.StringFileInfo['LegalCopyright']` and `PJVersionInfo1.LegalCopyright` both return the same value.
-
-If your version information contains a custom string information entry name _!MyString_ in the current translation then you can extract its value with `PJVersionInfo1.StringFileInfo['MyString']`.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoStringFileInfo Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||

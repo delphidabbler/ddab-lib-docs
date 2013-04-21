@@ -6,20 +6,4 @@ $Date$
 
 = !CharSetCode property =
 
-*Project:* [VersionInformationComponent Version Information Component].
-
-*Unit:* _PJVersionInfo_. 
-
-*Class:* _[TPJVersionInfo TPJVersionInfo]_
-
-{{{
-property CharSetCode: WORD;
-}}}
-
-== Description ==
-
-Read only property that returns the code of the character set used by the current translation.
-
-If the current file has no version information then 0 is returned. To get a description of the character set use the _[TPJVersionInfoCharSet CharSet]_ property instead.
-
-See the _charsetID_ section of the [http://msdn.microsoft.com/en-us/library/aa381058 MSDN VERSIONINFO] topic for information about these codes.
+|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoCharSetCode Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
