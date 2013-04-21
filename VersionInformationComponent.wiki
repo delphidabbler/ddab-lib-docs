@@ -8,6 +8,7 @@ $Date$
 
 
 || This documentation has now moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/VerInfo Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
+
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
