@@ -49,8 +49,8 @@ _TPJWdwState_ exposes the following methods, properties and events, some of whic
 == Events ==
 
 || *Event* || *Description* ||
-|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
-|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
+|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_*^v5.4^* || Event triggered after window has been restored and its state set. ||
+|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_*^v5.4^* || Event triggered after the window is sized but before it is physically restored. ||
 || _[TPJWdwStateOnGetIniData OnGetIniData]_ || Event that allows user to change the name of the ini file and the section within it where window information is stored. ||
 || _[TPJWdwStateOnGetIniDataEx OnGetIniDataEx]_*^v5.5^* || Event that allows user to change the name of the root directory of name of the ini file and the section within it where window information is stored. ||
 || _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Event that allows user to change the window data read from storage before the window is displayed. _TPJWdwState_ publishes this inherited protected event. ||

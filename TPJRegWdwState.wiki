@@ -49,8 +49,8 @@ _TPJRegWdwState_ exposes the following methods, properties and events, some of w
 == Events ==
 
 || *Event* || *Description* ||
-|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
-|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
+|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_*^v5.4^* || Event triggered after window has been restored and its state set. ||
+|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_*^v5.4^* || Event triggered after the window is sized but before it is physically restored. ||
 || _[TPJRegWdwStateOnGetRegData OnGetRegData]_ || Event that allows user to change the registry key where window information is stored. ||
 || _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_*^v5.1^* || Event that allows user to read additional registry data when the component reads window state information. ||
 || _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_*^v5.1^* || Event that allows user to write additional registry data when the component writes window state information. ||

@@ -43,8 +43,8 @@ _TPJUserWdwState_ exposes the following methods, properties and events, some of 
 == Events ==
 
 || *Event* || *Description* ||
-|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
-|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
+|| _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_*^v5.4^* || Event triggered after window has been restored and its state set. ||
+|| _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_*^v5.4^* || Event triggered after the window is sized but before it is physically restored. ||
 || _[TPJUserWdwStateOnReadData OnReadData]_ || Event triggered when the component needs the user to read data from persistent storage. ||
 || _[TPJUserWdwStateOnSaveData OnSaveData]_ || Event triggered when the component needs the user to save data to persistent storage. ||
 
