@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJRegWdwState TPJRegWdwState]_
 
+*Introduced:* v5.1
+
 {{{
 type
   TPJWdwStateRegAccessEvent = procedure(
@@ -27,4 +29,4 @@ _!OnPuttingRegData_ allows user to write additional registry data when the compo
 
 The event is triggered just after the window's state information is written to the registry. The event makes available a reference to the _TRegistry_ object used to write the data. This object can be used to write any additional application defined information to the registry.
 
-For example, the size of some controls that appear on the main form may be written. Such data can be read again using the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ event.
+For example, the size of some controls that appear on the main form may be written. Such data can be read again using the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ *^v5.1^* event.

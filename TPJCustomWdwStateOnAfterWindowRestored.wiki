@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJCustomWdwState TPJCustomWdwState]_
 
+*Introduced:* v5.4
+
 {{{
 property OnAfterWindowRestored: TNotifyEvent;
 }}}
@@ -22,4 +24,4 @@ This published event is triggered just after the window has been restored. This 
 
 Handle this event if you need to determine the state of the restored window or its restored size. Use methods of the host form to find the required information.
 
-See also: _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_.
+See also: _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ *^v5.4^*

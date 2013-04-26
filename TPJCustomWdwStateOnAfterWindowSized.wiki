@@ -12,6 +12,8 @@ $Date$
 
 *Class:* _[TPJCustomWdwState TPJCustomWdwState]_
 
+*Introduced:* v5.4
+
 {{{
 property OnAfterWindowSized: TNotifyEvent;
 }}}
@@ -22,4 +24,4 @@ This published event is triggered just after the window's size has been set. Thi
 
 Handle this event if you need to determine the _normal_ size and position of the window, regardless of its final state. Use methods of the host form to find the required size and position information.
 
-See also: _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_.
+See also: _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ *^v5.4^*
