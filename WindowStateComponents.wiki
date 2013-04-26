@@ -16,6 +16,8 @@ This unit provides three non visual components that can be used to save and rest
 
 Various event handler procedural types, oridinal types and set types are also defined.
 
+*NOTE:* This documentation relates to v5.0 of the Window State Components. Any items in this documentation introduced after the release of v5.0 will be marked with the version number at which they were first made available. The version number will be a super-script, e.g. *^v5.5^*
+
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
