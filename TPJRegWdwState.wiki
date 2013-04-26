@@ -18,7 +18,7 @@ The component's _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property go
 
 The _[TPJCustomWdwStateOptions Options]_ property and the _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ event can be used to customise how the stored data is interpreted and whether the window's saved state or size should be used or ignored.
 
-Application defined data can be read from and written to the registry by handling the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ and _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_ events that are triggered when the component reads and writes its data.
+Application defined data can be read from and written to the registry by handling the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_*^v5.1^* and _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_*^v5.1^* events that are triggered when the component reads and writes its data.
 
 The root and sub key to be used in the registry are specified using the _[TPJRegWdwStateRootKey RootKey]_ and _[TPJRegWdwStateSubKey SubKey]_ properties respectively. Alternatively the _[TPJRegWdwStateOnGetRegData OnGetRegData]_ event can be handled and used to set the root key and sub key to use.
 
@@ -52,7 +52,6 @@ _TPJRegWdwState_ exposes the following methods, properties and events, some of w
 || _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ || Event triggered after window has been restored and its state set. ||
 || _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ || Event triggered after the window is sized but before it is physically restored. ||
 || _[TPJRegWdwStateOnGetRegData OnGetRegData]_ || Event that allows user to change the registry key where window information is stored. ||
-|| _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ || Event that allows user to read additional registry data when the component reads window state information. ||
-|| _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_ || Event that allows user to write additional registry data when the component writes window state information. ||
+|| _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_*^v5.1^* || Event that allows user to read additional registry data when the component reads window state information. ||
+|| _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_*^v5.1^* || Event that allows user to write additional registry data when the component writes window state information. ||
 || _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Event that allows user to change the window data read from storage before the window is displayed. _TPJRegWdwState_ publishes this inherited protected event. ||
-
