@@ -8,7 +8,7 @@ $Date$
 
 *Project:* [WindowStateComponents Window State Components].
 
-*Unit:* _PJWdwState_. 
+*Unit:* _PJWdwState_.
 
 *Class:* _[TPJWdwState TPJWdwState]_
 
@@ -20,6 +20,47 @@ property IniFileName: string;
 
 This property specifies the name of the ini file that will be used to record the window's size, position and state. The file is accessed by both the _[TPJWdwStateRestore Restore]_ and _[TPJWdwStateSave Save]_ methods.
 
-The section to use in the ini file is set by the _[TPJWdwStateSection Section]_ property.
+The default value of the property is the empty string.
 
-If the property is set to the empty string then the file name used has the same path and file name as the application except that the `'.exe'` extension is replaced by `'.ini'`. The empty string is the default value.
+The behaviour of the property was changed at v5.5, as described below.
+
+=== v5.4.2 and earlier ===
+
+The property can be interpreted in the following ways, depending on its value:
+
+  * _Empty string_: <br>The ini file name is the same as the application, with the extension changed to `.ini`. The file is placed in the same directory as the application. For example, if the application is `C:\Foo\Bar.exe` then the full ini file name will be `C:\Foo\Bar.ini`.
+
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _!IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini' would save window state data in `C:\Windows\Foo\Bar.ini`.
+
+  * _Absolute path_:<br>The ini file is stored in the specified path.
+
+If the the ini file's directory does not exist an exception will be generated when the component attempts to write to the ini file.
+
+=== v5.5.0 and later ===
+
+The property can be interpreted in the following ways, depending on its value:
+
+  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples.
+
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in the property. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples.
+
+  * _Absolute path_:<br>The ini file is stored in the specified path. The value of the _[TPJWdwStateIniRootDir IniRootDir]_ property has no effect in this case.
+
+If the ini file's directory does not exist it will be created if possible when the component first attempts to write to the file. If the directory cannot be created an exception will be raised.
+
+*Important note:* When updating from earlier versions to v5.5 or later, you should note that _[TPJWdwState]_ uses a different file name by default when _!IniFileName_ is either a relative path or the empty string. To revert to the original behaviour you need to change the _[TPJWdwStateIniRootDir IniRootDir]_ property value as follows:
+
+  * When _!IniFileName_ is the empty string, set _[TPJWdwStateIniRootDir IniRootDir]_ to `rdExeDir`.
+  * When _!IniFileName_ is a relative path, set _[TPJWdwStateIniRootDir IniRootDir]_ to `rdWindowsDir`.
+
+== Remarks ==
+
+The value of _!IniFileName_ can be overridden at run time if you handle either the _[TPJWdwStateOnGetIniData OnGetIniData]_ or _[TPJWdwStateOnGetIniDataEx OnGetIniDataEx]_ ^v5.5^ properties. This can be useful when the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is `True` and you want to specify the ini file name at run time. In this case setting _!IniFileName_ at run time will not work because the form will be restored before you have an opportunity to change the property value. However the _[TPJWdwStateOnGetIniData OnGetIniData]_ and _[TPJWdwStateOnGetIniDataEx OnGetIniDataEx]_ events are triggered before the form restores, enabling the file name to be specified.
+
+You are strongly recommended *not* to store the ini file in the Windows directory. On Windows Vista and later an attempt to write to the Windows directory may be redirected to the virtual store.
+
+You should not use the directory containing the executable program if it is stored in the _Program Files_ directory (or similar), since you may not have write access to it.
+
+== See Also ==
+
+_[TPJWdwStateSection Section]_ property.
