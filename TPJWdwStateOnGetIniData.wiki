@@ -28,3 +28,19 @@ _!OnGetIniData_ allows user to change the name of the ini file and the section w
 The event is triggered just before the ini file is read when restoring a window and just before the ini file is written when saving window information. The name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded.  The values passed to the event handler are the same as those of the _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
 
 The purpose of the event is to enable the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property to be used without setting the _[TPJWdwStateIniFileName IniFileName]_ and _[TPJWdwStateSection Section]_ properties at design time - i.e. handling the event allows either or both of the default _[TPJWdwStateIniFileName IniFileName]_ and _[TPJWdwStateSection Section]_ names to be overridden.
+
+_[TPJWdwState]_'s behaviour when the event handler returns depends on the values of the parameters it returns. This behaviour changed at v5.5, as described below.
+
+=== v5.4.2 and earlier ===
+
+If you change the _!IniFileName_ parameter it has the following effect on the file name used for the ini file. You should note that this effect differs slightly from if you had set the related properties.
+
+|| *Value of _!IniFileName_* || *Effect on ini file name* ||
+|| Empty string || *Error*. The file name will be the empty string and is likely to lead to an exception. ||
+|| Relative file name || The ini file name is as specified by _!IniFileName_ and it is stored in the Windows installation directory. For example if _!IniFileName_ is `Foo.ini` the result is an ini file name of `C:\Windows\Foo.ini` or simlar while a value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`. ||
+|| Absolute file name || The ini file is stored in the given path, which much exist, or an exception is raised. ||
+
+Changing the _Section_ parameter changes the name of the section used to store the window state information in the ini file. *Do not* set _Section_ to the empty string because this may have unexpected results.
+
+=== v5.5.0 and later ===
+
