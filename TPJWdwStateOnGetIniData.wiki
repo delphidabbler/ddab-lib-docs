@@ -46,7 +46,7 @@ Changing the _Section_ parameter changes the name of the section used to store t
 
 === v5.5.0 and later ===
 
-Changing the values of the _!IniFileName_ or _Settings_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateIniSection Section]_ properties to the same values.
+Changing the values of the _!IniFileName_ or _Settings_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateSection Section]_ properties to the same values.
 
 The effect of changing the _!IniFileName_ parameter is as follows.
 
