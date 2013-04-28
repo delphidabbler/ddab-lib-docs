@@ -30,7 +30,7 @@ The property can be interpreted in the following ways, depending on its value:
 
   * _Empty string_: <br>The ini file name is the same as the application, with the extension changed to `.ini`. The file is placed in the same directory as the application. For example, if the application is `C:\Foo\Bar.exe` then the full ini file name will be `C:\Foo\Bar.ini`.
 
-  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _!IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini' would save window state data in `C:\Windows\Foo\Bar.ini`.
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _!IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`.
 
   * _Absolute path_:<br>The ini file is stored in the specified path.
 
