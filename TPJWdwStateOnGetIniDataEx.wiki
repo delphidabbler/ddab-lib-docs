@@ -28,7 +28,13 @@ property OnGetIniDataEx: TPJWdwStateGetIniDataEx;
 
 _!OnGetIniDataEx_ allows user to change the directory and name of the ini file and the section within it where window information is stored.
 
-The event is triggered just before the ini file is read when restoring a window and just before the ini file is written when saving window information. The directory location, name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded. The values passed to the event handler are the same as those of the _[TPJWdwStateIniRootDir IniRootDir]_, _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
+The event is triggered in the following cicumstances:
+
+  * Just before the ini file is read when restoring a window
+  * Just before the ini file is written when saving window information. 
+  * When the _[TPJWdwStateIniFilePath IniFilePath]_ method is called.
+
+The directory location, name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded. The values passed to the event handler are the same as those of the _[TPJWdwStateIniRootDir IniRootDir]_, _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
 
 Changing the values of the event's parameters _does not_ change the value of the related properties.
 
