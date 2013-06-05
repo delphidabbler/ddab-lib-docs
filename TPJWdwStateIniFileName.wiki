@@ -40,9 +40,9 @@ If the the ini file's directory does not exist an exception will be generated wh
 
 The property can be interpreted in the following ways, depending on its value:
 
-  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples.
+  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property.
 
-  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in the property. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples.
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in the property. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property.
 
   * _Absolute path_:<br>The ini file is stored in the specified path. The value of the _[TPJWdwStateIniRootDir IniRootDir]_ property has no effect in this case.
 
@@ -63,4 +63,5 @@ You should not use the directory containing the executable program if it is stor
 
 == See Also ==
 
-_[TPJWdwStateSection Section]_ property.
+ * _[TPJWdwStateSection Section]_ property.
+ * _[TPJWdwStateIniRootDir IniRootDir]_ ^v5.5^ property.
