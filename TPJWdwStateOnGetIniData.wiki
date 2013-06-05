@@ -46,17 +46,8 @@ Changing the _ASection_ parameter changes the name of the section used to store 
 
 === v5.5.0 and later ===
 
-Changing the values of the _AIniFileName_ or _ASection_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateSection Section]_ properties to the same values.
-
-The effect of changing the _AIniFileName_ parameter is as follows.
-
-|| *Value of _AIniFileName_* || *Effect on ini file name* ||
-|| Empty string || The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples. ||
-|| Relative path || The ini file name is as specified in the parameter. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples. ||
-|| Absolute path || The ini file name is exactly as specified in the parameter. The value of the _[TPJWdwStateIniRootDir IniRootDir]_ property has no effect in this case. ||
+Changing the values of the _AIniFileName_ or _ASection_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateSection Section]_ properties to the same values. The full name of the ini file is also influenced by the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See the documentation of those properties for details.
 
 If the path to the ini file does not exist it is created, if possible, when the component first attempts to write data to the file. If the required directories can't be created an exception will be raised.
-
-Changing the _Section_ parameter changes the name of the section used to store the window state information in the ini file. If _Section_ is set to the empty string then a default value is used for the section name. This is the `Window_` followed by the name of the host form (e.g. `Window_Form1`).
 
 *Note:* _!OnGetIniData_ is not fired if a handler is assigned to the _[TPJWdwStateOnGetIniDataEx OnGetIniDataEx]_ event - you should only provide an event handler one event or the other, not both.
