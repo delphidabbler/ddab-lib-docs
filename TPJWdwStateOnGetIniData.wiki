@@ -25,7 +25,13 @@ property OnGetIniData: TPJWdwStateGetIniData;
 
 _!OnGetIniData_ allows the user to change the name of the ini file and the section within it where window information is stored.
 
-The event is triggered just before the ini file is read when restoring a window and just before the ini file is written when saving window information. The name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded.  The values passed to the event handler are the same as those of the _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
+The event is triggered in the following circumstances:
+
+  * Just before the ini file is read when restoring a window.
+  * Just before the ini file is written when saving window information.
+  * ^v5.5^ When the _[TPJWdwStateIniFilePath IniFilePath]_ method is called.
+
+The name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded.  The values passed to the event handler are the same as those of the _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
 
 Changing the values of the event's parameters _does not_ change the value of the related properties.
 
