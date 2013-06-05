@@ -1,4 +1,4 @@
-#summary Description of the TPJWdwState.OnGetIniData method.
+#summary Description of the TPJWdwState.OnGetIniData event.
 <wiki:comment>
 $Rev$
 $Date$
@@ -15,7 +15,7 @@ $Date$
 {{{
 type
   TPJWdwStateGetIniData = procedure(
-    var IniFilename, Section: string
+    var AIniFilename, ASection: string
   ) of object;
 
 property OnGetIniData: TPJWdwStateGetIniData;
@@ -23,7 +23,7 @@ property OnGetIniData: TPJWdwStateGetIniData;
 
 == Description ==
 
-_!OnGetIniData_ allows user to change the name of the ini file and the section within it where window information is stored.
+_!OnGetIniData_ allows the user to change the name of the ini file and the section within it where window information is stored.
 
 The event is triggered just before the ini file is read when restoring a window and just before the ini file is written when saving window information. The name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded.  The values passed to the event handler are the same as those of the _[TPJWdwStateIniFileName IniFileName] and _[TPJWdwStateSection Section]_ properties.
 
@@ -35,22 +35,22 @@ _[TPJWdwState]_'s behaviour when the event handler returns depends on the values
 
 === v5.4.2 and earlier ===
 
-If you change the _!IniFileName_ parameter it has the following effect on the file name used for the ini file. You should note that this effect differs slightly from if you had set the related properties.
+If you change the _AIniFileName_ parameter it has the following effect on the file name used for the ini file. You should note that this effect differs slightly from if you had set the related properties.
 
-|| *Value of _!IniFileName_* || *Effect on ini file name* ||
+|| *Value of _AIniFileName_* || *Effect on ini file name* ||
 || Empty string || *Error*. The file name will be the empty string and is likely to lead to an exception. ||
-|| Relative file name || The ini file name is as specified by _!IniFileName_ and it is stored in the Windows installation directory. For example if _!IniFileName_ is `Foo.ini` the result is an ini file name of `C:\Windows\Foo.ini` or simlar while a value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`. ||
+|| Relative file name || The ini file name is as specified by _AIniFileName_ and it is stored in the Windows installation directory. For example if _AIniFileName_ is `Foo.ini` the result is an ini file name of `C:\Windows\Foo.ini` or simlar while a value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`. ||
 || Absolute file name || The ini file is stored in the given path, which much exist, or an exception is raised. ||
 
-Changing the _Section_ parameter changes the name of the section used to store the window state information in the ini file. *Do not* set _Section_ to the empty string because this may have unexpected results.
+Changing the _ASection_ parameter changes the name of the section used to store the window state information in the ini file. *Do not* set _Section_ to the empty string because this may have unexpected results.
 
 === v5.5.0 and later ===
 
-Changing the values of the _!IniFileName_ or _Settings_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateSection Section]_ properties to the same values.
+Changing the values of the _AIniFileName_ or _ASection_ parameters has exactly the same effect on the ini file and section names as setting the _[TPJWdwStateIniFileName IniFileName]_ or _[TPJWdwStateSection Section]_ properties to the same values.
 
-The effect of changing the _!IniFileName_ parameter is as follows.
+The effect of changing the _AIniFileName_ parameter is as follows.
 
-|| *Value of _!IniFileName_* || *Effect on ini file name* ||
+|| *Value of _AIniFileName_* || *Effect on ini file name* ||
 || Empty string || The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples. ||
 || Relative path || The ini file name is as specified in the parameter. The file's directory depends on the value of the _[TPJWdwStateIniRootDir IniRootDir]_ property. See that property's _[TPJWdwStateIniRootDir documentation]_ for more information and examples. ||
 || Absolute path || The ini file name is exactly as specified in the parameter. The value of the _[TPJWdwStateIniRootDir IniRootDir]_ property has no effect in this case. ||
