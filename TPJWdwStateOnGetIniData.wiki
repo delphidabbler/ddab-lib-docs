@@ -58,3 +58,5 @@ The effect of changing the _!IniFileName_ parameter is as follows.
 If the path to the ini file does not exist it is created, if possible, when the component first attempts to write data to the file. If the required directories can't be created an exception will be raised.
 
 Changing the _Section_ parameter changes the name of the section used to store the window state information in the ini file. If _Section_ is set to the empty string then a default value is used for the section name. This is the `Window_` followed by the name of the host form (e.g. `Window_Form1`).
+
+*Note:* _!OnGetIniData_ is not fired if a handler is assigned to the _[TPJWdwStateOnGetIniDataEx OnGetIniDataEx]_ event - you should only provide an event handler one event or the other, not both.
