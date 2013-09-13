@@ -23,26 +23,26 @@ Start a new application and place a _[TPJHotLabel TPJHotLabel]_ component on the
 || !HighlightFont.Style || `[fsUnderline]` ||
 || HighlightURL || `True` ||
 
-If you don't want to use the object inspector you can double click the form to create a _!FormCreate_ event handler and enter the following code in it:
+If you don't want to use the object inspector you can double click the form to create a _!FormCreate_ event handler and enter the following code in it, which assumes the component is named _PJHotLabel1_:
 
 {{{
-TPJHotLabel1.Font.Color := clBlue;
-TPJHotLabel1.HighlightFont.Color := TPJHotLabel1.Font.Color;
-TPJHotLabel1.Font.Style := [];
-TPJHotLabel1.HighlightFont.Style := [fsUnderline];
-TPJHotLabel1.HighlightURL := True;
+PJHotLabel1.Font.Color := clBlue;
+PJHotLabel1.HighlightFont.Color := PJHotLabel1.Font.Color;
+PJHotLabel1.Font.Style := [];
+PJHotLabel1.HighlightFont.Style := [fsUnderline];
+PJHotLabel1.HighlightURL := True;
 }}}
 
 Now compile and run the application and roll the mouse over the URL and see the highlighting. The un-highlighted label will display with no text decoration and it will become underlined when the mouse passes over it.
 
 == Example 2 ==
 
-The second example uses a colour change to provide the highlighting. The default values of the _[TPJHotLabelFont Font]_ and _[TPJHotLabelHighlightFont HighlightFont]_ properties will suffice for this example - unhighlighted text is navy blue and is underlined while the highlighted text is red and is also underlined.
+The second example uses component's default highlighting style where un-highlighted text is navy blue and underlined and highlighted text is red and also underlined.
 
-Start a new application and drop a _[TPJHotLabel TPJHotLabel]_ component on the form. Either use the property inspector to set the _[TPJHotLabelHighlightURL HighlightURL]_ property to `True` or create a _!FormCreate_ event handler and enter the following line of code:
+Start a new application and drop a _[TPJHotLabel TPJHotLabel]_ component on the form. We only need to set the _[TPJHotLabelHighlightURL HighlightURL]_ property to `True`, leaving all the other properties unchanged. You can use the property inspector do this or create a _!FormCreate_ event handler and enter the following line of code, assuming the component is named _PJHotLabel1_:
 
 {{{
-TPJHotLabel1.HighlightURL := True;
+PJHotLabel1.HighlightURL := True;
 }}}
 
 Again, run the application and move the mouse cursor over the control to see the highlighting effect.
