@@ -12,6 +12,8 @@ $Date$
 
 This non-visual component enables the size, position and state of the form on which it is placed to be saved to and read from the registry.
 
+*NOTE:* It is *strongly* recommended that this component is not used in 32 bit applications compiled with Delphi 5 and earlier that are to be run on 64 bit Windows operating systems. This is because the _TRegistry_ class used by _TPJRegWdwState_ does not support the permissions needed to access the 64 bit registry view.
+
 The _[TPJRegWdwStateSave Save]_ method saves the window information to the registry and the _[TPJRegWdwStateRestore Restore]_ method reads information in and sets the owning form window's size, position and state.
 
 The component's _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _Save_ and _Restore_ methods.
