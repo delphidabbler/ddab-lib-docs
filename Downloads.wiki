@@ -31,3 +31,5 @@ Each of the library's sub-projects has its own directory in the File Manager whe
 || System Information Unit || [https://sourceforge.net/projects/ddablib/files/sysinfo/ sysinfo] ||
 || Version Information Component || [https://sourceforge.net/projects/ddablib/files/verinfo/ verinfo] ||
 || Window State Components || [https://sourceforge.net/projects/ddablib/files/wdwstate/ wdwstate] ||
+
+Note that all downloads that were on _!GoogleCode_ as of 2nd November 2013 have been left in place so that any links will still work. However no further library releases after that date will have been uploaded.
