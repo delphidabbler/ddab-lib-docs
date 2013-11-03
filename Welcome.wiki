@@ -32,4 +32,6 @@ The Library currently contains the following projects.
 
 Links in the above table that are marked with http://www.delphidabbler.com/img/markup/off-site.gif lead to documentation over at [http://wiki.delphidabbler.com wiki.delphidabbler.com]. All other links lead to documentation here on !GoogleCode.
 
-The library source code is stored in a [http://subversion.tigris.org/ Subversion] repository. The repository structure is described [RepoStructure here].
+The library source code is maintained in a [http://subversion.tigris.org/ Subversion] repository. The repository structure is described [RepoStructure here].
+
+Project releases are available in .zip format from [https://sourceforge.net/projects/ddablib/files/ SourceForge].
