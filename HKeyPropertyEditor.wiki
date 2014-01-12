@@ -6,14 +6,13 @@ $Date$
 
 =HKEY Property Editor=
 
-This is a property editor for properties of type _HKEY_ i.e. registry root keys. The editor causes a drop-down list of all the registry root keys supported by Delphi to be displayed in the object inspector for any property of type _HKEY_. Such a property is exposed by the [TPJRegWdwState] component.
+*This property editor is deprecated and is no longer being developed.*
 
-The property editor class is named _TPJHKEYPropEditor_ and is defined in the _PJHKEYPropEdit_ unit.
+*You are strongly advised not to use it.*
 
-_TPJHKEYPropEditor_ defines no new methods or properties over and above those defined by its parent class, _TPropertyEditor_.
+The editor behaves erratically, working correctly on some Delphi installations but is not recognised by the Delphi Object inspector on others.
 
 
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/hkeype HKEY Property Editor Web Page].
