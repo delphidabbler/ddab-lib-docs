@@ -1,5 +1,5 @@
+#summary Landing Page for Downloads Tab on GoogleCode.
 <wiki:comment>
-#summary Landing Page for Downloads Tab on GoogleCode
 $Rev$
 $Date$
 </wiki:comment>
@@ -20,7 +20,6 @@ Each of the library's sub-projects has its own directory in the File Manager whe
 || Environment Variables Unit || [https://sourceforge.net/projects/ddablib/files/envvars/ envvars] ||
 || Extended String Property Editor || [https://sourceforge.net/projects/ddablib/files/stringpe/ stringpe] ||
 || Fractions Unit || [https://sourceforge.net/projects/ddablib/files/fractions/ fractions] ||
-|| HKEY Property Editor || [https://sourceforge.net/projects/ddablib/files/hkeype/ hkeype] ||
 || Hot Label Component || [https://sourceforge.net/projects/ddablib/files/hotlabel/ hotlabel] ||
 || I/O Utility Classes || [https://sourceforge.net/projects/ddablib/files/ioutils/ ioutils] ||
 || MD5 Message Digest Unit || [https://sourceforge.net/projects/ddablib/files/md5/ md5] ||
