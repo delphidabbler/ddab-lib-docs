@@ -18,7 +18,6 @@ The Library currently contains the following projects.
 || [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/StringPE Extended String Property Editor]http://www.delphidabbler.com/img/markup/off-site.gif || Property editor that allows multi-line and long _string_ and _TCaption_ properties to be edited at design time. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/FractionsAPI Fractions Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Unit containing code that encapsulates fractions and provided common operations on them. ||
-|| [HKeyPropertyEditor HKEY Property Editor] || Property editor that allows registry root keys to be edited at design time using symbolic constant names. ||
 || [HotLabelComponent Hot Label Component] || Clickable label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/IOUtilsAPI I/O Utilities Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Several classes that assist with various I/O related tasks, including working with pipes and inheritable file handles. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/MD5API MD5 Message Digest Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Implementation of the MD5 Message Digest Algorithm as a Delphi class. This is an implementation from scratch, not a wrapper round earlier code. ||
