@@ -18,7 +18,7 @@ property RootKey: HKEY;
 
 == Description ==
 
-This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[TPJRegWdwStateSubKey SubKey]_ property. The user is responsible for setting _!RootKey_ to a valid _HKEY_ value. Valid values are:
+This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[TPJRegWdwStateSubKey SubKey]_ property. If _!RootKey_ is set to an invalid _HKEY_ value an exception is raised. Valid values are:
 
 {{{
 HKEY_CLASSES_ROOT     = $80000000;
@@ -34,6 +34,12 @@ These values are defined in the Windows unit.
 
 The property defaults to `HKEY_CURRENT_USER`.
 
-== Property Editor ==
+*Note:* The registry root key can also be specified by handling _[TPJRegWdwStateOnGetRegData OnGetRegData]_ or _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* events. If this is done then the value of _!RootKey_ is ignored.
 
-To make this property easier to edit you can install the [http://www.delphidabbler.com/software/hkeype HKEY Property Editor] that enables you to edit the _!RootKey_ property using the name of the appropriate `HKEY_*` constant.
+===Alternative Property===
+
+The _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property provides an alternative way of setting the registry root key. Instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey]_ enumeration, making it impossible to specify an invalid value.
+
+_[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* also makes it easier and safer to set values in Delphi's Object Inspector since the required value is selected from a list.
+
+Setting _!RootKey_ changes the value of _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* and vice versa.
