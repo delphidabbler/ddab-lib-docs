@@ -18,7 +18,7 @@ property SubKey: string;
 
 == Description ==
 
-This property defines the subkey under which the window's size, position and state information is stored in the registry. This subkey is stored under the root key defined by the _[TPJRegWdwStateRootKey RootKey]_ property.
+This property defines the subkey under which the window's size, position and state information is stored in the registry. This subkey is stored under the root key defined by the _[TPJRegWdwStateRootKey RootKey]_ or _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property.
 
 To ensure that the sub key is relative to the root and not the current key the subkey should begin with a '\' character.
 
