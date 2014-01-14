@@ -35,4 +35,4 @@ Each value represents a value defined by one of the _HKEY_xxx_ constants as foll
 || `hkCurrentConfig` || `HKEY_CURRENT_CONFIG` ||
 || `hkDynData` || `HKEY_DYN_DATA` ||
 
-_TPJRegRootKey_ is used as the type for the _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property and the _!RootKeyEx_ parameter of the _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* event.
+_TPJRegRootKey_ is used as the type for the _[TPJRegWdwState].[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property and the _!RootKeyEx_ parameter of the _[TPJRegWdwState].[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* event.
