@@ -38,7 +38,7 @@ The property defaults to `HKEY_CURRENT_USER`.
 
 ===Alternative Property===
 
-The _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property provides an alternative way of setting the registry root key. Instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey]_ enumeration, making it impossible to specify an invalid value.
+The _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property provides an alternative way of setting the registry root key. Instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey]_*^v5.6^* enumeration, making it impossible to specify an invalid value.
 
 _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* also makes it easier and safer to set values in Delphi's Object Inspector since the required value is selected from a list.
 
