@@ -31,6 +31,6 @@ The purpose of the event is to enable the _[TPJCustomWdwStateAutoSaveRestore Aut
 
 === Alternative Event ===
 
-The _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* event provides an alternative and way of to change the registry root- and sub-keys. It is similar to _!OnGetRegData_ except that the root key is specified as one of the value from the _[TPJRegRootKey]_ enumeration.
+The _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* event provides an alternative way of to change the registry root- and sub-keys. It is similar to _!OnGetRegData_ except that the root key is specified as one of the value from the _[TPJRegRootKey]_ enumeration.
 
 *Note:* You should choose which of _!OnGetRegData_ and _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* to handle, but should not handle both events. If you do then _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* will be triggered and _!OnGetRegData_ will be ignored.
