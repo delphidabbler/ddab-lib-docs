@@ -12,12 +12,15 @@ The classes encapsulate the low-level structure of a resource file and its resou
 
 This wiki is divided into several sections as noted in the following table.
 
-|| _[TPJResourceFile TPJResourceFile]_ || Class that encapsulates the contents of a whole resource file and provides methods and properties to search, enumerate and manipulate it. ||
-|| _[TPJResourceEntry TPJResourceEntry]_ || Class that encapsulates a single resource within a resource file and provides properties and methods to access its header record and its raw data and to compare it to other resources. ||
-|| _[EPJResourceFile EPJResourceFile]_ || Class of exception raised by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. ||
+|| _[TPJResourceFile]_ || Class that encapsulates the contents of a whole resource file and provides methods and properties to search, enumerate and manipulate it. ||
+|| _[TPJResourceEntry]_ || Class that encapsulates a single resource within a resource file and provides properties and methods to access its header record and its raw data and to compare it to other resources. ||
+|| _[TPJResourceFileEnumerator]_*^v1.1^* || Class that implements an enumerator for _[TPJResourceFile]_ that enumerates all its resource entries. ||
+|| _[EPJResourceFile]_ || Class of exception raised by _[TPJResourceFile]_ and _[TPJResourceEntry]_. ||
 || [ResFileRoutines Helper Routines] || Routines to assist in working with resource identifiers. ||
 || [ResFileConsts Constants] || Various useful constants. ||
 || [ResFileExamples Examples] || Several examples of how to use the code of the Resource File Unit. ||
+
+*NOTE:* This documentation relates to *v1.0* and later of the Resource File Unit. Any items in this documentation introduced after the release of v1.0 are marked with the version number at which they were first made available, for example: *^v1.1^*
 
 *Links:*
 
