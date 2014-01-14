@@ -22,7 +22,7 @@ The _[TPJCustomWdwStateOptions Options]_ property and the _[TPJCustomWdwStateOnR
 
 Application defined data can be read from and written to the registry by handling the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_*^v5.1^* and _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_*^v5.1^* events that are triggered when the component reads and writes its data.
 
-The root and sub key to be used in the registry are specified using the _[TPJRegWdwStateRootKey RootKey]_ and _[TPJRegWdwStateSubKey SubKey]_ properties respectively. Alternatively the _[TPJRegWdwStateOnGetRegData OnGetRegData]_ event can be handled and used to set the root key and sub key to use.
+The root and sub key to be used in the registry are specified using the _[TPJRegWdwStateRootKey RootKey]_ (or _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^*) and _[TPJRegWdwStateSubKey SubKey]_ properties respectively. Alternatively the _[TPJRegWdwStateOnGetRegData OnGetRegData]_ (or _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^*) event can be handled and used to set the root key and sub key to use.
 
 It is only possible to have one instance of a _TPJRegWdwState_ component on any one form. Neither can a _TPJRegWdwState_ component be dropped onto a form that already contains either a _[TPJWdwState TPJWdwState]_ or a _[TPJUserWdwState TPJUserWdwState]_ component.
 
@@ -45,7 +45,8 @@ _TPJRegWdwState_ exposes the following methods, properties and events, some of w
 || _[TPJCustomWdwStateIgnoreState IgnoreState]_ || Determines whether the window's saved state (maximised, normal or minimised) is applied on restoration. This property is deprecated - use the _[TPJCustomWdwStateOptions Options]_ property instead. ||
 || _[TPJCustomWdwStateMinimizeDelay MinimizeDelay]_ || Sets the delay between displaying a normalised form on screen and minimising it if required. ||
 || _[TPJCustomWdwStateOptions Options]_ || Determines how the component interprets the window display data read from storage. ||
-|| _[TPJRegWdwStateRootKey RootKey]_ || Determines the registry root key under which the window's size, position and state information is stored. ||
+|| _[TPJRegWdwStateRootKey RootKey]_ || Specifies the _HKEY_ value of the registry root key under which the window's size, position and state information is stored. ||
+|| _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* || Similar to _[TPJRegWdwStateRootKey RootKey]_ except that instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey]_ enumeration. ||
 || _[TPJRegWdwStateSubKey SubKey]_ || Determines the registry sub key under which the window's size, position and state information is stored. ||
 
 == Events ==
@@ -53,7 +54,8 @@ _TPJRegWdwState_ exposes the following methods, properties and events, some of w
 || *Event* || *Description* ||
 || _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_*^v5.4^* || Event triggered after window has been restored and its state set. ||
 || _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_*^v5.4^* || Event triggered after the window is sized but before it is physically restored. ||
-|| _[TPJRegWdwStateOnGetRegData OnGetRegData]_ || Event that allows user to change the registry key where window information is stored. ||
+|| _[TPJRegWdwStateOnGetRegData OnGetRegData]_ || Event that allows user to change the registry key where window information is stored. The registry root key is specified by it _HKEY_ value. ||
+|| _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* || Similar to _[TPJRegWdwStateOnGetRegData OnGetRegData]_ except that the root key is specified by a value from the _[TPJRegRootKey]_ enumeration.  ||
 || _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_*^v5.1^* || Event that allows user to read additional registry data when the component reads window state information. ||
 || _[TPJRegWdwStateOnPuttingRegData OnPuttingRegData]_*^v5.1^* || Event that allows user to write additional registry data when the component writes window state information. ||
 || _[TPJCustomWdwStateOnReadWdwState OnReadWdwState]_ || Event that allows user to change the window data read from storage before the window is displayed. _TPJRegWdwState_ publishes this inherited protected event. ||
