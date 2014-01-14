@@ -42,6 +42,69 @@ The details of each entry are formatted by Delphi's _Format_ function and added 
 
 You may have noticed that we have not freed any of the resource entry objects. This is not necessary since they are all freed automatically when the resource files object is freed.
 
+*Alternative Approach^v1.1^
+
+A second approach to the problem uses the fact that v1.1 of the resource files unit implements an enumerator for _[TPJResourceFile TPJResourceFile]_. This means that we can use a *for..in* loop to enumerate the resources.
+
+Here's the modified code:
+
+{{{
+var
+  ResFile: TPJResourceFile;
+  ResEntry: TPJResourceEntry;
+begin
+  ...
+  // Assume ResFile contains a loaded resource file
+  ...
+  Memo1.Clear;
+  for ResEntry in ResFile do
+  begin
+    Memo1.Lines.Add(
+      Format(
+        'Type: "%s"   Name: "%s"   LanguageID: %0.4X',
+        [ResIDToStr(ResEntry.ResType), ResIDToStr(ResEntry.ResName),
+        ResEntry.LanguageID]
+      )
+    );
+  end;
+  ...
+  // Don't forget to free ResFile at some stage.
+end;
+}}}
+
+The code above requires Delphi 2005 or later. Users of earlier Delphis _can_ still use the enumerator if desired, like this:
+
+{{{
+var
+  ResFile: TPJResourceFile;
+  ResEntry: TPJResourceEntry;
+  Enum: TPJResourceFileEnumerator;
+begin
+  ...
+  // Assume ResFile contains a loaded resource file
+  ...
+  Memo1.Clear;
+  Enum := ResFile.GetEnumerator;
+  try
+    while Enum.MoveNext do
+    begin
+      ResEntry := Enum.Current;
+      Memo1.Lines.Add(
+        Format(
+          'Type: "%s"   Name: "%s"   LanguageID: %0.4X',
+          [ResIDToStr(ResEntry.ResType), ResIDToStr(ResEntry.ResName),
+          ResEntry.LanguageID]
+        )
+      );
+   end;
+  finally
+    Enum.Free;
+  end;
+  ...
+  // Don't forget to free ResFile at some stage.
+end;
+}}}
+
 *Links:*
 
   * [ResFileExample3 Next Example]
