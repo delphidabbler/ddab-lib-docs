@@ -18,7 +18,7 @@ $Date$
 function GetEnumerator: TPJResourceFileEnumerator;
 }}}
 
-Creates and returns a new enumerator of type _[TPJResourceFileEnumerator]_ that can enumerate the resources contained in a _[TPJResourceFile]_ instance.
+Creates and returns a new enumerator of type _[TPJResourceFileEnumerator]_*^1.1^* that can enumerate the resources contained in a _[TPJResourceFile]_ instance.
 
 The purpose of _!GetEnumerator_ is to enable a _[TPJResourceFile]_ instance to be enumerated in a *for..in* loop construct. In such cases _!GetEnumerator_ is called automatically and there is rarely any need call the method from code.
 
@@ -42,7 +42,7 @@ begin
 end;
 }}}
 
-Notice that neither _!GetEnumerator_ nor the methods of _[TPJResourceFileEnumerator]_ are called explicitly.
+Notice that neither _!GetEnumerator_ nor the methods of _[TPJResourceFileEnumerator]_*^1.1^* are called explicitly.
 
 *Example 2:*
 
