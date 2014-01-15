@@ -4,7 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= Example #11: Validating a resource file ^v1.1^ =
+= Example #11: Validating a resource file^v1.1^ =
 
 _*Note:* The code in this example requires v1.1 of the Resource File Unit and Delphi 2009 or later._
 
