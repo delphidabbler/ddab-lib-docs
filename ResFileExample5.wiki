@@ -200,6 +200,28 @@ begin
 end;
 }}}
 
+Finally, you can add data to a resource's data by loading it directly from file using the _[TPJResourceEntryLoadDataFromFile LoadDataFromFile]_*^v1.1^* method. This method can either replace a resource's current data with the content of a file or append the content of the file to the current data.
+
+Here's an example:
+
+{{{
+var
+  Entry: TPJResourceEntry;
+begin
+  ...
+  // Make sure Entry references a resource object
+  ...
+  // Replace any existing resource data with content of file Foo.dat
+  Entry.LoadDataFromFile('Foo.dat', False);
+  // Append content of file Bar.dat to resource data
+  Entry.LoadDataFromFile('Bar.dat', True);
+}}}
+
+Suppose `Foo.dat` contained the ASCII string `'forty-two'` and `Bar.dat`
+contained the ASCII string `'fifty-six'` then after running the above code then
+the resource data would contain bytes that, when converted to an ASCII string,
+would read `forty-twofifty-six`.
+
 *Links:*
 
   * [ResFileExample6 Next Example]
