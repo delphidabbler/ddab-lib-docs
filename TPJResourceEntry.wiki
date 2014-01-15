@@ -12,7 +12,7 @@ $Date$
 
 This class encapsulates a resource within a resource file.
 
-_TPJResourceEntry_ objects are used to manipulate and interrogate resource entries. Properties are exposed that give access to the resource header information, some of which can be modified by writing to properties. The resource's raw data can be read and manipulated either through the _Data_ property, which provides a _TStream_ interface to the data or via the _DataBytes_*^v1.1^* property that enables the raw data to be read and written to and from a byte array.
+_TPJResourceEntry_ objects are used to manipulate and interrogate resource entries. Properties are exposed that give access to the resource header information, some of which can be modified by writing to properties. The resource's raw data can be read and manipulated either through the _Data_ property, which provides a _TStream_ interface to the data or via the _!DataBytes_*^v1.1^* property that enables the raw data to be read and written to and from a byte array.
 
 This is done mainly via properties which give access to resource header information, allow some header information to be set, and give read/write access to the raw resource data via a _TStream_ or as a an array of bytes*^v1.1^*.
 
