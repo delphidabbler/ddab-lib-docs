@@ -19,7 +19,7 @@ The following examples of using the [ResFileUnit Resource File Unit] are availab
 || [ResFileExample9 #9] || Saving a resource file ||
 || [ResFileExample10 #10] || Creating a resource file for use with Internet Explorer ||
 || [ResFileExample11 #11] || Validating a resource file ||
-|| [ResFileExample12 #12] || Recording compilation information in a resource file ||
+|| [ResFileExample12 #12] || Recording a compilation date in a resource file ||
 
 *Links:*
 
