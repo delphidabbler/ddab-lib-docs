@@ -17,7 +17,9 @@ The following examples of using the [ResFileUnit Resource File Unit] are availab
 || [ResFileExample7 #7] || Checking if a resource exists ||
 || [ResFileExample8 #8] || Deleting resources ||
 || [ResFileExample9 #9] || Saving a resource file ||
-|| [ResFileExample10 #10] || A practical example ||
+|| [ResFileExample10 #10] || Creating a resource file for use with Internet Explorer ||
+|| [ResFileExample11 #11] || Validating a resource file ||
+|| [ResFileExample12 #12] || Recording compilation information in a resource file ||
 
 *Links:*
 
