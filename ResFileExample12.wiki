@@ -6,7 +6,7 @@ $Date$
 
 = Example #12: Recording a compilation date in a resource file^v1.1†^ =
 
-*† _Note:* This code in this unit requires v1.1 of the Resource File Unit if compiled with Delphi 2009 or later. When compiled with an earlier compiler v1.0 will suffice._
+*† _Note:* The first block of code in this example requires v1.1 of the Resource File Unit if compiled with Delphi 2009 or later. When compiled with an earlier compiler v1.0 will suffice._
 
 Sometimes it's useful for a program to "know" the date when it was last compiled. One way to do this is to include a resource in the program that contains the compile date. The program can then read the date from the resource when it needs it.
 
