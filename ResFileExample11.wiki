@@ -1,4 +1,4 @@
-#summary Resource File Unit Example 10.
+#summary Resource File Unit Example 11.
 <wiki:comment>
 $Rev$
 $Date$
