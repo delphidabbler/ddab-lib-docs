@@ -215,6 +215,8 @@ begin
   Entry.LoadDataFromFile('Foo.dat', False);
   // Append content of file Bar.dat to resource data
   Entry.LoadDataFromFile('Bar.dat', True);
+  ...
+end;
 }}}
 
 Suppose `Foo.dat` contained the ASCII string `'forty-two'` and `Bar.dat`
