@@ -8,7 +8,7 @@ $Date$
 
 All the previous examples in this documentation are rather contrived examples that seek to focus on one or more related aspects of the functionality in the _PJResFile_ unit. This example is the first of three examples that aim to present useful code that uses several of the methods covered by other examples.
 
-We will create a routine that takes a list of HTML and related files and creates a resource file which has a unique `RT_HTML` resource for each file. The resource contains the contents of the related file. 
+We will create a routine that takes a list of HTML and related files and creates a resource file which has a unique `RT_HTML` resource for each file. The resource contains the contents of the related file.
 
 Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article [http://www.delphidabbler.com/articles?article=10 "How to create and use HTML resource files"] for more information on this subject.
 
@@ -23,22 +23,24 @@ var
   SrcFileName: string;      // a source file name
   SrcStm: TFileStream;      // source file stream
   FileIdx: Integer;         // loops thru Files
+const
+  LanguageID: Word = $0809; // UK English
 begin
-  // Create new empty resource file object
   ResFile := TPJResourceFile.Create;
   try
-    // Loop thru all source files
+    // Loop through all source files
     for FileIdx := 0 to Pred(Files.Count) do
     begin
-      // Record source file name
+      // Record name of current file 0 should be fully specified
       SrcFileName := Files[FileIdx];
-      // Get resource name from source name
+      // Construct resource name from source file name, without path. If the
+      // resource name already exists repeatedly prepend underscores until a
+      // unique name is found
       ResName := ExtractFileName(SrcFileName);
-      // Ensure res name is not a duplicate
-      while ResFile.EntryExists(RT_HTML, PChar(ResName), $0809) do
+      while ResFile.EntryExists(RT_HTML, PChar(ResName), LanguageID) do
         ResName := '_' + ResName;
-      // Create new resource
-      Entry := ResFile.AddEntry(RT_HTML, PChar(ResName), $0809);
+      // Create new resource for current file - this will be unique
+      Entry := ResFile.AddEntry(RT_HTML, PChar(ResName), LanguageID);
       // Copy source file into resource data
       SrcStm := TFileStream.Create(SrcFileName, fmOpenRead);
       try
@@ -51,15 +53,27 @@ begin
     // Save resource file
     ResFile.SaveToFile(ResFileName);
   finally
-    // Free resource file object (also frees resource entries)
-    ResFile.Free;
+    ResFile.Free; // this also frees resource entry objects
   end;
 end;
 }}}
 
-The _Files_ parameter of the routine is a string list containing the names of files that are to be included in the resource file. The _!ResFileName_ parameter receives the name of the output file which will be a valid 32 bit resource file.
+The _Files_ parameter of the routine is a string list containing the (fully specified) names of files that are to be included in the resource file. The _!ResFileName_ parameter receives the name of the output file which will be a valid 32 bit resource file.
 
-We first create a new resource file object to store the HTML resources. We then loop through all the files in the list and add a new resource for each file. The resource is named with the base name of the file. To ensure the resource names are not duplicated we repeatedly append underscore characters to duplicate names until they are unique. Having got a unique resource name we create a new resource entry for it and then copy the file's contents into the resource data. Finally we save the resource file and tidy up.
+The comments in the code should explain what is happening.
+
+*Alternative Approach^v1.1^*
+
+The above code can be simplified when using v1.1 of the Resource File Unit because of its new _[TPJResourceEntryLoadDataFromFile LoadDataFromFile]_ method. Using this method we can replace all the stream processing code between the `// Copy source file into resource data` comment and the end of the loop with a single line of code:
+
+{{{
+      ...
+      // 5: Copy source file into resource data
+      SrcStm := TFileStream.Create(SrcFileName, fmOpenRead);
+      Entry.LoadDataFromFile(SrcFileName, False);
+    end;
+    ...
+}}}
 
 *Links:*
 
