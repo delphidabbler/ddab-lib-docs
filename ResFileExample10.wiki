@@ -4,7 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= Example #10: Creating A Resource File Containing HTML =
+= Example #10: Creating A Resource File Containing HTML Files =
 
 All the previous examples in this documentation are rather contrived examples that seek to focus on one or more related aspects of the functionality in the _PJResFile_ unit. This example is the first of three examples that aim to present useful code that uses several of the methods covered by other examples.
 
