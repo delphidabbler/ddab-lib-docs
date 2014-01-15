@@ -6,11 +6,13 @@ $Date$
 
 = Example #5: Adding to or modifying a resource's data =
 
-While the code in the [ResFileUnit Resource File Unit] does not understand the various resource data formats it does assist in reading, adding, updating and deleting the raw resource data. The _[TPJResourceEntry TPJResourceEntry]_ class's _Data_ property exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to access the data.
+While the code in the [ResFileUnit Resource File Unit] does not understand the various resource data formats it does assist in reading, adding, updating and deleting the raw resource data.
+
+The _[TPJResourceEntry TPJResourceEntry]_ class's _[TPJResourceEntryData Data]_ property exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to access the data. Additionally the _[TPJResourceEntryDataBytes DataBytes]_*^v1.1^* makes the resource data available as a byte array. In the following section we show how to read, write and delete data using both of these properties.
 
 == Reading data ==
 
-The following code fragment shows how to read all the data from a resource entry to a buffer.
+The following code fragment shows how to read all the data from a resource entry to a buffer using the _[TPJResourceEntryData Data]_ property.
 
 {{{
 var
@@ -39,7 +41,7 @@ begin
 end;
 }}}
 
-We first set the buffer to the required size by getting the size of the resource from the _[TPJResourceEntry TPJResourceEntry]_'s _!DataSize_ property (you could also use the _Data.Size_ property). We now ensure the resource data stream is positioned at the start (you can't assume this!) then read all the data into the buffer using _TStream_'s _!ReadBuffer_ method. We then reposition the stream ready for the next use. Having processed the data in the buffer in some way we finally free it.
+We first set the buffer to the required size by getting the size of the resource from the _[TPJResourceEntry TPJResourceEntry]_'s _[TPJResourceEntryDataSize DataSize]_ property (you could also use the _[TPJResourceEntryData Data].Size_ property). We now ensure the resource data stream is positioned at the start (you can't assume this!) then read all the data into the buffer using _TStream_'s _!ReadBuffer_ method. We then reposition the stream ready for the next use. Having processed the data in the buffer in some way we finally free it.
 
 It may be more convenient to copy the resource data to another stream before processing it. The next example illustrates this by storing the resource data in a file named `ResEntry.dat`:
 
@@ -66,6 +68,22 @@ end;
 
 Here we first open a stream onto a new file. We then use _TStream_'s _!CopyFrom_ method to copy the whole of the resource data to the file stream. By specifying a size of `0` in the _!CopyFrom_ method, _TStream_ automatically positions the resource data stream at the start and copies the whole stream, so we don't need to position it first. Once again we reset the resource data stream once we are done.
 
+Depending on how you want to manipulate the resource data it may be much simpler to use the _[TPJResourceEntryDataBytes DataBytes]_*^v1.1^* property to get an array of bytes to manipulate. Here's an example that is so simple it is hardly worth giving:
+
+{{{
+var
+  Entry: TPJResourceEntry;
+  Bytes: TBytes;
+begin
+  ...
+  // Make sure Entry references a resource object
+  ...
+  Bytes := Entry.DataBytes;
+  ...
+  // Do something with Bytes
+end;
+}}}
+
 == Deleting data ==
 
 It is very easy to delete all the data in a resource: simply set the data stream's size to `0`:
@@ -82,11 +100,29 @@ begin
 end;
 }}}
 
-You must set the _Size_ property of the entry's _Data_ property here: you can't set the _!DataSize_ property since it is read only.
+You must set the _Size_ property of the entry's _[TPJResourceEntryData Data]_ property here: you can't set the _[TPJResourceEntryData DataSize DataSize]_ property since it is read only.
+
+You _can_ also delete the data by assigning an empty array to the _[TPJResourceEntryDataBytes DataBytes]_*^v1.1^* property, but the above method easier to write and clearer to read. For completeness, here's the code:
+
+{{{
+var
+  Entry: TPJResourceEntry;
+  Bytes: TBytes;
+begin
+  ...
+  // Make sure Entry references a resource object
+  ...
+  SetLength(Bytes, 0);
+  Entry.DataBytes := Bytes;
+  ...
+end;
+}}}
 
 == Writing data ==
 
 We can add data to an existing resource quite simply. Let us first look at how to overwrite any existing data and then show how to append data to an existing resource. For the purposes of this example, assume we have a user defined resource that stores some plain text. _Entry_ is a _[TPJResourceEntry TPJResourceEntry]_ object that references our resource. We will replace any existing data with the text `'Hello World'`.
+
+First of all we use the _[TPJResourceEntryData Data]_ property:
 
 {{{
 var
@@ -107,9 +143,21 @@ begin
 end;
 }}}
 
-The only point of note here is the use of one of the normal idioms is writing a string to a stream: we can't just do `WriteBuffer(Text, Length(Text))`, but must specify the start of the string (`Pointer(Text)^`) and pass the correct length: remember that since Delphi 2009 `SizeOf(Char)` is now `2`!
+That's well and good when you want to write the text in its native encoding. When you want to write the text in another encoding, say UTF-8, that is when the _[TPJResourceEntryDataBytes DataBytes]_*^v1.1^* property really helps. Assuming you are using Delphi 2009 or later you can replace any existing data with the text `'Hello World'`, using UTF-8, like this:
 
-Now let's look at how we add more text to the end of the resource data:
+{{{
+var
+  Entry: TPJResourceEntry;
+begin
+  ...
+  // Make sure Entry references a resource object
+  ...
+  Entry.DataBytes := TEncoding.UTF8.GetBytes('Hello World');
+  ...
+end;
+}}}
+
+Now let's look at how we add more text to the end of the resource data using the _[TPJResourceEntryData Data]_ property. We will appended the text `'www.delphidabbler.com'` to the end of some existing text in the resource:
 
 {{{
 var
@@ -122,9 +170,7 @@ begin
   // Move to end of existing data
   Entry.Data.Seek(0, soFromEnd);
   // Write new text
-  Text := ' From DelphiDabbler';
-  Entry.Data.WriteBuffer(Pointer(Text)^, Length(Text) * SizeOf(Char));
-  Text := #13#10'www.delphidabbler.com';
+  Text := 'www.delphidabbler.com';
   Entry.Data.WriteBuffer(Pointer(Text)^, Length(Text) * SizeOf(Char));
   // Reposition stream to start
   Entry.Data.Position := 0;
@@ -132,10 +178,24 @@ begin
 end;
 }}}
 
-Here we move the stream pointer to the end of the stream so the text we write is appended to any existing data. Running the two examples in sequence leaves the resource containing the following two lines of text:
+Here we move the stream pointer to the end of the stream so the text we write is appended to any existing data.
 
-  `Hello World from DelphiDabbler`<br />
-  `www.delphidabbler.com`
+A similar thing using can be done using the _[TPJResourceEntryDataBytes DataBytes]_*^v1.1^* property. Assume the existing text is in UTF-8 and were want to append text in the same format. To do this we have to read the existing text, append the new text and then write the whole string back again, as follows:
+
+{{{
+var
+  Entry: TPJResourceEntry;
+  Text: string;
+begin
+  ...
+  // Make sure Entry references a resource object
+  ...
+  Text := TEncoding.UTF8.GetString(Entry.DataBytes) 
+    + #13#10'www.delphidabbler.com';
+  Entry.DataBytes := TEncoding.UTF8.GetBytes(Text);
+  ...
+end;
+}}}
 
 *Links:*
 
