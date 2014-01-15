@@ -1,10 +1,10 @@
-#summary Description of the TPJResourceEntry.LoadDataFromFile methods.
+#summary Description of the TPJResourceEntry.LoadDataFromFile method.
 <wiki:comment>
 $Rev$
 $Date$
 </wiki:comment>
 
-= !LoadDataFromFilemethods =
+= !LoadDataFromFile method =
 
 *Project:* [ResFileUnit Resource File Unit]
 
@@ -27,4 +27,3 @@ _*Parameters*_
 
   * _!SrcFileName_: The name of the file whose contents are to be loaded.
   * _Append_: When `True` the file contents are appended to the end of any current resource data. When `False` any existing resource data is replaced by the file contents.
-
