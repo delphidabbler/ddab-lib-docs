@@ -8,7 +8,13 @@ $Date$
 
 While the code in the [ResFileUnit Resource File Unit] does not understand the various resource data formats it does assist in reading, adding, updating and deleting the raw resource data.
 
-The _[TPJResourceEntry]_ class's _[TPJResourceEntry#Properties Data]_ property exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to access the data. Additionally the _[TPJResourceEntry#Properties DataBytes]_*^v1.1^* makes the resource data available as a byte array. In the following section we show how to read, write and delete data using both of these properties.
+The following properties and methods of _[TPJResourceEntry]_ are useful in reading, adding, updating and deleting the raw data:
+
+  * The _[TPJResourceEntry#Properties Data]_ property. This exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to read and modify the data.
+  * The _[TPJResourceEntry#Properties DataBytes]_*^v1.1^* property makes the resource data available as a byte array.
+  * The _[TPJResourceEntryClearData ClearData]_*^v1.1^* method deletes the resource data.
+
+In the following section we show how manipulate data using these properties and method.
 
 == Reading data ==
 
@@ -86,7 +92,20 @@ end;
 
 == Deleting data ==
 
-It is very easy to delete all the data in a resource: simply set the data stream's size to `0`:
+The simplest way to delete the data is to call the _[TPJResourceEntry]_._[TPJResourceEntryClearData ClearData]_*^v1.1^* method:
+
+{{{
+var
+  Entry: TPJResourceEntry;
+begin
+  // Make sure Entry references a resource object
+  ...
+  Entry.ClearData;
+  ...
+end;
+}}}
+
+In v1.0 of the Resource File Unit there is no direct way to clear the data. It is still very easy to do though. Simply set the data stream's size to `0`:
 
 {{{
 var
@@ -100,23 +119,7 @@ begin
 end;
 }}}
 
-You must set the _Size_ property of the entry's _[TPJResourceEntry#Properties Data]_ property here: you can't set the _[TPJResourceEntry#Properties DataSize]_ property since it is read only.
-
-You _can_ also delete the data by assigning an empty array to the _[TPJResourceEntry#Properties DataBytes]_*^v1.1^* property, but the above method easier to write and clearer to read. For completeness, here's the code:
-
-{{{
-var
-  Entry: TPJResourceEntry;
-  Bytes: TBytes;
-begin
-  ...
-  // Make sure Entry references a resource object
-  ...
-  SetLength(Bytes, 0);
-  Entry.DataBytes := Bytes;
-  ...
-end;
-}}}
+*Note:* You must set the _Size_ property of the entry's _[TPJResourceEntry#Properties Data]_ property here: you can't set the _[TPJResourceEntry#Properties DataSize]_ property since it is read only.
 
 == Writing data ==
 
@@ -133,7 +136,7 @@ begin
   // Make sure Entry references a resource object
   ...
   // Delete any existing data
-  Entry.Data.Size := 0;
+  Entry.Data.Size := 0;  // in v1.1 use Entry.ClearData instead
   // Write the required text
   Text := 'Hello World';
   Entry.Data.WriteBuffer(Pointer(Text)^, Length(Text) * SizeOf(Char));
