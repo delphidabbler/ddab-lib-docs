@@ -15,7 +15,7 @@ $Date$
 *Introduced:* v1.1
 
 {{{
-procedure LoadDataFromFile(const SrcFileName: string;
+procedure LoadDataFromFile(const SrcFileName: TFileName;
   const Append: Boolean);
 }}}
 
