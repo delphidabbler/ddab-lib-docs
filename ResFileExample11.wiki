@@ -58,7 +58,7 @@ begin
 end;
 }}}
 
-First we load the resource file whose name is supplied as a parameter. Next we check if the main icon resource exists. We then check that a manifest file exists. If so we load its contents (which are assumed to be UTF-8 encoded) and check for the existence of the correct &XML tag. Finally we loop through the given array of bitmap resource names and check that each one is present.
+First we load the resource file whose name is supplied as a parameter. Next we check if the main icon resource exists. We then check that a manifest file exists. If so we load its contents (which are assumed to be UTF-8 encoded) and check for the existence of the correct XML tag. Finally we loop through the given array of bitmap resource names and check that each one is present.
 
 This routine could be used in a command line application that could be incorporated in a build chain, for example:
 
