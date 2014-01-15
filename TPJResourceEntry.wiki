@@ -23,6 +23,7 @@ Care should be taken not to use a resource entry after the related resource file
 == Methods ==
 
 || *Method* || *Description* ||
+|| _[TPJResourceEntryClearData ClearData]_ || Clears (delets) the resource entry's raw data. ||
 || _[TPJResourceEntryIsMatching IsMatching]_ || Overloaded methods to check if the resource entry matches the type, name and language ID of another entry. ||
 || _[TPJResourceEntryLoadDataFromFile LoadDataFromFile]_*^v1.1^* || Loads the content of a file into the resource entry's raw data. ||
 
