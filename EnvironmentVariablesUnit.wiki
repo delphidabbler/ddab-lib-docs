@@ -16,8 +16,6 @@ It also defines a component, _[TPJEnvVars TPJEnvVars]_,  that encapsulates a pro
 
 To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit. Demo projects that implement the examples are available from the [http://www.delphidabbler.com/url/doodlings-repo Delphi Doodlings Repository] - see the `EnvVarsDemo` directory.
 
-_*Note:* This documentation applies to v2.0 and later of the Environment Variables Unit._
-
 *Links:*
 
   * Back to [Welcome Wiki Home Page]
