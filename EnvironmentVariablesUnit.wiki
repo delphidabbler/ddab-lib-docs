@@ -3,10 +3,10 @@
 $Rev$
 $Date$
 </wiki:comment>
- 
+
 = Environment Variables Unit =
 
-|| This is the documentation for the *v2.0* release of the unit. If you are using the *v3.0* release you need the [http://wiki.delphidabbler.com/index.php/Docs/EnvVars documentation on DelphiDabbler.com]. ||
+|| This is the documentation for the *v2.0* release of the unit. If you are using a *version 3* release please [http://wiki.delphidabbler.com/index.php/Docs/EnvVars see here]. ||
 
 This project contains the _PJEnvVars_ unit.
 

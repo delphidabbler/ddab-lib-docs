@@ -6,6 +6,8 @@ $Date$
 
 = Environment Variables Routines=
 
+|| This is the documentation for the *v2.0* release of the unit. If you are using a *version 3* release please [http://wiki.delphidabbler.com/index.php/Docs/PJEnvVarsRoutines see here]. ||
+
 *Project:* [EnvironmentVariablesUnit Environment Variables Unit].
 
 *Unit:* _PJEnvVars_.
@@ -35,7 +37,7 @@ Returns the value of the environment variable named by _!VarName_. The empty str
 function SetEnvVarValue(const VarName, VarValue: string): Integer;
 }}}
 
-Sets the environment variable named by _!VarName_ to _!VarValue_. If there is no usch environment variable it is created. If _!VarValue_ is the empty string then the environment variable is deleted. 
+Sets the environment variable named by _!VarName_ to _!VarValue_. If there is no usch environment variable it is created. If _!VarValue_ is the empty string then the environment variable is deleted.
 
 Returns 0 on success or a Windows error code on error. The most likely cause of error is that the environment block is full and there is no room for the new value or to create a new variable. A description of any error can be found by passing the error code to _!SysUtils.!SysErrorMessage_.
 
@@ -59,7 +61,7 @@ If _!DeleteEnvVar_ completes successfuly then 0 is returned. If an error occurs 
 function GetAllEnvVars(const Vars: TStrings): Integer;
 }}}
 
-Copies all the environment variables available to the current process in to the given string list. Each item placed in the string list represents one environment variable in the form `NAME=VALUE`. Any previous contents of the string list are lost. 
+Copies all the environment variables available to the current process in to the given string list. Each item placed in the string list represents one environment variable in the form `NAME=VALUE`. Any previous contents of the string list are lost.
 
 The size of the environment block in _characters_ is returned.
 
@@ -85,7 +87,7 @@ function CreateEnvBlock(const NewEnv: TStrings;
   const BufSize: Integer): Integer;
 }}}
 
-_!CreateEnvBlock_ creates a new environment block that can be used to pass to another process. 
+_!CreateEnvBlock_ creates a new environment block that can be used to pass to another process.
 
 The new environment block is stored in the memory pointed to by _Buffer_, which is taken to be at least _!BufSize_ characters in size. The actual size of the environment block is returned by _!CreateEnvBlock_. If the buffer provided is nil or is too small then no block is created and the return value is the required buffer size in characters.
 

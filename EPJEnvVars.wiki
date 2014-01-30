@@ -6,6 +6,8 @@ $Date$
 
 = EPJEnvVars =
 
+|| This is the documentation for the *v2.0* release of the unit. If you are using a *version 3* release please [http://wiki.delphidabbler.com/index.php/Docs/EPJEnvVars see here]. ||
+
 *Project:* [EnvironmentVariablesUnit Environment Variables Unit].
 
 *Unit:* _PJEnvVars_
