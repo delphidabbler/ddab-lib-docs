@@ -15,7 +15,7 @@ The Library currently contains the following projects.
 || [ClipboardViewerComponent Clipboard Viewer Component] || Component that triggers an event whenever the contents of the clipboard change. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI Console Application Runner Classes]http://www.delphidabbler.com/img/markup/off-site.gif || Classes to control the execution of child console application processes and to redirect input and output where required. ||
 || [DropFilesComponents Drop Files Components] || Components that enable applications, windows and other components to support drag and drop from Windows Explorer. ||
-|| [EnvironmentVariablesUnit Environment Variables Unit] || Unit that provides a component and various routines for manipulating environment variables. ||
+|| [http://delphidabbler.com/url/envvars-docs Environment Variables Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Unit that provides a component and various routines for manipulating environment variables. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/StringPE Extended String Property Editor]http://www.delphidabbler.com/img/markup/off-site.gif || Property editor that allows multi-line and long _string_ and _TCaption_ properties to be edited at design time. ||
 || [http://wiki.delphidabbler.com/index.php/Docs/FractionsAPI Fractions Unit]http://www.delphidabbler.com/img/markup/off-site.gif || Unit containing code that encapsulates fractions and provided common operations on them. ||
 || [HotLabelComponent Hot Label Component] || Clickable label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. ||
