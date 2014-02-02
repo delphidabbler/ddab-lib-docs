@@ -15,6 +15,8 @@ Several types are defined in the unit in total. They are:
 || _TPJHLHintStyle_ || An emumeration of hint styles used by the _[TPJHotLabelHintStyle HintStyle]_ property. See the property's documentation for details. ||
 || _TPJHLCustomHintEvent_ || The type of event triggered by the _[TPJHotLabelOnCustomHint OnCustomHint]_ event. See the event's documentation for details. ||
 
+*Note:* This documentation relates to release 2.0 and later. Any features introduced after v2.0 are flagged with the relevant version number as a superscript.
+
 == Examples ==
 
 The following examples provide some ideas of how to use the component:
