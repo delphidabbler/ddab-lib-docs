@@ -20,7 +20,11 @@ The _[TPJHotLabelURL URL]_ property is used for storing the URL to be accessed a
 
 === Fonts and highlighting ===
 
-The label's _[TPJHotLabelFont Font]_ property defaults to a font based on the parent font at the time the component is dropped on the form, but coloured navy blue. It should be noted that the _[TPJHotLabelFont Font]_ property will not automatically reflect changes in the parent controls's font since _[TPJHotLabelParentFont ParentFont]_ defaults to `False`. The label can be highlighted when the mouse passes over it. It does this only if the _[TPJHotLabelHighlightURL HighlightURL]_ property is `True`, in which case the _[TPJHotLabelHighlightFont HighlightFont]_ property is used when the mouse is over the label. The value of _[TPJHotLabelHighlightFont HighlightFont]_ is, by default, based on the default font used by the _[TPJHotLabelFont Font]_ property, but with a different colour.
+The label's _[TPJHotLabelFont Font]_ property defaults to a font based on the parent font at the time the component is dropped on the form, but coloured navy blue. It should be noted that the _[TPJHotLabelFont Font]_ property will not automatically reflect changes in the parent controls's font since _[TPJHotLabelParentFont ParentFont]_ defaults to `False`.
+
+The label can be highlighted when the mouse passes over it. It does this only if the _[TPJHotLabelHighlightURL HighlightURL]_ property is `True`, in which case the _[TPJHotLabelHighlightFont HighlightFont]_ property is used when the mouse is over the label. The value of _[TPJHotLabelHighlightFont HighlightFont]_ is, by default, based on the default font used by the _[TPJHotLabelFont Font]_ property, but with a different colour.
+
+From v2.2 the label can change its appearance to indicate its link has been visited. It does this when its _[TPJHotLabelVisited Visited]_ property is `True`, in which case the _[TPJHotLabelVisitedFont VisitedFont]_ property is used to set the label's font when in its un-highlighted state. _[TPJHotLabelVisited Visited]_ is a writeable property so the user can set its value in code or in the object inspector. Further, if the _[TPJHotLabelTrackVists TrackVisits]_ property is `True` the label will automatically set _[TPJHotLabelVisited Visited]_to `True` (and change its appearance) when the label is clicked and the URL is processed without error. The value of _[TPJHotLabelVisitedFont VisitedFont]_ is, by default, based on the default font used by the _[TPJHotLabelFont Font]_ property, but with a different colour.
 
 === The cursor ===
 
@@ -40,13 +44,16 @@ _TPJHotLabel_ defines no new methods over and above those inherited from _TLabel
 || _[TPJHotLabelCaption Caption]_ || Specifies a text string that that may be displayed in the label. How _[TPJHotLabelCaption Caption]_ is used depends on the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property. ||
 || _[TPJHotLabelCaptionIsURL CaptionIsURL]_ || Determine whether the text of the label's _[TPJHotLabelURL URL]_ property is assigned to the _[TPJHotLabelCaption Caption]_ property or whether _[TPJHotLabelCaption Caption]_ can be used to display descriptive text. ||
 || _[TPJHotLabelCursor Cursor]_ || Specifies the image used to represent the mouse pointer when it passes into the region covered by the control. ||
-|| _[TPJHotLabelFont Font]_ || Controls the attributes of un-highlighted text displayed in the label. ||
-|| _[TPJHotLabelHighlightFont HighlightFont]_ || Controls the attributes of the label's text when the mouse passes over it. ||
+|| _[TPJHotLabelFont Font]_ || Specifies the label's font when in its normal state, i.e. when it is neither highlighted or in its visited state. ||
+|| _[TPJHotLabelHighlightFont HighlightFont]_ || Specifies the label's font when in its highlighted state. ||
 || _[TPJHotLabelHighlightURL HighlightURL]_ || Determines whether the label's text is highlighted when the mouse passes over the control. ||
 || _[TPJHotLabelHint Hint]_ || Contains the text string that can appear when the user moves the mouse over the control. How _[TPJHotLabelHint Hint]_ is used depends on the _[TPJHotLabelHintStyle HintStyle]_ property. ||
 || _[TPJHotLabelHintStyle HintStyle]_ || Determines the source of the text displayed in the component's hint. ||
 || _[TPJHotLabelParentFont ParentFont]_ || Determines where the control looks for its font information. ||
+|| _[TPJHotLabelTrackVisits TrackVisits]_^v2.2^ || Determines whether or not the label automatically displays in its visible state when the user clicks the link. ||
 || _[TPJHotLabelURL URL]_ || Stores the URL that is to be accessed when the label is clicked. ||
+|| _[TPJHotLabelVisited Visited]_^v2.2^ || Determines whether or not the label is in its visited state. ||
+|| _[TPJHotLabelVisitedFont VisitedFont]_^v2.2^ || Specifies the label's font when in its visited state and not highlighted. ||
 || _[TPJHotLabelValidateURL ValidateURL]_ || Determines whether the URL stored in the component is validated or not. ||
 
 == Events ==
