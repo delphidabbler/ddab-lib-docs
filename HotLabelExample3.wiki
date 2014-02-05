@@ -4,9 +4,7 @@ $Rev$
 $Date$
 </wiki:comment>
 
-= Example: Tracking visits to URLs. =
-
-|| This example applies only to version 2.2 or later of the component. ||
+= Example: Tracking visits to URLs.^[v2.2]^ =
 
 The component provides the _[TPJHotLabelVisited Visited]_^[v2.2]^ property to enable visits to the URLs associated with hot label components to be tracked. Furthermore, the _[TPJHotLabelTrackVisits TrackVisits]_^[v2.2]^ property enables the tracking to be done automatically whenever the label is clicked and the underlying action completes successfully.
 
