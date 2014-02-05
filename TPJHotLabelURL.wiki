@@ -26,4 +26,4 @@ When the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property is `True` then the va
 
 The URL can be displayed in the component's _[TPJHotLabelHint Hint]_ property by setting the _[TPJHotLabelHintStyle HintStyle]_ property to `hsURL`.
 
-The default value of this property is `http://localhost/`
+The default value of this property is either `http://localhost`^[v2.0]^  or `http://example.com/`^[v2.2]^
