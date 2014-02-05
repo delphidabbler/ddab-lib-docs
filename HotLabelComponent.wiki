@@ -23,7 +23,7 @@ The following examples provide some ideas of how to use the component:
 
   # [HotLabelExample1 Using highlighting]
   # [HotLabelExample2 Using the OnCustomHint event]
-  # [HotLabelExample3 Tracking visits to URLs]
+  # [HotLabelExample3 Tracking visits to URLs]^[v2.2]^
 
 A further example is provided by the demo program that is included in the download.
 
