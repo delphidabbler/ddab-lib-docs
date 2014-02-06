@@ -6,7 +6,7 @@ $Date$
 
 = !ButtonGroup property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -24,7 +24,7 @@ property ButtonGroup: TPJMsgDlgButtonGroup;
 
 == Description ==
 
-The buttons which appear in the dialog box depend on the value of this property and on the associated _[TPJVCLMsgDlgButtons Buttons]_ property.
+The buttons which appear in the dialogue box depend on the value of this property and on the associated _[TPJVCLMsgDlgButtons Buttons]_ property.
 
 When the value of _!ButtonGroup_ is changed the _[TPJVCLMsgDlgButtons Buttons]_ property is updated the to the set of buttons contained in the button group. Setting _!ButtonGroup_ to `bgUnkown` sets _[TPJVCLMsgDlgButtons Buttons]_ to the empty set. Conversely, when the _[TPJVCLMsgDlgButtons Buttons]_ property is changed _!ButtonGroup_ is set to any matching group, or to `bgUnknown` if the set of buttons in the _[TPJVCLMsgDlgButtons Buttons]_ property is not a valid button group.
 
@@ -44,7 +44,7 @@ The possible values of _!ButtonGroup_ are as follows:
 || `bgUnknown` || An unsupported or unknown group of buttons. This item should not be selected explicitly. If it is selected it has the same effect as `bgOK`. ||
 || `bgCancelTryContinue` || Synonym for `bgAbortRetryIgnore` with same effect. (Note that in _[TPJWinMsgDlg TPJWinMsgDlg]_ `bgCancelTryContinue` behaves differently to `bgAbortRetryIgnore`.) ||
 
-To include a help button in the dialog box do one of two things:
+To include a help button in the dialogue box do one of two things:
 
   # Set the _[TPJVCLMsgDlgHelpContext HelpContext]_ property to some non-zero value and include `mdoAutoHelpBtn` in the _[TPJVCLMsgDlgOptions Options]_ property, or
   # Include the `mbHelp` button value in the _[TPJVCLMsgDlgButtons Buttons]_ property.

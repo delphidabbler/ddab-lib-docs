@@ -6,7 +6,7 @@ $Date$
 
 = !MakeSound property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -18,7 +18,7 @@ property MakeSound: Boolean;
 
 == Description ==
 
-Set _!MakeSound_ to `True` to play a sound when the dialog is displayed. If _!MakeSound_ is `False` then no sound is played.
+Set _!MakeSound_ to `True` to play a sound when the dialogue is displayed. If _!MakeSound_ is `False` then no sound is played.
 
 The sound played is one of the standard system sounds. Which sound is used depends on the value of the _[TPJVCLMsgDlgKind Kind]_ property, the operating system version and the chosen sound theme. Some themes will play no sound for some values of the _[TPJVCLMsgDlgKind Kind]_ property regardless of the value assigned to _!MakeSound_.
 

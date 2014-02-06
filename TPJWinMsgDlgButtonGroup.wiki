@@ -6,7 +6,7 @@ $Date$
 
 = !ButtonGroup property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -24,7 +24,7 @@ property ButtonGroup: TPJMsgDlgButtonGroup;
 
 == Description ==
 
-The buttons which appear in the dialog box depend on the value of this property. The possible values are:
+The buttons which appear in the dialogue box depend on the value of this property. The possible values are:
 
 || *Value* || *Buttons used* ||
 || `bgAbortRetryIgnore` || Abort, Retry and Ignore buttons. ||
@@ -38,7 +38,7 @@ The buttons which appear in the dialog box depend on the value of this property.
 
 Setting _!ButtonGroup_ also updates the _[TPJWinMsgDlgDlgType DlgType]_ property and vice versa. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
 
-To include a help button in the dialog box set the _[TPJWinMsgDlgHelpContext HelpContext]_ property to some non-zero value.
+To include a help button in the dialogue box set the _[TPJWinMsgDlgHelpContext HelpContext]_ property to some non-zero value.
 
 A value associated with the button that was clicked is returned from the _[TPJWinMsgDlgExecute Execute]_ method.
 

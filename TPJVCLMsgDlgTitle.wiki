@@ -6,7 +6,7 @@ $Date$
 
 = Title property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -21,4 +21,4 @@ property Title: TCaption;
 
 == Description ==
 
-Set this property to customise the string that is displayed as the dialog box window title. Leaving this property empty causes a default title to be displayed that depends on the value of the _[TPJVCLMsgDlgKind Kind]_ property.
+Set this property to customise the string that is displayed as the dialogue box window title. Leaving this property empty causes a default title to be displayed that depends on the value of the _[TPJVCLMsgDlgKind Kind]_ property.

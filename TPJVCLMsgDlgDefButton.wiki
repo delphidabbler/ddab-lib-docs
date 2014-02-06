@@ -6,7 +6,7 @@ $Date$
 
 = !DefButton property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -24,7 +24,7 @@ property DefButton: TMsgDlgButton;
 
 == Description ==
 
-The _!DefButton_ property specifies which button is to be the default button in the dialog. If the chosen button is not displayed in the dialog then the first (leftmost) button is the default.
+The _!DefButton_ property specifies which button is to be the default button in the dialogue. If the chosen button is not displayed in the dialogue then the first (leftmost) button is the default.
 
 See the documentation of the _[TPJVCLMsgDlgButtons Buttons]_ property for a description of the available buttons.
 

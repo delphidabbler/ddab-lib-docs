@@ -6,7 +6,7 @@ $Date$
 
 = !IconResource property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -18,7 +18,7 @@ property IconResource: string;
 
 == Description ==
 
-Set _!IconResource_ to identify the resource to be used to display a user defined icon in the dialog box. If _!IconResource_ is left blank then the default resource name "MAINICON" is used. The icon resource must be contained in the executable file. If such a resource cannot be found then no icon is displayed.
+Set _!IconResource_ to identify the resource to be used to display a user defined icon in the dialogue box. If _!IconResource_ is left blank then the default resource name "MAINICON" is used. The icon resource must be contained in the executable file. If such a resource cannot be found then no icon is displayed.
 
 The _[TPJWinMsgDlgKind Kind]_ property must be set to `mkUser` in order to display a user defined icon, otherwise _!IconResource_ is ignored.
 

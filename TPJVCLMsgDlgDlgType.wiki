@@ -6,7 +6,7 @@ $Date$
 
 = !DlgType property =
 
-*Project:* [MessageDialogComponents Message Dialog Components].
+*Project:* [MessageDialogComponents Message Dialogue Components].
 
 *Unit:* _PJMessageDialog_.
 
@@ -32,7 +32,7 @@ _!DlgType_ supports a combination of various categories of constants that are OR
 
 ==== Button Group ====
 
-The buttons displayed in the dialog box can be determined by specifying one, and only one, of the following constants. Setting one of these values also updates the _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ property, which in turn updates the _[TPJVCLMsgDlgButtons Buttons]_ property.
+The buttons displayed in the dialogue box can be determined by specifying one, and only one, of the following constants. Setting one of these values also updates the _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ property, which in turn updates the _[TPJVCLMsgDlgButtons Buttons]_ property.
 
 || *Constant* || *Buttons Displayed* || *New _!ButtonGroup_ Value* ||
 || `MB_OK` || A single OK button || `bgOK` ||
@@ -52,9 +52,9 @@ begin
 end;
 }}}
 
-==== Dialog Kind ====
+==== Dialogue Kind ====
 
-The kind of dialog box (its icon, default title, etc.) is specified by ORing one of the following constants with one of those used to determine the button group. Setting one of these values updates the _[TPJVCLMsgDlgKind Kind]_ property.
+The kind of dialogue box (its icon, default title, etc.) is specified by ORing one of the following constants with one of those used to determine the button group. Setting one of these values updates the _[TPJVCLMsgDlgKind Kind]_ property.
 
 || *Constant* || *Icon used* || *Default Title* || *New _Kind_ Value* ||
 || `MB_ICONEXCLAMATION` || System exclamation icon || "Warning" || `mkWarning` ||
@@ -67,12 +67,12 @@ The kind of dialog box (its icon, default title, etc.) is specified by ORing one
 || `MB_ICONHAND` || System error icon || "Error" || `mkError` ||
 || `MB_USERICON` || Per _[TPJVCLMsgDlgIconResource IconResource]_ property || Per _Application.Title_ property || `mkUser` ||
 
-If any other value in the range `$00000010` to `$000000F0` is specified then _[TPJVCLMsgDlgKind Kind]_ is set to `mkUnknown` and the value in _!DlgType_ is replaced by `UNKNOWN_ICON` (defined in _PJMessageDialog.pas_). To check for an unknown or invalid dialog kind first set _!DlgType_ then perform the following test:
+If any other value in the range `$00000010` to `$000000F0` is specified then _[TPJVCLMsgDlgKind Kind]_ is set to `mkUnknown` and the value in _!DlgType_ is replaced by `UNKNOWN_ICON` (defined in _PJMessageDialog.pas_). To check for an unknown or invalid dialogue kind first set _!DlgType_ then perform the following test:
 
 {{{
 begin
   if PJVCLMsgDlg1.DlgType and MB_ICONMASK = UNKNOWN_ICON then
-    // dialog kind unknown or not supported
+    // dialogue kind unknown or not supported
 end;
 }}}
 
@@ -92,7 +92,7 @@ Factors that determine the value of _!DlgType_ are:
 
   # The _[TPJVCLMsgDlgButtonGroup ButtonGroup]_ property.
   # The _[TPJVCLMsgDlgKind Kind]_ property.
-  # Whether a help button will be displayed by the dialog.
+  # Whether a help button will be displayed by the dialogue.
 
 Each of these factors is discussed separately below.
 
@@ -122,9 +122,9 @@ begin
 end;
 }}}
 
-==== Dialog Kind ====
+==== Dialogue Kind ====
 
-The component of _!DlgType_ that identifies the kind of dialog box displayed is set according to the value of the _[TPJVCLMsgDlgKind Kind]_ property as per the following table:
+The component of _!DlgType_ that identifies the kind of dialogue box displayed is set according to the value of the _[TPJVCLMsgDlgKind Kind]_ property as per the following table:
 
 || *_Kind_ Value* || *Flag included in _!DlgType_* ||
 || `mkWarning` || `MB_ICONWARNING` ||
@@ -138,7 +138,7 @@ The component of _!DlgType_ that identifies the kind of dialog box displayed is 
 
 `UNKNOWN_ICON` is defined in the _PJMessageDialog_ unit. Note that `mkWinLogo` and `mkApplication` have no equivalent in the _!MessageBox_ API function and are therefore flagged as unknown.
 
-The dialog kind values are ORd with other values stored in _!DlgType_. To extract them AND the value of _!DlgType_ with `MB_ICONMASK`. E.g.
+The dialogue kind values are ORd with other values stored in _!DlgType_. To extract them AND the value of _!DlgType_ with `MB_ICONMASK`. E.g.
 
 {{{
 var
@@ -150,7 +150,7 @@ end;
 
 ==== Help Button ====
 
-If the dialog box will show a help button when displayed then `MB_HELP` is included in _!DlgType_. This occurs in the following circumstances, depending on the _[TPJVCLMsgDlgOptions Options]_ property:
+If the dialogue box will show a help button when displayed then `MB_HELP` is included in _!DlgType_. This occurs in the following circumstances, depending on the _[TPJVCLMsgDlgOptions Options]_ property:
 
   * `mdoAutoHelpBtn` is included in _[TPJVCLMsgDlgOptions Options]_ *and* _[TPJVCLMsgDlgHelpContext HelpContext]_ is non-zero.
   * `mdoAutoHelpBtn` is *not* included in _[TPJVCLMsgDlgOptions Options]_ *and* `mrHelp` is included in _[TPJVCLMsgDlgButtons Buttons]_.
