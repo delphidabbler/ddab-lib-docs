@@ -28,4 +28,4 @@ There are two ways the dialogue can display a help button that accesses the help
  # By including `mbHelp` in the _[TPJVCLMsgDlgButtons Buttons]_ property and clearing the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property.
  # By setting the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property and giving _!HelpContext_ a non-zero value.
 
-*Note:* This property requires that !WinHelp is available, which it is not by default on Windows Vista and later. To use alternative help systems you must handle the _[TPJVCLMsgDlgOnHelp OnHelp]_ event.
+If _[TPJVCLMsgDlgOnHelp OnHelp]_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.
