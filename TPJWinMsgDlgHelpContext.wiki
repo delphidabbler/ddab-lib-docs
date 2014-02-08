@@ -25,4 +25,4 @@ Set the _!HelpContext_ property to the context number of the relevant topic in t
 
 Changing the value of _!HelpContext_ from zero to non-zero and back again changes the value of the _[TPJWinMsgDlgDlgType DlgType]_ property. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
 
-If the _[TPJWinMsgDlgOnHelp OnHelp]_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.
+If _[TPJWinMsgDlgOnHelp OnHelp]_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.
