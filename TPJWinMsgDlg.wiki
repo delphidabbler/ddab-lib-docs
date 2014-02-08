@@ -10,7 +10,9 @@ $Date$
 
 *Unit:* _PJMessageDialog_.
 
-_TPJWinMsgDlg_ provides a customisable Windows message dialogue box. The component wraps the Windows _!MessageBoxIndirect_ API call. It is similar to _TPJMessageDialog_ but provides greater control over the dialogue, while its properties are a subset of those of _[TPJVCLMsgDlg TPJVCLMsgDlg]_. _TPJWinMsgDlg_ is recommended for new projects requiring a Windows message box. If even greater control over the appearance of the dialogue is required then use _[TPJVCLMsgDlg TPJVCLMsgDlg]_.
+_TPJWinMsgDlg_ provides a customisable Windows message dialogue box. The component wraps the Windows _!MessageBoxIndirect_ API call. 
+
+Its properties are a subset of those of _[TPJVCLMsgDlg TPJVCLMsgDlg]_. _TPJWinMsgDlg_ is recommended for new projects requiring a Windows message box. If even greater control over the appearance of the dialogue is required then use _[TPJVCLMsgDlg TPJVCLMsgDlg]_.
 
 The text displayed in the dialogue box is determined by the _[TPJWinMsgDlgText Text]_ property. Various button groupings can be displayed using the _[TPJWinMsgDlgButtonGroup ButtonGroup]_ property. Setting a non-zero _[TPJWinMsgDlgHelpContext HelpContext]_ causes a help button to be displayed. The _[TPJWinMsgDlgKind Kind]_ property allows a choice of various standard windows icons to be displayed. A user defined icon extracted from a named resource, specified by _[TPJWinMsgDlgIconResource IconResource]_ can also be displayed. The window title can be set using the _[TPJWinMsgDlgTitle Title]_ property, otherwise a default title, related to the kind of icon being displayed is used. The _[TPJWinMsgDlgMakeSound MakeSound]_ property determines whether an appropriate system sound is generated when the dialogue is displayed.
 
