@@ -19,3 +19,7 @@ class function IsWin9x: Boolean;
 == Description ==
 
 Returns True if a Windows 9x operating system is installed (i.e. Windows 95, Windows 98 or Windows Me) or False otherwise.
+
+When the program is run in compatibility mode, this method may report the "emulated" operating system.
+
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
