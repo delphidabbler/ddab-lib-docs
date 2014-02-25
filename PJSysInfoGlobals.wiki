@@ -28,7 +28,9 @@ The variables defined in _PJSysInfo_ are:
   * [#Win32ProductInfo Win32ProductInfo]
 
 
-== !Win32PlatformEx [v5.0] ==
+== !Win32PlatformEx ==
+
+*Introduced:* v5.0
 
 {{{
 var Win32PlatformEx: Integer;
@@ -43,7 +45,9 @@ Whether _!Win32PlatformEx_ can be spoofed depends on the value returned by _[TPJ
 _!Win32Platform_, on the other hand, is always spoofed by compatibility mode.
 
 
-== !Win32MajorVersionEx [v5.0] ==
+== !Win32MajorVersionEx ==
+
+*Introduced:* v5.0
 
 {{{
 var Win32MajorVersionEx: LongWord;
@@ -56,7 +60,9 @@ This variable is an analogue of _!Win32MajorVersion_ variable defined in _!SysUt
 Whether _!Win32MajorVersionEx_ can be spoofed depends on the value returned by _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_. A value of `False` means _!Win32MajorVersionEx_ returns the correct major version number for the host operating system while `True` means that _!Win32MajorVersionEx_ is spoofed by compatibility mode into returning the major version represented by the emulated operating system.
 
 
-== !Win32MinorVersionEx [v5.0] ==
+== !Win32MinorVersionEx ==
+
+*Introduced:* v5.0
 
 {{{
 var Win32MinorVersionEx: LongWord;
@@ -69,7 +75,9 @@ This variable is an analogue of _!Win32MinorVersion_ variable defined in _!SysUt
 Whether _!Win32MinorVersionEx_ can be spoofed depends on the value returned by _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_. A value of `False` means _!Win32MinorVersionEx_ returns the correct minor version number for the host operating system while `True` means that _!Win32MinorVersionEx_ is spoofed by compatibility mode into returning the minor version represented by the emulated operating system.
 
 
-== !Win32BuildNumberEx [v5.0] ==
+== !Win32BuildNumberEx ==
+
+*Introduced:* v5.0
 
 {{{
 var Win32BuildNumberEx: Integer;
@@ -82,7 +90,9 @@ This variable is an analogue of _!Win32BuildNumber_ variable defined in _!SysUti
 Whether _!Win32BuildNumberEx_ can be spoofed depends on the value returned by _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_. A value of `False` means _!Win32BuildNumberEx_ returns the correct build number for the host operating system while `True` means that _!Win32BuildNumberEx_ is spoofed by compatibility mode into returning the build number represented by the emulated operating system.
 
 
-== Win32CSDVersionEx [v5.0] ==
+== Win32CSDVersionEx ==
+
+*Introduced:* v5.0
 
 {{{
 var Win32CSDVersionEx: string;
