@@ -20,7 +20,7 @@ class function IsServer: Boolean;
 
 Returns true if the operating system is a server system or False if not.
 
-When the program is run in compatibility mode, this method may report the "emulated" operating system.
+When the program is run in compatibility mode, this method may report the "emulated" operating system. When emulating a server operating system when using a desktop system _!IsServer_ continues to report `False`, but this behaviour may not be reliable across every combination of real and emaulated operating systems.
 
 [v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
 
