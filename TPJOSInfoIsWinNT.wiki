@@ -19,3 +19,7 @@ class function IsWinNT: Boolean;
 == Description ==
 
 Returns True if an NT operating system is installed (including Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 2003 Server, Windows 2008 Server, Windows 2008 Server R 2, Windows 2012 Server and Windows 2012 Server R 2), or False otherwise.
+
+When the program is run in compatibility mode, this method may report the "emulated" operating system.
+
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
