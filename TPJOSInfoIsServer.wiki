@@ -19,3 +19,9 @@ class function IsServer: Boolean;
 == Description ==
 
 Returns true if the operating system is a server system or False if not.
+
+When the program is run in compatibility mode, this method may report the "emulated" operating system.
+
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
+
+[v5.0] When running on Windows 2000 and later you can use _[TPJOSInfoIsWindowsServer IsWindowsServer]_ to ensure that compatibility mode has no effect on the returned value.
