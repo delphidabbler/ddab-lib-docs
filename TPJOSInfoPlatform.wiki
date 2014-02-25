@@ -28,6 +28,6 @@ Returns a value from the _TPJOSPlatform_ enumeration identifying the OS platform
 
 If the platform is not recognised an _EPJSysInfo_ exception is raised.
 
-When the program is run in compatibility mode, this method may report the "emulated" operating system.
+When the program is run in compatibility mode, this method will return the platform of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the platform of the installed operating system, regardless of any compatibility mode.

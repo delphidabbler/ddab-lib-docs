@@ -22,6 +22,6 @@ Returns the name of a specific edition of an NT platform operating system produc
 
 For example for Windows 2000 Professional, _Edition_ will return 'Professional' while _!ProductName_ returns 'Windows 2000'.
 
-When the program is run in compatibility mode, this method may report the "emulated" operating system.
+When the program is run in compatibility mode, this method will return the edition of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the edition of the installed operating system, regardless of any compatibility mode.

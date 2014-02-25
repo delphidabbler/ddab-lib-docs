@@ -22,6 +22,6 @@ On the NT platform from NT 4 service pack 6 onwards _!ServicePackMinor_ returns 
 
 The corresponding major service pack version number is provided by the _[TPJOSInfoServicePackMajor ServicePackMajor]_ method. A full description of the service pack, for any product, is available via the _[TPJOSInfoServicePack ServicePack]_ method.
 
-When the program is run in compatibility mode, this method will report the service pack minor version of the "emulated" operating system. 
+When the program is run in compatibility mode, this method will return the service pack minor version of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the service pack minor version of the installed operating system, regardless of any compatibility mode.

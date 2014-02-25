@@ -22,6 +22,6 @@ Returns the major version number of the operating system.
 
 The corresponding minor version number is provided by the _[TPJOSInfoMinorVersion MinorVersion]_ method.
 
-When the program is run in compatibility mode, this method may report the "emulated" operating system.
+When the program is run in compatibility mode, this method will return the major version number of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the major version number of the installed operating system, regardless of any compatibility mode.
