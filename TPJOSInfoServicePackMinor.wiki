@@ -18,6 +18,6 @@ class function ServicePackMinor: Integer;
 
 == Description ==
 
-On the NT platform from NT 4 service pack 6 onwards _!ServicePackMinor_ returns the minor version number of any service pack applied to the operating system. Zero is returned if no service pack has been applied. On earlier versions of Windows NT or on the Windows 9x platform, zero is also returned.
+On the NT platform from NT 4 service pack 6 onwards _!ServicePackMinor_ returns the minor version number of any service pack applied to the operating system. Zero is returned if no service pack has been applied. On earlier versions of Windows NT or on the Windows 9x platform, zero is always returned.
 
 The corresponding major service pack version number is provided by the _[TPJOSInfoServicePackMajor ServicePackMajor]_ method. A full description of the service pack, for any product, is available via the _[TPJOSInfoServicePack ServicePack]_ method.
