@@ -1,0 +1,25 @@
+#summary Description of the TPJOSInfo.WindowsServer class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !WindowsServer class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Introduced:* v5.0
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function IsWindowsServer: Boolean;
+}}}
+
+== Description ==
+
+Checks if the OS is a server version.
+
+When running on Windows 2000 and later the result always relates to the actual OS, regardless of any compatibility mode in force. For versions prior to Windows 2000 this method will take note of compatibility modes and returns the same value as _[TPJOSInfoIsServer TPJOSInfo.IsServer]_.
