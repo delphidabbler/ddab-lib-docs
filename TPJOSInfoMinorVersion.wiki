@@ -21,3 +21,7 @@ class function MinorVersion: Integer;
 Returns the minor version number of the operating system.
 
 The corresponding major version number is provided by the _[TPJOSInfoMajorVersion MajorVersion]_ method.
+
+When the program is run in compatibility mode, this method may report the "emulated" operating system.
+
+[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will report the correct operating system, regardless of any compatibility mode.
