@@ -16,15 +16,33 @@ This is a static class that gives access to information about the operating syst
 
 || *Method* || *Description* ||
 || _[TPJOSInfoBuildNumber BuildNumber]_ || Gets the operating system build number. ||
+|| _[TPJOSInfoCanSpoof CanSpoof]_ [v5.0] || Checks if the OS can be "spoofed" by specifying a compatibility mode for the program. ||
 || _[TPJOSInfoDescription Description]_ || Gets a full information about of an operating system version. ||
 || _[TPJOSInfoEdition Edition]_ || Gets the edition of an operating system product. ||
 || _[TPJOSInfoHasPenExtensions HasPenExtensions]_ || Checks for Windows Pen Extensions. ||
 || _[TPJOSInfoIsMediaCenter IsMediaCenter]_ || Checks for Windows Media Center. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000SP1OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 Service Pack 1 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000SP2OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 Service Pack 2 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000SP3OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 Service Pack 3 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000SP4OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 Service Pack 4 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows7OrGreater]_ [v5.0]|| Checks whether the OS is Windows 7 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows7SP1OrGreater]_ [v5.0] || Checks whether the OS is Windows 7 Service Pack 1 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows8OrGreater]_ [v5.0] || Checks whether the OS is Windows 8 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows8Point1OrGreater]_ [v5.0] || Checks whether the OS is Windows 8.1 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsVistaOrGreater]_ [v5.0] || Checks whether the OS is Windows Vista or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsVistaSP1OrGreater]_ [v5.0] || Checks whether the OS is Windows Vista Service Pack 1 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsVistaSP2OrGreater]_ [v5.0] || Checks whether the OS is Windows Vista Service Pack 2 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsXPOrGreater]_ [v5.0] || Checks whether the OS is Windows XP or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsXPSP1OrGreater]_ [v5.0] || Checks whether the OS is Windows XP Service Pack 1 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsXPSP2OrGreater]_ [v5.0] || Checks whether the OS is Windows XP Service Pack 2 or greater. Ignores compatibility mode. ||
+|| _[TPJOSInfoIsReallyWindowsMethods IsReallyWindowsXPSP3OrGreater]_ [v5.0] || Checks whether the OS is Windows XP Service Pack 3 or greater. Ignores compatibility mode. ||
 || _[TPJOSInfoIsRemoteSession IsRemoteSession]_ [v3.3] || Checks for a Windows Terminal Server remote session. ||
 || _[TPJOSInfoIsServer IsServer]_ || Checks for a server operating system. ||
 || _[TPJOSInfoIsTabletPC IsTabletPC]_ || Checks for Windows Tablet PC. ||
 || _[TPJOSInfoIsWin32s IsWin32s]_ || Checks for the Windows 32s system. ||
 || _[TPJOSInfoIsWin9x IsWin9x]_ || Checks for the Windows 95 platform. ||
+|| _[TPJOSInfoIsWindowsServer IsWindowsServer]_ [v5.0] || Checks if the OS is a server version. (When run in compatibility mode on Windows 2000 and later this method returns the true OS, unlike _[TPJOSInfoIsServer IsServer]_). ||
 || _[TPJOSInfoIsWinNT IsWinNT]_ || Checks for the Windows NT platform. ||
 || _[TPJOSInfoIsWow64 IsWow64]_ || Checks if the program is running on WOW64. ||
 || _[TPJOSInfoMajorVersion MajorVersion]_ || Gets the operating system major version. ||
