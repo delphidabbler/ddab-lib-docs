@@ -1,0 +1,31 @@
+#summary Description of the TPJOSInfo.CanSpoof class function.
+<wiki:comment>
+$Rev$
+$Date$
+</wiki:comment>
+
+= !CanSpoof class function =
+
+*Project:* [SystemInformationUnit System Information Unit].
+
+*Unit:* _PJSysInfo_.
+
+*Introduced:* v5.0
+
+*Class:* _[TPJOSInfo TPJOSInfo]_
+
+{{{
+class function CanSpoof: Boolean;
+}}}
+
+== Description ==
+
+Checks if the OS can be "spoofed" when the program is running in compatibility mode.
+
+When this method returns `True` it indicates that some methods of _[TPJOSInfo]_ and some global variables will return the details of the compatibility mode OS instead of the actual one. 
+
+When _!CanSpoof_ returns `False` returned OS information will be the  real underlying OS and the operating system compatibility mode is ignored.
+
+See the documentation of the relevant methods and global variables for details of which of them are affected by OS spoofing.
+
+*Note:* Exactly which OSs can be spoofed depends on how _PJSysInfo_ was compiled. By default, this will be Windows XP and earlier.
