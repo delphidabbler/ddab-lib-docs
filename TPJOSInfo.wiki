@@ -22,7 +22,7 @@ Therefore, from version 5, by default, the class uses a different approach to ob
 
 These changes mean that _TPSOSInfo_'s methods are affected by compatibility mode when run on operatinf systems prior to Windows Vista, but will ignore compatibility mode on Windows Vista and later.
 
-To help decide if compatibility mode will affect the returned information check the value returned from _[TOSInfoCanSpoof TOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the class and `False` is returned if not.
+To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the class and `False` is returned if not.
 
 _It is unfortunate that the class's behaviour is no longer consistent across operating systems, but there is no choice if the code is to abide by Microsoft's much criticised decision to deprecate and possibly remove the old API._
 
