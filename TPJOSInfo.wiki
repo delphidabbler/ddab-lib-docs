@@ -12,20 +12,11 @@ $Date$
 
 This is a static class that gives access to information about the operating system on which the program is running. All the class' functionality is exposed through its static methods. Because it is static the class does not need to be instantiated before use.
 
-When the host program is run in compatible many of _TPJOSInfo_'s methods will return information about the emulated operating system.
+When the host program is run in compatibility mode many of _TPJOSInfo_'s methods will be spoofed into returning information about the emulated operating system.
 
-== Changes in v5.0 ==
+[v5.0] Compatibility mode has no effect on information returned by any of _TPJOSInfo_'s methods when running on Windows 8.1 or later. Use the _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0] method to find out if the returned information _could_ have been spoofed.
 
-With the introduction of Windows 8.1 Microsoft has deprecated the _!GetVersion_ and _!GetVersionEx_ API functions that _TPJOSInfo_ uses to get version information. These API functions always return information about the reported operating system, which, when the program is running in compatibility mode, may be different to the true operating system. Furthermore _!GetVersion_ will not detect Windows 8.1 correctly in all cases.
-
-From version 5, to avoid using the deprecated API functions, _TPJOSInfo_ uses a different approach to obtain version information when running on Windows 8.1 or later. This new method always returns information about the true operating system, regardless of any compatibility mode.
-
-These changes mean that _TPSOSInfo_'s methods can be affected by compatibility mode when run on operating systems prior to Windows 8.1, but will ignore compatibility mode on Windows 8.1 and later. 
-To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the class and `False` is returned if not.
-
-_It is unfortunate that the class's behaviour is no longer consistent across operating systems, but there is no choice if the code is to abide by Microsoft's much criticised decision to deprecate and possibly remove the old API._
-
-v5.0 also provides some [TPJOSInfoIsReallyWindowsMethods new methods] that can be used to detect operating systems that always ignore compatibility mode.
+[v5.0 ] _TPJOSInfo_ also provides some [TPJOSInfoIsReallyWindowsMethods new methods] that can be used to query the operating system version regardless of any compatibility mode.
 
 == Methods ==
 
