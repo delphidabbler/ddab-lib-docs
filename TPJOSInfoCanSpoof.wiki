@@ -27,5 +27,3 @@ When this method returns `True` it indicates that some methods of _[TPJOSInfo]_ 
 When _!CanSpoof_ returns `False` returned OS information will be the installed operating system and the operating system compatibility mode is ignored.
 
 See the documentation of the relevant methods and global variables for details of which of them are affected by spoofing.
-
-*Note:* Exactly which operating systems can be spoofed depends on how _PJSysInfo_ was compiled. The default installation prevents spoofing of Windows Vista and later. There are compile options to let all operating systems be spoofed (the pre-v5 behaviour) or to prevent spoofing of Windows 8.1 and later.
