@@ -23,7 +23,7 @@ With the introduction of Windows 8.1 Microsoft has deprecated the _!GetVersion_ 
 
 From version 5, to avoid using the deprecated API functions, a different approach is used to obtain version information when running on Windows 8.1 or later. This new method always returns information about the true operating system, regardless of any compatibility mode.
 
-These changes mean that some of _[TPSOSInfo]_'s methods and some [PJSysInfoGlobals global variables] are affected by compatibility mode when run on operating systems prior to Windows 8.1, but will ignore compatibility mode on Windows 8.1 and later.  To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the retrieved OS information and `False` is returned if not.
+These changes mean that some of _[TPJOSInfo]_'s methods and some [PJSysInfoGlobals global variables] are affected by compatibility mode when run on operating systems prior to Windows 8.1, but will ignore compatibility mode on Windows 8.1 and later.  To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the retrieved OS information and `False` is returned if not.
 
 _It is unfortunate that the class's behaviour is no longer consistent across operating systems, but there is no choice if the code is to abide by Microsoft's much criticised decision to deprecate and possibly remove the old API._
 
