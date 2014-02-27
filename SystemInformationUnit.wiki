@@ -17,6 +17,18 @@ The _PJSysInfo_ unit also defines a set of [PJSysInfoGlobals global variables] t
 
 Certain Windows types and constants not defined by Delphi that assist in working with extended operating system information are declared in this unit. Help on these definitions can be found on MSDN or in the Windows platform SDK.
 
+== Changes in v5.0 ==
+
+With the introduction of Windows 8.1 Microsoft has deprecated the _!GetVersion_ and _!GetVersionEx_ API functions that _PJSysInfo_ uses to get operating system version information. These API functions always return information about the reported operating system, which, when the program is running in compatibility mode, may be different to the true operating system. Furthermore _!GetVersion_ will not detect Windows 8.1 correctly in all cases.
+
+From version 5, to avoid using the deprecated API functions, a different approach is used to obtain version information when running on Windows 8.1 or later. This new method always returns information about the true operating system, regardless of any compatibility mode.
+
+These changes mean that some of _[TPSOSInfo]_'s methods and some [PJSysInfoGlobals global variables] are affected by compatibility mode when run on operating systems prior to Windows 8.1, but will ignore compatibility mode on Windows 8.1 and later.  To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the retrieved OS information and `False` is returned if not.
+
+_It is unfortunate that the class's behaviour is no longer consistent across operating systems, but there is no choice if the code is to abide by Microsoft's much criticised decision to deprecate and possibly remove the old API._
+
+v5.0 also adds some [TPJOSInfoIsReallyWindowsMethods new methods] to _[TPJOSInfo]_ that can be used to detect operating systems that always ignore compatibility mode.
+
 == Deprecated & Removed Code ==
 
 Versions of _PJSysInfo_ prior to v3.0 contained a set of deprecated routines and a deprecated component that duplicated a subset of the system information exposed by the classes and global variables above.
