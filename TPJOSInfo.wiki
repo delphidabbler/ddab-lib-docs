@@ -40,6 +40,7 @@ v5.0 also provides some [TPJOSInfoIsReallyWindowsMethods new methods] to use to 
 || _[TPJOSInfoDescription Description]_ || Gets a full information about of an operating system version. ||
 || _[TPJOSInfoEdition Edition]_ || Gets the edition of an operating system product. ||
 || _[TPJOSInfoHasPenExtensions HasPenExtensions]_ || Checks for Windows Pen Extensions. ||
+|| _[TPJOSInfoInstallationDate InstallationDate]_ || Gets the date that Windows was installed. ||
 || _[TPJOSInfoIsMediaCenter IsMediaCenter]_ || Checks for Windows Media Center. ||
 || _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 or greater. Ignores compatibility mode. ||
 || _[TPJOSInfoIsReallyWindowsMethods IsReallyWindows2000SP1OrGreater]_ [v5.0] || Checks whether the OS is Windows 2000 Service Pack 1 or greater. Ignores compatibility mode. ||
