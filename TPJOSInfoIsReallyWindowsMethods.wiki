@@ -10,9 +10,9 @@ $Date$
 
 *Unit:* _PJSysInfo_.
 
-*Introduced:* v5.0
-
 *Class:* _[TPJOSInfo TPJOSInfo]_
+
+*Introduced:* v5.0
 
 {{{
 class function IsReallyWindows2000OrGreater: Boolean;
@@ -30,7 +30,7 @@ class function IsReallyWindowsVistaSP2OrGreater: Boolean;
 class function IsReallyWindows7OrGreater: Boolean;
 class function IsReallyWindows7SP1OrGreater: Boolean;
 class function IsReallyWindows8OrGreater: Boolean;
-class function IsReallyWindows8Point1OrGreater: Boolean;    
+class function IsReallyWindows8Point1OrGreater: Boolean;
 }}}
 
 == Description ==

@@ -10,9 +10,9 @@ $Date$
 
 *Unit:* _PJSysInfo_.
 
-*Introduced:* v5.0
-
 *Class:* _[TPJOSInfo TPJOSInfo]_
+
+*Introduced:* v5.0
 
 {{{
 class function CanSpoof: Boolean;
