@@ -1,7 +1,7 @@
 #summary Structure of Delphi Library Source Repository
 <wiki:comment>
-$Rev: 611 $
-$Date: 2010-08-29 21:38:52 +0100 (Sun, 29 Aug 2010) $
+$Rev$
+$Date$
 </wiki:comment>
 
 = Source Code Repository Structure =

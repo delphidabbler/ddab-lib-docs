@@ -1,7 +1,7 @@
 #summary Home page for the DelphiDabbler Library Wiki
 <wiki:comment>
-$Rev: 1361 $
-$Date: 2013-03-25 11:37:01 +0000 (Mon, 25 Mar 2013) $
+$Rev$
+$Date$
 </wiki:comment>
 
 =Welcome=
