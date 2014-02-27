@@ -16,21 +16,16 @@ When the host program is run in compatible many of _TPJOSInfo_'s methods will re
 
 == Changes in v5.0 ==
 
-With the introduction of Windows 8.1 Microsoft have deprecated the _!GetVersion_ and _!GetVersionEx_ API functions, which _TPJOSInfo_ uses to get version information. These API functions always return information about the reported operating, which, when the program is running in compatibility mode, may be different to the true operating system.
+With the introduction of Windows 8.1 Microsoft has deprecated the _!GetVersion_ and _!GetVersionEx_ API functions that _TPJOSInfo_ uses to get version information. These API functions always return information about the reported operating system, which, when the program is running in compatibility mode, may be different to the true operating system. Furthermore _!GetVersion_ will not detect Windows 8.1 correctly in all cases.
 
-Therefore, from version 5, by default, the class uses a different approach to obtain version information when running on Windows Vista or later. This new method always returns information about the true operating system, regardless of any compatibility mode.
+From version 5, to avoid using the deprecated API functions, _TPJOSInfo_ uses a different approach to obtain version information when running on Windows 8.1 or later. This new method always returns information about the true operating system, regardless of any compatibility mode.
 
-These changes mean that _TPSOSInfo_'s methods are affected by compatibility mode when run on operatinf systems prior to Windows Vista, but will ignore compatibility mode on Windows Vista and later.
-
+These changes mean that _TPSOSInfo_'s methods can be affected by compatibility mode when run on operating systems prior to Windows 8.1, but will ignore compatibility mode on Windows 8.1 and later. 
 To help decide if compatibility mode will affect the returned information check the value returned from _[TPJOSInfoCanSpoof TPJOSInfo.CanSpoof]_ [v5.0]: `True` is returned if compatibility mode has an effect on the class and `False` is returned if not.
 
 _It is unfortunate that the class's behaviour is no longer consistent across operating systems, but there is no choice if the code is to abide by Microsoft's much criticised decision to deprecate and possibly remove the old API._
 
-It is possible to compile _PJSysInfo_ so that it reverts to its former behaviour, but that means the deprecated API will be used. To do this comment out the `IGNORE_OS_SPOOFING_FROM_VISTA_UP` define.
-
-_PJSysInfo_ can also be compiled to use the old _!GetVersion_ API functions on all operating systems prior to Windows 8.1. To do this comment out `IGNORE_OS_SPOOFING_FROM_VISTA_UP` and uncomment the `IGNORE_OS_SPOOFING_FROM_VISTA_UP` define.
-
-v5.0 also provides some [TPJOSInfoIsReallyWindowsMethods new methods] to use to detect operating systems that always ignore compatibility mode.
+v5.0 also provides some [TPJOSInfoIsReallyWindowsMethods new methods] that can be used to detect operating systems that always ignore compatibility mode.
 
 == Methods ==
 
