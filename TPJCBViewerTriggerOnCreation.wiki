@@ -24,6 +24,11 @@ When _!TriggerOnCreation_ is `True` the _[TPJCBViewerOnClipboardChanged OnClipbo
 
 When the property is `False` the _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ event is only triggered when the content of the clipboard actually changes.
 
-*Note:* This is a design-time only property. Setting it dynamically at run time will have no effect since the component will have been initialised before the user gets a chance to change the property's value.
+*Notes:* 
+
+  * This is a design-time only property. Setting it dynamically at run time will have no effect since the component will have been initialised before the user gets a chance to change the property's value.
+  * This property has no effect if _[TPJCBViewerEnabled Enabled]_ is set to `False` at design time. In this case no event is fired after component creation, even if _!TriggerOnCreation_ is `True`.
+
+
 
 The default value is `True`.
