@@ -20,6 +20,6 @@ property Enabled: Boolean;
 
 The _Enabled_ property enables and disables the component.
 
-When the property is set to `True` the component triggers the _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ event when the content of the clipboard changes. When _Enabled_ is `False` the event is not triggered.
+When the property is set to `False` the component will never trigger the _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ event. Restoring _Enabled_ to `True` re-enables _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_.
 
 The default value is `True`.
