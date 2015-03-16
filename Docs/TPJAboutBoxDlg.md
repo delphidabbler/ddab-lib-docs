@@ -1,4 +1,4 @@
-<a href='Hidden comment: 
+<a href='Hidden comment:
 $Rev$
 $Date$
 '></a>
@@ -21,34 +21,34 @@ The _[HelpContext](TPJAboutBoxDlgHelpContext.md)_ property allows Windows Help t
 
 ## Methods ##
 
-| **Method** | **Description** |
-|:-----------|:----------------|
+| Method | Description |
+| ------ | ----------- |
 | _[Execute](TPJAboutBoxDlgExecute.md)_ | Displays the about box. |
 
 ## Properties ##
 
-| **Property** | **Description** |
-|:-------------|:----------------|
-| _~~AutoDetectGlyphs~~_ | **Removed in v3.6**<br>Determines whether the display of glyphs depends on the <i>ButtonGlyph</i> property or depends on the default compiler settings.<br><i>This property was deprecated in v3.5.</i> <br>
-<tr><td> <i><a href='TPJAboutBoxDlgButtonGlyph.md'>ButtonGlyph</a></i> </td><td> Determines which, if any, glyph is displayed on the dialog's close button. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgButtonHeight.md'>ButtonHeight</a></i> </td><td> Specifies the height of the dialog's close button. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgButtonKind.md'>ButtonKind</a></i> </td><td> Determines the text displayed on the dialog's close button. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgButtonPlacing.md'>ButtonPlacing</a></i> </td><td> Determines the horizontal alignment of the dialog's close button. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgButtonWidth.md'>ButtonWidth</a></i> </td><td> Specifies the width of the dialog's close button. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgCentreDlg.md'>CentreDlg</a></i> </td><td> Determines whether or not the dialog box is centred on screen. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgCopyright.md'>Copyright</a></i> </td><td> The copyright message displayed in the about box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgDlgLeft.md'>DlgLeft</a></i> </td><td> Specifies the location of the left hand side of the about box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgDlgTop.md'>DlgTop</a></i> </td><td> Specifies the location of the top of the about box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgFont.md'>Font</a></i> </td><td> Specifies the font used in the dialog box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgHelpContext.md'>HelpContext</a></i> </td><td> Stores the help topic number accessed when F1 is pressed. A zero value is ignored. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgNotes.md'>Notes</a></i> </td><td> Notes displayed in the dialog box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgPosition.md'>Position</a></i> </td><td> Determines whether the about box is positioned relative to screen, desktop or owner form. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgProgramName.md'>ProgramName</a></i> </td><td> Name of the program displayed in the about box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgTitle.md'>Title</a></i> </td><td> Text displayed in the caption of the dialog box window. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgUseOSStdFonts.md'>UseOSStdFonts</a></i> </td><td> Specifies whether the dialog box should use the system's default font. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgUseOwnerAsParent.md'>UseOwnerAsParent</a></i> </td><td> Determines if the dialog box should to be forced to be a child window of any owning control. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgVersion.md'>Version</a></i> </td><td> The version number information to be displayed in the dialog box. </td></tr>
-<tr><td> <i><a href='TPJAboutBoxDlgVersionInfo.md'>VersionInfo</a></i> </td><td> Reference to any <i><a href='TPJVersionInfo.md'>TPJVersionInfo</a></i> component that provides the text displayed in the about box. </td></tr></tbody></table>
+| Property | Description |
+| -------- | ----------- |
+| _~~AutoDetectGlyphs~~_ | **Removed in v3.6**<br>Determines whether the display of glyphs depends on the _[ButtonGlyph](TPJAboutBoxDlgButtonGlyph.md)_ property or depends on the default compiler settings.<br>_This property was deprecated in v3.5._ |
+| _[ButtonGlyph](TPJAboutBoxDlgButtonGlyph.md)_ | Determines which, if any, glyph is displayed on the dialog's close button. |
+| _[ButtonHeight](TPJAboutBoxDlgButtonHeight.md)_ | Specifies the height of the dialog's close button. |
+| _[ButtonKind](TPJAboutBoxDlgButtonKind.md)_ | Determines the text displayed on the dialog's close button. |
+| _[ButtonPlacing](TPJAboutBoxDlgButtonPlacing.md)_ | Determines the horizontal alignment of the dialog's close button. |
+| _[ButtonWidth](TPJAboutBoxDlgButtonWidth.md)_ | Specifies the width of the dialog's close button. |
+| _[CentreDlg](TPJAboutBoxDlgCentreDlg.md)_ | Determines whether or not the dialog box is centred on screen. |
+| _[Copyright](TPJAboutBoxDlgCopyright.md)_ | The copyright message displayed in the about box. |
+| _[DlgLeft](TPJAboutBoxDlgDlgLeft.md)_ | Specifies the location of the left hand side of the about box. |
+| _[DlgTop](TPJAboutBoxDlgDlgTop.md)_ | Specifies the location of the top of the about box. |
+| _[Font](TPJAboutBoxDlgFont.md)_ | Specifies the font used in the dialog box. |
+| _[HelpContext](TPJAboutBoxDlgHelpContext.md)_ | Stores the help topic number accessed when F1 is pressed. A zero value is ignored. |
+| _[Notes](TPJAboutBoxDlgNotes.md)_ | Notes displayed in the dialog box. |
+| _[Position](TPJAboutBoxDlgPosition.md)_ | Determines whether the about box is positioned relative to screen, desktop or owner form. |
+| _[ProgramName](TPJAboutBoxDlgProgramName.md)_ | Name of the program displayed in the about box. |
+| _[Title](TPJAboutBoxDlgTitle.md)_ | Text displayed in the caption of the dialog box window. |
+| _[UseOSStdFonts](TPJAboutBoxDlgUseOSStdFonts.md)_ | Specifies whether the dialog box should use the system's default font. |
+| _[UseOwnerAsParent](TPJAboutBoxDlgUseOwnerAsParent.md)_ | Determines if the dialog box should to be forced to be a child window of any owning control. |
+| _[Version](TPJAboutBoxDlgVersion.md)_ | The version number information to be displayed in the dialog box. |
+| _[VersionInfo](TPJAboutBoxDlgVersionInfo.md)_ | Reference to any _[TPJVersionInfo](TPJVersionInfo.md)_ component that provides the text displayed in the about box. |
 
 ## Events ##
 
