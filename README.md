@@ -1,8 +1,8 @@
 # DelphiDabbler Code Library
 
-The DelphiDabbler Code Library contains various useful and re-usable Delphi components, units and IDE extensions originally published on [DelphiDabbler.com](http://www.delphidabbler.com/).
+The DelphiDabbler Code Library contains various useful and re-usable Delphi components, units and IDE extensions, arranged in sub-projects. All were originally published on [DelphiDabbler.com](http://www.delphidabbler.com/).
 
-Many of the components and classes are stable and have been in development for a number of years.
+Many of the components and classes are stable and have been in development for a number of years. For details of each sub-project see [this summary](Docs/Welcome.md).
 
 The project contains these components, classes and IDE extensions:
 
