@@ -1,26 +1,26 @@
-#summary TPJFileFilter class description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJFileFilter =
+# TPJFileFilter #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
 _TPJFileFilter_ is an abstract base class for file filter components.
 
-== Methods ==
+## Methods ##
 
-|| *Method* || *Description* ||
-|| _[TPJFileFilterAccept Accept]_ || Abstract method that checks whether a given file or folder passes though a filter. Sub-classes should override. ||
+| **Method** | **Description** |
+|:-----------|:----------------|
+| _[Accept](TPJFileFilterAccept.md)_ | Abstract method that checks whether a given file or folder passes though a filter. Sub-classes should override. |
 
-== Properties ==
+## Properties ##
 
 _TPJFileFilter_ declares no new properties.
 
-== Events ==
+## Events ##
 
 _TPJFileFilter_ has no events.

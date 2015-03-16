@@ -1,27 +1,26 @@
-#summary Description of the TPJHotLabel.TrackVisits property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !TrackVisits property =
+# TrackVisits property #
 
-*Project:* [HotLabelComponent Hot Label Component].
+**Project:** [Hot Label Component](HotLabelComponent.md).
 
-*Unit:* _PJHotLabel_.
+**Unit:** _PJHotLabel_.
 
-*Class:* _[TPJHotLabel TPJHotLabel]_
+**Class:** _[TPJHotLabel](TPJHotLabel.md)_
 
-*Introduced:* v2.2
+**Introduced:** v2.2
 
-{{{
+```
 property TrackVisits: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-The component has the ability to detect when its URL is visited^†^, and to automatically set its _[TPJHotLabelVisited Visited]_^[v2.2]^ property to `True` when that happens. This then changes the font used when the label is not highlighted to that specified by the _[TPJHotLabelVisitedFont VisitedFont]_^[v2.2]^ property.
+The component has the ability to detect when its URL is visited<sup>†</sup>, and to automatically set its _[Visited](TPJHotLabelVisited.md)_<sup>[v2.2]</sup> property to `True` when that happens. This then changes the font used when the label is not highlighted to that specified by the _[VisitedFont](TPJHotLabelVisitedFont.md)_<sup>[v2.2]</sup> property.
 
-_!TrackVists_ determines whether this feature is enabled (`True`) or not (`False`). The default value is `False`.
+_TrackVists_ determines whether this feature is enabled (`True`) or not (`False`). The default value is `False`.
 
-† The component deems its URL to be visited if the label is clicked *and* the navigation to the URL succeeded. If the navigation fails the _[TPJHotLabelVisited Visited]_^[v2.2]^ property is not set to `True`. When navigation to succeeds it does not mean the URL exists, it simply means that the component was able to resolve the URL and execute it in a linked application such and a web browser.
+† The component deems its URL to be visited if the label is clicked **and** the navigation to the URL succeeded. If the navigation fails the _[Visited](TPJHotLabelVisited.md)_<sup>[v2.2]</sup> property is not set to `True`. When navigation to succeeds it does not mean the URL exists, it simply means that the component was able to resolve the URL and execute it in a linked application such and a web browser.

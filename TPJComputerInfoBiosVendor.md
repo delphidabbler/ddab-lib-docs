@@ -1,23 +1,22 @@
-#summary Description of the TPJComputerInfo.BiosVendor class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !BiosVendor class function =
+# BiosVendor class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v4.0
+**Introduced:** v4.0
 
-{{{
+```
 class function BiosVendor: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the name of the vendor / manufacturer of the computer's BIOS.

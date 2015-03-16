@@ -1,21 +1,20 @@
-#summary Description of the TPJCtrlDropFiles.Enabled property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Enabled property =
+# Enabled property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property Enabled: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 _Enabled_ determines whether dropped files are handled or ignored. When _Enabled_ is true the component handles all file drop messages to the managed control. When false, file drops are ignored and are passed through to the owning form.

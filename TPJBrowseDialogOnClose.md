@@ -1,25 +1,24 @@
-#summary Description of the TPJBrowseDialog.OnClose event.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnClose event =
+# OnClose event #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJBrowseDialog TPJBrowseDialog]_
+**Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-{{{
+```
 property OnClose: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This event occurs when the dialog closes.
 
-Write an _!OnClose_ event handler to perform special processing when the dialog closes.
+Write an _OnClose_ event handler to perform special processing when the dialog closes.
 
-The dialog's window handle is available via the _[TPJBrowseDialogHandle Handle]_ property. The _Sender_ parameter can be cast to _[TPJBrowseDialog TPJBrowseDialog]_ in order to access the _[TPJBrowseDialogHandle Handle]_ property.
+The dialog's window handle is available via the _[Handle](TPJBrowseDialogHandle.md)_ property. The _Sender_ parameter can be cast to _[TPJBrowseDialog](TPJBrowseDialog.md)_ in order to access the _[Handle](TPJBrowseDialogHandle.md)_ property.

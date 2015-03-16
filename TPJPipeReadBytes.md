@@ -1,9 +1,9 @@
-#summary Description of the TPJPipe.ReadBytes method
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ReadBytes method =
+# ReadBytes method #
 
-|| Sorry, this documentation has moved to the I/O Utility Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeReadBytes Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the I/O Utility Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJPipeReadBytes)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

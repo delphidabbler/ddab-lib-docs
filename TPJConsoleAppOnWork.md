@@ -1,9 +1,9 @@
-#summary Description of the TPJConsoleApp.OnWork event
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnWork event =
+# OnWork event #
 
-|| Sorry, this documentation has moved to the Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppOnWork Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the Console Application Runner Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppOnWork)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

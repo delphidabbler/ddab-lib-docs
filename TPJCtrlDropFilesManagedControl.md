@@ -1,21 +1,20 @@
-#summary Description of the TPJCtrlDropFiles.ManagedControl property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ManagedControl property =
+# ManagedControl property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property ManagedControl: TWinControl;
-}}}
+```
 
-== Description ==
+## Description ##
 
-_!ManagedControl_ refers to the associated control for which file drops are managed. If this property is nil then no files drops are handled.
+_ManagedControl_ refers to the associated control for which file drops are managed. If this property is nil then no files drops are handled.

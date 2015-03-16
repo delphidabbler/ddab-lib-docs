@@ -1,27 +1,26 @@
-#summary Description of the TPJCustomWdwState.OnAfterWindowRestored event.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnAfterWindowRestored event =
+# OnAfterWindowRestored event #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_.
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-*Introduced:* v5.4
+**Introduced:** v5.4
 
-{{{
+```
 property OnAfterWindowRestored: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This published event is triggered just after the window has been restored. This occurs either after program start-up if the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is True or after the _[TPJCustomWdwStateRestore Restore]_ method has been called.
+This published event is triggered just after the window has been restored. This occurs either after program start-up if the _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property is True or after the _[Restore](TPJCustomWdwStateRestore.md)_ method has been called.
 
 Handle this event if you need to determine the state of the restored window or its restored size. Use methods of the host form to find the required information.
 
-See also: _[TPJCustomWdwStateOnAfterWindowSized OnAfterWindowSized]_ *^v5.4^*
+See also: _[OnAfterWindowSized](TPJCustomWdwStateOnAfterWindowSized.md)_ **<sup>v5.4</sup>**

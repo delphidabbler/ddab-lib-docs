@@ -1,34 +1,34 @@
-#summary Description of the TPJAboutBoxDlg.ButtonKind property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ButtonKind property =
+# ButtonKind property #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 property ButtonKind: TPJAboutBtnKinds;
 
 type TPJAboutBtnKinds = (
   abkOK, abkDone, abkClose, abkCancel
 );
-}}}
+```
 
-== Description ==
+## Description ##
 
-The About box contains one button which is used to close the dialog box. The button can display different text to indicate its use. The _!ButtonKind_ property is used to determine which text to display. Valid values for the property and their meanings are as follows:
+The About box contains one button which is used to close the dialog box. The button can display different text to indicate its use. The _ButtonKind_ property is used to determine which text to display. Valid values for the property and their meanings are as follows:
 
-|| *Value* || *Text* ||
-|| `abkOK` || 'OK' ||
-|| `abkDone` || 'Done' ||
-|| `abkClose` || 'Close' ||
-|| `abkCancel` || 'Cancel' ||
+| **Value** | **Text** |
+|:----------|:---------|
+| `abkOK` | 'OK' |
+| `abkDone` | 'Done' |
+| `abkClose` | 'Close' |
+| `abkCancel` | 'Cancel' |
 
 The default value is `abkOK`.
 

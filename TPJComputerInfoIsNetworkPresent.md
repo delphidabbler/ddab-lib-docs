@@ -1,23 +1,22 @@
-#summary Description of the TPJComputerInfo.IsNetworkPresent class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsNetworkPresent class function =
+# IsNetworkPresent class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v3.1
+**Introduced:** v3.1
 
-{{{
+```
 class function IsNetworkPresent: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Returns True if the computer is connected to a network or False if no network is present. 
+Returns True if the computer is connected to a network or False if no network is present.

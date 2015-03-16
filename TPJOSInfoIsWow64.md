@@ -1,21 +1,20 @@
-#summary Description of the TPJOSInfo.IsWow64 class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsWow64 class function =
+# IsWow64 class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function IsWow64: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns True if application is running under WOW64 subsystem on a 64 bit operating system and False otherwise.

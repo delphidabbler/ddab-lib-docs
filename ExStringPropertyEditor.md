@@ -1,14 +1,13 @@
-#summary Extended String Property Editor documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-=Extended String Property Editor=
+# Extended String Property Editor #
 
-|| This documentation has now moved to the Extended String Property Editor *[http://wiki.delphidabbler.com/index.php/Docs/StringPE User Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
+| This documentation has now moved to the Extended String Property Editor **[User Guide](http://wiki.delphidabbler.com/index.php/Docs/StringPE)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks. </tbody></table>
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/stringpe Extended String Property Editor Web Page].
+  * Back to [Wiki Home Page](Welcome.md)
+  * [Extended String Property Editor Web Page](http://www.delphidabbler.com/software/stringpe).

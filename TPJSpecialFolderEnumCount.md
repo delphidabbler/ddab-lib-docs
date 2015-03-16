@@ -1,23 +1,22 @@
-#summary Description of the TPJSpecialFolderEnum.Count method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Count method =
+# Count method #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_
+**Class:** _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_
 
-{{{
+```
 function Count: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 _Count_ returns the number of special folder identifier values in the enumeration.
 
-The result is the same as calling the non-member _[PJShellFoldersFunctions#NumSpecialFolderIds NumSpecialFolderIds]_ function.
+The result is the same as calling the non-member _[NumSpecialFolderIds](PJShellFoldersFunctions#NumSpecialFolderIds.md)_ function.

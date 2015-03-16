@@ -1,27 +1,26 @@
-#summary Description of the TPJOSInfo.IsServer class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsServer class function =
+# IsServer class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function IsServer: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns true if the operating system is a server system or False if not.
 
-When the program is run in compatibility mode, this method _may_ test whether the "emulated" operating system is a server. However, _this is not a reliable test_. For example when emulating a server operating system on a desktop system _!IsServer_ continues to report `False`!.
+When the program is run in compatibility mode, this method _may_ test whether the "emulated" operating system is a server. However, _this is not a reliable test_. For example when emulating a server operating system on a desktop system _IsServer_ continues to report `False`!.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will always check whether the installed operating system is a server, regardless of any compatibility mode.
+[v5.0] On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` this method will always check whether the installed operating system is a server, regardless of any compatibility mode.
 
-[v5.0] When running on Windows 2000 and later you can use _[TPJOSInfoIsWindowsServer IsWindowsServer]_ to ensure that compatibility mode has no effect on the returned value.
+[v5.0] When running on Windows 2000 and later you can use _[IsWindowsServer](TPJOSInfoIsWindowsServer.md)_ to ensure that compatibility mode has no effect on the returned value.

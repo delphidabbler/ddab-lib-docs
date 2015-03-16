@@ -1,24 +1,23 @@
-#summary Description of the TPJComputerInfo.ProcessorName class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProcessorName class function =
+# ProcessorName class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v4.0
+**Introduced:** v4.0
 
-{{{
+```
 class function ProcessorName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns a descriptive name for the computer's processor.
 
@@ -26,6 +25,6 @@ On multi-processor systems the method returns the name of the 1st processor.
 
 An example processor name is "`Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz`".
 
-*See also*
+**See also**
 
-  * _[TPJComputerInfoProcessorIdentifier ProcessorIdentifier]_
+  * _[ProcessorIdentifier](TPJComputerInfoProcessorIdentifier.md)_

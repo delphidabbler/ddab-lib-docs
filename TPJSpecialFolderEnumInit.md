@@ -1,23 +1,22 @@
-#summary Description of the TPJSpecialFolderEnum.Init method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Init method =
+# Init method #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Interface:* _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_
+**Interface:** _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_
 
-{{{
+```
 procedure Init;
-}}}
+```
 
-== Description ==
+## Description ##
 
-The _Init_ method initialises the enumeration so that the next call of the _[TPJSpecialFolderEnumNext Next]_ method returns the first special folder identifier value.
+The _Init_ method initialises the enumeration so that the next call of the _[Next](TPJSpecialFolderEnumNext.md)_ method returns the first special folder identifier value.
 
 _Init_ is implicitly called by the constructor.

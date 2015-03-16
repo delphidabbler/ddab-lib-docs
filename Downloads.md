@@ -1,34 +1,34 @@
-#summary Landing Page for Downloads Tab on GoogleCode.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-=Downloads=
+# Downloads Moved #
 
-Following Google's decision to discontinue the download service in January 2014, all the download files from this project have now been moved to _!SourceForge_.
+All the download files from this project have now been moved to _SourceForge_. Given that Google has announced that _GoogleCode_ is to close, please amend any bookmarks ASAP.
 
-Downloads can now be accessed via the _!SourceForge_ [https://sourceforge.net/projects/ddablib/files/ File Manager].
+Downloads can now be accessed via the _SourceForge_ [File Manager](https://sourceforge.net/projects/ddablib/files/).
 
 Each of the library's sub-projects has its own directory in the File Manager where its releases are stored. These are as follows:
 
-|| *Sub-project* || *!SourceForge Directory* ||
-|| About Box Component || [https://sourceforge.net/projects/ddablib/files/aboutbox/ aboutbox] ||
-|| Clipboard Viewer Component || [https://sourceforge.net/projects/ddablib/files/cbview/ cbview] ||
-|| Console Application Runner Classes || [https://sourceforge.net/projects/ddablib/files/consoleapp/ consoleapp] ||
-|| Drop Files Components || [https://sourceforge.net/projects/ddablib/files/dropfiles/ dropfiles] ||
-|| Environment Variables Unit || [https://sourceforge.net/projects/ddablib/files/envvars/ envvars] ||
-|| Extended String Property Editor || [https://sourceforge.net/projects/ddablib/files/stringpe/ stringpe] ||
-|| Fractions Unit || [https://sourceforge.net/projects/ddablib/files/fractions/ fractions] ||
-|| Hot Label Component || [https://sourceforge.net/projects/ddablib/files/hotlabel/ hotlabel] ||
-|| I/O Utility Classes || [https://sourceforge.net/projects/ddablib/files/ioutils/ ioutils] ||
-|| MD5 Message Digest Unit || [https://sourceforge.net/projects/ddablib/files/md5/ md5] ||
-|| Message Dialogue Components || [https://sourceforge.net/projects/ddablib/files/msgdlg/ msgdlg] ||
-|| Resource File Unit || [https://sourceforge.net/projects/ddablib/files/resfile/ resfile] ||
-|| Shell Folders Unit || [https://sourceforge.net/projects/ddablib/files/shellfolders/ shellfolders] ||
-|| Stream Extension Classes || [https://sourceforge.net/projects/ddablib/files/streams/ streams] ||
-|| System Information Unit || [https://sourceforge.net/projects/ddablib/files/sysinfo/ sysinfo] ||
-|| Version Information Component || [https://sourceforge.net/projects/ddablib/files/verinfo/ verinfo] ||
-|| Window State Components || [https://sourceforge.net/projects/ddablib/files/wdwstate/ wdwstate] ||
+| **Sub-project** | **SourceForge Directory** |
+|:----------------|:--------------------------|
+| About Box Component | [aboutbox](https://sourceforge.net/projects/ddablib/files/aboutbox/) |
+| Clipboard Viewer Component | [cbview](https://sourceforge.net/projects/ddablib/files/cbview/) |
+| Console Application Runner Classes | [consoleapp](https://sourceforge.net/projects/ddablib/files/consoleapp/) |
+| Drop Files Components | [dropfiles](https://sourceforge.net/projects/ddablib/files/dropfiles/) |
+| Environment Variables Unit | [envvars](https://sourceforge.net/projects/ddablib/files/envvars/) |
+| Extended String Property Editor | [stringpe](https://sourceforge.net/projects/ddablib/files/stringpe/) |
+| Fractions Unit | [fractions](https://sourceforge.net/projects/ddablib/files/fractions/) |
+| Hot Label Component | [hotlabel](https://sourceforge.net/projects/ddablib/files/hotlabel/) |
+| I/O Utility Classes | [ioutils](https://sourceforge.net/projects/ddablib/files/ioutils/) |
+| MD5 Message Digest Unit | [md5](https://sourceforge.net/projects/ddablib/files/md5/) |
+| Message Dialogue Components | [msgdlg](https://sourceforge.net/projects/ddablib/files/msgdlg/) |
+| Resource File Unit | [resfile](https://sourceforge.net/projects/ddablib/files/resfile/) |
+| Shell Folders Unit | [shellfolders](https://sourceforge.net/projects/ddablib/files/shellfolders/) |
+| Stream Extension Classes | [streams](https://sourceforge.net/projects/ddablib/files/streams/) |
+| System Information Unit | [sysinfo](https://sourceforge.net/projects/ddablib/files/sysinfo/) |
+| Version Information Component | [verinfo](https://sourceforge.net/projects/ddablib/files/verinfo/) |
+| Window State Components | [wdwstate](https://sourceforge.net/projects/ddablib/files/wdwstate/) |
 
-Note that all downloads that were on _!GoogleCode_ as of 2nd November 2013 have been left in place so that any links will still work. However no further library releases after that date will have been uploaded.
+Note that all downloads that were on _GoogleCode_ as of 2nd November 2013 have been left in place so that any links will still work. However no further library releases after that date will have been uploaded.

@@ -1,16 +1,15 @@
-#summary Version Information Component Example 4.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example 4: Using string information properties =
+# Example 4: Using string information properties #
 
-This example demostrates how to access string information from a version resource using _[TPJVersionInfo TPJVersionInfo]_. It demonstrates two methods - the first using dedicated properties such as _[TPJVersionInfoLegalCopyright LegalCopyright]_ and the second using the _[TPJVersionInfoStringFileInfo StringFileInfo]_ property. The example also demonstrates the use of the _[TPJVersionInfoFileName FileName]_ property to access information in other files.
+This example demostrates how to access string information from a version resource using _[TPJVersionInfo](TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _[LegalCopyright](TPJVersionInfoLegalCopyright.md)_ and the second using the _[StringFileInfo](TPJVersionInfoStringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](TPJVersionInfoFileName.md)_ property to access information in other files.
 
-Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo TPJVersionInfo]_ component onto a form and add the following function and event handlers:
+Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo](TPJVersionInfo.md)_ component onto a form and add the following function and event handlers:
 
-{{{
+```
 function DirToPath(const Dir: string): string;
   // Ensures path end in '\'
 begin
@@ -111,11 +110,11 @@ procedure TEgForm2.FormShow(Sender: TObject);
 begin
   Memo1.Clear;
 end;
-}}}
+```
 
 When the first button is clicked the memo is populated with string information extracted from the Windows Calculator program while clicking the second button uses a different method to extract and displays string information about the NotePad program.
 
-*Links:*
+**Links:**
 
-  * Back to the [VerInfoExamples Examples List]
-  * Back to the [VersionInformationComponent Main Component Page]
+  * Back to the [Examples List](VerInfoExamples.md)
+  * Back to the [Main Component Page](VersionInformationComponent.md)

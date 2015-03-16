@@ -1,9 +1,9 @@
-#summary Description of the TPJVersionInfo.FileSubType property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !FileSubType property =
+# FileSubType property #
 
-|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoFileSubType Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the Version Information Component **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoFileSubType)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

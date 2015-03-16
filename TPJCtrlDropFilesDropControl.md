@@ -1,21 +1,20 @@
-#summary Description of the TPJCtrlDropFiles.DropControl property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !DropControl property =
+# DropControl property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property DropControl: TControl;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Provides a reference to any control parented by the managed control that was under the mouse cursor when files were dropped. If no child controls were under the cursor then a reference to managed control itself is returned.

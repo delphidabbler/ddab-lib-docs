@@ -1,25 +1,24 @@
-#summary Description of the TPJUserWdwState.Restore method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Restore method =
+# Restore method #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJUserWdwState TPJUserWdwState]_
+**Class:** _[TPJUserWdwState](TPJUserWdwState.md)_
 
-{{{
+```
 procedure Restore;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This method restores the size and position of the owning form's window according to value saved in persistent storage. The _[TPJUserWdwStateOnReadData OnReadData]_ event is triggered by this method. The user must handle the event by reading and passing back the required window state data.
+This method restores the size and position of the owning form's window according to value saved in persistent storage. The _[OnReadData](TPJUserWdwStateOnReadData.md)_ event is triggered by this method. The user must handle the event by reading and passing back the required window state data.
 
-Various values of the _[TPJCustomWdwStateOptions Options]_ property may cause either the saved size or state to be ignored or for the window to be repositioned (and possibly resized) to fit within the desktop's work area.
+Various values of the _[Options](TPJCustomWdwStateOptions.md)_ property may cause either the saved size or state to be ignored or for the window to be repositioned (and possibly resized) to fit within the desktop's work area.
 
-If the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is true _Restore_ is called automatically when the window is created.
+If the _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property is true _Restore_ is called automatically when the window is created.

@@ -1,31 +1,30 @@
-#summary Description of the TPJResourceFile.DeleteEntry method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !DeleteEntry method =
+# DeleteEntry method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceFile TPJResourceFile]_
+**Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-{{{
+```
 function DeleteEntry(const Entry: TPJResourceEntry): Boolean;
-}}}
+```
 
-Removes a resource entry from the resource file object. The resource entry object *is not freed* so must be freed explicitly by the user when no longer required.
+Removes a resource entry from the resource file object. The resource entry object **is not freed** so must be freed explicitly by the user when no longer required.
 
-The recommended way to delete and free a resource entry is to free the _[TPJResourceEntry TPJResourceEntry]_ object while it is still linked into the resource file since this automatically unlinks it from the resource. The _!DeleteEntry_ method is provided in case you need to unlink a resource entry from a resource file and work on the entry after unlinking it, or perhaps to move the entry to a different resource file.
+The recommended way to delete and free a resource entry is to free the _[TPJResourceEntry](TPJResourceEntry.md)_ object while it is still linked into the resource file since this automatically unlinks it from the resource. The _DeleteEntry_ method is provided in case you need to unlink a resource entry from a resource file and work on the entry after unlinking it, or perhaps to move the entry to a different resource file.
 
-If the resource entry is not in the resource file then _!DeleteEntry_ does nothing.
+If the resource entry is not in the resource file then _DeleteEntry_ does nothing.
 
-*_Parameter:_*
+**_Parameter:_**
 
   * _Entry_: Reference to the resource entry object to be deleted.
 
-*_Returns:_*
+**_Returns:_**
 
 `True` if the resource entry was in the resource file and was deleted and `False` otherwise.

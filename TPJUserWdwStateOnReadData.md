@@ -1,31 +1,30 @@
-#summary Description of the TPJUserWdwState.OnReadData method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnReadData event =
+# OnReadData event #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJUserWdwState TPJUserWdwState]_
+**Class:** _[TPJUserWdwState](TPJUserWdwState.md)_
 
-{{{
+```
 type
   TPJWdwStateReadData = procedure(
     Sender: TObject; var Data: TPJWdwStateData
   ) of object;
 
 property OnReadData: TPJWdwStateReadData;
-}}}
+```
 
-== Description ==
+## Description ##
 
-_!OnReadData_ is triggered when the component is about to restore the window's size, position and state and needs to retrieve saved window state data from persistent storage.
+_OnReadData_ is triggered when the component is about to restore the window's size, position and state and needs to retrieve saved window state data from persistent storage.
 
-The user must handle this event by reading the required data from storage and storing the data in the fields of the _Data_ parameter, which is a _[TPJWdwStateData TPJWdwStateData]_ record.
+The user must handle this event by reading the required data from storage and storing the data in the fields of the _Data_ parameter, which is a _[TPJWdwStateData](TPJWdwStateData.md)_ record.
 
-*See Also:*
-  _[TPJUserWdwStateOnSaveData OnSaveData]_ event.
+**See Also:**
+> _[OnSaveData](TPJUserWdwStateOnSaveData.md)_ event.

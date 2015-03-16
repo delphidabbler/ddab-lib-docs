@@ -1,27 +1,26 @@
-#summary Description of the TPJOSInfo.ServicePack class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ServicePack class function =
+# ServicePack class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function ServicePack: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns a description of any operating system service pack. An empty string is returned if there is no service pack.
 
-On the Windows 9x platform the system returns a code for each service pack. This method translates this code into a full description. On NT operating systems from NT 4 service pack 6 onwards the service pack version number is available in the _[TPJOSInfoServicePackMajor ServicePackMajor]_ and _[TPJOSInfoServicePackMinor ServicePackMinor]_ methods.
+On the Windows 9x platform the system returns a code for each service pack. This method translates this code into a full description. On NT operating systems from NT 4 service pack 6 onwards the service pack version number is available in the _[ServicePackMajor](TPJOSInfoServicePackMajor.md)_ and _[ServicePackMinor](TPJOSInfoServicePackMinor.md)_ methods.
 
 When the program is run in compatibility mode, this method will return the service pack of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the service pack of the installed operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` this method will return the service pack of the installed operating system, regardless of any compatibility mode.

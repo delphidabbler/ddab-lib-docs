@@ -1,26 +1,25 @@
-#summary Description of the TPJRegWdwState.RootKey property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !RootKey property =
+# RootKey property #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJRegWdwState TPJRegWdwState]_
+**Class:** _[TPJRegWdwState](TPJRegWdwState.md)_
 
-{{{
+```
 property RootKey: HKEY;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[TPJRegWdwStateSubKey SubKey]_ property. If _!RootKey_ is set to an invalid _HKEY_ value an exception is raised. Valid values are:
+This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[SubKey](TPJRegWdwStateSubKey.md)_ property. If _RootKey_ is set to an invalid _HKEY_ value an exception is raised. Valid values are:
 
-{{{
+```
 HKEY_CLASSES_ROOT     = $80000000;
 HKEY_CURRENT_USER     = $80000001;
 HKEY_LOCAL_MACHINE    = $80000002;
@@ -28,18 +27,18 @@ HKEY_USERS            = $80000003;
 HKEY_PERFORMANCE_DATA = $80000004;
 HKEY_CURRENT_CONFIG   = $80000005;
 HKEY_DYN_DATA         = $80000006;
-}}}
+```
 
 These values are defined in the Windows unit.
 
 The property defaults to `HKEY_CURRENT_USER`.
 
-*Note:* The registry root key can also be specified by handling _[TPJRegWdwStateOnGetRegData OnGetRegData]_ or _[TPJRegWdwStateOnGetRegDataEx OnGetRegDataEx]_*^v5.6^* events. If this is done then the value of _!RootKey_ is ignored.
+**Note:** The registry root key can also be specified by handling _[OnGetRegData](TPJRegWdwStateOnGetRegData.md)_ or _[OnGetRegDataEx](TPJRegWdwStateOnGetRegDataEx.md)_**<sup>v5.6</sup>** events. If this is done then the value of _RootKey_ is ignored.
 
-===Alternative Property===
+### Alternative Property ###
 
-The _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* property provides an alternative way of setting the registry root key. Instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey]_*^v5.6^* enumeration, making it impossible to specify an invalid value.
+The _[RootKeyEx](TPJRegWdwStateRootKeyEx.md)_**<sup>v5.6</sup>** property provides an alternative way of setting the registry root key. Instead of taking an _HKEY_ value it takes a value from the _[TPJRegRootKey](TPJRegRootKey.md)_**<sup>v5.6</sup>** enumeration, making it impossible to specify an invalid value.
 
-_[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* also makes it easier and safer to set values in Delphi's Object Inspector since the required value is selected from a list.
+_[RootKeyEx](TPJRegWdwStateRootKeyEx.md)_**<sup>v5.6</sup>** also makes it easier and safer to set values in Delphi's Object Inspector since the required value is selected from a list.
 
-Setting _!RootKey_ changes the value of _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^* and vice versa.
+Setting _RootKey_ changes the value of _[RootKeyEx](TPJRegWdwStateRootKeyEx.md)_**<sup>v5.6</sup>** and vice versa.

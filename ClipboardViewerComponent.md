@@ -1,20 +1,20 @@
-#summary Clipboard Viewer Component documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Clipboard Viewer Component =
+# Clipboard Viewer Component #
 
 This project contains one unit - _PJCBView_ - that implements a single non-visual component:
 
-|| _[TPJCBViewer TPJCBViewer]_ || Component that notifies the user when the content of the Windows clipboard changes. ||
+| _[TPJCBViewer](TPJCBViewer.md)_ | Component that notifies the user when the content of the Windows clipboard changes. |
+|:--------------------------------|:------------------------------------------------------------------------------------|
 
 No other classes or types are defined.
 
-For information on how to use the component see either the [ClipboardViewerExample worked example] or the demo program that is included with the download.
+For information on how to use the component see either the [worked example](ClipboardViewerExample.md) or the demo program that is included with the download.
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/cbview Clipboard Viewer Component Web Page].
+  * Back to [Wiki Home Page](Welcome.md)
+  * [Clipboard Viewer Component Web Page](http://www.delphidabbler.com/software/cbview).

@@ -1,22 +1,21 @@
-#summary Description of the TPJSystemFolders.Temp class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Temp class function =
+# Temp class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJSystemFolders TPJSystemFolders]_
+**Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-{{{
+```
 class function Temp: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the fully qualified path name of the temporary files folder. This is the folder where programs are expected to create their temporary files.
 

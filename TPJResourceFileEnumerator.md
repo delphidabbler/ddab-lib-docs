@@ -1,33 +1,34 @@
-#summary TPJResourceFileEnumerator class description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJResourceFileEnumerator =
+# TPJResourceFileEnumerator #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Introduced:* v1.1
+**Introduced:** v1.1
 
-This class implements an enumerator for _[TPJResourceFile]_ objects. It enumerates all the resources entries of the associated _[TPJResourceFile]_ instance.
+This class implements an enumerator for _[TPJResourceFile](TPJResourceFile.md)_ objects. It enumerates all the resources entries of the associated _[TPJResourceFile](TPJResourceFile.md)_ instance.
 
-The main purpose of this class is to be used in conjunction with _[TPJResourceFile]_'s _[TPJResourceFileGetEnumerator GetEnumerator]_*^v1.1^* method to enable _[TPJResourceFile]_ instances to be enumerated in a *for..in* statement. In this case the class is instantiated and used behind the scenes by the compiler.
+The main purpose of this class is to be used in conjunction with _[TPJResourceFile](TPJResourceFile.md)_'s _[GetEnumerator](TPJResourceFileGetEnumerator.md)_**<sup>v1.1</sup>** method to enable _[TPJResourceFile](TPJResourceFile.md)_ instances to be enumerated in a **for..in** statement. In this case the class is instantiated and used behind the scenes by the compiler.
 
-Therefore in compilers that support the *for..in* statement (i.e. Delphi 2005 and later) there is rarely a need to use this class directly.
+Therefore in compilers that support the **for..in** statement (i.e. Delphi 2005 and later) there is rarely a need to use this class directly.
 
-Users of earlier compilers can use the class directly from code. If this is done then the class must be instantiated via a call to _[TPJResourceFile].[TPJResourceFileGetEnumerator GetEnumerator]_*^v1.1^* - the constructor must not be called directly. See the _[TPJResourceFile].[TPJResourceFileGetEnumerator GetEnumerator]_*^v1.1^* documentation for an example of how to use _TPJResourceFileEnumerator_.
+Users of earlier compilers can use the class directly from code. If this is done then the class must be instantiated via a call to _[TPJResourceFile](TPJResourceFile.md).[GetEnumerator](TPJResourceFileGetEnumerator.md)_**<sup>v1.1</sup>** - the constructor must not be called directly. See the _[TPJResourceFile](TPJResourceFile.md).[GetEnumerator](TPJResourceFileGetEnumerator.md)_**<sup>v1.1</sup>** documentation for an example of how to use _TPJResourceFileEnumerator_.
 
-== Methods ==
+## Methods ##
 
-|| *Method* || *Description* ||
-|| _Create_ || Constructor. This method should not be called directly. It is called internally by _[TPJResourceFile].[TPJResourceFileGetEnumerator GetEnumerator]_*^1.1^* to create a new enumerator instance. ||
-|| _!MoveNext_ || Moves the enumerator to the next item if one exists. Returns True if such an item exists or False if the enumeration has ended. In a new enumeration _!MoveNext_ must be called to move to the first item. ||
-|| _!GetCurrent_ || Returns the current item in the enumeration. It is an error to call this method before _!MoveNext_ has been called or if _!MoveNext_ returns False. ||
+| **Method** | **Description** |
+|:-----------|:----------------|
+| _Create_ | Constructor. This method should not be called directly. It is called internally by _[TPJResourceFile](TPJResourceFile.md).[GetEnumerator](TPJResourceFileGetEnumerator.md)_**<sup>1.1</sup>** to create a new enumerator instance. |
+| _MoveNext_ | Moves the enumerator to the next item if one exists. Returns True if such an item exists or False if the enumeration has ended. In a new enumeration _MoveNext_ must be called to move to the first item. |
+| _GetCurrent_ | Returns the current item in the enumeration. It is an error to call this method before _MoveNext_ has been called or if _MoveNext_ returns False. |
 
-== Property ==
+## Property ##
 
-|| *Property* || *Description* ||
-|| _Current_ || Read only. Returns the current item in the enumeration. It is an error to read this property before _!MoveNext_ has been called or if _!MoveNext_ returns False. ||
+| **Property** | **Description** |
+|:-------------|:----------------|
+| _Current_ | Read only. Returns the current item in the enumeration. It is an error to read this property before _MoveNext_ has been called or if _MoveNext_ returns False. |

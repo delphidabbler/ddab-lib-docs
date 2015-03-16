@@ -1,24 +1,23 @@
-#summary Description of the TPJSystemFolders.SystemWow64 class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !SystemWow64 class function =
+# SystemWow64 class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJSystemFolders TPJSystemFolders]_
+**Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-*Introduced:* v3.1
+**Introduced:** v3.1
 
-{{{
+```
 class function SystemWow64: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the fully qualified path name of the system folder used by WOW64. This is the folder used to store shared 32 bit code on 64 bit Windows.
 

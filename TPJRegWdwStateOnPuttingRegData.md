@@ -1,32 +1,31 @@
-#summary Description of the TPJRegWdwState.OnPuttingRegData method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnPuttingRegData event =
+# OnPuttingRegData event #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJRegWdwState TPJRegWdwState]_
+**Class:** _[TPJRegWdwState](TPJRegWdwState.md)_
 
-*Introduced:* v5.1
+**Introduced:** v5.1
 
-{{{
+```
 type
   TPJWdwStateRegAccessEvent = procedure(
     const Reg: TRegistry
   ) of object;
 
 property OnPuttingRegData: TPJWdwStateRegAccessEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
-_!OnPuttingRegData_ allows user to write additional registry data when the component writes window state information.
+_OnPuttingRegData_ allows user to write additional registry data when the component writes window state information.
 
 The event is triggered just after the window's state information is written to the registry. The event makes available a reference to the _TRegistry_ object used to write the data. This object can be used to write any additional application defined information to the registry.
 
-For example, the size of some controls that appear on the main form may be written. Such data can be read again using the _[TPJRegWdwStateOnGettingRegData OnGettingRegData]_ *^v5.1^* event.
+For example, the size of some controls that appear on the main form may be written. Such data can be read again using the _[OnGettingRegData](TPJRegWdwStateOnGettingRegData.md)_ **<sup>v5.1</sup>** event.

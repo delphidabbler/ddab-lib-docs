@@ -1,25 +1,24 @@
-#summary Description of the TPJFormDropFiles.FileName property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !FileName property =
+# FileName property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJFormDropFiles TPJFormDropFiles]_
+**Class:** _[TPJFormDropFiles](TPJFormDropFiles.md)_
 
-{{{
+```
 property FileName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 The name of a file dropped on the form.
 
-When a file is dropped on the form, this read-only property contains the fully specified name of the file. If more than one file is dropped, _FileName_ stores the name of the first file dropped. If no files have been dropped then the empty string is returned. 
+When a file is dropped on the form, this read-only property contains the fully specified name of the file. If more than one file is dropped, _FileName_ stores the name of the first file dropped. If no files have been dropped then the empty string is returned.
 
-Note: when one or more files have been dropped _!FileName_ is the same as the first element of the _[TPJFormDropFilesFiles Files]_ property. If no files are available then _!FileName_ = ''.
+Note: when one or more files have been dropped _FileName_ is the same as the first element of the _[Files](TPJFormDropFilesFiles.md)_ property. If no files are available then _FileName_ = ''.

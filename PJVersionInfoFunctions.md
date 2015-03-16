@@ -1,9 +1,9 @@
-#summary Version Information public routines.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Version Information Public Routines =
+# Version Information Public Routines #
 
-|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/PJVersionInfoRoutines Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the Version Information Component **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/PJVersionInfoRoutines)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

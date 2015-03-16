@@ -1,25 +1,24 @@
-#summary Description of the TPJFormDropFiles.Files property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Files property =
+# Files property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJFormDropFiles TPJFormDropFiles]_
+**Class:** _[TPJFormDropFiles](TPJFormDropFiles.md)_
 
-{{{
+```
 property Files[Idx: Integer]: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This read-only array property contains an indexed list of the fully specified names of the files dropped on the form. The array is zero based. The _[TPJFormDropFilesCount Count]_ property gives the number of files dropped. Attempts to access array elements outside the index range result in an exception being raised.
+This read-only array property contains an indexed list of the fully specified names of the files dropped on the form. The array is zero based. The _[Count](TPJFormDropFilesCount.md)_ property gives the number of files dropped. Attempts to access array elements outside the index range result in an exception being raised.
 
-The contents of _Files_ may not exactly reflect all the names of the dropped files and folders. The listed files can be varied by changing the of the _[TPJFormDropFilesOptions Options]_ property. Furthermore, files filtered out via the _[TPJFormDropFilesFilter Filter]_ property or the _[TPJFormDropFilesOnFileFilter OnFileFilter]_ event handler are not included in _Files_. To ensure the property contains exactly the files and folders that were dropped set the _Options_ property to `dfoIncFiles, dfoIncFolders` (the default) and assign neither a _Filter_ component nor a _!OnFileFilter_ event handler.
+The contents of _Files_ may not exactly reflect all the names of the dropped files and folders. The listed files can be varied by changing the of the _[Options](TPJFormDropFilesOptions.md)_ property. Furthermore, files filtered out via the _[Filter](TPJFormDropFilesFilter.md)_ property or the _[OnFileFilter](TPJFormDropFilesOnFileFilter.md)_ event handler are not included in _Files_. To ensure the property contains exactly the files and folders that were dropped set the _Options_ property to `dfoIncFiles, dfoIncFolders` (the default) and assign neither a _Filter_ component nor a _OnFileFilter_ event handler.
 
-To test whether the file at index _Idx_ is a file or a folder use _[TPJFormDropFilesIsFolder IsFolder]_.
+To test whether the file at index _Idx_ is a file or a folder use _[IsFolder](TPJFormDropFilesIsFolder.md)_.

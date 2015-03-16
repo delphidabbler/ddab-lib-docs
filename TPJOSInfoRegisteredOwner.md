@@ -1,27 +1,26 @@
-#summary Description of the TPJOSInfo.RegisteredOwner class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !RegisteredOwner class function =
+# RegisteredOwner class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-*Introduced:* v4.0
+**Introduced:** v4.0
 
-{{{
+```
 class function RegisteredOwner: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the name of the registered owner of the Windows installation.
 
-*See also*
+**See also**
 
-  * _[TPJOSInfoRegisteredOrganisation RegisteredOrganisation]_
+  * _[RegisteredOrganisation](TPJOSInfoRegisteredOrganisation.md)_

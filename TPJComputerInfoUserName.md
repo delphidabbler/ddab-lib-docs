@@ -1,21 +1,20 @@
-#summary Description of the TPJComputerInfo.UserName class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !UserName class function =
+# UserName class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-{{{
+```
 class function UserName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the name of currently logged in user.

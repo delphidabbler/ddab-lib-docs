@@ -1,23 +1,22 @@
-#summary Description of the TPJVCLMsgDlg.CreateDialog method
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !CreateDialog method =
+# CreateDialog method #
 
-*Project:* [MessageDialogComponents Message Dialogue Components].
+**Project:** [Message Dialogue Components](MessageDialogComponents.md).
 
-*Unit:* _PJMessageDialog_.
+**Unit:** _PJMessageDialog_.
 
-*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+**Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-{{{
+```
 function CreateDialog: TForm;
-}}}
+```
 
-== Description ==
+## Description ##
 
-The _!CreateDialog_ method creates an instance of a dialogue box and returns it. This instance is customised according to the component's properties. However, no sound is played by this method regardless of the state of the _[TPJVCLMsgDlgMakeSound MakeSound]_ property.
+The _CreateDialog_ method creates an instance of a dialogue box and returns it. This instance is customised according to the component's properties. However, no sound is played by this method regardless of the state of the _[MakeSound](TPJVCLMsgDlgMakeSound.md)_ property.
 
 Note that the method's caller is responsible for showing and freeing dialogue box instances created by this method.

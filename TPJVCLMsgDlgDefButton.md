@@ -1,18 +1,17 @@
-#summary Description of the TPJVCLMsgDlg.DefButton property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !DefButton property =
+# DefButton property #
 
-*Project:* [MessageDialogComponents Message Dialogue Components].
+**Project:** [Message Dialogue Components](MessageDialogComponents.md).
 
-*Unit:* _PJMessageDialog_.
+**Unit:** _PJMessageDialog_.
 
-*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+**Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-{{{
+```
 type
   TMsgDlgButton = (
     mbYes, mbNo, mbOK, mbCancel, mbAbort, mbRetry, mbIgnore,
@@ -20,12 +19,12 @@ type
   );
 
 property DefButton: TMsgDlgButton;
-}}}
+```
 
-== Description ==
+## Description ##
 
-The _!DefButton_ property specifies which button is to be the default button in the dialogue. If the chosen button is not displayed in the dialogue then the first (leftmost) button is the default.
+The _DefButton_ property specifies which button is to be the default button in the dialogue. If the chosen button is not displayed in the dialogue then the first (leftmost) button is the default.
 
-See the documentation of the _[TPJVCLMsgDlgButtons Buttons]_ property for a description of the available buttons.
+See the documentation of the _[Buttons](TPJVCLMsgDlgButtons.md)_ property for a description of the available buttons.
 
 The default value of the property is `mbOK`.

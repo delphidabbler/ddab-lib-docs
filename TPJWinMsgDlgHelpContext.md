@@ -1,28 +1,27 @@
-#summary Description of the TPJWinMsgDlg.HelpContext property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !HelpContext property =
+# HelpContext property #
 
-*Project:* [MessageDialogComponents Message Dialogue Components].
+**Project:** [Message Dialogue Components](MessageDialogComponents.md).
 
-*Unit:* _PJMessageDialog_.
+**Unit:** _PJMessageDialog_.
 
-*Class:* _[TPJWinMsgDlg TPJWinMsgDlg]_
+**Class:** _[TPJWinMsgDlg](TPJWinMsgDlg.md)_
 
-{{{
+```
 type
   THelpContext = -MaxLongInt..MaxLongInt;
 
 property HelpContext: THelpContext;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Set the _!HelpContext_ property to the context number of the relevant topic in the help file specified by the _[TPJWinMsgDlgHelpFile HelpFile]_ property. When a non-zero help context number is specified a help button is displayed in the dialogue box which calls context sensitive help with the given help context when pressed.
+Set the _HelpContext_ property to the context number of the relevant topic in the help file specified by the _[HelpFile](TPJWinMsgDlgHelpFile.md)_ property. When a non-zero help context number is specified a help button is displayed in the dialogue box which calls context sensitive help with the given help context when pressed.
 
-Changing the value of _!HelpContext_ from zero to non-zero and back again changes the value of the _[TPJWinMsgDlgDlgType DlgType]_ property. See the _[TPJWinMsgDlgDlgType DlgType page]_ for full details.
+Changing the value of _HelpContext_ from zero to non-zero and back again changes the value of the _[DlgType](TPJWinMsgDlgDlgType.md)_ property. See the _[DlgType page](TPJWinMsgDlgDlgType.md)_ for full details.
 
-If _[TPJWinMsgDlgOnHelp OnHelp]_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.
+If _[OnHelp](TPJWinMsgDlgOnHelp.md)_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.

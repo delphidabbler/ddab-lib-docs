@@ -1,16 +1,15 @@
-#summary Resource File Unit Example 9.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #9: Saving a resource file =
+# Example #9: Saving a resource file #
 
-Once you have created or modified a resource file object there comes a time when you need to save it somewhere. To do this we simply use the _[TPJResourceFileSaveToFile SaveToFile]_ or _[TPJResourceFileSaveToStream SaveToStream]_ methods of _[TPJResourceFile TPJResourceFile]_.
+Once you have created or modified a resource file object there comes a time when you need to save it somewhere. To do this we simply use the _[SaveToFile](TPJResourceFileSaveToFile.md)_ or _[SaveToStream](TPJResourceFileSaveToStream.md)_ methods of _[TPJResourceFile](TPJResourceFile.md)_.
 
-The following code shows how to use _[TPJResourceFileSaveToFile SaveToFile]_:
+The following code shows how to use _[SaveToFile](TPJResourceFileSaveToFile.md)_:
 
-{{{
+```
 var
   ResFile: TPJResourceFile;
 begin
@@ -19,11 +18,11 @@ begin
   // Save the file to 'MyResource.res'
   ResFile.SaveToFile('MyResource.res');
 end;
-}}}
+```
 
-The next code snippet shows how accomplish the same thing using _[TPJResourceFileSaveToStream SaveToStream]_:
+The next code snippet shows how accomplish the same thing using _[SaveToStream](TPJResourceFileSaveToStream.md)_:
 
-{{{
+```
 var
   ResFile: TPJResourceFile;
   Stream: TStream;
@@ -37,12 +36,12 @@ begin
     Stream.Free;
   end;
 end;
-}}}
+```
 
-In real life we would just use the code in the first fragment, but this suffices as an example of using _[TPJResourceFileSaveToStream SaveToStream]_.
+In real life we would just use the code in the first fragment, but this suffices as an example of using _[SaveToStream](TPJResourceFileSaveToStream.md)_.
 
-*Links:*
+**Links:**
 
-  * [ResFileExample10 Next Example]
-  * [ResFileExample8 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Next Example](ResFileExample10.md)
+  * [Previous Example](ResFileExample8.md)
+  * Back to [List of Examples](ResFileExamples.md)

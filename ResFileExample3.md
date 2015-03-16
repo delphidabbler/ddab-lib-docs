@@ -1,16 +1,15 @@
-#summary Resource File Unit Example 3.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #3: Finding a resource =
+# Example #3: Finding a resource #
 
-To find a resource we use either the _[TPJResourceFileFindEntry FindEntry]_ or _[TPJResourceFileFindEntryIndex FindEntryIndex]_ methods of _[TPJResourceFile TPJResourceFile]_. The difference is that _[TPJResourceFileFindEntry FindEntry]_ returns the _[TPJResourceEntry TPJResourceEntry]_ object for the entry (or `nil` if not found) while _[TPJResourceFileFindEntryIndex FindEntryIndex]_ returns the index of the entry in the _[TPJResourceFileEntries Entries]_ property.
+To find a resource we use either the _[FindEntry](TPJResourceFileFindEntry.md)_ or _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_ methods of _[TPJResourceFile](TPJResourceFile.md)_. The difference is that _[FindEntry](TPJResourceFileFindEntry.md)_ returns the _[TPJResourceEntry](TPJResourceEntry.md)_ object for the entry (or `nil` if not found) while _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_ returns the index of the entry in the _[Entries](TPJResourceFileEntries.md)_ property.
 
-Let us assume a resource file is loaded into the _[TPJResourceFile TPJResourceFile]_ variable _!ResFile_. We want to find a `RT_HTML` resource named `INDEX_HTML`. The following code checks if such a resource exists and displays its data size in a message box, or a message saying the resource doesn't exist. This first version of the code uses _[TPJResourceFileFindEntry FindEntry]_:
+Let us assume a resource file is loaded into the _[TPJResourceFile](TPJResourceFile.md)_ variable _ResFile_. We want to find a `RT_HTML` resource named `INDEX_HTML`. The following code checks if such a resource exists and displays its data size in a message box, or a message saying the resource doesn't exist. This first version of the code uses _[FindEntry](TPJResourceFileFindEntry.md)_:
 
-{{{
+```
 // Version using FindEntry
 var
   ResFile: TPJResourceFile;
@@ -30,11 +29,11 @@ begin
   ...
   // Don't forget to free ResFile at some stage.
 end;
-}}}
+```
 
-The second version of the code shows how the same result is obtained with _[TPJResourceFileFindEntryIndex FindEntryIndex]_:
+The second version of the code shows how the same result is obtained with _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_:
 
-{{{
+```
 // Version using FindEntryIdex
 var
   ResFile: TPJResourceFile;
@@ -54,11 +53,11 @@ begin
     ShowMessage('Can''t find resource');
   ...
 end;
-}}}
+```
 
-Note that we have used the "short form" of the _[TPJResourceFileFindEntry FindEntry]_ and _[TPJResourceFileFindEntryIndex FindEntryIndex]_ methods above: they find the first resource with the given type and name, irrespective of language id. The long versions of the methods find a specific resource type, name and language. For example the following code finds a `RT_HTML` resource named `INDEX_HTML` with a language id of `$0809`:
+Note that we have used the "short form" of the _[FindEntry](TPJResourceFileFindEntry.md)_ and _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_ methods above: they find the first resource with the given type and name, irrespective of language id. The long versions of the methods find a specific resource type, name and language. For example the following code finds a `RT_HTML` resource named `INDEX_HTML` with a language id of `$0809`:
 
-{{{
+```
 // "Full" version of FindEntry
 var
   ResFile: TPJResourceFile;
@@ -69,10 +68,10 @@ begin
   if Assigned(Entry) then
     ... etc ...
 end;
-}}}
+```
 
-*Links:*
+**Links:**
 
-  * [ResFileExample4 Next Example]
-  * [ResFileExample2 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Next Example](ResFileExample4.md)
+  * [Previous Example](ResFileExample2.md)
+  * Back to [List of Examples](ResFileExamples.md)

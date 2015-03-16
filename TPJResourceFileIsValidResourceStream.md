@@ -1,36 +1,35 @@
-#summary Description of the TPJResourceFile.IsValidResourceStream method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsValidResourceStream method =
+# IsValidResourceStream method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceFile TPJResourceFile]_
+**Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-{{{
+```
 class function IsValidResourceStream(const Stm: TStream): Boolean;
-}}}
+```
 
-This class method checks if a stream contains data representing a valid 32 bit resource file starting at the current position in the stream. This method checks that a 32 bit resource file header is present but does not validate the whole of the file. Note that the stream is *not* rewound to the starting position after the check is made.
+This class method checks if a stream contains data representing a valid 32 bit resource file starting at the current position in the stream. This method checks that a 32 bit resource file header is present but does not validate the whole of the file. Note that the stream is **not** rewound to the starting position after the check is made.
 
-Use _!IsValidResourceStream_ to test a stream for validity before loading it into a _[TPJResourceFile TPJResourceFile]_ object.
+Use _IsValidResourceStream_ to test a stream for validity before loading it into a _[TPJResourceFile](TPJResourceFile.md)_ object.
 
-*_Parameter:_*
+**_Parameter:_**
 
   * _Stm_: The stream containing the date to be checked.
 
-*_Returns:_*
+**_Returns:_**
 
 `True` if the stream contains the required header information or `False` if the data is not a valid resource file.
 
-*_Example:_*
+**_Example:_**
 
-{{{
+```
 var
   Stm: TStream;
   SavedPos: Int64;
@@ -56,4 +55,4 @@ begin
     Stm.Free;
   end;
 end;
-}}}
+```

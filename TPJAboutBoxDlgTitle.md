@@ -1,22 +1,21 @@
-#summary Description of the TPJAboutBoxDlg.Title property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Title property =
+# Title property #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 property Title: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 The _Title_ property stores the string that is displayed in the title bar of the about dialog box.
 

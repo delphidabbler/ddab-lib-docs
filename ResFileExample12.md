@@ -1,12 +1,11 @@
-#summary Resource File Unit Example 12.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #12: Recording a compilation date in a resource file^v1.1†^ =
+# Example #12: Recording a compilation date in a resource file<sup>v1.1†</sup> #
 
-*† _Note:* The first block of code in this example requires v1.1 of the Resource File Unit if compiled with Delphi 2009 or later. When compiled with an earlier compiler v1.0 will suffice._
+_† **Note:** The first block of code in this example requires v1.1 of the Resource File Unit if compiled with Delphi 2009 or later. When compiled with an earlier compiler v1.0 will suffice._
 
 Sometimes it's useful for a program to "know" the date when it was last compiled. One way to do this is to include a resource in the program that contains the compile date. The program can then read the date from the resource when it needs it.
 
@@ -18,7 +17,7 @@ To begin with, here's routine that will store the current date, as an ANSI strin
 
 Here's the code:
 
-{{{
+```
 uses
   SysUtils, Classes, Windows, PJResFile;
 
@@ -55,22 +54,22 @@ begin
     ResFile.Free;
   end;
 end;
-}}}
+```
 
 Here's how it works:
 
-  # _Load any existing file:_ Check if the resource file already exists and if so we load it. 
-  # _Check if there's already a suitable resource:_ Check if the required resource already exists and if so we keep a reference to it so the data can be overwritten. If the required resource doesn't exist we create it. 
-  # _Store the current date in the resource:_ The current date is formatted and stored in _!DateStr_. The next step depends on if a Unicode version of Delphi is being used or not. If so we simply convert _!DateStr_ to its ANSI representation in a byte array and assign that to the _[TPJResourceEntry#Properties DataBytes]_*^v1.1^* property, which overwrites any existing value. If a Unicode compiler is not being used we use _[TPJResourceEntry#Properties Data]_ property instead, first clearing the stream, then write copying the (ANSI) string to it before reseting the stream pointer. 
-  # _Save the modified resource file:_ Any existing file is overwritten.
+  1. _Load any existing file:_ Check if the resource file already exists and if so we load it.
+  1. _Check if there's already a suitable resource:_ Check if the required resource already exists and if so we keep a reference to it so the data can be overwritten. If the required resource doesn't exist we create it.
+  1. _Store the current date in the resource:_ The current date is formatted and stored in _DateStr_. The next step depends on if a Unicode version of Delphi is being used or not. If so we simply convert _DateStr_ to its ANSI representation in a byte array and assign that to the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property, which overwrites any existing value. If a Unicode compiler is not being used we use _[Data](TPJResourceEntry#Properties.md)_ property instead, first clearing the stream, then write copying the (ANSI) string to it before reseting the stream pointer.
+  1. _Save the modified resource file:_ Any existing file is overwritten.
 
 Note that any existing resources in the file are preserved. If the resource file contained the "data" resource it is overwritten, but if the file had no such resource one is added. If the resource file didn't exist a new file is created with a single "date" resource.
 
 Any program using the resource has to simply read the date string as ANSI text, convert it to a _TDateTime_ etc. if necessary and use it as required.
 
-Of course you could always store a raw _TDateTime_ value in resources instead of a format string. To do this replace the declaration of _!DateStr_ with a new local variable _!DateNow_ with type _TDateTime_ and replace the code in the section introduced by the `// 3: Store the current date in the resource` comment with the following:
+Of course you could always store a raw _TDateTime_ value in resources instead of a format string. To do this replace the declaration of _DateStr_ with a new local variable _DateNow_ with type _TDateTime_ and replace the code in the section introduced by the `// 3: Store the current date in the resource` comment with the following:
 
-{{{
+```
     ...
     // 3: Store the current date in the resource
     DateNow := Now;
@@ -79,11 +78,11 @@ Of course you could always store a raw _TDateTime_ value in resources instead of
     DateResource.Data.Position := 0;
     // 4: Save the modified resource file
     ...
-}}}
+```
 
 This routine could be included in a console application that takes the resource file name as a parameter then updates or creates the resource file containing the current date, like this:
 
-{{{
+```
 program DateIns;
 
 {$APPTYPE CONSOLE}
@@ -117,11 +116,11 @@ begin
     end;
   end;
 end.
-}}}
+```
 
 You can then insert this program in your build tool chain.
 
-*Links:*
+**Links:**
 
-  * [ResFileExample11 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Previous Example](ResFileExample11.md)
+  * Back to [List of Examples](ResFileExamples.md)

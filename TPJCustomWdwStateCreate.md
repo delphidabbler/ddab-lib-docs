@@ -1,23 +1,22 @@
-#summary Description of the TPJCustomWdwState.Create method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Create method =
+# Create method #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-{{{
+```
 constructor Create(AOwner: TComponent);
-}}}
+```
 
-== Description ==
+## Description ##
 
 This class constructor permits only one instance of a component derived from _TPJCustomWdwState_ to be placed on a form at any one time. This restriction is enforced since it makes no sense to have more that one component saving and restoring the window's size, position and state.
 
-*Note:* This constructor cannot be used to create components dynamically at run-time and therefore must never be called directly from source code. Use the _[TPJCustomWdwStateCreateStandAlone CreateStandAlone]_ constructor instead.
+**Note:** This constructor cannot be used to create components dynamically at run-time and therefore must never be called directly from source code. Use the _[CreateStandAlone](TPJCustomWdwStateCreateStandAlone.md)_ constructor instead.

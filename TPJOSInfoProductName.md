@@ -1,29 +1,28 @@
-#summary Description of the TPJOSInfo.ProductName class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProductName class function =
+# ProductName class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function ProductName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the name of the operating system product. The product can be thought of as the marketing name for the operating system. If the product can't be determined then the empty string is returned.
 
-The product name for both Windows NT 3.51 and Windows NT 4 is "Windows NT". Use the _[TPJOSInfoMajorVersion MajorVersion]_ and _[TPJOSInfoMinorVersion MinorVersion]_ methods to distinguish between them.
+The product name for both Windows NT 3.51 and Windows NT 4 is "Windows NT". Use the _[MajorVersion](TPJOSInfoMajorVersion.md)_ and _[MinorVersion](TPJOSInfoMinorVersion.md)_ methods to distinguish between them.
 
-A unique code representing the OS product can be found by using the _[TPJOSInfoProduct Product]_ method.
+A unique code representing the OS product can be found by using the _[Product](TPJOSInfoProduct.md)_ method.
 
 When the program is run in compatibility mode, this method will return the product name of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the product name of the installed operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` this method will return the product name of the installed operating system, regardless of any compatibility mode.

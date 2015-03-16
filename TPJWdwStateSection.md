@@ -1,22 +1,21 @@
-#summary Description of the TPJWdwState.Section property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Section property =
+# Section property #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJWdwState TPJWdwState]_
+**Class:** _[TPJWdwState](TPJWdwState.md)_
 
-{{{
+```
 property Section: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This property names the section within the ini file in which the window's size, position and state information is recorded.
 

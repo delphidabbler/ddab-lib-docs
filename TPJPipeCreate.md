@@ -1,9 +1,9 @@
-#summary Description of the TPJPipe.Create constructors
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Create constructors =
+# Create constructors #
 
-|| Sorry, this documentation has moved to the I/O Utility Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeCreate Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the I/O Utility Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJPipeCreate)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

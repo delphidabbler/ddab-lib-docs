@@ -1,23 +1,22 @@
-#summary Description of the TPJSpecialFolderEnum.AtEnd method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !AtEnd method =
+# AtEnd method #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_
+**Class:** _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_
 
-{{{
+```
 function AtEnd: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-_!AtEnd_ tests whether the end of the special folder enumeration has been reached.
+_AtEnd_ tests whether the end of the special folder enumeration has been reached.
 
 The function returns true when all the special folder identifier values have been returned and false otherwise.

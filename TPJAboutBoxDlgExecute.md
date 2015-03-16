@@ -1,21 +1,20 @@
-#summary Description of the TPJAboutBoxDlg.Execute method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Execute method =
+# Execute method #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 procedure Execute;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This method displays the About Box dialog and returns when the user closes it.

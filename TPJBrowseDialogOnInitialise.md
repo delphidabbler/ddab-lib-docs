@@ -1,25 +1,24 @@
-#summary Description of the TPJBrowseDialog.OnInitialise event.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnInitialise event =
+# OnInitialise event #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJBrowseDialog TPJBrowseDialog]_
+**Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-{{{
+```
 property OnInitialise: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
-_!OnInitialise_ occurs when the dialog initialises.
+_OnInitialise_ occurs when the dialog initialises.
 
-This event is triggered after the dialog has opened and the default folder has been selected but before the dialog is displayed. Because of this the _[TPJBrowseDialogOnSelChange OnSelChange]_ and _[TPJBrowseDialogOnSelChangeEx OnSelChangeEx]_ events will usually fire before _!OnInitialise_. The dialog's window handle is available via the _[TPJBrowseDialogHandle Handle]_ property.
+This event is triggered after the dialog has opened and the default folder has been selected but before the dialog is displayed. Because of this the _[OnSelChange](TPJBrowseDialogOnSelChange.md)_ and _[OnSelChangeEx](TPJBrowseDialogOnSelChangeEx.md)_ events will usually fire before _OnInitialise_. The dialog's window handle is available via the _[Handle](TPJBrowseDialogHandle.md)_ property.
 
-Write an _!OnInitialise_ event handler to perform special processing when the dialog is intialised.
+Write an _OnInitialise_ event handler to perform special processing when the dialog is intialised.

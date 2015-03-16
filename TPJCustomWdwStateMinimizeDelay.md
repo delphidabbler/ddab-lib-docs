@@ -1,22 +1,21 @@
-#summary Description of the TPJCustomWdwState.MinimizeDelay property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !MinimizeDelay property =
+# MinimizeDelay property #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-{{{
+```
 property MinimizeDelay: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Sets the delay between displaying a normalised form on screen and minimising it if required.
 

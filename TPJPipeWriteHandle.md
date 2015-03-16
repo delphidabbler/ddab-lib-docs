@@ -1,9 +1,9 @@
-#summary Description of the TPJPipe.WriteHandle property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !WriteHandle property =
+# WriteHandle property #
 
-|| Sorry, this documentation has moved to the I/O Utility Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteHandle Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the I/O Utility Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJPipeWriteHandle)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

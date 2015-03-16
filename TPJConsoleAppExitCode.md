@@ -1,9 +1,9 @@
-#summary Description of the TPJConsoleApp.ExitCode property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ExitCode property =
+# ExitCode property #
 
-|| Sorry, this documentation has moved to the Console Application Runner Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppExitCode Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the Console Application Runner Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJCustomConsoleAppExitCode)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

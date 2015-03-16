@@ -1,27 +1,26 @@
-#summary Description of the TPJCustomWdwState.OnAfterWindowSized event.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnAfterWindowSized event =
+# OnAfterWindowSized event #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_.
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-*Introduced:* v5.4
+**Introduced:** v5.4
 
-{{{
+```
 property OnAfterWindowSized: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This published event is triggered just after the window's size has been set. This occurs before the window is actually restored on screen and before its state has been set.
 
 Handle this event if you need to determine the _normal_ size and position of the window, regardless of its final state. Use methods of the host form to find the required size and position information.
 
-See also: _[TPJCustomWdwStateOnAfterWindowRestored OnAfterWindowRestored]_ *^v5.4^*
+See also: _[OnAfterWindowRestored](TPJCustomWdwStateOnAfterWindowRestored.md)_ **<sup>v5.4</sup>**

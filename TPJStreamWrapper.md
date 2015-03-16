@@ -1,9 +1,9 @@
-#summary TPJStreamWrapper class description.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJStreamWrapper =
+# TPJStreamWrapper #
 
-|| Sorry, this documentation has moved to the new Stream Extension Classes *[http://wiki.delphidabbler.com/index.php/Docs/TPJStreamWrapper Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the new Stream Extension Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJStreamWrapper)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

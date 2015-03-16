@@ -1,16 +1,15 @@
-#summary Version Information Component Example 3.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example 3: Using translation, character set and language properties =
+# Example 3: Using translation, character set and language properties #
 
-This example shows how to use the translation, character set and language properties of _[TPJVersionInfo TPJVersionInfo]_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.
+This example shows how to use the translation, character set and language properties of _[TPJVersionInfo](TPJVersionInfo.md)_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.
 
-Drop a _TListBox_ and a _[TPJVersionInfo TPJVersionInfo]_ component on a form and add the following _!OnCreate_ event handler to the form:
+Drop a _TListBox_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on a form and add the following _OnCreate_ event handler to the form:
 
-{{{
+```
 procedure TEgForm1.FormCreate(Sender: TObject);
 var
   I: Integer;
@@ -35,11 +34,11 @@ begin
   else
     ListBox1.Items.Add('NO VERSION INFO');
 end;
-}}}
+```
 
 When the form is displayed details of languages and character sets for each translation are displayed in the list box.
 
-*Links:*
+**Links:**
 
-  * Back to the [VerInfoExamples Examples List]
-  * Back to the [VersionInformationComponent Main Component Page]
+  * Back to the [Examples List](VerInfoExamples.md)
+  * Back to the [Main Component Page](VersionInformationComponent.md)

@@ -1,22 +1,21 @@
-#summary Description of the TPJOSInfo.Description class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Description class function =
+# Description class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function Description: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns a description of the operating system. The description depends on the available information and the platform.
 
@@ -26,4 +25,4 @@ For NT platform operating systems the name of the operating system is provided (
 
 When the program is run in compatibility mode, this method will return the description of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the description of the installed operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` this method will return the description of the installed operating system, regardless of any compatibility mode.

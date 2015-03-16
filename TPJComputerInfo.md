@@ -1,40 +1,40 @@
-#summary TPJComputerInfo class description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJComputerInfo =
+# TPJComputerInfo #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
 This is a static class that provides information about the host computer. The class' functionality is all exposed via its static methods. Because it is static the class does not need to be instantiated before use.
 
-== Methods ==
+## Methods ##
 
-|| *Method* || *Description* ||
-|| _[TPJComputerInfoBiosVendor BiosVendor]_ [v4.0] || Gets the name of the computer's BIOS vendor. ||
-|| _[TPJComputerInfoBootMode BootMode]_ [v3.1] || Determines the operating system mode into which the the computer was booted. ||
-|| _[TPJComputerInfoComputerName ComputerName]_ || Gets the computer's name. ||
-|| _[TPJComputerInfoIs64Bit Is64Bit]_ || Checks if processor is 64 bit. ||
-|| _[TPJComputerInfoIsAdmin IsAdmin]_ [v4.0] || Checks if the current user has administrator privileges. ||
-|| _[TPJComputerInfoIsNetworkPresent IsNetworkPresent]_ [v3.1] || Checks if a network is present. ||
-|| _[TPJComputerInfoIsUACActive IsUACActive]_ [v4.0] || Checks if UAC is active on the computer. ||
-|| _[TPJComputerInfoMACAddress MACAddress]_ || Gets the address of the first network card in the computer. ||
-|| _[TPJComputerInfoProcessor Processor]_ || Gets the kind of processor used in the computer. ||
-|| _[TPJComputerInfoProcessorCount ProcessorCount]_ || Gets the number of processors in the computer. ||
-|| _[TPJComputerInfoProcessorIdentifier ProcessorIdentifier]_ [v4.0] || Gets the identifier of the computer's processor. ||
-|| _[TPJComputerInfoProcessorName ProcessorName]_ [v4.0] || Gets the name of the computer's processor. ||
-|| _[TPJComputerInfoSystemManufacturer SystemManufacturer]_ [v4.0] || Gets the name of the computer's manufacturer. ||
-|| _[TPJComputerInfoSystemProductName SystemProductName]_ [v4.0] || Gets the computer's product or model name. || 
-|| _[TPJComputerInfoUserName UserName]_ || Gets the current user name. ||
+| **Method** | **Description** |
+|:-----------|:----------------|
+| _[BiosVendor](TPJComputerInfoBiosVendor.md)_ [v4.0] | Gets the name of the computer's BIOS vendor. |
+| _[BootMode](TPJComputerInfoBootMode.md)_ [v3.1] | Determines the operating system mode into which the the computer was booted. |
+| _[ComputerName](TPJComputerInfoComputerName.md)_ | Gets the computer's name. |
+| _[Is64Bit](TPJComputerInfoIs64Bit.md)_ | Checks if processor is 64 bit. |
+| _[IsAdmin](TPJComputerInfoIsAdmin.md)_ [v4.0] | Checks if the current user has administrator privileges. |
+| _[IsNetworkPresent](TPJComputerInfoIsNetworkPresent.md)_ [v3.1] | Checks if a network is present. |
+| _[IsUACActive](TPJComputerInfoIsUACActive.md)_ [v4.0] | Checks if UAC is active on the computer. |
+| _[MACAddress](TPJComputerInfoMACAddress.md)_ | Gets the address of the first network card in the computer. |
+| _[Processor](TPJComputerInfoProcessor.md)_ | Gets the kind of processor used in the computer. |
+| _[ProcessorCount](TPJComputerInfoProcessorCount.md)_ | Gets the number of processors in the computer. |
+| _[ProcessorIdentifier](TPJComputerInfoProcessorIdentifier.md)_ [v4.0] | Gets the identifier of the computer's processor. |
+| _[ProcessorName](TPJComputerInfoProcessorName.md)_ [v4.0] | Gets the name of the computer's processor. |
+| _[SystemManufacturer](TPJComputerInfoSystemManufacturer.md)_ [v4.0] | Gets the name of the computer's manufacturer. |
+| _[SystemProductName](TPJComputerInfoSystemProductName.md)_ [v4.0] | Gets the computer's product or model name. |
+| _[UserName](TPJComputerInfoUserName.md)_ | Gets the current user name. |
 
-== Properties ==
+## Properties ##
 
 _TPJComputerInfo_ defines no properties.
 
-== Events ==
+## Events ##
 
 _TPJComputerInfo_ defines no events.

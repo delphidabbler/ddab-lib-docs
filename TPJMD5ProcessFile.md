@@ -1,9 +1,9 @@
-#summary Description of the TPJMD5.ProcessFile method
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProcessFile method =
+# ProcessFile method #
 
-|| Sorry, this documentation has moved to the MD5 Message Digest Unit *[http://wiki.delphidabbler.com/index.php/Docs/TPJMD5ProcessFile Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the MD5 Message Digest Unit **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJMD5ProcessFile)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

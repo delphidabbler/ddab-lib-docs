@@ -1,25 +1,24 @@
-#summary Description of the TPJOSInfo.BuildNumber class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !BuildNumber class function =
+# BuildNumber class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function BuildNumber: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the build number of the operating system.
 
 When the program is run in compatibility mode, this method will return the build number of the "emulated" operating system.
 
-[v5.0] On operating systems where _[TPJOSInfoCanSpoof CanSpoof]_ returns `False` this method will return the build number of the installed operating system, regardless of any compatibility mode.
+[v5.0] On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` this method will return the build number of the installed operating system, regardless of any compatibility mode.

@@ -1,15 +1,14 @@
-#summary Version Information Component documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Version Information Component =
+# Version Information Component #
 
 
-|| This documentation has now moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/VerInfoAPI Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
+| This documentation has now moved to the Version Information Component **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/VerInfoAPI)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks. </tbody></table>
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/verinfo Version Information Component Web Page].
+  * Back to [Wiki Home Page](Welcome.md)
+  * [Version Information Component Web Page](http://www.delphidabbler.com/software/verinfo).

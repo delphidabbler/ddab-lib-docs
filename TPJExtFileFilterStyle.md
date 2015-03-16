@@ -1,24 +1,23 @@
-#summary Description of the TPJExtFileFilter.Style property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Style property =
+# Style property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJExtFileFilter TPJExtFileFilter]_
+**Class:** _[TPJExtFileFilter](TPJExtFileFilter.md)_
 
-{{{
+```
 property Style: TPJExtFileFilterStyle;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This property determines which kinds of file names have the extension filter applied. Possible values are given by the _[TPJExtFileFilterStyleEnum TPJExtFileFilterStyle]_ enumeration.
+This property determines which kinds of file names have the extension filter applied. Possible values are given by the _[TPJExtFileFilterStyle](TPJExtFileFilterStyleEnum.md)_ enumeration.
 
 The default value is `fsFilterFilesOnly`.
 

@@ -1,14 +1,13 @@
-#summary Resource File Unit Example 2.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #2: Accessing all resources in a file =
+# Example #2: Accessing all resources in a file #
 
-In this example we show how to scan through all the resources in a resource file, listing some information about each one. The following code fragment assumes we have created a resource file object, _!ResFile_, and have loaded a resource file into it (see [ResFileExample1 example #1]). We also assume that the form contains a memo control named _Memo1_. Here is the code:
+In this example we show how to scan through all the resources in a resource file, listing some information about each one. The following code fragment assumes we have created a resource file object, _ResFile_, and have loaded a resource file into it (see [example #1](ResFileExample1.md)). We also assume that the form contains a memo control named _Memo1_. Here is the code:
 
-{{{
+```
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;
@@ -32,23 +31,23 @@ begin
   ...
   // Don't forget to free ResFile at some stage.
 end;
-}}}
+```
 
-This code uses both _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_ objects. The resource file's _[TPJResourceFileEntryCount EntryCount]_ property tells us how many resources there are in the file. Each resource is represented by a _[TPJResourceEntry TPJResourceEntry]_ object obtained from the _[TPJResourceFileEntries Entries]_ array property.
+This code uses both _[TPJResourceFile](TPJResourceFile.md)_ and _[TPJResourceEntry](TPJResourceEntry.md)_ objects. The resource file's _[EntryCount](TPJResourceFileEntryCount.md)_ property tells us how many resources there are in the file. Each resource is represented by a _[TPJResourceEntry](TPJResourceEntry.md)_ object obtained from the _[Entries](TPJResourceFileEntries.md)_ array property.
 
-We loop through all the valid indexes into _[TPJResourceFileEntries Entries]_ and store a reference to each resource entry in turn. Having got the resource entry object we now access its _!ResType_, _!ResName_ and _LanguageID_ properties to get the information we want to display.
+We loop through all the valid indexes into _[Entries](TPJResourceFileEntries.md)_ and store a reference to each resource entry in turn. Having got the resource entry object we now access its _ResType_, _ResName_ and _LanguageID_ properties to get the information we want to display.
 
-The details of each entry are formatted by Delphi's _Format_ function and added to _Memo1_. Note that we use the _[ResFileRoutines#ResIDToStr ResIDToStr]_ helper function to get string representations of the resource type and name. We display the language ID as a four digit hex number since its value is a _Word_.
+The details of each entry are formatted by Delphi's _Format_ function and added to _Memo1_. Note that we use the _[ResIDToStr](ResFileRoutines#ResIDToStr.md)_ helper function to get string representations of the resource type and name. We display the language ID as a four digit hex number since its value is a _Word_.
 
 You may have noticed that we have not freed any of the resource entry objects. This is not necessary since they are all freed automatically when the resource files object is freed.
 
-*Alternative Approach^v1.1^
+**Alternative Approach<sup>v1.1</sup>**
 
-A second approach to the problem uses the fact that v1.1 of the resource files unit implements an enumerator for _[TPJResourceFile TPJResourceFile]_. This means that we can use a *for..in* loop to enumerate the resources.
+A second approach to the problem uses the fact that v1.1 of the resource files unit implements an enumerator for _[TPJResourceFile](TPJResourceFile.md)_. This means that we can use a **for..in** loop to enumerate the resources.
 
 Here's the modified code:
 
-{{{
+```
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;
@@ -70,11 +69,11 @@ begin
   ...
   // Don't forget to free ResFile at some stage.
 end;
-}}}
+```
 
 The code above requires Delphi 2005 or later. Users of earlier Delphis _can_ still use the enumerator if desired, like this:
 
-{{{
+```
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;
@@ -103,10 +102,10 @@ begin
   ...
   // Don't forget to free ResFile at some stage.
 end;
-}}}
+```
 
-*Links:*
+**Links:**
 
-  * [ResFileExample3 Next Example]
-  * [ResFileExample1 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Next Example](ResFileExample3.md)
+  * [Previous Example](ResFileExample1.md)
+  * Back to [List of Examples](ResFileExamples.md)

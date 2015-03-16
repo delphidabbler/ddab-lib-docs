@@ -1,24 +1,23 @@
-#summary TPJDroppedFileFilter event type description.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJDroppedFileFilter =
+# TPJDroppedFileFilter #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-{{{
+```
 TPJDroppedFileFilter = procedure(
   Sender: TObject; const FileName: string; const IsFolder: Boolean;
   var Accept: Boolean
 ) of object;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Event handler type for _!OnFileFilter_ events, triggered for each file and folder dropped after processing by any filter component. This event can be handled to apply custom filtering to each file and folder.
+Event handler type for _OnFileFilter_ events, triggered for each file and folder dropped after processing by any filter component. This event can be handled to apply custom filtering to each file and folder.
 
-_!FileName_ is the name of the file or folder being filtered. _!IsFolder_ is true if _!FileName_ denotes a folder. The state of the _Accept_ flag determines if _!FileName_ is to be added to the list of dropped files / folders. _Accept_ is true by default - set it to false to omit the file from the list of dropped files and folders.
+_FileName_ is the name of the file or folder being filtered. _IsFolder_ is true if _FileName_ denotes a folder. The state of the _Accept_ flag determines if _FileName_ is to be added to the list of dropped files / folders. _Accept_ is true by default - set it to false to omit the file from the list of dropped files and folders.

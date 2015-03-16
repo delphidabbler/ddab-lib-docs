@@ -1,14 +1,14 @@
-#summary List of Version Information Component usage examples
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Version Information Component Examples =
+# Version Information Component Examples #
 
-The following examples of using the [VersionInformationComponent Version Information Component] are available:
+The following examples of using the [Version Information Component](VersionInformationComponent.md) are available:
 
-|| [VerInfoExample1 Example 1] || Using the various fixed file information properties ||
-|| [VerInfoExample2 Example 2] || Using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property (alternative approach to Example 1) ||
-|| [VerInfoExample3 Example 3] || Using translation, character set and language properties ||
-|| [VerInfoExample4 Example 4] || Using string information properties ||
+| [Example 1](VerInfoExample1.md) | Using the various fixed file information properties |
+|:--------------------------------|:----------------------------------------------------|
+| [Example 2](VerInfoExample2.md) | Using the _[FixedFileInfo](TPJVersionInfoFixedFileInfo.md)_ property (alternative approach to Example 1) |
+| [Example 3](VerInfoExample3.md) | Using translation, character set and language properties |
+| [Example 4](VerInfoExample4.md) | Using string information properties |

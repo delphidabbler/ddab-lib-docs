@@ -1,29 +1,28 @@
-#summary Description of the TPJHotLabel.URL property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= URL property =
+# URL property #
 
-*Project:* [HotLabelComponent Hot Label Component].
+**Project:** [Hot Label Component](HotLabelComponent.md).
 
-*Unit:* _PJHotLabel_.
+**Unit:** _PJHotLabel_.
 
-*Class:* _[TPJHotLabel TPJHotLabel]_
+**Class:** _[TPJHotLabel](TPJHotLabel.md)_
 
-{{{
+```
 property URL: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This property stores the URL that is to be accessed when the label is clicked. The default web browser or mail client are used to display the URL.
 
-If the _[TPJHotLabelValidateURL ValidateURL]_ property is `True` then any value assigned to the _URL_ property must be valid otherwise a _[EPJURLError EPJURLError]_ exception will be raised.
+If the _[ValidateURL](TPJHotLabelValidateURL.md)_ property is `True` then any value assigned to the _URL_ property must be valid otherwise a _[EPJURLError](EPJURLError.md)_ exception will be raised.
 
-When the _[TPJHotLabelCaptionIsURL CaptionIsURL]_ property is `True` then the value assigned to the _URL_ property is also assigned to the _[TPJHotLabelCaption Caption]_ property and displayed in the label. This makes it easy to display the URL in the label by assigning just one property.
+When the _[CaptionIsURL](TPJHotLabelCaptionIsURL.md)_ property is `True` then the value assigned to the _URL_ property is also assigned to the _[Caption](TPJHotLabelCaption.md)_ property and displayed in the label. This makes it easy to display the URL in the label by assigning just one property.
 
-The URL can be displayed in the component's _[TPJHotLabelHint Hint]_ property by setting the _[TPJHotLabelHintStyle HintStyle]_ property to `hsURL`.
+The URL can be displayed in the component's _[Hint](TPJHotLabelHint.md)_ property by setting the _[HintStyle](TPJHotLabelHintStyle.md)_ property to `hsURL`.
 
-The default value of this property is either `http://localhost`^[v2.0]^  or `http://example.com/`^[v2.2]^
+The default value of this property is either `http://localhost`<sup>[v2.0]</sup>  or `http://example.com/`<sup>[v2.2]</sup>

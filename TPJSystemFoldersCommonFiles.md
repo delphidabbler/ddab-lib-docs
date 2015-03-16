@@ -1,28 +1,27 @@
-#summary Description of the TPJSystemFolders.CommonFiles class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !CommonFiles class function =
+# CommonFiles class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJSystemFolders TPJSystemFolders]_
+**Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-{{{
+```
 class function CommonFiles: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the fully qualified path name of the Common Files folder. This is usually a sub-folder of the Program Files folder.
 
 On 64 bit Windows, both 32 bit and 64 bit programs will report the same value, i.e. the value used for "native" 64 bit programs.
 
-*See also*
+**See also**
 
-  * _[TPJSystemFoldersCommonFilesX86 CommonFilesX86]_
-  * _[TPJSystemFoldersCommonFilesRedirect CommonFilesRedirect]_
+  * _[CommonFilesX86](TPJSystemFoldersCommonFilesX86.md)_
+  * _[CommonFilesRedirect](TPJSystemFoldersCommonFilesRedirect.md)_

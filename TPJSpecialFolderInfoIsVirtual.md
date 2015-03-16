@@ -1,25 +1,24 @@
-#summary Description of the TPJSpecialFolderInfo.IsVirtual property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsVirtual property =
+# IsVirtual property #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJSpecialFolderInfo TPJSpecialFolderInfo]_
+**Class:** _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_
 
-{{{
+```
 property IsVirtual: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Use _!IsVirtual_ to determine if the current special folder is virtual or not.
+Use _IsVirtual_ to determine if the current special folder is virtual or not.
 
-When the property is false the special folder specified by _[TPJSpecialFolderInfoFolderID FolderID]_ the folder is a physical folder in the file system and the _[TPJSpecialFolderInfoPath Path]_ property gives its location. When _!IsVirtual_ is true then the folder is not physically present in the file system and the _[TPJSpecialFolderInfoPath Path]_ property is set to the empty string.
+When the property is false the special folder specified by _[FolderID](TPJSpecialFolderInfoFolderID.md)_ the folder is a physical folder in the file system and the _[Path](TPJSpecialFolderInfoPath.md)_ property gives its location. When _IsVirtual_ is true then the folder is not physically present in the file system and the _[Path](TPJSpecialFolderInfoPath.md)_ property is set to the empty string.
 
-_!IsVirtual_ is set to false if the special folder is not supported by the operating system (see _[TPJSpecialFolderInfoIsSupported IsSupported]_).
+_IsVirtual_ is set to false if the special folder is not supported by the operating system (see _[IsSupported](TPJSpecialFolderInfoIsSupported.md)_).

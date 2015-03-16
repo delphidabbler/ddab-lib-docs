@@ -1,27 +1,26 @@
-#summary Description of the TPJResourceFile.IndexOfEntry method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IndexOfEntry method =
+# IndexOfEntry method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceFile TPJResourceFile]_
+**Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-{{{
+```
 function IndexOfEntry(const Entry: TPJResourceEntry): Integer;
-}}}
+```
 
-Gets the index number of a resource entry in the resource file's _[TPJResourceFileEntries Entries]_ property.
+Gets the index number of a resource entry in the resource file's _[Entries](TPJResourceFileEntries.md)_ property.
 
-*_Parameter:_*
+**_Parameter:_**
 
   * _Entry_: A reference to resource entry to be found.
 
-*_Returns:_*
+**_Returns:_**
 
-The index of the resource entry in the _[TPJResourceFileEntries Entries]_ property or `-1` if not found.
+The index of the resource entry in the _[Entries](TPJResourceFileEntries.md)_ property or `-1` if not found.

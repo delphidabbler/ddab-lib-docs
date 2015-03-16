@@ -1,22 +1,21 @@
-#summary Description of the TPJAboutBoxDlg.UseOSStdFonts property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= UseOSStdFonts property =
+# UseOSStdFonts property #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 property UseOSStdFonts: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 When true this property forces the dialog box to use the operating system's default font. When false the dialog's own font is used.
 
@@ -24,4 +23,4 @@ The property is designed to enable the default UI fonts of Windows XP and later 
 
 The default value is False.
 
-Note that the [TPJAboutBoxDlgFont Font] property is ignored when UseOSStdFonts is True.
+Note that the [Font](TPJAboutBoxDlgFont.md) property is ignored when UseOSStdFonts is True.

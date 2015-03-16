@@ -1,12 +1,11 @@
-#summary Resource File Unit Example 11.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #11: Validating a resource file^v1.1^ =
+# Example #11: Validating a resource file<sup>v1.1</sup> #
 
-_*Note:* The code in this example requires v1.1 of the Resource File Unit and Delphi 2009 or later._
+_**Note:** The code in this example requires v1.1 of the Resource File Unit and Delphi 2009 or later._
 
 Suppose you have a resource file that is included in a program that you are compiling. There may be resources that your program assumes will be present and will crash if they are not there. Most likely there will also be resources that Windows expects to find, such as the program icon.
 
@@ -14,13 +13,13 @@ It could be useful if you could check for the presence of these resources before
 
 Some of the most common resources are
 
-  # A main program icon named `MAINICON`.
-  # A manifest file.
-  # One or more bitmaps.
+  1. A main program icon named `MAINICON`.
+  1. A manifest file.
+  1. One or more bitmaps.
 
 Here's a little routine that checks to see if a given resource file contains all of the above resource types. It also checks for the required bitmap resource names and that the manifest has the correct XML format. The routine raises exceptions if any errors are found. It returns normally only if the resource file is valid.
 
-{{{
+```
 uses
   SysUtils, StrUtils, Classes, Windows, PJResFile;
 
@@ -56,13 +55,13 @@ begin
     ResFile.Free;
   end;
 end;
-}}}
+```
 
 First we load the resource file whose name is supplied as a parameter. Next we check if the main icon resource exists. We then check that a manifest file exists. If so we load its contents (which are assumed to be UTF-8 encoded) and check for the existence of the correct XML tag. Finally we loop through the given array of bitmap resource names and check that each one is present.
 
 This routine could be used in a command line application that could be incorporated in a build chain, for example:
 
-{{{
+```
 program ResourceFileChecker;
 
 {$APPTYPE CONSOLE}
@@ -100,14 +99,14 @@ begin
     end;
   end;
 end.
-}}}
+```
 
-This program accepts the name of the resource file to be checked on the command line. First it validates the command line. 
+This program accepts the name of the resource file to be checked on the command line. First it validates the command line.
 
 Then it calls `ValidateResFile` passing the resource file name and an array of required bitmap resource names. If the procedure returns normally a message indicating success is written out and a zero exit code is returned to the operating system. If `ValidateResFile` raises an exception the error message is written out and an exit code of 1 is returned.
 
-*Links:*
+**Links:**
 
-  * [ResFileExample12 Next Example]
-  * [ResFileExample10 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Next Example](ResFileExample12.md)
+  * [Previous Example](ResFileExample10.md)
+  * Back to [List of Examples](ResFileExamples.md)

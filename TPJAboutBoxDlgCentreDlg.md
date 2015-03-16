@@ -1,27 +1,26 @@
-#summary Description of the TPJAboutBoxDlg.CentreDlg property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !CentreDlg property =
+# CentreDlg property #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 property CentreDlg: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This property determines whether the About dialog box appears centred or not.
 
-When _!CentreDlg_ is set to True then the dialog box is centred over the screen, the desktop work area or the owner control, according to the value of the _[TPJAboutBoxDlgPosition Position]_ property. The _[TPJAboutBoxDlgDlgLeft DlgLeft]_ and _[TPJAboutBoxDlgDlgTop DlgTop]_ properties are ignored in this case. The position of the dialog box may be adjusted to ensure it can all be seen.
+When _CentreDlg_ is set to True then the dialog box is centred over the screen, the desktop work area or the owner control, according to the value of the _[Position](TPJAboutBoxDlgPosition.md)_ property. The _[DlgLeft](TPJAboutBoxDlgDlgLeft.md)_ and _[DlgTop](TPJAboutBoxDlgDlgTop.md)_ properties are ignored in this case. The position of the dialog box may be adjusted to ensure it can all be seen.
 
-When _!CentreDlg_ is set to False the _!DlgLeft_ and _!DlgTop_ properties determine the position of the dialog box.
+When _CentreDlg_ is set to False the _DlgLeft_ and _DlgTop_ properties determine the position of the dialog box.
 
 The default value is True.

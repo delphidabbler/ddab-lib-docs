@@ -1,26 +1,26 @@
-#summary List of Resource File Unit usage examples.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Resource File Unit Examples =
+# Resource File Unit Examples #
 
-The following examples of using the [ResFileUnit Resource File Unit] are available:
+The following examples of using the [Resource File Unit](ResFileUnit.md) are available:
 
-|| [ResFileExample1 #1] || Loading a resource file ||
-|| [ResFileExample2 #2] || Accessing all resources in a file ||
-|| [ResFileExample3 #3] || Finding a resource ||
-|| [ResFileExample4 #4] || Listing specific resources from a file ||
-|| [ResFileExample5 #5] || Adding to or modifying a resource's data ||
-|| [ResFileExample6 #6] || Adding a new resources to a file ||
-|| [ResFileExample7 #7] || Checking if a resource exists ||
-|| [ResFileExample8 #8] || Deleting resources ||
-|| [ResFileExample9 #9] || Saving a resource file ||
-|| [ResFileExample10 #10] || Creating a resource file for use with Internet Explorer ||
-|| [ResFileExample11 #11] || Validating a resource file ||
-|| [ResFileExample12 #12] || Recording a compilation date in a resource file ||
+| [#1](ResFileExample1.md) | Loading a resource file |
+|:-------------------------|:------------------------|
+| [#2](ResFileExample2.md) | Accessing all resources in a file |
+| [#3](ResFileExample3.md) | Finding a resource |
+| [#4](ResFileExample4.md) | Listing specific resources from a file |
+| [#5](ResFileExample5.md) | Adding to or modifying a resource's data |
+| [#6](ResFileExample6.md) | Adding a new resources to a file |
+| [#7](ResFileExample7.md) | Checking if a resource exists |
+| [#8](ResFileExample8.md) | Deleting resources |
+| [#9](ResFileExample9.md) | Saving a resource file |
+| [#10](ResFileExample10.md) | Creating a resource file for use with Internet Explorer |
+| [#11](ResFileExample11.md) | Validating a resource file |
+| [#12](ResFileExample12.md) | Recording a compilation date in a resource file |
 
-*Links:*
+**Links:**
 
-  * Back to [ResFileUnit Resource File Unit]
+  * Back to [Resource File Unit](ResFileUnit.md)

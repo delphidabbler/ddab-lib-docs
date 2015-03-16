@@ -1,14 +1,13 @@
-#summary MD5 Message Digest Unit documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= MD5 Message Digest Unit =
+# MD5 Message Digest Unit #
 
-|| This documentation has now moved to the MD5 Message Digest Unit  *[http://wiki.delphidabbler.com/index.php/Docs/MD5API Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
+| This documentation has now moved to the MD5 Message Digest Unit  **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/MD5API)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks. </tbody></table>
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/md5 MD5 Message Digest Unit Web Page].
+  * Back to [Wiki Home Page](Welcome.md)
+  * [MD5 Message Digest Unit Web Page](http://www.delphidabbler.com/software/md5).

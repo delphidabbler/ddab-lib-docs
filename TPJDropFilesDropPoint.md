@@ -1,21 +1,20 @@
-#summary Description of the TPJDropFiles.DropPoint property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !DropPoint property =
+# DropPoint property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJDropFiles TPJDropFiles]_
+**Class:** _[TPJDropFiles](TPJDropFiles.md)_
 
-{{{
+```
 property DropPoint: TPoint;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This property contains the mouse position in client coordinates of the _TPJDropFiles_ control where the last files were dropped.

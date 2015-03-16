@@ -1,25 +1,24 @@
-#summary Description of the TPJRegWdwState.Restore method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Restore method =
+# Restore method #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJRegWdwState TPJRegWdwState]_
+**Class:** _[TPJRegWdwState](TPJRegWdwState.md)_
 
-{{{
+```
 procedure Restore;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This method restores the size and position of the owning form's window according to value saved in a specified part of the Windows registry. The root and sub keys of the registry where the information is stored are specfied by the _[TPJRegWdwStateRootKey RootKey]_ or _[TPJRegWdwStateRootKeyEx RootKeyEx]_*^v5.6^*  and _[TPJRegWdwStateSubKey SubKey]_ properties. If the key does not exist in the registry then this method has no effect.
+This method restores the size and position of the owning form's window according to value saved in a specified part of the Windows registry. The root and sub keys of the registry where the information is stored are specfied by the _[RootKey](TPJRegWdwStateRootKey.md)_ or _[RootKeyEx](TPJRegWdwStateRootKeyEx.md)_**<sup>v5.6</sup>**  and _[SubKey](TPJRegWdwStateSubKey.md)_ properties. If the key does not exist in the registry then this method has no effect.
 
-Various values of the _[TPJCustomWdwStateOptions Options]_ property may cause either the saved size or state to be ignored or for the window to be repositioned (and possibly resized) to fit within the desktop's work area.
+Various values of the _[Options](TPJCustomWdwStateOptions.md)_ property may cause either the saved size or state to be ignored or for the window to be repositioned (and possibly resized) to fit within the desktop's work area.
 
-If the _[TPJCustomWdwStateAutoSaveRestore AutoSaveRestore]_ property is true _Restore_ is called automatically when the window is created.
+If the _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property is true _Restore_ is called automatically when the window is created.

@@ -1,18 +1,17 @@
-#summary Version Information Component Example 1.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example 1: Using fixed file information properties =
+# Example 1: Using fixed file information properties #
 
 This rather long example shows how to use the Version Information Component's fixed file information properties. It displays descriptions of the properties in a memo. Most of the example is taken up with code that maps fixed file information codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.
 
-A [VerInfoExample2 similar example] shows how to achieve the same results using the _[TPJVersionInfoFixedFileInfo FixedFileInfo]_ property.
+A [similar example](VerInfoExample2.md) shows how to achieve the same results using the _[FixedFileInfo](TPJVersionInfoFixedFileInfo.md)_ property.
 
-Drop a _TMemo_ and a _[TPJVersionInfo TPJVersionInfo]_ component on to a form, create an _!OnCreate_ event handler for the form, then enter the following code.
+Drop a _TMemo_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
 
-{{{
+```
 type
   TTableEntry = record
     // maps codes to descriptions
@@ -151,9 +150,9 @@ begin
     Memo1.Lines.Add('NO VERSION INFO');
 
 end;
-}}}
+```
 
-*Links:*
+**Links:**
 
-  * Back to the [VerInfoExamples Examples List]
-  * Back to the [VersionInformationComponent Main Component Page]
+  * Back to the [Examples List](VerInfoExamples.md)
+  * Back to the [Main Component Page](VersionInformationComponent.md)

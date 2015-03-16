@@ -1,25 +1,24 @@
-#summary Description of the TPJComputerInfo.SystemProductName class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !SystemProductName class function =
+# SystemProductName class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v4.0
+**Introduced:** v4.0
 
-{{{
+```
 class function SystemProductName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the model (product) name of the host computer.
 
-The returned name does not include the computer's manufacturer. To get that, use the _[TPJComputerInfoSystemManufacturer SystemManufacturer]_ property.
+The returned name does not include the computer's manufacturer. To get that, use the _[SystemManufacturer](TPJComputerInfoSystemManufacturer.md)_ property.

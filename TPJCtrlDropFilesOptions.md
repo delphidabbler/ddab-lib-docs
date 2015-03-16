@@ -1,23 +1,22 @@
-#summary Description of the TPJCtrlDropFiles.Options property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Options property =
+# Options property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property Options: TPJDropFilesOptions;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This property determines how dropped files are interpreted. The resulting files are made available through the _[TPJCtrlDropFilesFiles Files]_ property. The property can take any one or more of the values from the _[TPJDropFilesOptionsSet TPJDropFilesOptions]_ set.
+This property determines how dropped files are interpreted. The resulting files are made available through the _[Files](TPJCtrlDropFilesFiles.md)_ property. The property can take any one or more of the values from the _[TPJDropFilesOptions](TPJDropFilesOptionsSet.md)_ set.
 
 It makes no sense to omit both the `dfoIncFiles` and `dfoIncFolders` options since no files will pass the filter.

@@ -1,23 +1,22 @@
-#summary Description of the TPJCtrlDropFiles.OnDropFiles event
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnDropFiles event =
+# OnDropFiles event #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property OnDropFiles: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This event is triggered after files have been dropped on the managed control and the files have been processed. When this event is triggered all the dropped files are available in the _[TPJCtrlDropFilesFiles Files]_  property.
+This event is triggered after files have been dropped on the managed control and the files have been processed. When this event is triggered all the dropped files are available in the _[Files](TPJCtrlDropFilesFiles.md)_  property.
 
-This event is not triggered when the _[TPJCtrlDropFilesEnabled Enabled]_ property is False.
+This event is not triggered when the _[Enabled](TPJCtrlDropFilesEnabled.md)_ property is False.

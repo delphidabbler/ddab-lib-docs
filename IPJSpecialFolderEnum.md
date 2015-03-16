@@ -1,21 +1,21 @@
-#summary IPJSpecialFolderEnum interface description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= IPJSpecialFolderEnum =
+# IPJSpecialFolderEnum #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_.
+**Unit:** _PJShellFolders_.
 
-_IPJSpecialFolderEnum_ interface to an object that can enumerate the shell's special folder identifiers. _[TPJSpecialFolderEnum TPJSpecialFolderEnum]_ implements the interface.
+_IPJSpecialFolderEnum_ interface to an object that can enumerate the shell's special folder identifiers. _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ implements the interface.
 
-== Methods ==
+## Methods ##
 
-|| *Method* || *Description* ||
-|| _[IPJSpecialFolderEnumAtEnd AtEnd]_ || Tests whether the end of the enumeration has been reached. ||
-|| _[IPJSpecialFolderEnumCount Count]_ || Returns the number of special folder identifiers in the enumeration. ||
-|| _[IPJSpecialFolderEnumInit Init]_ || Reinitialises the enumeration. ||
-|| _[IPJSpecialFolderEnumNext Next]_ || Returns the next identifier in the enumeration. ||
+| **Method** | **Description** |
+|:-----------|:----------------|
+| _[AtEnd](IPJSpecialFolderEnumAtEnd.md)_ | Tests whether the end of the enumeration has been reached. |
+| _[Count](IPJSpecialFolderEnumCount.md)_ | Returns the number of special folder identifiers in the enumeration. |
+| _[Init](IPJSpecialFolderEnumInit.md)_ | Reinitialises the enumeration. |
+| _[Next](IPJSpecialFolderEnumNext.md)_ | Returns the next identifier in the enumeration. |

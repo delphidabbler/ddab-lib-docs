@@ -1,32 +1,32 @@
-#summary Description of the TPJComputerInfo.BootMode class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !BootMode class function =
+# BootMode class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v3.1
+**Introduced:** v3.1
 
-{{{
+```
 class function BootMode: TPJBootMode;
 
 type TPJBootMode = (bmUnknown, bmNormal, bmSafeMode, bmSafeModeNetwork);
-}}}
+```
 
-== Description ==
+## Description ##
 
 Determines the operating system mode into which the the computer was booted.
 
 Returns a value from the _TPJBootMode_ enumeration that describes the boot mode. Values of _TPJBootMode_ are:
 
-|| `bmUnknown` || Unknown boot mode. ||
-|| `bmNormal` || Normal boot. ||
-|| `bmSafeMode` || Booted in safe mode with no networking. ||
-|| `bmSafeModeNetwork` || Booted in safe mode with networking. ||
+| `bmUnknown` | Unknown boot mode. |
+|:------------|:-------------------|
+| `bmNormal` | Normal boot. |
+| `bmSafeMode` | Booted in safe mode with no networking. |
+| `bmSafeModeNetwork` | Booted in safe mode with networking. |

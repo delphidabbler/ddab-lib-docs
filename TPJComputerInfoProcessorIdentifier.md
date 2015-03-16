@@ -1,24 +1,23 @@
-#summary Description of the TPJComputerInfo.ProcessorIdentifier class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProcessorIdentifier class function =
+# ProcessorIdentifier class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-*Introduced:* v4.0
+**Introduced:** v4.0
 
-{{{
+```
 class function ProcessorIdentifier: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the identifier of the computer's processor.
 
@@ -26,6 +25,6 @@ On multi-processor systems the method returns the identifier of the 1st processo
 
 An example processor identifier is "`Intel64 Family 6 Model 58 Stepping 9`".
 
-*See also*
+**See also**
 
-  * _[TPJComputerInfoProcessorName ProcessorName]_
+  * _[ProcessorName](TPJComputerInfoProcessorName.md)_

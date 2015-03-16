@@ -1,23 +1,22 @@
-#summary Description of the TPJResourceEntry.ClearData method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ClearData method =
+# ClearData method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceEntry]_
+**Class:** _[TPJResourceEntry](TPJResourceEntry.md)_
 
-*Introduced:* v1.1
+**Introduced:** v1.1
 
-{{{
+```
 procedure ClearData;
-}}}
+```
 
 Clears all the resource entry's raw data.
 
-After the method has been called the _[TPJResourceEntry#Properties Data]_ property's stream is empty.
+After the method has been called the _[Data](TPJResourceEntry#Properties.md)_ property's stream is empty.

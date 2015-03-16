@@ -1,21 +1,20 @@
-#summary Description of the TPJOSInfo.IsWin32s class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsWin32s class function =
+# IsWin32s class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function IsWin32s: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns True if running on the Win32s subsystem or False if not. This is unlikely to ever return true since Delphi does not run on Win32s.

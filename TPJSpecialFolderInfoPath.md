@@ -1,25 +1,24 @@
-#summary Description of the TPJSpecialFolderInfo.Path property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Path property =
+# Path property #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJSpecialFolderInfo TPJSpecialFolderInfo]_
+**Class:** _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_
 
-{{{
+```
 property Path: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
-The _Path_ property stores the directory of the special folder currently specified in _[TPJSpecialFolderInfoFolderID FolderID]_.
+The _Path_ property stores the directory of the special folder currently specified in _[FolderID](TPJSpecialFolderInfoFolderID.md)_.
 
-If the folder is virtual then it is not in the file system and the _Path_ property is set to the empty string. Use the _[TPJSpecialFolderInfoIsVirtual IsVirtual]_ property to check whether a folder is virtual or physical.
+If the folder is virtual then it is not in the file system and the _Path_ property is set to the empty string. Use the _[IsVirtual](TPJSpecialFolderInfoIsVirtual.md)_ property to check whether a folder is virtual or physical.
 
-_Path_ is set to the empty string if the special folder is not supported by the operating system (see _[TPJSpecialFolderInfoIsSupported IsSupported]_).
+_Path_ is set to the empty string if the special folder is not supported by the operating system (see _[IsSupported](TPJSpecialFolderInfoIsSupported.md)_).

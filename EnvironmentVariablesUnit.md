@@ -1,22 +1,22 @@
-#summary Environment Variables Unit documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Environment Variables Unit =
+# Environment Variables Unit #
 
-|| This is the documentation for the *v2.0* release of the unit. If you are using a *version 3* release please [http://wiki.delphidabbler.com/index.php/Docs/EnvVars see here]. ||
+| This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/EnvVars). |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 This project contains the _PJEnvVars_ unit.
 
-The unit contains a [PJEnvVarsRoutines set of routines] that can manipulate a process' environment block and the variables contained in it.
+The unit contains a [set of routines](PJEnvVarsRoutines.md) that can manipulate a process' environment block and the variables contained in it.
 
-It also defines a component, _[TPJEnvVars TPJEnvVars]_,  that encapsulates a process' environment variables and provides an easy way to change their values, create then and delete them.
+It also defines a component, _[TPJEnvVars](TPJEnvVars.md)_,  that encapsulates a process' environment variables and provides an easy way to change their values, create then and delete them.
 
-To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit. Demo projects that implement the examples are available from the [http://www.delphidabbler.com/url/doodlings-repo Delphi Doodlings Repository] - see the `EnvVarsDemo` directory.
+To see examples of using the code see the file `DemoCode.htm` that is distributed with the unit. Demo projects that implement the examples are available from the [Delphi Doodlings Repository](http://www.delphidabbler.com/url/doodlings-repo) - see the `EnvVarsDemo` directory.
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/envvars Environment Variables Unit Web Page].
+  * Back to [Wiki Home Page](Welcome.md)
+  * [Environment Variables Unit Web Page](http://www.delphidabbler.com/software/envvars).

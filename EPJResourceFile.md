@@ -1,15 +1,14 @@
-#summary EPJResourceFile class description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= EPJResourceFile =
+# EPJResourceFile #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-This is the class used for exceptions that are raised directly by _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_. It inherits directly from _Exception_ and adds no new properties or methods.
+This is the class used for exceptions that are raised directly by _[TPJResourceFile](TPJResourceFile.md)_ and _[TPJResourceEntry](TPJResourceEntry.md)_. It inherits directly from _Exception_ and adds no new properties or methods.
 
-Note that some methods of _[TPJResourceFile TPJResourceFile]_ and _[TPJResourceEntry TPJResourceEntry]_ may raise other types of exception indirectly.
+Note that some methods of _[TPJResourceFile](TPJResourceFile.md)_ and _[TPJResourceEntry](TPJResourceEntry.md)_ may raise other types of exception indirectly.

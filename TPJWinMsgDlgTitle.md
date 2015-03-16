@@ -1,24 +1,23 @@
-#summary Description of the TPJWinMsgDlg.Title property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Title property =
+# Title property #
 
-*Project:* [MessageDialogComponents Message Dialogue Components].
+**Project:** [Message Dialogue Components](MessageDialogComponents.md).
 
-*Unit:* _PJMessageDialog_.
+**Unit:** _PJMessageDialog_.
 
-*Class:* _[TPJWinMsgDlg TPJWinMsgDlg]_
+**Class:** _[TPJWinMsgDlg](TPJWinMsgDlg.md)_
 
-{{{
+```
 type
   TCaption = type string;
 
 property Title: TCaption;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Set this property to customise the string that is displayed as the dialogue box window title. Leaving this property empty causes a default title to be displayed that depends on the value of the _[TPJWinMsgDlgKind Kind]_ property.
+Set this property to customise the string that is displayed as the dialogue box window title. Leaving this property empty causes a default title to be displayed that depends on the value of the _[Kind](TPJWinMsgDlgKind.md)_ property.

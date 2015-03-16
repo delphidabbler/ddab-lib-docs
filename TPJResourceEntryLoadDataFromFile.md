@@ -1,29 +1,28 @@
-#summary Description of the TPJResourceEntry.LoadDataFromFile method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !LoadDataFromFile method =
+# LoadDataFromFile method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceEntry]_
+**Class:** _[TPJResourceEntry](TPJResourceEntry.md)_
 
-*Introduced:* v1.1
+**Introduced:** v1.1
 
-{{{
+```
 procedure LoadDataFromFile(const SrcFileName: TFileName;
   const Append: Boolean);
-}}}
+```
 
-Loads the content of a file into the resource entry's raw data. The file content can either replace existing or be appedned to it. 
+Loads the content of a file into the resource entry's raw data. The file content can either replace existing or be appedned to it.
 
-After the file is loaded the _[TPJResourceEntry#Properties Data]_ property's stream pointer is set to `0`.
+After the file is loaded the _[Data](TPJResourceEntry#Properties.md)_ property's stream pointer is set to `0`.
 
-_*Parameters*_
+_**Parameters**_
 
-  * _!SrcFileName_: The name of the file whose contents are to be loaded.
+  * _SrcFileName_: The name of the file whose contents are to be loaded.
   * _Append_: When `True` the file contents are appended to the end of any current resource data. When `False` any existing resource data is replaced by the file contents.

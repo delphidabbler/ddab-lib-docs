@@ -1,22 +1,21 @@
-#summary Description of the TPJExtFileFilter.Extensions property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Extensions property =
+# Extensions property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJExtFileFilter TPJExtFileFilter]_
+**Class:** _[TPJExtFileFilter](TPJExtFileFilter.md)_
 
-{{{
+```
 property Extensions: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Filters out files without specified extensions.
 
@@ -24,8 +23,8 @@ The component can filter files, only accepting the names of files ending with th
 
 Multiple extensions can be stored in the property by separating them with semi-colons. The dot preceeding extensions should be included. If any extensions are specified without the leading dot the character is automatically prepended. A property editor is supplied that enables the extension list to be built using a dialog box. This editor ensures that the extension string is formatted correctly.
 
-Wildcards are not supported (see _[TPJWildCardFileFilter TPJWildCardFileFilter]_ for wildcard support). Only extensions that completely match those specified in the property (ignoring case) pass through the filter.  Whether the filter applies to file names, folder names or both depends on the value of the _[TPJExtFileFilterStyle Style]_ property.
+Wildcards are not supported (see _[TPJWildCardFileFilter](TPJWildCardFileFilter.md)_ for wildcard support). Only extensions that completely match those specified in the property (ignoring case) pass through the filter.  Whether the filter applies to file names, folder names or both depends on the value of the _[Style](TPJExtFileFilterStyle.md)_ property.
 
-=== Example ===
+### Example ###
 
 To filter for files with `.htm`, `.html` or `.shtml` extensions set _Extensions_ to `'.htm;.html;.shtml'`.

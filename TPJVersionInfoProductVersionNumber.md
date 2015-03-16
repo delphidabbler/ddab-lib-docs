@@ -1,9 +1,9 @@
-#summary Description of the TPJVersionInfo.ProductVersionNumber property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProductVersionNumber property =
+# ProductVersionNumber property #
 
-|| Sorry, this documentation has moved to the Version Information Component *[http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoProductVersionNumber Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the Version Information Component **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJVersionInfoProductVersionNumber)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,22 +1,21 @@
-#summary Description of the TPJAboutBoxDlg.ButtonHeight property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ButtonHeight property =
+# ButtonHeight property #
 
-*Project:* [AboutBoxComponent About Box Component].
+**Project:** [About Box Component](AboutBoxComponent.md).
 
-*Unit:* _PJAbout_. 
+**Unit:** _PJAbout_.
 
-*Class:* _[TPJAboutBoxDlg TPJAboutBoxDlg]_
+**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-{{{
+```
 property ButtonHeight: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 The About box displays one button which is used to close the dialog box. The height of this button in pixels is determined by the value of this property.
 

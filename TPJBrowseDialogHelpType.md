@@ -1,28 +1,27 @@
-#summary Description of the TPJBrowseDialog.HelpType property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !HelpType property =
+# HelpType property #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJBrowseDialog TPJBrowseDialog]_
+**Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-{{{
+```
 type
   THelpType = (htKeyword, htContext);
 
 property HelpType: THelpType;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This property determines whether the _[TPJBrowseDialogHelpContext HelpContext]_ or _[TPJBrowseDialogHelpKeyword HelpKeyword]_ properties are used to identify the associated help topic.
+This property determines whether the _[HelpContext](TPJBrowseDialogHelpContext.md)_ or _[HelpKeyword](TPJBrowseDialogHelpKeyword.md)_ properties are used to identify the associated help topic.
 
-When _!HelpType_ = `htKeyword`, the _[TPJBrowseDialogHelpKeyword HelpKeyword]_ property is used and _[TPJBrowseDialogHelpContext HelpContext]_ is ignored. Conversely when _!HelpType_ = `htContext`, _[TPJBrowseDialogHelpContext HelpContext]_ is used and _[TPJBrowseDialogHelpKeyword HelpKeyword]_ is ignored.
+When _HelpType_ = `htKeyword`, the _[HelpKeyword](TPJBrowseDialogHelpKeyword.md)_ property is used and _[HelpContext](TPJBrowseDialogHelpContext.md)_ is ignored. Conversely when _HelpType_ = `htContext`, _[HelpContext](TPJBrowseDialogHelpContext.md)_ is used and _[HelpKeyword](TPJBrowseDialogHelpKeyword.md)_ is ignored.
 
-*Note:* This property is only available when the unit is compiled with Delphi 6 or later.
+**Note:** This property is only available when the unit is compiled with Delphi 6 or later.

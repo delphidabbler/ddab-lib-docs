@@ -1,20 +1,19 @@
-#summary Resource File Unit Example 10.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Example #10: Creating a resource file for use with Internet Explorer =
+# Example #10: Creating a resource file for use with Internet Explorer #
 
 All the previous examples in this documentation are rather contrived examples that seek to focus on one or more related aspects of the functionality in the _PJResFile_ unit. This example is the first of three examples that aim to present useful code that uses several of the methods covered by other examples.
 
 We will create a routine that takes a list of HTML and related files and creates a resource file which has a unique `RT_HTML` resource for each file. The resource contains the contents of the related file.
 
-Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article [http://www.delphidabbler.com/articles?article=10 "How to create and use HTML resource files"] for more information on this subject.
+Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article ["How to create and use HTML resource files"](http://www.delphidabbler.com/articles?article=10) for more information on this subject.
 
 Here is the code of the routine:
 
-{{{
+```
 procedure BuildHTMLResFile(const Files: TStrings; const ResFileName: string);
 var
   ResFile: TPJResourceFile; // res file object
@@ -56,27 +55,27 @@ begin
     ResFile.Free; // this also frees resource entry objects
   end;
 end;
-}}}
+```
 
-The _Files_ parameter of the routine is a string list containing the (fully specified) names of files that are to be included in the resource file. The _!ResFileName_ parameter receives the name of the output file which will be a valid 32 bit resource file.
+The _Files_ parameter of the routine is a string list containing the (fully specified) names of files that are to be included in the resource file. The _ResFileName_ parameter receives the name of the output file which will be a valid 32 bit resource file.
 
 The comments in the code should explain what is happening.
 
-*Alternative Approach^v1.1^*
+**Alternative Approach<sup>v1.1</sup>**
 
-The above code can be simplified when using v1.1 of the Resource File Unit because of its new _[TPJResourceEntryLoadDataFromFile LoadDataFromFile]_ method. Using this method we can replace all the stream processing code between the `// Copy source file into resource data` comment and the end of the loop with a single line of code:
+The above code can be simplified when using v1.1 of the Resource File Unit because of its new _[LoadDataFromFile](TPJResourceEntryLoadDataFromFile.md)_ method. Using this method we can replace all the stream processing code between the `// Copy source file into resource data` comment and the end of the loop with a single line of code:
 
-{{{
+```
       ...
       // 5: Copy source file into resource data
       SrcStm := TFileStream.Create(SrcFileName, fmOpenRead);
       Entry.LoadDataFromFile(SrcFileName, False);
     end;
     ...
-}}}
+```
 
-*Links:*
+**Links:**
 
-  * [ResFileExample11 Next Example]
-  * [ResFileExample9 Previous Example]
-  * Back to [ResFileExamples List of Examples]
+  * [Next Example](ResFileExample11.md)
+  * [Previous Example](ResFileExample9.md)
+  * Back to [List of Examples](ResFileExamples.md)

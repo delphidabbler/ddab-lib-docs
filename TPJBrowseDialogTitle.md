@@ -1,25 +1,24 @@
-#summary Description of the TPJBrowseDialog.Title property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Title property =
+# Title property #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJBrowseDialog TPJBrowseDialog]_
+**Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-{{{
+```
 type
   TCaption = type string;
 
 property Title: TCaption;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Use _Title_ to specify the text that appears in the _Browse for Folder_ dialog's title bar.
 

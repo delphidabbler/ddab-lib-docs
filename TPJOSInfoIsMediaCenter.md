@@ -1,21 +1,20 @@
-#summary Description of the TPJOSInfo.IsMediaCenter class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsMediaCenter class function =
+# IsMediaCenter class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function IsMediaCenter: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns true if Windows Media Center is installed or False if not.

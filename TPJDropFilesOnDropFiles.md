@@ -1,23 +1,22 @@
-#summary Description of the TPJDropFiles.OnDropFiles event
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnDropFiles event =
+# OnDropFiles event #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJDropFiles TPJDropFiles]_
+**Class:** _[TPJDropFiles](TPJDropFiles.md)_
 
-{{{
+```
 property OnDropFiles: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This event is triggered after files have been dropped on the component and the files have been processed. When this event is triggered all the dropped files are available in the _[TPJDropFilesFiles Files]_  property.
+This event is triggered after files have been dropped on the component and the files have been processed. When this event is triggered all the dropped files are available in the _[Files](TPJDropFilesFiles.md)_  property.
 
-This event is not triggered when the _[TPJDropFilesEnabled Enabled]_ property is False.
+This event is not triggered when the _[Enabled](TPJDropFilesEnabled.md)_ property is False.

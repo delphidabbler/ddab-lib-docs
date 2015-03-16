@@ -1,22 +1,21 @@
-#summary Description of the TPJComputerInfo.MACAddress class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= MACAddress class function =
+# MACAddress class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-{{{
+```
 class function MACAddress: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the address of the first network card found in the host computer. The empty string is returned if no network card is detected.
 
@@ -26,4 +25,4 @@ Microsoft notes that NETBIOS is not available Windows Vista and later, however t
 
 Microsoft also note that this method of detecting MAC addresses may not work reliably on Windows 95, 98 and Me.
 
-*Use with care*
+**Use with care**

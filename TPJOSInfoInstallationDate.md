@@ -1,24 +1,23 @@
-#summary Description of the TPJOSInfo.InstallationDate class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !InstallationDate class function =
+# InstallationDate class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-*Introduced:* v5.0 
+**Introduced:** v5.0
 
-{{{
+```
 class function InstallationDate: TDateTime;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the date the operating system was installed if known.
 

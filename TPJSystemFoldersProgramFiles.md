@@ -1,28 +1,27 @@
-#summary Description of the TPJSystemFolders.ProgramFiles class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProgramFiles class function =
+# ProgramFiles class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJSystemFolders TPJSystemFolders]_
+**Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-{{{
+```
 class function ProgramFiles: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the fully qualified path name of the system's Program Files folder.
 
 On 64 bit Windows, both 32 bit and 64 bit programs will report the same value, i.e. the value used for "native" 64 bit programs.
 
-*See also*
+**See also**
 
-  * _[TPJSystemFoldersProgramFilesX86 ProgramFilesX86]_
-  * _[TPJSystemFoldersProgramFilesRedirect ProgramFilesRedirect]_
+  * _[ProgramFilesX86](TPJSystemFoldersProgramFilesX86.md)_
+  * _[ProgramFilesRedirect](TPJSystemFoldersProgramFilesRedirect.md)_

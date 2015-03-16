@@ -1,19 +1,18 @@
-#summary Description of the TPJResourceFile.EntryCount property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !EntryCount property =
+# EntryCount property #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceFile TPJResourceFile]_
+**Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-{{{
+```
 property EntryCount: Integer;
-}}}
+```
 
-This read-only property stores the number of resources in the resource file (i.e. the number of _[TPJResourceEntry TPJResourceEntry]_ objects in the _[TPJResourceFileEntries Entries]_ property).
+This read-only property stores the number of resources in the resource file (i.e. the number of _[TPJResourceEntry](TPJResourceEntry.md)_ objects in the _[Entries](TPJResourceFileEntries.md)_ property).

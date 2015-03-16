@@ -1,23 +1,22 @@
-#summary Description of the TPJSpecialFolderInfo.DisplayName property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !DisplayName property =
+# DisplayName property #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Class:* _[TPJSpecialFolderInfo TPJSpecialFolderInfo]_
+**Class:** _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_
 
-{{{
+```
 property DisplayName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
-This property gives the display name of the special folder specified by the _[TPJSpecialFolderInfoFolderID FolderID]_ property. For physical folders (_[TPJSpecialFolderInfoIsVirtual IsVirtual]_ is false), _!DisplayName_ often (but not always) has the same value as the _[TPJSpecialFolderInfoPath Path]_ property.
+This property gives the display name of the special folder specified by the _[FolderID](TPJSpecialFolderInfoFolderID.md)_ property. For physical folders (_[IsVirtual](TPJSpecialFolderInfoIsVirtual.md)_ is false), _DisplayName_ often (but not always) has the same value as the _[Path](TPJSpecialFolderInfoPath.md)_ property.
 
-_!DisplayName_ is set to the empty string if the special folder is not supported by the operating system (see _[TPJSpecialFolderInfoIsSupported IsSupported]_).
+_DisplayName_ is set to the empty string if the special folder is not supported by the operating system (see _[IsSupported](TPJSpecialFolderInfoIsSupported.md)_).

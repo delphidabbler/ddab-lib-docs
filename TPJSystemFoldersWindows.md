@@ -1,21 +1,20 @@
-#summary Description of the TPJSystemFolders.Windows class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Windows class function =
+# Windows class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJSystemFolders TPJSystemFolders]_
+**Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-{{{
+```
 class function Windows: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the fully qualified path name of the Windows folder. This is the folder where Windows was installed.

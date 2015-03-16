@@ -1,31 +1,30 @@
-#summary Description of the TPJVCLMsgDlg.HelpContext property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !HelpContext property =
+# HelpContext property #
 
-*Project:* [MessageDialogComponents Message Dialogue Components].
+**Project:** [Message Dialogue Components](MessageDialogComponents.md).
 
-*Unit:* _PJMessageDialog_.
+**Unit:** _PJMessageDialog_.
 
-*Class:* _[TPJVCLMsgDlg TPJVCLMsgDlg]_
+**Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-{{{
+```
 type
   THelpContext = -MaxLongInt..MaxLongInt;
 
 property HelpContext: THelpContext;
-}}}
+```
 
-== Description ==
+## Description ##
 
-Set the _!HelpContext_ property to the context number of the relevant topic in the help file specified by the _[TPJVCLMsgDlgHelpFile HelpFile]_ property. This topic is displayed when the user presses F1 in the dialogue box or clicks any help button that is displayed.
+Set the _HelpContext_ property to the context number of the relevant topic in the help file specified by the _[HelpFile](TPJVCLMsgDlgHelpFile.md)_ property. This topic is displayed when the user presses F1 in the dialogue box or clicks any help button that is displayed.
 
 There are two ways the dialogue can display a help button that accesses the help topic:
 
- # By including `mbHelp` in the _[TPJVCLMsgDlgButtons Buttons]_ property and clearing the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property.
- # By setting the `mdoAutoHelpBtn` value of the _[TPJVCLMsgDlgOptions Options]_ property and giving _!HelpContext_ a non-zero value.
+  1. By including `mbHelp` in the _[Buttons](TPJVCLMsgDlgButtons.md)_ property and clearing the `mdoAutoHelpBtn` value of the _[Options](TPJVCLMsgDlgOptions.md)_ property.
+  1. By setting the `mdoAutoHelpBtn` value of the _[Options](TPJVCLMsgDlgOptions.md)_ property and giving _HelpContext_ a non-zero value.
 
-If _[TPJVCLMsgDlgOnHelp OnHelp]_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.
+If _[OnHelp](TPJVCLMsgDlgOnHelp.md)_ is not handled and a help button is pressed, a request is made to the _Application_ object to pass the help context along to the currently registered help system.

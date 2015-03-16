@@ -1,23 +1,22 @@
-#summary Description of the TPJOSInfo.IsRemoteSession class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IsRemoteSession class function =
+# IsRemoteSession class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-*Introduced:* v3.3
+**Introduced:** v3.3
 
-{{{
+```
 class function IsRemoteSession: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns true if the program is running under a Windows Terminal Server as a remote client session.

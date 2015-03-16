@@ -1,14 +1,13 @@
-#summary Stream Extension Classes documentation.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Stream Extension Classes =
+# Stream Extension Classes #
 
-|| This documentation has now moved to the Stream Extension Classes *[http://wiki.delphidabbler.com/index.php/Docs/StreamsAPI Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif<br><br>Please update any bookmarks. ||
+| This documentation has now moved to the Stream Extension Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/StreamsAPI)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks. </tbody></table>
 
-*Links:*
+**Links:**
 
-  * Back to [Welcome Wiki Home Page]
-  * [http://www.delphidabbler.com/software/streams Stream Extension Classes Web Page]http://www.delphidabbler.com/img/markup/off-site.gif
+  * Back to [Wiki Home Page](Welcome.md)
+  * [Stream Extension Classes Web Page](http://www.delphidabbler.com/software/streams)![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)

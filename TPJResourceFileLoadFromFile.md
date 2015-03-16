@@ -1,29 +1,28 @@
-#summary Description of the TPJResourceFile.LoadFromFile method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !LoadFromFile method =
+# LoadFromFile method #
 
-*Project:* [ResFileUnit Resource File Unit]
+**Project:** [Resource File Unit](ResFileUnit.md)
 
-*Unit:* _PJResFile_.
+**Unit:** _PJResFile_.
 
-*Class:* _[TPJResourceFile TPJResourceFile]_
+**Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-{{{
+```
 procedure LoadFromFile(const FileName: TFileName);
-}}}
+```
 
-Loads a resource file from a named file. New _[TPJResourceEntry TPJResourceEntry]_ objects are created for each resource in the file.
+Loads a resource file from a named file. New _[TPJResourceEntry](TPJResourceEntry.md)_ objects are created for each resource in the file.
 
-Any _[TPJResourceEntry TPJResourceEntry]_ objects that existed before calling _!LoadFromFile_ are freed. You should be careful not to access any existing references to such objects after calling _!LoadFromFile_.
+Any _[TPJResourceEntry](TPJResourceEntry.md)_ objects that existed before calling _LoadFromFile_ are freed. You should be careful not to access any existing references to such objects after calling _LoadFromFile_.
 
-*_Parameter:_*
+**_Parameter:_**
 
-  * _!FileName_: The name of the file from which to load the resource data.
+  * _FileName_: The name of the file from which to load the resource data.
 
-*_Raises:_*
+**_Raises:_**
 
 Exceptions are raised if the file does not exist or does not contain a valid resource file.

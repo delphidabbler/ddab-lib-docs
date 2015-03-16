@@ -1,21 +1,20 @@
-#summary Description of the TPJOSInfo.IsTabletPC class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= IsTabletPC class function =
+# IsTabletPC class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJOSInfo TPJOSInfo]_
+**Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-{{{
+```
 class function IsTabletPC: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns true if Windows Tablet PC is installed or False if not.

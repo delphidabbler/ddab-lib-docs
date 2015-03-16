@@ -1,30 +1,31 @@
-#summary TPJExtFileFilter class description
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJExtFileFilter =
+# TPJExtFileFilter #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-_TPJExtFileFilter_ is a file filter component that descends from _[TPJFileFilter TPJFileFilter]_ for use with the drop files components that filters files according to their extension.
+_TPJExtFileFilter_ is a file filter component that descends from _[TPJFileFilter](TPJFileFilter.md)_ for use with the drop files components that filters files according to their extension.
 
-== Methods ==
+## Methods ##
 
-|| *Method* || *Description* ||
-|| _[TPJExtFileFilterAccept Accept]_ || Checks whether a given file or folder passes though the filter. ||
+| **Method** | **Description** |
+|:-----------|:----------------|
+| _[Accept](TPJExtFileFilterAccept.md)_ | Checks whether a given file or folder passes though the filter. |
 
-== Properties ==
+## Properties ##
 
-|| *Property* || *Description* ||
-|| _[TPJExtFileFilterExtensions Extensions]_ || Filters out files without the specified extensions. ||
-|| _Name_ || Inherited from _TComponent_. See Delphi help for details. ||
-|| _[TPJExtFileFilterStyle Style]_ || Determines the type of file the filter acts upon. ||
-|| _Tag_ || Inherited from _TComponent_. See Delphi help for details. ||
+| **Property** | **Description** |
+|:-------------|:----------------|
+| _[Extensions](TPJExtFileFilterExtensions.md)_ | Filters out files without the specified extensions. |
+| _Name_ | Inherited from _TComponent_. See Delphi help for details. |
+| _[Style](TPJExtFileFilterStyle.md)_ | Determines the type of file the filter acts upon. |
+| _Tag_ | Inherited from _TComponent_. See Delphi help for details. |
 
-== Events ==
+## Events ##
 
-_TPJExtFileFilter_ defines no events. 
+_TPJExtFileFilter_ defines no events.

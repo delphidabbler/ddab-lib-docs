@@ -1,9 +1,9 @@
-#summary TPJMD5Digest record description.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= TPJMD5Digest =
+# TPJMD5Digest #
 
-|| Sorry, this documentation has moved to the MD5 Message Digest Unit *[http://wiki.delphidabbler.com/index.php/Docs/TPJMD5Digest Programmers' Guide]* http://www.delphidabbler.com/img/markup/off-site.gif ||
+| Sorry, this documentation has moved to the MD5 Message Digest Unit **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJMD5Digest)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

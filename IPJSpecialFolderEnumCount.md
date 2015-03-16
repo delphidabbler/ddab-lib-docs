@@ -1,21 +1,20 @@
-#summary Description of the IPJSpecialFolderEnum.Count method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Count method =
+# Count method #
 
-*Project:* [ShellFoldersUnit Shell Folders Unit].
+**Project:** [Shell Folders Unit](ShellFoldersUnit.md).
 
-*Unit:* _PJShellFolders_. 
+**Unit:** _PJShellFolders_.
 
-*Interface:* _[IPJSpecialFolderEnum IPJSpecialFolderEnum]_
+**Interface:** _[IPJSpecialFolderEnum](IPJSpecialFolderEnum.md)_
 
-{{{
+```
 function Count: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 _Count_ returns the number of special folder identifier values in the enumeration.

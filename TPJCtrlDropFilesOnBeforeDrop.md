@@ -1,23 +1,22 @@
-#summary Description of the TPJCtrlDropFiles.OnBeforeDrop event
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !OnBeforeDrop event =
+# OnBeforeDrop event #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJCtrlDropFiles TPJCtrlDropFiles]_
+**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-{{{
+```
 property OnBeforeDrop: TNotifyEvent;
-}}}
+```
 
-== Description ==
+## Description ##
 
 This event is triggered when files are dropped on the managed control, but before the files are processed. If the processing of files is likely to be a lengthy occurence then an hourglass or similar user interface device can be displayed here.
 
-The _[TPJCtrlDropFilesFiles Files]_ property does not yet contain details of the files dropped when this event is triggered, so the _Files_ property should not be read. The _[TPJCtrlDropFilesOnDropFiles OnDropFiles]_ event is triggered after the processing of files takes place. The _Files_ property should therefore be read in the _!OnDropFiles_ event handler.
+The _[Files](TPJCtrlDropFilesFiles.md)_ property does not yet contain details of the files dropped when this event is triggered, so the _Files_ property should not be read. The _[OnDropFiles](TPJCtrlDropFilesOnDropFiles.md)_ event is triggered after the processing of files takes place. The _Files_ property should therefore be read in the _OnDropFiles_ event handler.

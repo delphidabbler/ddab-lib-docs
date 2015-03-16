@@ -1,25 +1,24 @@
-#summary Description of the TPJCBViewer.Enabled property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= Enabled property =
+# Enabled property #
 
-*Project:* [ClipboardViewerComponent Clipboard Viewer Component].
+**Project:** [Clipboard Viewer Component](ClipboardViewerComponent.md).
 
-*Unit:* _PJCBView_.
+**Unit:** _PJCBView_.
 
-*Class:* _[TPJCBViewer TPJCBViewer]_
+**Class:** _[TPJCBViewer](TPJCBViewer.md)_
 
-{{{
+```
 property Enabled: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
 The _Enabled_ property enables and disables the component.
 
-When the property is set to `False` the component will never trigger the _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_ event. Restoring _Enabled_ to `True` re-enables _[TPJCBViewerOnClipboardChanged OnClipboardChanged]_.
+When the property is set to `False` the component will never trigger the _[OnClipboardChanged](TPJCBViewerOnClipboardChanged.md)_ event. Restoring _Enabled_ to `True` re-enables _[OnClipboardChanged](TPJCBViewerOnClipboardChanged.md)_.
 
 The default value is `True`.

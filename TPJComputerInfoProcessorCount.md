@@ -1,21 +1,20 @@
-#summary Description of the TPJComputerInfo.ProcessorCount class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ProcessorCount class function =
+# ProcessorCount class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-{{{
+```
 class function ProcessorCount: Integer;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the number of processors installed in the computer. Mutli-core processors will report each core as a separate processor.

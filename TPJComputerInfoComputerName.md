@@ -1,21 +1,20 @@
-#summary Description of the TPJComputerInfo.ComputerName class function.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ComputerName class function =
+# ComputerName class function #
 
-*Project:* [SystemInformationUnit System Information Unit].
+**Project:** [System Information Unit](SystemInformationUnit.md).
 
-*Unit:* _PJSysInfo_.
+**Unit:** _PJSysInfo_.
 
-*Class:* _[TPJComputerInfo TPJComputerInfo]_
+**Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-{{{
+```
 class function ComputerName: string;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Returns the name of the computer on which the program is executing.

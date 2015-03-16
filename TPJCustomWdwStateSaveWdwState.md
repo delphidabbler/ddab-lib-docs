@@ -1,24 +1,23 @@
-#summary Description of the TPJCustomWdwState.SaveWdwState method.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !SaveWdwState method =
+# SaveWdwState method #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-{{{
+```
 procedure SaveWdwState(
   const Left, Top, Width, Height, State: Integer
 ); virtual; abstract;
-}}}
+```
 
-== Description ==
+## Description ##
 
 Protected method used to write a window's size, position and state to storage.
 
@@ -26,4 +25,4 @@ This virtual abstract method must be overridden by descendant components to save
 
 The position of the window is given by the _Left_ and _Top_ parameters, the size by the _Width_ and _Height_ parameters and the state by the _State_ parameter. _State_ is the ordinal value of a member of the _TWindowState_ enumeration: `wsMinimized`, `wsMaximized` or `wsNormal`. The parameter values should be saved in a way that allows them to be identified and associated with the window when read back in.
 
-_!SaveWdwState_ is called internally by the _[TPJCustomWdwStateSave Save]_ method.
+_SaveWdwState_ is called internally by the _[Save](TPJCustomWdwStateSave.md)_ method.

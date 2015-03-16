@@ -1,27 +1,26 @@
-#summary Description of the TPJCustomWdwState.IgnoreState property.
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !IgnoreState property =
+# IgnoreState property #
 
-*Project:* [WindowStateComponents Window State Components].
+**Project:** [Window State Components](WindowStateComponents.md).
 
-*Unit:* _PJWdwState_. 
+**Unit:** _PJWdwState_.
 
-*Class:* _[TPJCustomWdwState TPJCustomWdwState]_
+**Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-{{{
+```
 property IgnoreState: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-*PROPERTY DEPRECATED*
+**PROPERTY DEPRECATED**
 
 Determines whether the window's saved state (maximised, normal or minimised) is applied on restoration.
 
-Setting _!IgnoreState_ to true is the same as including `woIngoreState` in the _[TPJCustomWdwStateOptions Options]_ property, and setting _!IgnoreState_ false is the same as excluding `woIngoreState` from _[TPJCustomWdwStateOptions Options]_.
+Setting _IgnoreState_ to true is the same as including `woIngoreState` in the _[Options](TPJCustomWdwStateOptions.md)_ property, and setting _IgnoreState_ false is the same as excluding `woIngoreState` from _[Options](TPJCustomWdwStateOptions.md)_.
 
-_!IgnoreState_ is provided for backwards compatibility purposes only and may be removed from future releases.
+_IgnoreState_ is provided for backwards compatibility purposes only and may be removed from future releases.

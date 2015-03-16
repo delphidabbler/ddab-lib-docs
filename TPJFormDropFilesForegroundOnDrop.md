@@ -1,21 +1,20 @@
-#summary Description of the TPJFormDropFiles.ForegroundOnDrop property
-<wiki:comment>
+<a href='Hidden comment: 
 $Rev$
 $Date$
-</wiki:comment>
+'></a>
 
-= !ForegroundOnDrop property =
+# ForegroundOnDrop property #
 
-*Project:* [DropFilesComponents Drop Files Components].
+**Project:** [Drop Files Components](DropFilesComponents.md).
 
-*Unit:* _PJDropFiles_.
+**Unit:** _PJDropFiles_.
 
-*Class:* _[TPJFormDropFiles TPJFormDropFiles]_
+**Class:** _[TPJFormDropFiles](TPJFormDropFiles.md)_
 
-{{{
+```
 property ForegroundOnDrop: Boolean;
-}}}
+```
 
-== Description ==
+## Description ##
 
-When this property is true the form containing the component is brought to the front when files are dropped on the control. When _!ForegroundOnDrop_ is false (default) then the position of the owning form in the Z-Order remains unchanged.
+When this property is true the form containing the component is brought to the front when files are dropped on the control. When _ForegroundOnDrop_ is false (default) then the position of the owning form in the Z-Order remains unchanged.
