@@ -1,4 +1,4 @@
-<a href='Hidden comment: 
+<a href='Hidden comment:
 $Rev$
 $Date$
 '></a>
@@ -9,10 +9,11 @@ The _PJHotLabel_ unit contains a single component, _[TPJHotLabel](TPJHotLabel.md
 
 Several types are defined in the unit in total. They are:
 
+| Type | Description |
+| -------- | --------- |
 | _[TPJHotLabel](TPJHotLabel.md)_ | The Hot Label Component itself. |
-|:--------------------------------|:--------------------------------|
 | _[EPJURLError](EPJURLError.md)_  | A custom exception that is raised by _[TPJHotLabel](TPJHotLabel.md)_ when URL related errors are encountered. |
-| _TPJHLHintStyle_ | An emumeration of hint styles used by the _[HintStyle](TPJHotLabelHintStyle.md)_ property. See the property's documentation for details. |
+| _TPJHLHintStyle_ | An enumeration of hint styles used by the _[HintStyle](TPJHotLabelHintStyle.md)_ property. See the property's documentation for details. |
 | _TPJHLCustomHintEvent_ | The type of event triggered by the _[OnCustomHint](TPJHotLabelOnCustomHint.md)_ event. See the event's documentation for details. |
 
 **Note:** This documentation relates to release 2.0 and later. Any features introduced after v2.0 are flagged with the relevant version number as a superscript.
