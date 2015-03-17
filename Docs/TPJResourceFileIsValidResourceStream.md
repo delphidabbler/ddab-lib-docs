@@ -6,7 +6,7 @@
 
 **Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-```
+```pascal
 class function IsValidResourceStream(const Stm: TStream): Boolean;
 ```
 
@@ -24,7 +24,7 @@ Use _IsValidResourceStream_ to test a stream for validity before loading it into
 
 **_Example:_**
 
-```
+```pascal
 var
   Stm: TStream;
   SavedPos: Int64;

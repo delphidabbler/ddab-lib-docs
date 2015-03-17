@@ -6,7 +6,7 @@
 
 **Class:** _[TPJExtFileFilter](TPJExtFileFilter.md)_
 
-```
+```pascal
 function Accept(
   const FilePath: string; const IsFolder: Boolean
 ): Boolean; override;

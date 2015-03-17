@@ -11,7 +11,7 @@ The following code snippet adds four new resource entries to an existing resourc
   1. A new `RCDATA` resource also named `'FORTYTWO'` but with a language id of `$0809`. Again this resource is a copy of the first one.
   1. A new empty `RCDATA` resource named `42` with language id of `$0809`.
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   Entry1, Entry2, Entry3, Entry4: TPJResourceEntry;

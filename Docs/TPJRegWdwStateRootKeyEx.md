@@ -8,7 +8,7 @@
 
 **Introduced:** v5.6
 
-```
+```pascal
 property RootKeyEx: TPJRegRootKey;
 ```
 

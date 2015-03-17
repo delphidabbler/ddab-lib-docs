@@ -6,7 +6,7 @@
 
 **Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-```
+```pascal
 procedure SaveToFile(const FileName: TFileName);
 ```
 

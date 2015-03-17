@@ -6,7 +6,7 @@
 
 **Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-```
+```pascal
 property ButtonPlacing: TPJAboutBtnPlacing;
 
 type TPJAboutBtnPlacing = (abpLeft, abpCentre, abpRight);

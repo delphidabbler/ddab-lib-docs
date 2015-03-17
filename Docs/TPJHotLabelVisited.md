@@ -8,7 +8,7 @@
 
 **Introduced:** v2.2
 
-```
+```pascal
 property Visited: Boolean;
 ```
 

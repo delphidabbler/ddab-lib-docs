@@ -12,7 +12,7 @@ To begin with, here's routine that will store the current date, as an ANSI strin
 
 Here's the code:
 
-```
+```pascal
 uses
   SysUtils, Classes, Windows, PJResFile;
 
@@ -64,7 +64,7 @@ Any program using the resource has to simply read the date string as ANSI text, 
 
 Of course you could always store a raw _TDateTime_ value in resources instead of a format string. To do this replace the declaration of _DateStr_ with a new local variable _DateNow_ with type _TDateTime_ and replace the code in the section introduced by the `// 3: Store the current date in the resource` comment with the following:
 
-```
+```pascal
     ...
     // 3: Store the current date in the resource
     DateNow := Now;
@@ -77,7 +77,7 @@ Of course you could always store a raw _TDateTime_ value in resources instead of
 
 This routine could be included in a console application that takes the resource file name as a parameter then updates or creates the resource file containing the current date, like this:
 
-```
+```pascal
 program DateIns;
 
 {$APPTYPE CONSOLE}

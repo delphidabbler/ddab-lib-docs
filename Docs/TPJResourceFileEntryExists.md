@@ -6,7 +6,7 @@
 
 **Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-```
+```pascal
 function EntryExists(const ResType, ResName: PChar;
   const LangID: Word = $FFFF): Boolean;
 ```

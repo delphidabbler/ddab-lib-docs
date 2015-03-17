@@ -14,7 +14,7 @@ Some of the most common resources are
 
 Here's a little routine that checks to see if a given resource file contains all of the above resource types. It also checks for the required bitmap resource names and that the manifest has the correct XML format. The routine raises exceptions if any errors are found. It returns normally only if the resource file is valid.
 
-```
+```pascal
 uses
   SysUtils, StrUtils, Classes, Windows, PJResFile;
 
@@ -56,7 +56,7 @@ First we load the resource file whose name is supplied as a parameter. Next we c
 
 This routine could be used in a command line application that could be incorporated in a build chain, for example:
 
-```
+```pascal
 program ResourceFileChecker;
 
 {$APPTYPE CONSOLE}

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWdwState](TPJWdwState.md)_
 
-```
+```pascal
 type
   TPJWdwStateGetIniData = procedure(
     var AIniFilename, ASection: string

@@ -26,7 +26,7 @@ The variables defined in _PJSysInfo_ are:
 
 **Introduced:** v5.0
 
-```
+```pascal
 var Win32PlatformEx: Integer;
 ```
 
@@ -43,7 +43,7 @@ _Win32Platform_, on the other hand, is always spoofed by compatibility mode.
 
 **Introduced:** v5.0
 
-```
+```pascal
 var Win32MajorVersionEx: LongWord;
 ```
 
@@ -58,7 +58,7 @@ Whether _Win32MajorVersionEx_ can be spoofed depends on the value returned by _[
 
 **Introduced:** v5.0
 
-```
+```pascal
 var Win32MinorVersionEx: LongWord;
 ```
 
@@ -73,7 +73,7 @@ Whether _Win32MinorVersionEx_ can be spoofed depends on the value returned by _[
 
 **Introduced:** v5.0
 
-```
+```pascal
 var Win32BuildNumberEx: Integer;
 ```
 
@@ -88,7 +88,7 @@ Whether _Win32BuildNumberEx_ can be spoofed depends on the value returned by _[T
 
 **Introduced:** v5.0
 
-```
+```pascal
 var Win32CSDVersionEx: string;
 ```
 
@@ -101,7 +101,7 @@ Whether _Win32CSDVersionEx_ can be spoofed depends on the value returned by _[TP
 
 ## Win32HaveExInfo ##
 
-```
+```pascal
 var Win32HaveExInfo: Boolean;
 ```
 
@@ -114,7 +114,7 @@ Compatibility modes have no effect on _Win32HaveExInfo_: its value depends on th
 
 ## Win32ServicePackMajor ##
 
-```
+```pascal
 var Win32ServicePackMajor: string;
 ```
 
@@ -129,7 +129,7 @@ Running the host program in compatibility mode _Win32ServicePackMajor_ is always
 
 ## Win32ServicePackMinor ##
 
-```
+```pascal
 var Win32ServicePackMinor: string;
 ```
 
@@ -144,7 +144,7 @@ Running the host program in compatibility mode _Win32ServicePackMinor_ is always
 
 ## Win32SuiteMask ##
 
-```
+```pascal
 var Win32SuiteMask: Integer;
 ```
 
@@ -159,7 +159,7 @@ Compatibility mode has no effect on this value.
 
 ## Win32ProductType ##
 
-```
+```pascal
 var Win32ProductType: Integer;
 ```
 
@@ -172,7 +172,7 @@ Compatibility mode has no effect on this value: running an emulation of a server
 
 ## Win32HaveProductInfo ##
 
-```
+```pascal
 var Win32HaveProductInfo: Boolean;
 ```
 
@@ -185,7 +185,7 @@ Compatibility modes have no effect on _Win32HaveProductInfo_: its value depends 
 
 ## Win32ProductInfo ##
 
-```
+```pascal
 var Win32ProductInfo: LongWord;
 ```
 

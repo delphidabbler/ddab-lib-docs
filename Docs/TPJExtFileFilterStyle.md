@@ -6,7 +6,7 @@
 
 **Class:** _[TPJExtFileFilter](TPJExtFileFilter.md)_
 
-```
+```pascal
 property Style: TPJExtFileFilterStyle;
 ```
 

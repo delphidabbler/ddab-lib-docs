@@ -6,7 +6,7 @@
 
 **Class:** _[TPJRegWdwState](TPJRegWdwState.md)_
 
-```
+```pascal
 type
   TPJWdwStateGetRegData = procedure(
     var RootKey: HKEY; var SubKey: string

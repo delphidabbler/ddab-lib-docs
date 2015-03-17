@@ -8,7 +8,7 @@
 
 **Introduced:** v1.1
 
-```
+```pascal
 procedure ClearData;
 ```
 

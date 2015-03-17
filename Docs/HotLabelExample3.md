@@ -14,7 +14,7 @@ In this example we will use an ini file to persist the visited state of the hot 
 
 We will write the ini file when the form is destroyed, so create an _OnDestroy_ event handler for the form and implement it as follows:
 
-```
+```pascal
 procedure TForm1.FormDestroy(Sender: TObject);
 var
   Ini: TIniFile;
@@ -39,7 +39,7 @@ This simply creates an ini file with the name given by _IniFileName_ (which we'l
 
 Having recorded the information all we need to do is to read it in when the program starts and set the visited state of the required hot label components. We do this in the form's _OnCreate_ handler:
 
-```
+```pascal
 var
   Ini: TIniFile;
   I: Integer;
@@ -65,7 +65,7 @@ This code is the inverse of the code we used to write the file. It loops through
 
 That just leaves _IniFileName_. You can implement this as a function or method that returns the required file name. For example, you could store the file in the same directory as the executable by implementing _IniFileName_ as a private form method follows:
 
-```
+```pascal
 function TForm1.IniFileName: string;
 begin
   Result := ExtractFilePath(ParamStr(0)) + 'hotlabel.ini';

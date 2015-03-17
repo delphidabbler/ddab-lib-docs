@@ -6,7 +6,7 @@
 
 **Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-```
+```pascal
 type
   TPJMsgDlgAlign = (
     mdaScreenCentre, mdaScreenOffset, mdaFormCentre, mdaFormOffset

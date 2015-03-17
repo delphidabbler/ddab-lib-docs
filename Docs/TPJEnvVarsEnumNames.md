@@ -8,7 +8,7 @@
 
 **Class:** _[TPJEnvVars](TPJEnvVars.md)_
 
-```
+```pascal
 type
   TPJEnvVarsEnum = procedure(const VarName: string; Data: Pointer) of object;
 

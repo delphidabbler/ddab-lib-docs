@@ -6,7 +6,7 @@
 
 **Class:** _[TPJFormDropFiles](TPJFormDropFiles.md)_
 
-```
+```pascal
 property OnFileFilter: TPJDroppedFileFilter;
 ```
 

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-```
+```pascal
 procedure Save;
 ```
 

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWdwState](TPJWdwState.md)_
 
-```
+```pascal
 procedure ReadWdwState(
   var Left, Top, Width, Height, State: Integer
 ); override;

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWdwState](TPJWdwState.md)_
 
-```
+```pascal
 procedure SaveWdwState(
   const Left, Top, Width, Height, State: Integer
 ); override;

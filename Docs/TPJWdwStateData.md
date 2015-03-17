@@ -4,7 +4,7 @@
 
 **Unit:** _PJWdwState_.
 
-```
+```pascal
 type
   TPJWdwStateData = record
     Left: Integer;

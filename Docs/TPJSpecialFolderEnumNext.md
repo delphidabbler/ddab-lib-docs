@@ -6,7 +6,7 @@
 
 **Interface:** _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_
 
-```
+```pascal
 function Next: Integer;
 ```
 

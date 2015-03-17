@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-```
+```pascal
 procedure ReadWdwState(
   var Left, Top, Width, Height, State: Integer
 ); virtual; abstract;

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_
 
-```
+```pascal
 function AtEnd: Boolean;
 ```
 

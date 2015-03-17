@@ -19,7 +19,7 @@ The following public routines are defined in _PJEnvVars_:
 
 ## GetEnvVarValue ##
 
-```
+```pascal
 function GetEnvVarValue(const VarName: string): string;
 ```
 
@@ -27,7 +27,7 @@ Returns the value of the environment variable named by _VarName_. The empty stri
 
 ## SetEnvVarValue ##
 
-```
+```pascal
 function SetEnvVarValue(const VarName, VarValue: string): Integer;
 ```
 
@@ -39,7 +39,7 @@ Returns 0 on success or a Windows error code on error. The most likely cause of 
 
 ## DeleteEnvVar ##
 
-```
+```pascal
 function DeleteEnvVar(const VarName: string): Integer;
 ```
 
@@ -51,7 +51,7 @@ If _DeleteEnvVar_ completes successfuly then 0 is returned. If an error occurs t
 
 ## GetAllEnvVars ##
 
-```
+```pascal
 function GetAllEnvVars(const Vars: TStrings): Integer;
 ```
 
@@ -65,7 +65,7 @@ It is permitted to pass nil as the parameter to _GetAllEnvVars_. If this is done
 
 ## ExpandEnvVars ##
 
-```
+```pascal
 function ExpandEnvVars(const Str: string): string;
 ```
 
@@ -75,7 +75,7 @@ Environment variables should be delimited by `%` characters thus: `%ENVVAR%`. If
 
 ## CreateEnvBlock ##
 
-```
+```pascal
 function CreateEnvBlock(const NewEnv: TStrings;
   const IncludeCurrent: Boolean; const Buffer: Pointer;
   const BufSize: Integer): Integer;
@@ -89,7 +89,7 @@ The _NewEnv_ and _IncludeCurrent_ parameters determine what is included in the n
 
 The usual way to use _CreateEnvBlock_ is to call it once with a nil buffer to get the required buffer size in characters, allocate the buffer and then call _CreateEnvBlock_ again, this time passing the actual buffer and its size, for example:
 
-```
+```pascal
 var
   EnvBlock: Pointer;
   BlockSize: Integer;
@@ -117,7 +117,7 @@ The format of the environment block stored in _Buffer_ is a #0 character separat
 
 ## GetAllEnvVarNames ##
 
-```
+```pascal
 procedure GetAllEnvVarNames(const Names: TStrings); overload;
 function GetAllEnvVarNames: TStringDynArray; overload;
 ```
@@ -130,7 +130,7 @@ The second version creates and returns a dynamic string array containing the env
 
 ## EnvBlockSize ##
 
-```
+```pascal
 function EnvBlockSize: Integer;
 ```
 

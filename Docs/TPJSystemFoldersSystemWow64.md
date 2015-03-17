@@ -8,7 +8,7 @@
 
 **Introduced:** v3.1
 
-```
+```pascal
 class function SystemWow64: string;
 ```
 

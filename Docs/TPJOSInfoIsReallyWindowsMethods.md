@@ -8,7 +8,7 @@
 
 **Introduced:** v5.0
 
-```
+```pascal
 class function IsReallyWindows2000OrGreater: Boolean;
 class function IsReallyWindows2000SP1OrGreater: Boolean;
 class function IsReallyWindows2000SP2OrGreater: Boolean;

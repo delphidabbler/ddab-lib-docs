@@ -8,7 +8,7 @@
 
 **Introduced:** v5.4
 
-```
+```pascal
 property OnAfterWindowRestored: TNotifyEvent;
 ```
 

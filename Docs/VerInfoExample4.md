@@ -4,7 +4,7 @@ This example demostrates how to access string information from a version resourc
 
 Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo](TPJVersionInfo.md)_ component onto a form and add the following function and event handlers:
 
-```
+```pascal
 function DirToPath(const Dir: string): string;
   // Ensures path end in '\'
 begin

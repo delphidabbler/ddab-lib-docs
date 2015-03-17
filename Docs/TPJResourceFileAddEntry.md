@@ -12,7 +12,7 @@ There are two overloaded _AddEntry_ methods. They are both used to create a new 
 ---
 
 
-```
+```pascal
 function AddEntry(const ResType, ResName: Pchar;
   const LangID: Word = 0): TPJResourceEntry;
 ```
@@ -37,7 +37,7 @@ An exception is raised if an entry already exists with same type, name and langu
 ---
 
 
-```
+```pascal
 function AddEntry(const Entry: TPJResourceEntry; const ResName: Pchar;
   const LangID: Word = 0): TPJResourceEntry;
 ```

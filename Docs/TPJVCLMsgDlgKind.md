@@ -6,7 +6,7 @@
 
 **Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-```
+```pascal
 type
   TPJMsgDlgKind = (
     mkWarning, mkInformation, mkQuery, mkError, mkUser,

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWildCardFileFilter](TPJWildCardFileFilter.md)_
 
-```
+```pascal
 property WildCard: string;
 ```
 

@@ -8,7 +8,7 @@
 
 **Class:** _[TPJEnvVars](TPJEnvVars.md)_
 
-```
+```pascal
 procedure DeleteVar(const Name: string);
 ```
 

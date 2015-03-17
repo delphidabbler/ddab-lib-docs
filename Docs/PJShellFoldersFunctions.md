@@ -15,7 +15,7 @@ The following public routines are defined in _PJShellFolders_:
 
 ## IsValidSpecialFolderId ##
 
-```
+```pascal
 function IsValidSpecialFolderId(ID: Integer): Boolean;
 ```
 
@@ -29,7 +29,7 @@ Use the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class to enumerate all
 
 ## NumSpecialFolderIds ##
 
-```
+```pascal
 function NumSpecialFolderIds: Integer;
 ```
 
@@ -37,7 +37,7 @@ Returns the number of special folder identifiers defined by Windows that are sup
 
 ## SpecialFolderIdToStr ##
 
-```
+```pascal
 function SpecialFolderIdToStr(ID: Integer): string;
 ```
 
@@ -57,7 +57,7 @@ Use the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class to enumerate all
 
 ## StrToSpecialFolderID ##
 
-```
+```pascal
 function StrToSpecialFolderID(const IDStr: string): Integer;
 ```
 
@@ -71,7 +71,7 @@ Windows defines identifiers to represent the shell's special folders. The _ShlOb
 
 ## PIDLToFolderPath ##
 
-```
+```pascal
 function PIDLToFolderPath(PIDL: PItemIDList): string;
 ```
 
@@ -79,7 +79,7 @@ Returns the path of the folder described by PIDL.
 
 ## PIDLToFolderDisplayName ##
 
-```
+```pascal
 function PIDLToFolderDisplayName(PIDL: PItemIDList): string;
 ```
 

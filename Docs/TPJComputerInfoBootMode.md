@@ -8,7 +8,7 @@
 
 **Introduced:** v3.1
 
-```
+```pascal
 class function BootMode: TPJBootMode;
 
 type TPJBootMode = (bmUnknown, bmNormal, bmSafeMode, bmSafeModeNetwork);

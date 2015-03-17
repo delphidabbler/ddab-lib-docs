@@ -6,7 +6,7 @@
 
 **Class:** _[TPJUserWdwState](TPJUserWdwState.md)_
 
-```
+```pascal
 type
   TPJWdwStateSaveData = procedure(
     Sender: TObject; const Data: TPJWdwStateData

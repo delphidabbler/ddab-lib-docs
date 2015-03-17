@@ -6,7 +6,7 @@
 
 **Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-```
+```pascal
 property DlgType: LongWord;
 ```
 
@@ -40,7 +40,7 @@ The buttons displayed in the dialogue box can be determined by specifying one, a
 
 If any other value in the range `$00000000` to `$0000000F` is specified then _[ButtonGroup](TPJVCLMsgDlgButtonGroup.md)_ is set to `bgUnknown` and the value in _DlgType_ is replaced by `UNKNOWN_BUTTONGROUP` (defined in _PJMessageDialog.pas_). To check for an unknown or invalid button group first set _DlgType_ then perform the following test:
 
-```
+```pascal
 begin
   if PJVCLMsgDlg1.DlgType and MB_TYPEMASK = UNKNOWN_BUTTONGROUP then
     // button group unknown or unsupported
@@ -65,7 +65,7 @@ The kind of dialogue box (its icon, default title, etc.) is specified by ORing o
 
 If any other value in the range `$00000010` to `$000000F0` is specified then _[Kind](TPJVCLMsgDlgKind.md)_ is set to `mkUnknown` and the value in _DlgType_ is replaced by `UNKNOWN_ICON` (defined in _PJMessageDialog.pas_). To check for an unknown or invalid dialogue kind first set _DlgType_ then perform the following test:
 
-```
+```pascal
 begin
   if PJVCLMsgDlg1.DlgType and MB_ICONMASK = UNKNOWN_ICON then
     // dialogue kind unknown or not supported
@@ -111,7 +111,7 @@ The button group component of _DlgType_ is set according to the value of the _[B
 
 The button group values are ORd with other values stored in _DlgType_. To extract them AND the value of _DlgType_ with `MB_TYPEMASK`. E.g.
 
-```
+```pascal
 var
   BG: LongWord;
 begin
@@ -138,7 +138,7 @@ The component of _DlgType_ that identifies the kind of dialogue box displayed is
 
 The dialogue kind values are ORd with other values stored in _DlgType_. To extract them AND the value of _DlgType_ with `MB_ICONMASK`. E.g.
 
-```
+```pascal
 var
   K: LongWord;
 begin
@@ -157,7 +157,7 @@ These rules mean that the presence of `MB_HELP` when setting _DlgType_ does not 
 
 Check for the presence of `MB_HELP` like this:
 
-```
+```pascal
 begin
   if PJVCLMsgDlg1.DlgType and MB_HELP = MB_HELP then
     // MB_HELP present

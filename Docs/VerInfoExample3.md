@@ -4,7 +4,7 @@ This example shows how to use the translation, character set and language proper
 
 Drop a _TListBox_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on a form and add the following _OnCreate_ event handler to the form:
 
-```
+```pascal
 procedure TEgForm1.FormCreate(Sender: TObject);
 var
   I: Integer;

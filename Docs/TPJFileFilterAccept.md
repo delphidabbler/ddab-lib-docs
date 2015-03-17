@@ -6,7 +6,7 @@
 
 **Class:** _[TPJFileFilter](TPJFileFilter.md)_
 
-```
+```pascal
 function Accept(
   const FilePath: string; const IsFolder: Boolean
 ): Boolean; virtual; abstract;

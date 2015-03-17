@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWinMsgDlg](TPJWinMsgDlg.md)_
 
-```
+```pascal
 type
   TPJMsgDlgButtonGroup = (
     bgAbortRetryIgnore, bgOK, bgOKCancel, bgRetryCancel, bgYesNo, bgYesNoCancel,

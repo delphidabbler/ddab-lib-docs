@@ -20,7 +20,7 @@ Start a new application and place a _[TPJHotLabel](TPJHotLabel.md)_ component on
 
 If you don't want to use the object inspector you can double click the form to create a _FormCreate_ event handler and enter the following code in it, which assumes the component is named _PJHotLabel1_:
 
-```
+```pascal
 PJHotLabel1.Font.Color := clBlue;
 PJHotLabel1.HighlightFont.Color := PJHotLabel1.Font.Color;
 PJHotLabel1.Font.Style := [];
@@ -36,7 +36,7 @@ The second example uses component's default highlighting style where un-highligh
 
 Start a new application and drop a _[TPJHotLabel](TPJHotLabel.md)_ component on the form. We only need to set the _[HighlightURL](TPJHotLabelHighlightURL.md)_ property to `True`, leaving all the other properties unchanged. You can use the property inspector do this or create a _FormCreate_ event handler and enter the following line of code, assuming the component is named _PJHotLabel1_:
 
-```
+```pascal
 PJHotLabel1.HighlightURL := True;
 ```
 

@@ -6,7 +6,7 @@
 
 **Introduced:** v5.6
 
-```
+```pascal
 type
   TPJRegRootKey = (
     hkClassesRoot, hkCurrentUser, hkLocalMachine,

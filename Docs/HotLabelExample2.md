@@ -6,7 +6,7 @@ These examples show how to use the _[OnCustomHint](TPJHotLabelOnCustomHint.md)_ 
 
 Drop a _[TPJHotLabel](TPJHotLabel.md)_ component on a form and create a _FormCreate_ and a _[OnCustomHint](TPJHotLabelOnCustomHint.md)_ event handler, completed as follows:
 
-```
+```pascal
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   // You *could* set these properties at design time in the object inspector
@@ -26,7 +26,7 @@ end;
 
 This example is similar to the first except we store the custom hint text in the Hint property rather than entering the text in the form unit. This keeps the form's text in the form file. Drop a _[TPJHotLabel](TPJHotLabel.md)_ component on a form and create a _FormCreate_ and a _[OnCustomHint](TPJHotLabelOnCustomHint.md)_ event handler as before, and complete them as follows:
 
-```
+```pascal
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   // You *could* set these properties at design time in the object inspector

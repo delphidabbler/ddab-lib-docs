@@ -6,7 +6,7 @@
 
 **Class:** _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_
 
-```
+```pascal
 property IsVirtual: Boolean;
 ```
 

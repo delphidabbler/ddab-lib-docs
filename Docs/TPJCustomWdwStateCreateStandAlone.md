@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-```
+```pascal
 constructor CreateStandAlone(AOwner: TForm);
 ```
 

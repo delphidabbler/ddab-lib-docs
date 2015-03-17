@@ -8,7 +8,7 @@
 
 **Introduced:** v4.0
 
-```
+```pascal
 class function SystemProductName: string;
 ```
 

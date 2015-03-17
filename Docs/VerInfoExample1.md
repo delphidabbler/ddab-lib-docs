@@ -6,7 +6,7 @@ A [similar example](VerInfoExample2.md) shows how to achieve the same results us
 
 Drop a _TMemo_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
 
-```
+```pascal
 type
   TTableEntry = record
     // maps codes to descriptions

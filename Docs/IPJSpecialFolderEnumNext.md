@@ -6,7 +6,7 @@
 
 **Interface:** _[IPJSpecialFolderEnum](IPJSpecialFolderEnum.md)_
 
-```
+```pascal
 function Next: Integer;
 ```
 

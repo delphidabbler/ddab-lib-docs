@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 type
   TPJBrowseSelChangeEvent = procedure(Sender: TObject; 
     FolderName, DisplayName: AnsiString; var StatusText: AnsiString;

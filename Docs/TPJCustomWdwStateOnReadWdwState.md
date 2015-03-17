@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-```
+```pascal
 type
   TPJWdwStateReadEvent = procedure(
     Sender: TObject; var Left, Top, Width, Height, State: Integer

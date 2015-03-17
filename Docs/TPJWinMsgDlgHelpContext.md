@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWinMsgDlg](TPJWinMsgDlg.md)_
 
-```
+```pascal
 type
   THelpContext = -MaxLongInt..MaxLongInt;
 

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 type
   TPJBrowseSelChangeEventEx = procedure(Sender: TObject;
     PIDL: PItemIDList; var StatusText: AnsiString;

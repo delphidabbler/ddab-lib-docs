@@ -4,7 +4,7 @@
 
 **Unit:** _PJDropFiles_.
 
-```
+```pascal
 type
   TPJExtFileFilterStyle = (
     fsFilterFilesOnly, fsFilterFoldersOnly, fsAll

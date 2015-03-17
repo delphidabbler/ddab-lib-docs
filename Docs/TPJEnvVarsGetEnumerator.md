@@ -8,7 +8,7 @@
 
 **Class:** _[TPJEnvVars](TPJEnvVars.md)_
 
-```
+```pascal
 function GetEnumerator: TPJEnvVarsEnumerator;
 ```
 
@@ -18,7 +18,7 @@ _GetEnumerator_ creates an enumerator of type _[TPJEnvVarsEnumerator](TPJEnvVars
 
 By providing this method _[TPJEnvVars](TPJEnvVars.md)_ supports the <strong>for..in</strong> Delphi language construct that was introduced in Delphi 2005. Environment variable names can be enumerated as follows:
 
-```
+```pascal
 var
   Name: string;
 begin
@@ -34,7 +34,7 @@ In the above code _PJEnvVars1_ is assumed to be a _[TPJEnvVars](TPJEnvVars.md)_ 
 Compilers before Delphi 2005 can still use the enumerator by calling
 _GetEnumerator_ explicitly to get an [enumerator object](TPJEnvVarsEnumerator.md) instance. The enumerator can then be manipulated as required. For example:
 
-```
+```pascal
 var
   Name: string;
   Enum: TPJEnvVarsEnumerator;

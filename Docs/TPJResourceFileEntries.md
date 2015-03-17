@@ -6,7 +6,7 @@
 
 **Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-```
+```pascal
 property Entries[Idx: Integer]: TPJResourceEntry;
 ```
 

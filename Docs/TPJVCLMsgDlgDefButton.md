@@ -6,7 +6,7 @@
 
 **Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-```
+```pascal
 type
   TMsgDlgButton = (
     mbYes, mbNo, mbOK, mbCancel, mbAbort, mbRetry, mbIgnore,

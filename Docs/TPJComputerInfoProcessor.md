@@ -6,7 +6,7 @@
 
 **Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-```
+```pascal
 class function Processor: TPJProcessorArchitecture;
 
 type TPJProcessorArchitecture = (paUnknown, paX64, paIA64, paX86);

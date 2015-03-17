@@ -6,7 +6,7 @@
 
 **Class:** _[TPJWildCardFileFilter](TPJWildCardFileFilter.md)_
 
-```
+```pascal
 function Accept(
   const FilePath: string; const IsFolder: Boolean
 ): Boolean; override;

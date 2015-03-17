@@ -8,7 +8,7 @@
 
 **Introduced:** v1.1
 
-```
+```pascal
 function GetEnumerator: TPJResourceFileEnumerator;
 ```
 
@@ -24,7 +24,7 @@ Here is how to iterate the resource entries in Delphi 2005 and later.
 
 Assume there is a _[TPJResourceFile](TPJResourceFile.md)_ instance named _ResFile_ and a method _DoSomething_ that takes a _[TPJResourceEntry](TPJResourceEntry.md)_ parameter.
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   ...
@@ -44,7 +44,7 @@ This example shows how to use the enumerator from code, as must be done when usi
 
 Assumes the _ResFile_ object and the _DoSomething_ method used in Example 1 are available.
 
-```
+```pascal
 var
   Enum: TPJResourceFileEnumerator;
 begin

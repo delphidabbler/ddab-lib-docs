@@ -8,7 +8,7 @@
 
 **Introduced:** v5.0
 
-```
+```pascal
 class function CanSpoof: Boolean;
 ```
 

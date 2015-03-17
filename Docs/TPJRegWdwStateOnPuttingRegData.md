@@ -8,7 +8,7 @@
 
 **Introduced:** v5.1
 
-```
+```pascal
 type
   TPJWdwStateRegAccessEvent = procedure(
     const Reg: TRegistry

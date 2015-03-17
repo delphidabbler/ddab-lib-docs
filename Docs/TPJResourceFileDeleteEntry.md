@@ -6,7 +6,7 @@
 
 **Class:** _[TPJResourceFile](TPJResourceFile.md)_
 
-```
+```pascal
 function DeleteEntry(const Entry: TPJResourceEntry): Boolean;
 ```
 

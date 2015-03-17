@@ -8,7 +8,7 @@ Such resources can be used for display in Internet Explorer, using the `res://` 
 
 Here is the code of the routine:
 
-```
+```pascal
 procedure BuildHTMLResFile(const Files: TStrings; const ResFileName: string);
 var
   ResFile: TPJResourceFile; // res file object
@@ -60,7 +60,7 @@ The comments in the code should explain what is happening.
 
 The above code can be simplified when using v1.1 of the Resource File Unit because of its new _[LoadDataFromFile](TPJResourceEntryLoadDataFromFile.md)_ method. Using this method we can replace all the stream processing code between the `// Copy source file into resource data` comment and the end of the loop with a single line of code:
 
-```
+```pascal
       ...
       // 5: Copy source file into resource data
       SrcStm := TFileStream.Create(SrcFileName, fmOpenRead);

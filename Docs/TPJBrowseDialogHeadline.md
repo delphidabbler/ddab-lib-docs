@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 property Headline: string;
 ```
 

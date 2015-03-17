@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 type
   TCaption = type string;
 

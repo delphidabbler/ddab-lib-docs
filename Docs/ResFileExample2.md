@@ -2,7 +2,7 @@
 
 In this example we show how to scan through all the resources in a resource file, listing some information about each one. The following code fragment assumes we have created a resource file object, _ResFile_, and have loaded a resource file into it (see [example #1](ResFileExample1.md)). We also assume that the form contains a memo control named _Memo1_. Here is the code:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;
@@ -42,7 +42,7 @@ A second approach to the problem uses the fact that v1.1 of the resource files u
 
 Here's the modified code:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;
@@ -68,7 +68,7 @@ end;
 
 The code above requires Delphi 2005 or later. Users of earlier Delphis _can_ still use the enumerator if desired, like this:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   ResEntry: TPJResourceEntry;

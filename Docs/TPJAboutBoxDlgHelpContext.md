@@ -6,7 +6,7 @@
 
 **Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-```
+```pascal
 property HelpContext: THelpContext;
 
 type THelpContext = -MaxLongInt..MaxLongInt;

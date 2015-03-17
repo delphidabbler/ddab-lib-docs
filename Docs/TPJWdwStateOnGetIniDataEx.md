@@ -8,7 +8,7 @@
 
 **Introduced:** v5.5
 
-```
+```pascal
 type
   TPJWdwStateGetIniDataEx = procedure(
     var AIniRootDir: TPJWdwStateIniRootDir;

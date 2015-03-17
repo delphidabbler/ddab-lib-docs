@@ -6,7 +6,7 @@
 
 **Class:** _[TPJHotLabel](TPJHotLabel.md)_
 
-```
+```pascal
 property Cursor: TCursor;
 ```
 

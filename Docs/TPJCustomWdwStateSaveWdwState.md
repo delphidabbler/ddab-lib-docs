@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCustomWdwState](TPJCustomWdwState.md)_
 
-```
+```pascal
 procedure SaveWdwState(
   const Left, Top, Width, Height, State: Integer
 ); virtual; abstract;

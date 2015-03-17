@@ -10,7 +10,7 @@ This class provides an enumerator for use with the _[TPJEnvVars](TPJEnvVars.md)_
 
 _TPJEnvVarsEnumerator_ implements the standard interface required by the compiler (Delphi 2005 and later) in order to support the <strong>for..in</strong> construct. The _[GetEnumerator](TPJEnvVarsGetEnumerator.md)_ method of _[TPJEnvVars](TPJEnvVars.md)_ creates instances of the enumerator. Consequently environment variable names can be accessed directly from a _[TPJEnvVars](TPJEnvVars.md)_ instance simply by doing:
 
-```
+```pascal
 var
   Name: string;
 begin
@@ -25,7 +25,7 @@ where _PJEnvVars1_ is a _[TPJEnvVars](TPJEnvVars.md)_ component instance.
 
 Compilers earlier than Delphi 2005 can still use _TPJEnvVarsEnumerator_ by creating an instance from the _[TPJEnvVars.GetEnumerator](TPJEnvVarsGetEnumerator.md)_ method and then manipulating the enumerator's property and methods directly. For example:
 
-```
+```pascal
 var
   Name: string;
   Enum: TPJEnvVarsEnumerator;
@@ -49,7 +49,7 @@ _TPJEnvVarsEnumerator_ defines the following methods:
 
 ### Create constructor ###
 
-```
+```pascal
 constructor Create;
 ```
 
@@ -57,7 +57,7 @@ The constructor initialises the enumeration.
 
 ### GetCurrent ###
 
-```
+```pascal
 function GetCurrent: string;
 ```
 
@@ -65,7 +65,7 @@ Gets the name of the current environment variable in the enumeration. This metho
 
 ### MoveNext ###
 
-```
+```pascal
 function MoveNext: Boolean;
 ```
 
@@ -73,7 +73,7 @@ Moves to the next name in the enumeration if it exists. Returns True if it was p
 
 Use the return value to determine when to end an enumeration. Assuming _Enum_ is a enumerator instance, a common idiom is:
 
-```
+```pascal
 while Enum.MoveNext do
   // do something with Enum.Current or Enum.GetCurrent
 ```

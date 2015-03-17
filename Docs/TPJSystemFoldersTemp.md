@@ -6,7 +6,7 @@
 
 **Class:** _[TPJSystemFolders](TPJSystemFolders.md)_
 
-```
+```pascal
 class function Temp: string;
 ```
 

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-```
+```pascal
 class function Platform: TPJOSPlatform;
 
 type TPJOSPlatform = (ospWinNT, ospWin9x, ospWin32s);

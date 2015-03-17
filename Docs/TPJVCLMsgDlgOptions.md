@@ -6,7 +6,7 @@
 
 **Class:** _[TPJVCLMsgDlg](TPJVCLMsgDlg.md)_
 
-```
+```pascal
 type
   TPJMsgDlgOption = (
     mdoInhibitCancel, mdoAutoHelpBtn, mdoShowCustomIcon, mdoGroupIgnoresHelp

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 type
   TPJBrowseHelpEvent = procedure(Sender: TObject;
     var Cancel: Boolean) of object;

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJOSInfo](TPJOSInfo.md)_
 
-```
+```pascal
 class function IsServer: Boolean;
 ```
 

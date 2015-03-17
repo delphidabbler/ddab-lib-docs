@@ -6,7 +6,7 @@
 
 **Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
 
-```
+```pascal
 property Position: TPJAboutPosition;
 
 type TPJAboutPosition = (abpScreen, abpDesktop, abpOwner);

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJRegWdwState](TPJRegWdwState.md)_
 
-```
+```pascal
 property RootKey: HKEY;
 ```
 
@@ -14,7 +14,7 @@ property RootKey: HKEY;
 
 This property allows the user to specify the registry root key under which the window size, position and state information is recorded. The information is saved in a subkey of this root key determined by the _[SubKey](TPJRegWdwStateSubKey.md)_ property. If _RootKey_ is set to an invalid _HKEY_ value an exception is raised. Valid values are:
 
-```
+```pascal
 HKEY_CLASSES_ROOT     = $80000000;
 HKEY_CURRENT_USER     = $80000001;
 HKEY_LOCAL_MACHINE    = $80000002;

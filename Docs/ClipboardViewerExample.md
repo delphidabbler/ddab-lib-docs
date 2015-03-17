@@ -9,7 +9,7 @@ Drop a _[TPJCBViewer](TPJCBViewer.md)_ component, a _TButton_ and a _TMemo_ on a
 
 Implement the event handlers as follows:
 
-```
+```pascal
 procedure TForm1.PJCBViewer1ClipboardChanged(Sender: TObject);
 begin
   // Clipboard has changed - emit beep and decide whether to enable button

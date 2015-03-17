@@ -6,7 +6,7 @@ Like _[TPJResourceFile.FindEntry](TPJResourceFileFindEntry.md)_, the language id
 
 Using _[IsMatching](TPJResourceEntryIsMatching.md)_, we can list all the `RT_HTML` resources from a resource file in a _TMemo_ control with this code:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   Entry: TPJResourceEntry;
@@ -29,13 +29,13 @@ end;
 
 To list just the different language versions of the `RT_HTML` resource named `'INDEX_HTML'` we simply change the _[IsMatching](TPJResourceEntryIsMatching.md)_ method call in the for loop to:
 
-```
+```pascal
 Entry.IsMatching(RT_HTML, 'INDEX_HTML')
 ```
 
 Finally, to list all the `RT_HTML` resources with language id `$0809`, regardless of name, we can pass `nil` as the _ResName_ parameter and specify the language id as the final parameter. With these changes the _[IsMatching](TPJResourceEntryIsMatching.md)_ method call becomes:
 
-```
+```pascal
 Entry.IsMatching(RT_HTML, nil, $0809)
 ```
 

@@ -4,7 +4,7 @@ Once you have created or modified a resource file object there comes a time when
 
 The following code shows how to use _[SaveToFile](TPJResourceFileSaveToFile.md)_:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
 begin
@@ -17,7 +17,7 @@ end;
 
 The next code snippet shows how accomplish the same thing using _[SaveToStream](TPJResourceFileSaveToStream.md)_:
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
   Stream: TStream;

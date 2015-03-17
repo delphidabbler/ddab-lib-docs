@@ -6,7 +6,7 @@
 
 **Class:** _[TPJBrowseDialog](TPJBrowseDialog.md)_
 
-```
+```pascal
 type
   TPJBrowseValidationFailedEvent = procedure(Sender: TObject;
     const EditText: string; var CanClose: Boolean) of object;

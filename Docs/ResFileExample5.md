@@ -14,7 +14,7 @@ In the following section we show how manipulate data using these properties and 
 
 The following code fragment shows how to read all the data from a resource entry to a buffer using the _[Data](TPJResourceEntry#Properties.md)_ property.
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   Buf: PByte;
@@ -45,7 +45,7 @@ We first set the buffer to the required size by getting the size of the resource
 
 It may be more convenient to copy the resource data to another stream before processing it. The next example illustrates this by storing the resource data in a file named `ResEntry.dat`:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   FS: TFileStream;
@@ -70,7 +70,7 @@ Here we first open a stream onto a new file. We then use _TStream_'s _CopyFrom_ 
 
 Depending on how you want to manipulate the resource data it may be much simpler to use the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property to get an array of bytes to manipulate. Here's an example that is so simple it is hardly worth giving:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   Bytes: TBytes;
@@ -88,7 +88,7 @@ end;
 
 The simplest way to delete the data is to call the _[TPJResourceEntry](TPJResourceEntry.md)_._[ClearData](TPJResourceEntryClearData.md)_**<sup>v1.1</sup>** method:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
 begin
@@ -101,7 +101,7 @@ end;
 
 In v1.0 of the Resource File Unit there is no direct way to clear the data. It is still very easy to do though. Simply set the data stream's size to `0`:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
 begin
@@ -121,7 +121,7 @@ We can add data to an existing resource quite simply. Let us first look at how t
 
 First of all we use the _[Data](TPJResourceEntry#Properties.md)_ property:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   Text: string;
@@ -142,7 +142,7 @@ end;
 
 That's well and good when you want to write the text in its native encoding. When you want to write the text in another encoding, say UTF-8, that is when the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property really helps. Assuming you are using Delphi 2009 or later you can replace any existing data with the text `'Hello World'`, using UTF-8, like this:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
 begin
@@ -156,7 +156,7 @@ end;
 
 Now let's look at how we add more text to the end of the resource data using the _[Data](TPJResourceEntry#Properties.md)_ property. We will appended the text `'www.delphidabbler.com'` to the end of some existing text in the resource:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   Text: string;
@@ -179,7 +179,7 @@ Here we move the stream pointer to the end of the stream so the text we write is
 
 A similar thing using can be done using the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property. Assume the existing text is in UTF-8 and were want to append text in the same format. To do this we have to read the existing text, append the new text and then write the whole string back again, as follows:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
   Text: string;
@@ -198,7 +198,7 @@ Finally, you can add data to a resource's data by loading it directly from file 
 
 Here's an example:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
 begin

@@ -4,7 +4,7 @@
 
 **Unit:** _PJDropFiles_.
 
-```
+```pascal
 type
   TPJDropFilesOptions = set of TPJDropFilesOption;
   

@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
 
-```
+```pascal
 property OnDropFiles: TNotifyEvent;
 ```
 

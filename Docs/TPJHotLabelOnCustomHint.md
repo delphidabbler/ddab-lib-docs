@@ -6,7 +6,7 @@
 
 **Class:** _[TPJHotLabel](TPJHotLabel.md)_
 
-```
+```pascal
 type
   TPJHLCustomHintEvent = procedure(
     Sender: TObject; var HintStr: string

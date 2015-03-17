@@ -8,7 +8,7 @@
 
 **Introduced:** v3.3
 
-```
+```pascal
 class function IsRemoteSession: Boolean;
 ```
 

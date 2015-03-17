@@ -6,7 +6,7 @@
 
 **Class:** _[TPJComputerInfo](TPJComputerInfo.md)_
 
-```
+```pascal
 class function Is64Bit: Boolean;
 ```
 

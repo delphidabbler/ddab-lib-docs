@@ -8,7 +8,7 @@
 
 **Introduced:** v5.6
 
-```
+```pascal
 type
   TPJWdwStateGetRegDataEx = procedure(
     var RootKeyEx: TPJRegRootKey; var SubKey: string

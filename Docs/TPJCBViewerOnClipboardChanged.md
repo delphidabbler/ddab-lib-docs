@@ -6,7 +6,7 @@
 
 **Class:** _[TPJCBViewer](TPJCBViewer.md)_
 
-```
+```pascal
 property OnClipboardChanged: TNotifyEvent;
 ```
 

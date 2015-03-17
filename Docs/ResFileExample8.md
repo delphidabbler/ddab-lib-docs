@@ -2,7 +2,7 @@
 
 We can delete all resources from a resource file simply by calling the _[Clear](TPJResourceFileClear.md)_ method of _[TPJResourceFile](TPJResourceFile.md)_. In addition to deleting the resources _[Clear](TPJResourceFileClear.md)_ also frees all the _[TPJResourceEntry](TPJResourceEntry.md)_ instances.
 
-```
+```pascal
 var
   ResFile: TPJResourceFile;
 begin
@@ -19,7 +19,7 @@ A single resource can be removed from the resource file using the _[TPJResourceF
 
 So, to remove a single resource, _ResEntry_, from the resource file use the following code:
 
-```
+```pascal
 var
   Entry: TPJResourceEntry;
 begin

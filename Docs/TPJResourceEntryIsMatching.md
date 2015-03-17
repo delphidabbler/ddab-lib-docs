@@ -14,7 +14,7 @@ Matching involves comparing the resource entries' names, types and language ids.
 ---
 
 
-```
+```pascal
 function IsMatching(const ResType, ResName: Pchar;
   const LangID: Word = $FFFF): Boolean;
 ```
@@ -35,7 +35,7 @@ Checks if the resource entry has the given type, name and language id. The resou
 ---
 
 
-```
+```pascal
 function IsMatching(const Entry: TPJResourceEntry): Boolean;
 ```
 
