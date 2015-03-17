@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Resource File Unit Constants #
 
 **Project:** [Resource File Unit](ResFileUnit.md)

@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TPJExtFileFilterStyle enumeration #
 
 **Project:** [Drop Files Components](DropFilesComponents.md).

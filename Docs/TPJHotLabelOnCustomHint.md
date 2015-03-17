@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # OnCustomHint event #
 
 **Project:** [Hot Label Component](HotLabelComponent.md).

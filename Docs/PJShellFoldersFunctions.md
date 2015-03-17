@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Shell Folders Public Routines #
 
 **Project:** [Shell Folders Unit](ShellFoldersUnit.md).

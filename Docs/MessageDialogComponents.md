@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Message Dialogue Components #
 
 The Message Dialogue Components are supplied in a single unit named _PJMessageDialog_. There are two components:

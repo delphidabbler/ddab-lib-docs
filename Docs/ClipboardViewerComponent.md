@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Clipboard Viewer Component #
 
 This project contains one unit - _PJCBView_ - that implements a single non-visual component:

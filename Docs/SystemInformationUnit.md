@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # System Information Unit #
 
 This unit, _PJSysInfo_, contains a set of static classes that provide various pieces of system information. They are:

@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Examples: Using Highlighting #
 
 These examples present two possible designs for _[TPJHotLabel](TPJHotLabel.md)_ components that use text highlighting to indicate that the label is clickable.

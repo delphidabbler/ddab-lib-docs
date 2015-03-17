@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # IsWin9x class function #
 
 **Project:** [System Information Unit](SystemInformationUnit.md).

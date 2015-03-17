@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Clipboard Viewer Component Usage Example #
 
 The following is an example of how to use the [Clipboard Viewer Component](ClipboardViewerComponent.md).

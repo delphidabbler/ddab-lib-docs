@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #5: Adding to or modifying a resource's data #
 
 While the code in the [Resource File Unit](ResFileUnit.md) does not understand the various resource data formats it does assist in reading, adding, updating and deleting the raw resource data.

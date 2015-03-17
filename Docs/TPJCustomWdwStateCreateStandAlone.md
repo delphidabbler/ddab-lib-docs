@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # CreateStandAlone method #
 
 **Project:** [Window State Components](WindowStateComponents.md).

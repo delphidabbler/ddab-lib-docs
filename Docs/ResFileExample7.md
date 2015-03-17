@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #7: Checking if a resource exists #
 
 If you attempt to add a duplicate of an existing resource to a resource file an exception will be raised. To avoid this we may need to check if a resource already exists. This can be done with the _[EntryExists](TPJResourceFileEntryExists.md)_ method of _[TPJResourceFile](TPJResourceFile.md)_ as follows:

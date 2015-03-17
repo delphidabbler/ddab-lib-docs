@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # IsAdmin class function #
 
 **Project:** [System Information Unit](SystemInformationUnit.md).

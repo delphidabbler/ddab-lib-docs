@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # DropPoint property #
 
 **Project:** [Drop Files Components](DropFilesComponents.md).

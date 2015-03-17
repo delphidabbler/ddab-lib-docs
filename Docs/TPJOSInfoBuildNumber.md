@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # BuildNumber class function #
 
 **Project:** [System Information Unit](SystemInformationUnit.md).

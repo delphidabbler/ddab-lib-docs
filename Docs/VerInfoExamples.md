@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Version Information Component Examples #
 
 The following examples of using the [Version Information Component](VersionInformationComponent.md) are available:

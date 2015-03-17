@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # DisplayName property #
 
 **Project:** [Shell Folders Unit](ShellFoldersUnit.md).

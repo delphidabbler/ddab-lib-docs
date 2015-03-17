@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TPJResourceFile #
 
 **Project:** [Resource File Unit](ResFileUnit.md)

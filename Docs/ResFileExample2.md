@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #2: Accessing all resources in a file #
 
 In this example we show how to scan through all the resources in a resource file, listing some information about each one. The following code fragment assumes we have created a resource file object, _ResFile_, and have loaded a resource file into it (see [example #1](ResFileExample1.md)). We also assume that the form contains a memo control named _Memo1_. Here is the code:

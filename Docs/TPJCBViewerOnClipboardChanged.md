@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # OnClipboardChanged event #
 
 **Project:** [Clipboard Viewer Component](ClipboardViewerComponent.md).

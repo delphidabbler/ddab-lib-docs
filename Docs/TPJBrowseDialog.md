@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TPJBrowseDialog #
 
 **Project:** [Shell Folders Unit](ShellFoldersUnit.md).

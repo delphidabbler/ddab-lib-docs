@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #6: Adding a new resources to a file #
 
 We can add new resources to an existing file using _[TPJResourceFile](TPJResourceFile.md)_'s _[AddEntry](TPJResourceFileAddEntry.md)_ method. Each new resource must be uniquely named within the resource file (i.e. its combined resource type, name and language id must be unique), otherwise an exception will be raised.

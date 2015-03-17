@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # HKEY Property Editor #
 
 **This property editor is deprecated and is no longer being developed.**

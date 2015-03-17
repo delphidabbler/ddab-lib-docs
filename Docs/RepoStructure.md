@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Source Code Repository Structure #
 
 The [Subversion](http://subversion.tigris.org/) repository for the DelphiDabbler Component and Unit Library is structured as follows:

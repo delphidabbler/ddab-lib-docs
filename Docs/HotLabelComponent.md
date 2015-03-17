@@ -1,8 +1,3 @@
-<a href='Hidden comment:
-$Rev$
-$Date$
-'></a>
-
 # Hot Label Component #
 
 The _PJHotLabel_ unit contains a single component, _[TPJHotLabel](TPJHotLabel.md)_, that implements a label control that can access a URL when clicked.

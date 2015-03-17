@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # HighlightURL property #
 
 **Project:** [Hot Label Component](HotLabelComponent.md).

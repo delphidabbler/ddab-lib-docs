@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #4: Listing specific resources from a file #
 
 We can use the _[IsMatching](TPJResourceEntryIsMatching.md)_ method of _[TPJResourceEntry](TPJResourceEntry.md)_ to check if a specific resource matches some given criteria. _[IsMatching](TPJResourceEntryIsMatching.md)_ can match just a resource type, a resource type and name or it can uniquely identify a resource in a file by matching its type, name and language id.

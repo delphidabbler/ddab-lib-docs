@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Welcome #
 
 Welcome to the _DelphiDabbler Component and Unit Library Documentation Wiki_.

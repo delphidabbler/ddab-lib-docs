@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # About Box Component #
 
 This project contains one unit - _PJAbout_ that implements the non-visual _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_ about box component. It also defines the _TPJAboutBoxForm_ form class that implements the actual about box. This class is not documented and should not be accessed directly.

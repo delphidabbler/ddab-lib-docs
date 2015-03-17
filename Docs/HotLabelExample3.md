@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example: Tracking visits to URLs.<sup>[v2.2]</sup> #
 
 The component provides the _[Visited](TPJHotLabelVisited.md)_<sup>[v2.2]</sup> property to enable visits to the URLs associated with hot label components to be tracked. Furthermore, the _[TrackVisits](TPJHotLabelTrackVisits.md)_<sup>[v2.2]</sup> property enables the tracking to be done automatically whenever the label is clicked and the underlying action completes successfully.

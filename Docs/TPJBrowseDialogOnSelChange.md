@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # OnSelChange event #
 
 **Project:** [Shell Folders Unit](ShellFoldersUnit.md).

@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example for TPJSpecialFolderEnum and support functions #
 
 This example illustrates the use of the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class and some of the [special folder support functions](PJShellFoldersFunctions.md).

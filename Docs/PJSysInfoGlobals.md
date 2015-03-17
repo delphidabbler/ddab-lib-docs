@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 Project: [System Information Unit](SystemInformationUnit.md)
 
 Unit: _PJSysInfo_.

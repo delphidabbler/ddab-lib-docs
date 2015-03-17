@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #11: Validating a resource file<sup>v1.1</sup> #
 
 _**Note:** The code in this example requires v1.1 of the Resource File Unit and Delphi 2009 or later._

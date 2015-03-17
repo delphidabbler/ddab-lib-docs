@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #9: Saving a resource file #
 
 Once you have created or modified a resource file object there comes a time when you need to save it somewhere. To do this we simply use the _[SaveToFile](TPJResourceFileSaveToFile.md)_ or _[SaveToStream](TPJResourceFileSaveToStream.md)_ methods of _[TPJResourceFile](TPJResourceFile.md)_.

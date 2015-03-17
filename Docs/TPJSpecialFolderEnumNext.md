@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Next method #
 
 **Project:** [Shell Folders Unit](ShellFoldersUnit.md).

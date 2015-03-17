@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example 1: Using fixed file information properties #
 
 This rather long example shows how to use the Version Information Component's fixed file information properties. It displays descriptions of the properties in a memo. Most of the example is taken up with code that maps fixed file information codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.

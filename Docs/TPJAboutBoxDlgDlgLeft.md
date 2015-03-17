@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # DlgLeft property #
 
 **Project:** [About Box Component](AboutBoxComponent.md).

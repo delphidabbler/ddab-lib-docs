@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TriggerOnCreation property #
 
 **Project:** [Clipboard Viewer Component](ClipboardViewerComponent.md).

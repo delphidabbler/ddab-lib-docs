@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Examples: Using the OnCustomHint event. #
 
 These examples show how to use the _[OnCustomHint](TPJHotLabelOnCustomHint.md)_ event of _[TPJHotLabel](TPJHotLabel.md)_. We handle the event to display a hint containing some descriptive text along with the URL in brackets.

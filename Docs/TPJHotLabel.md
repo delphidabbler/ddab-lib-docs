@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TPJHotLabel #
 
 **Project:** [Hot Label Component](HotLabelComponent.md).

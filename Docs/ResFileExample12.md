@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #12: Recording a compilation date in a resource file<sup>v1.1†</sup> #
 
 _† **Note:** The first block of code in this example requires v1.1 of the Resource File Unit if compiled with Delphi 2009 or later. When compiled with an earlier compiler v1.0 will suffice._

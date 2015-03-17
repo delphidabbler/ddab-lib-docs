@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # TPJDropFilesOptions set and TPJDropFilesOption enumeration #
 
 **Project:** [Drop Files Components](DropFilesComponents.md).

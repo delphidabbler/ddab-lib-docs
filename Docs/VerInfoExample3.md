@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example 3: Using translation, character set and language properties #
 
 This example shows how to use the translation, character set and language properties of _[TPJVersionInfo](TPJVersionInfo.md)_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.

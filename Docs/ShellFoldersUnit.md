@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Shell Folders Unit #
 
 Two units are actually provided: _PJShellFolders_ and _PJShellFoldersDsgn_.

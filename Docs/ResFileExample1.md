@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #1: Loading a resource file #
 
 In this first example we demonstrate how to create a resource file object and how to load a file into it. The following code fragment shows how this is done.

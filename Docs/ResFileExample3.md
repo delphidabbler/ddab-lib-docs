@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example #3: Finding a resource #
 
 To find a resource we use either the _[FindEntry](TPJResourceFileFindEntry.md)_ or _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_ methods of _[TPJResourceFile](TPJResourceFile.md)_. The difference is that _[FindEntry](TPJResourceFileFindEntry.md)_ returns the _[TPJResourceEntry](TPJResourceEntry.md)_ object for the entry (or `nil` if not found) while _[FindEntryIndex](TPJResourceFileFindEntryIndex.md)_ returns the index of the entry in the _[Entries](TPJResourceFileEntries.md)_ property.

@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Resource File Unit Examples #
 
 The following examples of using the [Resource File Unit](ResFileUnit.md) are available:

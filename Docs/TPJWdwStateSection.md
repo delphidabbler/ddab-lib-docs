@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Section property #
 
 **Project:** [Window State Components](WindowStateComponents.md).

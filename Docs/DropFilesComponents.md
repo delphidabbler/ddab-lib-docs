@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Drop Files Components #
 
 The drop files components comprise two units: _PJDropFiles_ and _PJDropFilesDsgn_.

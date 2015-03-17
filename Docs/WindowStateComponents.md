@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Window State Components #
 
 This unit provides three non visual components that can be used to save and restore the state and position of a window along with their common abstract base class. The components are:

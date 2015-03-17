@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Resource File Helper Routines #
 
 **Project:** [Resource File Unit](ResFileUnit.md)

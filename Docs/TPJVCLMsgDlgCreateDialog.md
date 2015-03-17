@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # CreateDialog method #
 
 **Project:** [Message Dialogue Components](MessageDialogComponents.md).

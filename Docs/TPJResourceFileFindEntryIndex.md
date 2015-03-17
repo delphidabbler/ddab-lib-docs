@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # FindEntryIndex method #
 
 **Project:** [Resource File Unit](ResFileUnit.md)

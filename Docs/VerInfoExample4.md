@@ -1,8 +1,3 @@
-<a href='Hidden comment: 
-$Rev$
-$Date$
-'></a>
-
 # Example 4: Using string information properties #
 
 This example demostrates how to access string information from a version resource using _[TPJVersionInfo](TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _[LegalCopyright](TPJVersionInfoLegalCopyright.md)_ and the second using the _[StringFileInfo](TPJVersionInfoStringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](TPJVersionInfoFileName.md)_ property to access information in other files.
