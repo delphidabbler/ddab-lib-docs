@@ -1,7 +1,6 @@
 # GetEnumerator method #
 
-| This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsGetEnumerator). |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsGetEnumerator).
 
 **Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
 
