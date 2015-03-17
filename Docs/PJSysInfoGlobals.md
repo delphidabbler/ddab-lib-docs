@@ -1,8 +1,8 @@
+# PJSysInfo Global Variables #
+
 Project: [System Information Unit](SystemInformationUnit.md)
 
 Unit: _PJSysInfo_.
-
-# PJSysInfo Global Variables #
 
 The _PJSysInfo_ unit defines several global variables containing extended operating system information. These variables build on similar _Win32XXX_ variables defined in the _SysUtils unit_.
 
