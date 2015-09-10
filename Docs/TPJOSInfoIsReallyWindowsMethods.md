@@ -31,8 +31,9 @@ class function IsReallyWindows8Point1OrGreater: Boolean;
 
 This set of methods check whether the operating system is that same as or greater (i.e. later) than a specified one, as follows:
 
+| Method | Description |
+|:-------|:------------|
 | _IsReallyWindows2000OrGreater_ | Checks whether the OS is Windows 2000 or greater. |
-|:-------------------------------|:--------------------------------------------------|
 | _IsReallyWindows2000SP1OrGreater_ | Checks whether the OS is Windows 2000 Service Pack 1 or greater. |
 | _IsReallyWindows2000SP2OrGreater_ | Checks whether the OS is Windows 2000 Service Pack 2 or greater. |
 | _IsReallyWindows2000SP3OrGreater_ | Checks whether the OS is Windows 2000 Service Pack 3 or greater. |
