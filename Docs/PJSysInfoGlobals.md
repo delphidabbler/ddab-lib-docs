@@ -8,18 +8,18 @@ The _PJSysInfo_ unit defines several global variables containing extended operat
 
 The variables defined in _PJSysInfo_ are:
 
-  * [Win32PlatformEx](#Win32PlatformEx.md) [v5.0]
-  * [Win32MajorVersionEx](#Win32MajorVersionEx.md) [v5.0]
-  * [Win32MinorVersionEx](#Win32MinorVersionEx.md) [v5.0]
-  * [Win32BuildNumberEx](#Win32BuildNumberEx.md) [v5.0]
-  * [Win32CSDVersionEx](#Win32CSDVersionEx.md) [v5.0]
-  * [Win32HaveExInfo](#Win32HaveExInfo.md)
-  * [Win32ServicePackMajor](#Win32ServicePackMajor.md)
-  * [Win32ServicePackMinor](#Win32ServicePackMinor.md)
-  * [Win32SuiteMask](#Win32SuiteMask.md)
-  * [Win32ProductType](#Win32ProductType.md)
-  * [Win32HaveProductInfo](#Win32HaveProductInfo.md)
-  * [Win32ProductInfo](#Win32ProductInfo.md)
+  * [Win32PlatformEx](#Win32PlatformEx) [v5.0]
+  * [Win32MajorVersionEx](#Win32MajorVersionEx) [v5.0]
+  * [Win32MinorVersionEx](#Win32MinorVersionEx) [v5.0]
+  * [Win32BuildNumberEx](#Win32BuildNumberEx) [v5.0]
+  * [Win32CSDVersionEx](#Win32CSDVersionEx) [v5.0]
+  * [Win32HaveExInfo](#Win32HaveExInfo)
+  * [Win32ServicePackMajor](#Win32ServicePackMajor)
+  * [Win32ServicePackMinor](#Win32ServicePackMinor)
+  * [Win32SuiteMask](#Win32SuiteMask)
+  * [Win32ProductType](#Win32ProductType)
+  * [Win32HaveProductInfo](#Win32HaveProductInfo)
+  * [Win32ProductInfo](#Win32ProductInfo)
 
 
 ## Win32PlatformEx ##
