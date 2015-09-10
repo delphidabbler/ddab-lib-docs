@@ -1,9 +1,6 @@
 # Clipboard Viewer Component #
 
-This project contains one unit - _PJCBView_ - that implements a single non-visual component:
-
-| _[TPJCBViewer](TPJCBViewer.md)_ | Component that notifies the user when the content of the Windows clipboard changes. |
-|:--------------------------------|:------------------------------------------------------------------------------------|
+This project contains one unit - _PJCBView_ - that implements the non-visual _[TPJCBViewer](TPJCBViewer.md)_ component. This component notifies the user when the content of the Windows clipboard changes.
 
 No other classes or types are defined.
 
