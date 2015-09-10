@@ -16,8 +16,9 @@ type TPJOSPlatform = (ospWinNT, ospWin9x, ospWin32s);
 
 Returns a value from the _TPJOSPlatform_ enumeration identifying the OS platform. Possible values are:
 
+| Value | Meaning |
+|:------|:--------|
 | `ospWinNT` | Windows NT platform. |
-|:-----------|:---------------------|
 | `ospWin9x` | Windows 9x platform. |
 | `ospWin32s` | The Win32s platform running on another operating system. |
 
