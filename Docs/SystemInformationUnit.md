@@ -34,7 +34,7 @@ The deprecated code was removed entirely at v4.0.
 
 ## Conventions ##
 
-This documentation relates to v3.x and v4.x of the System Information Unit.
+This documentation relates to v3.x, v4.x and v5.x of the System Information Unit.
 
 Unless specified otherwise, classes, variables and methods are available in all versions from v3.0. Items that became available later are marked with the version at which they were introduced, for example [4.0].
 
