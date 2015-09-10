@@ -1,4 +1,4 @@
-# WindowsServer class function #
+# IsWindowsServer class function #
 
 **Project:** [System Information Unit](SystemInformationUnit.md).
 
