@@ -43,6 +43,6 @@ _TPJCustomWdwState_ exposes the following methods, properties and events in addi
 ### Published ###
 
 | **Event** | **Description**|
-|:----------|:|
-| _[OnAfterWindowRestored](TPJCustomWdwStateOnAfterWindowRestored.md)_**<sup>v5.4</sup>** | Event triggered after window has been restored and its state set. |
-| _[OnAfterWindowSized](TPJCustomWdwStateOnAfterWindowSized.md)_**<sup>v5.4</sup>** | Event triggered after the window is sized but before it is physically restored. |
+|:----------|:---------------|
+| _[OnAfterWindowRestored](TPJCustomWdwStateOnAfterWindowRestored.md)_ **<sup>v5.4</sup>** | Event triggered after window has been restored and its state set. |
+| _[OnAfterWindowSized](TPJCustomWdwStateOnAfterWindowSized.md)_ **<sup>v5.4</sup>** | Event triggered after the window is sized but before it is physically restored. |
