@@ -20,8 +20,9 @@ Determines the operating system mode into which the the computer was booted.
 
 Returns a value from the _TPJBootMode_ enumeration that describes the boot mode. Values of _TPJBootMode_ are:
 
+| Value | Meaning |
+|:------|:--------|
 | `bmUnknown` | Unknown boot mode. |
-|:------------|:-------------------|
 | `bmNormal` | Normal boot. |
 | `bmSafeMode` | Booted in safe mode with no networking. |
 | `bmSafeModeNetwork` | Booted in safe mode with networking. |
