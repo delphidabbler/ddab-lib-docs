@@ -1,5 +1,7 @@
 # Source Code Repository Structure #
 
+**TODO: This page is out of date and needs to be revised and reformatted**
+
 The [Subversion](http://subversion.tigris.org/) repository for the DelphiDabbler Component and Unit Library is structured as follows:
 
 | Directory | Description |
