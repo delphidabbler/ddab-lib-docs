@@ -24,8 +24,9 @@ type TPJOSProduct = (
 
 Returns a value from the _TPJOSProduct_ enumeration that identifies the operating system product. Possible values of _TPJOSProduct_ are:
 
+| Code | Description |
+|:-----|:------------|
 | `osWin95` | Windows 95 or Windows 95 OSR1. |
-|:----------|:-------------------------------|
 | `osWin98` | Windows 98 or Windows 98 SE. |
 | `osWinMe` | Windows Me. |
 | `osWinNT` | Windows NT (v3.51 to v4) - needs major and minor version information to fully identify the version. |
