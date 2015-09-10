@@ -1,7 +1,6 @@
 # Version Information Component #
 
-
-> This documentation has now moved to the Version Information Component **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/VerInfoAPI)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks.
+> This is a placeholder page for documentation of the DelphiDabbler Version Information Component. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/VerInfo)**.
 
 **Links:**
 
