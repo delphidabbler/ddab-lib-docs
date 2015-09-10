@@ -2,8 +2,9 @@
 
 The [Subversion](http://subversion.tigris.org/) repository for the DelphiDabbler Component and Unit Library is structured as follows:
 
+| Directory | Description |
+|:----------|:------------|
 | <pre>branches</pre> | Unused at present. |
-|:--------------------|:-------------------|
 | <pre>tags</pre> | Contains copies of all stable releases. |
 | <pre>  lib</pre> | Unused at present. Reserved for any releases of whole library. Each release will have its own sub-directory named `release-x.x.x` where `x.x.x` is the release version number. |
 | <pre>  projects</pre> | Contains stable releases of each sub-project. |
