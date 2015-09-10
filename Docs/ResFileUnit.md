@@ -6,8 +6,9 @@ The classes encapsulate the low-level structure of a resource file and its resou
 
 This wiki is divided into several sections as noted in the following table.
 
+| Section | Description |
+|:--------|:------------|
 | _[TPJResourceFile](TPJResourceFile.md)_ | Class that encapsulates the contents of a whole resource file and provides methods and properties to search, enumerate and manipulate it. |
-|:----------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
 | _[TPJResourceEntry](TPJResourceEntry.md)_ | Class that encapsulates a single resource within a resource file and provides properties and methods to access its header record and its raw data and to compare it to other resources. |
 | _[TPJResourceFileEnumerator](TPJResourceFileEnumerator.md)_**<sup>v1.1</sup>** | Class that implements an enumerator for _[TPJResourceFile](TPJResourceFile.md)_ that enumerates all its resource entries. |
 | _[EPJResourceFile](EPJResourceFile.md)_ | Class of exception raised by _[TPJResourceFile](TPJResourceFile.md)_ and _[TPJResourceEntry](TPJResourceEntry.md)_. |
