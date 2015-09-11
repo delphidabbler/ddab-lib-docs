@@ -56,6 +56,10 @@ A change log will be included in downloaded zip files. In the Subversion reposit
 
 The latest edition of the change log can be found [here](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/aboutbox/Docs/ChangeLog.txt).
 
+## License ##
+
+The DelphiDabbler About Box Component is copyright &copy; 1998-2014 Peter Johnson (@delphidabbler) and is released under the terms of the [Mozilla Public License v2.0](http://www.mozilla.org/MPL/2.0/).
+
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
