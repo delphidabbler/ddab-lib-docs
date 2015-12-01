@@ -55,7 +55,8 @@ When the host program is run in compatibility mode many of _TPJOSInfo_'s methods
 | _[ProductName](TPJOSInfoProductName.md)_ | Gets the name of the operating system product. |
 | _[RegisteredOrganisation](TPJOSInfoRegisteredOrganisation.md)_ [v4.0] | Gets the name of the organisation to which Windows is registered. |
 | _[RegisteredOwner](TPJOSInfoRegisteredOwner.md)_ [v4.0] | Gets the name of the person owning this copy of Windows. |
-| _[ServicePack](TPJOSInfoServicePack.md)_ | Gets the operating system's service pack. |
+| _[ServicePack](TPJOSInfoServicePack.md)_ | Gets details of the operating system's service pack. |
+| _[ServicePackEx](TPJOSInfoServicePackEx.md)_ [v5.2] | Gets details of the operating system's service pack or any other significant update. |
 | _[ServicePackMajor](TPJOSInfoServicePackMajor.md)_ | Gets the operating system's major service pack version number. |
 | _[ServicePackMinor](TPJOSInfoServicePackMinor.md)_ | Gets the operating system's minor service pack version number. |
 
