@@ -28,6 +28,6 @@ On operating systems where _[CanSpoof](TPJOSInfoCanSpoof.md)_ returns `False` th
 
 Windows may add significant OS updates that bump the build number but do not declare themselves as service packs. 
 
-> For example the Windows 10 TH2 "November Update" is to all intents and purposes a service pack. However it reports the same product version number and service pack version number as the 1st release of Windows 10. Only the build number is changed.
+> For example the Windows 10 TH2 update ("Version 1511") is to all intents and purposes a service pack. However it reports the same product version number and service pack version number as the 1st release of Windows 10. Only the build number is changed.
 
 This method is used to report these updates in addition to service packs, while the _[ServicePack](TPJOSInfoServicePack.md)_ method only reports "official" service packs.
