@@ -10,7 +10,7 @@ To get information about a special folder set the _[FolderID](TPJSpecialFolderIn
 
 ## Supporting functions ##
 
-Valid values for _[FolderID](TPJSpecialFolderInfoFolderID.md)_ can be obtained using the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class. Supplying invalid values to _[FolderID](TPJSpecialFolderInfoFolderID.md)_ will cause an exception to be raised. Use the _[IsValidSpecialFolderId](PJShellFoldersFunctions#IsValidSpecialFolderId.md)_ function to check validity. _[SpecialFolderIdToStr](PJShellFoldersFunctions#SpecialFolderIdToStr.md)_ returns the identifier of a valid folder ID.
+Valid values for _[FolderID](TPJSpecialFolderInfoFolderID.md)_ can be obtained using the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class. Supplying invalid values to _[FolderID](TPJSpecialFolderInfoFolderID.md)_ will cause an exception to be raised. Use the _[IsValidSpecialFolderId](PJShellFoldersFunctions.md#isvalidspecialfolderid)_ function to check validity. _[SpecialFolderIdToStr](PJShellFoldersFunctions.md#specialfolderidtostr)_ returns the identifier of a valid folder ID.
 
 ## Methods ##
 
