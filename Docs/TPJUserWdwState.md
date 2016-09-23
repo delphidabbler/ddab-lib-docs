@@ -8,7 +8,7 @@ This non-visual component enables the size, position and state of the form on wh
 
 The _[Save](TPJUserWdwStateSave.md)_ method saves the window information while _[Restore](TPJUserWdwStateRestore.md)_ reads information in and sets the owning form window's size, position and state.
 
-The component's _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _Save_ and _Restore_ methods.
+The component's _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property governs whether window sizes, positions and states are automatically restored on opening and saved on closing or whether the user must explicitly call the _[Save](TPJUserWdwStateSave.md)_ and _[Restore](TPJUserWdwStateRestore.md)_ methods.
 
 The _[Options](TPJCustomWdwStateOptions.md)_ property can be used to customise how the stored data is interpreted and whether the window's saved state or size should be used or ignored.
 
