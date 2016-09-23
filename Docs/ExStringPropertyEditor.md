@@ -1,6 +1,6 @@
 # Extended String Property Editor #
 
-> This documentation has now moved to the Extended String Property Editor **[User Guide](http://wiki.delphidabbler.com/index.php/Docs/StringPE)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)<br><br>Please update any bookmarks.
+> This is a placeholder page for documentation of the DelphiDabbler Extended String Property Editor. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/StringPE)**.
 
 **Links:**
 
