@@ -47,7 +47,7 @@ end;
 The entries we have created have the following properties:
 
 | | **Entry 1** | **Entry 2** | **Entry 3** | **Entry 4** |
-|:|:------------|:------------|:------------|:------------|
+|:------------|:------------|:------------|:------------|:------------|
 | **Type** | `RT_RCDATA` | `RT_RCDATA` | `RT_RCDATA` | `RT_RCDATA` |
 | **Name** | `42` | `'FORTYTWO'` | `'FORTYTWO'` | `42` |
 | **LanguageID** | `0` | `0` | `$0809` | `$0809` |
