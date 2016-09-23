@@ -16,6 +16,7 @@ This unit provides three components that support drag and drop from Windows Expl
 | _[TPJFileFilter](TPJFileFilter.md)_ | An abstract base class for file filter components. |
 
 Other documented types are:
+
 | **Type** | **Description** |
 |:---------|:----------------|
 | _[TPJDropFilesOption and TPJDropFilesOptions](TPJDropFilesOptionsSet.md)_ | Enumerated type and set that define the possible values of the _Options_ property of the drop files components. |
