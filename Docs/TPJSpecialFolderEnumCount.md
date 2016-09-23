@@ -14,4 +14,4 @@ function Count: Integer;
 
 _Count_ returns the number of special folder identifier values in the enumeration.
 
-The result is the same as calling the non-member _[NumSpecialFolderIds](PJShellFoldersFunctions#NumSpecialFolderIds.md)_ function.
+The result is the same as calling the non-member _[NumSpecialFolderIds](PJShellFoldersFunctions.md#numspecialfolderids)_ function.
