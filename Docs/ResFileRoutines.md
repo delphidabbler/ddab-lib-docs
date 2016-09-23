@@ -6,9 +6,9 @@
 
 These helper routines are to assist in manipulating resource identifiers. They can be useful when working with Windows API routines as well as the classes provided in this unit. They are:
 
-  * [IsIntResource](#IsIntResource.md)
-  * [IsEqualResID](#IsEqualResID.md)
-  * [ResIDToStr](#ResIDToStr.md)
+  * [IsIntResource](#isintresource)
+  * [IsEqualResID](#isequalresid)
+  * [ResIDToStr](#residtostr)
 
 ## IsIntResource ##
 
