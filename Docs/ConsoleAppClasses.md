@@ -1,6 +1,6 @@
 # Console Application Runner Classes #
 
-> This is a placeholder page for documentation of the DelphiDabbler Fractions Unit. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI)**.
+> This is a placeholder page for documentation of the DelphiDabbler Console Application Runner Classes. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/ConsoleAppAPI)**.
 
 **Links:**
 
