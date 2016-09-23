@@ -6,12 +6,12 @@
 
 The following public routines are defined in _PJShellFolders_:
 
-  * [IsValidSpecialFolderId](#IsValidSpecialFolderId.md)
-  * [NumSpecialFolderIds](#NumSpecialFolderIds.md)
-  * [SpecialFolderIdToStr](#SpecialFolderIdToStr.md)
-  * [StrToSpecialFolderID](#StrToSpecialFolderID.md)
-  * [PIDLToFolderPath](#PIDLToFolderPath.md)
-  * [PIDLToFolderDisplayName](#PIDLToFolderDisplayName.md)
+  * [IsValidSpecialFolderId](#isvalidspecialfolderid)
+  * [NumSpecialFolderIds](#numspecialfolderids)
+  * [SpecialFolderIdToStr](#specialfolderidtostr)
+  * [StrToSpecialFolderID](#strtospecialfolderid)
+  * [PIDLToFolderPath](#pidltofolderpath)
+  * [PIDLToFolderDisplayName](#pidltofolderdisplayname)
 
 ## IsValidSpecialFolderId ##
 
