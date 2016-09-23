@@ -26,8 +26,7 @@ Note that Windows NT ignores `RES_MF_MOVEABLE`, `RES_MF_IMPURE` and `RES_MF_PREL
 
 Delphi's _Windows_ unit defines all the predefined resources types known at the time of writing except `RT_HTML` and `RT_MANIFEST`. Therefore these two type identifiers are defined in this unit for convenience:
 
-> `RT_HTML = MakeIntResource(23);`
-
-> `RT_MANIFEST = MakeIntResource(24);`
+* `RT_HTML = MakeIntResource(23);`
+* `RT_MANIFEST = MakeIntResource(24);`
 
 See Windows documentation for a description of all the predefined resource types.
