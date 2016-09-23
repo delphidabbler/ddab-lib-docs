@@ -8,14 +8,14 @@
 
 The following public routines are defined in _PJEnvVars_:
 
-  * [GetEnvVarValue](#GetEnvVarValue.md)
-  * [SetEnvVarValue](#SetEnvVarValue.md)
-  * [DeleteEnvVar](#DeleteEnvVar.md)
-  * [GetAllEnvVars](#GetAllEnvVars.md)
-  * [ExpandEnvVars](#ExpandEnvVars.md)
-  * [CreateEnvBlock](#CreateEnvBlock.md)
-  * [GetAllEnvVarNames](#GetAllEnvVarNames.md)
-  * [EnvBlockSize](#EnvBlockSize.md)
+  * [GetEnvVarValue](#getenvvarvalue)
+  * [SetEnvVarValue](#setenvvarvalue)
+  * [DeleteEnvVar](#deleteenvvar)
+  * [GetAllEnvVars](#getallenvvars)
+  * [ExpandEnvVars](#expandenvvars)
+  * [CreateEnvBlock](#createenvblock)
+  * [GetAllEnvVarNames](#getallenvvarnames)
+  * [EnvBlockSize](#envblocksize)
 
 ## GetEnvVarValue ##
 
