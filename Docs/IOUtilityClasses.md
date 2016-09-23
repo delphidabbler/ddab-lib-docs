@@ -5,4 +5,4 @@
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Version Information Component Web Page](http://www.delphidabbler.com/software/ioutils).
+  * [I/O Utility Classes Web Page](http://www.delphidabbler.com/software/ioutils).
