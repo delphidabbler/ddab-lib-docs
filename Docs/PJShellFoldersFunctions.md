@@ -21,7 +21,7 @@ function IsValidSpecialFolderId(ID: Integer): Boolean;
 
 Returns true if the given special folder identifier is defined by Windows and supported by this unit.
 
-This test can be performed to check an identifier value before passing to _[SpecialFolderIdToStr](#SpecialFolderIdToStr.md)_ or before setting the _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_ component's _[FolderID](TPJSpecialFolderInfoFolderID.md)_ property to avoid exception being raised by an invalid value.
+This test can be performed to check an identifier value before passing to _[SpecialFolderIdToStr](#specialfolderidtostr)_ or before setting the _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_ component's _[FolderID](TPJSpecialFolderInfoFolderID.md)_ property to avoid exception being raised by an invalid value.
 
 ### Tip ###
 
@@ -47,7 +47,7 @@ Windows defines identifiers to represent the shell's special folders. The _ShlOb
 
 ### Tips ###
 
-To check if an identifier value is valid use the _[IsValidSpecialFolderId](#IsValidSpecialFolderId.md)_ function.
+To check if an identifier value is valid use the _[IsValidSpecialFolderId](#isvalidspecialfolderid)_ function.
 
 Use the _[TPJSpecialFolderEnum](TPJSpecialFolderEnum.md)_ class to enumerate all the valid folder identifiers.
 
