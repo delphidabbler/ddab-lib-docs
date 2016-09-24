@@ -22,32 +22,32 @@ The behaviour of the property was changed at v5.5, as described below.
 
 The property can be interpreted in the following ways, depending on its value:
 
-  * _Empty string_: <br>The ini file name is the same as the application, with the extension changed to <code>.ini</code>. The file is placed in the same directory as the application. For example, if the application is <code>C:\Foo\Bar.exe</code> then the full ini file name will be <code>C:\Foo\Bar.ini</code>.</li></ul>
+  * _Empty string_: <br>The ini file name is the same as the application, with the extension changed to `.ini`. The file is placed in the same directory as the application. For example, if the application is `C:\Foo\Bar.exe` then the full ini file name will be `C:\Foo\Bar.ini`.
 
-<ul><li><i>Relative path:</i> (e.g. <code>Foo.ini</code> or <code>Foo\Bar.ini</code>)<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an <i>IniFileName</i> property value of <code>Foo.ini</code> might result in an ini file name of <code>C:\Windows\Foo.ini</code> while a property value of <code>Foo\Bar.ini</code> would save window state data in <code>C:\Windows\Foo\Bar.ini</code>.</li></ul>
+  * _Relative path_: (e.g. `Foo.ini` or `Foo\Bar.ini`<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`.
 
-  * _Absolute path_:<br>The ini file is stored in the specified path.</li></ul>
+  * _Absolute path_:<br>The ini file is stored in the specified path.
 
-If the the ini file's directory does not exist an exception will be generated when the component attempts to write to the ini file.<br>
-<br>
-<h3>v5.5.0 and later ###
+If the the ini file's directory does not exist an exception will be generated when the component attempts to write to the ini file.
+
+### v5.5.0 and later ###
 
 The property can be interpreted in the following ways, depending on its value:
 
-  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to <code>.ini</code>. The file's directory depends on the value of the <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> property.</li></ul>
+  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
 
-<ul><li><i>Relative path:</i> (e.g. <code>Foo.ini</code> or <code>Foo\Bar.ini</code>)<br>The ini file name is as specified in the property. The file's directory depends on the value of the <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> property.</li></ul>
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in the property. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
 
-  * _Absolute path_:<br>The ini file is stored in the specified path. The value of the <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> property has no effect in this case.</li></ul>
+  * _Absolute path_:<br>The ini file is stored in the specified path. The value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property has no effect in this case.
 
-If the ini file's directory does not exist it will be created if possible when the component first attempts to write to the file. If the directory cannot be created an exception will be raised.<br>
-<br>
-<b>Important note:</b> When updating from earlier versions to v5.5 or later, you should note that <i><a href='TPJWdwState.md'>TPJWdwState</a></i> uses a different file name by default when <i>IniFileName</i> is either a relative path or the empty string. To revert to the original behaviour you need to change the <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> property value as follows:<br>
-<br>
-<ul><li>When <i>IniFileName</i> is the empty string, set <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> to <code>rdExeDir</code>.<br>
-</li><li>When <i>IniFileName</i> is a relative path, set <i><a href='TPJWdwStateIniRootDir.md'>IniRootDir</a></i> to <code>rdWindowsDir</code>.</li></ul>
+If the ini file's directory does not exist it will be created if possible when the component first attempts to write to the file. If the directory cannot be created an exception will be raised.
 
-<h2>Remarks ##
+**Important note:** When updating from earlier versions to v5.5 or later, you should note that _[TPJWdwState](TPJWdwState.md)_  uses a different file name by default when _IniFileName_ is either a relative path or the empty string. To revert to the original behaviour you need to change the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property value as follows:
+
+  * When _IniFileName_ is the empty string, set _[IniRootDir](TPJWdwStateIniRootDir.md)_ to `rdExeDir`.
+  * When _IniFileName_ is a relative path, set _[IniRootDir](TPJWdwStateIniRootDir.md)_ to `rdWindowsDir`.
+
+## Remarks ##
 
 The value of _IniFileName_ can be overridden at run time if you handle either the _[OnGetIniData](TPJWdwStateOnGetIniData.md)_ or _[OnGetIniDataEx](TPJWdwStateOnGetIniDataEx.md)_ <sup>v5.5</sup> properties. This can be useful when the _[AutoSaveRestore](TPJCustomWdwStateAutoSaveRestore.md)_ property is `True` and you want to specify the ini file name at run time. In this case setting _IniFileName_ at run time will not work because the form will be restored before you have an opportunity to change the property value. However the _[OnGetIniData](TPJWdwStateOnGetIniData.md)_ and _[OnGetIniDataEx](TPJWdwStateOnGetIniDataEx.md)_ events are triggered before the form restores, enabling the file name to be specified.
 
