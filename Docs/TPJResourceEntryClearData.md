@@ -14,4 +14,4 @@ procedure ClearData;
 
 Clears all the resource entry's raw data.
 
-After the method has been called the _[Data](TPJResourceEntry#Properties.md)_ property's stream is empty.
+After the method has been called the _[Data](TPJResourceEntry.md#properties)_ property's stream is empty.
