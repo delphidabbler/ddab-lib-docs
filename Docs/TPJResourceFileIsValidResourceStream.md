@@ -1,4 +1,4 @@
-# IsValidResourceStream method #
+# IsValidResourceStream class method #
 
 **Project:** [Resource File Unit](ResFileUnit.md)
 
