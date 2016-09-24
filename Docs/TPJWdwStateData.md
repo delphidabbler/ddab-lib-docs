@@ -21,8 +21,9 @@ This record type collects together the window size, position and state data that
 
 The fields are as follows:
 
-| _Left_ | Position of left hand side of window in screen coordinates. |
+| Field | Description |
 |:-------|:------------------------------------------------------------|
+| _Left_ | Position of left hand side of window in screen coordinates. |
 | _Top_ | Position of top of window in screen coordinates. |
 | _Width_ | Width of window in pixels. |
 | _Height_ | Height of window in pixels. |
