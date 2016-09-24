@@ -4,15 +4,15 @@ While the code in the [Resource File Unit](ResFileUnit.md) does not understand t
 
 The following properties and methods of _[TPJResourceEntry](TPJResourceEntry.md)_ are useful in reading, adding, updating and deleting the raw data:
 
-  * The _[Data](TPJResourceEntry#Properties.md)_ property. This exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to read and modify the data.
-  * The _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property makes the resource data available as a byte array.
+  * The _[Data](TPJResourceEntry.md#properties)_ property. This exposes the resource data as a _TStream_ which means that we can use normal stream handling techniques to read and modify the data.
+  * The _[DataBytes](TPJResourceEntry.md#properties)_**<sup>v1.1</sup>** property makes the resource data available as a byte array.
   * The _[ClearData](TPJResourceEntryClearData.md)_**<sup>v1.1</sup>** method deletes the resource data.
 
 In the following section we show how manipulate data using these properties and method.
 
 ## Reading data ##
 
-The following code fragment shows how to read all the data from a resource entry to a buffer using the _[Data](TPJResourceEntry#Properties.md)_ property.
+The following code fragment shows how to read all the data from a resource entry to a buffer using the _[Data](TPJResourceEntry.md#properties)_ property.
 
 ```pascal
 var
@@ -41,7 +41,7 @@ begin
 end;
 ```
 
-We first set the buffer to the required size by getting the size of the resource from the _[TPJResourceEntry](TPJResourceEntry.md)_'s _[DataSize](TPJResourceEntry#Properties.md)_ property (you could also use the _[Data](TPJResourceEntry#Properties.md).Size_ property). We now ensure the resource data stream is positioned at the start (you can't assume this!) then read all the data into the buffer using _TStream_'s _ReadBuffer_ method. We then reposition the stream ready for the next use. Having processed the data in the buffer in some way we finally free it.
+We first set the buffer to the required size by getting the size of the resource from the _[TPJResourceEntry](TPJResourceEntry.md)_'s _[DataSize](TPJResourceEntry.md#properties)_ property (you could also use the _[Data](TPJResourceEntry.md#properties).Size_ property). We now ensure the resource data stream is positioned at the start (you can't assume this!) then read all the data into the buffer using _TStream_'s _ReadBuffer_ method. We then reposition the stream ready for the next use. Having processed the data in the buffer in some way we finally free it.
 
 It may be more convenient to copy the resource data to another stream before processing it. The next example illustrates this by storing the resource data in a file named `ResEntry.dat`:
 
@@ -68,7 +68,7 @@ end;
 
 Here we first open a stream onto a new file. We then use _TStream_'s _CopyFrom_ method to copy the whole of the resource data to the file stream. By specifying a size of `0` in the _CopyFrom_ method, _TStream_ automatically positions the resource data stream at the start and copies the whole stream, so we don't need to position it first. Once again we reset the resource data stream once we are done.
 
-Depending on how you want to manipulate the resource data it may be much simpler to use the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property to get an array of bytes to manipulate. Here's an example that is so simple it is hardly worth giving:
+Depending on how you want to manipulate the resource data it may be much simpler to use the _[DataBytes](TPJResourceEntry.md#properties)_**<sup>v1.1</sup>** property to get an array of bytes to manipulate. Here's an example that is so simple it is hardly worth giving:
 
 ```pascal
 var
@@ -113,13 +113,13 @@ begin
 end;
 ```
 
-**Note:** You must set the _Size_ property of the entry's _[Data](TPJResourceEntry#Properties.md)_ property here: you can't set the _[DataSize](TPJResourceEntry#Properties.md)_ property since it is read only.
+**Note:** You must set the _Size_ property of the entry's _[Data](TPJResourceEntry.md#properties)_ property here: you can't set the _[DataSize](TPJResourceEntry.md#properties)_ property since it is read only.
 
 ## Writing data ##
 
 We can add data to an existing resource quite simply. Let us first look at how to overwrite any existing data and then show how to append data to an existing resource. For the purposes of this example, assume we have a user defined resource that stores some plain text. _Entry_ is a _[TPJResourceEntry](TPJResourceEntry.md)_ object that references our resource. We will replace any existing data with the text `'Hello World'`.
 
-First of all we use the _[Data](TPJResourceEntry#Properties.md)_ property:
+First of all we use the _[Data](TPJResourceEntry.md#properties)_ property:
 
 ```pascal
 var
@@ -140,7 +140,7 @@ begin
 end;
 ```
 
-That's well and good when you want to write the text in its native encoding. When you want to write the text in another encoding, say UTF-8, that is when the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property really helps. Assuming you are using Delphi 2009 or later you can replace any existing data with the text `'Hello World'`, using UTF-8, like this:
+That's well and good when you want to write the text in its native encoding. When you want to write the text in another encoding, say UTF-8, that is when the _[DataBytes](TPJResourceEntry.md#properties)_**<sup>v1.1</sup>** property really helps. Assuming you are using Delphi 2009 or later you can replace any existing data with the text `'Hello World'`, using UTF-8, like this:
 
 ```pascal
 var
@@ -154,7 +154,7 @@ begin
 end;
 ```
 
-Now let's look at how we add more text to the end of the resource data using the _[Data](TPJResourceEntry#Properties.md)_ property. We will appended the text `'www.delphidabbler.com'` to the end of some existing text in the resource:
+Now let's look at how we add more text to the end of the resource data using the _[Data](TPJResourceEntry.md#properties)_ property. We will appended the text `'www.delphidabbler.com'` to the end of some existing text in the resource:
 
 ```pascal
 var
@@ -177,7 +177,7 @@ end;
 
 Here we move the stream pointer to the end of the stream so the text we write is appended to any existing data.
 
-A similar thing using can be done using the _[DataBytes](TPJResourceEntry#Properties.md)_**<sup>v1.1</sup>** property. Assume the existing text is in UTF-8 and were want to append text in the same format. To do this we have to read the existing text, append the new text and then write the whole string back again, as follows:
+A similar thing using can be done using the _[DataBytes](TPJResourceEntry.md#properties)_**<sup>v1.1</sup>** property. Assume the existing text is in UTF-8 and were want to append text in the same format. To do this we have to read the existing text, append the new text and then write the whole string back again, as follows:
 
 ```pascal
 var
