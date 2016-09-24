@@ -28,7 +28,7 @@ The event is triggered in the following cicumstances:
   * Just before the ini file is written when saving window information.
   * When the _[IniFilePath](TPJWdwStateIniFilePath.md)_ method is called.
 
-The directory location, name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded. The values passed to the event handler are the same as those of the _[IniRootDir](TPJWdwStateIniRootDir.md)_, _[IniFileName](TPJWdwStateIniFileName.md) and_[Section](TPJWdwStateSection.md)_properties._
+The directory location, name of the ini file and the section within it are passed as var parameters to the event handler, allowing the user to change the values, and hence the location where the window data is recorded. The values passed to the event handler are the same as those of the _[IniRootDir](TPJWdwStateIniRootDir.md)_, _[IniFileName](TPJWdwStateIniFileName.md)_ and _[Section](TPJWdwStateSection.md)_ properties.
 
 Changing the values of the event's parameters _does not_ change the value of the related properties.
 
