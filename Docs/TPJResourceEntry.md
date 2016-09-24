@@ -18,7 +18,7 @@ Care should be taken not to use a resource entry after the related resource file
 
 | **Method** | **Description** |
 |:-----------|:----------------|
-| _[ClearData](TPJResourceEntryClearData.md)_**<sup>v1.1</sup>** | Clears (delets) the resource entry's raw data. |
+| _[ClearData](TPJResourceEntryClearData.md)_**<sup>v1.1</sup>** | Clears (deletes) the resource entry's raw data. |
 | _[IsMatching](TPJResourceEntryIsMatching.md)_ | Overloaded methods to check if the resource entry matches the type, name and language ID of another entry. |
 | _[LoadDataFromFile](TPJResourceEntryLoadDataFromFile.md)_**<sup>v1.1</sup>** | Loads the content of a file into the resource entry's raw data. |
 
