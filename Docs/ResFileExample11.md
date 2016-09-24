@@ -98,7 +98,7 @@ end.
 
 This program accepts the name of the resource file to be checked on the command line. First it validates the command line.
 
-Then it calls `ValidateResFile` passing the resource file name and an array of required bitmap resource names. If the procedure returns normally a message indicating success is written out and a zero exit code is returned to the operating system. If `ValidateResFile` raises an exception the error message is written out and an exit code of 1 is returned.
+Then it calls _ValidateResFile_ passing the resource file name and an array of required bitmap resource names. If the procedure returns normally a message indicating success is written out and a zero exit code is returned to the operating system. If _ValidateResFile_ raises an exception the error message is written out and an exit code of 1 is returned.
 
 **Links:**
 
