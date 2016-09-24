@@ -15,7 +15,7 @@ procedure LoadDataFromFile(const SrcFileName: TFileName;
 
 Loads the content of a file into the resource entry's raw data. The file content can either replace existing or be appedned to it.
 
-After the file is loaded the _[Data](TPJResourceEntry#Properties.md)_ property's stream pointer is set to `0`.
+After the file is loaded the _[Data](TPJResourceEntry.md#properties)_ property's stream pointer is set to `0`.
 
 _**Parameters**_
 
