@@ -32,7 +32,7 @@ This code uses both _[TPJResourceFile](TPJResourceFile.md)_ and _[TPJResourceEnt
 
 We loop through all the valid indexes into _[Entries](TPJResourceFileEntries.md)_ and store a reference to each resource entry in turn. Having got the resource entry object we now access its _ResType_, _ResName_ and _LanguageID_ properties to get the information we want to display.
 
-The details of each entry are formatted by Delphi's _Format_ function and added to _Memo1_. Note that we use the _[ResIDToStr](ResFileRoutines#ResIDToStr.md)_ helper function to get string representations of the resource type and name. We display the language ID as a four digit hex number since its value is a _Word_.
+The details of each entry are formatted by Delphi's _Format_ function and added to _Memo1_. Note that we use the _[ResIDToStr](ResFileRoutines.md#residtostr)_ helper function to get string representations of the resource type and name. We display the language ID as a four digit hex number since its value is a _Word_.
 
 You may have noticed that we have not freed any of the resource entry objects. This is not necessary since they are all freed automatically when the resource files object is freed.
 
