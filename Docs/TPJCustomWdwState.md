@@ -4,7 +4,7 @@
 
 **Unit:** _PJWdwState_.
 
-This is the abstract case class for the _[TPJWdwState](TPJWdwState.md)_, _[TPJRegWdwState](TPJRegWdwState.md)_ and _[TPJUserWdwState](TPJUserWdwState.md)_ components. It provides the common functionality and properties of the derived components. _TPJWdwState_, _TPJRegWdwState_ and _TPJUserWdwState_ simply add the methods and / or events used to store and read window state information along with any properties and events relevant to the desired storage.
+This is the abstract base class for the _[TPJWdwState](TPJWdwState.md)_, _[TPJRegWdwState](TPJRegWdwState.md)_ and _[TPJUserWdwState](TPJUserWdwState.md)_ components. It provides the common functionality and properties of the derived components. _[TPJWdwState](TPJWdwState.md)_, _[TPJRegWdwState](TPJRegWdwState.md)_ and _[TPJUserWdwState](TPJUserWdwState.md)_ simply add the methods and / or events used to store and read window state information along with any properties and events relevant to the desired storage.
 
 _TPJCustomWdwState_ can be used as a base class for further window state components that use other forms of storage. To derive a new component you must override the protected abstract methods _[ReadWdwState](TPJCustomWdwStateReadWdwState.md)_ and _[SaveWdwState](TPJCustomWdwStateSaveWdwState.md)_ to read and save window size, position and state information via the desired storage medium.
 
