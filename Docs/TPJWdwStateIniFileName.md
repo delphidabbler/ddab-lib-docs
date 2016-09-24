@@ -22,11 +22,17 @@ The behaviour of the property was changed at v5.5, as described below.
 
 The property can be interpreted in the following ways, depending on its value:
 
-  * _Empty string_: <br>The ini file name is the same as the application, with the extension changed to `.ini`. The file is placed in the same directory as the application. For example, if the application is `C:\Foo\Bar.exe` then the full ini file name will be `C:\Foo\Bar.ini`.
+  * _Empty string_:
+  
+  The ini file name is the same as the application, with the extension changed to `.ini`. The file is placed in the same directory as the application. For example, if the application is `C:\Foo\Bar.exe` then the full ini file name will be `C:\Foo\Bar.ini`.
 
-  * _Relative path_: (e.g. `Foo.ini` or `Foo\Bar.ini`<br>The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`.
+  * _Relative path_: (e.g. `Foo.ini` or `Foo\Bar.ini`)
+  
+  The ini file name is as specified in this property and it is stored in the Windows installation directory. For example an _IniFileName_ property value of `Foo.ini` might result in an ini file name of `C:\Windows\Foo.ini` while a property value of `Foo\Bar.ini` would save window state data in `C:\Windows\Foo\Bar.ini`.
 
-  * _Absolute path_:<br>The ini file is stored in the specified path.
+  * _Absolute path_:
+   
+  The ini file is stored in the specified path.
 
 If the the ini file's directory does not exist an exception will be generated when the component attempts to write to the ini file.
 
@@ -34,11 +40,17 @@ If the the ini file's directory does not exist an exception will be generated wh
 
 The property can be interpreted in the following ways, depending on its value:
 
-  * _Empty string_:<br>The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
+  * _Empty string_:
+  
+  The ini file name is the same as the application, with the extension changed to `.ini`. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
 
-  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)<br>The ini file name is as specified in the property. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
+  * _Relative path:_ (e.g. `Foo.ini` or `Foo\Bar.ini`)
+  
+  The ini file name is as specified in the property. The file's directory depends on the value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property.
 
-  * _Absolute path_:<br>The ini file is stored in the specified path. The value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property has no effect in this case.
+  * _Absolute path_:
+  
+  The ini file is stored in the specified path. The value of the _[IniRootDir](TPJWdwStateIniRootDir.md)_ property has no effect in this case.
 
 If the ini file's directory does not exist it will be created if possible when the component first attempts to write to the file. If the directory cannot be created an exception will be raised.
 
