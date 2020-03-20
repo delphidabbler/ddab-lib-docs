@@ -22,6 +22,7 @@ This is a static class that provides information about the host computer. The cl
 | _[ProcessorCount](TPJComputerInfoProcessorCount.md)_ | Gets the number of processors in the computer. |
 | _[ProcessorIdentifier](TPJComputerInfoProcessorIdentifier.md)_ [v4.0] | Gets the identifier of the computer's processor. |
 | _[ProcessorName](TPJComputerInfoProcessorName.md)_ [v4.0] | Gets the name of the computer's processor. |
+| _[ProcessorSpeedMHz](TPJComputerInfoProcessorSpeedMHz.md)_ [v5.4] | Gets the speed of the computer's processor in MHz. |
 | _[SystemManufacturer](TPJComputerInfoSystemManufacturer.md)_ [v4.0] | Gets the name of the computer's manufacturer. |
 | _[SystemProductName](TPJComputerInfoSystemProductName.md)_ [v4.0] | Gets the computer's product or model name. |
 | _[UserName](TPJComputerInfoUserName.md)_ | Gets the current user name. |
