@@ -22,4 +22,5 @@ An example processor name is "`Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz`".
 
 **See also**
 
-  * _[ProcessorIdentifier](TPJComputerInfoProcessorIdentifier.md)_
+* _[ProcessorIdentifier](TPJComputerInfoProcessorIdentifier.md)_
+* _[ProcessorSpeedMHz](TPJComputerInfoProcessorSpeedMHz.md)_ 
