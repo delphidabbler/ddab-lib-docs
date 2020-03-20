@@ -22,4 +22,5 @@ An example processor identifier is "`Intel64 Family 6 Model 58 Stepping 9`".
 
 **See also**
 
-  * _[ProcessorName](TPJComputerInfoProcessorName.md)_
+* _[ProcessorName](TPJComputerInfoProcessorName.md)_
+* _[ProcessorSpeedMHz](TPJComputerInfoProcessorSpeedMHz.md)_ 
