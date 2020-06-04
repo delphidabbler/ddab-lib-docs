@@ -43,6 +43,10 @@ The **Framework** column notes whether the project is compatible with either the
 
 Struck out frameworks such as *<strike>FMX</strike>* are not supported by the project.
 
+## FAQs
+
+Frequently asked questions for some of the Code Library projects are available and listed on the [FAQs](FAQs/FAQs.md) page.
+
 ## Library News
 
 You can get the latest news about the Code Library by following the [DelphiDabbler Blog](https://delphidabbler.blogspot.com/).
