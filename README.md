@@ -45,7 +45,7 @@ Struck out frameworks such as *<strike>FMX</strike>* are not supported by the pr
 
 ## Library News
 
-You can get the latest news about the Code Library by subscribing to the [Code Library News Feed](http://www.delphidabbler.com/feeds/site-news-feed?id=codelib&days=92).
+You can get the latest news about the Code Library by following the [DelphiDabbler Blog](https://delphidabbler.blogspot.com/).
 
 ## License
 
