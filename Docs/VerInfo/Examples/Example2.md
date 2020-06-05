@@ -1,10 +1,10 @@
 # Example 2: Using the _FixedFileInfo_ property #
 
-This extended example shows how to use the _[FixedFileInfo](TPJVersionInfoFixedFileInfo.md)_ property. It displays descriptions of the values of some of the fields of the structure returned by the _FixedFileInfo_ property in a memo. Most of the example is taken up with code that maps fixed file info codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.
+This extended example shows how to use the _[FixedFileInfo](../API/TPJVersionInfo-FixedFileInfo.md)_ property. It displays descriptions of the values of some of the fields of the structure returned by the _FixedFileInfo_ property in a memo. Most of the example is taken up with code that maps fixed file info codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.
 
-A [similar example](VerInfoExample1.md) shows how to achieve the same results using various specialised fixed file information properties.
+A [similar example](Example1.md) shows how to achieve the same results using various specialised fixed file information properties.
 
-Drop a _TMemo_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
+Drop a _TMemo_ and a _[TPJVersionInfo](../API/TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
 
 ```pascal
 type
@@ -155,5 +155,5 @@ end;
 
 **Links:**
 
-  * Back to the [Examples List](VerInfoExamples.md)
-  * Back to the [Main Component Page](VersionInformationComponent.md)
+  * Back to the [Examples List](../Examples.md)
+  * Back to the [Main Component Page](../../VerInfo.md)
