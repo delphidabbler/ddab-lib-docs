@@ -25,8 +25,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Changes
 
-* Replaced placeholder page.
-* Updated links that referenced wiki.delphidabbler.com to reference the new local landing page.
+* Replaced Extended String Property Editor placeholder page with new landing page content.
+* Updated links that referenced the Extended String Property Editor documentation on wiki.delphidabbler.com to reference the new local landing page.
 
 ## v0.3.0 - 2020-06-04
 
@@ -39,7 +39,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * `README.md`:
     * Replaced news feed link with link to DelphiDabbler Blog in _Library News_ section .
-    * Added _FAQs_ section, with link to main _FAQs_ page, 
+    * Added _FAQs_ section, with link to main _FAQs_ page.
 
 ## v0.2.0 - 2020-03-20
 
