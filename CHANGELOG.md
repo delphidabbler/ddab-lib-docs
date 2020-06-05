@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.5.0 - 2020-06-05
+
+### Added
+
+* Version Information Component documentation.
+
+### Changes
+
+* Replaced Version Information Component placeholder page with new landing page content.
+* Updated all links that referenced the Version Information Component documentation wiki.delphidabbler.com to reference the new local landing page.
+* Reworded and removed links to wiki.delphidabbler.com from all placeholder pages.
+* Replaced all remaining links to documentation on wiki.delphidabbler.com with links to local placeholder pages.
+
 ## v0.4.0 - 2020-06-05
 
 ### Added
