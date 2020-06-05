@@ -1,10 +1,10 @@
-# Example 1: Using fixed file information properties #
+# Example 2: Using the _FixedFileInfo_ property #
 
-This rather long example shows how to use the Version Information Component's fixed file information properties. It displays descriptions of the properties in a memo. Most of the example is taken up with code that maps fixed file information codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.
+This extended example shows how to use the _[FixedFileInfo](../API/TPJVersionInfo-FixedFileInfo.md)_ property. It displays descriptions of the values of some of the fields of the structure returned by the _FixedFileInfo_ property in a memo. Most of the example is taken up with code that maps fixed file info codes onto descriptive names. The real meat of the example comes in the form creation event handler at the end of the code.
 
-A [similar example](VerInfoExample2.md) shows how to achieve the same results using the _[FixedFileInfo](TPJVersionInfoFixedFileInfo.md)_ property.
+A [similar example](Example1.md) shows how to achieve the same results using various specialised fixed file information properties.
 
-Drop a _TMemo_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
+Drop a _TMemo_ and a _[TPJVersionInfo](../API/TPJVersionInfo.md)_ component on to a form, create an _OnCreate_ event handler for the form, then enter the following code.
 
 ```pascal
 type
@@ -46,7 +46,7 @@ const
     ( Code: VOS__BASE; Desc: 'Unknown' )
   );
 
-function CodeToDesc(Code: DWORD; 
+function CodeToDesc(Code: DWORD;
   Table: array of TTableEntry): string;
   // return description of code using table
 var
@@ -104,50 +104,56 @@ begin
 
 end;
 
-function VerToStr(Ver: TPJVersionNumber): string;
+function VerToStr(MS, LS: DWORD): string;
   // return ver number as string
 begin
-  Result := Format('%d.%d.%d.%d', 
-    [Ver.V1, Ver.V2, Ver.V3, Ver.V4]);
+  Result := Format('%d.%d.%d.%d',
+    [HiWord(MS), LoWord(MS), HiWord(LS), LoWord(LS)]);
 end;
 
 procedure TEgForm3.FormCreate(Sender: TObject);
+var
+  FFI: TVSFixedFileInfo;
 begin
   // clear memo
   Memo1.Lines.Clear;
   // check if we have version info
   if PJVersionInfo1.HaveInfo then
-    // we have version info: display fixed file info
 
+  begin
+    // we have version info: display fixed file info
+    FFI := PJVersionInfo1.FixedFileInfo;
     with Memo1.Lines do
     begin
+      Clear;
       Add('File Version:'#13#10'   '
-        + VerToStr(PJVersionInfo1.FileVersionNumber));
+        + VerToStr(FFI.dwFileVersionMS, FFI.dwFileVersionLS));
       Add('Product Version:'#13#10'   '
-        + VerToStr(PJVersionInfo1.ProductVersionNumber));
+        + VerToStr(FFI.dwProductVersionMS, FFI.dwProductVersionLS));
       Add('File Flags Mask: '
-        + FileFlagsToStr(PJVersionInfo1.FileFlagsMask));
-      Add('File Flags: '
-        + FileFlagsToStr(PJVersionInfo1.FileFlags));
-      Add('File Type:'#13#10'   '
+        + FileFlagsToStr(FFI.dwFileFlagsMask));
 
-        + CodeToDesc(PJVersionInfo1.FileType, cFileType));
+      Add('File Flags: '
+        + FileFlagsToStr(FFI.dwFileFlags));
+      Add('File Type:'#13#10'   '
+        + CodeToDesc(FFI.dwFileType, cFileType));
       Add('File sub type:');
-      case PJVersionInfo1.FileType of
+      case FFI.dwFileType of
         VFT_FONT, VFT_DRV, VFT_VXD:
-          Add(Format('   %0.8X', [PJVersionInfo1.FileSubType]));
+          Add(Format('   %0.8X', [FFI.dwFileSubType]));
         else Add('   None');
       end;
       Add('File OS:'#13#10'   '
-        + FileOSDesc(PJVersionInfo1.FileOS));
+        + FileOSDesc(FFI.dwFileOS));
     end
+  end
+
   else
     Memo1.Lines.Add('NO VERSION INFO');
-
 end;
 ```
 
 **Links:**
 
-  * Back to the [Examples List](VerInfoExamples.md)
-  * Back to the [Main Component Page](VersionInformationComponent.md)
+  * Back to the [Examples List](../Examples.md)
+  * Back to the [Main Component Page](../../VerInfo.md)

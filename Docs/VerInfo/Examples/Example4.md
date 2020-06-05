@@ -1,8 +1,8 @@
 # Example 4: Using string information properties #
 
-This example demostrates how to access string information from a version resource using _[TPJVersionInfo](TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _[LegalCopyright](TPJVersionInfoLegalCopyright.md)_ and the second using the _[StringFileInfo](TPJVersionInfoStringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](TPJVersionInfoFileName.md)_ property to access information in other files.
+This example demostrates how to access string information from a version resource using _[TPJVersionInfo](../API/TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _[LegalCopyright](../API/TPJVersionInfo-LegalCopyright.md)_ and the second using the _[StringFileInfo](../API/TPJVersionInfo-StringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](../API/TPJVersionInfo-FileName.md)_ property to access information in other files.
 
-Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo](TPJVersionInfo.md)_ component onto a form and add the following function and event handlers:
+Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo](../API/TPJVersionInfo.md)_ component onto a form and add the following function and event handlers:
 
 ```pascal
 function DirToPath(const Dir: string): string;
@@ -73,7 +73,7 @@ procedure TEgForm2.Button2Click(Sender: TObject);
   procedure AddStrInfo(StrName: string);
     // Add string info to memo by name
   begin
-    Memo1.Lines.Add(StrName + ': ' + 
+    Memo1.Lines.Add(StrName + ': ' +
       PJVersionInfo1.StringFileInfo[StrName]);
   end;
 
@@ -111,5 +111,5 @@ When the first button is clicked the memo is populated with string information e
 
 **Links:**
 
-  * Back to the [Examples List](VerInfoExamples.md)
-  * Back to the [Main Component Page](VersionInformationComponent.md)
+  * Back to the [Examples List](../Examples.md)
+  * Back to the [Main Component Page](../../VerInfo.md)

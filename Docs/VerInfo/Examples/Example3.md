@@ -1,8 +1,8 @@
 # Example 3: Using translation, character set and language properties #
 
-This example shows how to use the translation, character set and language properties of _[TPJVersionInfo](TPJVersionInfo.md)_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.
+This example shows how to use the translation, character set and language properties of _[TPJVersionInfo](../API/TPJVersionInfo.md)_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.
 
-Drop a _TListBox_ and a _[TPJVersionInfo](TPJVersionInfo.md)_ component on a form and add the following _OnCreate_ event handler to the form:
+Drop a _TListBox_ and a _[TPJVersionInfo](../API/TPJVersionInfo.md)_ component on a form and add the following _OnCreate_ event handler to the form:
 
 ```pascal
 procedure TEgForm1.FormCreate(Sender: TObject);
@@ -35,5 +35,5 @@ When the form is displayed details of languages and character sets for each tran
 
 **Links:**
 
-  * Back to the [Examples List](VerInfoExamples.md)
-  * Back to the [Main Component Page](VersionInformationComponent.md)
+  * Back to the [Examples List](../Examples.md)
+  * Back to the [Main Component Page](../../VerInfo.md)

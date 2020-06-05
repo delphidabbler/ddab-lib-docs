@@ -21,7 +21,7 @@ The Library currently contains the following projects.
 | [Shell Folders Unit](ShellFoldersUnit.md) | Components, classes and routines to assist in working with shell folders. Includes a "Browse for Folder" dialogue box. |
 | [Stream Extension Classes](http://wiki.delphidabbler.com/index.php/Docs/StreamsAPI)![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) | Classes that provide a means to wrap _TStream_ objects. Also provides implementations of the _IStream_ interface. |
 | [System Information Unit](SystemInformationUnit.md) | Static classes that get information about the user's computer and operating system.  |
-| [Version Information Component](http://wiki.delphidabbler.com/index.php/Docs/VerInfoAPI)![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) | Component that accesses version information embedded in program files, DLLs etc. |
+| [Version Information Component](VerInfo.md) | Component that accesses version information embedded in program files, DLLs etc. |
 | [Window State Components](WindowStateComponents.md) | Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. |
 
 Links in the above table that are marked with ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif) lead to documentation over at [wiki.delphidabbler.com](http://wiki.delphidabbler.com). All other links lead to documentation here on GoogleCode.
