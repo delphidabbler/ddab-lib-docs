@@ -1,6 +1,6 @@
 # Example 4: Using string information properties #
 
-This example demostrates how to access string information from a version resource using _[TPJVersionInfo](../API/TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _[LegalCopyright](../API/TPJVersionInfo-LegalCopyright.md)_ and the second using the _[StringFileInfo](../API/TPJVersionInfo-StringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](../API/TPJVersionInfo-FileName.md)_ property to access information in other files.
+This example demostrates how to access string information from a version resource using _[TPJVersionInfo](../API/TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _LegalCopyright_ and the second using the _[StringFileInfo](../API/TPJVersionInfo-StringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](../API/TPJVersionInfo-FileName.md)_ property to access information in other files.
 
 Drop a _TMemo_, two _TButton_ controls and a _[TPJVersionInfo](../API/TPJVersionInfo.md)_ component onto a form and add the following function and event handlers:
 

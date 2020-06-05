@@ -9,13 +9,13 @@
 ```pascal
 property FileOS: DWORD;
 ```
-!! Description
+## Description
 
 _FileOS_ is a run time property that provides information about the operating system for which the application was designed.
 
-The value is as specified in the fixed file information part of the ''VERSIONINFO'' resource statement.
+The value is as specified in the fixed file information part of the _VERSIONINFO_ resource statement.
 
-The same value can also be found by reading the _dwFileOS_ member of the _VS_FIXEDFILEINFO_ structure that is accessed using the _[[(TPJVersionInfo)FixedFileInfo]]_ property.
+The same value can also be found by reading the _dwFileOS_ member of the _VS_FIXEDFILEINFO_ structure that is accessed using the [_FixedFileInfo_](./TPJVersionInfo-FixedFileInfo.md) property.
 
 The value of _FileOS_ is made up of a combination of values. We first specify the host operating system, which can be one of:
 

@@ -25,8 +25,8 @@ Flag             | Description
 `VFT_UNKNOWN`    | Unknown file type, or no version information is present.
 `VFT_APP`        | Application.
 `VFT_DLL`        | Dynamic-link library (DLL).
-`VFT_DRV`        | Device driver. Further information is provided by the _[_FileSubType_](./TPJVersionInfo-FileSubType.md)  property.
-`VFT_FONT`       | Font file. Further information is provided by the _[_FileSubType_](./TPJVersionInfo-FileSubType.md)  property.
+`VFT_DRV`        | Device driver. Further information is provided by the [_FileSubType_](./TPJVersionInfo-FileSubType.md)  property.
+`VFT_FONT`       | Font file. Further information is provided by the [_FileSubType_](./TPJVersionInfo-FileSubType.md)  property.
 `VFT_VXD`        | Virtual device driver. The [_FileSubType_](./TPJVersionInfo-FileSubType.md) property contains the virtual device identifier included in the virtual device control block.
 `VFT_STATIC_LIB` | Static-link library.
 
