@@ -1,6 +1,16 @@
 # Environment Variables Unit #
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/EnvVars).
+This is the documentation for the ***v2.0*** release of the unit.
+
+----
+
+> **Unfortunately if you are using a _version 3_ there is no documentation available right now. It was hosted on wiki.delphidabbler.com until its closure in June 2020.**
+>
+> Work is underway to move the ***v3*** documentation here on the `delphidabbler/ddlab-lib-docs` GitHub repository.
+>
+> **When the _v3_ documents have been moved is done, the _v2_ documentation will be taken down.**
+
+----
 
 This project contains the _PJEnvVars_ unit.
 
