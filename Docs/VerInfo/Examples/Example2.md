@@ -46,7 +46,7 @@ const
     ( Code: VOS__BASE; Desc: 'Unknown' )
   );
 
-function CodeToDesc(Code: DWORD; 
+function CodeToDesc(Code: DWORD;
   Table: array of TTableEntry): string;
   // return description of code using table
 var

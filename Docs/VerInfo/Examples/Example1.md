@@ -46,7 +46,7 @@ const
     ( Code: VOS__BASE; Desc: 'Unknown' )
   );
 
-function CodeToDesc(Code: DWORD; 
+function CodeToDesc(Code: DWORD;
   Table: array of TTableEntry): string;
   // return description of code using table
 var
@@ -107,7 +107,7 @@ end;
 function VerToStr(Ver: TPJVersionNumber): string;
   // return ver number as string
 begin
-  Result := Format('%d.%d.%d.%d', 
+  Result := Format('%d.%d.%d.%d',
     [Ver.V1, Ver.V2, Ver.V3, Ver.V4]);
 end;
 

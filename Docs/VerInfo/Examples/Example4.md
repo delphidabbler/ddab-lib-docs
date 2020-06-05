@@ -73,7 +73,7 @@ procedure TEgForm2.Button2Click(Sender: TObject);
   procedure AddStrInfo(StrName: string);
     // Add string info to memo by name
   begin
-    Memo1.Lines.Add(StrName + ': ' + 
+    Memo1.Lines.Add(StrName + ': ' +
       PJVersionInfo1.StringFileInfo[StrName]);
   end;
 
