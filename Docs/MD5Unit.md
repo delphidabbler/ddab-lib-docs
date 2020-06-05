@@ -1,8 +1,10 @@
 # MD5 Message Digest Unit #
 
-> This is a placeholder page for documentation of the DelphiDabbler MD5 Message Digest Unit. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/MD5API)**.
+> **Sorry -- The documentation is not available at the moment. It was hosted on wiki.delphidabbler.com until its closure in June 2020.**
+>
+> Work is underway to move the documentation here on the `delphidabbler/ddlab-lib-docs` GitHub repository.
 
 **Links:**
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [MD5 Message Digest Unit Web Page](http://www.delphidabbler.com/software/md5).
+* Back to [Documentation Home Page](Welcome.md)
+* [MD5 Message Digest Unit Web Page](http://www.delphidabbler.com/software/md5).
