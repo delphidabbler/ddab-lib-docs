@@ -12,7 +12,7 @@ The Version Information component is a non-visual Delphi component that reads an
 * [Programmer's Guide](./VerInfo/API.md)
 * [Examples](./VerInfo/Examples.md)
 
-## Links**
+## Links
 
 * Back to [Documentation Home Page](Welcome.md)
 * [Version Information Component web page](http://delphidabbler.com/software/verinfo).
