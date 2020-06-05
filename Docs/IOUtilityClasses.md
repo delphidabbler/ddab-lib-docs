@@ -1,8 +1,10 @@
 # I/O Utility Classes #
 
-> This is a placeholder page for documentation of the DelphiDabbler I/O Utility Classes. This documentation currently resides on the **[DelphiDabbler Wiki](http://wiki.delphidabbler.com/index.php/Docs/IOUtils)**.
+> **Sorry -- The documentation is not available at the moment. It was hosted on wiki.delphidabbler.com until its closure in June 2020.**
+>
+> Work is underway to move the documentation here on the `delphidabbler/ddlab-lib-docs` GitHub repository.
 
 **Links:**
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [I/O Utility Classes Web Page](http://www.delphidabbler.com/software/ioutils).
+* Back to [Documentation Home Page](Welcome.md)
+* [I/O Utility Classes Web Page](http://www.delphidabbler.com/software/ioutils).
