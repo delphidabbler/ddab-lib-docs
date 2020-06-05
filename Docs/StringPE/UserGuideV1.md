@@ -7,7 +7,7 @@ This property editor enhances the existing Delphi string property editor. It wor
 
 At first sight the Object Inspector's string property editor is unchanged, and in fact it can be used as before. On closer examination you will find an ellipsis button to the right hand side of the property editor's data entry area. Clicking this button displays a resizeable dialog box in which the property's value can be entered or modified, like this:
 
-![Image of Extended String Property v1](./images/window-v1.png)
+![Image of Extended String Property v1](./images/v1/window.png)
 
 When typing in the edit box, pressing _Return_ starts a new line.
 
