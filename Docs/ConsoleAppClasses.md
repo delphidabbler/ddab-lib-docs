@@ -6,5 +6,5 @@
 
 **Links:**
 
-* Back to [Wiki Home Page](Welcome.md)
+* Back to [Documentation Home Page](Welcome.md)
 * [Console Application Runner Classes Web Page](http://www.delphidabbler.com/software/consoleapp).
