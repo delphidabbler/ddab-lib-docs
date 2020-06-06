@@ -75,4 +75,10 @@ Anyone who would like to contribute can do so using the [GitHub Flow](https://gu
 
 ### Documentation license
 
-This documentation is licensed under the Creative Commons Attribution 4.0 International ([CC BY-4.0](https://creativecommons.org/licenses/by/4.0/)) license.
+![Creative Commons CC BY-4.0 license image](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+DelphiDabbler Code Library Documentation by [Peter Johnson](http://en.gravatar.com/delphidabbler) is licensed under a Creative [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at https://github.com/delphidabbler/ddab-lib-docs.
+
+For full details see the `LICENSE` file.
