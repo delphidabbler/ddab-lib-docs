@@ -54,3 +54,31 @@ You can get the latest news about the Code Library by following the [DelphiDabbl
 ## License
 
 All the code in the library now uses the Mozilla Public License v2.0 (MPL 2.0). Earlier versions may use the Mozilla Public License v1.1.
+
+Note that the documentation is published under a different license: [see below](#documentation-license).
+
+## About this documentation
+
+### A little history
+
+The documentation started out as a wiki on Google Code, maintained in a Subversion repository as a branch of the DelphiDabbler Code Library Project. The wiki branch was extracted from the Subversion repository and converted to Git as at commit 1d1404b. The Git repository was placed on GitHub in the `delphidabbler/ddab-lib-docs` project.
+
+Development continued directly on the `master` branch until commit 39b9e5a when the GitFlow development model was adopted.
+
+Development then took place on a `develop` branch. Five releases were made before the GitFlow model was abandoned at commit 0697fcb. The `develop` branch was deleted at commit 979f604 and all the release tags were deleted. The associated change-log file was also removed.
+
+### Development model
+
+Since commit 979f604 a new development model was adopted. Changes are made on branches off `master` and merged into `master` once verified. `master` is pushed to `origin` on GitHub after each merge.
+
+Anyone who would like to contribute can do so using the [GitHub Flow](https://guides.github.com/introduction/flow/) methodology.
+
+### Documentation license
+
+![Creative Commons CC BY-4.0 license image](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+DelphiDabbler Code Library Documentation by [Peter Johnson](http://en.gravatar.com/delphidabbler) is licensed under a Creative [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at https://github.com/delphidabbler/ddab-lib-docs.
+
+For full details see the `LICENSE` file.
