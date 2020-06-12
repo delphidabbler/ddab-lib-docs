@@ -22,7 +22,7 @@ Reading this property finalizes the hash so that no more data can be added to it
 
 ## Note
 
-The value of _Digest_ can be assigned to another [_TPJMD5Digest_](./TPJMD5Digest.md) record or to a Unicode string or _TBytes_ array. This is because [_TPJMD5Digest_](./TPJMD5Digest.md) overloads the [_TPJMD5Digest_](./TPJMD5Digest-Implicit.md) operator for the string and _TBytes_ types.
+The value of _Digest_ can be assigned to another [_TPJMD5Digest_](./TPJMD5Digest.md) record or to a Unicode string or _TBytes_ array. This is because [_TPJMD5Digest_](./TPJMD5Digest.md) overloads the [_Implicit_](./TPJMD5Digest-Implicit.md) operator for the string and _TBytes_ types.
 
 ## Example
 

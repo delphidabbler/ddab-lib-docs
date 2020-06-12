@@ -16,7 +16,7 @@ procedure Finalize;
 
 Finalizes the current MD5 hash and sets the [_Finalized_](./TPJMD5-Finalized.md) property to `True`.
 
-Any attempt to add more data to the hash after calling this method raises an %var%[_EPJMD5_](./EPJMD5.md) exception.
+Any attempt to add more data to the hash after calling this method raises an [_EPJMD5_](./EPJMD5.md) exception.
 
 _Finalize_ is called internally when the [_Digest_](./TPJMD5-Digest.md) property is read. This means that there is rarely any need to call _Finalize_ explicitly.
 

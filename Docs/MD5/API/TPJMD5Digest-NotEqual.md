@@ -22,7 +22,7 @@ class operator NotEqual(const S: string; const D: TPJMD5Digest): Boolean;
 
 * [Other TPJMD5Digest records](#inequality-with-other-tpjmd5digest-records)
 * [Unicode strings](#inequality-with-unicode-strings)
-* [[#Op3 | TBytes byte arrays](#inequality-with-tbytes-byte-arrays)
+* [TBytes byte arrays](#inequality-with-tbytes-byte-arrays)
 
 ### Inequality with other TPJMD5Digest records
 

@@ -17,6 +17,6 @@ const DefReadBufferSize = 64 * 1024;
 This class constant determines the default buffer size used when reading data from streams and files. The constant has two uses:
 
 1. It provides the default value of the [_ReadBufferSize_](./TPJMD5-ReadBufferSize.md) property.
-2. It provides the buffer size used by the [_CalculateFile_](./TPJMD5-CalculateFile) class method and the _TStream_ variants of the [_Calculate_](./TPJMD5-Calculate.md) class method.
+2. It provides the buffer size used by the [_CalculateFile_](./TPJMD5-CalculateFile.md) class method and the _TStream_ variants of the [_Calculate_](./TPJMD5-Calculate.md) class method.
 
 The default buffer size is 64Kb.

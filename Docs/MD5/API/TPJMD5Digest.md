@@ -32,6 +32,6 @@ _TPJMD5Digest_ is a variant record which provides three different ways of access
 
 | Operator | Description |
 |----------|-------------|
-| [_Implicit_](./TPJMD5Digest-Implicit) | Enables _TPJMD5Digest_ records to be cast to and from Unicode strings and _TBytes_ byte arrays. |
+| [_Implicit_](./TPJMD5Digest-Implicit.md) | Enables _TPJMD5Digest_ records to be cast to and from Unicode strings and _TBytes_ byte arrays. |
 | [_Equal_](./TPJMD5Digest-Equal.md) | Enables a _TPJMD5Digest_ record to be compared for equality with another _TPJMD5Digest_, Unicode strings and _TBytes_ byte arrays. |
 | [_NotEqual_](./TPJMD5Digest-NotEqual.md) | Enables a _TPJMD5Digest_ record to be compared for inequality with another _TPJMD5Digest_, Unicode strings and _TBytes_ byte arrays. |
