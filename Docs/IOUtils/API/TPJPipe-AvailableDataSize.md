@@ -1,3 +1,19 @@
-# AvailableDataSize method #
+# AvailableDataSize method
 
-> Sorry, this documentation has moved to the I/O Utility Classes **[Programmers' Guide](http://wiki.delphidabbler.com/index.php/Docs/TPJPipeAvailableDataSize)** ![http://www.delphidabbler.com/img/markup/off-site.gif](http://www.delphidabbler.com/img/markup/off-site.gif)
+***Project:*** [I/O Utility Classes](../API.md)
+
+***Unit:*** [_PJPipe_](./PJPipe.md)
+
+***Class:*** [_TPJPipe_](./TPJPipe.md)
+
+```pascal
+function AvailableDataSize: LongWord;
+```
+
+## Description
+
+This method peeks the pipe to get the size of data available for reading from it.
+
+The number of bytes of available data is returned.
+
+An _EInOutError_ exception is raised if there is an error peeking the pipe.
