@@ -1,10 +1,19 @@
-# Fractions #
+# Fractions Unit Documentation
 
-> **Sorry -- The documentation is not available at the moment. It was hosted on wiki.delphidabbler.com until its closure in June 2020.**
->
-> Work is underway to move the documentation here on the `delphidabbler/ddlab-lib-docs` GitHub repository.
+## Introduction
 
-**Links:**
+This is the home page for the on-line documentation of the [DelphiDabbler Fractions Unit](https://delphidabbler.com/software/fractions) project.
 
-* Back to [Documentation Home Page](Welcome.md)
-* [Fractions Unit Web Page](http://www.delphidabbler.com/software/fractions).
+This unit provides a single Delphi Pascal "Advanced" record, _TFraction_, that encapsulates a fraction and a number of operations on it.
+
+## Contents
+
+* [Overview](./Fractions/Overview.md)
+* [Programmer's Guide](./Fractions/API.md) -- Using the advanced record.
+* [Credits](./Fractions/Credits.md)
+
+## External Links
+
+* [Fractions Unit Web Page](https://delphidabbler.com/software/fractions) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/fractions) -- Download current version here.
+* [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/fractions/) -- Current development tree.
