@@ -1,19 +1,25 @@
-# Create method #
+# Create constructor
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsCreate).
+***Project:*** [Environment Variables Unit](../API.md)
 
-**Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
+***Unit:*** _PJEnvVars_
 
-**Unit:** _PJEnvVars_.
-
-**Class:** _[TPJEnvVars](TPJEnvVars.md)_
+***Class:*** [_TPJEnvVars_](./TPJEnvVars.md)
 
 ```pascal
 constructor Create(AOwner: TComponent);
 ```
 
-## Description ##
+> ***Warning:*** *[_TPJEnvVars_](./TPJEnvVars.md) has been **deprecated**. The [_TPJEnvironmentVars_](./TPJEnvironmentVars.md) static class should be used instead.*
 
-_Create_ constructs a new instance of the component. Only one instance of a _[TPJEnvVars](TPJEnvVars.md)_ component is allowed on any form (or to be owned by any component). An attempt to create a second instance will cause an _Exception_ to be raised and the duplicate instance will not be created.
+## Description
 
-Multiple instances can be created by passing nil as the owner.
+Constructs a new [_TPJEnvVars_](./TPJEnvVars.md) component instance.
+
+***Parameter:***
+
+* _AOwner_ -- Reference to the component that owns this component. May be `nil` in which case this component has no owner.
+
+Only one instance of a [_TPJEnvVars_](./TPJEnvVars.md) component is allowed on any form (or to be owned by any component). An attempt to create a second instance with the same owner will cause an _Exception_ to be raised and the duplicate instance will not be created.
+
+Multiple instances **can** be created by passing `nil` as the _AOwner_ parameter.

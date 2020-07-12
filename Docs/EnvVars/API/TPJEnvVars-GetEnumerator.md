@@ -1,61 +1,25 @@
-# GetEnumerator method #
+# GetEnumerator method
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsGetEnumerator).
+***Project:*** [Environment Variables Unit](../API.md)
 
-**Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
+***Unit:*** _PJEnvVars_
 
-**Unit:** _PJEnvVars_.
-
-**Class:** _[TPJEnvVars](TPJEnvVars.md)_
+***Class:*** [_TPJEnvVars_](./TPJEnvVars.md)
 
 ```pascal
 function GetEnumerator: TPJEnvVarsEnumerator;
 ```
 
-## Description ##
+***Warning:*** *[_TPJEnvVars_](./TPJEnvVars.md) has been **deprecated***. Use [_TPJEnvVarsEnumerator_](./TPJEnvVarsEnumerator.md) instances directly or use [_TPJEnvironmentVars.EnumNames_](./TPJEnvironmentVars-EnumNames.md) static method instead.
 
-_GetEnumerator_ creates an enumerator of type _[TPJEnvVarsEnumerator](TPJEnvVarsEnumerator.md)_ that can be used to enumerate the names of all environment variables in the current environment block. This can be used as an alternative to the _[EnumNames](TPJEnvVarsEnumNames.md)_ method.
+## Description
 
-By providing this method _[TPJEnvVars](TPJEnvVars.md)_ supports the <strong>for..in</strong> Delphi language construct that was introduced in Delphi 2005. Environment variable names can be enumerated as follows:
+Creates and returns a new enumerator of all environment variable names in the current process.
 
-```pascal
-var
-  Name: string;
-begin
-  for Name in PJEnvVars1 do
-  begin
-    // do something with Name here
-  end;
-end;
-```
+***Returns:***
 
-In the above code _PJEnvVars1_ is assumed to be a _[TPJEnvVars](TPJEnvVars.md)_ component instance. The compiler calls _GetEnumerator_ and manipulates the enumerator internally.
+* A new [_TPJEnvVarsEnumerator_](./TPJEnvVarsEnumerator.md) instance. When the method is called manually the user is responsible for freeing the instance.
 
-Compilers before Delphi 2005 can still use the enumerator by calling
-_GetEnumerator_ explicitly to get an [enumerator object](TPJEnvVarsEnumerator.md) instance. The enumerator can then be manipulated as required. For example:
+When compiled with Delphi 2005 and this method enables a [_TPJEnvVars_](./TPJEnvVars.md) component instance to be used in a `for..in` loop.
 
-```pascal
-var
-  Name: string;
-  Enum: TPJEnvVarsEnumerator;
-begin
-  Enum := PJEnvVars1.GetEnumerator;
-  try
-    while Enum.MoveNext do
-    begin
-      Name := Enum.Current;
-      // do something with Name here
-    end;
-  finally
-    Enum.Free;
-  end;
-end;
-```
-
-Again, _PJEnvVars1_ is a _[TPJEnvVars](TPJEnvVars.md)_ component instance.
-
-**Warning:** If you call _GetEnumerator_ explicitly you must free the enumerator when you have finished using it.
-
-**See also**
-
-  * _[TPJEnvVarsEnumerator documentation](TPJEnvVarsEnumerator.md)_
+> **Important:** Environment variables should not be modified while the enumerator is executing (e.g. in a `for..in` loop).

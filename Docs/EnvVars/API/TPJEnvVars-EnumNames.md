@@ -1,24 +1,26 @@
-# EnumNames method #
+# EnumNames method
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsEnumNames).
+***Project:*** [Environment Variables Unit](../API.md)
 
-**Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
+***Unit:*** _PJEnvVars_
 
-**Unit:** _PJEnvVars_.
-
-**Class:** _[TPJEnvVars](TPJEnvVars.md)_
+***Class:*** [_TPJEnvVars_](./TPJEnvVars.md)
 
 ```pascal
-type
-  TPJEnvVarsEnum = procedure(const VarName: string; Data: Pointer) of object;
-
 procedure EnumNames(Callback: TPJEnvVarsEnum; Data: Pointer);
 ```
 
-## Description ##
+> ***Warning:*** *[_TPJEnvVars_](./TPJEnvVars.md) has been **deprecated**. Use the  [_TPJEnvironmentVars.EnumNames_](./TPJEnvironmentVars-EnumNames.md) static method instead.*
 
-_EnumNames_ enumerates all environment variables in the current environment block. The _Callback_ method is called once for each environment variable and is passed the name of the environment variable and a data value supplied as a parameter to _EnumNames_. _Data_ is a user defined value and is not processed by _EnumNames_.
+## Description
 
-The user must implement _Callback_ as a method.
+Enumerates the names of all the environment variables in the current process.
 
-The values associated with the environment variables can be accessed using the _[Values](TPJEnvVarsValues.md)_ property.
+***Parameters:***
+
+* _Callback_ -- Method or (for Delphi 2009 or later) anonymous procedure of type [_TPJEnvVarsEnum_](./TPJEnvVarsEnum.md) that is called once for each environment variable and is passed the the environment variable's name and the value of the _Data_ parameter.
+* _Data_ -- Pointer passed to _Callback_ each time it is called. The purpose of this value is user-defined and has no meaning to _EnumNames_.
+
+The _Callback_ method or (anonymous procedure) must be implemented by the caller.
+
+> **Important:** Environment variables should not be modified while _EnumNames_ is executing. This is because the method takes a snap-shot of the environment variable names before it starts calling _Callback_. Any environment variables added or deleted while _EnumNames_ is running will not be reflected in the enumeration and could cause obscure bugs.

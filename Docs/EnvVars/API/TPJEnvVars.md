@@ -1,37 +1,33 @@
-# TPJEnvVars #
+# TPJEnvVars component
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVars).
+***Project:*** [Environment Variables Unit](../API.md)
 
-**Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
+***Unit:*** _PJEnvVars_
 
-**Unit:** _PJEnvVars_.
+> ***Warning:*** *This component is **deprecated*** and is retained for backward compatibility only. New code should use the [_TPJEnvironmentVars_](./TPJEnvironmentVars.md) static class instead.
 
-This component provides access to the environment variables in the current process' environment block. Environment variables can be read, created, updated or deleted. The names of all available environment variables can also be enumerated.
+## Description
 
-Only one instance of a _TPJEnvVars_ component can be placed on any form. An attempt to place further instances on a form causes an exception to be raised.
+_TPJEnvVars_ provides access to the environment variables in the current process' environment block. Environment variables can be read, created, updated or deleted. The names of all available environment variables can also be enumerated.
 
-## Methods ##
+Only one instance of a _TPJEnvVars_ component can be placed on any form or frame. An attempt to create duplicate instances on a form causes an exception to be raised.
 
-_TPJEnvVars_ defines the following methods in addition to those inherited from
-_TComponent_.
+### Methods
 
-| **Method** | **Description** |
-|:-----------|:----------------|
-| _[Create](TPJEnvVarsCreate.md)_ | Object constructor. Permits only one instance to be placed on any form. |
-| _[DeleteVar](TPJEnvVarsDeleteVar.md)_ | Deletes an environment variable. |
-| _[EnumNames](TPJEnvVarsEnumNames.md)_ | _This is a redundant method provided for backward compatibility reasons only._ It enumerates all environment variable names, passing each name to a callback method. _[GetEnumerator](TPJEnvVarsGetEnumerator.md)_ or <strong>for..in</strong> loops, where supported, should be used in preference. |
-| _[GetEnumerator](TPJEnvVarsGetEnumerator.md)_ | Creates an [enumerator](TPJEnvVarsEnumerator.md) that can be used to enumerate all environment variable names. On Delphi 2005 and later this enumerator enables the <strong>for..in</strong> construct to be used with the component. |
+| Method | Description |
+|--------|-------------|
+| [_Create_](./TPJEnvVars-Create.md) | Constructs an instance of the component. |
+| [_DeleteVar_](./TPJEnvVars-DeleteVar.md) | Deletes an environment variable. |
+| [_EnumNames_](./TPJEnvVars-EnumNames.md) | Enumerates all environment variable names, passing each name to a callback method. |
+| [_GetEnumerator_](./TPJEnvVars-GetEnumerator.md) | Creates an enumerator that can be used to enumerate all environment variable names. On Delphi 2005 and later this enumerator enables the component to be used `for..in` loops. |
 
+### Properties
 
-## Properties ##
+| Property | Description |
+|----------|-------------|
+| [_Count_](./TPJEnvVars-Count.md) | Returns the number of available environment variables. |
+| [_Values_](./TPJEnvVars-Values.md) | Provides read / write access to environment variables. |
 
-_TPJEnvVars_ defines the following properties in addition to those inherited from _TComponent_.
+### Events
 
-| **Property** | **Description** |
-|:-------------|:----------------|
-| _[Count](TPJEnvVarsCount.md)_ | Returns the number of environment variables. |
-| _[Values](TPJEnvVarsValues.md)_ | Provides read / write access to environment variables. |
-
-## Events ##
-
-_TPJEnvVars_ defines no events.
+_TPJEnvVars_ exposes no events.

@@ -1,21 +1,25 @@
-# DeleteVar method #
+# DeleteVar method
 
-> This is the documentation for the **v2.0** release of the unit. If you are using a **version 3** release please [see here](http://wiki.delphidabbler.com/index.php/Docs/TPJEnvVarsDeleteVar).
+***Project:*** [Environment Variables Unit](../API.md)
 
-**Project:** [Environment Variables Unit](EnvironmentVariablesUnit.md).
+***Unit:*** _PJEnvVars_
 
-**Unit:** _PJEnvVars_.
-
-**Class:** _[TPJEnvVars](TPJEnvVars.md)_
+***Class:*** [_TPJEnvVars_](./TPJEnvVars.md)
 
 ```pascal
 procedure DeleteVar(const Name: string);
 ```
 
-## Description ##
+> ***Warning:*** *[_TPJEnvVars_](./TPJEnvVars.md) has been **deprecated**. Use the [_TPJEnvironmentVars.Delete_](./TPJEnvironmentVars-Delete.md) static method in preference.*
 
-Deletes the named environment variable. Does nothing if the environment variable does not exist. This is functionally the same as setting `Values[Name] := '';`
+## Description
 
-A _[EPJEnvVars](EPJEnvVars.md)_ exception is raised if it is not possible to delete the variable.
+Deletes the environment variable with the given name.
 
-**NOTE:** This method has no effect on the system environment variables, only on the copy of the environment maintained by this program.
+***Parameters:***
+
+* _Name_ -- The name of the environment variable to be deleted.
+
+A [_EPJEnvVars_](./EPJEnvVars.md) exception is raised if it is not possible to delete the variable.
+
+> **Note:** This method **does not** update the system's environment variables, only the copy of the environment maintained by this program. Changes are lost when the program terminates.
