@@ -10,7 +10,7 @@ The Library currently contains the following projects.
 | [Clipboard Viewer Component](ClipboardViewerComponent.md) | Component that triggers an event whenever the contents of the clipboard change. |
 | [Console Application Runner Classes](ConsoleApp.md) | Classes to control the execution of child console application processes and to redirect input and output where required. |
 | [Drop Files Components](DropFilesComponents.md) | Components that enable applications, windows and other components to support drag and drop from Windows Explorer. |
-| [Environment Variables Unit](EnvironmentVariablesUnit.md) | Contains a static class and supporting types for interrogating, modifying and enumerating the environment variables belonging to the current process. |
+| [Environment Variables Unit](EnvVars.md) | Contains a static class and supporting types for interrogating, modifying and enumerating the environment variables belonging to the current process. |
 | [Extended String Property Editor](StringPE.md) | Property editor that allows multi-line and long _string_ and _TCaption_ properties to be edited at design time. |
 | [Fractions Unit](Fractions.md) | Defines an advanced "record with methods" type that encapsulates fraction and related operations. |
 | [Hot Label Component](HotLabelComponent.md) | Label component that accesses a URL when clicked. The URL is displayed in the default web browser or email client. |
