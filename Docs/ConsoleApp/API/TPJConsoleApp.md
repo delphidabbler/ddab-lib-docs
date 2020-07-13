@@ -28,7 +28,7 @@ _TPJConsoleApp_ descends from [_TPJCustomConsoleApp_](./TPJCustomConsoleApp.md).
 | [_ElapsedTime_](./TPJCustomConsoleApp-ElapsedTime.md) | Approximate time in milliseconds since the console application began executing. |
 | [_Environment_](./TPJCustomConsoleApp-Environment.md) | Pointer to the environment block used by the console application. |
 | [_ErrorCode_](./TPJCustomConsoleApp-ErrorCode.md) | Provides information about any error that occurred while attempting to run a console application. |
-| [_ErrorMessage_](./TPJCustomConsoleApp-ErrorMessage.md) | Error message corresponding to any non-zero value of [xxx](./TPJCustomConsoleApp-ErrorCode.md). |
+| [_ErrorMessage_](./TPJCustomConsoleApp-ErrorMessage.md) | Error message corresponding to any non-zero value of [_ErrorCode_](./TPJCustomConsoleApp-ErrorCode.md). |
 | [_ExitCode_](./TPJCustomConsoleApp-ExitCode.md) | Exit code returned by the console application on completion. |
 | [_KillTimedOutProcess_](./TPJCustomConsoleApp-KillTimedOutProcess.md) | Indicates whether timed-out processes should be terminated or left running. |
 | [_MaxExecTime_](./TPJCustomConsoleApp-MaxExecTime.md) | Maximum permitted execution time of the console application. |
@@ -58,5 +58,5 @@ _TPJConsoleApp_ descends from [_TPJCustomConsoleApp_](./TPJCustomConsoleApp.md).
 
 ## See Also
 
-* [Classes List](../Classes.md)
+* [Classes List](./Classes.md)
 * [Programmers' Guide](../API.md)

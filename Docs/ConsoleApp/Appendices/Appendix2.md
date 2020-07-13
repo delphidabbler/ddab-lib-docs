@@ -1,4 +1,4 @@
-# [Console Application Runner Classes](../ConsoleApp.md)  Appendix 2: Console application source code
+# [Console Application Runner Classes](../../ConsoleApp.md)  Appendix 2: Console application source code
 
 This appendix provides Delphi Pascal source code for two console applications that can be used with the various Console Application Runner Classes examples.
 

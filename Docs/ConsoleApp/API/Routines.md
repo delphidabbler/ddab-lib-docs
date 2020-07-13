@@ -16,11 +16,11 @@ The following routines are declared in the library:
 function IsApplicationError(const ErrCode: LongWord): Boolean;
 ```
 
-### Description
+### IsApplicationError description
 
 Checks if error code _ErrCode_ is an application defined error. Returns `True` if the error is application defined, `False` if not.
 
-### Remarks
+### IsApplicationError remarks
 
 Application defined error codes have bit 29 set per Windows recommendations.
 
@@ -39,7 +39,7 @@ function MakeConsoleColors(const AForeground, ABackground: TAlphaColor):
   TPJConsoleColors; overload;
 ```
 
-### Description
+### MakeConsoleColors description
 
 Three overloaded "constructor" functions, each of which creates an initialised [_TPJConsoleColors_](./TPJConsoleColors.md) record from the foreground and background colours specified by the _AForeground_ and _ABackground_ parameters.
 
@@ -53,7 +53,7 @@ The third, _TAlphaColor_, overload. This function is similar to the _TColor_ ove
 
 These functions are provided because it is not possible to assign the fields of the [_TPJConsoleApp.ConsoleColors_](TPJCustomConsoleApp-ConsoleColors.md) property individually. Instead assign the return value of one of these functions to the property.
 
-An exception is raised if either the _TColor_ or _TAlphaColor_ versions of the routine is passed any colour value that is not one of the 16 standard colours that correspond to the colours in the [_TPJConsoleColor_](TPJConsoleColor(Type).md) enumeration.
+An exception is raised if either the _TColor_ or _TAlphaColor_ versions of the routine is passed any colour value that is not one of the 16 standard colours that correspond to the colours in the [_TPJConsoleColor_](./TPJConsoleColor.md) enumeration.
 
 ## MakeSize
 
@@ -61,7 +61,7 @@ An exception is raised if either the _TColor_ or _TAlphaColor_ versions of the r
 function MakeSize(const ACX, ACY: LongInt): TSize;
 ```
 
-### Description
+### MakeSize description
 
 This is a "constructor" function that creates initialised _TSize_ records.
 

@@ -24,6 +24,6 @@ The default property value is `0`.
 
 When redirecting, the output handle can be attached to any object that is open for writing. Normally this will be a file or a pipe.
 
-> The [I/O Utility Classes](http://delphidabbler.com/software/ioutils) library project has classes that are designed to help with opening pipes and files with [inheritable handles](../InheritableHandles.md).
+> The [I/O Utility Classes](../../IOUtils/API.md) library project has classes that are designed to help with opening pipes and files with [inheritable handles](../InheritableHandles.md).
 >
 The property is public in [_TPJConsoleApp_](./TPJConsoleApp.md) and protected in [_TPJCustomConsoleApp_](./TPJCustomConsoleApp.md).

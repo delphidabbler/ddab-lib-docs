@@ -1,4 +1,4 @@
-# [Console Application Runner Classes](../ConsoleApp.md) Example 1: ExecAndWait
+# [Console Application Runner Classes](../../ConsoleApp.md) Example 1: ExecAndWait
 
 ***Project:*** [Console Application Runner Classes](../API.md)
 

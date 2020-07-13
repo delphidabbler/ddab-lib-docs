@@ -22,6 +22,6 @@ It is only meaningful to examine the value of _TimeToLive_ in the [_OnStart_](./
 
 If [_MaxExecTime_](./TPJCustomConsoleApp-MaxExecTime.md) is _INFINITE_ then _TimeToLive_ will always be _INFINITE_ while the application is executing.
 
-If [_TimeSlice_](./TPJCustomConsoleApp-TimeSlice.md) is _INFINITE_ then _TimeToLive_ will always have the same value as [xxx](TPJCustomConsoleApp-MaxExecTime.md) until the application completes.
+If [_TimeSlice_](./TPJCustomConsoleApp-TimeSlice.md) is _INFINITE_ then _TimeToLive_ will always have the same value as [_MaxExecTime_](TPJCustomConsoleApp-MaxExecTime.md) until the application completes.
 
 The property is public in [_TPJConsoleApp_](./TPJConsoleApp.md) and protected in [_TPJCustomConsoleApp_](./TPJCustomConsoleApp.md).

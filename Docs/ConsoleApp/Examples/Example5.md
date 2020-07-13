@@ -61,7 +61,7 @@ Compile and run the application. Leave the check box clear and click the first b
 
 Now check the check box and run the console application again, pressing the terminate button. This time the same message should be displayed and the console application should be terminated.
 
-> ***Warning:*** Windows may not clean up normally after forcible termination of an application. This is what happens when an application times out when [_KillTimedOutProcess_](../API/TPJCustomConsoleApp-KillTimedOutProcess.md) is _True_. Look up [__TerminateProcess__](http://msdn.microsoft.com/en-us/library/ms686714.aspx) in the Windows API documentation for further information.
+> ***Warning:*** Windows may not clean up normally after forcible termination of an application. This is what happens when an application times out when [_KillTimedOutProcess_](../API/TPJCustomConsoleApp-KillTimedOutProcess.md) is _True_. Look up [_TerminateProcess_](http://msdn.microsoft.com/en-us/library/ms686714.aspx) in the Windows API documentation for further information.
 
 ## Links
 

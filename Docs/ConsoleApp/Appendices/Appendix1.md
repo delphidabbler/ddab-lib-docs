@@ -1,4 +1,4 @@
-# [Console Application Runner Classes](../ConsoleApp.md)  Appendix 1: Creating inheritable handles
+# [Console Application Runner Classes](../../ConsoleApp.md)  Appendix 1: Creating inheritable handles
 
 This appendix contains some example code that can be used to create [inheritable handles] to files and pipes.
 

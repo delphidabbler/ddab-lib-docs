@@ -1,6 +1,6 @@
 # [Console Application Runner Classes](../../ConsoleApp.md) Example 10: Using TPJConsoleApp from console applications
 
-All our example applications so far have been Windows GUI applications. You shouldn't get the impression that you can only use [TPJConsoleApp](../API/TPJConsoleApp.md) with GUI applications - it works perfectly well with console applications and this example will show.
+All our example applications so far have been Windows GUI applications. You shouldn't get the impression that you can only use [_TPJConsoleApp_](../API/TPJConsoleApp.md) with GUI applications - it works perfectly well with console applications and this example will show.
 
 Start a new Delphi console application. Now create a new unit in the project and save it as `UMain.pas`. Add the following class declaration to the new unit's interface:
 
@@ -18,7 +18,7 @@ type
   end;
 ```
 
-This class parses the program's command line then uses [TPJConsoleApp](../API/TPJConsoleApp.md) to run the `Timed.exe` program from [Appendix 2](../Appendices/Appendix2.md).
+This class parses the program's command line then uses [_TPJConsoleApp_](../API/TPJConsoleApp.md) to run the `Timed.exe` program from [Appendix 2](../Appendices/Appendix2.md).
 
 > You don't have to use `Timed`. However note we need a program that runs for at least 2 or 3 seconds.
 
@@ -82,9 +82,9 @@ begin
 end;
 ```
 
-The _Execute_ method creates a [TPJConsoleApp](../API/TPJConsoleApp.md) instance then sets properties based on the parameters passed on the command line. An [OnWork](../API/TPJCustomConsoleApp-OnWork.md) event handler is set before executing the application.
+The _Execute_ method creates a [_TPJConsoleApp_](../API/TPJConsoleApp.md) instance then sets properties based on the parameters passed on the command line. An [_OnWork_](../API/TPJCustomConsoleApp-OnWork.md) event handler is set before executing the application.
 
-_WorkHandler_ checks to see if the console application is sharing the main program's console. If so the handler does not write any output - this would interfere with text written by the child process. If the child process is displaying in its own console (which could be hidden if the [Visible](../API/TPJCustomConsoleApp-Visible.md) property is `False`), then the event handler writes out the elapsed time to the main console.
+_WorkHandler_ checks to see if the console application is sharing the main program's console. If so the handler does not write any output - this would interfere with text written by the child process. If the child process is displaying in its own console (which could be hidden if the [_Visible_](../API/TPJCustomConsoleApp-Visible.md) property is `False`), then the event handler writes out the elapsed time to the main console.
 
 The _ParseCommandLine_ method checks the command line for valid commands and sets the appropriate field values. Valid parameters are:
 

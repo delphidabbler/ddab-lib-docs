@@ -20,7 +20,7 @@ This is an enumeration of all possible colours that can be used for a console's 
 
 ## Remarks
 
-It is important that the assigned ordinal values are retained. They relate to various combinations of the _FOREGROUND_xxx_ constants declared in the _Windows_ unit. Foreground colours are obtained directly from these ordinal values while background colours are obtained by left shifting the values by 4.
+It is important that the assigned ordinal values are retained. They relate to various combinations of the *FOREGROUND_xxx* constants declared in the _Windows_ unit. Foreground colours are obtained directly from these ordinal values while background colours are obtained by left shifting the values by 4.
 
 The value names are similar to the equivalent _TColor_ constants, but have different numeric values. Colours with similar value names display the same colours. For example `ccBlue` displays the same colour in a console as `clBlue` does in a GUI application's forms.
 
