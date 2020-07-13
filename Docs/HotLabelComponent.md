@@ -26,4 +26,4 @@ A further example is provided by the demo program that is included in the downlo
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Hot Label Component Web Page](http://www.delphidabbler.com/software/hotlabel).
+  * [Hot Label Component Web Page](https://delphidabbler.com/software/hotlabel).

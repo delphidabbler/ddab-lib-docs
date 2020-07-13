@@ -20,4 +20,4 @@ This unit provides design time support. In particular it provides a property edi
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Shell Folders Unit Web Page](http://www.delphidabbler.com/software/shellfolders).
+  * [Shell Folders Unit Web Page](https://delphidabbler.com/software/shellfolders).

@@ -11,7 +11,7 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   // You *could* set these properties at design time in the object inspector
   // instead of setting them here
-  PJHotLabel1.URL := 'http://www.delphidabbler.com/';
+  PJHotLabel1.URL := 'https://delphidabbler.com/';
   PJHotLabel1.HintStyle := hsCustom;
   PJHotLabel1.ShowHint := True;
 end;
@@ -32,7 +32,7 @@ begin
   // You *could* set these properties at design time in the object inspector
   // instead of setting them here
   PJHotLabel1.Hint := 'View the site''s index page (%s)';
-  PJHotLabel1.URL := 'http://www.delphidabbler.com/';
+  PJHotLabel1.URL := 'https://delphidabbler.com/';
   PJHotLabel1.HintStyle := hsCustom;
   PJHotLabel1.ShowHint := True;
 end;

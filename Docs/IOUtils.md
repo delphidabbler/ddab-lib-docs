@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the home page for the on-line documentation of the [DelphiDabbler I/O Utility Classes](http://www.delphidabbler.com/software/ioutils) project.
+This is the home page for the on-line documentation of the [DelphiDabbler I/O Utility Classes](https://delphidabbler.com/software/ioutils) project.
 
 These classes are designed to assist in various I/O related tasks.
 
@@ -13,6 +13,6 @@ These classes are designed to assist in various I/O related tasks.
 
 ## External Links
 
-* [I/O Utility Classes Web Page](http://www.delphidabbler.com/software/ioutils) -- Install notes, change log, license etc.
+* [I/O Utility Classes Web Page](https://delphidabbler.com/software/ioutils) -- Install notes, change log, license etc.
 * [Downloads](https://sourceforge.net/projects/ddablib/files/ioutils/) -- Download current version here.
 * [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/ioutils/) -- Current development tree.

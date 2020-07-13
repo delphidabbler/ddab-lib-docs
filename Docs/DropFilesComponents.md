@@ -39,4 +39,4 @@ The editors are:
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Drop Files Components Web Page](http://www.delphidabbler.com/software/dropfiles).
+  * [Drop Files Components Web Page](https://delphidabbler.com/software/dropfiles).

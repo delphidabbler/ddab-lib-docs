@@ -16,4 +16,4 @@ Various event handler procedural types, oridinal types and set types are also de
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Window State Components Web Page](http://www.delphidabbler.com/software/wdwstate).
+  * [Window State Components Web Page](https://delphidabbler.com/software/wdwstate).

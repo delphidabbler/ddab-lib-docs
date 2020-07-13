@@ -9,4 +9,4 @@ For information on how to use the component see either the [worked example](Clip
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Clipboard Viewer Component Web Page](http://www.delphidabbler.com/software/cbview).
+  * [Clipboard Viewer Component Web Page](https://delphidabbler.com/software/cbview).
