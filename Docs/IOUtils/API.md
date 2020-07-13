@@ -8,9 +8,9 @@ This section of the I/O Utility classes project documentation focusses on descri
 
 The guide has the following main sections. Each section provides links to more detailed information.
 
-* [Units](Units.md)
-* [Classes](Classes.md)
-* [Type definitions](Types.md)
+* [Units](./API/Units.md)
+* [Classes](./API/Classes.md)
+* [Type definitions](./API/Types.md)
 
 ## Conventions
 
