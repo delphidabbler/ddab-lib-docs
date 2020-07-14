@@ -38,4 +38,6 @@ begin
 end;
 ```
 
+## See Also
+
 * [_Max_](./TFraction-Max.md) class method
