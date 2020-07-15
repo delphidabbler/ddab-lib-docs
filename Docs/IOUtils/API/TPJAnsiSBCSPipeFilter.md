@@ -16,11 +16,11 @@ _TPJAnsiSBCSPipeFilter_ descends from [_TPJPipeFilter_](./TPJPipeFilter.md)
 
 ### Methods
 
-#### Introduced in this class
+#### Methods introduced in this class
 
 The only method introduced in this class is an override of _TObject.AfterConstruction_ to set default property values. There is no need to call this method directly.
 
-#### Inherited from TPJPipeFilter
+#### Methods inherited from TPJPipeFilter
 
 | Method | Description |
 |--------|-------------|
@@ -31,14 +31,13 @@ The only method introduced in this class is an override of _TObject.AfterConstru
 
 ### Properties
 
-#### Introduced in this class
-
+#### Properties introduced in this class
 
 | Property | Description |
 |----------|-------------|
 | [_EOLMarker_](./TPJAnsiSBCSPipeFilter-EOLMarker.md) | End of line marker used when parsing text into lines. |
 
-#### Inherited from TPJPipeFilter
+#### Properties inherited from TPJPipeFilter
 
 | Property | Description |
 |----------|-------------|

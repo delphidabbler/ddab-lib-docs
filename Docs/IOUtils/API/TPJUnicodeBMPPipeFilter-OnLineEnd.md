@@ -36,7 +36,7 @@ Suppose we have a [_TPJUnicodeBMPPipeFilter_](./TPJUnicodeBMPPipeFilter.md) obje
 
 The [_EOLMarker_](./TPJUnicodeBMPPipeFilter-EOLMarker.md) property is set to `<EOL>`. We perform three pipe reads and a flush operation before destroying the object. Here's what happens:
 
-* The _ReadPipe_ method is called and reads text^1^ `Lorem ip` from the pipe.
+* The _ReadPipe_ method is called and reads text [[1]](#footnote-1) `Lorem ip` from the pipe.
   * _OnLineEnd_ is not triggered because the text contains no end of line marker (`<EOL>`).
   * The text is recorded for later use in a "carry forward" buffer.
 
@@ -58,7 +58,11 @@ The [_EOLMarker_](./TPJUnicodeBMPPipeFilter-EOLMarker.md) property is set to `<E
 * The object is destroyed, which automatically calls _Flush_ once more.
   * Nothing happens because the carry forward buffer is empty.
 
-^1^ Of course _ReadPipe_ actually reads binary data from the pipe and converts that data into a Unicode text string.
+## Footnotes
+
+### Footnote 1
+
+Of course _ReadPipe_ actually reads binary data from the pipe and converts that data into a Unicode text string.
 
 ## Links
 
