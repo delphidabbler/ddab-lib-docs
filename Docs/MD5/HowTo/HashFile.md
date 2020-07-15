@@ -27,7 +27,7 @@ Run the program and click the button to display the file open dialog box. Select
 
 You may occasionally need to get a single MD5 hash of a group of files. An example might be all the files in a directory.
 
-> The [_TPJMD5.CalculateFile_](../API/TPJMD5-CalculateFile.md) class method can't be used because it takes only a single file as a parameter and provides no means to add more files to the resulting hash.
+The [_TPJMD5.CalculateFile_](../API/TPJMD5-CalculateFile.md) class method can't be used because it takes only a single file as a parameter and provides no means to add more files to the resulting hash.
 
 This is a little more complex than getting the MD5 of a single file because we need to add the contents of each file to the same hash. Whenever we need to add more than once data item to a MD5 hash we must create a [_TPJMD5_](../API/TPJMD5.md) instance, repeatedly add data to the hash and then read the resulting hash from the [_TPJMD5.Digest_](../API/TPJMD5-Digest.md) property.
 
