@@ -2,9 +2,9 @@
 
 In most cases you get the MD5 hash of a record by creating a new empty hash and adding the value of each field of the record to the hash. How you handle each field depends on its type. If one or more of the fields are also records then the technique is applied recursively.
 
-> For an explanation of the difference between [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md) and [_TPJMD5.Process_](../API/TPJMD5-Process.md) see [here](./UseCalculateAndProcess.md).
-
 Because we must add each field in turn to the hash we have to create a [_TPJMD5_](../API/TPJMD5.md) instance and use the [_TPJMD5.Process_](../API/TPJMD5-Process.md) method. We can't use [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md).
+
+> For an explanation of the difference between [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md) and [_TPJMD5.Process_](../API/TPJMD5-Process.md) see [here](./UseCalculateAndProcess.md).
 
 For example, if you have a record of type _TFoo_ defined as:
 
