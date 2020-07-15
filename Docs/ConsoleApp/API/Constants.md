@@ -60,7 +60,7 @@ const cAppErrorMask = 1 shl 29;
 
 Mask that is ORd with application error codes. This sets bit 29 in accordance with Windows requirements. Application error codes are tested for by ANDing them with this constant.
 
-The [_IsApplicationError_](./Routines.md##isapplicationerror) routine is provided to perform this test so there should be no need to use _cAppErrorMask_ directly.
+The [_IsApplicationError_](./Routines.md#isapplicationerror) routine is provided to perform this test so there should be no need to use _cAppErrorMask_ directly.
 
 ## cAppErrorTimeOut
 
