@@ -42,7 +42,7 @@ You can get this unit's source code in two ways:
 
 ### Required component ###
 
-_TPJAboutBoxDlg_ requires that a DelphiDabbler [Version Information Component](VersionInformationComponent.md) is installed in order to compile.
+_TPJAboutBoxDlg_ requires that a DelphiDabbler [Version Information Component](./VerInfo.md) is installed in order to compile.
 
 ## Issues ##
 
