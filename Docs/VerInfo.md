@@ -1,4 +1,4 @@
-# Version Information Component #
+# Version Information Component
 
 ## Introduction
 

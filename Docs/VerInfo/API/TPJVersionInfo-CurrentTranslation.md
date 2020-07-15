@@ -1,4 +1,4 @@
-# CurrentTranslation property #
+# CurrentTranslation property
 
 ***Project:*** [Version Information Component](../API.md)
 

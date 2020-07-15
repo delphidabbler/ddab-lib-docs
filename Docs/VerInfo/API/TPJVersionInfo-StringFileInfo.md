@@ -1,4 +1,4 @@
-# StringFileInfo property #
+# StringFileInfo property
 
 ***Project:*** [Version Information Component](../API.md)
 
@@ -41,4 +41,5 @@ begin
   // Do something with X
 end;
 ```
+
 Where _PJVersionInfo1_ is an instance of a [_TPJVersionInfo_](./TPJVersionInfo.md) component.

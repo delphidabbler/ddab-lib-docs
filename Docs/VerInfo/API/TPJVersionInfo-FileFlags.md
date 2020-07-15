@@ -1,4 +1,4 @@
-# FileFlags property #
+# FileFlags property
 
 ***Project:*** [Version Information Component](../API.md)
 

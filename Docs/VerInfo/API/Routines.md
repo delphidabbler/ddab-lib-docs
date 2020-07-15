@@ -4,7 +4,7 @@
 
 ***Unit:*** _PJVersionInfo_
 
-These functions are provided mainly for users of Delphi 2005 and earlier who don't have the extended functionality of [_TPJVersionNumber_](./TPJVersionNumer.md). The functions seek to replicate that functionality.
+These functions are provided mainly for users of Delphi 2005 and earlier who don't have the extended functionality of [_TPJVersionNumber_](./TPJVersionNumber.md). The functions seek to replicate that functionality.
 
 ## VerNumToStr
 
@@ -14,15 +14,13 @@ These functions are provided mainly for users of Delphi 2005 and earlier who don
 function VerNumToStr(const Ver: TPJVersionNumber): string;
 ```
 
-
-### Description
+### VerNumToStr description
 
 Converts the given [_TPJVersionNumber_](TPJVersionNumber.md) record into a dotted quad string and returns it.
 
-### Example
+### VerNumToStr example
 
 If the following code is executed the string variable S will have the value `'2.5.8.3'`.
-
 
 ```pascal
 var
@@ -38,10 +36,9 @@ begin
 end;
 ```
 
-### Remarks
+### VerNumToStr remarks
 
 Users of Delphi 2006 and later can simply assign a [_TPJVersionNumber_](TPJVersionNumber.md) record to a string to get exactly the same effect. There is never any need to call _VerNumToStr_.
-
 
 ## CompareVerNums
 
@@ -51,7 +48,7 @@ Users of Delphi 2006 and later can simply assign a [_TPJVersionNumber_](TPJVersi
 function CompareVerNums(const Ver1, Ver2: TPJVersionNumber): Integer;
 ```
 
-### Description
+### CompareVerNums description
 
 Compares two TPJVersionNumber records. Return values are:
 
@@ -59,6 +56,6 @@ Compares two TPJVersionNumber records. Return values are:
 * `<0` if `Ver1` is less than `Ver2`
 * `>0` if `Ver1` is greater than `Ver2`
 
-### Remarks
+### CompareVerNums remarks
 
 Users of Delphi 2006 should rarely, if ever, need to use this function. Two version number records can be directly compared using the normal `=`, `<>`, `<`, `<=`, `>` and `>=` operators.

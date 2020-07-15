@@ -1,4 +1,4 @@
-# Example 3: Using translation, character set and language properties #
+# Example 3: Using translation, character set and language properties
 
 This example shows how to use the translation, character set and language properties of _[TPJVersionInfo](../API/TPJVersionInfo.md)_ to display details of the language and character set for all translations in a file's version info. The example assumes the application contains version information. If this is not the case then a message to that effect is displayed in the list box.
 
@@ -35,5 +35,5 @@ When the form is displayed details of languages and character sets for each tran
 
 **Links:**
 
-  * Back to the [Examples List](../Examples.md)
-  * Back to the [Main Component Page](../../VerInfo.md)
+* Back to the [Examples List](../Examples.md)
+* Back to the [Main Component Page](../../VerInfo.md)
