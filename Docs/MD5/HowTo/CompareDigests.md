@@ -73,7 +73,7 @@ end;
 
 > To learn more about casting [_TPJMD5Digest_](../API/TPJMD5Digest.md) to _TBytes_ see [How To Get Raw Digest Data](./GetDigestData.md).
 
-This function gets the MD5 hash of the whole stream, using one of _TStream_ overloads of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate#tstream-versions) method. Note that the stream is positioned at the start to ensure the whole stream is read.
+This function gets the MD5 hash of the whole stream, using one of _TStream_ overloads of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#tstream-versions) method. Note that the stream is positioned at the start to ensure the whole stream is read.
 
 ## See Also
 
