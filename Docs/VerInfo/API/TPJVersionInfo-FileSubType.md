@@ -1,4 +1,4 @@
-# FileSubType property #
+# FileSubType property
 
 ***Project:*** [Version Information Component](../API.md)
 
@@ -17,7 +17,6 @@ For some file types this run time property provides additional information about
 The value of this property is also provided by the the _dwFileSubType_ member of the _VS_FIXEDFILEINFO_ structure that is accessed using the [_FixedFileInfo_](./TPJVersionInfo-FixedFileInfo.md) property.
 
 The value of _FileSubType_ depends on the file type identified by the [_FileType_](./TPJVersionInfo-FileType.md) property, as follows:
-
 
 ### Font files
 
@@ -51,7 +50,6 @@ Flag                   | Description
 ### Virtual Device Drivers
 
 When [_FileType_](./TPJVersionInfo-FileType.md) has value `VFT_VXD` (a virtual device driver) then _FileSubType_ contains the virtual device identifier included in the virtual device control block.
-
 
 ### Other Cases
 

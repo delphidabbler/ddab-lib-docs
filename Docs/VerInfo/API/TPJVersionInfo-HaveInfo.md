@@ -1,4 +1,4 @@
-# HaveInfo property #
+# HaveInfo property
 
 ***Project:*** [Version Information Component](../API.md)
 

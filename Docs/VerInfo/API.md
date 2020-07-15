@@ -4,7 +4,7 @@
 
 This section of the _Version Information Component_ documentation focuses on describing the component class and its associated record and public routines.
 
-There is just one unit in this project, named `PJVersionInfo`, that contains all the code.
+There is just one unit in this project, named _PJVersionInfo_, that contains all the code.
 
 Unless otherwise specified the documentation refers to v3.0 of the unit.
 

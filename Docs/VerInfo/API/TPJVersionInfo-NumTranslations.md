@@ -1,4 +1,4 @@
-# NumTranslations property #
+# NumTranslations property
 
 ***Project:*** [Version Information Component](../API.md)
 

@@ -4,7 +4,7 @@ All the previous examples in this documentation are rather contrived examples th
 
 We will create a routine that takes a list of HTML and related files and creates a resource file which has a unique `RT_HTML` resource for each file. The resource contains the contents of the related file.
 
-Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article ["How to create and use HTML resource files"](http://www.delphidabbler.com/articles?article=10) for more information on this subject.
+Such resources can be used for display in Internet Explorer, using the `res://` protocol. See the article ["How to create and use HTML resource files"](https://delphidabbler.com/articles/article-10) for more information on this subject.
 
 Here is the code of the routine:
 

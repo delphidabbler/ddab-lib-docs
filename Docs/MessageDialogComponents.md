@@ -13,4 +13,4 @@ The Message Dialogue Components are supplied in a single unit named _PJMessageDi
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [Message Dialogue Components Web Page](http://www.delphidabbler.com/software/msgdlg).
+  * [Message Dialogue Components Web Page](https://delphidabbler.com/software/msgdlg).

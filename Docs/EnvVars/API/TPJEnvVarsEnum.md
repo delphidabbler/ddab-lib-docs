@@ -26,6 +26,6 @@ Regardless of how _TPJEnvVarsEnum_ is defined the parameters are the same.
 
 * _VarName_ -- The name of the current environment variable in the enumeration.
 
-* _Data_ -- User-specified value that was passed to [TPJEnvironmentVars.EnumNames](./TPJEnvironmentVars-EnumNames.md) or [_TPJEnvVars.EnumNames_](./TPJEnvVars-EnumNames.md). If or how this value is interpreted is left to the caller.
+* _Data_ -- User-specified value that was passed to [_TPJEnvironmentVars.EnumNames_](./TPJEnvironmentVars-EnumNames.md) or [_TPJEnvVars.EnumNames_](./TPJEnvVars-EnumNames.md). If or how this value is interpreted is left to the caller.
 
 > **Important:** Callback methods should not add, modify or delete environment variables since this can lead to obscure bugs in the enumeration.

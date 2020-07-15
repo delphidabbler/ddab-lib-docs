@@ -2,7 +2,7 @@
 
 > This how-to assumes you know how and when to use [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md) and [_TPJMD5.Process_](../API/TPJMD5-Process.md). For details see [here](./UseCalculateAndProcess.md).
 
-Several different techniques are needed to get an MD5 hash of an array. Which technique to use depends on both the kind of array (static or dynamic) and on the type of the array's elements. 
+Several different techniques are needed to get an MD5 hash of an array. Which technique to use depends on both the kind of array (static or dynamic) and on the type of the array's elements.
 
 This how-to gives several solutions:
 
@@ -11,12 +11,11 @@ This how-to gives several solutions:
 * [Arrays of reference types](#arrays-of-reference-types)
 * [Arrays of other types](#arrays-of-other-types)
 
-
 ## TBytes arrays
 
 The simplest case is that of _TBytes_ arrays because [_TPJMD5_](../API/TPJMD5.md) can natively handle getting the hash of a _TBytes_ array.
 
-Here's an example that uses [_TPJMD5.Calculate_](../API/TPJMD5Calculate.md#byte-array-version), because it leads to more concise code than using  [_TPJMD5.Process_](../API/TPJMD5Process.md#byte-array-version) would.
+Here's an example that uses [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#byte-array-versions), because it leads to more concise code than using  [_TPJMD5.Process_](../API/TPJMD5-Process.md#byte-array-versions) would.
 
 ```pascal
 var
@@ -37,7 +36,7 @@ _TBytes_ is the only array type for which [_TPJMD5_](../API/TPJMD5.md) provides 
 
 Arrays of simple types (i.e. ordinal and real types) are quite simple to handle.
 
-Each element contains an actual value (not a reference or pointer) and the elements are always contiguous in memory (regardless of use of the **packed** keyword and the [_$ALIGN_](http://docwiki.embarcadero.com/RADStudio/en/Align_fields_%28Delphi%29) compiler directive<sup> [ref](http://stackoverflow.com/questions/4583985/are-where-any-difference-between-array-and-packed-array-in-delphi)</sup>. Therefore we can just get the MD5 of the block of memory occupied by the array. We use the untyped overloads of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#untyped-buffer-version) and [_TPJMD5.Process_](../API/TPJMD5-Process.md#untyped-buffer-version) to do this.
+Each element contains an actual value (not a reference or pointer) and the elements are always contiguous in memory (regardless of use of the **packed** keyword and the [_$ALIGN_](http://docwiki.embarcadero.com/RADStudio/en/Align_fields_%28Delphi%29) compiler directive [[ref]](http://stackoverflow.com/questions/4583985/are-where-any-difference-between-array-and-packed-array-in-delphi). Therefore we can just get the MD5 of the block of memory occupied by the array. We use the untyped overloads of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#untyped-buffer-version) and [_TPJMD5.Process_](../API/TPJMD5-Process.md#untyped-buffer-version) to do this.
 
 Exactly how we proceed depends on if the array is static or dynamic.
 
@@ -79,7 +78,7 @@ end;
 
 Since dynamic array variables are essentially pointers we get the first parameter of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#untyped-buffer-version) by casting _A_ to a pointer and then dereferencing it. The size of the data required as the second parameter is found by multiplying the length of the array by the size of one element.
 
-This technique also works for the _TArray&lt;T&gt;_ generic array type. To check this delete the type definition in the above code then replace all occurrences of _TWordArray_ with _TArray<Word>_.
+This technique also works for the _TArray&lt;T&gt;_ generic array type. To check this delete the type definition in the above code then replace all occurrences of _TWordArray_ with _TArray&lt;Word&gt;_.
 
 ## Arrays of reference types
 
@@ -161,7 +160,7 @@ If you have any array of records use the same boilerplate code presented in [Arr
 
 ### Short strings
 
-For an array of Short strings we again iterate the array and use the _ShortString_ overload of [_TPJMD5.Process_](TPJMD5-Process.md#shortstring-version) to get the hash of each string:
+For an array of Short strings we again iterate the array and use the _ShortString_ overload of [_TPJMD5.Process_](../API/TPJMD5-Process.md#shortstring-version) to get the hash of each string:
 
 ```pascal
 const

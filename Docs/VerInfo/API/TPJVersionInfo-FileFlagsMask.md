@@ -1,4 +1,4 @@
-# FileFlagsMask property #
+# FileFlagsMask property
 
 ***Project:*** [Version Information Component](../API.md)
 

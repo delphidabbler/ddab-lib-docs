@@ -1,6 +1,5 @@
 # ProcessFile method
 
-
 ***Project:*** [MD5 Message Digest Unit](../API.md)
 
 ***Unit:*** _PJMD5_

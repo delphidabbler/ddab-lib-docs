@@ -74,5 +74,5 @@ All events are protected
 
 ## See Also
 
-* [Classes List](../Classes.md)
+* [Classes List](./Classes.md)
 * [Programmers' Guide](../API.md)

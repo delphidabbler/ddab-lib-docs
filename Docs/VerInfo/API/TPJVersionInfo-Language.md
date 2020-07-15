@@ -1,4 +1,4 @@
-# Language property #
+# Language property
 
 ***Project:*** [Version Information Component](../API.md)
 

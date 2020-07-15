@@ -1,4 +1,4 @@
-# FileOS property #
+# FileOS property
 
 ***Project:*** [Version Information Component](../API.md)
 
@@ -9,6 +9,7 @@
 ```pascal
 property FileOS: DWORD;
 ```
+
 ## Description
 
 _FileOS_ is a run time property that provides information about the operating system for which the application was designed.

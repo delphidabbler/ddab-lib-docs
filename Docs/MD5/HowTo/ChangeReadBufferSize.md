@@ -21,7 +21,7 @@ begin
 end;
 ```
 
-And here's a similar function that uses one of the _TStream_ overloads of [_TPJMD5.Process_](TPJMD5-Process.md#tstream-versions) to get the MD5 hash of the whole of a stream using a given buffer size:
+And here's a similar function that uses one of the _TStream_ overloads of [_TPJMD5.Process_](../API/TPJMD5-Process.md#tstream-versions) to get the MD5 hash of the whole of a stream using a given buffer size:
 
 ```pascal
 function MD5OfStream(const Stm: TStream;

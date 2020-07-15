@@ -12,16 +12,16 @@ If you want detailed documentation of each method please see the [Programmers' G
 * [Compare two digests](./HowTo/CompareDigests.md)
 * [Understand the Calculate and Process methods](./HowTo/UseCalculateAndProcess.md) - learn the difference between these methods
 * Get the MD5 hash of:
-    * [a string](./HowTo/HashString.md)
-    * [a string list](./HowTo/HashStringList.md)
-    * [one or more files](./HowTo/HashFile.md)
-    * [a stream](./HowTo/HashStream.md)
-    * [untyped data](./HowTo/HashUntypedData.md)
-    * [ordinal types](./HowTo/HashOrdinalTypes.md)
-    * [floating point types](./HowTo/HashFloatTypes.md)
-    * [an array](./HowTo/HashArray.md)
-    * [a record](./HowTo/HashRecord.md)
-    * [an object](./HowTo/HashObject.md)
+  * [a string](./HowTo/HashString.md)
+  * [a string list](./HowTo/HashStringList.md)
+  * [one or more files](./HowTo/HashFile.md)
+  * [a stream](./HowTo/HashStream.md)
+  * [untyped data](./HowTo/HashUntypedData.md)
+  * [ordinal types](./HowTo/HashOrdinalTypes.md)
+  * [floating point types](./HowTo/HashFloatTypes.md)
+  * [an array](./HowTo/HashArray.md)
+  * [a record](./HowTo/HashRecord.md)
+  * [an object](./HowTo/HashObject.md)
 * [Change the read buffer size](./HowTo/ChangeReadBufferSize.md)
 
 ## Links

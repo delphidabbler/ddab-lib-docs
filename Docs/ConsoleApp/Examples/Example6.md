@@ -10,7 +10,7 @@ MyApp <In.txt >Out.txt
 
 When redirecting programmatically we can't use `>` and `<` on the command line, but must instead open handles to the files and pass those handles to Windows. Furthermore, on NT systems, the file handles must be [inheritable](../InheritableHandles.md).
 
-[_TPJConsoleApp_](../API/TPJConsoleApp.md) provides properties [_StdIn_](../API/TPJCustomConsoleApp-StdIn.md), [_StdOut_](../API/TPJCustomConsoleApp-StdOut.md) and [_StdErr_](../API/TPJCustomConsoleApp-StdErr.md) to implement redirection. Simply assign an [inheritable](InheritableHandles.md) handle to one or more of these properties to redirect standard input, standard output and standard error respectively.
+[_TPJConsoleApp_](../API/TPJConsoleApp.md) provides properties [_StdIn_](../API/TPJCustomConsoleApp-StdIn.md), [_StdOut_](../API/TPJCustomConsoleApp-StdOut.md) and [_StdErr_](../API/TPJCustomConsoleApp-StdErr.md) to implement redirection. Simply assign an [inheritable](../InheritableHandles.md) handle to one or more of these properties to redirect standard input, standard output and standard error respectively.
 
 To demonstrate this we need a console application that processes text from standard input and writes the processed text to standard output.
 
@@ -23,7 +23,7 @@ Start a new GUI application and drop a button and two memos on the main form. Th
 
 We will use the helper class [_TPJFileHandle_](../../IOUtils/API/TPJFileHandle.md) to open the files and obtain their handles. The advantage of using this class is that it opens files with the required inheritable handles. It also closes the handles when the class is freed. You don't have to use the class, but if you don't use must open the required files yourself, ensuring they have inheritable handles. You must also close the handles when they are no longer needed. Some sample code is in [Appendix 1](../Appendices/Appendix1.md).
 
-> [_TPJFileHandle_](../../IOUtils/API/TPJFileHandle.md) is included in the [I/O Utitlity Classes](https://sourceforge.net/projects/ddablib/files/ioutils/) download in `PJFileHandle.pas`.
+> [_TPJFileHandle_](../../IOUtils/API/TPJFileHandle.md) is included in the [I/O Utitlity Classes](../../IOUtils/API.md) download in `PJFileHandle.pas`.
 
 First make sure that the uses statement includes [_PJConsoleApp_](../API/PJConsoleApp.md) and [_PJFileHandle_](../../IOUtils/API/PJFileHandle.md) then create an _OnClick_ event handler for the button as follows:
 

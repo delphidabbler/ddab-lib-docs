@@ -53,9 +53,9 @@ Running this program displays the following values in the edit controls:
 1. `c8b029b7698b23a5962e7cc21a75653a` (MD5 of _Strings.Text_)
 2. `780c94281a0b1e10395098c690a91d26` (MD5 of each string in _Strings_)
 
-The first approach converts the string list to text, with each line separated by the string stored in the _TStrings.LineBreak_ property. It then uses one of the Unicode overloads of [_TPJMD5.Calculate_](..API/TPJMD5-Calculate.md##unicode-string-versions) to get the required digest. The resulting hash includes the line break characters.
+The first approach converts the string list to text, with each line separated by the string stored in the _TStrings.LineBreak_ property. It then uses one of the Unicode overloads of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#unicode-string-versions) to get the required digest. The resulting hash includes the line break characters.
 
-The second approach adds each string from the string list in turn to the same hash. It uses one of the [_TPJMD5.Process_](../API/TPJMD5-Process.md#unicode-string-versions) Unicode overloaded methods to do this. 
+The second approach adds each string from the string list in turn to the same hash. It uses one of the [_TPJMD5.Process_](../API/TPJMD5-Process.md#unicode-string-versions) Unicode overloaded methods to do this.
 
 There are advantages and disadvantages of each approach:
 
@@ -75,7 +75,7 @@ You must decide which of the approaches to use. If empty lines are not significa
   * [Understand the Calculate and Process methods](./UseCalculateAndProcess.md)
 * Programmers' Guide:
   * [_TPJMD5Digest_](../API/TPJMD5Digest.md)
-  * [_TPJMD5.Calculate_](..API/TPJMD5-Calculate.md##unicode-string-versions) -- Unicode overloads
+  * [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#unicode-string-versions) -- Unicode overloads
   * [_TPJMD5.Process_](../API/TPJMD5-Process.md#unicode-string-versions) -- Unicode overloads
 
 ## Links

@@ -1,4 +1,4 @@
-# FileType property #
+# FileType property
 
 ***Project:*** [Version Information Component](../API.md)
 

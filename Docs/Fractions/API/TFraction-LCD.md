@@ -72,7 +72,7 @@ end;
 
 Running this test program writes the following:
 
-```pascal
+```text
 1/4 and 5/6 => 3/12 and 10/12
 -1/3 and 5/6 => -2/6 and 5/6
 11/7 and 3/5 => 55/35 and 21/35

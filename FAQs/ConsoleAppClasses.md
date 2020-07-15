@@ -1,6 +1,6 @@
 # Console Application Runner Classes FAQ
 
-This page has some frequently asked questions about the DelphiDabbler [Console Application Runner Classes](http://delphidabbler.com/software/consoleapp). You can also try the class' **Documentation** {TODO}.
+This page has some frequently asked questions about the DelphiDabbler [Console Application Runner Classes](https://delphidabbler.com/software/consoleapp). You can also try the class' **Documentation** {TODO}.
 
 ## Contents
 
@@ -37,7 +37,7 @@ If output is redirected to the pipe then, again, the actual bytes output by the 
 
 > New in release 2.0 of the classes are some pipe filter classes, one of which can read Unicode from a pipe correctly. [[See this example - {link needed}]].
 
-As of release 3.0 the pipe filter classes were moved from this project into the [I/O Utility Classes](http://delphidabbler.com/software/ioutils) project.
+As of release 3.0 the pipe filter classes were moved from this project into the [I/O Utility Classes](https://delphidabbler.com/software/ioutils) project.
 
 
 ## FAQ 3

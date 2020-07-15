@@ -2,7 +2,7 @@
 
 This unit contains an encapsulation of a fraction.
 
-A single advanced record type, [TFraction](./API/TFraction.md), is used to encapsulate the fraction. Instances of the record are immutable, i.e. their properties cannot be altered once the instance has been constructed. All methods that manipulate properties create new instances containing the results.
+A single advanced record type, [_TFraction_](./API/TFraction.md), is used to encapsulate the fraction. Instances of the record are immutable, i.e. their properties cannot be altered once the instance has been constructed. All methods that manipulate properties create new instances containing the results.
 
 Operator overloading is used extensively to enable normal arithmetic operations to be carried out on fractions.
 

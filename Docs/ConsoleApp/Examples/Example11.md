@@ -1,21 +1,21 @@
 # [Console Application Runner Classes](../../ConsoleApp.md) Example 11: Customising the appearance of the console
 
-[TPJConsoleApp](../API/TPJConsoleApp.md) can be used to customise the appearance of any new console window displayed by a console application. This example shows how to modify the console window's size, position, title and foreground and background colours.
+[_TPJConsoleApp_](../API/TPJConsoleApp.md) can be used to customise the appearance of any new console window displayed by a console application. This example shows how to modify the console window's size, position, title and foreground and background colours.
 
 > Console customisation requires a _new_ console window. If one console application starts another and the child application shares the parent's console then any customisation will have no effect. However, if the parent program is a GUI application then a new console window is always created.
 
-To avoid too much complexity all in one go we will develop this example project in four stages, with each stage demonstrating one property of [TPJConsoleApp](../API/TPJConsoleApp.md):
+To avoid too much complexity all in one go we will develop this example project in four stages, with each stage demonstrating one property of [_TPJConsoleApp_](../API/TPJConsoleApp.md):
 
-1. [ConsoleTitle](../API/TPJCustomConsoleApp-ConsoleTitle.md)
-2. [ConsoleColors](../API/TPJCustomConsoleApp-ConsoleColors.md)
-3. [WindowSize](../API/TPJCustomConsoleApp-WindowSize.md)
-4. [WindowPosition](../API/TPJCustomConsoleApp-WindowPosition.md)
+1. [_ConsoleTitle_](../API/TPJCustomConsoleApp-ConsoleTitle.md)
+2. [_ConsoleColors_](../API/TPJCustomConsoleApp-ConsoleColors.md)
+3. [_WindowSize_](../API/TPJCustomConsoleApp-WindowSize.md)
+4. [_WindowPosition_](../API/TPJCustomConsoleApp-WindowPosition.md)
 
 Before that we'll create the main example program framework that is required to demonstrate all the properties.
 
 ## Common Code
 
-To begin with start a new Delphi GUI application project, and add [PJConsoleApp](../API/PJConsoleApp.md) to the the main form's uses statement.
+To begin with start a new Delphi GUI application project, and add [_PJConsoleApp_](../API/PJConsoleApp.md) to the the main form's uses statement.
 
 Now drop a _TButton_ on the form, name it `btnRun` and give it the following _OnClick_ event handler:
 
@@ -50,7 +50,7 @@ end;
 
 If you've worked through other examples, none of the above should come as any surprise. Note that we've explicitly made the console application visible so we can see the customisations! The code we add in the following sections will replace the relevant placeholder comments in the above code.
 
-Now add the following method to handle the [OnWork](../API/TPJCustomConsoleApp-OnWork.md) event. It's the same simple implementation we've used before that allows the GUI to remain responsive:
+Now add the following method to handle the [_OnWork_](../API/TPJCustomConsoleApp-OnWork.md) event. It's the same simple implementation we've used before that allows the GUI to remain responsive:
 
 ```pascal
 procedure TForm1.WorkHandler(Sender: TObject);
@@ -89,9 +89,9 @@ App.ConsoleColors := MakeConsoleColors(
 );
 ```
 
-This assigns the required colours to the [ConsoleColors](../API/TPJCustomConsoleApp-ConsoleColors.md) property. Note that we can't assign the fields of the property separately, because they are read-only. So we must assign a whole [TPJConsoleColors](../API/TPJConsoleColors.md) record to the property. To do this we take advantage of the [MakeConsoleColors](../API/Routines.md#makeconsolecolors) routine to construct the required [TPJConsoleColors](../API/TPJConsoleColors.md) record.
+This assigns the required colours to the [_ConsoleColors_](../API/TPJCustomConsoleApp-ConsoleColors.md) property. Note that we can't assign the fields of the property separately, because they are read-only. So we must assign a whole [_TPJConsoleColors_](../API/TPJConsoleColors.md) record to the property. To do this we take advantage of the [_MakeConsoleColors_](../API/Routines.md#makeconsolecolors) routine to construct the required [_TPJConsoleColors_](../API/TPJConsoleColors.md) record.
 
-> There are two overloaded versions of [MakeConsoleColors](../API/Routines.md#makeconsolecolors). The first takes [TPJConsoleColor](../API/TPJConsoleColor.md) parameters and the second takes _TColor_ parameters. We've used the second version to avoid the hassle of converting the _TColor_ values read from the combo boxes to the [TPJConsoleColor](../API/TPJConsoleColor.md) values needed by the [TPJConsoleColors](../API/TPJConsoleColors.md) record. The routine does the conversion for us.
+> There are two overloaded versions of [_MakeConsoleColors_](../API/Routines.md#makeconsolecolors). The first takes [_TPJConsoleColor_](../API/TPJConsoleColor.md) parameters and the second takes _TColor_ parameters. We've used the second version to avoid the hassle of converting the _TColor_ values read from the combo boxes to the [_TPJConsoleColor_](../API/TPJConsoleColor.md) values needed by the [_TPJConsoleColors_](../API/TPJConsoleColors.md) record. The routine does the conversion for us.
 
 Rebuild and run the GUI application. Select some colours and click the _Run_ button. Notice the colours are used in the console window.
 
@@ -126,9 +126,9 @@ if not cbDefWindowSize.Checked then
   );
 ```
 
-This simply sets the [WindowSize](../API/TPJCustomConsoleApp-WindowSize.md) property to the width and height entered in the edit controls providing the check box is not checked. When the check box is checked no property value is set and its default value is used.
+This simply sets the [_WindowSize_](../API/TPJCustomConsoleApp-WindowSize.md) property to the width and height entered in the edit controls providing the check box is not checked. When the check box is checked no property value is set and its default value is used.
 
-Here we have used the [MakeSize](../API/Routines.md#makesize) helper routine that constructs a _TSize_ record, setting its fields to the value of the two parameters. This is helpful since it is not possible to assign the fields of the [WindowSize](../API/TPJCustomConsoleApp-WindowSize.md) property individually; we must assign a complete record to the property.
+Here we have used the [_MakeSize_](../API/Routines.md#makesize) helper routine that constructs a _TSize_ record, setting its fields to the value of the two parameters. This is helpful since it is not possible to assign the fields of the [_WindowSize_](../API/TPJCustomConsoleApp-WindowSize.md) property individually; we must assign a complete record to the property.
 
 Rebuild and run the application. Make sure the _Use default_ check box is cleared and enter some sensible values for width and height (say 640 by 480) in the edit controls. Click the _Run_ button. Notice the size of the window. Now repeat with the check box ticked. The values in the edit controls will be ignored and the console will have its default size.
 
@@ -136,7 +136,7 @@ Rebuild and run the application. Make sure the _Use default_ check box is cleare
 
 ## Stage 4: WindowPosition
 
-The code to demonstrate [WindowPosition](../API/TPJCustomConsoleApp-WindowPosition.md) is very similar to that for [WindowSize](../API/TPJCustomConsoleApp-WindowSize.md). You again need a _TGroupBox_ containing two _TEdit_ controls and a _TCheckbox_. The check box caption should again be `'Use default'` but name it `cbDefWindowPos`. Name the edit controls `edWindowLeft` and `edWindowTop`. Use _TLabel_ components to label the edit controls "Left" and "Top".
+The code to demonstrate [_WindowPosition_](../API/TPJCustomConsoleApp-WindowPosition.md) is very similar to that for [_WindowSize_](../API/TPJCustomConsoleApp-WindowSize.md). You again need a _TGroupBox_ containing two _TEdit_ controls and a _TCheckbox_. The check box caption should again be `'Use default'` but name it `cbDefWindowPos`. Name the edit controls `edWindowLeft` and `edWindowTop`. Use _TLabel_ components to label the edit controls "Left" and "Top".
 
 Connect both edit controls' _OnKeyPress_ events to the same _EdNumberFilter_ event handler shown above.
 
@@ -148,7 +148,8 @@ if not cbDefWindowPos.Checked then
     StrToInt(edWindowLeft.Text), StrToInt(edWindowTop.Text)
   );
 ```
-This works pretty much the same as the similar code in stage 3 above. The main difference being that, because [WindowPosition](../API/TPJCustomConsoleApp-WindowPosition.md) has type _TPoint_, we construct the record value assigned to the property using the _Point_ function from the Delphi VCL.
+
+This works pretty much the same as the similar code in stage 3 above. The main difference being that, because [_WindowPosition_](../API/TPJCustomConsoleApp-WindowPosition.md) has type _TPoint_, we construct the record value assigned to the property using the _Point_ function from the Delphi VCL.
 
 Rebuild the application one last time and run it. Clear the checkbox and enter values for the console window's top left corner in screen co-ordinates. Click the _Run_ button and observe the position of the console window. Run again and note that the window appears in the same position. Now tick the checkbox and run again. The console window appears in a default position. Run a few more times and you'll notice the window's default position moves each time.
 

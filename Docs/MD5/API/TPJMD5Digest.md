@@ -8,7 +8,7 @@
 
 ## Description
 
-_TPJMD5Digest_ is a record that encapsulates a MD5 digest produced by hashing an octet stream using the MD5 message digest algorithm. These digests are produced by the [TPJMD5](./TPJMD5.md) class.
+_TPJMD5Digest_ is a record that encapsulates a MD5 digest produced by hashing an octet stream using the MD5 message digest algorithm. These digests are produced by the [_TPJMD5_](./TPJMD5.md) class.
 
 The record enables the digest to be cast to and from strings and _TBytes_ byte arrays. It also permits digests to be tested for equality and inequality. In addition the digest data can be accessed either as an array of bytes or as long words.
 

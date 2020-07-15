@@ -1,4 +1,4 @@
-# FixedFileInfo property #
+# FixedFileInfo property
 
 ***Project:*** [Version Information Component](../API.md)
 

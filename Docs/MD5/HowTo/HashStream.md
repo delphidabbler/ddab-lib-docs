@@ -1,8 +1,8 @@
 # MD5 How-to: How To Get the MD5 Hash of a Stream
 
-There are two overloads of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#tstream-versions) and [_TPJMD5.Process_](..API/TPJMD5-Process.md#tstream-versions) methods that can be used to create MD5 hashes of streams. One version takes a single _TStream_ parameter and gets the hash of the data in the stream after the current position while the other version hashes a given number of bytes from the current stream position.
+There are two overloads of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#tstream-versions) and [_TPJMD5.Process_](../API/TPJMD5-Process.md#tstream-versions) methods that can be used to create MD5 hashes of streams. One version takes a single _TStream_ parameter and gets the hash of the data in the stream after the current position while the other version hashes a given number of bytes from the current stream position.
 
-> Code examples in this how-to all use  [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#tstream-versions) because it lends itself to more concise code, but [_TPJMD5.Process_](..API/TPJMD5-Process.md#tstream-versions) can be used for the same purpose. For details of the differences see [Understand the Calculate and Process methods](./UseCalculateAndProcess.md).
+> Code examples in this how-to all use  [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#tstream-versions) because it lends itself to more concise code, but [_TPJMD5.Process_](../API/TPJMD5-Process.md#tstream-versions) can be used for the same purpose. For details of the differences see [Understand the Calculate and Process methods](./UseCalculateAndProcess.md).
 
 The most common requirement is to take the MD5 hash of a whole stream. This is done like this:
 

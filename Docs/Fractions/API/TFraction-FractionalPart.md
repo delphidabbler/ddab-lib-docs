@@ -18,7 +18,7 @@ This property provides the fractional part of a [_TFraction_](./TFraction.md) wh
 
 For any [_TFraction_](./TFraction.md) it's [_WholeNumberPart_](./TFraction-WholeNumberPart.md) plus its _FractionalPart_ is equal to the original fraction. I.e. for [_TFraction_](./TFraction.md) _F_
 
-```pascal
+```text
 F = F.WholeNumberPart + F.FractionalPart;
 ```
 

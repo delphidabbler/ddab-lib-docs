@@ -1,6 +1,6 @@
 # [Console Application Runner Classes](../ConsoleApp.md) Inheritable Handles
 
-When we use [_TPJConsoleApp_](./API/TPJConsoleApp.md) to redirect the input and/or output of a child process we create handles to the redirected resources (files or pipes) and pass those handles to the child process. This is done by setting [_TPJConsoleApp_](./API/TPJConsoleApp.md)'s [_StdIn_](./API/TPJConsoleApp-StdIn.md), [_StdOut_](./API/TPJConsoleApp-StdOut.md) and [_StdErr_](./API/TPJConsoleApp-StdErr.md) properties.
+When we use [_TPJConsoleApp_](./API/TPJConsoleApp.md) to redirect the input and/or output of a child process we create handles to the redirected resources (files or pipes) and pass those handles to the child process. This is done by setting [_TPJConsoleApp_](./API/TPJConsoleApp.md)'s [_StdIn_](./API/TPJCustomConsoleApp-StdIn.md), [_StdOut_](./API/TPJCustomConsoleApp-StdOut.md) and [_StdErr_](./API/TPJCustomConsoleApp-StdErr.md) properties.
 
 The handles are created in the context of the application that is using [_TPJConsoleApp_](./API/TPJConsoleApp.md) and are used in the context of the console application running as a child process. The child process is said to _inherit_ the handles.
 
@@ -21,6 +21,6 @@ begin
 end;
 ```
 
-You can see concrete examples of using such code in [Appendix 1](./Appendencies/Appendix1.md).
+You can see concrete examples of using such code in [Appendix 1](./Appendices/Appendix1.md).
 
 File and pipe handles aren't the only ones that can be inherited. There's much more information on [MSDN](http://msdn.microsoft.com/en-us/library/ms683463.aspx).

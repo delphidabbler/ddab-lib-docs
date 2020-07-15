@@ -16,7 +16,7 @@ class operator Equal(const D: TPJMD5Digest; const S: string): Boolean;
 class operator Equal(const S: string; const D: TPJMD5Digest): Boolean;
 ```
 
-##  Description
+## Description
 
 [_TPJMD5Digest_](./TPJMD5Digest.md) defines five overloads of the `=` operator that permit [_TPJMD5Digest_](./TPJMD5Digest.md) variables to be tested for equality with:
 
@@ -28,7 +28,7 @@ class operator Equal(const S: string; const D: TPJMD5Digest): Boolean;
 
 Two [_TPJMD5Digest_](./TPJMD5Digest.md) records are considered equal if all elements of their _LongWords_ array fields are the same.
 
-####  Example
+#### Example
 
 ```pascal
 var
@@ -49,7 +49,7 @@ A [_TPJMD5Digest_](./TPJMD5Digest.md) record is considered equal to a Unicode st
 2. The string contains only valid hexadecimal characters (both upper and lower case letters `A` to `F` are permitted) -- ***and***
 3. The sequence of bytes represented by the string is the same as the bytes of the [_TPJMD5Digest_](./TPJMD5Digest.md) record's _Bytes_ field.
 
-####  Example
+#### Unicode example
 
 ```pascal
 const
@@ -73,7 +73,7 @@ A [_TPJMD5Digest_](./TPJMD5Digest.md) record is considered equal to a _TBytes_ a
 1. The byte array has 16 elements -- ***and***
 2. The bytes of the byte array are the same as those of the [_TPJMD5Digest_](./TPJMD5Digest.md) record's _Bytes_ field.
 
-####  Example
+#### TBytes example
 
 ```pascal
 const
@@ -95,7 +95,7 @@ begin
 end;
 ```
 
-####  Note
+#### Note
 
 Although a byte array with more than 16 elements can be assigned to a [_TPJMD5Digest_](./TPJMD5Digest.md), the two items ***do not*** compare equal:
 
@@ -116,7 +116,6 @@ end;
 
 This is because the "overflow" bytes from the byte array are discarded when assigning to the [_TPJMD5Digest_](./TPJMD5Digest.md) record.
 
-
-##  See Also
+## See Also
 
 * [_NotEqual_](./TPJMD5Digest-NotEqual.md) operator overloads

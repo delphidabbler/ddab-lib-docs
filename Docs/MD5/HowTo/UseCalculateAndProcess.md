@@ -2,7 +2,7 @@
 
 [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md) and [_TPJMD5.Process_](../API/TPJMD5-Process.md) are methods of [_TPJMD5_](../API/TPJMD5.md) within similar purposes but some significant differences.
 
-Both methods are used in creating MD5 hashes. Both have numerous overloaded versions. 
+Both methods are used in creating MD5 hashes. Both have numerous overloaded versions.
 
 ## Process
 

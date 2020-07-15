@@ -1,18 +1,18 @@
 # [Console Application Runner Classes](../../ConsoleApp.md) Example 12: Handling Unicode output from console applications
 
-> This demo uses classes from the [_PJPipe_](../../IOUtils/API/PJPipe.md), [_PJPipeFilters_](../../IOUtils/API/PJPipeFilters.md) & [_PJFileHandle_](../../IOUtils/API/PJFileHandle.md). These units are included in the [I/O Utitlity Classes](https://delphidabbler.com/software/ioutils/download) download.
+> This demo uses classes from the [_PJPipe_](../../IOUtils/API/PJPipe.md), [_PJPipeFilters_](../../IOUtils/API/PJPipeFilters.md) & [_PJFileHandle_](../../IOUtils/API/PJFileHandle.md). These units are included in the [I/O Utitlity Classes](../../IOUtils/API.md) download.
 
-If you are not using a Unicode version of Delphi the _UnicodeString_ type must be declared as _WideString_. Adding the [PJPipeFilters](../../IOUtils/API/PJPipeFilters.md) unit to the uses statement in the interface will do this for you.
+If you are not using a Unicode version of Delphi the _UnicodeString_ type must be declared as _WideString_. Adding the [_PJPipeFilters_](../../IOUtils/API/PJPipeFilters.md) unit to the uses statement in the interface will do this for you.
 
 It is possible that you may come across a console application that writes Unicode format text to standard output. In this case, and if you need to read and format the output via a pipe you need to handle it differently than the case where the text is ANSI.
 
-The [TPJUnicodeBMPPipeFilter](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) class, from [PJPipeFilters.pas](../../IOUtils/API/PJPipeFilters.md), makes this easy, providing the text is all in the Unicode basic multilingual plane. For example, to convert [Example 8](../Examples/Example8.md) to handle Unicode all that needs to be done is to replace occurences of [TPJAnsiSBCSPipeFilter](../../IOUtils/API/TPJAnsiSBCSPipeFilter.md) with [TPJUnicodeBMPPipeFilter](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) and change the type of the string parameter in [OnLineEnd](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event handlers from _AnsiString_ to _UnicodeString_.
+The [_TPJUnicodeBMPPipeFilter_](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) class, from [PJPipeFilters.pas](../../IOUtils/API/PJPipeFilters.md), makes this easy, providing the text is all in the Unicode basic multilingual plane. For example, to convert [Example 8](../Examples/Example8.md) to handle Unicode all that needs to be done is to replace occurences of [_TPJAnsiSBCSPipeFilter_](../../IOUtils/API/TPJAnsiSBCSPipeFilter.md) with [_TPJUnicodeBMPPipeFilter_](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) and change the type of the string parameter in [_OnLineEnd_](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event handlers from _AnsiString_ to _UnicodeString_.
 
 This example is similar to example [Example 8](../Examples/Example8.md): it send the contents of a text file to the console application's standard input and redirects the output to a pipe, displaying the text read from the pipe in a memo control. The differences this time are that the output is Unicode and we will only redirect standard output, ignoring standard error. If you want to redirect standard error look again at [Example 8](../Examples/Example8.md) and it should be obvious how to do this.
 
 > We use our old friend `Echoer.exe` again. Running `Echoer` with the `-u` switch causes the program to write its output in Unicode. Note though that input must still be ANSI text.
 
-Start a new Delphi GUI application. Drop a _TMemo_ and a _TButton_ on the form and add [PJConsoleApp](../API/PJConsoleApp.md), [PJPipe](../../IOUtils/API/PJPipe.md), [PJFileHandle](../../IOUtils/API/PJFileHandle.md) and [PJPipeFilters](../../IOUtils/API/PJPipeFilters.md) to the uses statement in the interface section.
+Start a new Delphi GUI application. Drop a _TMemo_ and a _TButton_ on the form and add [_PJConsoleApp_](../API/PJConsoleApp.md), [_PJPipe_](../../IOUtils/API/PJPipe.md), [_PJFileHandle_](../../IOUtils/API/PJFileHandle.md) and [_PJPipeFilters_](../../IOUtils/API/PJPipeFilters.md) to the uses statement in the interface section.
 
 Now add the following code to the private section of the form class:
 
@@ -74,17 +74,17 @@ begin
 end;
 ```
 
-First we create the output pipe filter using [TPJUnicodeBMPPipeFilter](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) and assign our [OnLineEnd](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event handler. The output pipe is created on the fly in the filter object's constructor and we give ownership of the pipe to the filter object by passing `True` as the constructor's second parameter.
+First we create the output pipe filter using [_TPJUnicodeBMPPipeFilter_](../../IOUtils/API/TPJUnicodeBMPPipeFilter.md) and assign our [_OnLineEnd_](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event handler. The output pipe is created on the fly in the filter object's constructor and we give ownership of the pipe to the filter object by passing `True` as the constructor's second parameter.
 
-Next we open the input file for reading. Replace `Input.txt` with a reference to a suitable ANSI text file. After creating the [TPJConsoleApp](../API/TPJConsoleApp.md) object the [inheritable](../InheritableHandles.md) file handle is assigned to the console application object's [StdIn](../API/TPJCustomConsoleApp-StdIn.md) property to redirect the file to the console application's standard input.
+Next we open the input file for reading. Replace `Input.txt` with a reference to a suitable ANSI text file. After creating the [_TPJConsoleApp_](../API/TPJConsoleApp.md) object the [inheritable](../InheritableHandles.md) file handle is assigned to the console application object's [_StdIn_](../API/TPJCustomConsoleApp-StdIn.md) property to redirect the file to the console application's standard input.
 
-Now the console application's standard output is set to write to the output pipe by assigned the pipe's write handle to the console application object's [StdOut](../API/TPJCustomConsoleApp-StdOut.md) property. We get the pipe handle from the output filter's [Pipe](../../IOUtils/API/TPJPipeFilter-Pipe.md) property, which gives access to the pipe created in the filter object's constructor.
+Now the console application's standard output is set to write to the output pipe by assigned the pipe's write handle to the console application object's [_StdOut_](../API/TPJCustomConsoleApp-StdOut.md) property. We get the pipe handle from the output filter's [_Pipe_](../../IOUtils/API/TPJPipeFilter-Pipe.md) property, which gives access to the pipe created in the filter object's constructor.
 
-The next couple of lines have been seen many times before: we set a suitably short time slice and assign the [OnWork](../API/TPJCustomConsoleApp-OnWork.md) event handler.
+The next couple of lines have been seen many times before: we set a suitably short time slice and assign the [_OnWork_](../API/TPJCustomConsoleApp-OnWork.md) event handler.
 
-The next two lines execute the console application. This time we are setting the [CommandLine](../API/TPJCustomConsoleApp-CommandLine.md) property and then calling a parameterless version of the [Execute](../API/TPJCustomConsoleApp-Execute.md) method. In previous examples we have passed the command line as a parameter to [Execute](../API/TPJCustomConsoleApp-Execute.md). Both are equivalent, we're just using the property based approach here to demonstrate it. Notice we pass the `-u` switch to `Echoer` to get the Unicode output.
+The next two lines execute the console application. This time we are setting the [_CommandLine_](../API/TPJCustomConsoleApp-CommandLine.md) property and then calling a parameterless version of the [_Execute_](../API/TPJCustomConsoleApp-Execute.md) method. In previous examples we have passed the command line as a parameter to [_Execute_](../API/TPJCustomConsoleApp-Execute.md). Both are equivalent, we're just using the property based approach here to demonstrate it. Notice we pass the `-u` switch to `Echoer` to get the Unicode output.
 
-The remainder of the method just tidies up. Freeing _fOutFilter_ also flushes its text buffer and may cause the [OnLineEnd](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event to fire one last time.
+The remainder of the method just tidies up. Freeing _fOutFilter_ also flushes its text buffer and may cause the [_OnLineEnd_](../../IOUtils/API/TPJUnicodeBMPPipeFilter-OnLineEnd.md) event to fire one last time.
 
 Compile the program and run it. Click the button and watch the output of the program appear in the memo control.
 

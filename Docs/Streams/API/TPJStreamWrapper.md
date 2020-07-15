@@ -14,7 +14,7 @@ Sub-classes will add methods to the base class and/or override the base class's 
 
 Wrapping a _TStream_ descendant object rather than adding functionality by extending the class means that the functionality provided by the wrapper class can be applied to any _TStream_ descendant.
 
-%comment%Study the StreamWrapDemo demo source code details of how this can be achieved.
+> Study the _StreamWrapDemo_ demo source code details of how this can be achieved.
 
 ### Methods
 

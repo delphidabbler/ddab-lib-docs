@@ -63,4 +63,4 @@ The DelphiDabbler About Box Component is copyright &copy; 1998-2014 Peter Johnso
 **Links:**
 
   * Back to [Wiki Home Page](Welcome.md)
-  * [About Box Component Web Page](http://www.delphidabbler.com/software/aboutbox).
+  * [About Box Component Web Page](https://delphidabbler.com/software/aboutbox).

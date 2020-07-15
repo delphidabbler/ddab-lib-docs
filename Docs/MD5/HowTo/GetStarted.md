@@ -34,7 +34,6 @@ There are several overloaded versions of [_TPJMD5.Calculate_](../API/TPJMD5-Calc
   * [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#unicode-string-versions
 ) (Unicode overloads)
 
-
 ## Links
 
 * [How-to Guide Contents](../HowTo.md)

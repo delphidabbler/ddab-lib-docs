@@ -22,7 +22,7 @@ The reciprocal of fraction `X/Y` is `Y/X`, where `X<>0`.
 
 Because the reciprocal of any non-zero number `N` is defined as `1/N`, applying _Reciprocal_ to a fraction is the same as dividing the fraction into 1. I.e. if _F_ is any [_TFraction_](./TFraction.md) instance with a non-zero numerator,
 
-```pascal
+```text
 F.Reciprocal = 1/F;
 ```
 

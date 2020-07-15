@@ -15,7 +15,7 @@ class operator Implicit(const D: TPJMD5Digest): TBytes;
 class operator Implicit(const B: TBytes): TPJMD5Digest;
 ```
 
-##  Description
+## Description
 
 [_TPJMD5Digest_](./TPJMD5Digest.md) defines four implicit casts:
 
@@ -34,7 +34,7 @@ This cast creates a string representation of the digest. The string is the well 
 
 This cast is particularly useful because it enables a [_TPJMD5Digest_](./TPJMD5Digest.md) to be rendered as text. Just reference a [_TPJMD5Digest_](./TPJMD5Digest.md) instance in a string context and the digest is automatically converted to a string.
 
-####  Example
+#### TPJMD5Digest example
 
 ```pascal
 var
@@ -57,7 +57,7 @@ The string must hold a hexadecimal representation of a MD5 digest. It must be ex
 
 The digest's data is set to the bytes represented by the hex digits.
 
-####  Example
+#### String to TPJMD5Digest example
 
 ```pascal
 const
@@ -84,7 +84,7 @@ class operator Implicit(const D: TPJMD5Digest): TBytes;
 
 This cast allows a digest's data to be assigned to a _TBytes_ array. The digest's data is copied into a new 16 element _TBytes_ array.
 
-####  Example
+#### TPJMD5Digest to TBytes example
 
 ```pascal
 const
@@ -118,7 +118,7 @@ This cast allows you to assign a byte array to a variable of type [_TPJMD5Digest
 
 The array of bytes must have at least 16 elements otherwise a [_EPJMD5_](./EPJMD5.md) exception is raised. Bytes are copied directly from the array elements into the digest's data without change. If the length of the byte array is greater than 16, only to first 16 elements are copied.
 
-####  Example
+#### TBytes to TPJMD5Digest example
 
 ```pascal
 const
@@ -141,6 +141,6 @@ begin
 end;
 ```
 
-####  Note
+#### TBytes to TPJMD5Digest note
 
 Although a byte array with more than 16 elements can be cast to [_TPJMD5Digest_](./TPJMD5Digest.md), such an array will always test as unequal to the digest.

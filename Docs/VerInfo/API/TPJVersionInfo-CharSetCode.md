@@ -1,4 +1,4 @@
-# CharSetCode property #
+# CharSetCode property
 
 ***Project:*** [Version Information Component](../API.md)
 

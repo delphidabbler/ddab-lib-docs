@@ -1,4 +1,4 @@
-# Example 4: Using string information properties #
+# Example 4: Using string information properties
 
 This example demostrates how to access string information from a version resource using _[TPJVersionInfo](../API/TPJVersionInfo.md)_. It demonstrates two methods - the first using dedicated properties such as _LegalCopyright_ and the second using the _[StringFileInfo](../API/TPJVersionInfo-StringFileInfo.md)_ property. The example also demonstrates the use of the _[FileName](../API/TPJVersionInfo-FileName.md)_ property to access information in other files.
 
@@ -111,5 +111,5 @@ When the first button is clicked the memo is populated with string information e
 
 **Links:**
 
-  * Back to the [Examples List](../Examples.md)
-  * Back to the [Main Component Page](../../VerInfo.md)
+* Back to the [Examples List](../Examples.md)
+* Back to the [Main Component Page](../../VerInfo.md)
