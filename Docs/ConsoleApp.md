@@ -8,7 +8,7 @@ This project provides some classes that are designed to be used to control the e
 
 > **This documentation applies to Console Application Runner Classes v3.0 and later.** Documentation for earlier versions is no longer available.
 
-Can't find what you want here? Try the [FAQ](..\FAQs\ConsoleAppClasses.md).
+Can't find what you want here? Try the [FAQ](../FAQs/ConsoleAppClasses.md).
 
 ## Contents
 
