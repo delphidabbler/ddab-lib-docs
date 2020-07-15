@@ -34,7 +34,7 @@ begin
 end;
 ```
 
-The [_MakeSize_](./Routines#makesize) routine has been provided to make this process easier. The following code has the same effect as the above:
+The [_MakeSize_](./Routines.md#makesize) routine has been provided to make this process easier. The following code has the same effect as the above:
 
 ```pascal
 var
