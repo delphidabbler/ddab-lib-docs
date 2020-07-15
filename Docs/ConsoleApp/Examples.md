@@ -20,8 +20,8 @@ Examples 6, 7, 8, 9 & 12 require one or more units from the [I/O Utility Classes
 * [Example 6](./Examples/Example6.md): Redirecting standard i/o using files.
 * [Example 7](./Examples/Example7.md): Redirecting standard i/o using pipes.
 * [Example 8](./Examples/Example8.md): Capturing console output in a GUI.
-* [Example 9](./Examples/Example9.md): Subclassing [_TPJConsoleApp_](./API/TPJConsoleApp).
-* [Example 10](./Examples/Example10.md): Using [_TPJConsoleApp_](./API/TPJConsoleApp) from console applications.
+* [Example 9](./Examples/Example9.md): Subclassing [_TPJConsoleApp_](./API/TPJConsoleApp.md).
+* [Example 10](./Examples/Example10.md): Using [_TPJConsoleApp_](./API/TPJConsoleApp.md) from console applications.
 * [Example 11](./Examples/Example11.md): Customising the appearance of the console.
 * [Example 12](./Examples/Example12.md): Handling Unicode output from console applications.
 * [Example 13](./Examples/Example13.md): Customising a console app's environment block. [v3.1]
