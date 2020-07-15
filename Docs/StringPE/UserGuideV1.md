@@ -2,7 +2,6 @@
 
 > This is the user guide for version 1 of the Extended String Property Editor. If you are using version 2 there is a [different guide](./UserGuideV2.md).
 
-
 This property editor enhances the existing Delphi string property editor. It works will all **string** and `TCaption` properties.
 
 At first sight the Object Inspector's string property editor is unchanged, and in fact it can be used as before. On closer examination you will find an ellipsis button to the right hand side of the property editor's data entry area. Clicking this button displays a resizeable dialog box in which the property's value can be entered or modified, like this:
