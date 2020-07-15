@@ -188,7 +188,7 @@ end;
   * [Understand the Calculate and Process methods](./UseCalculateAndProcess.md)
   * [Get the MD5 Hash of Untyped Data](./HashUntypedData.md)
   * [Get the MD5 Hash of Ordinal Types](./HashOrdinalTypes.md)
-  * [Get the MD5 hash of a String](./HashString.md)
+  * [Get the MD5 Hash of a String](./HashString.md)
   * [Get the MD5 Hash of an Object](./HashObject.md)
   * [Get the MD5 Hash of a Record](./HashRecord.md)
   * [Get a digest string](./GetDigestAsString.md)
