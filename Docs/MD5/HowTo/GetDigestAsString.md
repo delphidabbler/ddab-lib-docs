@@ -17,7 +17,7 @@ begin
 end;
 ```
 
-This code works because [_TPJMD5Digest_](../API/TPJMD5Digest.md) has an [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit#tpjmd5digest-to-string) that automatically creates a string representation of the hash when it is assigned to a string.
+This code works because [_TPJMD5Digest_](../API/TPJMD5Digest.md) has an [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit.md#tpjmd5digest-to-string) that automatically creates a string representation of the hash when it is assigned to a string.
 
 This conversion also works when a digest record is used in a string context, such as when passed as a string parameter to a routine or method. For example:
 
@@ -56,7 +56,7 @@ begin
 end;
 ```
 
-> You can also assign a string to a [_TPJMD5Digest_](../API/TPJMD5Digest.md) providing the string contains a valid hex representation of a MD5 digest. This uses another [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit#string-to-tpjmd5digest)
+> You can also assign a string to a [_TPJMD5Digest_](../API/TPJMD5Digest.md) providing the string contains a valid hex representation of a MD5 digest. This uses another [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit.md#string-to-tpjmd5digest)
 
 ## See Also
 
