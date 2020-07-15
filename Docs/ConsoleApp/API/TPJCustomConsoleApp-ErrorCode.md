@@ -34,6 +34,6 @@ if (ErrorCode and cAppErrorTimeout) <> 0 then
   // Do something;
 ```
 
-> Alternatively use the [_IsApplicationError_](./Routines#isapplicationerror) function to check for application errors.
+> Alternatively use the [_IsApplicationError_](./Routines.md#isapplicationerror) function to check for application errors.
 
 The property is public in [_TPJConsoleApp_](./TPJConsoleApp.md) and protected in [_TPJCustomConsoleApp_](./TPJCustomConsoleApp.md).
