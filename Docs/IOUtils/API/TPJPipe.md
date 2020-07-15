@@ -8,11 +8,13 @@
 
 This class provides a wrapper round a Windows un-named pipe.
 
-Pipes can be created with the desired security attributes. Pipes can also have inheritable handles to make them suitable for passing to child processes^†^.
+Pipes can be created with the desired security attributes. Pipes can also have inheritable handles to make them suitable for passing to child processes [†](#note).
 
 _TPJPipe_ provides methods to check the number of bytes in a readable pipe, read bytes from a pipe into either a buffer or a stream and write bytes to a pipe from buffers and streams.
 
-> † Inheritable handles have a particular use in the [Console Application Runner Classes](../../ConsoleApp/API.md) for piping the output or input of console applications to and from the host application.
+### Note 
+
+† Inheritable handles have a particular use in the [Console Application Runner Classes](../../ConsoleApp/API.md) for piping the output or input of console applications to and from the host application.
 
 ### Methods
 
