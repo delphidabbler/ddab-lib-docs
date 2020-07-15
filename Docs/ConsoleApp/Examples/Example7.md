@@ -94,7 +94,7 @@ First of all we create the input pipe of the required size and write the content
 
 Next we create the output pipe (with default size) and the stream to receive output. As we have seen, the pipe's data is copied to the stream in _WorkHandler_. It is because they are used in this separate method that we declare _fOutPipe_ and _fOutStream_ as fields of the class rather than as local variables of _Button1Click_.
 
-Now we choose a small value for [_TimeSlice_](../api/TPJCustomConsoleApp-TimeSlice.md), and set the [_StdIn_](../API/TPJCustomConsoleApp-StdIn.md) and [_StdOut_](../API/TPJCustomConsoleApp-StdOut.md) properties to the appropriate pipe handles before executing the application.
+Now we choose a small value for [_TimeSlice_](../API/TPJCustomConsoleApp-TimeSlice.md), and set the [_StdIn_](../API/TPJCustomConsoleApp-StdIn.md) and [_StdOut_](../API/TPJCustomConsoleApp-StdOut.md) properties to the appropriate pipe handles before executing the application.
 
 Finally we load _Memo2_ from the output stream.
 
