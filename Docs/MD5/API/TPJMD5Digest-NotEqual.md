@@ -16,7 +16,7 @@ class operator NotEqual(const D: TPJMD5Digest; const S: string): Boolean;
 class operator NotEqual(const S: string; const D: TPJMD5Digest): Boolean;
 ```
 
-##  Description
+## Description
 
 [_TPJMD5Digest_](./TPJMD5Digest.md) defines five overloads of the `<>` operator that permit [_TPJMD5Digest_](./TPJMD5Digest.md) variables to be tested for inequality with:
 
@@ -28,7 +28,7 @@ class operator NotEqual(const S: string; const D: TPJMD5Digest): Boolean;
 
 Two [_TPJMD5Digest_](./TPJMD5Digest.md) records are considered unequal if their _LongWords_ array fields differ in any element.
 
-####  Example
+#### TPJMD5Digest example
 
 ```pascal
 var
@@ -49,7 +49,7 @@ A [_TPJMD5Digest_](./TPJMD5Digest.md) record is considered unequal to a Unicode 
 2. The string contains any characters that are not valid hexadecimal characters (both upper and lower case letters `A` to `F` are permitted) -- ***or***
 3. The sequence of bytes represented by the string is different to the bytes of the [_TPJMD5Digest_](./TPJMD5Digest.md) record's _Bytes_ field.
 
-####  Example
+#### Unicode example
 
 ```pascal
 const
@@ -79,7 +79,7 @@ A [_TPJMD5Digest_](./TPJMD5Digest.md) record is considered unequal to a _TBytes_
 1. The byte array does not have 16 elements -- ***or***
 2. The bytes of the byte array differ from those of the [_TPJMD5Digest_](./TPJMD5Digest.md) record's _Bytes_ field.
 
-####  Example
+#### TBytes example
 
 ```pascal
 const
@@ -113,7 +113,7 @@ begin
 end;
 ```
 
-####  Note
+#### TBytes note
 
 Although a byte array with more than 16 elements can be assigned to a [_TPJMD5Digest_](./TPJMD5Digest.md), the two items ***do not*** compare equal:
 
@@ -134,6 +134,6 @@ end;
 
 This is because the "overflow" bytes from the byte array are discarded when assigning to the [_TPJMD5Digest_](./TPJMD5Digest.md) record.
 
-##  See Also
+## See Also
 
 * [_Equal_](TPJMD5Digest-Equal.md) operator overloads

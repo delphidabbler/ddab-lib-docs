@@ -44,7 +44,7 @@ end;
 This code places a string representation of the 5 MD5 hashes in the edit controls. On my UK English system I get:
 
 1. `580e27689cf5accd2f6ea979f9f3b11c` - default ANSI encoding (single parameter version of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#unicode-string-versions))
-2. `580e27689cf5accd2f6ea979f9f3b11c` - explicit default ANSI encoding 
+2. `580e27689cf5accd2f6ea979f9f3b11c` - explicit default ANSI encoding
 3. `e5e628206e73b1ae69b37fc69762a1e1` - explicit UTF-8 encoding
 4. `0e52e06ecd5bd0c61eeb52c19263946a` - explicit Unicode (little endian) encoding (UTF-16LE)
 5. `70b4903abcb62ace84264ad0443ae759` - explicit ASCII encoding
@@ -53,7 +53,7 @@ Your mileage may vary in that the first two hashes will depend on your locale an
 
 ## Wide strings
 
-[_TPJMD5_](../API/TPJMD5.md) provides one overload of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#widestring-version) method that processes _WideString_ strings. Wide strings are encoded in UTF-16 little endian (LE) format with each character occupying two bytes. 
+[_TPJMD5_](../API/TPJMD5.md) provides one overload of the [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#widestring-version) method that processes _WideString_ strings. Wide strings are encoded in UTF-16 little endian (LE) format with each character occupying two bytes.
 
 We'll exercise [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#widestring-version) by creating a new Delphi VCL forms application that contains a single edit control and the following _FormCreate_ event handler:
 
@@ -110,7 +110,7 @@ When I run this program on my UK English system I get:
 2. `e5e628206e73b1ae69b37fc69762a1e1` - UTF8
 3. `70b4903abcb62ace84264ad0443ae759` - ASCII
 
-Compare these with results 1 (or 2) and 3 for the [Unicode string](#unicode-string) results and you will see they are the same, as you would expect.
+Compare these with results 1 (or 2) and 3 for the [Unicode string](#unicode-strings) results and you will see they are the same, as you would expect.
 
 ## Short strings
 

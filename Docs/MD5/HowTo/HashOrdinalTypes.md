@@ -49,7 +49,6 @@ begin
 end;
 ```
 
-
 ## See Also
 
 * How-tos:
@@ -58,9 +57,9 @@ end;
   * [Get a digest string](./GetDigestAsString.md)
 * Programmers' Guide:
   * [_TPJMD5Digest_](../API/TPJMD5Digest.md)
-  * [_TPJMD5.Calculate_](../API/TPJMD5Calculate.md)
-  * [_TPJMD5.Process_](../API/TPJMD5Process.md)
-  * [_TPJMD5.Digest_](../API/TPJMD5DigestProp.md)
+  * [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md)
+  * [_TPJMD5.Process_](../API/TPJMD5-Process.md)
+  * [_TPJMD5.Digest_](../API/TPJMD5-Digest.md)
 
 ## Links
 

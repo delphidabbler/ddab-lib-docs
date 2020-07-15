@@ -12,7 +12,7 @@
 property Parts[Idx: Integer]: LongWord; default;
 ```
 
-##  Description
+## Description
 
 _Parts_ is the default array property of [_TPJMD5Digest_](./TPJMD5Digest.md), indexed from 0 to 3.
 

@@ -27,7 +27,7 @@ class function Calculate(const Stream: TStream;
 class function Calculate(const Stream: TStream): TPJMD5Digest; overload;
 ```
 
-## Description 
+## Description
 
 There a several different overloaded versions of the _Calculate_ method, all of which are class methods that return a [_TPJMD5Digest_](./TPJMD5Digest.md) record containing the digest of some specified data.
 
@@ -40,7 +40,7 @@ The disadvantages are:
 
 Similar groups of methods are described below:
 
-* [Byte array versions](#byte-array-version)
+* [Byte array versions](#byte-array-versions)
 * [Untyped buffer version](#untyped-buffer-version)
 * [ANSI string version](#ansi-string-version)
 * [ShortString version](#shortstring-version)
@@ -105,7 +105,7 @@ class function Calculate(const Buf; const Count: Cardinal): TPJMD5Digest;
 
 Calculates a digest from _Count_ bytes read from untyped buffer _Buf_. _Buf_ must contain at least _Count_ bytes.
 
-#### Example
+#### Untyped example
 
 Assume you have an array of long word values for which you want the MD5 hash. Here's a function that gets it for you:
 
@@ -126,9 +126,9 @@ class function Calculate(const S: RawByteString): TPJMD5Digest; overload;
 
 Calculates a digest from the ordinal values of the characters of an ANSI string _S_. _S_ can have any code page.
 
-#### Example
+#### ANSI string example
 
-Create an MD5 digest of an AnsiString containing the text @@Hello World@@:
+Create an MD5 digest of an AnsiString containing the text `Hello World`:
 
 ```pascal
 var
@@ -189,7 +189,7 @@ The first version reads _Count_ bytes from the stream. If _Count_ is greater tha
 
 The stream is read in chunks. The size of a chunk is given by the [_TPJMD5.DefReadBufferSize_](./TPJMD5-DefReadBufferSize.md) constant. This buffer size cannot be changed. If you need to change the buffer size you must create a [_TPJMD5_](./TPJMD5.md) instance, set the buffer size using the [_ReadBufferSize_](./TPJMD5-ReadBufferSize.md) property, then use the appropriate [_Process_](./TPJMD5-Process.md) method.
 
-#### Example
+#### TStream example
 
 Create an MD5 digest of a _TStream_ referenced by _Stm_. We write the ASCII characters `Hello World` to the stream and then get the MD5 of various parts of the stream.
 
@@ -217,4 +217,3 @@ begin
   end;
 end;
 ```
-

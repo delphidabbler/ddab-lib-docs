@@ -27,7 +27,7 @@ D.C = D[2] = D.LongWords[2]
 D.D = D[3] = D.LongWords[3]
 ```
 
-### Examples
+### Long word examples
 
 Use direct indexing like this:
 
@@ -74,7 +74,7 @@ Byte by byte access is provided via the _Bytes_ array field. This can be indexed
 
 Digest data can be copied to a _TBytes_ array by means of an implicit cast: you just assign a [_TPJMD5Digest_](../API/TPJMD5Digest.md) variable to a _TBytes_ variable which receives a copy of the 16 bytes of the digest's data.
 
-### Examples
+### Byte examples
 
 Iterate the _Bytes_ array field like this:
 

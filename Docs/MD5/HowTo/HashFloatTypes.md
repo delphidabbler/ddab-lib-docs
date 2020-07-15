@@ -6,7 +6,7 @@
 
 The general principle is the same as for [ordinal types](./HashOrdinalTypes.md) - you pass the floating point variable as the first parameter to [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#untyped-buffer-version) or [_TPJMD5.Process_](../API/TPJMD5-Process#untyped-buffer-version) and the size of the variable as the second parameter.
 
-> The example in this how-to only uses [_TPJMD5.Process_](../API/TPJMD5-Process.md) because it allows more than one floating point to be added to the hash, but [_TPJMD5.Calculate_](TPJMD5-Calculatemd) can be used in the unlikely event you want to take the hash of just one variable. For details of the differences see [Understand the Calculate and Process methods](./UseCalculateAndProcess.md).
+> The example in this how-to only uses [_TPJMD5.Process_](../API/TPJMD5-Process.md) because it allows more than one floating point to be added to the hash, but [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md) can be used in the unlikely event you want to take the hash of just one variable. For details of the differences see [Understand the Calculate and Process methods](./UseCalculateAndProcess.md).
 
 A single example will suffice. Suppose you have a text file of the text representations of floating point numbers, with just one number per line. The following function gets the MD5 hash of all the (_Double_) numbers in the file. This hash will be different to taking the hash of the text file. It allows files with different representations of the same number (like `0.12` and `.12`) to have the same hash.
 
@@ -42,9 +42,9 @@ end;
   * [Get the MD5 Hash of Untyped Data](./HashUntypedData.md)
   * [Get the MD5 Hash of Ordinal Types](./HashOrdinalTypes.md)
 * Programmers' Guide:
-  * [_TPJMD5.Calculate_](../API/TPJMD5Calculate.md)
-  * [_TPJMD5.Process_](../API/TPJMD5Process.md)
-  * [_TPJMD5.Digest_](../API/TPJMD5DigestProp.md)
+  * [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md)
+  * [_TPJMD5.Process_](../API/TPJMD5-Process.md)
+  * [_TPJMD5.Digest_](../API/TPJMD5-Digest.md)
 
 ## Links
 

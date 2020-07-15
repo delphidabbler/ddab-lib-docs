@@ -31,13 +31,13 @@ The advantages of these methods over the similar [_Calculate_](./TPJMD5-Calculat
 
 1. _Process_ methods can be called more than once: for example they can be called in a loop adding data to the hash on each occasion.
 2. The methods enable data of different types to be added to the same hash.
-3. In the case of the _TStream_ variant, the size of the buffer to use to read the stream can be changed from the default before calling the method. 
+3. In the case of the _TStream_ variant, the size of the buffer to use to read the stream can be changed from the default before calling the method.
 
 The disadvantage of _Process_ is that an instance of [_TPJMD5_](./TPJMD5.md) must be created before the method can be used.
 
 Similar groups of methods are described below:
 
-* [Byte array versions](#byte-array-version)
+* [Byte array versions](#byte-array-versions)
 * [Untyped buffer version](#untyped-buffer-version)
 * [ANSI string version](#ansi-string-version)
 * [ShortString version](#shortstring-version)
@@ -62,7 +62,7 @@ These methods add bytes from a _TBytes_ array to the current hash.
 2. The second version adds _Count_ bytes from the beginning of byte array _X_ to the hash. _X_ must have at least _Count_ elements otherwise an [_EPJMD5_](./EPJMD5.md) exception is raised. If _Count_ is zero then no data is processed.
 3. The last version adds all the content of byte array _X_ to the hash. If the array is empty then no data is processed.
 
-####  Example
+#### Byte array example
 
 Suppose you have read a file into a byte array and want its MD5 hash. However, to save processing time, if the array is longer that 32Kb you just take the hash of the first and last 16Kb of data from the array. Here's a function to do that:
 
@@ -100,7 +100,7 @@ procedure Process(const Buf; const Count: Cardinal); overload;
 
 This method adds _Count_ bytes from untyped buffer _Buf_ to the current hash. _Buf_ must contain at least _Count_ bytes.
 
-####  Example
+#### Untyped buffer example
 
 Suppose you have two variables, _Foo_ of type _Byte_ and _Bar_ of type _Int64_ and you need the MD5 checksum of both of them. Here's the code to do it:
 
@@ -165,7 +165,7 @@ procedure Process(const S: UnicodeString); overload;
 
 Each of these methods adds data from a Unicode string _S_ to the current hash. Before adding to the hash the string is converted to a sequence of bytes. The first version uses the encoding passed in the _Encoding_ parameter to perform the conversion, while the second version uses the _TEncoding.Default_ encoding.
 
-####  Examples
+#### Unicode string examples
 
 Suppose you have two text files that have the same text but may have different amounts of white space or different kinds of line endings. You want the MD5 hash to depend only on the words and not the white space.
 
@@ -222,7 +222,7 @@ The first version reads _Count_ bytes from the stream if possible. If _Count_ is
 
 The stream is read into an internal buffer before adding the data to the hash. The buffer's size is given by the [_ReadBufferSize_](./TPJMD5-ReadBufferSize.md) property and can be changed by assigning a new value to the property.
 
-####  Example
+#### TStream example
 
 Suppose you have a file containing multiple streams or "storages" and you have opened a _TStream_ onto each storage in the file. You want to get a MD5 hash of all of them. However some can be very large so to save processing time you only take the hash of the first 32Kb of each stream.
 

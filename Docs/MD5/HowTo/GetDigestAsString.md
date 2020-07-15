@@ -56,7 +56,7 @@ begin
 end;
 ```
 
-> You can also assign a string to a [_TPJMD5Digest_](../API/TPJMD5Digest.md) providing the string contains a valid hex representation of a MD5 digest. This uses another [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit#string-to-tpjmd5digest) 
+> You can also assign a string to a [_TPJMD5Digest_](../API/TPJMD5Digest.md) providing the string contains a valid hex representation of a MD5 digest. This uses another [_Implicit_ cast operator](../API/TPJMD5Digest-Implicit#string-to-tpjmd5digest)
 
 ## See Also
 

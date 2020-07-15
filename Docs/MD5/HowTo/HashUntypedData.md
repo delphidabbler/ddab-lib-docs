@@ -21,7 +21,6 @@ end;
 
 This example is admittedly rather contrived, but it is not uncommon to have pointers to data you for which you want the MD5 hash. The main thing to note is that you must deference the pointer before call the method.
 
-
 > See the "How to get the MD5 hash of" topics for [ordinal types](./HashOrdinalTypes.md), [floats](./HashFloatTypes.md), [arrays](./HashArray.md) and [records](./HashRecord.md).
 
 The main use for the Untyped overload of [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md#untyped-buffer-version) and [_TPJMD5.Process_](../API/TPJMD5-Process.md#untyped-buffer-version) is in getting the MD5 hash of ordinal values, floating point values, packed records and arrays of both these items. This is covered in more detail in other how-to pages, so a simple example will suffice here.
@@ -48,8 +47,7 @@ end;
 
 > The reason why a [_TPJMD5Digest_](../API/TPJMD5Digest.md) record can be passed to _ShowMessage_ where a string argument is expected is explained [here](./GetDigestAsString.md).
 
-Here we create an arbitrary array of _Extended_ values (using Delphi's _TArray<T>_ generic array type) and then iterate the array adding each _Extended_ element in turn to the MD5 hash. Finally we access the hash via the [_TPJMD5.Digest_](../API/TPJMD5-Digest.md) property, using the untyped overload of [_TPJMD5.Process_](../API/TPJMD5-Process.md#untyped-buffer-version) and display it in a message box. Notice how an array element is passed as the method's first parameter and the size of the element is passed as the second. This adds all the bytes of the array element to the hash.
-
+Here we create an arbitrary array of _Extended_ values (using Delphi's _TArray&lt;T&gt;_ generic array type) and then iterate the array adding each _Extended_ element in turn to the MD5 hash. Finally we access the hash via the [_TPJMD5.Digest_](../API/TPJMD5-Digest.md) property, using the untyped overload of [_TPJMD5.Process_](../API/TPJMD5-Process.md#untyped-buffer-version) and display it in a message box. Notice how an array element is passed as the method's first parameter and the size of the element is passed as the second. This adds all the bytes of the array element to the hash.
 
 ## See Also
 
@@ -62,9 +60,9 @@ Here we create an arbitrary array of _Extended_ values (using Delphi's _TArray<T
   * [Get a digest string](./GetDigestAsString.md)
 * Programmers' Guide:
   * [_TPJMD5Digest_](../API/TPJMD5Digest.md)
-  * [_TPJMD5.Calculate_](../API/TPJMD5Calculate.md)
-  * [_TPJMD5.Process_](../API/TPJMD5Process.md)
-  * [_TPJMD5.Digest_](../API/TPJMD5Digest.md)
+  * [_TPJMD5.Calculate_](../API/TPJMD5-Calculate.md)
+  * [_TPJMD5.Process_](../API/TPJMD5-Process.md)
+  * [_TPJMD5.Digest_](../API/TPJMD5-Digest.md)
 
 ## Links
 

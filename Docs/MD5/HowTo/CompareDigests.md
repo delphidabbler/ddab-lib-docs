@@ -42,7 +42,7 @@ end;
 
 > For more information about casting a [_TPJMD5Digest_](../API/TPJMD5Digest.md) record to a string see [How To Get a Digest String](./GetDigestAsString.md).
 
-The function gets the MD5 hash of the file using [_TPJMD5.CalculateFile_](../API/TPJMD5-CalculateFile.md). It then relies on the ability of [_TPJMD5Digest_](../API/TPJMD5Digest.md) to be cast to a string to get the string representation of the file's hash. Finally it compares the has string with the given string, _MD5Hash_ and returns `True` if they are the same and `False` if different. In the shortened version the result from [_TPJMD5.CalculateFile_](../API/TPJMD5CalculateFile.md) is cast to a string because it is used in a string context (_SameText_ expects a string parameter).
+The function gets the MD5 hash of the file using [_TPJMD5.CalculateFile_](../API/TPJMD5-CalculateFile.md). It then relies on the ability of [_TPJMD5Digest_](../API/TPJMD5Digest.md) to be cast to a string to get the string representation of the file's hash. Finally it compares the has string with the given string, _MD5Hash_ and returns `True` if they are the same and `False` if different. In the shortened version the result from [_TPJMD5.CalculateFile_](../API/TPJMD5-CalculateFile.md) is cast to a string because it is used in a string context (_SameText_ expects a string parameter).
 
 But, we don't need to use _SameText_ at all because [_TPJMD5Digest_](../API/TPJMD5Digest.md) also provides [_Equal_](../API/TPJMD5Digest-Equal.md) and [_NotEqual_](../API/TPJMD5Digest-NotEqual.md) operator overloads that allow strings to be compared directly to [_TPJMD5Digest_](../API/TPJMD5Digest.md) records. Consequently the above function can be reduced to:
 
