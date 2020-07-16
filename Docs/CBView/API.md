@@ -24,7 +24,6 @@ Values and in-line code appear like this:
 
 * `42`
 * `'text'`
-* _True_
 * `X := 42;`
 
 Declarations and source code examples appear syntax highlighted like this:
