@@ -11,3 +11,4 @@ On versions of Windows that support it the newer clipboard format listener API i
 ## Links
 
 * [Programmers' Guide](./API.md) -- Classes, methods, properties etc.
+* [Example](./Example.md)

@@ -36,3 +36,4 @@ procedure Foo(const Bar: string);
 ## Links
 
 * [Overview](./Overview.md)
+* [Example](./Example.md)
