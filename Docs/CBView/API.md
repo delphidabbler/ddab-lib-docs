@@ -24,7 +24,7 @@ Values and in-line code appear like this:
 
 * `42`
 * `'text'`
-* `True`
+* _True_
 * `X := 42;`
 
 Declarations and source code examples appear syntax highlighted like this:
@@ -37,3 +37,4 @@ procedure Foo(const Bar: string);
 
 * [Overview](./Overview.md)
 * [Example](./Example.md)
+
