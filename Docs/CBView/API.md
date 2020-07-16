@@ -36,4 +36,3 @@ procedure Foo(const Bar: string);
 
 * [Overview](./Overview.md)
 * [Example](./Example.md)
-
