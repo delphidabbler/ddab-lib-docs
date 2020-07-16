@@ -1,16 +1,16 @@
-# ProgramName property #
+# ProgramName property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property ProgramName: string;
 ```
 
-## Description ##
+## Description
 
 The _ProgramName_ property defines the program name to be displayed on the first line of the about box.
 
@@ -18,4 +18,4 @@ If _ProgramName_ is set to the empty string then the title of the application as
 
 _ProgramName_ defaults to the empty string.
 
-Note: If the _[VersionInfo](TPJAboutBoxDlgVersionInfo.md)_ property is not nil then _ProgramName_ is ignored.
+**Note**: If the [_VersionInfo_](./TPJAboutBoxDlg-VersionInfo.md) property is not nil then _ProgramName_ is ignored.
