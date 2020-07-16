@@ -8,7 +8,7 @@ This project contains one unit - _PJAbout_ that implements a single non-visual c
 
 The component is believed to compile on all versions of Delphi back to Delphi 2, but the latest version has been tested only on Delphi 7 and Delphi 2007 through to XE3. This is a Windows-only component that requires the VCL. It is not compatible with FireMonkey. Delphi 1 support was dropped as at v3.5.
 
-**This documentation applies to the About Box Component v3 and later.**
+**This documentation applies to the About Box Component v3.6 and later.**
 
 > Documentation for earlier versions is no longer available.
 
