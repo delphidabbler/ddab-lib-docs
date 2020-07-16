@@ -1,19 +1,19 @@
-# Font property #
+# Font property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property Font: TFont;
 ```
 
-## Description ##
+## Description
 
 The _Font_ property is used to specify the font displayed in the about box. This font is used for all the content, including the close button.
 
-The default font is Tahoma 8pt.
+The default font is `Tahoma 8pt`.
 
-Note: If the [UseOSStdFonts](TPJAboutBoxDlgUseOSStdFonts.md) property is True, the _Font_ property is ignored.
+**Note**: If the [_UseOSStdFonts_](./TPJAboutBoxDlg-UseOSStdFonts.md) property is _True_, the _Font_ property is ignored.

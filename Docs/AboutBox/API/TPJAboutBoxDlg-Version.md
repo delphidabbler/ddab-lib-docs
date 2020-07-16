@@ -1,19 +1,19 @@
-# Version property #
+# Version property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property Version: string;
 ```
 
-## Description ##
+## Description
 
 The _Version_ property defines the version number (or other text) to appear on the second line of the about box.
 
 The default value of this property is an empty string, which displays nothing.
 
-Note: If the _[VersionInfo](TPJAboutBoxDlgVersionInfo.md)_ property is not nil then _Version_ is ignored.
+Note: If the [_VersionInfo_](./TPJAboutBoxDlg-VersionInfo.md) property is not nil then _Version_ is ignored.

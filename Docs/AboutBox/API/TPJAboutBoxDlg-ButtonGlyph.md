@@ -1,10 +1,10 @@
-# ButtonGlyph property #
+# ButtonGlyph property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property ButtonGlyph: TPJAboutBtnGlyphs;
@@ -14,17 +14,16 @@ type TPJAboutBtnGlyphs = (
 );
 ```
 
-## Description ##
+## Description
 
 The About box contains one button which is used to close the dialog box. The button can display a glyph (bitmap) to indicate its use. This property is used to determine which (if any) glyph to display. Valid values for the property and their meanings are as follows:
 
+|   Value   |   Meaning   |
+|-----------|-------------|
+| _abgOK_ | A green check mark appears on the button face. |
+| _abgCancel_ | A red cross appears on the button face. |
+| _abgIgnore_ | A green man walking away appears on the button face. |
+| _abgClose_ | A door appears on the button face. |
+| _abgNone_ | No glyph is displayed on the button. |
 
-| **Value** | **Meaning** |
-|:----------|:------------|
-| `abgOK` | A green check mark appears on the button face. |
-| `abgCancel` | A red cross appears on the button face. |
-| `abgIgnore` | A green man walking away appears on the button face. |
-| `abgClose` | A door appears on the button face. |
-| `abgNone` | No glyph is displayed on the button. |
-
-_ButtonGlyph_ defaults to `abgNone`. (Was `abgOK` in versions prior to v3.5).
+_ButtonGlyph_ defaults to _abgNone_.

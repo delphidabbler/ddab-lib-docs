@@ -1,17 +1,17 @@
-# ButtonWidth property #
+# ButtonWidth property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property ButtonWidth: Integer;
 ```
 
-## Description ##
+## Description
 
 The About box displays one button which is used to close the dialog box. The width of this button in pixels is determined by the value of this property.
 
-The default value s 75 pixels.
+The default value is `75` pixels.

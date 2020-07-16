@@ -1,10 +1,10 @@
-# ButtonPlacing property #
+# ButtonPlacing property
 
-**Project:** [About Box Component](AboutBoxComponent.md).
+**Project:** [About Box Component](../API.md)
 
 **Unit:** _PJAbout_.
 
-**Class:** _[TPJAboutBoxDlg](TPJAboutBoxDlg.md)_
+**Class:** [_TPJAboutBoxDlg_](./TPJAboutBoxDlg.md)
 
 ```pascal
 property ButtonPlacing: TPJAboutBtnPlacing;
@@ -12,14 +12,14 @@ property ButtonPlacing: TPJAboutBtnPlacing;
 type TPJAboutBtnPlacing = (abpLeft, abpCentre, abpRight);
 ```
 
-## Description ##
+## Description
 
 The About box contains one button which is used to close the dialog box. The button is positioned at the bottom of the dialog box, but can be aligned left, centre or right. The _ButtonPlacing_ property is used to determine which position the button occupies. Valid values for the property and their meanings are as follows:
 
-| **Value** | **Meaning** |
-|:----------|:------------|
-| `abpLeft` | Display the button at the bottom left of the dialog box. |
-| `abpCentre` | Display the button at the bottom centre  of the dialog box. |
-| `abpRight` | Display the button at the bottom right of the dialog box. |
+|   Value   |   Meaning   |
+|-----------|-------------|
+| _abpLeft_ | Display the button at the bottom left of the dialog box. |
+| _abpCentre_ | Display the button at the bottom centre  of the dialog box. |
+| _abpRight_ | Display the button at the bottom right of the dialog box. |
 
-The default value is `abpCentre`.
+The default value is _abpCentre_.
