@@ -7,7 +7,7 @@ The Library currently contains the following projects.
 | **Project** | **Description** |
 |:------------|:----------------|
 | [About Box Component](./AboutBox.md) | Non-visual component that encapsulates an About Box. Set properties or link to a [Version Information Component](VersionInformationComponent.md) to customise the about box content. |
-| [Clipboard Viewer Component](ClipboardViewerComponent.md) | Component that triggers an event whenever the contents of the clipboard change. |
+| [Clipboard Viewer Component](CBView.md) | Component that triggers an event whenever the contents of the clipboard change. |
 | [Console Application Runner Classes](ConsoleApp.md) | Classes to control the execution of child console application processes and to redirect input and output where required. |
 | [Drop Files Components](DropFilesComponents.md) | Components that enable applications, windows and other components to support drag and drop from Windows Explorer. |
 | [Environment Variables Unit](EnvVars.md) | Contains a static class and supporting types for interrogating, modifying and enumerating the environment variables belonging to the current process. |

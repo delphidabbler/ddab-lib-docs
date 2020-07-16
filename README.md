@@ -9,7 +9,7 @@ The project contains these components, classes and IDE extensions:
 | Project | Documentation | Releases | More Info |  Platforms | Framework |
 | ------- | ------------- | -------- | --------- | --------- | --------- |
 | About Box Component | [GitHub](Docs/AboutBox.md)<br>WinHelp | [SourceForge](https://sourceforge.net/projects/ddablib/files/aboutbox/) | [Website](https://delphidabbler.com/software/aboutbox) | Win32<br>Win64 | VCL<br><strike>FMX</strike> |
-| Clipboard Viewer Component | [GitHub](Docs/ClipboardViewerComponent.md) | [SourceForge](https://sourceforge.net/projects/ddablib/files/cbview/) | [Website](https://delphidabbler.com/software/cbview) | Win32<br>Win64 | VCL<br><strike>FMX</strike> |
+| Clipboard Viewer Component | [GitHub](Docs/CBView.md) | [SourceForge](https://sourceforge.net/projects/ddablib/files/cbview/) | [Website](https://delphidabbler.com/software/cbview) | Win32<br>Win64 | VCL<br><strike>FMX</strike> |
 | Console Application Runner Classes | [GitHub](Docs/ConsoleApp.md) | [SourceForge](https://sourceforge.net/projects/ddablib/files/consoleapp/) | [Website](https://delphidabbler.com/software/consoleapp) | Win32<br>Win64 | RTL |
 | Drop Files Components | [GitHub](Docs/DropFilesComponents.md)<br>WinHelp | [SourceForge](https://sourceforge.net/projects/ddablib/files/dropfiles/) | [Website](https://delphidabbler.com/software/dropfiles) | Win32<br>Win64 | VCL<br><strike>FMX</strike> |
 | Environment Variables Unit | [GitHub](Docs/EnvVars.md) | [SourceForge](https://sourceforge.net/projects/ddablib/files/envvars/) | [Website](https://delphidabbler.com/software/envvars) | Win32<br>Win64 | VCL<br>FMX |
