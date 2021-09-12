@@ -13,6 +13,7 @@ The variables defined in _PJSysInfo_ are:
   * [Win32MinorVersionEx](#win32minorversionex) [v5.0]
   * [Win32BuildNumberEx](#win32buildnumberex) [v5.0]
   * [Win32CSDVersionEx](#win32csdversionex) [v5.0]
+  * [Win32RevisionNumber](#win32revisionnumber) [v5.6]
   * [Win32HaveExInfo](#win32haveexinfo)
   * [Win32ServicePackMajor](#win32servicepackmajor)
   * [Win32ServicePackMinor](#win32servicepackminor)
@@ -98,6 +99,20 @@ This variable is an analogue of _Win32CSDVersion_ variable defined in _SysUtils_
 
 Whether _Win32CSDVersionEx_ can be spoofed depends on the value returned by _[TPJOSInfo.CanSpoof](TPJOSInfoCanSpoof.md)_. A value of `False` means _Win32CSDVersionEx_ returns the correct service pack string for the host operating system while `True` means that _Win32CSDVersionEx_ is spoofed by compatibility mode into returning the service pack of the emulated operating system.
 
+
+## Win32RevisionNumber ##
+
+**Introduced:** v5.6
+
+```pascal
+var Win32RevisionNumber: Integer;
+```
+
+Stores the operating system's revision number.
+
+The revision number is read from the registry. If no such value is found then `0` is returned.
+
+Basic tests indicate that this value cannot be spoofed, but registry spoofing is known to vary between different OS versions.
 
 ## Win32HaveExInfo ##
 
