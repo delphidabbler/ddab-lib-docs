@@ -1,6 +1,6 @@
 # Console Application Runner Classes FAQ
 
-This page has some frequently asked questions about the DelphiDabbler [Console Application Runner Classes](https://delphidabbler.com/software/consoleapp). You can also try the class' **Documentation** {TODO}.
+This page has some frequently asked questions about the DelphiDabbler [Console Application Runner Classes](https://delphidabbler.com/software/consoleapp). You can also try the class' **[documentation](../Docs/ConsoleApp.md)**.
 
 ## Contents
 
@@ -18,9 +18,7 @@ This page has some frequently asked questions about the DelphiDabbler [Console A
 
 This is because Delphi 2009 and later (the "Unicode Delphis") use the Unicode Windows API (earlier versions used the ANSI API). It is a peculiarity of the Unicode implementation of the `CreateProcess` API function (which `[[(Docs.)TPJConsoleApp]]` uses) that causes this access violation. This peculiarity wasn't present in the ANSI version of the function.
 
-Check [[https://forums.codegear.com/thread.jspa?threadID=12826 | this post]] for an explanation of the issue.
-
->The classes have been updated to work round this problem. You need to update to release 1.0.2 or later.
+> The classes have been updated to work round this problem. You need to update to release 1.0.2 or later.
 
 
 ## FAQ 2
@@ -35,10 +33,7 @@ If the output is being redirected to a file then the output is a faithful byte b
 
 If output is redirected to the pipe then, again, the actual bytes output by the program are written to the pipe. The programmer is responsible for reading the pipe and must make sure that any structured data is re-assembled correctly. Each time the pipe is read it is possible it may contain an odd number of bytes, which is not valid Unicode. But I stress, it is up to the programmer to handle this - it is not a function of `TPJConsoleApp`.
 
-> New in release 2.0 of the classes are some pipe filter classes, one of which can read Unicode from a pipe correctly. [[See this example - {link needed}]].
-
-As of release 3.0 the pipe filter classes were moved from this project into the [I/O Utility Classes](https://delphidabbler.com/software/ioutils) project.
-
+> Some pipe filter classes are available in the [I/O Utility Classes project](https://delphidabbler.com/software/ioutils), one of which can read Unicode from a pipe correctly. See [this example](../Docs/ConsoleApp/Examples/Example12.md) for details.
 
 ## FAQ 3
 
@@ -177,4 +172,4 @@ Each console application except the first must be capable of taking input from s
 
 **5: How do I create or open a file with an inheritable handle?**
 
-This question is answered in Appendix 1 {Link needed} of the Console Application Runner Classes documentation {link needed}.
+This question is answered in [Appendix 1](../Docs/ConsoleApp/Appendices/Appendix1.md) of the [Console Application Runner Classes documentation](../Docs/ConsoleApp.md).
