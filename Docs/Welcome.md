@@ -6,7 +6,7 @@ The Library currently contains the following projects.
 
 | **Project** | **Description** |
 |:------------|:----------------|
-| [About Box Component](./AboutBox.md) | Non-visual component that encapsulates an About Box. Set properties or link to a [Version Information Component](VersionInformationComponent.md) to customise the about box content. |
+| [About Box Component](./AboutBox.md) | Non-visual component that encapsulates an About Box. Set properties or link to a [Version Information Component](VerInfo.md) to customise the about box content. |
 | [Clipboard Viewer Component](CBView.md) | Component that triggers an event whenever the contents of the clipboard change. |
 | [Console Application Runner Classes](ConsoleApp.md) | Classes to control the execution of child console application processes and to redirect input and output where required. |
 | [Drop Files Components](DropFilesComponents.md) | Components that enable applications, windows and other components to support drag and drop from Windows Explorer. |
@@ -24,6 +24,6 @@ The Library currently contains the following projects.
 | [Version Information Component](VerInfo.md) | Component that accesses version information embedded in program files, DLLs etc. |
 | [Window State Components](WindowStateComponents.md) | Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. |
 
-The library source code is maintained in a [Subversion](http://subversion.tigris.org/) repository. The repository structure is described [here](RepoStructure.md).
+The library source code is maintained in a [Subversion repository](https://sourceforge.net/p/ddablib/code/HEAD/tree/). The repository structure is described [here](RepoStructure.md).
 
 Project releases are available in .zip format from [SourceForge](https://sourceforge.net/projects/ddablib/files/).
