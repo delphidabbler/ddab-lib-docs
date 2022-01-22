@@ -69,16 +69,36 @@ Development then took place on a `develop` branch. Five releases were made befor
 
 ### Development model
 
-Since commit 979f604 a new development model was adopted. Changes are made on branches off `master` and merged into `master` once verified. `master` is pushed to `origin` on GitHub after each merge.
+Since commit 979f604 a new development model was adopted. Changes are now made on branches off `master` and merged back into `master` once verified.
 
-Anyone who would like to contribute can do so using the [GitHub Flow](https://guides.github.com/introduction/flow/) methodology.
+#### Contributing 
+
+Anyone who would like to contribute to the documentation is welcome to do so. You should work on a fork of the GitHub `master` branch, create a suitably named branch for your work and open a pull request on GitHub when done.
+
+If you're unsure of the process [this tutorial](https://opensource.com/article/19/7/create-pull-request-github) explains it well.
 
 ### Documentation license
 
 ![Creative Commons CC BY-4.0 license image](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-DelphiDabbler Code Library Documentation by [Peter Johnson](http://en.gravatar.com/delphidabbler) is licensed under a Creative [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+DelphiDabbler Code Library Documentation by [Peter Johnson](https://en.gravatar.com/delphidabbler) is licensed under a Creative [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 Based on a work at https://github.com/delphidabbler/ddab-lib-docs.
 
 For full details see the `LICENSE` file.
+
+#### Reuse & Accreditation 
+
+The Creative Commons CC BY-SA 4.0 license requires accreditation by anyone reusing this documentation.  A suitable accreditation would be:
+
+```text
+Based on a work by Peter Johnson (https://en.gravatar.com/delphidabbler),
+at https://github.com/delphidabbler/ddab-lib-docs, copyright (c) 2022 and
+licensed under the Creative Commons CC BY-SA license. No warranties are given.
+```
+
+If you make changes and distribute the changes then, in addition to the above, you must distribute the modified version under the same license, indicate you made changes and retain an indication of earlier changes.
+
+For authoritative details of the above see the [full license](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+
+ 
