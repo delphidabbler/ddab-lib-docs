@@ -6,7 +6,7 @@ A single advanced record type, [_TFraction_](./API/TFraction.md), is used to enc
 
 Operator overloading is used extensively to enable normal arithmetic operations to be carried out on fractions.
 
-[DUnit](http://dunit.sourceforge.net/) tests are provided with the source code to help you test the code's accuracy.
+DUnit tests are provided with the source code to help you test the code's accuracy.
 
 Example code is included in the documentation of each method, operator overload or property.
 
