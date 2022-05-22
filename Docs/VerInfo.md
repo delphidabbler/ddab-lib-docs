@@ -17,4 +17,4 @@ The Version Information component is a non-visual Delphi component that reads an
 * Back to [Documentation Home Page](Welcome.md)
 * [Version Information Component web page](https://delphidabbler.com/software/verinfo).
 * [Downloads](https://sourceforge.net/projects/ddablib/files/verinfo/) -- Download current version here.
-* [Source code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/verinfo/) -- Current development tree.
+* [Source code](https://github.com/ddablib/verinfo) -- Current development tree.

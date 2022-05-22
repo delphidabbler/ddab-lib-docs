@@ -16,4 +16,4 @@ This unit provides a single Delphi Pascal "Advanced" record, _TFraction_, that e
 
 * [Fractions Unit Web Page](https://delphidabbler.com/software/fractions) -- Install notes, change log, license etc.
 * [Downloads](https://sourceforge.net/projects/ddablib/files/fractions) -- Download current version here.
-* [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/fractions/) -- Current development tree.
+* [Source Code](https://github.com/ddablib/fractions) -- Current development tree.

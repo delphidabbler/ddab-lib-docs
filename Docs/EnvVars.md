@@ -21,4 +21,4 @@ The unit is compatible 32- and 64-bit versions of the Delphi Windows compiler an
 
 * [Environment Variables Unit Web Page](https://delphidabbler.com/software/envvars) -- Install notes, change log, license etc.
 * [Downloads](https://sourceforge.net/projects/ddablib/files/envvars/) -- Download current version here.
-* [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/envvars/) -- Current development tree.
+* [Source Code](https://github.com/ddablib/envvars) -- Current development tree.
