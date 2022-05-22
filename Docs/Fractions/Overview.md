@@ -10,7 +10,7 @@ Operator overloading is used extensively to enable normal arithmetic operations 
 
 Example code is included in the documentation of each method, operator overload or property.
 
-> The current code is beta. The interface is liable to change. If any bugs are noticed, please report them via the [issue tracker](https://sourceforge.net/p/ddablib/tickets/) on SourceForge.
+> The current code is beta. The interface is liable to change. If any bugs are noticed, please report them via the [issue tracker](https://github.com/ddablib/fractions/issues) on GitHub (GitHub account required).
 
 ## Links
 
