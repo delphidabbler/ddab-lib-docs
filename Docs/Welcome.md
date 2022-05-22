@@ -24,6 +24,6 @@ The Library currently contains the following projects.
 | [Version Information Component](VerInfo.md) | Component that accesses version information embedded in program files, DLLs etc. |
 | [Window State Components](WindowStateComponents.md) | Three components that save and restore window size, state and position using ini files, the registry or user-defined storage. |
 
-The library source code is maintained in a [Git repository](https://github.com/delphidabbler/ddablib) on GitHub. The repository structure is described [here](RepoStructure.md).
+Each library project has its own source code repository on [GitHub](https://github.com/ddablib). The repository structure is described [here](RepoStructure.md).
 
-Project releases are available in .zip format from [SourceForge](https://sourceforge.net/projects/ddablib/files/).
+Project releases are available in .zip format from [SourceForge](https://sourceforge.net/projects/ddablib/files/) and later releases are also available from the _Releases_ tab of the library project's GitHub repository.
