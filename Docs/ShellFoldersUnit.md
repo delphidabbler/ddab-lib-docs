@@ -17,7 +17,9 @@ _PJShellFolders_ also provides [functions](PJShellFoldersFunctions.md) to provid
 
 This unit provides design time support. In particular it provides a property editor for _[TPJBrowseDialog](TPJBrowseDialog.md)_ and _[TPJSpecialFolderInfo](TPJSpecialFolderInfo.md)_ that allows predefined special folder IDs to be selected in the object inspector.
 
-**Links:**
+## Links
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Shell Folders Unit Web Page](https://delphidabbler.com/software/shellfolders).
+* Back to [Documentation Home Page](Welcome.md)
+* [Shell Folders Unit Web Page](https://delphidabbler.com/software/shellfolders) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/xxx/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/xxx) -- Current development tree.

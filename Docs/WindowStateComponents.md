@@ -13,7 +13,9 @@ Various event handler procedural types, oridinal types and set types are also de
 
 **NOTE:** This documentation relates to **v5.0** and later of the Window State Components. Any items in this documentation introduced after the release of v5.0 will be marked with the version number at which they were first made available. The version number will be a super-script, e.g. **<sup>v5.5</sup>**
 
-**Links:**
+## Links
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Window State Components Web Page](https://delphidabbler.com/software/wdwstate).
+* Back to [Documentation Home Page](Welcome.md)
+* [Window State Components Web Page](https://delphidabbler.com/software/wdwstate) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/wdwstate/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/wdwstate) -- Current development tree.

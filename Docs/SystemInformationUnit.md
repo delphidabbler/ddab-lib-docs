@@ -38,11 +38,9 @@ This documentation relates to v3.x, v4.x and v5.x of the System Information Unit
 
 Unless specified otherwise, classes, variables and methods are available in all versions from v3.0. Items that became available later are marked with the version at which they were introduced, for example [4.0].
 
+## Links
 
----
-
-
-**Links:**
-
-  * Back to [Wiki Home Page](Welcome.md)
-  * [System Information Unit Web Page](https://delphidabbler.com/software/sysinfo).
+* Back to [Documentation Home Page](Welcome.md)
+* [System Information Unit Web Page](https://delphidabbler.com/software/sysinfo) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/sysinfo/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/sysinfo) -- Current development tree.

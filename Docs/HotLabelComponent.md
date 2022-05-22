@@ -23,7 +23,9 @@ The following examples provide some ideas of how to use the component:
 
 A further example is provided by the demo program that is included in the download.
 
-**Links:**
+## Links
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Hot Label Component Web Page](https://delphidabbler.com/software/hotlabel).
+* Back to [Documentation Home Page](Welcome.md)
+* [Hot Label Component Web Page](https://delphidabbler.com/software/hotlabel) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/hotlabel/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/hotlabel) -- Current development tree.

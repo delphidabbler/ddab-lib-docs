@@ -18,7 +18,9 @@ This wiki is divided into several sections as noted in the following table.
 
 **NOTE:** This documentation relates to **v1.0** and later of the Resource File Unit. Any items in this documentation introduced after the release of v1.0 are marked with the version number at which they were first made available, for example: **<sup>v1.1</sup>**
 
-**Links:**
+## Links
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Resource File Unit Web Page](https://delphidabbler.com/software/resfile).
+* Back to [Documentation Home Page](Welcome.md)
+* [Resource File Unit Web Page](https://delphidabbler.com/software/resfile) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/resfile/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/resfile) -- Current development tree.

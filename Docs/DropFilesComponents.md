@@ -36,7 +36,9 @@ The editors are:
 | _TPJExtFileFilterExtPE_ | Property editor for the _[Extensions](TPJExtFileFilterExtensions.md)_ property of the _[TPJExtFileFilter](TPJExtFileFilter.md)_ component. This editor displays a dialog box where extensions can be added, removed and saved in the correct format. |
 | _TPJDropFilesCE_ | Component editor that causes an event handler for the _OnDropFiles_ events of the drop file components to be opened in the designer when the components are double-clicked. The default action without this component editor is to open the rarely used _OnBeforeDrop_ event handler, which is not very useful. |
 
-**Links:**
+## Links
 
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Drop Files Components Web Page](https://delphidabbler.com/software/dropfiles).
+* Back to [Documentation Home Page](Welcome.md)
+* [Drop Files Components Web Page](https://delphidabbler.com/software/dropfiles) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/dropfiles/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/dropfiles) -- Current development tree.
