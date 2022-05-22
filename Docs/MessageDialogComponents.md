@@ -9,8 +9,9 @@ The Message Dialogue Components are supplied in a single unit named _PJMessageDi
 
 **Note:** This documentation applies to release 3.0.0 and later. Earlier versions had an additional component named _TPJMessageDialog_ that was deprecated in later v2 releases and removed at v3.
 
+## Links
 
-**Links:**
-
-  * Back to [Wiki Home Page](Welcome.md)
-  * [Message Dialogue Components Web Page](https://delphidabbler.com/software/msgdlg).
+* Back to [Documentation Home Page](Welcome.md)
+* [Message Dialogue Components Web Page](https://delphidabbler.com/software/msgdlg) -- Install notes, change log, license etc.
+* [Downloads](https://sourceforge.net/projects/ddablib/files/msgdlg/) -- Download current version here.
+* [Source Code](https://github.com/ddablib/msgdlg) -- Current development tree.

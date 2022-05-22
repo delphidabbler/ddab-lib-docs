@@ -11,8 +11,9 @@ This project provides a library of classes that can be used to extend the functi
 * [Overview](./Streams/Overview.md)
 * [Programmer's Guide](./Streams/API.md) -- Classes, methods, properties etc.
 
-## External Links
+## Links
 
+* Back to [Documentation Home Page](Welcome.md)
 * [Stream Extension Classes Web Page](https://delphidabbler.com/software/streams) -- Install notes, change log, license etc.
 * [Downloads](https://sourceforge.net/projects/ddablib/files/streams) -- Download current version here.
-* [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/streams) -- Current development tree.
+* [Source Code](https://github.com/ddablib/streams) -- Current development tree.

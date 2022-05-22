@@ -6,11 +6,11 @@ A single advanced record type, [_TFraction_](./API/TFraction.md), is used to enc
 
 Operator overloading is used extensively to enable normal arithmetic operations to be carried out on fractions.
 
-[DUnit](http://dunit.sourceforge.net/) tests are provided with the source code to help you test the code's accuracy.
+DUnit tests are provided with the source code to help you test the code's accuracy.
 
 Example code is included in the documentation of each method, operator overload or property.
 
-> The current code is beta. The interface is liable to change. If any bugs are noticed, please report them via the [issue tracker](https://sourceforge.net/p/ddablib/tickets/) on SourceForge.
+> The current code is beta. The interface is liable to change. If any bugs are noticed, please report them via the [issue tracker](https://github.com/ddablib/fractions/issues) on GitHub (GitHub account required).
 
 ## Links
 

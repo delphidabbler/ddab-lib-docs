@@ -17,8 +17,9 @@ The component is believed to compile on all versions of Delphi back to Delphi 2,
 * [Overview](./AboutBox/Overview.md)
 * [Programmer's Guide](./AboutBox/API.md) -- Classes, methods, properties etc.
 
-## External Links
+## Links
 
+* Back to [Documentation Home Page](Welcome.md)
 * [About Box Component Web Page](https://delphidabbler.com/software/aboutbox) -- Install notes, change log, license etc.
 * [Downloads](https://sourceforge.net/projects/ddablib/files/aboutbox/) -- Download current version here.
-* [Source Code](https://sourceforge.net/p/ddablib/code/HEAD/tree/trunk/projects/envvars/) -- Current development tree.
+* [Source Code](https://github.com/ddablib/aboutbox) -- Current development tree.
