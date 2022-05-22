@@ -50,5 +50,5 @@ Of course, in real life, we would use the code in the first listing, but this su
 
 **Links:**
 
-  * [Next Example](ResFileExample2.md)
-  * Back to [List of Examples](ResFileExamples.md)
+* [Next Example](ResFileExample2.md)
+* Back to [List of Examples](ResFileExamples.md)
