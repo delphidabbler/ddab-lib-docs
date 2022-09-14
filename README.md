@@ -83,11 +83,11 @@ Development then took place on a `develop` branch. Five releases were made befor
 
 Since commit 979f604 a new development model was adopted. Changes are now made on branches off `master` and merged back into `master` once verified.
 
-#### Contributing
+### Contributing
 
-Anyone who would like to contribute to the documentation is welcome to do so. You should work on a fork of the GitHub `master` branch, create a suitably named branch for your work and open a pull request on GitHub when done.
+Contributions to this repository are no longer being accepted.
 
-If you're unsure of the process [this tutorial](https://opensource.com/article/19/7/create-pull-request-github) explains it well.
+> Please see the  [`ddablib/ddablib.github.io`](https://github.com/ddablib/ddablib.github.io) successor repository instead.
 
 ### Documentation license
 
