@@ -1,4 +1,14 @@
-# DelphiDabbler Code Library
+# DelphiDabbler Code Library Documentation
+
+> ***THIS REPO IS MOVING***
+>
+> A new *DelphiDabbler Code Library Documentation* website is being developed. It can be found at <https://lib-docs.delphidabbler.com>.
+>
+> The website's source code is available in the [`ddablib/ddablib.github.io`](https://github.com/ddablib/ddablib.github.io) GitHub repository. The website is being developed from a copy of this repository's code base.
+>
+> The code in the new repo is being restructured to better suit the website format *and* to enable documentation for different major versions of a library project to coexist.
+>
+> Restructuring is taking place one project at a time. As each project's documentation is completed that section of the website will replace the documentation here. Once the restructuring of the website code has been completed, this repository will be archived. 
 
 The DelphiDabbler Code Library contains various useful and re-usable Delphi components, units and IDE extensions, arranged in sub-projects. All were originally published on [DelphiDabbler.com](https://delphidabbler.com/).
 
