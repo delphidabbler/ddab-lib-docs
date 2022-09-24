@@ -1,15 +1,3 @@
 # Count class method
 
-***Project:*** [Environment Variables Unit](../API.md)
-
-***Unit:*** _PJEnvVars_
-
-***Class:*** [_TPJEnvironmentVars_](./TPJEnvironmentVars.md)
-
-```pascal
-class function Count: Integer;
-```
-
-## Description
-
-Returns the number of environment variables defined in the current process.
+> This page has [**moved**](https://lib-docs.delphidabbler.com/EnvVars/3/API/TPJEnvironmentVars-Count).

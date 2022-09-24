@@ -1,17 +1,3 @@
 # Count property
 
-***Project:*** [Environment Variables Unit](../API.md)
-
-***Unit:*** _PJEnvVars_
-
-***Class:*** [_TPJEnvVars_](./TPJEnvVars.md)
-
-```pascal
-property Count: Integer;
-```
-
-> ***Warning:*** *[_TPJEnvVars_](./TPJEnvVars.md) has been **deprecated**. Use the [_TPJEnvironmentVars.Count_](./TPJEnvironmentVars-Count.md) static method instead.*
-
-## Description
-
-Returns the number of enviroment variables defined in the current process.
+> This page has [**moved**](https://lib-docs.delphidabbler.com/EnvVars/3/API/TPJEnvVars-Count).
