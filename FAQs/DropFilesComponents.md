@@ -1,6 +1,6 @@
 # Drop Files Components FAQ
 
-This page has some frequently asked questions about the DelphiDabbler [Drop Files Components](https://delphidabbler.com/software/dropfiles). You can also try the components' documentation {TODO: Add link}.
+This page has some frequently asked questions about the DelphiDabbler [Drop Files Components](https://delphidabbler.com/software/dropfiles). You can also try the components' [documentation](https://delphidabbler.com/url/dropfiles-docs).
 
 ## Contents
 
@@ -35,7 +35,7 @@ This is a "feature" of the operating system, not a problem with the components.
 
 **The WinHelp help file doesn't work on Vista / Windows 7. Can you please convert to HTML Help?**
 
-No, sorry. I've tried Microsoft's conversion utility which is difficult to use and it will take much too long to convert. I just don't have the time. Instead I've created some on-line Drop Files Components documentation {TODO: Link needed}
+No, sorry. I've tried Microsoft's conversion utility which is difficult to use and it will take much too long to convert. I just don't have the time. Instead I've created some on-line Drop Files Components documentation
 
 ## FAQ 4
 

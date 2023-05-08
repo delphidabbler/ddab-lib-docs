@@ -1,6 +1,6 @@
 # Windows State Components FAQ
 
-This page has some frequently asked questions about the DelphiDabbler Window State Components {TODO: link needed}. You can also try the components' documentation {TODO: link needed}.
+This page has some frequently asked questions about the DelphiDabbler [Window State Components](https://delphidabbler.com/software/wdwstate). You can also try the components' [documentation](https://delphidabbler.com/url/wdwstate-docs).
 
 ## Contents
 
