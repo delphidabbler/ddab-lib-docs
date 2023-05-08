@@ -1,15 +1,3 @@
 # ManagedControl property #
 
-**Project:** [Drop Files Components](DropFilesComponents.md).
-
-**Unit:** _PJDropFiles_.
-
-**Class:** _[TPJCtrlDropFiles](TPJCtrlDropFiles.md)_
-
-```pascal
-property ManagedControl: TWinControl;
-```
-
-## Description ##
-
-_ManagedControl_ refers to the associated control for which file drops are managed. If this property is nil then no files drops are handled.
+This page has [**moved**](https://lib-docs.delphidabbler.com/DropFiles/5/API/TPJCtrlDropFiles-ManagedControl)
