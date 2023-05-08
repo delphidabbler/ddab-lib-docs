@@ -1,15 +1,3 @@
 # IsTabletPC class function #
 
-**Project:** [System Information Unit](SystemInformationUnit.md).
-
-**Unit:** _PJSysInfo_.
-
-**Class:** _[TPJOSInfo](TPJOSInfo.md)_
-
-```pascal
-class function IsTabletPC: Boolean;
-```
-
-## Description ##
-
-Returns true if Windows Tablet PC is installed or False if not.
+This page has [**moved**](https://lib-docs.delphidabbler.com/SysInfo/5/API/TPJOSInfo-IsTabletPC)
