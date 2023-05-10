@@ -1,3 +1,3 @@
 # About Box Component
 
-> This page has [**moved**](./AboutBox.md).
+This page has [**moved**](https://lib-docs.delphidabbler.com/AboutBox/)
