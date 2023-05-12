@@ -1,16 +1,3 @@
 # Type Definitions
 
-***Project:*** [Console Application Runner Classes](../API.md)
-
-***Unit:*** [_PJConsoleApp_](./PJConsoleApp.md)
-
-The library contains the following non-class type definitions.
-
-## Enumerated types
-
-* [_TPJConsoleAppPriority_](./TPJConsoleAppPriority.md)
-* [_TPJConsoleColor_](./TPJConsoleColor.md)
-
-## Records
-
-* [_TPJConsoleColors_](./TPJConsoleColors.md)
+This page has gone away. [**Try here instead**](https://lib-docs.delphidabbler.com/ConsoleApp/3/API#simple-types)
