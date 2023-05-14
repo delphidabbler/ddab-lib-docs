@@ -1,3 +1,3 @@
 # MD5 Message Digest Unit
 
-> This page has [**moved**](./MD5.md).
+This page has [**moved**](https://lib-docs.delphidabbler.com/MD5/).
