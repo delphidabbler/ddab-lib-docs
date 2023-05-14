@@ -1,3 +1,3 @@
 # Stream Extension Classes
 
-> This page has [**moved**](./Streams.md).
+This page has [**moved**](https://lib-docs.delphidabbler.com/Streams/).
